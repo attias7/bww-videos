@@ -1,0 +1,6 @@
+{"input": "src/Copy of 2.mp4", "voice": "src/Copy of 2.mp3",
+ "cuts": [0,4.35,6.35,9.35,10.85,12.85,14.35,17.0,17.85,22.85,24.85,26.35,28.35,30.85,33.35,37.35,38.35,40.95],
+ "hook": {"kicker": "The truth about motivation", "line1": "You will never", "line2": "feel ready"},
+ "hook_pos": "bottom", "caption_band": [240, 130],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-09-27_copy-of-2.mp4"}
