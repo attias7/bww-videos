@@ -1,4 +1,4 @@
-video,status,output,post_date,instagram_post,tiktok_post,processed_at,notes
-Copy of 1.mp4,done-not-posted,,,,,2026-09-25,made manually in first session (not in repo)
-Copy of 6.mp4,done-not-posted,,,,,2026-09-25,made manually in first session (not in repo)
-Copy of 2.mp4,scheduled,videos/BWW_2026-09-27_copy-of-2.mp4,2026-09-27,6ab6d684914867df7193c7b4,6ab6d690dffba3cec6e36ce4,2026-09-25,captions at top -> hook_pos bottom
+video,status,output,post_date,instagram_post,tiktok_post,processed_at,notes,carousel_dir,carousel_date,carousel_post
+Copy of 1.mp4,done-not-posted,,,,,2026-09-25,made manually in first session (not in repo),,,
+Copy of 6.mp4,done-not-posted,,,,,2026-09-25,made manually in first session (not in repo),,,
+Copy of 2.mp4,scheduled,videos/BWW_2026-09-27_copy-of-2.mp4,2026-09-27,6ab6d684914867df7193c7b4,6ab6d690dffba3cec6e36ce4,2026-09-25,captions at top -> hook_pos bottom,carousels/2026-09-28_copy-of-2,2026-09-28,6ab6d942f28173fa3f4d77b2
