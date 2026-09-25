@@ -1,0 +1,47 @@
+{
+ "input": "src/Copy of 2.mp4",
+ "hook": {
+  "kicker": "The truth about motivation",
+  "line1": "You will never",
+  "line2": "feel ready"
+ },
+ "caption_band": [
+  250,
+  110
+ ],
+ "slides": [
+  {
+   "text": "95% of our decisions are made by how you feel in the moment. And that is the problem.",
+   "t": 5.5
+  },
+  {
+   "text": "Do I feel like getting up? No. You don't.",
+   "t": 9.2
+  },
+  {
+   "text": "Do you feel like making that cold call? No, you don't.",
+   "t": 12.0
+  },
+  {
+   "text": "Do you feel like doing that third set of reps? No, you don't.",
+   "t": 16.0
+  },
+  {
+   "text": "We make decisions based on our feelings, and that is robbing you of joy and opportunity.",
+   "t": 21.0
+  },
+  {
+   "text": "You may never feel ready. Never feel motivated. Never feel confident. And that's okay.",
+   "t": 27.0
+  },
+  {
+   "text": "But you can still push yourself forward.",
+   "t": 32.0
+  },
+  {
+   "text": "Become the person who takes action, and you build the skill of confidence and courage.",
+   "t": 39.5
+  }
+ ],
+ "out_dir": "carousels/2026-09-28_copy-of-2"
+}
