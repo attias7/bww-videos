@@ -1,0 +1,86 @@
+{
+  "episode": 2,
+  "series": "NO COLD CALLS · EP. 2",
+  "hook": "How 1 Google search turns into a contractor paying me",
+  "voice": "../voices/ep02.mp3",
+  "atempo": 1.1,
+  "out": "../out/ep02_google_search.mp4",
+  "lines": [
+    "This is how one Google search turns into a contractor paying me.",
+    "And I never get on a sales call.",
+    "A homeowner in a small town googles roof repair near me.",
+    "My little website shows up.",
+    "They fill out the quote form.",
+    "I forward it to a local roofer.",
+    "If he closes the job, he pays me ten percent.",
+    "If he doesn't, he pays nothing.",
+    "That's the whole pitch.",
+    "No risk for him.",
+    "Real talk.",
+    "Plenty of leads never close.",
+    "And ranking takes months, not days.",
+    "But I'd rather wait on Google than call strangers.",
+    "Follow.",
+    "I'm building the next one."
+  ],
+  "scenes": [
+    {"from": 0, "elements": [
+      {"type": "text", "at": 0, "dt": 0.0, "y": 620, "size": 104, "segs": [["How ", "w"], ["1 Google search", "y"]]},
+      {"type": "search", "at": 0, "dt": 0.15, "y": 1080, "query": "roof repair near me"},
+      {"type": "text", "at": 0, "dt": 1.2, "y": 760, "size": 72, "segs": [["turns into a contractor", "w"]]},
+      {"type": "text", "at": 0, "dt": 1.7, "y": 860, "size": 104, "segs": [["paying me.", "g"]]},
+      {"type": "arrow", "at": 0, "dt": 2.1, "y": 1230, "y2": 1410},
+      {"type": "chip", "at": 0, "dt": 2.5, "y": 1490, "text": "contractor pays per closed job", "fill": "g", "color": "dark", "size": 42}
+    ]},
+    {"from": 1, "elements": [
+      {"type": "bignum", "at": 1, "y": 700, "text": "0", "size": 420, "color": "y"},
+      {"type": "text", "at": 1, "dt": 0.25, "y": 1000, "size": 110, "segs": [["sales calls.", "w"]]},
+      {"type": "crossphone", "at": 1, "dt": 0.5, "y": 1300}
+    ]},
+    {"from": 2, "elements": [
+      {"type": "text", "at": 2, "y": 330, "size": 66, "segs": [["A homeowner in a ", "w"], ["small town", "y"]]},
+      {"type": "text", "at": 2, "dt": 0.4, "y": 420, "size": 66, "segs": [["googles this:", "w"]]},
+      {"type": "google_phone", "at": 2, "dt": 0.1, "y": 560, "query": "roof repair near me"}
+    ]},
+    {"from": 3, "elements": [
+      {"type": "text", "at": 3, "y": 330, "size": 66, "segs": [["My little website ", "w"], ["shows up.", "y"]]},
+      {"type": "results", "at": 3, "dt": -0.1, "y": 480, "mine": 0, "label": "my site", "items": [
+        ["smalltownroofing.com", "Roof Repair in Smalltown", "Free quote · local roofers"],
+        ["example.com", "Big Directory Site", "Top 10 roofers near you"],
+        ["example.com", "National Chain Roofing", "Call for a quote"]]}
+    ]},
+    {"from": 4, "elements": [
+      {"type": "text", "at": 4, "y": 330, "size": 66, "segs": [["They fill out the ", "w"], ["quote form.", "y"]]},
+      {"type": "form", "at": 4, "dt": -0.1, "y": 470, "fields": [["Name", "J. ••••••"], ["Phone", "(•••) •••-••••"], ["What's going on?", "Leak over the kitchen"]], "notif": ["New lead!", "Roof repair · Smalltown"]}
+    ]},
+    {"from": 5, "elements": [
+      {"type": "text", "at": 5, "y": 400, "size": 66, "segs": [["I forward it to a ", "w"], ["local roofer.", "y"]]},
+      {"type": "chat", "at": 5, "dt": -0.1, "y": 540, "name": "Local Roofer", "sub": "Smalltown", "messages": ["New roof repair lead:\nleak over the kitchen,\nwants a quote this week."]}
+    ]},
+    {"from": 6, "elements": [
+      {"type": "text", "at": 6, "y": 380, "size": 66, "segs": [["Then one of two things:", "w"]]},
+      {"type": "cards", "at": 6, "y": 560, "items": [
+        {"head": "Job closes", "big": "10%", "sub": "he pays me", "color": "g", "at": 6, "dt": 0.2},
+        {"head": "No deal", "big": "$0", "sub": "he pays nothing", "color": "grey", "at": 7, "dt": 0.1}]}
+    ]},
+    {"from": 8, "elements": [
+      {"type": "text", "at": 8, "y": 700, "size": 84, "segs": [["That's the whole pitch.", "w"]]},
+      {"type": "shield", "at": 9, "dt": -0.1, "y": 1060},
+      {"type": "text", "at": 9, "y": 1330, "size": 100, "segs": [["No risk ", "g"], ["for him.", "w"]]}
+    ]},
+    {"from": 10, "elements": [
+      {"type": "chip", "at": 10, "y": 520, "text": "REAL TALK", "fill": "r", "color": "w", "size": 48},
+      {"type": "text", "at": 11, "y": 720, "size": 96, "segs": [["Plenty of leads", "w"]]},
+      {"type": "text", "at": 11, "dt": 0.2, "y": 840, "size": 96, "segs": [["never close.", "r"]]},
+      {"type": "text", "at": 12, "y": 1040, "size": 76, "segs": [["Ranking takes ", "w"], ["months,", "y"]]},
+      {"type": "text", "at": 12, "dt": 0.5, "y": 1140, "size": 76, "segs": [["not days.", "w"]]},
+      {"type": "calendar", "at": 12, "dt": 0.3, "y": 1380}
+    ]},
+    {"from": 13, "elements": [
+      {"type": "text", "at": 13, "y": 700, "size": 84, "segs": [["I'd rather wait on ", "w"], ["Google", "y"]]},
+      {"type": "text", "at": 13, "dt": 1.1, "y": 820, "size": 84, "segs": [["than call strangers.", "w"]]},
+      {"type": "chip", "at": 14, "y": 1100, "text": "Follow · Ep. 3 is the next build", "fill": "y", "color": "dark", "size": 44, "pad": 40},
+      {"type": "text", "at": 15, "y": 1270, "size": 42, "weight": "medium", "segs": [["Sign Build Run", "grey"]]}
+    ]}
+  ]
+}
