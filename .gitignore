@@ -3,3 +3,4 @@
 *_work/
 *.sync.jpg
 /carousels/*/_sheet.jpg
+__pycache__/
