@@ -1,0 +1,7 @@
+{"input": "src/Copy of 3.mp4", "voice": "src/Copy of 3.mp3",
+ "cuts": [0, 2.3, 6.55, 11.55, 13.05, 15.97],
+ "spans": [[0.0, 3.01], [4.33, 7.79], [9.03, 12.40], [12.96, 14.13], [15.19, 17.3]],
+ "hook": {"kicker": "Read this when you're stressed", "line1": "Most problems", "line2": "aren't problems"},
+ "hook_pos": "top", "caption_band": [800, 200],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-09-28_copy-of-3.mp4"}
