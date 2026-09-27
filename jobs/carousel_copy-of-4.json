@@ -1,0 +1,14 @@
+{"input": "src/Copy of 4.mp4",
+ "hook": {"kicker": "Nobody will tell you this", "line1": "Start before", "line2": "you're ready"},
+ "caption_band": [300, 110],
+ "slides": [
+  {"text": "Put yourself in places you don't belong.", "t": 1.6},
+  {"text": "Sign up for a marathon.", "t": 2.75},
+  {"text": "Speak on stage.", "t": 4.9},
+  {"text": "Start a company with no experience.", "t": 7.2},
+  {"text": "People will tell you to be realistic...", "t": 9.3},
+  {"text": "...to drag you down to their version of reality.", "t": 9.9},
+  {"text": "Resist.", "t": 14.3},
+  {"text": "When you start before you're ready, reality shifts drastically.", "t": 15.5}
+ ],
+ "out_dir": "carousels/2026-09-30_copy-of-4"}

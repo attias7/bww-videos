@@ -1,0 +1,12 @@
+{"input": "src/Copy of 3.mp4",
+ "hook": {"kicker": "Read this when you're stressed", "line1": "Most problems", "line2": "aren't problems"},
+ "caption_band": [838, 162],
+ "slides": [
+  {"text": "Most of your problems aren't problems.", "t": 1.0},
+  {"text": "They're a temporary emotional wave...", "t": 3.1},
+  {"text": "...that normalizes with time.", "t": 5.1},
+  {"text": "Stop overreacting to every little minor inconvenience.", "t": 9.0},
+  {"text": "Focus on your mission.", "t": 12.4},
+  {"text": "Everything else is just a distraction.", "t": 15.3}
+ ],
+ "out_dir": "carousels/2026-09-29_copy-of-3"}
