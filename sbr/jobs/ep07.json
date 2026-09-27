@@ -1,0 +1,68 @@
+{
+  "episode": 7,
+  "series": "NO COLD CALLS · EP. 7",
+  "hook": "One Google search can beat ten thousand views.",
+  "voice": "../voices/ep07.mp3",
+  "atempo": 1.1,
+  "out": "../out/ep07_buyer_intent.mp4",
+  "lines": [
+    "One Google search can beat ten thousand views.",
+    "Here's why.",
+    "Someone scrolling reels isn't buying anything.",
+    "Someone googling roof repair near me",
+    "probably has a leak right now.",
+    "That's called buyer intent.",
+    "They already want the service.",
+    "They just need someone to call.",
+    "That's why I build sites around searches like that.",
+    "Not around going viral.",
+    "Real talk.",
+    "Fewer people search for it.",
+    "And not every request turns into a job.",
+    "But the ones who search are ready.",
+    "I put the whole process together in Sign Build Run.",
+    "Follow. Ep. eight drops next week."
+  ],
+  "scenes": [
+    {"from": 0, "elements": [
+      {"type": "text", "at": 0, "y": 480, "size": 104, "segs": [["1 Google search", "y"]]},
+      {"type": "text", "at": 0, "dt": 0.5, "y": 600, "size": 80, "segs": [["can beat", "w"]]},
+      {"type": "bignum", "at": 0, "dt": 0.9, "y": 820, "text": "10,000", "size": 230, "color": "w"},
+      {"type": "text", "at": 0, "dt": 1.2, "y": 1020, "size": 90, "segs": [["views.", "w"]]},
+      {"type": "chip", "at": 1, "y": 1250, "text": "here's why", "fill": "y", "color": "dark", "size": 48}
+    ]},
+    {"from": 2, "elements": [
+      {"type": "text", "at": 2, "y": 800, "size": 72, "segs": [["Someone scrolling reels", "w"]]},
+      {"type": "text", "at": 2, "dt": 0.7, "y": 930, "size": 100, "segs": [["isn't buying.", "r"]]}
+    ]},
+    {"from": 3, "elements": [
+      {"type": "text", "at": 3, "y": 330, "size": 66, "segs": [["Someone ", "w"], ["googling", "y"], [" this:", "w"]]},
+      {"type": "google_phone", "at": 3, "dt": 0.1, "y": 460, "query": "roof repair near me"},
+      {"type": "chip", "at": 4, "y": 1080, "text": "probably has a leak right now", "fill": "r", "color": "w", "size": 44}
+    ]},
+    {"from": 5, "elements": [
+      {"type": "text", "at": 5, "y": 520, "size": 110, "segs": [["Buyer intent.", "y"]]},
+      {"type": "checklist", "at": 6, "y": 720, "items": [
+        {"text": "Already wants the service", "at": 6},
+        {"text": "Just needs someone to call", "at": 7}]}
+    ]},
+    {"from": 8, "elements": [
+      {"type": "text", "at": 8, "y": 560, "size": 72, "segs": [["So I build sites around", "w"]]},
+      {"type": "text", "at": 8, "dt": 0.6, "y": 680, "size": 90, "segs": [["searches like that.", "y"]]},
+      {"type": "search", "at": 8, "dt": 0.3, "y": 860, "query": "roof repair near me"},
+      {"type": "text", "at": 9, "y": 1160, "size": 96, "segs": [["Not ", "w"], ["going viral.", "r"]]}
+    ]},
+    {"from": 10, "elements": [
+      {"type": "chip", "at": 10, "y": 520, "text": "REAL TALK", "fill": "r", "color": "w", "size": 48},
+      {"type": "text", "at": 11, "y": 720, "size": 84, "segs": [["Fewer people ", "w"], ["search.", "y"]]},
+      {"type": "text", "at": 12, "y": 900, "size": 76, "segs": [["Not every request", "w"]]},
+      {"type": "text", "at": 12, "dt": 0.5, "y": 1010, "size": 84, "segs": [["becomes a job.", "r"]]},
+      {"type": "text", "at": 13, "y": 1200, "size": 80, "segs": [["But searchers are ", "w"], ["ready.", "g"]]}
+    ]},
+    {"from": 14, "elements": [
+      {"type": "text", "at": 14, "y": 640, "size": 76, "segs": [["The whole process:", "w"]]},
+      {"type": "text", "at": 14, "dt": 0.8, "y": 780, "size": 110, "segs": [["Sign Build Run", "y"]]},
+      {"type": "chip", "at": 15, "y": 1060, "text": "Follow · Ep. 8 next week", "fill": "y", "color": "dark", "size": 46, "pad": 40}
+    ]}
+  ]
+}

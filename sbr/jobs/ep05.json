@@ -1,0 +1,66 @@
+{
+  "episode": 5,
+  "series": "NO COLD CALLS · EP. 5",
+  "hook": "I posted once in a contractor Facebook group. Twenty-seven contractors commented.",
+  "voice": "../voices/ep05.mp3",
+  "atempo": 1.1,
+  "out": "../out/ep05_27_contractors.mp4",
+  "lines": [
+    "I posted once in a contractor Facebook group.",
+    "Twenty-seven contractors commented.",
+    "From one post.",
+    "Here's what I think happened.",
+    "Contractors get pitched all the time.",
+    "A lot of pitches ask for money upfront.",
+    "My idea was simple.",
+    "I send you homeowners asking for quotes.",
+    "You only pay if you close the job.",
+    "That flips who's taking the risk.",
+    "Real talk.",
+    "Comments aren't customers.",
+    "A comment is just a maybe.",
+    "And one group post won't work the same everywhere.",
+    "But it showed me something.",
+    "When the offer is fair, you don't have to chase.",
+    "Follow. Ep. six: why my first lead took months."
+  ],
+  "scenes": [
+    {"from": 0, "elements": [
+      {"type": "text", "at": 0, "y": 470, "size": 100, "segs": [["I posted ", "w"], ["once", "y"]]},
+      {"type": "text", "at": 0, "dt": 0.5, "y": 590, "size": 68, "segs": [["in a contractor Facebook group.", "w"]]},
+      {"type": "bignum", "at": 1, "y": 900, "text": "27", "size": 380, "color": "y"},
+      {"type": "text", "at": 1, "dt": 0.3, "y": 1170, "size": 76, "segs": [["contractors commented.", "w"]]},
+      {"type": "chip", "at": 2, "y": 1380, "text": "from one post", "fill": "y", "color": "dark", "size": 48}
+    ]},
+    {"from": 3, "elements": [
+      {"type": "text", "at": 3, "y": 420, "size": 70, "segs": [["What I think happened:", "grey"]]},
+      {"type": "text", "at": 4, "y": 620, "size": 84, "segs": [["Contractors get ", "w"], ["pitched", "r"]]},
+      {"type": "text", "at": 4, "dt": 0.5, "y": 730, "size": 84, "segs": [["all the time.", "w"]]},
+      {"type": "text", "at": 5, "y": 960, "size": 72, "segs": [["A lot of pitches ask for", "w"]]},
+      {"type": "chip", "at": 5, "dt": 0.5, "y": 1120, "text": "money upfront", "fill": "r", "color": "w", "size": 56}
+    ]},
+    {"from": 6, "elements": [
+      {"type": "text", "at": 6, "y": 400, "size": 92, "segs": [["My idea:", "y"]]},
+      {"type": "flow", "at": 7, "y": 540, "gap": 240, "nodes": [
+        {"label": "Homeowner wants a quote", "color": "y", "at": 7},
+        {"label": "I send it to you", "color": "y", "at": 7, "dt": 0.8},
+        {"label": "Close it? Then you pay.", "color": "g", "at": 8}]},
+      {"type": "text", "at": 9, "y": 1330, "size": 70, "segs": [["Flips ", "w"], ["who takes the risk.", "g"]]}
+    ]},
+    {"from": 10, "elements": [
+      {"type": "chip", "at": 10, "y": 520, "text": "REAL TALK", "fill": "r", "color": "w", "size": 48},
+      {"type": "text", "at": 11, "y": 720, "size": 92, "segs": [["Comments aren't", "w"]]},
+      {"type": "text", "at": 11, "dt": 0.3, "y": 840, "size": 92, "segs": [["customers.", "r"]]},
+      {"type": "text", "at": 12, "y": 1030, "size": 84, "segs": [["Just a ", "w"], ["maybe.", "y"]]},
+      {"type": "text", "at": 13, "y": 1210, "size": 64, "segs": [["One post won't work", "w"]]},
+      {"type": "text", "at": 13, "dt": 0.5, "y": 1300, "size": 64, "segs": [["the same everywhere.", "w"]]}
+    ]},
+    {"from": 14, "elements": [
+      {"type": "text", "at": 14, "y": 560, "size": 72, "segs": [["But it showed me:", "grey"]]},
+      {"type": "text", "at": 15, "y": 720, "size": 104, "segs": [["Fair offer", "g"]]},
+      {"type": "text", "at": 15, "dt": 0.8, "y": 850, "size": 90, "segs": [["= no chasing.", "w"]]},
+      {"type": "chip", "at": 16, "y": 1120, "text": "Follow · Ep. 6: my first lead took months", "fill": "y", "color": "dark", "size": 40, "pad": 40},
+      {"type": "text", "at": 16, "y": 1290, "size": 42, "weight": "medium", "segs": [["Sign Build Run", "grey"]]}
+    ]}
+  ]
+}

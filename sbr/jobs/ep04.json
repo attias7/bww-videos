@@ -1,0 +1,75 @@
+{
+  "episode": 4,
+  "series": "NO COLD CALLS · EP. 4",
+  "hook": "You don't need to be good at sales to sell to contractors.",
+  "voice": "../voices/ep04.mp3",
+  "atempo": 1.1,
+  "out": "../out/ep04_no_sales_skills.mp4",
+  "lines": [
+    "You don't need to be good at sales to sell to contractors.",
+    "I'm an introvert. I hate pitching.",
+    "So I made the offer almost nothing to pitch.",
+    "Most offers sound like: pay me first, trust me.",
+    "That needs a salesman.",
+    "Mine sounds like: here's a lead.",
+    "If you close the job, pay me ten percent.",
+    "If you don't, you pay nothing.",
+    "No risk to argue with.",
+    "The website does the selling to the homeowner.",
+    "The deal does the selling to the contractor.",
+    "Real talk.",
+    "You still have to talk to people.",
+    "And some contractors will just say no.",
+    "But talking is different from selling.",
+    "Follow. Ep. five: one post, twenty-seven contractors."
+  ],
+  "scenes": [
+    {"from": 0, "elements": [
+      {"type": "text", "at": 0, "y": 560, "size": 76, "segs": [["You don't need to be", "w"]]},
+      {"type": "text", "at": 0, "dt": 0.3, "y": 680, "size": 112, "segs": [["good at sales", "y"]]},
+      {"type": "text", "at": 0, "dt": 0.9, "y": 810, "size": 72, "segs": [["to sell to contractors.", "w"]]},
+      {"type": "battery", "at": 1, "y": 1020, "label": "introvert · hates pitching"}
+    ]},
+    {"from": 2, "elements": [
+      {"type": "text", "at": 2, "y": 760, "size": 84, "segs": [["So I made the offer", "w"]]},
+      {"type": "text", "at": 2, "dt": 0.5, "y": 880, "size": 96, "segs": [["almost nothing", "y"]]},
+      {"type": "text", "at": 2, "dt": 0.8, "y": 1000, "size": 96, "segs": [["to pitch.", "w"]]}
+    ]},
+    {"from": 3, "elements": [
+      {"type": "text", "at": 3, "y": 520, "size": 72, "segs": [["Most offers:", "grey"]]},
+      {"type": "chip", "at": 3, "dt": 0.6, "y": 680, "text": "\"Pay me first. Trust me.\"", "fill": "r", "color": "w", "size": 52},
+      {"type": "text", "at": 4, "y": 900, "size": 88, "segs": [["That needs a ", "w"], ["salesman.", "r"]]},
+      {"type": "crossphone", "at": 4, "dt": 0.4, "y": 1180}
+    ]},
+    {"from": 5, "elements": [
+      {"type": "text", "at": 5, "y": 380, "size": 84, "segs": [["Mine: ", "w"], ["here's a lead.", "y"]]},
+      {"type": "cards", "at": 6, "y": 540, "items": [
+        {"head": "Job closes", "big": "10%", "sub": "he pays me", "color": "g", "at": 6, "dt": 0.2},
+        {"head": "No deal", "big": "$0", "sub": "he pays nothing", "color": "grey", "at": 7, "dt": 0.1}]}
+    ]},
+    {"from": 8, "elements": [
+      {"type": "shield", "at": 8, "y": 760},
+      {"type": "text", "at": 8, "dt": 0.2, "y": 1060, "size": 92, "segs": [["No risk ", "g"], ["to argue with.", "w"]]}
+    ]},
+    {"from": 9, "elements": [
+      {"type": "text", "at": 9, "y": 560, "size": 96, "segs": [["The website", "y"]]},
+      {"type": "text", "at": 9, "dt": 0.5, "y": 680, "size": 72, "segs": [["sells the homeowner.", "w"]]},
+      {"type": "arrow", "at": 10, "y": 780, "y2": 900},
+      {"type": "text", "at": 10, "y": 1000, "size": 96, "segs": [["The deal", "g"]]},
+      {"type": "text", "at": 10, "dt": 0.5, "y": 1120, "size": 72, "segs": [["sells the contractor.", "w"]]}
+    ]},
+    {"from": 11, "elements": [
+      {"type": "chip", "at": 11, "y": 520, "text": "REAL TALK", "fill": "r", "color": "w", "size": 48},
+      {"type": "text", "at": 12, "y": 720, "size": 88, "segs": [["You still talk", "w"]]},
+      {"type": "text", "at": 12, "dt": 0.4, "y": 840, "size": 88, "segs": [["to people.", "y"]]},
+      {"type": "text", "at": 13, "y": 1060, "size": 88, "segs": [["Some will say ", "w"], ["no.", "r"]]}
+    ]},
+    {"from": 14, "elements": [
+      {"type": "text", "at": 14, "y": 640, "size": 110, "segs": [["Talking", "g"]]},
+      {"type": "text", "at": 14, "dt": 0.4, "y": 770, "size": 76, "segs": [["is not", "w"]]},
+      {"type": "text", "at": 14, "dt": 0.8, "y": 900, "size": 110, "segs": [["selling.", "r"]]},
+      {"type": "chip", "at": 15, "y": 1140, "text": "Follow · Ep. 5: one post, 27 contractors", "fill": "y", "color": "dark", "size": 42, "pad": 40},
+      {"type": "text", "at": 15, "y": 1310, "size": 42, "weight": "medium", "segs": [["Sign Build Run", "grey"]]}
+    ]}
+  ]
+}

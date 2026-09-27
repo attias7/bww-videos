@@ -1,0 +1,76 @@
+{
+  "episode": 3,
+  "series": "NO COLD CALLS · EP. 3",
+  "hook": "If you're new to this, don't pick New York. Pick a tiny town.",
+  "voice": "../voices/ep03.mp3",
+  "atempo": 1.1,
+  "out": "../out/ep03_tiny_town.mp4",
+  "lines": [
+    "If you're new to this, don't pick New York.",
+    "Pick a tiny town you've never heard of.",
+    "Here's why.",
+    "When someone googles roof repair in New York,",
+    "you're fighting huge companies with huge budgets.",
+    "In a small town, it might be a few old websites.",
+    "A beginner can actually compete there.",
+    "And pick one service. Not roofing, plumbing and painting.",
+    "Just roof repair.",
+    "One service, one city, one simple site.",
+    "Google understands exactly what it's about.",
+    "Real talk.",
+    "Smaller doesn't mean fast.",
+    "It still takes months to rank.",
+    "But you're not starting against giants.",
+    "Follow. Ep. four is why you don't need to be good at sales."
+  ],
+  "scenes": [
+    {"from": 0, "elements": [
+      {"type": "text", "at": 0, "y": 560, "size": 84, "segs": [["New to this?", "w"]]},
+      {"type": "text", "at": 0, "dt": 0.5, "y": 690, "size": 110, "segs": [["Don't pick ", "w"], ["New York.", "r"]]},
+      {"type": "text", "at": 1, "y": 860, "size": 100, "segs": [["Pick a ", "w"], ["tiny town.", "y"]]},
+      {"type": "mappin", "at": 1, "dt": 0.2, "y": 1060}
+    ]},
+    {"from": 2, "elements": [
+      {"type": "text", "at": 2, "y": 420, "size": 96, "segs": [["Here's why.", "y"]]},
+      {"type": "search", "at": 3, "y": 640, "query": "roof repair new york"},
+      {"type": "text", "at": 4, "y": 900, "size": 76, "segs": [["You vs ", "w"], ["huge companies", "r"]]},
+      {"type": "text", "at": 4, "dt": 0.6, "y": 1010, "size": 76, "segs": [["with huge budgets.", "w"]]},
+      {"type": "chip", "at": 4, "dt": 1.1, "y": 1230, "text": "big city = big competition", "fill": "r", "color": "w", "size": 42}
+    ]},
+    {"from": 5, "elements": [
+      {"type": "text", "at": 5, "y": 380, "size": 76, "segs": [["In a ", "w"], ["small town...", "y"]]},
+      {"type": "versus", "at": 5, "dt": 0.2, "y": 520, "step": 0.7, "heads": ["New York", "Smalltown"],
+       "rows": [["huge companies", "a few old websites"], ["huge budgets", "room for a beginner"]]},
+      {"type": "text", "at": 6, "y": 1080, "size": 84, "segs": [["A beginner can ", "w"], ["compete.", "g"]]}
+    ]},
+    {"from": 7, "elements": [
+      {"type": "text", "at": 7, "y": 380, "size": 90, "segs": [["Pick ", "w"], ["one service.", "y"]]},
+      {"type": "checklist", "at": 7, "y": 560, "items": [
+        {"text": "Roofing", "ok": false, "at": 7, "dt": 1.0},
+        {"text": "Plumbing", "ok": false, "at": 7, "dt": 1.3},
+        {"text": "Painting", "ok": false, "at": 7, "dt": 1.6},
+        {"text": "Roof repair. That's it.", "ok": true, "at": 8}]}
+    ]},
+    {"from": 9, "elements": [
+      {"type": "flow", "at": 9, "y": 400, "gap": 240, "nodes": [
+        {"label": "One service", "color": "y", "at": 9},
+        {"label": "One city", "color": "y", "at": 9, "dt": 0.6},
+        {"label": "One simple site", "color": "g", "at": 9, "dt": 1.2}]},
+      {"type": "text", "at": 10, "y": 1220, "size": 76, "segs": [["Google knows ", "w"], ["exactly", "y"]]},
+      {"type": "text", "at": 10, "dt": 0.4, "y": 1320, "size": 76, "segs": [["what it's about.", "w"]]}
+    ]},
+    {"from": 11, "elements": [
+      {"type": "chip", "at": 11, "y": 520, "text": "REAL TALK", "fill": "r", "color": "w", "size": 48},
+      {"type": "text", "at": 12, "y": 720, "size": 96, "segs": [["Smaller doesn't", "w"]]},
+      {"type": "text", "at": 12, "dt": 0.3, "y": 840, "size": 96, "segs": [["mean fast.", "r"]]},
+      {"type": "text", "at": 13, "y": 1030, "size": 76, "segs": [["Still takes ", "w"], ["months", "y"], [" to rank.", "w"]]},
+      {"type": "calendar", "at": 13, "dt": 0.3, "y": 1300}
+    ]},
+    {"from": 14, "elements": [
+      {"type": "text", "at": 14, "y": 700, "size": 76, "segs": [["But you're not starting", "w"]]},
+      {"type": "text", "at": 14, "dt": 0.6, "y": 810, "size": 96, "segs": [["against giants.", "g"]]},
+      {"type": "chip", "at": 15, "y": 1100, "text": "Follow · Ep. 4: no sales skills needed", "fill": "y", "color": "dark", "size": 42, "pad": 40},
+      {"type": "text", "at": 15, "y": 1270, "size": 42, "weight": "medium", "segs": [["Sign Build Run", "grey"]]}
+    ]}
+  ]
+}
