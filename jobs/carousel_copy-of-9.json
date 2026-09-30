@@ -1,0 +1,8 @@
+{"input": "src/Copy of 9.mp4",
+ "hook": {"kicker": "Read this twice", "line1": "Your only race", "line2": "is with yourself"},
+ "caption_band": [755, 100],
+ "slides": [
+  {"text": "Focus on growing...", "t": 2.2},
+  {"text": "...not on comparing.", "t": 6.0}
+ ],
+ "out_dir": "carousels/2026-10-02_copy-of-9"}

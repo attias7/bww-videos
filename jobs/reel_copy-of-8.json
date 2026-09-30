@@ -1,0 +1,6 @@
+{"input": "src/Copy of 8.mp4", "voice": "src/Copy of 8.mp3",
+ "cuts": [0, 0.85, 3.05, 5.55, 9.45],
+ "hook": {"kicker": "The loyalty rule", "line1": "Know where", "line2": "they stand"},
+ "hook_pos": "bottom", "caption_band": [190, 110],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-09-30_copy-of-8.mp4"}

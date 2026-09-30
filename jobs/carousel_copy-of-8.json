@@ -1,0 +1,13 @@
+{"input": "src/Copy of 8.mp4",
+ "hook": {"kicker": "The loyalty rule", "line1": "Know where", "line2": "they stand"},
+ "caption_band": [195, 105],
+ "slides": [
+  {"text": "Rule number 10.", "t": 0.95},
+  {"text": "If they stand behind you...", "t": 1.9},
+  {"text": "...protect them.", "t": 2.5},
+  {"text": "If they stand beside you...", "t": 3.8},
+  {"text": "...respect them.", "t": 5.1},
+  {"text": "And if they stand against you...", "t": 6.6},
+  {"text": "...show them no mercy.", "t": 8.1}
+ ],
+ "out_dir": "carousels/2026-10-01_copy-of-8"}

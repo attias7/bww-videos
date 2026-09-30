@@ -1,0 +1,6 @@
+{"input": "src/Copy of 9.mp4", "voice": "src/Copy of 9.mp3",
+ "cuts": [0, 3.55, 7.05],
+ "hook": {"kicker": "Read this twice", "line1": "Your only race", "line2": "is with yourself"},
+ "hook_pos": "top", "caption_band": [750, 110],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-01_copy-of-9.mp4"}
