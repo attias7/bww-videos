@@ -1,0 +1,13 @@
+{"input": "src/Copy of 10.mp4",
+ "hook": {"kicker": "The polymath mindset", "line1": "Become nobody", "line2": "then everything"},
+ "caption_band": [960, 95],
+ "slides": [
+  {"text": "Become a nobody.", "t": 0.6},
+  {"text": "Become everything.", "t": 2.0},
+  {"text": "Become a designer, writer, marketer, socializer...", "t": 5.7},
+  {"text": "...runner, bodybuilder, philosopher, scientist, psychologist...", "t": 8.7},
+  {"text": "...and polymath.", "t": 9.7},
+  {"text": "Who knows how to sustain their obsessive curiosity.", "t": 10.0},
+  {"text": "The universe rewards those who don't impose their own limits.", "t": 15.0}
+ ],
+ "out_dir": "carousels/2026-10-03_copy-of-10"}

@@ -1,0 +1,6 @@
+{"input": "src/Copy of 11.mp4", "voice": "src/Copy of 11.mp3",
+ "cuts": [0, 3.1, 5.35, 7.85, 9.19],
+ "hook": {"kicker": "Read this on a hard day", "line1": "What's for you", "line2": "will come to you"},
+ "hook_pos": "bottom", "caption_band": [240, 130],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-03_copy-of-11.mp4"}

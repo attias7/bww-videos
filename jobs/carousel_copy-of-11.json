@@ -1,0 +1,12 @@
+{"input": "src/Copy of 11.mp4",
+ "hook": {"kicker": "Read this on a hard day", "line1": "What's for you", "line2": "will come to you"},
+ "caption_band": [295, 70],
+ "slides": [
+  {"text": "What is supposed to be for you...", "t": 1.0},
+  {"text": "...will come to you.", "t": 2.5},
+  {"text": "And if it wasn't meant to come to you...", "t": 4.0},
+  {"text": "...it won't.", "t": 5.1},
+  {"text": "You are good enough.", "t": 6.5},
+  {"text": "Full stop.", "t": 8.5}
+ ],
+ "out_dir": "carousels/2026-10-04_copy-of-11"}
