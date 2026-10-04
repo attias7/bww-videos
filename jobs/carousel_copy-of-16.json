@@ -1,0 +1,31 @@
+{
+ "input": "src/Copy of 16.mp4",
+ "hook": {
+  "kicker": "The truth about friendship",
+  "line1": "Quality over",
+  "line2": "quantity"
+ },
+ "caption_band": [
+  285,
+  60
+ ],
+ "slides": [
+  {
+   "text": "You don't need a lot of friends.",
+   "t": 1.0
+  },
+  {
+   "text": "You just need one true friend...",
+   "t": 2.8
+  },
+  {
+   "text": "...who's always there for you...",
+   "t": 4.0
+  },
+  {
+   "text": "...in good and in hard times.",
+   "t": 5.5
+  }
+ ],
+ "out_dir": "carousels/2026-10-07_copy-of-16"
+}

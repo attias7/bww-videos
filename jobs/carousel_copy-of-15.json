@@ -1,0 +1,63 @@
+{
+ "input": "src/Copy of 15.mp4",
+ "hook": {
+  "kicker": "Read this on a hard day",
+  "line1": "Choose hard,",
+  "line2": "live easy"
+ },
+ "caption_band": [
+  915,
+  60
+ ],
+ "slides": [
+  {
+   "text": "Easy choices lead to a hard life.",
+   "t": 2.5,
+   "band": [
+    915,
+    60
+   ]
+  },
+  {
+   "text": "Hard choices lead to an easy life.",
+   "t": 5.5,
+   "band": [
+    245,
+    45
+   ]
+  },
+  {
+   "text": "Hard actions. Hard decisions. Hard conversations.",
+   "t": 10.0,
+   "band": [
+    850,
+    50
+   ]
+  },
+  {
+   "text": "Your dream life is on the other side of discomfort.",
+   "t": 11.5,
+   "band": [
+    800,
+    60
+   ]
+  },
+  {
+   "text": "Eventually you realize...",
+   "t": 15.5,
+   "band": [
+    600,
+    75
+   ]
+  },
+  {
+   "text": "...the hard route is the only route worth taking.",
+   "t": 20.0,
+   "band": [
+    265,
+    60
+   ]
+  }
+ ],
+ "out_dir": "carousels/2026-10-06_copy-of-15"
+}

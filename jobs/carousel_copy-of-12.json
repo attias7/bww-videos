@@ -1,0 +1,53 @@
+{
+ "input": "src/Copy of 12.mp4",
+ "hook": {
+  "kicker": "The truth about self-worth",
+  "line1": "It all starts",
+  "line2": "inside you"
+ },
+ "caption_band": [
+  270,
+  80
+ ],
+ "slides": [
+  {
+   "text": "All of life is an inside job.",
+   "t": 1.5
+  },
+  {
+   "text": "We must set the foundation of the intentions of our heart.",
+   "t": 5.5
+  },
+  {
+   "text": "I will never be forgiven if I can't forgive myself.",
+   "t": 10.0
+  },
+  {
+   "text": "I will never be loved if I can't love myself.",
+   "t": 14.5
+  },
+  {
+   "text": "I will never be whole if I'm not whole in my soul.",
+   "t": 19.0
+  },
+  {
+   "text": "I will never be rich if I'm not rich within myself.",
+   "t": 24.4
+  },
+  {
+   "text": "I will never be beautiful unless I see the beauty within.",
+   "t": 29.0
+  },
+  {
+   "text": "And I will never know God unless I see the God within me.",
+   "t": 34.5
+  }
+ ],
+ "out_dir": "carousels/2026-10-05_copy-of-12",
+ "masks": [
+  [
+   965,
+   50
+  ]
+ ]
+}

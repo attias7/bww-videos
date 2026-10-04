@@ -8,6 +8,8 @@ carousel.json:
   slides       : [{"text": "one idea per slide", "t": seconds-in-source-video-for-the-visual}, ...]
   caption_band : [y, h] of the source's caption text in 720x1280 coords, masked out of the visual
                  (bottom captions ~[860,110]; top captions ~[250,110])
+  masks        : optional [[y, h], ...] extra 720x1280 areas blacked out (e.g. watermark ~[975,40])
+  slides[i].band : optional per-slide caption band (for videos whose captions move around)
   handle       : "@black_white_wisdom1"
   out_dir      : folder for slide_01.jpg ... slide_NN.jpg
 """
@@ -49,12 +51,14 @@ def chrome(img, i):
     d.rectangle([60, H - 40, 60 + (W - 120) * i / N, H - 37], fill=(255, 255, 255, 255))
     d.rectangle([60 + (W - 120) * i / N, H - 40, W - 60, H - 37], fill=(60, 60, 60, 255))
 
-def frame_at(t):
+def frame_at(t, band=band):
     p = os.path.join(out, f'_f{t:.2f}.png')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(t), '-i', job['input'], '-frames:v', '1',
                     '-vf', 'scale=720:1280:force_original_aspect_ratio=decrease,pad=720:1280:(ow-iw)/2:(oh-ih)/2', p], check=True)
     im = Image.open(p).convert('RGB'); os.remove(p)
     ImageDraw.Draw(im).rectangle([0, band[0] - 20, 720, band[0] + band[1] + 20], fill=(0, 0, 0))  # hide old caption
+    for my, mh in job.get('masks', []):  # extra areas to black out (e.g. a source watermark)
+        ImageDraw.Draw(im).rectangle([0, my, 720, my + mh], fill=(0, 0, 0))
     # visual region = the part of the frame away from the caption band
     if band[0] < 640: ry0, ry1 = band[0] + band[1] + 30, 1200
     else: ry0, ry1 = 80, band[0] - 30
@@ -83,7 +87,7 @@ chrome(img, 1); img.convert('RGB').save(os.path.join(out, 'slide_01.jpg'), quali
 # ---- content slides ----
 for k, s in enumerate(slides):
     img = base(); d = ImageDraw.Draw(img)
-    vis = frame_at(s['t'])
+    vis = frame_at(s['t'], s.get('band', band))
     maxw, maxh = 760, 620
     sc = min(maxw / vis.width, maxh / vis.height, 1.4)
     vis = vis.resize((int(vis.width * sc), int(vis.height * sc)), Image.LANCZOS)
