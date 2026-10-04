@@ -1,0 +1,6 @@
+{"input": "src/Copy of 16.mp4", "voice": "src/Copy of 16.mp3",
+ "cuts": [0, 1.7, 3.35, 4.7, 6.45],
+ "hook": {"kicker": "The truth about friendship", "line1": "Quality over", "line2": "quantity"},
+ "hook_pos": "bottom", "caption_band": [240, 130],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-06_copy-of-16.mp4"}

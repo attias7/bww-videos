@@ -12,6 +12,7 @@ job.json fields:
   speed      : voice tempo (default 1.15)
   spans      : optional [[start,end],...] speech spans in the SPED-UP voice; auto-detected if omitted
   max_mb     : output size cap (default 9.5, for Buffer web upload)
+  hook_y0    : optional vertical offset of the hook block (default 0 top, 830 bottom; 870 clears a source watermark ~y990)
   hook_pos   : "top" (default, captions at bottom) or "bottom" (use when the video's captions are at the top)
   caption_band: [y, h] in 720x1280 output pixels for the sync sheet (default [820,170]; top captions ~[240,130])
 Writes <out>, <out>.sync.jpg (caption at each sentence start, for checking) and prints a summary.
@@ -53,7 +54,7 @@ def glow(draw_fn, r):
     base = Image.new('RGBA', (W, H), (0, 0, 0, 0)); draw_fn(ImageDraw.Draw(base))
     return Image.alpha_composite(base.filter(ImageFilter.GaussianBlur(r)), base)
 hk = job['hook']
-Y0 = 0 if job.get('hook_pos', 'top') == 'top' else 830
+Y0 = job.get('hook_y0', 0 if job.get('hook_pos', 'top') == 'top' else 830)
 def dh(d):
     ctext(d, Y0 + 140, hk['kicker'].upper(), ImageFont.truetype(FR, 26), (200, 200, 200, 255))
     f = ImageFont.truetype(FB, 50)

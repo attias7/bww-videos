@@ -1,0 +1,56 @@
+{
+ "input": "src/Copy of 15.mp4",
+ "voice": "src/Copy of 15.mp3",
+ "cuts": [
+  0,
+  3.35,
+  6.4,
+  7.4,
+  8.75,
+  10.8,
+  14.85,
+  20.96
+ ],
+ "hook": {
+  "kicker": "Read this on a hard day",
+  "line1": "Choose hard,",
+  "line2": "live easy"
+ },
+ "hook_pos": "top",
+ "caption_band": [
+  300,
+  720
+ ],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-05_copy-of-15.mp4",
+ "spans": [
+  [
+   0.0,
+   2.2
+  ],
+  [
+   3.45,
+   5.48
+  ],
+  [
+   6.8,
+   7.64
+  ],
+  [
+   8.32,
+   9.26
+  ],
+  [
+   9.7,
+   10.97
+  ],
+  [
+   12.23,
+   14.38
+  ],
+  [
+   15.59,
+   20.1
+  ]
+ ]
+}

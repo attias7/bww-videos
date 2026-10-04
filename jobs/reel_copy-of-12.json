@@ -1,0 +1,62 @@
+{
+ "input": "src/Copy of 12.mp4",
+ "voice": "src/Copy of 12.mp3",
+ "cuts": [
+  0,
+  2.85,
+  6.9,
+  11.4,
+  16.25,
+  21.15,
+  26.15,
+  31.15,
+  36.89
+ ],
+ "hook": {
+  "kicker": "The truth about self-worth",
+  "line1": "It all starts",
+  "line2": "inside you"
+ },
+ "hook_pos": "bottom",
+ "caption_band": [
+  240,
+  130
+ ],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-04_copy-of-12.mp4",
+ "spans": [
+  [
+   0.0,
+   1.85
+  ],
+  [
+   2.87,
+   5.44
+  ],
+  [
+   6.84,
+   10.0
+  ],
+  [
+   11.05,
+   13.75
+  ],
+  [
+   13.95,
+   17.09
+  ],
+  [
+   18.11,
+   21.31
+  ],
+  [
+   22.42,
+   25.89
+  ],
+  [
+   27.22,
+   31.2
+  ]
+ ],
+ "hook_y0": 870
+}
