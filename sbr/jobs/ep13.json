@@ -136,7 +136,8 @@
        "Another Directory",
        "Compare quotes"
       ]
-     ]
+     ],
+     "query": "tree removal Smalltown"
     },
     {
      "type": "chip",
@@ -158,17 +159,17 @@
      "y": 520,
      "step": 0.6,
      "heads": [
-      "Good sign",
-      "Pick another town"
+      "Pick another town",
+      "Good sign"
      ],
      "rows": [
       [
-       "directories",
-       "strong local companies"
+       "strong local companies",
+       "directories"
       ],
       [
-       "old, slow sites",
-       "great sites"
+       "great sites",
+       "old, slow sites"
       ]
      ]
     },
