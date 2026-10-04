@@ -1,0 +1,376 @@
+{
+ "episode": 13,
+ "series": "NO COLD CALLS · EP. 13",
+ "hook": "Before you build a site, do this one Google search.",
+ "voice": "../voices/ep13.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep13_check_a_town.mp4",
+ "lines": [
+  "Before you build a site, do this one Google search.",
+  "Type the service and the town.",
+  "Like tree removal Smalltown.",
+  "Then look at page one.",
+  "If it's all big directories and old, slow sites,",
+  "that's a good sign.",
+  "If it's ten strong local companies with great sites,",
+  "pick another town.",
+  "Then check Google Maps.",
+  "Are there real tree companies nearby?",
+  "You need someone to send the lead to.",
+  "Real talk.",
+  "This isn't a promise you'll rank.",
+  "It just stops you from picking a fight you can't win.",
+  "Follow. Ep. fourteen: three mistakes I'd avoid."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 80,
+     "segs": [
+      [
+       "Before you build a site,",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 650,
+     "size": 100,
+     "segs": [
+      [
+       "do this search.",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "search",
+     "at": 1,
+     "y": 900,
+     "query": "tree removal Smalltown"
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1150,
+     "size": 60,
+     "segs": [
+      [
+       "service + town",
+       "grey"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 330,
+     "size": 66,
+     "segs": [
+      [
+       "Then look at ",
+       "w"
+      ],
+      [
+       "page one.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "google_phone",
+     "at": 2,
+     "dt": 0.1,
+     "y": 460,
+     "query": "tree removal Smalltown"
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 330,
+     "size": 62,
+     "segs": [
+      [
+       "Big directories, old slow sites?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "results",
+     "at": 4,
+     "dt": 0.1,
+     "y": 470,
+     "items": [
+      [
+       "example.com",
+       "Big Directory Site",
+       "Top 10 tree services"
+      ],
+      [
+       "example.com",
+       "Old Local Page",
+       "Last updated years ago"
+      ],
+      [
+       "example.com",
+       "Another Directory",
+       "Compare quotes"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 5,
+     "y": 1450,
+     "text": "good sign",
+     "fill": "g",
+     "color": "dark",
+     "size": 52
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "versus",
+     "at": 6,
+     "y": 520,
+     "step": 0.6,
+     "heads": [
+      "Good sign",
+      "Pick another town"
+     ],
+     "rows": [
+      [
+       "directories",
+       "strong local companies"
+      ],
+      [
+       "old, slow sites",
+       "great sites"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1250,
+     "size": 90,
+     "segs": [
+      [
+       "Pick another ",
+       "w"
+      ],
+      [
+       "town.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 330,
+     "size": 72,
+     "segs": [
+      [
+       "Then check ",
+       "w"
+      ],
+      [
+       "Google Maps.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "mappin",
+     "at": 8,
+     "dt": 0.3,
+     "y": 560
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1150,
+     "size": 72,
+     "segs": [
+      [
+       "Real tree companies",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 72,
+     "segs": [
+      [
+       "nearby?",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1450,
+     "size": 60,
+     "segs": [
+      [
+       "Someone to send the lead to.",
+       "grey"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 720,
+     "size": 76,
+     "segs": [
+      [
+       "Not a promise",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 820,
+     "size": 84,
+     "segs": [
+      [
+       "you'll rank.",
+       "r"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1040,
+     "size": 72,
+     "segs": [
+      [
+       "It stops a fight",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1140,
+     "size": 84,
+     "segs": [
+      [
+       "you can't win.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 640,
+     "size": 76,
+     "segs": [
+      [
+       "Next:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 760,
+     "size": 96,
+     "segs": [
+      [
+       "3 mistakes I'd avoid",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1060,
+     "text": "Follow · Ep. 14 next",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1230,
+     "size": 42,
+     "segs": [
+      [
+       "Sign Build Run",
+       "grey"
+      ]
+     ],
+     "dt": 0.6,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

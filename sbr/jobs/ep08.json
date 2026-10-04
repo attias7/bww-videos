@@ -1,0 +1,429 @@
+{
+ "episode": 8,
+ "series": "NO COLD CALLS · EP. 8",
+ "hook": "You don't have to be a roofer to get roofers leads.",
+ "voice": "../voices/ep08.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep08_not_a_roofer.mp4",
+ "lines": [
+  "You don't have to be a roofer to get roofers leads.",
+  "Sounds weird, I know.",
+  "But Google doesn't check who owns a website.",
+  "It checks if the page answers the search.",
+  "Someone types roof repair Smalltown.",
+  "Google wants the page that's clearly about roof repair, in Smalltown.",
+  "Fast, clear, with a way to ask for a quote.",
+  "Some local contractors don't have one.",
+  "So I build that page.",
+  "Then the request goes to a real local roofer.",
+  "He does the work. I never touch a roof.",
+  "Real talk.",
+  "Ranking still takes months.",
+  "And you're up against everyone else on page one.",
+  "Follow. Ep. nine is how I pick a niche."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 92,
+     "segs": [
+      [
+       "You don't have to be",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 650,
+     "size": 110,
+     "segs": [
+      [
+       "a roofer",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 800,
+     "size": 84,
+     "segs": [
+      [
+       "to get roofers ",
+       "w"
+      ],
+      [
+       "leads.",
+       "g"
+      ]
+     ],
+     "dt": 1.3
+    },
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 1150,
+     "text": "sounds weird, I know",
+     "fill": "grey",
+     "color": "dark",
+     "size": 46
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 560,
+     "size": 84,
+     "segs": [
+      [
+       "Google doesn't check",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 680,
+     "size": 96,
+     "segs": [
+      [
+       "who owns",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 800,
+     "size": 84,
+     "segs": [
+      [
+       "a website.",
+       "w"
+      ]
+     ],
+     "dt": 0.9
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1080,
+     "size": 76,
+     "segs": [
+      [
+       "It checks if the page",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1190,
+     "size": 92,
+     "segs": [
+      [
+       "answers the search.",
+       "g"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 330,
+     "size": 66,
+     "segs": [
+      [
+       "Someone ",
+       "w"
+      ],
+      [
+       "googles:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "google_phone",
+     "at": 4,
+     "dt": 0.1,
+     "y": 460,
+     "query": "roof repair Smalltown"
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 330,
+     "size": 66,
+     "segs": [
+      [
+       "Google wants the page",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "size": 66,
+     "segs": [
+      [
+       "clearly about ",
+       "w"
+      ],
+      [
+       "that.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "browser",
+     "at": 5,
+     "dt": 0.5,
+     "y": 520,
+     "url": "smalltown-roofing.example.com",
+     "title": "Roof Repair in Smalltown",
+     "button": "Get a free quote"
+    },
+    {
+     "type": "chip",
+     "at": 6,
+     "y": 1450,
+     "text": "fast · clear · quote button",
+     "fill": "g",
+     "color": "dark",
+     "size": 44
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 640,
+     "size": 80,
+     "segs": [
+      [
+       "Some local contractors",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 760,
+     "size": 96,
+     "segs": [
+      [
+       "don't have one.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1040,
+     "size": 100,
+     "segs": [
+      [
+       "So I build ",
+       "w"
+      ],
+      [
+       "that page.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 9,
+     "y": 420,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "Quote request",
+       "color": "y",
+       "at": 9
+      },
+      {
+       "label": "Real local roofer",
+       "color": "y",
+       "at": 9,
+       "dt": 0.7
+      },
+      {
+       "label": "He does the work",
+       "color": "g",
+       "at": 10
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1240,
+     "size": 84,
+     "segs": [
+      [
+       "I never touch a ",
+       "w"
+      ],
+      [
+       "roof.",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 720,
+     "size": 84,
+     "segs": [
+      [
+       "Ranking takes ",
+       "w"
+      ],
+      [
+       "months.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "calendar",
+     "at": 12,
+     "dt": 0.3,
+     "y": 900
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1300,
+     "size": 72,
+     "segs": [
+      [
+       "Page one is ",
+       "w"
+      ],
+      [
+       "competitive.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 680,
+     "size": 84,
+     "segs": [
+      [
+       "Next:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 800,
+     "size": 100,
+     "segs": [
+      [
+       "picking a niche",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1060,
+     "text": "Follow · Ep. 9 · how I pick a niche",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1230,
+     "size": 42,
+     "segs": [
+      [
+       "Sign Build Run",
+       "grey"
+      ]
+     ],
+     "dt": 0.6,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

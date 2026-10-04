@@ -1,0 +1,409 @@
+{
+ "episode": 9,
+ "series": "NO COLD CALLS · EP. 9",
+ "hook": "The best rank and rent niche is a boring one.",
+ "voice": "../voices/ep09.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep09_boring_niche.mp4",
+ "lines": [
+  "The best rank and rent niche is a boring one.",
+  "Not weddings. Not yoga.",
+  "Think tree removal. Roof repair. Water heaters.",
+  "Here's what I look for.",
+  "One. People search for it when something breaks.",
+  "Urgent means they actually call.",
+  "Two. The job is worth a lot to the contractor.",
+  "So ten percent of one job actually means something.",
+  "Three. There are real contractors in that town.",
+  "No contractor, no one to send the lead to.",
+  "Real talk.",
+  "A good niche doesn't mean fast results.",
+  "You still have to rank. That takes months.",
+  "But a bad niche can waste all those months.",
+  "Follow. Ep. ten: why your website doesn't need to be pretty."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 84,
+     "segs": [
+      [
+       "The best niche",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 700,
+     "size": 120,
+     "segs": [
+      [
+       "is boring.",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 1000,
+     "text": "not weddings",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 1110,
+     "text": "not yoga",
+     "fill": "r",
+     "color": "w",
+     "size": 48,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 560,
+     "items": [
+      {
+       "text": "Tree removal",
+       "at": 2
+      },
+      {
+       "text": "Roof repair",
+       "at": 2,
+       "dt": 0.7
+      },
+      {
+       "text": "Water heaters",
+       "at": 2,
+       "dt": 1.4
+      }
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 1300,
+     "text": "here's what I look for",
+     "fill": "y",
+     "color": "dark",
+     "size": 46
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 480,
+     "text": "1",
+     "size": 260,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 740,
+     "size": 76,
+     "segs": [
+      [
+       "Searched when",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 850,
+     "size": 96,
+     "segs": [
+      [
+       "something breaks.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1120,
+     "size": 84,
+     "segs": [
+      [
+       "Urgent = ",
+       "w"
+      ],
+      [
+       "they call.",
+       "g"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 6,
+     "y": 480,
+     "text": "2",
+     "size": 260,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 740,
+     "size": 76,
+     "segs": [
+      [
+       "The job is worth",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 850,
+     "size": 96,
+     "segs": [
+      [
+       "a lot to him.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1100,
+     "size": 72,
+     "segs": [
+      [
+       "10% of one job",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1200,
+     "size": 80,
+     "segs": [
+      [
+       "means something.",
+       "g"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 8,
+     "y": 480,
+     "text": "3",
+     "size": 260,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 740,
+     "size": 76,
+     "segs": [
+      [
+       "Real contractors",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "size": 96,
+     "segs": [
+      [
+       "in that town.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "mappin",
+     "at": 8,
+     "dt": 0.8,
+     "y": 1000
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1500,
+     "size": 60,
+     "segs": [
+      [
+       "No contractor = no one to send it to.",
+       "grey"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 720,
+     "size": 76,
+     "segs": [
+      [
+       "Good niche ≠ ",
+       "w"
+      ],
+      [
+       "fast.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 900,
+     "size": 84,
+     "segs": [
+      [
+       "Ranking takes ",
+       "w"
+      ],
+      [
+       "months.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1100,
+     "size": 72,
+     "segs": [
+      [
+       "A bad niche wastes",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1200,
+     "size": 84,
+     "segs": [
+      [
+       "all those months.",
+       "r"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 640,
+     "size": 76,
+     "segs": [
+      [
+       "Next: your site",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 760,
+     "size": 96,
+     "segs": [
+      [
+       "doesn't need to be pretty",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1060,
+     "text": "Follow · Ep. 10 next",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1230,
+     "size": 42,
+     "segs": [
+      [
+       "Sign Build Run",
+       "grey"
+      ]
+     ],
+     "dt": 0.6,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

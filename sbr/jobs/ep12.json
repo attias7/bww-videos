@@ -1,0 +1,370 @@
+{
+ "episode": 12,
+ "series": "NO COLD CALLS · EP. 12",
+ "hook": "Rank and rent or an SEO agency?",
+ "voice": "../voices/ep12.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep12_vs_seo_agency.mp4",
+ "lines": [
+  "Rank and rent or an SEO agency?",
+  "For an introvert, it's not close.",
+  "An agency sells SEO to business owners.",
+  "That means pitching. Proposals. Monthly retainers.",
+  "And explaining every month why you're worth it.",
+  "Rank and rent flips the order.",
+  "You build and rank your own site first.",
+  "Then you send the leads to a contractor.",
+  "He pays ten percent, only on jobs he closes.",
+  "No pitch deck. The leads are the pitch.",
+  "Real talk.",
+  "You take the risk upfront.",
+  "Months of work before any lead shows up.",
+  "And plenty of leads never close.",
+  "Follow. Ep. thirteen: how I check a town before building anything."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 96,
+     "segs": [
+      [
+       "Rank & rent",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 680,
+     "size": 72,
+     "segs": [
+      [
+       "or",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 800,
+     "size": 96,
+     "segs": [
+      [
+       "SEO agency?",
+       "w"
+      ]
+     ],
+     "dt": 0.9
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1080,
+     "size": 72,
+     "segs": [
+      [
+       "For an introvert:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1180,
+     "size": 96,
+     "segs": [
+      [
+       "not close.",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 400,
+     "size": 66,
+     "segs": [
+      [
+       "An agency sells SEO.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "at": 3,
+     "y": 560,
+     "items": [
+      {
+       "text": "Pitching",
+       "at": 3
+      },
+      {
+       "text": "Proposals",
+       "at": 3,
+       "dt": 0.5
+      },
+      {
+       "text": "Monthly retainers",
+       "at": 3,
+       "dt": 1.0
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1380,
+     "size": 66,
+     "segs": [
+      [
+       "Proving you're worth it",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1470,
+     "size": 72,
+     "segs": [
+      [
+       "every month.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 400,
+     "size": 96,
+     "segs": [
+      [
+       "Rank & rent ",
+       "y"
+      ],
+      [
+       "flips it.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "flow",
+     "at": 6,
+     "y": 560,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "Build + rank your site",
+       "color": "y",
+       "at": 6
+      },
+      {
+       "label": "Leads to a contractor",
+       "color": "y",
+       "at": 7
+      },
+      {
+       "label": "10% only on closed jobs",
+       "color": "g",
+       "at": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 620,
+     "size": 90,
+     "segs": [
+      [
+       "No pitch deck.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 780,
+     "size": 110,
+     "segs": [
+      [
+       "The leads",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 910,
+     "size": 110,
+     "segs": [
+      [
+       "are the pitch.",
+       "g"
+      ]
+     ],
+     "dt": 1.1
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 720,
+     "size": 84,
+     "segs": [
+      [
+       "You take the ",
+       "w"
+      ],
+      [
+       "risk.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 900,
+     "size": 72,
+     "segs": [
+      [
+       "Months of work",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1000,
+     "size": 72,
+     "segs": [
+      [
+       "before any lead.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1200,
+     "size": 72,
+     "segs": [
+      [
+       "Plenty never ",
+       "w"
+      ],
+      [
+       "close.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 640,
+     "size": 72,
+     "segs": [
+      [
+       "Next: checking a town",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 750,
+     "size": 90,
+     "segs": [
+      [
+       "before building",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1060,
+     "text": "Follow · Ep. 13 next",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1230,
+     "size": 42,
+     "segs": [
+      [
+       "Sign Build Run",
+       "grey"
+      ]
+     ],
+     "dt": 0.6,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,347 @@
+{
+ "episode": 11,
+ "series": "NO COLD CALLS · EP. 11",
+ "hook": "I'm twenty-two. And I'm an introvert.",
+ "voice": "../voices/ep11.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep11_22_introvert.mp4",
+ "lines": [
+  "I'm twenty-two. And I'm an introvert.",
+  "So I built my business around that.",
+  "Most business advice I saw said the same thing.",
+  "Cold call. DM strangers. Get on sales calls.",
+  "That's the exact stuff I wanted to avoid.",
+  "So I flipped it.",
+  "Instead of chasing customers,",
+  "I build a small site that homeowners find on Google.",
+  "They ask for a quote.",
+  "I pass it to a local contractor.",
+  "He pays ten percent, only if he closes the job.",
+  "Real talk.",
+  "I still talk to contractors. It's not zero people.",
+  "And it's slow. Ranking takes months.",
+  "But it's work I can actually keep doing.",
+  "Follow. Ep. twelve: rank and rent versus an SEO agency."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 0,
+     "y": 520,
+     "text": "22",
+     "size": 300,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 800,
+     "size": 100,
+     "segs": [
+      [
+       "introvert.",
+       "w"
+      ]
+     ],
+     "dt": 1.0
+    },
+    {
+     "type": "battery",
+     "at": 0,
+     "dt": 1.3,
+     "y": 1060,
+     "label": "introvert · hates pitching"
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1400,
+     "size": 72,
+     "segs": [
+      [
+       "So I built around ",
+       "w"
+      ],
+      [
+       "that.",
+       "g"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 400,
+     "size": 66,
+     "segs": [
+      [
+       "Most advice said:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "at": 3,
+     "y": 560,
+     "strike_at": 4,
+     "strike_dt": 0.3,
+     "items": [
+      {
+       "text": "Cold call",
+       "at": 3
+      },
+      {
+       "text": "DM strangers",
+       "at": 3,
+       "dt": 0.6
+      },
+      {
+       "text": "Sales calls",
+       "at": 3,
+       "dt": 1.2
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1400,
+     "size": 72,
+     "segs": [
+      [
+       "Exactly what I ",
+       "w"
+      ],
+      [
+       "avoided.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 520,
+     "size": 110,
+     "segs": [
+      [
+       "So I flipped it.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 760,
+     "size": 76,
+     "segs": [
+      [
+       "No chasing ",
+       "w"
+      ],
+      [
+       "customers.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 960,
+     "size": 72,
+     "segs": [
+      [
+       "A small site",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1060,
+     "size": 84,
+     "segs": [
+      [
+       "homeowners find",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1160,
+     "size": 72,
+     "segs": [
+      [
+       "on Google.",
+       "w"
+      ]
+     ],
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 420,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "They ask for a quote",
+       "color": "y",
+       "at": 8
+      },
+      {
+       "label": "Local contractor",
+       "color": "y",
+       "at": 9
+      },
+      {
+       "label": "10% only if he closes",
+       "color": "g",
+       "at": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 720,
+     "size": 76,
+     "segs": [
+      [
+       "I still talk to",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 820,
+     "size": 84,
+     "segs": [
+      [
+       "contractors.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1040,
+     "size": 76,
+     "segs": [
+      [
+       "And it's ",
+       "w"
+      ],
+      [
+       "slow.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "calendar",
+     "at": 13,
+     "dt": 0.5,
+     "y": 1220
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 640,
+     "size": 76,
+     "segs": [
+      [
+       "But it's work I can",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 760,
+     "size": 100,
+     "segs": [
+      [
+       "keep doing.",
+       "g"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "y": 1060,
+     "text": "Follow · Ep. 12 · vs SEO agency",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1230,
+     "size": 42,
+     "segs": [
+      [
+       "Sign Build Run",
+       "grey"
+      ]
+     ],
+     "dt": 0.6,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

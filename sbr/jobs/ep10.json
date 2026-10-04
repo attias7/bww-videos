@@ -1,0 +1,338 @@
+{
+ "episode": 10,
+ "series": "NO COLD CALLS · EP. 10",
+ "hook": "Your website doesn't need to be pretty.",
+ "voice": "../voices/ep10.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep10_not_pretty.mp4",
+ "lines": [
+  "Your website doesn't need to be pretty.",
+  "It needs to be clear.",
+  "Someone with a leaking roof isn't admiring your fonts.",
+  "They want three things.",
+  "Is this the right service?",
+  "Is it in my town?",
+  "How do I ask for a quote?",
+  "So the page says roof repair in Smalltown, right at the top.",
+  "A short form. A phone button.",
+  "Clear beats fancy.",
+  "Real talk.",
+  "Clear doesn't mean it ranks tomorrow.",
+  "Google still takes months to trust a new site.",
+  "But a fancy design won't fix a confusing page.",
+  "Follow. Ep. eleven is more personal."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 84,
+     "segs": [
+      [
+       "Your website doesn't",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 690,
+     "size": 110,
+     "segs": [
+      [
+       "need to be pretty.",
+       "r"
+      ]
+     ],
+     "dt": 0.7
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1000,
+     "size": 110,
+     "segs": [
+      [
+       "It needs to be ",
+       "w"
+      ],
+      [
+       "clear.",
+       "g"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 620,
+     "size": 72,
+     "segs": [
+      [
+       "Leaking roof?",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 740,
+     "size": 80,
+     "segs": [
+      [
+       "Nobody's admiring",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 850,
+     "size": 96,
+     "segs": [
+      [
+       "your fonts.",
+       "r"
+      ]
+     ],
+     "dt": 1.1
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 1150,
+     "text": "they want 3 things",
+     "fill": "y",
+     "color": "dark",
+     "size": 48
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 4,
+     "y": 580,
+     "items": [
+      {
+       "text": "Right service?",
+       "at": 4
+      },
+      {
+       "text": "In my town?",
+       "at": 5
+      },
+      {
+       "text": "How do I get a quote?",
+       "at": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 330,
+     "size": 66,
+     "segs": [
+      [
+       "Right at the top:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "browser",
+     "at": 7,
+     "dt": 0.2,
+     "y": 460,
+     "url": "smalltown-roofing.example.com",
+     "title": "Roof Repair in Smalltown",
+     "button": "Get a free quote"
+    },
+    {
+     "type": "chip",
+     "at": 8,
+     "y": 1420,
+     "text": "short form · phone button",
+     "fill": "g",
+     "color": "dark",
+     "size": 44
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1560,
+     "size": 72,
+     "segs": [
+      [
+       "Clear beats ",
+       "w"
+      ],
+      [
+       "fancy.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 720,
+     "size": 72,
+     "segs": [
+      [
+       "Clear ≠ ranks ",
+       "w"
+      ],
+      [
+       "tomorrow.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 880,
+     "size": 76,
+     "segs": [
+      [
+       "Google takes ",
+       "w"
+      ],
+      [
+       "months",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 980,
+     "size": 76,
+     "segs": [
+      [
+       "to trust a new site.",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1180,
+     "size": 70,
+     "segs": [
+      [
+       "Fancy design won't fix",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1280,
+     "size": 84,
+     "segs": [
+      [
+       "a confusing page.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Next one's",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 820,
+     "size": 100,
+     "segs": [
+      [
+       "more personal.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1060,
+     "text": "Follow · Ep. 11 next",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1230,
+     "size": 42,
+     "segs": [
+      [
+       "Sign Build Run",
+       "grey"
+      ]
+     ],
+     "dt": 0.6,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

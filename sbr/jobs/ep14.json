@@ -1,0 +1,402 @@
+{
+ "episode": 14,
+ "series": "NO COLD CALLS · EP. 14",
+ "hook": "Three rank and rent mistakes I'd avoid if I started today.",
+ "voice": "../voices/ep14.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep14_3_mistakes.mp4",
+ "lines": [
+  "Three rank and rent mistakes I'd avoid if I started today.",
+  "One. Picking a big city.",
+  "You're fighting everyone. Start tiny.",
+  "Two. Building five sites at once.",
+  "Better one finished site than five half-done ones.",
+  "Three. Quitting after a month.",
+  "A new site is a stranger to Google.",
+  "My first lead took about one to three months.",
+  "Real talk.",
+  "Even doing all this right,",
+  "results vary and plenty of leads don't close.",
+  "But avoiding these saves you a lot of wasted time.",
+  "I put the whole process together in Sign Build Run.",
+  "Follow. Ep. fifteen drops next week."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 0,
+     "y": 520,
+     "text": "3",
+     "size": 300,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 790,
+     "size": 84,
+     "segs": [
+      [
+       "rank & rent mistakes",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "size": 84,
+     "segs": [
+      [
+       "I'd avoid",
+       "r"
+      ]
+     ],
+     "dt": 1.2
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1010,
+     "size": 66,
+     "segs": [
+      [
+       "if I started today",
+       "grey"
+      ]
+     ],
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 440,
+     "text": "1",
+     "size": 240,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 680,
+     "size": 90,
+     "segs": [
+      [
+       "A big city.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "versus",
+     "at": 2,
+     "y": 840,
+     "step": 0.6,
+     "heads": [
+      "Big city",
+      "Tiny town"
+     ],
+     "rows": [
+      [
+       "fighting everyone",
+       "room to start"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1350,
+     "size": 96,
+     "segs": [
+      [
+       "Start ",
+       "w"
+      ],
+      [
+       "tiny.",
+       "g"
+      ]
+     ],
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 440,
+     "text": "2",
+     "size": 240,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 680,
+     "size": 84,
+     "segs": [
+      [
+       "5 sites at once.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 940,
+     "size": 76,
+     "segs": [
+      [
+       "One ",
+       "w"
+      ],
+      [
+       "finished",
+       "g"
+      ],
+      [
+       " site",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1050,
+     "size": 76,
+     "segs": [
+      [
+       "beats five ",
+       "w"
+      ],
+      [
+       "half-done.",
+       "r"
+      ]
+     ],
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 440,
+     "text": "3",
+     "size": 240,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 680,
+     "size": 84,
+     "segs": [
+      [
+       "Quitting at month 1.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 900,
+     "size": 72,
+     "segs": [
+      [
+       "A new site is a",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1000,
+     "size": 84,
+     "segs": [
+      [
+       "stranger to Google.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1200,
+     "size": 66,
+     "segs": [
+      [
+       "My first lead took",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1300,
+     "size": 84,
+     "segs": [
+      [
+       "~1–3 months.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "calendar",
+     "at": 7,
+     "dt": 1.0,
+     "y": 1440
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 8,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 720,
+     "size": 72,
+     "segs": [
+      [
+       "Even doing it right:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 840,
+     "size": 76,
+     "segs": [
+      [
+       "results ",
+       "w"
+      ],
+      [
+       "vary.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 950,
+     "size": 72,
+     "segs": [
+      [
+       "Plenty of leads don't close.",
+       "w"
+      ]
+     ],
+     "dt": 0.9
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 1150,
+     "size": 72,
+     "segs": [
+      [
+       "But you save a lot of",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 1250,
+     "size": 84,
+     "segs": [
+      [
+       "wasted time.",
+       "g"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 640,
+     "size": 76,
+     "segs": [
+      [
+       "The whole process:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 780,
+     "size": 110,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "y": 1060,
+     "text": "Follow · Ep. 15 next week",
+     "fill": "y",
+     "color": "dark",
+     "size": 46,
+     "pad": 40
+    }
+   ]
+  }
+ ]
+}
