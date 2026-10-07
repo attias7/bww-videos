@@ -1,0 +1,22 @@
+{
+ "input": "src/Copy of 17.mp4",
+ "voice": "src/Copy of 17.mp3",
+ "cuts": [
+  0,
+  1.85,
+  3.85,
+  5.1,
+  6.89
+ ],
+ "hook": {
+  "kicker": "Before you judge me",
+  "line1": "My past",
+  "line2": "explains me"
+ },
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-07_copy-of-17.mp4",
+ "caption_band": [
+  950,
+  110
+ ]
+}
