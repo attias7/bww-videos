@@ -1,0 +1,6 @@
+{"input": "src/Copy of 18.mp4", "voice": "src/Copy of 18.mp3",
+ "cuts": [0, 2.55, 5.16],
+ "hook": {"kicker": "The truth about approval", "line1": "Stop living", "line2": "for their eyes"},
+ "caption_band": [880, 120],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-08_copy-of-18.mp4"}
