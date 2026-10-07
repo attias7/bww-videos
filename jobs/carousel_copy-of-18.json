@@ -1,0 +1,8 @@
+{"input": "src/Copy of 18.mp4",
+ "hook": {"kicker": "The truth about approval", "line1": "Stop living", "line2": "for their eyes"},
+ "caption_band": [905, 55],
+ "slides": [
+  {"text": "Care about what other people think...", "t": 1.2},
+  {"text": "...and you will always be their prisoner.", "t": 4.2}
+ ],
+ "out_dir": "carousels/2026-10-09_copy-of-18"}

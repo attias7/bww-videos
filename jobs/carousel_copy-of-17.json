@@ -1,0 +1,10 @@
+{"input": "src/Copy of 17.mp4",
+ "hook": {"kicker": "Before you judge me", "line1": "My past", "line2": "explains me"},
+ "caption_band": [950, 110],
+ "slides": [
+  {"text": "If I ever tell you about my past...", "t": 1.4},
+  {"text": "...it's never because I want you to feel sorry about me...", "t": 3.0},
+  {"text": "...but so you can understand...", "t": 4.6},
+  {"text": "...why I am who I am.", "t": 5.8}
+ ],
+ "out_dir": "carousels/2026-10-08_copy-of-17"}
