@@ -1,0 +1,8 @@
+{"input": "src/Copy of 19.mp4",
+ "hook": {"kicker": "The rule most people break", "line1": "Change the plan", "line2": "not the goal"},
+ "caption_band": [820, 90],
+ "slides": [
+  {"text": "If the strategy fails...", "t": 1.5},
+  {"text": "...alter the approach, not the goal.", "t": 7.5}
+ ],
+ "out_dir": "carousels/2026-10-10_copy-of-19"}

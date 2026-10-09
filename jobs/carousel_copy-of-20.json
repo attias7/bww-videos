@@ -1,0 +1,10 @@
+{"input": "src/Copy of 20.mp4",
+ "hook": {"kicker": "A reminder for hard days", "line1": "Slow progress", "line2": "is still progress"},
+ "caption_band": [250, 110],
+ "slides": [
+  {"text": "Never discourage anyone who continually makes progress...", "t": 1.0},
+  {"text": "...no matter how slow.", "t": 5.5},
+  {"text": "Even if that someone...", "t": 6.6},
+  {"text": "...is yourself.", "t": 8.6}
+ ],
+ "out_dir": "carousels/2026-10-11_copy-of-20"}
