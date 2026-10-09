@@ -14,7 +14,7 @@ What do you do? A, B or C 👇
 ## PD #3 · Pressed tight at halfway
 Defender tight on your back, space behind him. Play it back, spin him, or hold it?
 Comment your answer 👇 (my pick depends on one thing)
-#football #soccer #footballtips #firsttouch #soccerplayer #footballiq #vinicius #unscouted
+#football #soccer #footballtips #firsttouch #soccerplayer #footballiq #midfielder #unscouted
 
 ## Breakdown · Haaland
 Haaland doesn't smash it. In every goal of his I wrote down, it's the inside of the foot.
