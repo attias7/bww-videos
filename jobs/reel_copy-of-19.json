@@ -1,0 +1,6 @@
+{"input": "src/Copy of 19.mp4", "voice": "src/Copy of 19.mp3",
+ "cuts": [0, 8.22],
+ "hook": {"kicker": "The rule most people break", "line1": "Change the plan", "line2": "not the goal"},
+ "caption_band": [830, 110],
+ "max_mb": 15,
+ "out": "videos/BWW_2026-10-09_copy-of-19.mp4"}
