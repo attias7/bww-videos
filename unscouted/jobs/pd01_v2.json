@@ -1,0 +1,658 @@
+{
+ "episode": 1,
+ "series": "PAUSE & DECIDE · #1",
+ "hook": "Get this wrong, and you lose the game.",
+ "voice": "../voices/pd01_v2.mp3",
+ "atempo": 1.1,
+ "out": "../out/pd01_late_lead_v2.mp4",
+ "lines": [
+  "Get this wrong, and you lose the game.",
+  "Eightieth minute. You're winning one nil.",
+  "You're the winger. The ball comes to you.",
+  "Two defenders are closing you down.",
+  "Pause. What do you do?",
+  "A. Dribble inside and shoot.",
+  "B. Take it to the corner flag and shield it.",
+  "C. Cross it into the box.",
+  "Comment your answer before I tell you mine.",
+  "I'd pick B.",
+  "You're winning, and there are ten minutes left.",
+  "Every second the ball is in that corner, the clock is on your side.",
+  "Lose it inside, and they counter.",
+  "There's no perfect answer in football.",
+  "But the score and the time should always change your decision.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "dt": -0.5,
+     "y": 560,
+     "size": 130,
+     "segs": [
+      [
+       "GET THIS",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": -0.45,
+     "y": 700,
+     "size": 130,
+     "segs": [
+      [
+       "WRONG",
+       "r"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": 0.0,
+     "y": 900,
+     "size": 90,
+     "segs": [
+      [
+       "= you lose the game.",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "scoreboard",
+     "at": 0,
+     "dt": -0.3,
+     "y": 1150,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "1-0",
+     "minute": "80'"
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "dt": 0.0,
+     "y": 300,
+     "size": 92,
+     "segs": [
+      [
+       "WHAT WOULD ",
+       "w"
+      ],
+      [
+       "YOU",
+       "y"
+      ],
+      [
+       " DO?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "dt": 0.1,
+     "y": 390,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "1-0",
+     "minute": "80'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.2,
+     "y": 640,
+     "h": 880,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.86,
+       "y": 0.42,
+       "label": "YOU"
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.48,
+       "y": 0.22
+      },
+      {
+       "id": "cm",
+       "team": "us",
+       "x": 0.42,
+       "y": 0.66
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.7,
+       "y": 0.3,
+       "path": [
+        {
+         "to": [
+          0.76,
+          0.33
+         ],
+         "at": 3,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.74,
+       "y": 0.62,
+       "path": [
+        {
+         "to": [
+          0.8,
+          0.54
+         ],
+         "at": 3,
+         "dt": 0.1,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "d3",
+       "team": "them",
+       "x": 0.46,
+       "y": 0.12
+      },
+      {
+       "id": "d4",
+       "team": "them",
+       "x": 0.3,
+       "y": 0.3
+      }
+     ],
+     "ball": {
+      "x": 0.45,
+      "y": 0.64,
+      "path": [
+       {
+        "with": "me",
+        "at": 2,
+        "dt": 0.3,
+        "dur": 0.7
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.44,
+        0.64
+       ],
+       "to": [
+        0.83,
+        0.44
+       ],
+       "color": "w",
+       "at": 2,
+       "dt": 0.2,
+       "dashed": true
+      }
+     ],
+     "pause": {
+      "at": 4
+     }
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "dt": -0.1,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "80' · 1-0 up · ",
+       "w"
+      ],
+      [
+       "you're the winger",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "options",
+     "at": 5,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Dribble inside & shoot",
+       "at": 5
+      },
+      {
+       "key": "B",
+       "text": "Corner flag & shield it",
+       "at": 6
+      },
+      {
+       "key": "C",
+       "text": "Cross it into the box",
+       "at": 7
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 8,
+     "dt": 0.3,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.55
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "dt": -0.2,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "80' · 1-0 up · ",
+       "w"
+      ],
+      [
+       "you're the winger",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "options",
+     "at": 5,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Dribble inside & shoot",
+       "at": 9,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Corner flag & shield it",
+       "at": 9,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Cross it into the box",
+       "at": 9,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 9,
+      "dt": 0.15,
+      "correct": "B"
+     }
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1290,
+     "size": 120,
+     "segs": [
+      [
+       "I'd pick ",
+       "w"
+      ],
+      [
+       "B.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 10,
+     "y": 300,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "1-0",
+     "minute": "80'"
+    },
+    {
+     "type": "pitch",
+     "at": 10,
+     "dt": -0.1,
+     "y": 560,
+     "h": 880,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.86,
+       "y": 0.42,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.95,
+          0.05
+         ],
+         "at": 11,
+         "dur": 1.6
+        }
+       ]
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.76,
+       "y": 0.33,
+       "path": [
+        {
+         "to": [
+          0.88,
+          0.12
+         ],
+         "at": 11,
+         "dt": 0.2,
+         "dur": 1.6
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.8,
+       "y": 0.54,
+       "path": [
+        {
+         "to": [
+          0.84,
+          0.2
+         ],
+         "at": 11,
+         "dt": 0.3,
+         "dur": 1.7
+        }
+       ]
+      }
+     ],
+     "ball": {
+      "with": "me"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.86,
+        0.38
+       ],
+       "to": [
+        0.96,
+        0.04
+       ],
+       "color": "y",
+       "at": 10,
+       "dt": 0.6,
+       "label": "corner flag"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 1560,
+     "size": 70,
+     "segs": [
+      [
+       "The clock is ",
+       "w"
+      ],
+      [
+       "on your side.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 330,
+     "size": 84,
+     "segs": [
+      [
+       "Lose it inside...",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 12,
+     "y": 520,
+     "h": 880,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.62,
+       "y": 0.34,
+       "label": "YOU"
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.58,
+       "y": 0.3,
+       "path": [
+        {
+         "to": [
+          0.45,
+          0.95
+         ],
+         "at": 12,
+         "dt": 0.7,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.66,
+       "y": 0.42
+      }
+     ],
+     "ball": {
+      "x": 0.6,
+      "y": 0.33,
+      "path": [
+       {
+        "to": [
+         0.44,
+         0.97
+        ],
+        "at": 12,
+        "dt": 0.6,
+        "dur": 1.0
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.58,
+        0.36
+       ],
+       "to": [
+        0.45,
+        0.92
+       ],
+       "color": "r",
+       "at": 12,
+       "dt": 0.5,
+       "label": "counter"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.6,
+     "y": 1500,
+     "size": 96,
+     "segs": [
+      [
+       "...they ",
+       "w"
+      ],
+      [
+       "counter.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 13,
+     "y": 520,
+     "text": "NO PERFECT ANSWER",
+     "fill": "y",
+     "color": "dark",
+     "size": 46
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 760,
+     "size": 92,
+     "segs": [
+      [
+       "The ",
+       "w"
+      ],
+      [
+       "score",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "dt": 0.3,
+     "y": 880,
+     "size": 92,
+     "segs": [
+      [
+       "and the ",
+       "w"
+      ],
+      [
+       "time",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "dt": 0.8,
+     "y": 1000,
+     "size": 80,
+     "segs": [
+      [
+       "change your decision.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "y": 1260,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "dt": 0.4,
+     "y": 1420,
+     "size": 44,
+     "weight": "medium",
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

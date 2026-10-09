@@ -1,0 +1,574 @@
+{
+ "episode": 2,
+ "series": "PAUSE & DECIDE · #2",
+ "hook": "Losing with five minutes left? Stop passing.",
+ "voice": "../voices/pd02_v2.mp3",
+ "atempo": 1.1,
+ "out": "../out/pd02_late_loss_v2.mp4",
+ "lines": [
+  "Losing with five minutes left? Stop passing.",
+  "Eighty-fifth minute. You're losing one nil.",
+  "You're the best player on your team.",
+  "You get the ball on the edge of the box.",
+  "One defender in front. A teammate free out wide.",
+  "Pause. What do you do?",
+  "A. Pass it wide. The safe option.",
+  "B. Take your defender on and shoot.",
+  "C. Play it back and keep the ball.",
+  "Comment your answer.",
+  "I'd pick B.",
+  "When you're losing late, keeping the ball doesn't help you.",
+  "And if you're the best player, this is your moment to take the risk.",
+  "Same situation at one nil up? I'd pick something else.",
+  "The score changes the right decision.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 0,
+     "dt": -0.5,
+     "y": 420,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "0-1",
+     "minute": "85'"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": -0.45,
+     "y": 760,
+     "size": 120,
+     "segs": [
+      [
+       "LOSING LATE?",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": 0.6,
+     "y": 920,
+     "size": 130,
+     "segs": [
+      [
+       "STOP",
+       "r"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": 0.7,
+     "y": 1070,
+     "size": 130,
+     "segs": [
+      [
+       "PASSING.",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 300,
+     "size": 92,
+     "segs": [
+      [
+       "WHAT WOULD ",
+       "w"
+      ],
+      [
+       "YOU",
+       "y"
+      ],
+      [
+       " DO?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "dt": 0.1,
+     "y": 390,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "0-1",
+     "minute": "85'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.2,
+     "y": 640,
+     "h": 880,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.52,
+       "y": 0.62,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.4
+         ],
+         "at": 3,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "w",
+       "team": "us",
+       "x": 0.88,
+       "y": 0.42,
+       "label": "FREE",
+       "at": 4,
+       "dt": 0.6
+      },
+      {
+       "id": "cb",
+       "team": "us",
+       "x": 0.4,
+       "y": 0.86
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.3,
+       "y": 0.18
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.52,
+       "y": 0.22,
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.31
+         ],
+         "at": 4,
+         "dur": 0.7
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.36,
+       "y": 0.12
+      },
+      {
+       "id": "d3",
+       "team": "them",
+       "x": 0.66,
+       "y": 0.13
+      },
+      {
+       "id": "d4",
+       "team": "them",
+       "x": 0.22,
+       "y": 0.3
+      }
+     ],
+     "ball": {
+      "x": 0.4,
+      "y": 0.84,
+      "path": [
+       {
+        "with": "me",
+        "at": 2,
+        "dt": 0.2,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.42,
+        0.82
+       ],
+       "to": [
+        0.51,
+        0.64
+       ],
+       "color": "w",
+       "at": 2,
+       "dashed": true
+      }
+     ],
+     "pause": {
+      "at": 5
+     }
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "dt": -0.1,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "85' · 0-1 down · ",
+       "w"
+      ],
+      [
+       "your best player",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "options",
+     "at": 6,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Pass it wide (safe)",
+       "at": 6
+      },
+      {
+       "key": "B",
+       "text": "Take him on & shoot",
+       "at": 7
+      },
+      {
+       "key": "C",
+       "text": "Play it back, keep it",
+       "at": 8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 9,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "dt": -0.2,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "85' · 0-1 down · ",
+       "w"
+      ],
+      [
+       "your best player",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "options",
+     "at": 6,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Pass it wide (safe)",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Take him on & shoot",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Play it back, keep it",
+       "at": 10,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 10,
+      "dt": 0.15,
+      "correct": "B"
+     }
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1290,
+     "size": 120,
+     "segs": [
+      [
+       "I'd pick ",
+       "w"
+      ],
+      [
+       "B.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 11,
+     "y": 300,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "0-1",
+     "minute": "85'"
+    },
+    {
+     "type": "pitch",
+     "at": 11,
+     "dt": -0.1,
+     "y": 560,
+     "h": 880,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.5,
+       "y": 0.4,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.62,
+          0.22
+         ],
+         "at": 12,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.31,
+       "path": [
+        {
+         "to": [
+          0.46,
+          0.33
+         ],
+         "at": 12,
+         "dt": 0.2,
+         "dur": 0.6
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.36,
+       "y": 0.12
+      },
+      {
+       "id": "d3",
+       "team": "them",
+       "x": 0.7,
+       "y": 0.13
+      }
+     ],
+     "ball": {
+      "with": "me",
+      "path": [
+       {
+        "to": [
+         0.47,
+         -0.01
+        ],
+        "at": 12,
+        "dt": 1.4,
+        "dur": 0.5
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.52,
+        0.38
+       ],
+       "to": [
+        0.62,
+        0.24
+       ],
+       "color": "y",
+       "at": 11,
+       "dt": 0.8
+      },
+      {
+       "from": [
+        0.62,
+        0.22
+       ],
+       "to": [
+        0.48,
+        0.01
+       ],
+       "color": "y",
+       "at": 12,
+       "dt": 1.2
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.3,
+     "y": 1560,
+     "size": 70,
+     "segs": [
+      [
+       "Your moment to ",
+       "w"
+      ],
+      [
+       "take the risk.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "versus",
+     "at": 13,
+     "y": 420,
+     "step": 0.5,
+     "heads": [
+      "0-1 down",
+      "1-0 up"
+     ],
+     "rows": [
+      [
+       "take the risk",
+       "keep the ball"
+      ],
+      [
+       "go at goal",
+       "run the clock"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 900,
+     "size": 92,
+     "segs": [
+      [
+       "The ",
+       "w"
+      ],
+      [
+       "score",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "dt": 0.3,
+     "y": 1010,
+     "size": 80,
+     "segs": [
+      [
+       "changes the decision.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "y": 1260,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "dt": 0.4,
+     "y": 1420,
+     "size": 44,
+     "weight": "medium",
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

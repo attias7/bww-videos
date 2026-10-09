@@ -32,6 +32,7 @@ for t in times:
     img = Image.new("RGB", (S.W, S.H), S.BG); d = ImageDraw.Draw(img)
     for sc in scenes:
         if sc["_s"] <= t < sc["_e"]:
+            if sc.get("bg") == "yellow": img.paste(S.COL["y"], (0, 0, S.W, S.H)); d = ImageDraw.Draw(img)
             for e in sc["elements"]:
                 if t >= e["_st"] - 0.001: S.ELEMENTS[e["type"]](d, img, t, e["_st"], e)
             break

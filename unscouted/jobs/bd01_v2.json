@@ -1,0 +1,658 @@
+{
+ "episode": 4,
+ "series": "PLAYER BREAKDOWN · HAALAND",
+ "hook": "Stop smashing your shots.",
+ "voice": "../voices/bd01_haaland_v2.mp3",
+ "atempo": 1.1,
+ "out": "../out/bd01_haaland_v2.mp4",
+ "lines": [
+  "Stop smashing your shots.",
+  "Haaland doesn't smash the ball.",
+  "I watched his goals and wrote down how he finishes.",
+  "In every goal I watched, it's the inside of the foot.",
+  "The most accurate part of your foot.",
+  "The goal is huge, and he's close.",
+  "He doesn't need power. He needs it on target.",
+  "Ball across the box? He finishes first time.",
+  "No extra touch. He just guides it past the keeper.",
+  "And he never stops his run.",
+  "A lot of his goals are rebounds.",
+  "His job is simple.",
+  "On target, on target, on target.",
+  "Do that, and the goals come by themselves.",
+  "Follow. Next breakdown is Vinícius."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 0,
+     "dt": -0.5,
+     "y": 720,
+     "text": "STOP",
+     "size": 300,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": -0.2,
+     "y": 980,
+     "size": 110,
+     "segs": [
+      [
+       "SMASHING",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": -0.05,
+     "y": 1110,
+     "size": 110,
+     "segs": [
+      [
+       "YOUR SHOTS.",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 640,
+     "size": 110,
+     "segs": [
+      [
+       "Haaland",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "dt": 0.4,
+     "y": 780,
+     "size": 100,
+     "segs": [
+      [
+       "doesn't ",
+       "w"
+      ],
+      [
+       "smash",
+       "r"
+      ],
+      [
+       " it.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 1060,
+     "text": "from my notes on his goals",
+     "fill": "y",
+     "color": "dark",
+     "size": 42
+    },
+    {
+     "type": "checklist",
+     "at": 2,
+     "dt": 0.6,
+     "y": 1200,
+     "items": [
+      {
+       "text": "How he finishes",
+       "ok": true,
+       "at": 2,
+       "dt": 0.6
+      },
+      {
+       "text": "Where he stands",
+       "ok": true,
+       "at": 2,
+       "dt": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 360,
+     "size": 70,
+     "segs": [
+      [
+       "Every goal I watched:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 3,
+     "dt": 0.5,
+     "y": 640,
+     "text": "INSIDE",
+     "size": 200,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "dt": 0.8,
+     "y": 820,
+     "size": 90,
+     "segs": [
+      [
+       "of the foot.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "versus",
+     "at": 4,
+     "y": 1040,
+     "step": 0.4,
+     "heads": [
+      "Laces",
+      "Inside"
+     ],
+     "rows": [
+      [
+       "more power",
+       "more accurate"
+      ],
+      [
+       "often misses",
+       "on target"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 330,
+     "size": 76,
+     "segs": [
+      [
+       "The goal is ",
+       "w"
+      ],
+      [
+       "huge.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 5,
+     "dt": 0.1,
+     "y": 500,
+     "h": 860,
+     "players": [
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.02,
+       "label": "GK"
+      },
+      {
+       "id": "h",
+       "team": "me",
+       "x": 0.42,
+       "y": 0.2,
+       "label": "HAALAND"
+      }
+     ],
+     "ball": {
+      "with": "h",
+      "path": [
+       {
+        "to": [
+         0.555,
+         -0.02
+        ],
+        "at": 6,
+        "dt": 0.6,
+        "dur": 0.5
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.44,
+        0.18
+       ],
+       "to": [
+        0.555,
+        0.0
+       ],
+       "color": "y",
+       "at": 6,
+       "dt": 0.3,
+       "label": "placed"
+      }
+     ],
+     "zoom": 0.42
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1400,
+     "size": 70,
+     "segs": [
+      [
+       "Not power. ",
+       "w"
+      ],
+      [
+       "On target.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 330,
+     "size": 76,
+     "segs": [
+      [
+       "Ball across the box?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 7,
+     "dt": -0.1,
+     "y": 500,
+     "h": 860,
+     "players": [
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.02,
+       "label": "GK",
+       "path": [
+        {
+         "to": [
+          0.58,
+          0.03
+         ],
+         "at": 7,
+         "dt": 0.9,
+         "dur": 0.4
+        }
+       ]
+      },
+      {
+       "id": "w",
+       "team": "us",
+       "x": 0.86,
+       "y": 0.1
+      },
+      {
+       "id": "cb",
+       "team": "them",
+       "x": 0.55,
+       "y": 0.13
+      },
+      {
+       "id": "h",
+       "team": "me",
+       "x": 0.45,
+       "y": 0.3,
+       "label": "HAALAND",
+       "path": [
+        {
+         "to": [
+          0.44,
+          0.15
+         ],
+         "at": 7,
+         "dt": 0.2,
+         "dur": 0.7
+        }
+       ]
+      }
+     ],
+     "ball": {
+      "x": 0.84,
+      "y": 0.11,
+      "path": [
+       {
+        "to": [
+         0.45,
+         0.14
+        ],
+        "at": 7,
+        "dt": 0.5,
+        "dur": 0.6
+       },
+       {
+        "to": [
+         0.4,
+         -0.02
+        ],
+        "at": 8,
+        "dt": 0.1,
+        "dur": 0.4
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.84,
+        0.11
+       ],
+       "to": [
+        0.47,
+        0.14
+       ],
+       "color": "w",
+       "at": 7,
+       "dt": 0.4,
+       "dashed": true
+      },
+      {
+       "from": [
+        0.44,
+        0.13
+       ],
+       "to": [
+        0.41,
+        0.0
+       ],
+       "color": "y",
+       "at": 8,
+       "label": "first time"
+      }
+     ],
+     "zoom": 0.42
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "dt": 0.3,
+     "y": 1400,
+     "size": 70,
+     "segs": [
+      [
+       "No extra touch. ",
+       "y"
+      ],
+      [
+       "Just guide it.",
+       "w"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 330,
+     "size": 76,
+     "segs": [
+      [
+       "He never ",
+       "w"
+      ],
+      [
+       "stops his run.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 9,
+     "dt": -0.1,
+     "y": 500,
+     "h": 860,
+     "players": [
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.02,
+       "label": "GK",
+       "path": [
+        {
+         "to": [
+          0.44,
+          0.03
+         ],
+         "at": 9,
+         "dt": 0.5,
+         "dur": 0.3
+        }
+       ]
+      },
+      {
+       "id": "t",
+       "team": "us",
+       "x": 0.36,
+       "y": 0.3
+      },
+      {
+       "id": "h",
+       "team": "me",
+       "x": 0.6,
+       "y": 0.34,
+       "label": "HAALAND",
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.09
+         ],
+         "at": 9,
+         "dt": 0.3,
+         "dur": 1.2
+        }
+       ]
+      }
+     ],
+     "ball": {
+      "x": 0.38,
+      "y": 0.29,
+      "path": [
+       {
+        "to": [
+         0.45,
+         0.03
+        ],
+        "at": 9,
+        "dt": 0.2,
+        "dur": 0.4
+       },
+       {
+        "to": [
+         0.5,
+         0.1
+        ],
+        "at": 9,
+        "dt": 0.7,
+        "dur": 0.5
+       },
+       {
+        "to": [
+         0.52,
+         -0.02
+        ],
+        "at": 10,
+        "dt": 0.2,
+        "dur": 0.3
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.6,
+        0.33
+       ],
+       "to": [
+        0.51,
+        0.11
+       ],
+       "color": "y",
+       "at": 9,
+       "dt": 0.2,
+       "label": "follow in"
+      }
+     ],
+     "zoom": 0.42
+    },
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 1400,
+     "text": "REBOUND GOALS",
+     "fill": "y",
+     "color": "dark",
+     "size": 48
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 480,
+     "size": 80,
+     "segs": [
+      [
+       "His job is ",
+       "w"
+      ],
+      [
+       "simple.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 700,
+     "size": 104,
+     "segs": [
+      [
+       "On target.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.5,
+     "y": 830,
+     "size": 104,
+     "segs": [
+      [
+       "On target.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 1.0,
+     "y": 960,
+     "size": 104,
+     "segs": [
+      [
+       "On target.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1150,
+     "size": 66,
+     "segs": [
+      [
+       "The goals come by themselves.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1360,
+     "text": "Follow · Vinícius is next",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "dt": 0.4,
+     "y": 1500,
+     "size": 44,
+     "weight": "medium",
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

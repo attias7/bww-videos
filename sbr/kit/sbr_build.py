@@ -473,7 +473,7 @@ def main(jobpath):
 
     # music
     tm = os.path.join(tmp, "timing.json")
-    json.dump({"total": DUR, "cuts": cuts, "flip": flash[0] if flash else (cuts[0] if cuts else 3.0)}, open(tm, "w"))
+    json.dump({"total": DUR, "cuts": cuts, "flip": ([f for f in flash if f > 1.0] or cuts or [3.0])[0]}, open(tm, "w"))
     mus = os.path.join(tmp, "music.wav")
     r = subprocess.run([sys.executable, os.path.join(HERE, "sbr_music.py")], cwd=tmp, env={**os.environ, "OUT": mus}, capture_output=True, text=True)
     if r.returncode: print(r.stderr); sys.exit(1)
