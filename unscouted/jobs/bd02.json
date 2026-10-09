@@ -1,0 +1,80 @@
+{
+  "episode": 5,
+  "series": "PLAYER BREAKDOWN · VINÍCIUS",
+  "hook": "How Vinícius beats his full-back.",
+  "voice": "../voices/bd02_vinicius.mp3",
+  "atempo": 1.1,
+  "out": "../out/bd02_vinicius.mp4",
+  "lines": [
+    "How Vinícius beats his full-back.",
+    "I broke down five of his games.",
+    "First, he stays really wide.",
+    "That gives him time and space to attack his defender.",
+    "Then he cuts inside, because that's what the defender expects.",
+    "And in a split second, he changes speed and goes outside.",
+    "He puts his body in front, so a tackle is a foul.",
+    "If the defender sticks a leg out, he slips it through his legs.",
+    "And he keeps making runs in behind.",
+    "So the defender can't press him close.",
+    "The real secret is courage.",
+    "He takes his man on, again and again, because he trusts his strengths.",
+    "Follow for more breakdowns. The free analysis test is in my bio."
+  ],
+  "scenes": [
+    {"from": 0, "elements": [
+      {"type": "text", "at": 0, "y": 600, "size": 90, "segs": [["How ", "w"], ["Vinícius", "y"]]},
+      {"type": "text", "at": 0, "dt": 0.4, "y": 720, "size": 90, "segs": [["beats his full-back", "w"]]},
+      {"type": "bignum", "at": 1, "y": 1020, "text": "5", "size": 260, "color": "y"},
+      {"type": "text", "at": 1, "dt": 0.3, "y": 1230, "size": 64, "segs": [["of his games, broken down", "w"]]}
+    ]},
+    {"from": 2, "elements": [
+      {"type": "text", "at": 2, "y": 330, "size": 80, "segs": [["1. Stay ", "w"], ["really wide.", "y"]]},
+      {"type": "pitch", "at": 2, "y": 500, "h": 900,
+       "players": [
+         {"id": "v", "team": "me", "x": 0.55, "y": 0.55, "label": "VINI", "path": [{"to": [0.08, 0.55], "at": 2, "dt": 0.3, "dur": 0.9}]},
+         {"id": "fb", "team": "them", "x": 0.20, "y": 0.42, "label": "FULL-BACK"},
+         {"id": "cb", "team": "them", "x": 0.42, "y": 0.30}
+       ],
+       "ball": {"with": "v"},
+       "arrows": [{"from": [0.10, 0.70], "to": [0.10, 0.38], "color": "y", "at": 3, "label": "time & space"}]}
+    ]},
+    {"from": 4, "elements": [
+      {"type": "text", "at": 4, "y": 330, "size": 74, "segs": [["2. Cut inside... ", "w"], ["then outside.", "y"]]},
+      {"type": "pitch", "at": 4, "dt": -0.1, "y": 500, "h": 900,
+       "players": [
+         {"id": "v", "team": "me", "x": 0.08, "y": 0.55, "label": "VINI", "path": [{"to": [0.20, 0.50], "at": 4, "dt": 0.2, "dur": 0.7}, {"to": [0.08, 0.28], "at": 5, "dt": 0.3, "dur": 0.5}]},
+         {"id": "fb", "team": "them", "x": 0.16, "y": 0.42, "label": "FULL-BACK", "path": [{"to": [0.24, 0.44], "at": 4, "dt": 0.5, "dur": 0.6}]}
+       ],
+       "ball": {"with": "v"},
+       "arrows": [{"from": [0.10, 0.54], "to": [0.19, 0.50], "color": "w", "at": 4, "dt": 0.1, "dashed": true},
+                  {"from": [0.19, 0.48], "to": [0.08, 0.30], "color": "y", "at": 5, "dt": 0.1, "label": "change speed"}]}
+    ]},
+    {"from": 6, "elements": [
+      {"type": "text", "at": 6, "y": 420, "size": 80, "segs": [["3. Body ", "w"], ["in front.", "y"]]},
+      {"type": "text", "at": 6, "dt": 0.6, "y": 540, "size": 64, "segs": [["A tackle = a ", "w"], ["foul.", "r"]]},
+      {"type": "text", "at": 7, "y": 820, "size": 76, "segs": [["Leg out?", "w"]]},
+      {"type": "text", "at": 7, "dt": 0.6, "y": 940, "size": 76, "segs": [["Through his ", "w"], ["legs.", "y"]]},
+      {"type": "chip", "at": 7, "dt": 1.1, "y": 1160, "text": "NUTMEG", "fill": "y", "color": "dark", "size": 56}
+    ]},
+    {"from": 8, "elements": [
+      {"type": "text", "at": 8, "y": 330, "size": 74, "segs": [["4. Runs ", "w"], ["in behind.", "y"]]},
+      {"type": "pitch", "at": 8, "dt": -0.1, "y": 500, "h": 900,
+       "players": [
+         {"id": "v", "team": "me", "x": 0.10, "y": 0.62, "label": "VINI", "path": [{"to": [0.12, 0.18], "at": 8, "dt": 0.3, "dur": 1.0}]},
+         {"id": "fb", "team": "them", "x": 0.18, "y": 0.52, "label": "FULL-BACK", "path": [{"to": [0.18, 0.36], "at": 9, "dt": 0.1, "dur": 0.6}]},
+         {"id": "m", "team": "us", "x": 0.45, "y": 0.75}
+       ],
+       "ball": {"with": "m"},
+       "arrows": [{"from": [0.10, 0.60], "to": [0.12, 0.20], "color": "y", "at": 8, "dt": 0.2}]},
+      {"type": "text", "at": 9, "dt": 0.3, "y": 1520, "size": 64, "segs": [["So he ", "w"], ["can't press close.", "y"]]}
+    ]},
+    {"from": 10, "elements": [
+      {"type": "text", "at": 10, "y": 560, "size": 80, "segs": [["The real secret:", "w"]]},
+      {"type": "bignum", "at": 10, "dt": 0.6, "y": 760, "text": "COURAGE", "size": 170, "color": "y"},
+      {"type": "text", "at": 11, "y": 980, "size": 60, "segs": [["1v1, again and again.", "w"]]},
+      {"type": "text", "at": 11, "dt": 1.2, "y": 1070, "size": 60, "segs": [["He trusts his ", "w"], ["strengths.", "y"]]},
+      {"type": "chip", "at": 12, "y": 1300, "text": "Free analysis test · link in bio", "fill": "y", "color": "dark", "size": 42, "pad": 40},
+      {"type": "text", "at": 12, "dt": 0.4, "y": 1450, "size": 44, "weight": "medium", "segs": [["UNSCOUTED", "grey"]]}
+    ]}
+  ]
+}

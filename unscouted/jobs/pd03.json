@@ -1,0 +1,508 @@
+{
+ "episode": 3,
+ "series": "PAUSE & DECIDE · #3",
+ "hook": "Defender tight on your back at halfway. What do you do?",
+ "voice": "../voices/pd03.mp3",
+ "atempo": 1.1,
+ "out": "../out/pd03_spin.mp4",
+ "lines": [
+  "You drop deep to get the ball near halfway.",
+  "A defender is tight on your back.",
+  "And there's space behind him.",
+  "Pause. What do you do?",
+  "A. Play it back to your defender.",
+  "B. Spin him with your first touch.",
+  "C. Hold it and wait for help.",
+  "Comment your answer.",
+  "I'd go B, if I checked the space before the ball arrived.",
+  "When a defender presses that tight, the space is behind him.",
+  "One touch round him, and he's out of the game.",
+  "Vinícius does this all the time.",
+  "But if you didn't look before, play it back. That's not a weak choice.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 300,
+     "size": 92,
+     "segs": [
+      [
+       "WHAT WOULD ",
+       "w"
+      ],
+      [
+       "YOU",
+       "y"
+      ],
+      [
+       " DO?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 0,
+     "dt": 0.1,
+     "y": 520,
+     "h": 1000,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.7,
+       "y": 0.62,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.66,
+          0.84
+         ],
+         "at": 0,
+         "dt": 0.6,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "cb",
+       "team": "us",
+       "x": 0.4,
+       "y": 1.0
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.45,
+       "y": 0.3
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.7,
+       "y": 0.55,
+       "path": [
+        {
+         "to": [
+          0.66,
+          0.77
+         ],
+         "at": 1,
+         "dur": 0.7
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.45,
+       "y": 0.45
+      },
+      {
+       "id": "d3",
+       "team": "them",
+       "x": 0.3,
+       "y": 0.62
+      }
+     ],
+     "ball": {
+      "x": 0.4,
+      "y": 0.98,
+      "path": [
+       {
+        "with": "me",
+        "at": 1,
+        "dt": 0.5,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.42,
+        0.97
+       ],
+       "to": [
+        0.64,
+        0.87
+       ],
+       "color": "w",
+       "at": 1,
+       "dt": 0.3,
+       "dashed": true
+      }
+     ],
+     "pause": {
+      "at": 3
+     }
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 900,
+     "text": "SPACE",
+     "fill": "y",
+     "color": "dark",
+     "size": 40,
+     "x": 760
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "dt": -0.1,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Pressed tight · ",
+       "w"
+      ],
+      [
+       "space behind him",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "options",
+     "at": 4,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Play it back",
+       "at": 4
+      },
+      {
+       "key": "B",
+       "text": "Spin him first touch",
+       "at": 5
+      },
+      {
+       "key": "C",
+       "text": "Hold it, wait for help",
+       "at": 6
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 7,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "dt": -0.2,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Pressed tight · ",
+       "w"
+      ],
+      [
+       "space behind him",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "options",
+     "at": 4,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Play it back",
+       "at": 8,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Spin him first touch",
+       "at": 8,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Hold it, wait for help",
+       "at": 8,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 8,
+      "dt": 0.15,
+      "correct": "B"
+     }
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1250,
+     "size": 110,
+     "segs": [
+      [
+       "B... ",
+       "y"
+      ],
+      [
+       "if you",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "dt": 0.9,
+     "y": 1380,
+     "size": 80,
+     "segs": [
+      [
+       "checked ",
+       "y"
+      ],
+      [
+       "the space first.",
+       "w"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "pitch",
+     "at": 9,
+     "dt": -0.1,
+     "y": 440,
+     "h": 1000,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.66,
+       "y": 0.84,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.8,
+          0.7
+         ],
+         "at": 10,
+         "dur": 0.5
+        },
+        {
+         "to": [
+          0.78,
+          0.45
+         ],
+         "at": 10,
+         "dt": 0.5,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.66,
+       "y": 0.77,
+       "path": [
+        {
+         "to": [
+          0.62,
+          0.82
+         ],
+         "at": 10,
+         "dt": 0.1,
+         "dur": 0.5
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.45,
+       "y": 0.45
+      },
+      {
+       "id": "d3",
+       "team": "them",
+       "x": 0.3,
+       "y": 0.62
+      }
+     ],
+     "ball": {
+      "with": "me"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.68,
+        0.8
+       ],
+       "to": [
+        0.79,
+        0.5
+       ],
+       "color": "y",
+       "at": 9,
+       "dt": 0.6,
+       "label": "space"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "dt": 0.6,
+     "y": 1560,
+     "size": 70,
+     "segs": [
+      [
+       "One touch. ",
+       "y"
+      ],
+      [
+       "He's out of the game.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 340,
+     "text": "Vinícius does this all the time",
+     "fill": "y",
+     "color": "dark",
+     "size": 40
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 12,
+     "y": 520,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.2,
+     "y": 720,
+     "size": 84,
+     "segs": [
+      [
+       "Didn't look first?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.9,
+     "y": 850,
+     "size": 96,
+     "segs": [
+      [
+       "Play it ",
+       "w"
+      ],
+      [
+       "back.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 1.7,
+     "y": 980,
+     "size": 66,
+     "weight": "medium",
+     "segs": [
+      [
+       "That's not a weak choice.",
+       "grey"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "y": 1260,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "dt": 0.4,
+     "y": 1420,
+     "size": 44,
+     "weight": "medium",
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
