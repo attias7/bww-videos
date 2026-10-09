@@ -5,6 +5,7 @@ Built on the Sign Build Run builder (`../sbr/kit/sbr_build.py`), re-skinned in l
 
 - `kit/us_build.py job.json` builds one reel (same job format as `../sbr/README.md`, plus elements below).
 - `kit/preview.py job.json out.png t1 t2 ...` renders still frames without audio (layout check, 2.2 s per line).
+- `kit/carousel.py job.json ../carousels/epNN_slug` makes the 4:5 Instagram carousel from a reel job (one slide per scene, final state, start positions + arrows; max 10). Check `_sheet.jpg`.
 - Voice: ElevenLabs `eleven_v3`, **Archie - English teen youth** `kmSVBPu7loj4ayNinwWM`, atempo 1.1.
 - `episodes.csv` log (source of truth for post dates and used hooks). `videos/` = public upload MP4s Buffer pulls from (raw.githubusercontent). `voices/` and `out/` are git-ignored.
 - Lesson notes live on the Mac only (not in this public repo): `~/Downloads/Unscouted Reels/notes/*-library.html`.

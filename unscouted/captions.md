@@ -25,3 +25,8 @@ On target, on target, on target.
 How Vinícius beats his full-back, from 5 games I broke down.
 Which one are you working on? 👇
 #vinicius #winger #dribbling #football #soccer #footballtips #1v1 #unscouted
+
+## Carousels (Instagram, 12:00 the day after the reel)
+Format: "<hook or situation>. Swipe →" / one line with the lesson or "Decide before slide N. A, B or C? 👇" / "Save this for your next game." / same 8 hashtags as the reel.
+- Ep1 PD#1: 80th minute, 1-0 up, two defenders closing. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game.
+- Ep4 Haaland: Stop smashing your shots. Swipe → / What I noticed in Haaland's goals: inside of the foot, first time, always following in. / Save it and try it at your next training.
