@@ -24,6 +24,7 @@ Put the answer reveal in its own scene (options re-listed) so "Comment A, B or C
 
 ## Formats
 - **Pause & Decide** (series "PAUSE & DECIDE · #N"): situation on the pitch → PAUSE → A/B/C → "comment" + countdown → my pick → why (score/time/context) → "no perfect answer" → CTA free test.
+- **The Numbers** (series "THE NUMBERS · #N", added 2026-10-11 as a test): contrarian one-line take as the hook (against what players believe) → proof with checked, simple numbers (pitch geometry, distances; no invented stats) → one rule → two-sided comment question ("Shoot or pass?"). Inspired by what got reach for a tennis geometry account. Jobs: jobs/ep06.json, ep07.json.
 - **Player breakdown** ("PLAYER BREAKDOWN · NAME"): only lessons from the user's own notes (addons/_lib/*-library.html). No match footage, no player likeness, names in text only.
 
 ## Rules
