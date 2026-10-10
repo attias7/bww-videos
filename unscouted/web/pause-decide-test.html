@@ -49,6 +49,12 @@
 #ust .cats{display:grid;gap:8px;margin-top:16px}
 #ust .cat{display:flex;justify-content:space-between;gap:10px;background:#1C2016;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px}
 #ust .cat em{font-style:normal;font-weight:800}
+#ust .mail{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+#ust .mail h3{margin:0 0 6px;color:#fff;font-size:20px}
+#ust .mail p{margin:0 0 14px;color:#A9AEA2;font-size:15px;line-height:1.5}
+#ust .mail form{display:flex;gap:10px;flex-wrap:wrap}
+#ust .mail input{flex:1;min-width:220px;background:#0B0D0A;border:1px solid #2E3427;color:#fff;border-radius:12px;padding:14px 16px;font-size:16px;font-family:inherit}
+#ust .mail .ok{color:#C8F23A;font-weight:800;margin:0}
 #ust .offer{margin-top:28px;background:var(--lime);color:var(--ink);border-radius:20px;padding:26px 22px}
 #ust .offer h2{color:var(--ink)}
 #ust .offer .code{display:inline-block;background:var(--ink);color:var(--lime);font-weight:800;letter-spacing:.08em;border-radius:8px;padding:4px 10px;margin:0 4px}
@@ -71,7 +77,7 @@
 
 <section id="ust-intro">
   <div class="pill"><b>FREE · 8 REAL MATCH MOMENTS</b>&nbsp;&nbsp;3 minutes</div>
-  <h1>Pause &amp; decide.<br><span>Do you see the game like a pro?</span></h1>
+  <h1>Soccer IQ Test (Football IQ Test):<br><span>What would you do?</span></h1>
   <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position. 3 options each, 15 seconds to decide. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
   <div class="card" style="margin-top:26px">
     <p style="font-weight:800;color:#fff">What position do you play?</p>
@@ -106,6 +112,12 @@
   <div class="cats" id="ust-cats"></div>
   <p class="small" style="margin-top:14px">8 moments is a quick check, not a scout's verdict. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
 
+  <div class="mail hide" id="ust-mail">
+    <h3>Keep training: new situations by email</h3>
+    <p>Get your PAUSE10 code saved, plus a new match situation for your position every few days. Free, unsubscribe any time.</p>
+    <form id="ust-mailf"><input type="email" id="ust-email" placeholder="Your email" required autocomplete="email"><button class="btn" type="submit" id="ust-mailb">Send them →</button></form>
+    <p class="small" style="margin:10px 0 0">By signing up you agree to get emails from Unscouted. See our <a href="/privacy-policy/" style="color:#A9AEA2">privacy policy</a>.</p>
+  </div>
   <div class="offer">
     <p style="font-weight:800;letter-spacing:.1em;font-size:13px">FOR FINISHING THE TEST · $10 OFF</p>
     <h2 style="margin-top:8px">Train this every week, not just once.</h2>
@@ -414,6 +426,12 @@ document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=funct
 $('start').onclick=function(){Q=QS[pos]||QS.mid;try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 $('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
 $('again').onclick=function(){Q=QS[pos]||QS.mid;document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+var REACH={id:'',group:''};
+if(REACH.id){$('mail').classList.remove('hide');}
+$('mailf').onsubmit=async function(e){e.preventDefault();var em=$('email').value.trim();if(!em)return;var b=$('mailb');b.disabled=true;b.textContent='Sending…';
+ try{var r=await fetch('/wp-json/hostinger-reach/v1/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:REACH.id,group:REACH.group,email:em,tags:'free-test,'+(pos||'none')+',score-'+pts,metadata:{plugin:'hostinger-reach'}})});
+  if(r.ok){$('mailf').outerHTML='<p class="ok">Done. Check your inbox (and the spam folder, just in case).</p>'}else{b.disabled=false;b.textContent='Try again'}}
+ catch(x){b.disabled=false;b.textContent='Try again'}};
 document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
 })();
 </script>
