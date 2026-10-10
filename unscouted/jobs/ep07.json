@@ -1,0 +1,575 @@
+{
+ "episode": 7,
+ "series": "THE NUMBERS · #2",
+ "hook": "Getting closer to goal can cost you.",
+ "voice": "../voices/ep07.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep07_tight_angle.mp4",
+ "lines": [
+  "Getting closer to goal can cost you.",
+  "You beat your man. You're at the corner of the six-yard box.",
+  "It feels like you have to shoot.",
+  "But look at the angle.",
+  "From here, the goal is only about twenty-two degrees.",
+  "And the keeper is right there.",
+  "Now look at the penalty spot.",
+  "From there, the goal is about thirty-seven degrees.",
+  "Almost twice as big.",
+  "You're closer. But your target got smaller.",
+  "So here's the rule.",
+  "Tight angle? Look for the cutback first.",
+  "Shoot or cut it back? Comment it.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "dt": -0.5,
+     "y": 560,
+     "size": 130,
+     "segs": [
+      [
+       "CLOSER",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": -0.4,
+     "y": 700,
+     "size": 130,
+     "segs": [
+      [
+       "TO GOAL",
+       "dark"
+      ]
+     ],
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "dt": 0.0,
+     "y": 900,
+     "size": 120,
+     "segs": [
+      [
+       "CAN ",
+       "dark"
+      ],
+      [
+       "COST YOU.",
+       "r"
+      ]
+     ],
+     "bg": "y"
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "dt": 0.0,
+     "y": 300,
+     "size": 80,
+     "segs": [
+      [
+       "You beat your man.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.1,
+     "y": 470,
+     "h": 900,
+     "zoom": 0.45,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.8,
+       "y": 0.2,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.635,
+          0.105
+         ],
+         "at": 1,
+         "dt": 0.6,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "them",
+       "x": 0.74,
+       "y": 0.22
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.52,
+       "y": 0.03,
+       "label": "GK",
+       "path": [
+        {
+         "to": [
+          0.555,
+          0.035
+         ],
+         "at": 4,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "cb",
+       "team": "them",
+       "x": 0.47,
+       "y": 0.12
+      },
+      {
+       "id": "am",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.3
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        0.635,
+        0.105
+       ],
+       "to": [
+        0.446,
+        0.0
+       ],
+       "color": "y",
+       "at": 3,
+       "dt": 0.2
+      },
+      {
+       "from": [
+        0.635,
+        0.105
+       ],
+       "to": [
+        0.554,
+        0.0
+       ],
+       "color": "y",
+       "at": 3,
+       "dt": 0.35,
+       "label": "22°"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "dt": 0.0,
+     "y": 1480,
+     "size": 72,
+     "segs": [
+      [
+       "It feels like you ",
+       "w"
+      ],
+      [
+       "have to shoot.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 620,
+     "text": "22°",
+     "size": 300,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "dt": 0.0,
+     "y": 950,
+     "size": 72,
+     "segs": [
+      [
+       "and the keeper is ",
+       "w"
+      ],
+      [
+       "right there",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "dt": 0.0,
+     "y": 300,
+     "size": 84,
+     "segs": [
+      [
+       "FROM THE ",
+       "w"
+      ],
+      [
+       "PENALTY SPOT",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 6,
+     "dt": 0.1,
+     "y": 470,
+     "h": 900,
+     "zoom": 0.45,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.635,
+       "y": 0.105,
+       "label": "YOU"
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.555,
+       "y": 0.035,
+       "label": "GK"
+      },
+      {
+       "id": "cb",
+       "team": "them",
+       "x": 0.47,
+       "y": 0.12
+      },
+      {
+       "id": "am",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.2095
+      }
+     ],
+     "ball": {
+      "x": 0.623,
+      "y": 0.11499999999999999,
+      "path": [
+       {
+        "with": "am",
+        "at": 7,
+        "dur": 0.7
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.635,
+        0.105
+       ],
+       "to": [
+        0.5,
+        0.2095
+       ],
+       "color": "w",
+       "at": 7,
+       "dashed": true
+      },
+      {
+       "from": [
+        0.5,
+        0.2095
+       ],
+       "to": [
+        0.446,
+        0.0
+       ],
+       "color": "y",
+       "at": 7,
+       "dt": 0.6
+      },
+      {
+       "from": [
+        0.5,
+        0.2095
+       ],
+       "to": [
+        0.554,
+        0.0
+       ],
+       "color": "y",
+       "at": 7,
+       "dt": 0.75,
+       "label": "37°"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "dt": 0.0,
+     "y": 1480,
+     "size": 80,
+     "segs": [
+      [
+       "Almost ",
+       "w"
+      ],
+      [
+       "twice as big",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "dt": 0.0,
+     "y": 480,
+     "size": 96,
+     "segs": [
+      [
+       "TIGHT ANGLE  ",
+       "w"
+      ],
+      [
+       "22°",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "dt": 0.4,
+     "y": 620,
+     "size": 96,
+     "segs": [
+      [
+       "PENALTY SPOT  ",
+       "w"
+      ],
+      [
+       "37°",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "dt": 0.5,
+     "y": 1000,
+     "size": 84,
+     "segs": [
+      [
+       "You're ",
+       "w"
+      ],
+      [
+       "closer",
+       "y"
+      ],
+      [
+       ".",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "dt": 1.0,
+     "y": 1110,
+     "size": 84,
+     "segs": [
+      [
+       "Your target got ",
+       "w"
+      ],
+      [
+       "smaller",
+       "r"
+      ],
+      [
+       ".",
+       "w"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "dt": 0.0,
+     "y": 480,
+     "text": "THE RULE",
+     "fill": "y",
+     "color": "dark",
+     "size": 50
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "dt": 0.0,
+     "y": 700,
+     "size": 96,
+     "segs": [
+      [
+       "Tight angle?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "dt": 0.3,
+     "y": 830,
+     "size": 96,
+     "segs": [
+      [
+       "Look for the ",
+       "w"
+      ],
+      [
+       "cutback",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "dt": 0.6,
+     "y": 960,
+     "size": 96,
+     "segs": [
+      [
+       "first.",
+       "w"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.0,
+     "y": 520,
+     "size": 100,
+     "segs": [
+      [
+       "SHOOT",
+       "y"
+      ],
+      [
+       " or ",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.2,
+     "y": 650,
+     "size": 100,
+     "segs": [
+      [
+       "CUT IT BACK?",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "dt": 0.5,
+     "y": 790,
+     "size": 70,
+     "segs": [
+      [
+       "Comment below",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "dt": 0.0,
+     "y": 1260,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "dt": 0.4,
+     "y": 1420,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}
