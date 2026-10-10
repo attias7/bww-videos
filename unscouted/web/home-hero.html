@@ -1,0 +1,60 @@
+<section class="ush">
+<style>
+.ush{background:radial-gradient(900px 520px at 8% -10%,rgba(200,242,58,.16),transparent 62%),#0B0D0A;color:#F4F5EF;padding:64px 20px 72px}
+.ush .in{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.ush .pill{display:inline-block;border:1px solid #3A4A1A;border-radius:999px;padding:7px 14px;font-size:13px;color:#C8F23A;font-weight:800;letter-spacing:.08em}
+.ush h1{font-size:clamp(38px,5.6vw,64px);line-height:1.02;font-weight:800;letter-spacing:-.02em;margin:18px 0 16px;color:#fff}
+.ush h1 span{color:#C8F23A}
+.ush .lead{font-size:19px;line-height:1.55;color:#C9CEC0;max-width:520px;margin:0}
+.ush .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.ush .b1{display:inline-block;background:#C8F23A;color:#0B0D0A!important;font-weight:800;letter-spacing:.04em;text-transform:uppercase;text-decoration:none!important;padding:17px 26px;border-radius:12px;box-shadow:0 12px 34px rgba(200,242,58,.3)}
+.ush .b2{display:inline-block;border:1.5px solid rgba(244,245,239,.35);color:#F4F5EF!important;font-weight:800;letter-spacing:.04em;text-transform:uppercase;text-decoration:none!important;padding:16px 24px;border-radius:12px}
+.ush .ticks{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:14px;color:#A9AEA2}
+.ush .ticks b{color:#C8F23A}
+.ush .demo{background:#15180F;border:1px solid #262A20;border-radius:20px;padding:18px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.ush .dh{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:800;letter-spacing:.1em;color:#C8F23A;margin-bottom:10px}
+.ush .dh .sc{background:#C8F23A;color:#0B0D0A;border-radius:6px;padding:3px 8px;letter-spacing:0}
+.ush .dq{font-size:16px;line-height:1.45;color:#fff;margin:0 0 12px;font-weight:600}
+.ush .dimg{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;border-radius:12px;background:#12301C}
+.ush .opts{display:grid;gap:8px;margin-top:12px}
+.ush .opt{display:flex;gap:10px;align-items:center;text-align:left;background:#0F120B;border:1px solid #2A2F22;color:#F4F5EF;border-radius:12px;padding:11px 12px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+.ush .opt:hover{border-color:#C8F23A}
+.ush .opt i{font-style:normal;flex:none;width:26px;height:26px;border-radius:8px;background:#232B14;color:#C8F23A;display:flex;align-items:center;justify-content:center;font-weight:800}
+.ush .opt.ok{border-color:#9CC72A;background:#1D2A0C}
+.ush .opt.no{border-color:#E04848;background:#2A1212}
+.ush .opt:disabled{cursor:default}
+.ush .why{display:none;margin-top:12px;font-size:15px;line-height:1.5;color:#D6DBCF}
+.ush .why b{color:#C8F23A}
+.ush .go{display:none;margin-top:14px;text-align:center}
+.ush .go p{margin:0 0 10px;font-size:14px;color:#A9AEA2}
+@media(max-width:900px){.ush .in{grid-template-columns:1fr;gap:32px}.ush{padding:44px 16px 56px}}
+</style>
+<div class="in">
+ <div>
+  <span class="pill">FOR PLAYERS 15–21 · NO ACADEMY</span>
+  <h1>No academy?<br><span>Become your own coach.</span></h1>
+  <p class="lead">Learn to read the game like a pro: analyse players, games and yourself, and train the decisions that matter. Built for players nobody has found yet.</p>
+  <div class="btns"><a class="b1" href="/soccer-iq-test/">Take the free test →</a><a class="b2" href="/shop/">See the kits</a></div>
+  <div class="ticks"><span><b>✓</b> Every position</span><span><b>✓</b> Just a ball, a wall and your phone</span><span><b>✓</b> Instant download</span></div>
+ </div>
+ <div class="demo" id="ushd">
+  <div class="dh"><span>TRY ONE · RIGHT WINGER</span><span class="sc">34' · 0-0</span></div>
+  <p class="dq">Your right back plays it up the line to you. Their left back is in front of you. What do you do?</p>
+  <img class="dimg" id="ushimg" src="/wp-content/uploads/2026/10/us-football-decision-making-training-1.jpg" width="1066" height="936" alt="Tactics board: you are the right winger receiving the ball on the touchline, their left back in front of you">
+  <div class="opts">
+   <button class="opt" data-k="0"><i>A</i>Play it inside to your 10</button>
+   <button class="opt" data-k="1"><i>B</i>Lay it back to your right back</button>
+   <button class="opt" data-k="2"><i>C</i>Take him on down the line</button>
+  </div>
+  <p class="why" id="ushwhy"><b>Pro pick: C.</b> Look behind their left back: their nearest centre back is about 17 metres inside him. He is on his own, so attack the line. A looks free, but their DM is standing in that passing lane.</p>
+  <div class="go" id="ushgo"><p>That was 1 of 8 situations built for your position.</p><a class="b1" href="/soccer-iq-test/">Take the full free test →</a></div>
+ </div>
+</div>
+<script>
+(function(){var d=document.getElementById('ushd');if(!d)return;var bs=d.querySelectorAll('.opt');
+bs.forEach(function(b){b.onclick=function(){var k=parseInt(b.getAttribute('data-k'));bs.forEach(function(x){x.disabled=true;var xk=parseInt(x.getAttribute('data-k'));if(xk===2)x.classList.add('ok');else if(xk===k)x.classList.add('no')});
+document.getElementById('ushimg').src='/wp-content/uploads/2026/10/us-football-decision-making-training-1-answer.jpg';
+var w=document.getElementById('ushwhy');w.style.display='block';if(k!==2)w.innerHTML=w.innerHTML.replace('<b>Pro pick: C.</b>','<b>Not quite. Pro pick: C.</b>');else w.innerHTML=w.innerHTML.replace('<b>Pro pick: C.</b>','<b>Nice, that is the pro pick.</b>');
+document.getElementById('ushgo').style.display='block'}})})();
+</script>
+</section>
