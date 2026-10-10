@@ -1,0 +1,54 @@
+<div id="usa" style="display:none">
+<style>
+#usa{max-width:1100px;margin:24px auto 0;padding:0 20px;font-family:inherit}
+#usa .box{background:#0B0D0A;color:#F4F5EF;border-radius:18px;padding:20px 20px 16px;background-image:radial-gradient(500px 220px at 0% 0%,rgba(200,242,58,.16),transparent 70%)}
+#usa .hd{font-size:13px;font-weight:800;letter-spacing:.1em;color:#C8F23A;margin:0 0 4px}
+#usa .sub{margin:0 0 14px;color:#A9AEA2;font-size:15px}
+#usa .list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+#usa .it{display:flex;gap:14px;align-items:center;background:#15180F;border:1px solid #262A20;border-radius:14px;padding:12px}
+#usa .it img{width:64px;height:64px;border-radius:10px;flex:none;object-fit:cover}
+#usa .tx{flex:1;min-width:0}
+#usa .nm{font-weight:800;color:#fff;font-size:16px}
+#usa .ds{color:#A9AEA2;font-size:14px;line-height:1.4;margin-top:2px}
+#usa .pr{font-weight:800;color:#fff;margin-top:4px}
+#usa button{flex:none;background:#C8F23A;color:#0B0D0A;border:0;border-radius:10px;padding:10px 14px;font-weight:800;font-size:14px;cursor:pointer;font-family:inherit}
+#usa button:disabled{opacity:.6;cursor:default}
+#usa .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+#usa .chips button{background:#232B14;color:#C8F23A;border:1px solid #3A4A1A;padding:6px 10px;font-size:13px}
+</style>
+<div class="box"><p class="hd">ADD TO YOUR ORDER</p><p class="sub" id="usa-sub">Picked for your position. One click, same download.</p><div class="list" id="usa-list"></div></div>
+<script>
+(function(){
+var IMG='/wp-content/uploads/2026/10/';
+var P={28:{n:'Striker Pack',p:17,img:'striker-pack.jpg'},29:{n:'Winger Pack',p:17,img:'winger-pack.jpg'},30:{n:'Number 10 Pack',p:17,img:'number-10-pack.jpg'},31:{n:'Game Library',p:27,img:'game-library.jpg'}};
+var D={
+ striker:{28:'Finishing sessions, the striker\'s code and my breakdowns of Haaland, Kane, Henry, Mbappé and more.',31:'84 pro games. Watch the striker for one half, write your analysis, then compare with my notes.'},
+ winger:{29:'1v1 sessions, the winger\'s code and my notes on 33 wide players, from Vinícius to Saka.',31:'84 pro games. Watch the winger for one half, write your analysis, then compare with my notes.'},
+ ten:{30:'Finding space between the lines, the final pass and shooting from distance. Musiala, Foden, Palmer and more.',31:'84 pro games. Watch the 10 for one half, write your analysis, then compare with my notes.'},
+ mid:{30:'For midfielders who want to play forward: receiving between the lines, the final pass and shooting from distance.',31:'84 pro games. Watch one player for one half, write your analysis, then compare with my notes.'},
+ def:{31:'Learn how the attackers you face think. 84 pro games, with my notes on how the best attackers move and decide.'}
+};
+var SETS={striker:[28,31],winger:[29,31],ten:[30,31],mid:[30,31],def:[31]};
+var pos=null;try{pos=localStorage.getItem('us_pos')}catch(e){}
+var nonce=null;
+function api(path,opt){opt=opt||{};opt.credentials='same-origin';opt.headers=Object.assign({'Content-Type':'application/json'},nonce?{'Nonce':nonce}:{},opt.headers||{});return fetch('/wp-json/wc/store/v1/'+path,opt)}
+function card(id,desc,chips){var x=P[id];var d=document.createElement('div');d.className='it';
+ d.innerHTML='<img alt="" src="'+IMG+x.img+'"><div class="tx"><div class="nm">'+x.n+'</div><div class="ds">'+desc+'</div><div class="pr">+$'+x.p+'</div></div>';
+ var b=document.createElement('button');b.textContent='+ Add';b.onclick=function(){add(id,b)};d.appendChild(b);return d}
+function chipCard(inCart){var d=document.createElement('div');d.className='it';
+ d.innerHTML='<img alt="" src="'+IMG+'winger-pack.jpg"><div class="tx"><div class="nm">Your position pack</div><div class="ds">My notes and sessions for your position.</div><div class="pr">+$17</div><div class="chips"></div></div>';
+ var c=d.querySelector('.chips');[[28,'Striker'],[29,'Winger'],[30,'No. 10']].forEach(function(o){if(inCart.indexOf(o[0])>=0)return;var b=document.createElement('button');b.textContent='+ '+o[1];b.onclick=function(){add(o[0],b)};c.appendChild(b)});
+ return c.children.length?d:null}
+async function add(id,b){b.disabled=true;b.textContent='Adding…';try{await api('cart/add-item',{method:'POST',body:JSON.stringify({id:id,quantity:1})});}catch(e){}location.reload()}
+async function init(){var r=await api('cart');nonce=r.headers.get('Nonce');var cart=await r.json();var ids=(cart.items||[]).map(function(i){return i.id});
+ if(!ids.length)return; if(ids.indexOf(32)>=0)return; // bundle already has everything
+ var list=document.getElementById('usa-list');
+ if(pos&&SETS[pos]){SETS[pos].forEach(function(id){if(ids.indexOf(id)<0)list.appendChild(card(id,D[pos][id]))});}
+ else{document.getElementById('usa-sub').textContent='Go deeper. One click, same download.';
+  if(ids.indexOf(31)<0)list.appendChild(card(31,'84 pro games. Watch one player for one half, write your analysis, then compare with my notes.'));
+  var cc=chipCard(ids);if(cc)list.appendChild(cc);}
+ if(list.children.length)document.getElementById('usa').style.display='block'}
+init();
+})();
+</script>
+</div>

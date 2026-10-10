@@ -111,7 +111,7 @@
     <p style="margin-top:10px;font-size:17px;line-height:1.55;color:#1F2418">The Basics Kit is the full method behind this test: how to analyse players, games and yourself, the 9 basics and a 12-week plan. Your code <span class="code">PAUSE10</span> takes $10 off the Kit or the Bundle. The button adds it for you.</p>
     <div class="prods">
       <div class="prod"><span class="tag">MOST COMPLETE</span><span class="nm">Everything Bundle</span><span class="small">Basics Kit + all 3 position packs + 84-game library</span><span class="pr">$69<s>$79</s></span><button class="btn" data-buy="32">Get the bundle →</button></div>
-      <div class="prod"><span class="tag">START HERE</span><span class="nm">The Basics Kit</span><span class="small">10 guides, worksheets, 12-week plan</span><span class="pr">$27<s>$37</s></span><button class="btn" data-buy="27">Get the kit →</button></div>
+      <div class="prod"><span class="tag">START HERE</span><span class="nm">The Basics Kit</span><span class="small">10 guides, worksheets, 12-week plan</span><span class="pr">$37<s>$47</s></span><button class="btn" data-buy="27">Get the kit →</button></div>
     </div>
     <p id="ust-packtip" style="margin-top:14px;font-size:15px;color:#1F2418"></p>
   </div>
@@ -406,7 +406,7 @@ async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discou
   location.href='/checkout/';}
  catch(e){location.href='/checkout/?add-to-cart='+id}}
 document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false}});
-$('start').onclick=function(){Q=QS[pos]||QS.mid;document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+$('start').onclick=function(){Q=QS[pos]||QS.mid;try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 $('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
 $('again').onclick=function(){Q=QS[pos]||QS.mid;document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
