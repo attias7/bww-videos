@@ -72,7 +72,7 @@
 <section id="ust-intro">
   <div class="pill"><b>FREE · 8 REAL MATCH MOMENTS</b>&nbsp;&nbsp;3 minutes</div>
   <h1>Pause &amp; decide.<br><span>Do you see the game like a pro?</span></h1>
-  <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position. 3 options each, 15 seconds to decide, and the picture fades after 6 seconds, like a real shoulder check. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
+  <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position. 3 options each, 15 seconds to decide. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
   <div class="card" style="margin-top:26px">
     <p style="font-weight:800;color:#fff">What position do you play?</p>
     <div class="pos" id="ust-pos">
@@ -380,14 +380,13 @@ function render(){var s=Q[i];locked=false;var o=[0,1,2];for(var a=2;a>0;a--){var
  $('n').textContent=(i+1)+' / '+Q.length;$('prog').style.width=(i/Q.length*100)+'%';$('min').textContent=s.min;$('score').textContent=s.sc;$('role').textContent='YOU: '+s.role;$('q').innerHTML=s.q;
  var pc=$('pitch');pc.innerHTML='';pc.appendChild(draw(s));
  var oc=$('opts');oc.innerHTML='';s._ord.forEach(function(k,j){var op=s.o[k];var b=document.createElement('button');b.className='opt';b.setAttribute('data-k',k);b.innerHTML='<span class="k">'+'ABC'[j]+'</span><span>'+op[0]+'</span>';b.onclick=function(){answer(k)};oc.appendChild(b)});
- clearTimeout(window._ustFade);var pl=document.getElementById('ust-players');window._ustFade=setTimeout(function(){if(pl)pl.classList.add('fade');var h=$('scanhint');if(h)h.textContent='Picture gone. Decide from what you saw.'},6000);var sh=$('scanhint');if(sh)sh.textContent='Scan the picture: it fades in 6 seconds.';
  $('fb').classList.add('hide');$('next').classList.add('hide');$('timer').classList.remove('hide');
  var bar=$('tbar');bar.style.transition='none';bar.style.transform='scaleX(1)';void bar.offsetWidth;bar.style.transition='transform '+TIME+'s linear';bar.style.transform='scaleX(0)';
  clearTimeout(tmr);tmr=setTimeout(function(){answer(-1)},TIME*1000);
  document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
 function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
  var bar=$('tbar');var cs=getComputedStyle(bar).transform;bar.style.transition='none';bar.style.transform=cs;
- clearTimeout(window._ustFade);var pl=document.getElementById('ust-players');if(pl)pl.classList.remove('fade');var sh=$('scanhint');if(sh)sh.textContent='';var got=k===s.pro?1:0;var half=k>=0?s.o[k][1]===1:false;pts+=got;res[s.cat]=(res[s.cat]||0)+got;
+ var got=k===s.pro?1:0;var half=k>=0?s.o[k][1]===1:false;pts+=got;res[s.cat]=(res[s.cat]||0)+got;
  var btns=$('opts').children;for(var j=0;j<btns.length;j++){var kk=parseInt(btns[j].getAttribute('data-k'));btns[j].disabled=true;if(kk===s.pro)btns[j].classList.add('pro');if(kk===k)btns[j].classList.add('mine')}
  showArrows(s,k);
  var head=k<0?"⏱ Too slow. In a game the defender's already on you.":k===s.pro?'✅ Pro pick. +1':half?'🟡 Close, but not the pro pick. +0':'❌ Not this time. +0';
