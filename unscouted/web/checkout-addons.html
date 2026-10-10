@@ -43,7 +43,7 @@ async function add(id,b){b.disabled=true;b.textContent='Adding…';try{await api
 async function init(){var r=await api('cart');nonce=r.headers.get('Nonce');var cart=await r.json();var ids=(cart.items||[]).map(function(i){return i.id});
  if(!ids.length)return; if(ids.indexOf(32)>=0)return; // bundle already has everything
  var list=document.getElementById('usa-list');
- if(pos&&SETS[pos]){SETS[pos].forEach(function(id){if(ids.indexOf(id)<0)list.appendChild(card(id,D[pos][id]))});}
+ if(SETS[pos||"none"]){SETS[pos].forEach(function(id){if(ids.indexOf(id)<0)list.appendChild(card(id,D[pos][id]))});}
  else{document.getElementById('usa-sub').textContent='Go deeper. One click, same download.';
   if(ids.indexOf(31)<0)list.appendChild(card(31,'84 pro games. Watch one player for one half, write your analysis, then compare with my notes.'));
   var cc=chipCard(ids);if(cc)list.appendChild(cc);}
