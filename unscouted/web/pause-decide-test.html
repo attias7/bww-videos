@@ -1,0 +1,232 @@
+<div id="ust">
+<style>
+#ust{--ink:#0B0D0A;--lime:#C8F23A;--card:#15180F;--line:#262A20;--mut:#A9AEA2;--txt:#F4F5EF;--red:#E04848;background:radial-gradient(900px 520px at 12% -10%,rgba(200,242,58,.16),transparent 62%),var(--ink);color:var(--txt);padding:48px 16px 80px;min-height:80vh}
+#ust *{box-sizing:border-box}
+#ust .w{max-width:720px;margin:0 auto}
+#ust .pill{display:inline-block;border:1px solid rgba(200,242,58,.45);border-radius:999px;padding:7px 14px;font-size:13px;color:#D6DBCF}
+#ust .pill b{color:var(--lime);letter-spacing:.06em}
+#ust h1{margin:18px 0 0;font-size:clamp(34px,6vw,58px);line-height:1.03;font-weight:800;letter-spacing:-.025em;color:#fff}
+#ust h1 span{color:var(--lime)}
+#ust h2{margin:0;font-size:clamp(24px,4vw,34px);line-height:1.15;font-weight:800;letter-spacing:-.02em;color:#fff}
+#ust p{margin:0}
+#ust .lead{font-size:18px;line-height:1.6;color:#D6DBCF;margin-top:18px}
+#ust .small{font-size:14px;color:var(--mut);line-height:1.5}
+#ust .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--lime);color:var(--ink)!important;font-weight:800;letter-spacing:.04em;text-transform:uppercase;text-decoration:none!important;padding:17px 28px;border-radius:12px;border:0;cursor:pointer;font-size:16px;box-shadow:0 12px 34px rgba(200,242,58,.3);font-family:inherit}
+#ust .btn.ghost{background:transparent;color:var(--txt)!important;border:1.5px solid rgba(244,245,239,.35);box-shadow:none}
+#ust .btn:disabled{opacity:.5;cursor:default}
+#ust .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+#ust .pos{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+#ust .pos button{background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+#ust .pos button.on{border-color:var(--lime);background:#232B14;color:var(--lime)}
+#ust .top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+#ust .prog{flex:1;height:6px;background:#22261C;border-radius:9px;overflow:hidden}
+#ust .prog i{display:block;height:100%;background:var(--lime);transition:width .3s}
+#ust .sb{display:inline-flex;align-items:center;gap:8px;background:#000;border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-weight:800;font-size:14px}
+#ust .sb .s{background:var(--lime);color:var(--ink);border-radius:6px;padding:2px 8px}
+#ust .sb .m{background:var(--red);color:#fff;border-radius:6px;padding:2px 7px}
+#ust .q{font-size:19px;line-height:1.5;color:#fff;margin:14px 0}
+#ust .q b{color:var(--lime)}
+#ust svg{width:100%;height:auto;display:block;border-radius:14px}
+#ust .timer{height:5px;background:#22261C;border-radius:9px;overflow:hidden;margin:12px 0 4px}
+#ust .timer i{display:block;height:100%;width:100%;background:var(--lime);transform-origin:left}
+#ust .opts{display:grid;gap:10px;margin-top:12px}
+#ust .opt{display:flex;gap:12px;align-items:center;text-align:left;background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:14px;padding:14px 16px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;width:100%}
+#ust .opt .k{flex:none;width:32px;height:32px;border-radius:9px;background:#2A3020;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+#ust .opt:hover:not(:disabled){border-color:var(--lime)}
+#ust .opt.pro{border-color:var(--lime);background:#232B14}
+#ust .opt.pro .k{background:var(--lime);color:var(--ink)}
+#ust .opt.mine:not(.pro){border-color:var(--red)}
+#ust .opt.mine:not(.pro) .k{background:var(--red)}
+#ust .opt:disabled{cursor:default}
+#ust .fb{margin-top:14px;border-radius:14px;padding:16px 18px;background:#1C2312;border:1px solid #3A4A1A;line-height:1.55}
+#ust .fb .h{font-weight:800;font-size:17px;margin-bottom:6px}
+#ust .fb .why{color:#D6DBCF;font-size:16px}
+#ust .fb .mineTxt{color:var(--mut);font-size:15px;margin-top:8px}
+#ust .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px}
+#ust .big{font-size:64px;font-weight:800;line-height:1;color:#fff}
+#ust .big span{font-size:24px;color:var(--mut)}
+#ust .cats{display:grid;gap:8px;margin-top:16px}
+#ust .cat{display:flex;justify-content:space-between;gap:10px;background:#1C2016;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px}
+#ust .cat em{font-style:normal;font-weight:800}
+#ust .offer{margin-top:28px;background:var(--lime);color:var(--ink);border-radius:20px;padding:26px 22px}
+#ust .offer h2{color:var(--ink)}
+#ust .offer .code{display:inline-block;background:var(--ink);color:var(--lime);font-weight:800;letter-spacing:.08em;border-radius:8px;padding:4px 10px;margin:0 4px}
+#ust .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:18px}
+#ust .prod{background:var(--ink);color:var(--txt);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:6px}
+#ust .prod .tag{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--lime)}
+#ust .prod .nm{font-size:20px;font-weight:800;color:#fff}
+#ust .prod .pr{font-size:34px;font-weight:800;color:#fff;margin-top:4px}
+#ust .prod .pr s{font-size:18px;color:var(--mut);font-weight:600;margin-left:6px}
+#ust .prod .btn{margin-top:10px;width:100%;padding:15px 16px;font-size:15px}
+#ust .hide{display:none!important}
+@media(max-width:520px){#ust{padding:32px 12px 72px}#ust .q{font-size:17px}#ust .opt{font-size:15px;padding:12px 13px}}
+</style>
+<div class="w">
+
+<section id="ust-intro">
+  <div class="pill"><b>FREE · 8 REAL MATCH MOMENTS</b>&nbsp;&nbsp;3 minutes</div>
+  <h1>Pause &amp; decide.<br><span>Do you see the game like a pro?</span></h1>
+  <p class="lead">Like the reels, but you're on the pitch. 8 situations, 3 options each, 20 seconds to decide. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
+  <div class="card" style="margin-top:26px">
+    <p style="font-weight:800;color:#fff">What position do you play?</p>
+    <div class="pos" id="ust-pos">
+      <button data-p="striker">Striker</button><button data-p="winger">Winger</button><button data-p="ten">No. 10</button><button data-p="mid">Midfielder</button><button data-p="def">Defender</button>
+    </div>
+    <div class="row"><button class="btn" id="ust-start" disabled>Start the test →</button></div>
+    <p class="small" style="margin-top:12px">No sign-up. Just decide like you would in a real game.</p>
+  </div>
+</section>
+
+<section id="ust-game" class="hide">
+  <div class="top"><span class="small" id="ust-n">1 / 8</span><div class="prog"><i id="ust-prog" style="width:0"></i></div><span class="sb"><span id="ust-min">80'</span><span class="s" id="ust-score">1-0</span></span></div>
+  <p class="small" id="ust-role" style="color:var(--lime);font-weight:800;letter-spacing:.08em"></p>
+  <p class="q" id="ust-q"></p>
+  <div id="ust-pitch"></div>
+  <div class="timer" id="ust-timer"><i id="ust-tbar"></i></div>
+  <div class="opts" id="ust-opts"></div>
+  <div class="fb hide" id="ust-fb"></div>
+  <div class="row"><button class="btn hide" id="ust-next">Next situation →</button></div>
+</section>
+
+<section id="ust-res" class="hide">
+  <div class="pill"><b>YOUR RESULT</b></div>
+  <div class="row" style="margin-top:16px"><div class="big" id="ust-pts">0<span>/16</span></div></div>
+  <h2 id="ust-tier" style="margin-top:14px"></h2>
+  <p class="lead" id="ust-tierTxt"></p>
+  <div class="cats" id="ust-cats"></div>
+  <p class="small" style="margin-top:14px">8 moments is a quick check, not a scout's verdict. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
+
+  <div class="offer">
+    <p style="font-weight:800;letter-spacing:.1em;font-size:13px">FOR FINISHING THE TEST · $10 OFF</p>
+    <h2 style="margin-top:8px">Train this every week, not just once.</h2>
+    <p style="margin-top:10px;font-size:17px;line-height:1.55;color:#1F2418">The Basics Kit is the full method behind this test: how to analyse players, games and yourself, the 9 basics and a 12-week plan. Your code <span class="code">PAUSE10</span> takes $10 off the Kit or the Bundle. The button adds it for you.</p>
+    <div class="prods">
+      <div class="prod"><span class="tag">MOST COMPLETE</span><span class="nm">Everything Bundle</span><span class="small">Basics Kit + all 3 position packs + 84-game library</span><span class="pr">$69<s>$79</s></span><button class="btn" data-buy="32">Get the bundle →</button></div>
+      <div class="prod"><span class="tag">START HERE</span><span class="nm">The Basics Kit</span><span class="small">10 guides, worksheets, 12-week plan</span><span class="pr">$27<s>$37</s></span><button class="btn" data-buy="27">Get the kit →</button></div>
+    </div>
+    <p id="ust-packtip" style="margin-top:14px;font-size:15px;color:#1F2418"></p>
+  </div>
+  <div class="row"><button class="btn ghost" id="ust-again">Take it again</button><a class="btn ghost" href="/wp-content/uploads/2026/10/Unscouted-Free-Test-c6a4b47242.pdf" download>Printable analysis test (PDF)</a></div>
+</section>
+</div>
+
+<script>
+(function(){
+var POS={striker:{n:'Striker Pack',id:28},winger:{n:'Winger Pack',id:29},ten:{n:'Number 10 Pack',id:30},mid:{n:'Number 10 Pack',id:30},def:null};
+var CATS={state:'Reading the score & clock',scan:'Scanning before the ball',finish:'Finishing',onev:'1v1 decisions',pass:'Seeing the final pass',react:'Reacting after losing it'};
+// pitch: x 0-100 left→right, y 0 = goal we attack, 100 = halfway line
+var Q=[
+{cat:'state',role:'YOU: RIGHT WINGER',min:"80'",sc:'1-0',q:"You're <b>1-0 up</b> with ten minutes left. The ball comes to you on the wing and <b>two defenders</b> are closing you down.",
+ p:[['me',86,42],['us',48,22],['us',42,66],['them',72,32],['them',76,60],['them',50,14],['them',58,24],['gk',50,3]],ball:'me',
+ o:[['Dribble inside and shoot',0,[86,42,57,27],"You might score, but lose it here and they break 2v1 with ten minutes left."],
+    ['Take it to the corner flag and shield it',2,[86,42,96,5],"1-0 up in the 80th minute, the clock is your teammate. Every second the ball is by their corner flag is a second they can't score. Win a throw or a corner and the clock keeps running."],
+    ['Cross it into the box',1,[86,42,50,13],"Not wrong if your striker is free, but here it's one against three. A cleared cross turns into a counter."]],pro:1},
+{cat:'state',role:'YOU: BEST PLAYER ON YOUR TEAM',min:"85'",sc:'0-1',q:"You're <b>losing 0-1</b> with five minutes left. You get the ball on the edge of the box, <b>one defender</b> in front of you. A teammate is free out wide.",
+ p:[['me',52,36],['them',52,29],['them',36,22],['them',64,20],['us',86,40,'FREE'],['us',50,62],['gk',50,3]],ball:'me',
+ o:[['Pass it wide to the free player',1,[52,36,86,40],"Not a bad pass, but he still has to beat his man and cross into a full box. The clock is against you."],
+    ['Play it back and keep the ball',0,[52,36,50,62],"Keeping the ball is for when you're winning. Losing with five minutes left, safe passes back lose games."],
+    ['Take him on and shoot',2,[52,36,48,6],"You're the best player on the pitch, it's 0-1 in the 85th minute. This is your moment to take the risk. Even a blocked shot can win a corner."]],pro:2},
+{cat:'scan',role:'YOU: CENTRAL MIDFIELDER',min:"30'",sc:'0-0',q:"Your center back passes to you at halfway. A defender is <b>tight on your back</b>. You <b>checked your shoulder</b> a second ago: there's space to your left.",
+ p:[['me',50,72],['them',50,64],['us',50,94],['them',70,56],['us',22,58],['us',78,62],['them',40,40]],ball:'us2',pass:[50,94,50,74],
+ o:[['Spin him on your first touch into the space',2,[50,72,30,52],"You already scanned, so you know the space is there. Pros make this decision before the ball even arrives. One touch and you're past him, facing forward."],
+    ['Play it back to the center back',1,[50,72,50,94],"Safe and never really wrong. But you saw the space and didn't use it. That's the difference between keeping the ball and moving the game forward."],
+    ['Hold it and wait for help',0,[50,72,50,70],"Holding the ball with a defender on your back invites the tackle. Decide before the ball arrives, not after."]],pro:0},
+{cat:'finish',role:'YOU: STRIKER',min:"60'",sc:'1-1',q:"Your winger gets to the byline and plays it <b>low across the six-yard box</b>. You arrive first. A defender is one step behind you.",
+ p:[['me',46,14],['them',53,17],['them',38,18],['us',90,8],['gk',52,3]],ball:'us1',pass:[90,8,47,12],
+ o:[['Take a touch to set yourself, then shoot',0,[46,14,44,12],"One extra touch and the defender or the keeper is on you. In the six-yard box there's no time."],
+    ['Side-foot it first time, low, on target',2,[46,14,48,1],"From my notes on Haaland's goals: inside of the foot, first time, on target. From six yards power doesn't matter. Accuracy does."],
+    ['Smash it first time with your laces',1,[46,14,52,-2],"Sometimes it flies in. Most of the time a first-time laces shot from a cross goes over. Placement beats power here."]],pro:1},
+{cat:'finish',role:'YOU: STRIKER',min:"70'",sc:'0-0',q:"You're <b>through on goal</b> just inside the box. The keeper is <b>rushing out</b> at you. A defender is chasing, two steps behind.",
+ p:[['me',52,30],['gk',51,16],['them',58,40],['them',30,36]],ball:'me',
+ o:[['Try to go round the keeper',1,[52,30,72,16],"Can work if he dives early. But it's slower, and it gives the defender time to get back."],
+    ['Slow down and wait for him to commit',0,[52,30,52,27],"Waiting lets the keeper set himself and the defender catch you. Your advantage is time. Use it."],
+    ['Shoot early, low, across him to the far post',2,[52,30,40,0],"A keeper rushing out covers the near post and the middle. Early, low and to the far post gives him the least time to react."]],pro:2},
+{cat:'onev',role:'YOU: RIGHT WINGER',min:"20'",sc:'0-0',q:"You're <b>1v1 with their full-back</b>. He's standing square, there's <b>empty space behind him</b> down the line, and you're faster than him.",
+ p:[['me',82,52],['them',80,38],['them',56,24],['them',42,26],['us',50,30],['gk',50,3]],ball:'me',
+ o:[['Knock it past him down the line and run',2,[82,52,92,14],"Space behind plus you're faster: use it. One touch past him and race him. From my notes on Vinícius: stay wide, then go."],
+    ['Cut inside onto your other foot',1,[82,52,64,36],"A good move when he's showing you outside. Here he's square, and inside is crowded by the center back."],
+    ['Pass it back to your full-back',0,[82,52,84,82],"Wingers who always pass back never get noticed. 1v1 with space behind is exactly the moment to attack."]],pro:0},
+{cat:'pass',role:'YOU: NUMBER 10',min:"55'",sc:'0-0',q:"You receive <b>between the lines</b>, facing their goal. Their center back <b>steps out</b> to press you. Your striker is already <b>running behind him</b>.",
+ p:[['me',50,46],['them',50,33],['them',34,24],['us',60,26],['them',66,30],['us',28,60],['gk',50,3]],ball:'me',run:[60,26,52,12],
+ o:[['Turn and shoot from 30 yards',1,[50,46,50,2],"If nobody's closing you, maybe. But the center back is on you and the shot will probably be blocked."],
+    ['Play it first time into the space he left',2,[50,46,52,14],"When a center back steps out, he leaves a hole behind him. Your striker is already running into it. The best 10s see it before the ball arrives."],
+    ['Lay it off to your midfielder',1,[50,46,28,60],"Safe, but you just had the chance to put your striker through on goal."]],pro:1},
+{cat:'react',role:'YOU: LEFT WINGER',min:"40'",sc:'1-1',q:"You try a dribble and <b>lose the ball</b>. Their player has it and he's about to look up. Your team is pushed up high.",
+ p:[['me',24,30],['them',27,35],['them',52,50],['them',70,56],['us',50,40],['us',40,72]],ball:'them1',
+ o:[['Press him straight away for 5 seconds',2,[24,30,27,34],"The best moment to win it back is the second you lose it. He hasn't looked up yet. Five hard seconds, then drop back."],
+    ['Put your hands up and appeal for a foul',0,[24,30,24,28],"Coaches notice this every single time. While you're appealing, they're counter-attacking."],
+    ['Jog back to your position',1,[24,30,26,62],"Better than appealing, but slow. Your team needs you in the first five seconds."]],pro:0}
+];
+var $=function(id){return document.getElementById('ust-'+id)};
+var pos=null,i=0,pts=0,res={},tmr=null,locked=false,TIME=20;
+function el(t,a){var e=document.createElementNS('http://www.w3.org/2000/svg',t);for(var k in a)e.setAttribute(k,a[k]);return e}
+function arrow(svg,x1,y1,x2,y2,col,dash){var l=el('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:col,'stroke-width':1.3,'stroke-linecap':'round','marker-end':'url(#ah'+(col=='#C8F23A'?'L':col=='#E04848'?'R':'W')+')'});if(dash)l.setAttribute('stroke-dasharray','2.2 1.8');svg.appendChild(l);return l}
+function draw(s,showArr){var svg=el('svg',{viewBox:'-4 -8 108 112'});
+ var defs=el('defs',{});[['L','#C8F23A'],['R','#E04848'],['W','#FFFFFF']].forEach(function(m){var mk=el('marker',{id:'ah'+m[0],viewBox:'0 0 10 10',refX:'7',refY:'5',markerWidth:'4',markerHeight:'4',orient:'auto-start-reverse'});mk.appendChild(el('path',{d:'M0,0 L10,5 L0,10 z',fill:m[1]}));defs.appendChild(mk)});svg.appendChild(defs);
+ svg.appendChild(el('rect',{x:-4,y:-8,width:108,height:112,fill:'#112C1C'}));
+ for(var k=0;k<6;k++)if(k%2)svg.appendChild(el('rect',{x:0,y:k*100/6,width:100,height:100/6,fill:'#14331F'}));
+ var L={stroke:'#CDDED0','stroke-width':.6,fill:'none',opacity:.75};
+ svg.appendChild(el('rect',Object.assign({x:0,y:0,width:100,height:100},L)));
+ svg.appendChild(el('rect',Object.assign({x:20,y:0,width:60,height:28},L)));
+ svg.appendChild(el('rect',Object.assign({x:37,y:0,width:26,height:9},L)));
+ svg.appendChild(el('rect',Object.assign({x:44,y:-3.5,width:12,height:3.5},L)));
+ svg.appendChild(el('path',Object.assign({d:'M41,28 A12,12 0 0 0 59,28'},L)));
+ svg.appendChild(el('path',Object.assign({d:'M35,100 A15,15 0 0 1 65,100'},L)));
+ svg.appendChild(el('circle',{cx:50,cy:19,r:.6,fill:'#CDDED0'}));
+ if(s.pass)arrow(svg,s.pass[0],s.pass[1],s.pass[2],s.pass[3],'#FFFFFF',true);
+ if(s.run)arrow(svg,s.run[0],s.run[1],s.run[2],s.run[3],'#C8F23A',true);
+ var g=el('g',{id:'ust-arr'});svg.appendChild(g);
+ var uC=0,tC=0;
+ s.p.forEach(function(p){var t=p[0],x=p[1],y=p[2];
+  if(t=='me'){svg.appendChild(el('circle',{cx:x,cy:y,r:4.2,fill:'none',stroke:'#C8F23A','stroke-width':.8}));svg.appendChild(el('circle',{cx:x,cy:y,r:2.8,fill:'#C8F23A',stroke:'#fff','stroke-width':.6}));var tx=el('text',{x:x,y:y+8.5,'text-anchor':'middle','font-size':3.6,'font-weight':800,fill:'#C8F23A'});tx.textContent='YOU';svg.appendChild(tx)}
+  else if(t=='gk'){svg.appendChild(el('circle',{cx:x,cy:y,r:2.6,fill:'#F2A93B',stroke:'#fff','stroke-width':.5}))}
+  else {svg.appendChild(el('circle',{cx:x,cy:y,r:2.6,fill:t=='us'?'#F4F5EF':'#E04848',stroke:t=='us'?'#9AA090':'#fff','stroke-width':.5}));if(p[3]){var lb=el('text',{x:x,y:y-4.2,'text-anchor':'middle','font-size':3.2,'font-weight':800,fill:'#fff'});lb.textContent=p[3];svg.appendChild(lb)}}
+ });
+ // ball
+ var bx,by;if(s.ball=='me'){var m=s.p[0];bx=m[1]+2.6;by=m[2]-2.2}else if(s.pass){bx=s.pass[0]-2;by=s.pass[1]-2.4}else{var o=s.p.filter(function(p){return p[0]=='them'})[0];bx=o[1]+2.6;by=o[2]-2.2}
+ svg.appendChild(el('circle',{cx:bx,cy:by,r:1.25,fill:'#fff',stroke:'#111','stroke-width':.3}));
+ var key=el('text',{x:-2,y:-3,'font-size':3.2,fill:'#CDDED0',opacity:.8});key.textContent='▲ their goal';svg.appendChild(key);
+ return svg}
+function showArrows(s,mine){var g=document.getElementById('ust-arr');if(!g)return;g.innerHTML='';
+ s.o.forEach(function(op,k){if(k!==s.pro&&k!==mine)return;var a=op[2];var l=arrow(g,a[0],a[1],a[2],a[3],k===s.pro?'#C8F23A':'#E04848',false);
+  var lb=el('text',{x:(a[0]+a[2])/2+2,y:(a[1]+a[3])/2,'font-size':3.6,'font-weight':800,fill:k===s.pro?'#C8F23A':'#E04848'});lb.textContent='ABC'[k];g.appendChild(lb)})}
+function render(){var s=Q[i];locked=false;
+ $('n').textContent=(i+1)+' / '+Q.length;$('prog').style.width=(i/Q.length*100)+'%';$('min').textContent=s.min;$('score').textContent=s.sc;$('role').textContent=s.role;$('q').innerHTML=s.q;
+ var pc=$('pitch');pc.innerHTML='';pc.appendChild(draw(s));
+ var oc=$('opts');oc.innerHTML='';s.o.forEach(function(op,k){var b=document.createElement('button');b.className='opt';b.innerHTML='<span class="k">'+'ABC'[k]+'</span><span>'+op[0]+'</span>';b.onclick=function(){answer(k)};oc.appendChild(b)});
+ $('fb').classList.add('hide');$('next').classList.add('hide');$('timer').classList.remove('hide');
+ var bar=$('tbar');bar.style.transition='none';bar.style.transform='scaleX(1)';void bar.offsetWidth;bar.style.transition='transform '+TIME+'s linear';bar.style.transform='scaleX(0)';
+ clearTimeout(tmr);tmr=setTimeout(function(){answer(-1)},TIME*1000);
+ document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
+function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
+ var bar=$('tbar');var cs=getComputedStyle(bar).transform;bar.style.transition='none';bar.style.transform=cs;
+ var got=k>=0?s.o[k][1]:0;pts+=got;res[s.cat]=(res[s.cat]||0)+got;
+ var btns=$('opts').children;for(var j=0;j<btns.length;j++){btns[j].disabled=true;if(j===s.pro)btns[j].classList.add('pro');if(j===k)btns[j].classList.add('mine')}
+ showArrows(s,k);
+ var head=k<0?"⏱ Too slow. In a game the defender's already on you.":k===s.pro?'✅ Pro pick. +2':got===1?'🟡 Not wrong, but not the best. +1':'❌ Not this time. +0';
+ var html='<div class="h">'+head+'</div><div class="why"><b style="color:#C8F23A">Pro pick: '+'ABC'[s.pro]+'.</b> '+s.o[s.pro][3]+'</div>';
+ if(k>=0&&k!==s.pro)html+='<div class="mineTxt">Your pick ('+'ABC'[k]+'): '+s.o[k][3]+'</div>';
+ var fb=$('fb');fb.innerHTML=html;fb.classList.remove('hide');
+ var nx=$('next');nx.textContent=i<Q.length-1?'Next situation →':'See my result →';nx.classList.remove('hide')}
+function finish(){$('game').classList.add('hide');$('res').classList.remove('hide');
+ $('pts').innerHTML=pts+'<span>/'+(Q.length*2)+'</span>';
+ var t=pts>=14?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:pts>=9?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
+ $('tier').textContent=t[0];$('tierTxt').textContent=t[1];
+ var max={};Q.forEach(function(s){max[s.cat]=(max[s.cat]||0)+2});
+ $('cats').innerHTML=Object.keys(CATS).map(function(c){var v=res[c]||0,m=max[c];return '<div class="cat"><span>'+CATS[c]+'</span><em style="color:'+(v===m?'#C8F23A':v>0?'#F2A93B':'#E04848')+'">'+v+'/'+m+'</em></div>'}).join('');
+ var pk=POS[pos];$('packtip').innerHTML=pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
+ $('prog').style.width='100%';document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
+async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
+ try{var r=await fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};
+  await fetch('/wp-json/wc/store/v1/cart/add-item',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({id:id,quantity:1})});
+  await fetch('/wp-json/wc/store/v1/cart/apply-coupon',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({code:'pause10'})});
+  location.href='/checkout/';}
+ catch(e){location.href='/checkout/?add-to-cart='+id}}
+document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false}});
+$('start').onclick=function(){$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+$('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
+$('again').onclick=function(){$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
+})();
+</script>
+</div>
