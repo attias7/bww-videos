@@ -403,10 +403,12 @@ function finish(){document.getElementById('ust').classList.remove('wide');$('gam
  var pk=POS[pos];$('packtip').innerHTML=pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
  $('prog').style.width='100%';document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
 async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
- try{var r=await fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};var cj=await r.json();var have=(cj.items||[]).some(function(it){return it.id===id});
-  if(!have)await fetch('/wp-json/wc/store/v1/cart/add-item',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({id:id,quantity:1})});
-  await fetch('/wp-json/wc/store/v1/cart/apply-coupon',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({code:'pause10'})});
-  location.href='/checkout/';}
+ try{var r=await fetch('/wp-json/wc/store/v1/cart?_='+Date.now(),{credentials:'same-origin',cache:'no-store'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};
+  await fetch('/wp-json/wc/store/v1/cart/add-item?_='+Date.now(),{method:'POST',credentials:'same-origin',cache:'no-store',headers:h,body:JSON.stringify({id:id,quantity:1})});
+  var c=await fetch('/wp-json/wc/store/v1/cart/apply-coupon?_='+Date.now(),{method:'POST',credentials:'same-origin',cache:'no-store',headers:h,body:JSON.stringify({code:'pause10'})});
+  var f=await (await fetch('/wp-json/wc/store/v1/cart?_='+Date.now(),{credentials:'same-origin',cache:'no-store'})).json();
+  var ok=(f.items||[]).some(function(it){return it.id===id});
+  location.href=ok?'/checkout/':'/checkout/?add-to-cart='+id;}
  catch(e){location.href='/checkout/?add-to-cart='+id}}
 document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false}});
 $('start').onclick=function(){Q=QS[pos]||QS.mid;try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};

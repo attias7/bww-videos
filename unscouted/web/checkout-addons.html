@@ -31,7 +31,7 @@ var D={
 var SETS={striker:[28,78],winger:[29,78],ten:[30,78],mid:[30,78],def:[77,78]};
 var pos=null;try{pos=localStorage.getItem('us_pos')}catch(e){}
 var nonce=null;
-function api(path,opt){opt=opt||{};opt.credentials='same-origin';opt.headers=Object.assign({'Content-Type':'application/json'},nonce?{'Nonce':nonce}:{},opt.headers||{});return fetch('/wp-json/wc/store/v1/'+path,opt)}
+function api(path,opt){opt=opt||{};opt.credentials='same-origin';opt.headers=Object.assign({'Content-Type':'application/json'},nonce?{'Nonce':nonce}:{},opt.headers||{});opt.cache='no-store';return fetch('/wp-json/wc/store/v1/'+path+(path.indexOf('?')<0?'?':'&')+'_='+Date.now(),opt)}
 function card(id,desc,chips){var x=P[id];var d=document.createElement('div');d.className='it';
  d.innerHTML='<img alt="" src="'+IMG+x.img+'"><div class="tx"><div class="nm">'+x.n+'</div><div class="ds">'+desc+'</div><div class="pr">+$'+x.p+'</div></div>';
  var b=document.createElement('button');b.textContent='+ Add';b.onclick=function(){add(id,b)};d.appendChild(b);return d}
