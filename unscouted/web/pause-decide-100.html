@@ -1,0 +1,735 @@
+<div id="ust">
+<style>
+#ust{--ink:#0B0D0A;--lime:#C8F23A;--card:#15180F;--line:#262A20;--mut:#A9AEA2;--txt:#F4F5EF;--red:#E04848;background:radial-gradient(900px 520px at 12% -10%,rgba(200,242,58,.16),transparent 62%),var(--ink);color:var(--txt);padding:48px 16px 80px;min-height:80vh}
+#ust *{box-sizing:border-box}
+#ust .w{max-width:720px;margin:0 auto}
+#ust .pill{display:inline-block;border:1px solid rgba(200,242,58,.45);border-radius:999px;padding:7px 14px;font-size:13px;color:#D6DBCF}
+#ust .pill b{color:var(--lime);letter-spacing:.06em}
+#ust h1{margin:18px 0 0;font-size:clamp(34px,6vw,58px);line-height:1.03;font-weight:800;letter-spacing:-.025em;color:#fff}
+#ust h1 span{color:var(--lime)}
+#ust h2{margin:0;font-size:clamp(24px,4vw,34px);line-height:1.15;font-weight:800;letter-spacing:-.02em;color:#fff}
+#ust p{margin:0}
+#ust .lead{font-size:18px;line-height:1.6;color:#D6DBCF;margin-top:18px}
+#ust .small{font-size:14px;color:var(--mut);line-height:1.5}
+#ust .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--lime);color:var(--ink)!important;font-weight:800;letter-spacing:.04em;text-transform:uppercase;text-decoration:none!important;padding:17px 28px;border-radius:12px;border:0;cursor:pointer;font-size:16px;box-shadow:0 12px 34px rgba(200,242,58,.3);font-family:inherit}
+#ust .btn.ghost{background:transparent;color:var(--txt)!important;border:1.5px solid rgba(244,245,239,.35);box-shadow:none}
+#ust .btn:disabled{opacity:.5;cursor:default}
+#ust .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+#ust .pos{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+#ust .pos button{background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+#ust .pos button.on{border-color:var(--lime);background:#232B14;color:var(--lime)}
+#ust .top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+#ust .prog{flex:1;height:6px;background:#22261C;border-radius:9px;overflow:hidden}
+#ust .prog i{display:block;height:100%;background:var(--lime);transition:width .3s}
+#ust .sb{display:inline-flex;align-items:center;gap:8px;background:#000;border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-weight:800;font-size:14px}
+#ust .sb .s{background:var(--lime);color:var(--ink);border-radius:6px;padding:2px 8px}
+#ust .sb .m{background:var(--red);color:#fff;border-radius:6px;padding:2px 7px}
+#ust .q{font-size:19px;line-height:1.5;color:#fff;margin:14px 0}
+#ust .q b{color:var(--lime)}
+#ust svg{width:100%;height:auto;display:block;border-radius:14px}
+#ust #ust-players{transition:opacity .8s}#ust #ust-players.fade{opacity:.08}#ust #ust-scanhint{font-size:13px;color:#A9AEA2;margin:6px 0 0}
+#ust .timer{height:5px;background:#22261C;border-radius:9px;overflow:hidden;margin:12px 0 4px}
+#ust .timer i{display:block;height:100%;width:100%;background:var(--lime);transform-origin:left}
+#ust .opts{display:grid;gap:10px;margin-top:12px}
+#ust .opt{display:flex;gap:12px;align-items:center;text-align:left;background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:14px;padding:14px 16px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;width:100%}
+#ust .opt .k{flex:none;width:32px;height:32px;border-radius:9px;background:#2A3020;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+#ust .opt:hover:not(:disabled){border-color:var(--lime)}
+#ust .opt.pro{border-color:var(--lime);background:#232B14}
+#ust .opt.pro .k{background:var(--lime);color:var(--ink)}
+#ust .opt.mine:not(.pro){border-color:var(--red)}
+#ust .opt.mine:not(.pro) .k{background:var(--red)}
+#ust .opt:disabled{cursor:default}
+#ust .fb{margin-top:14px;border-radius:14px;padding:16px 18px;background:#1C2312;border:1px solid #3A4A1A;line-height:1.55}
+#ust .fb .h{font-weight:800;font-size:17px;margin-bottom:6px}
+#ust .fb .why{color:#D6DBCF;font-size:16px}
+#ust .fb .mineTxt{color:var(--mut);font-size:15px;margin-top:8px}
+#ust .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px}
+#ust .big{font-size:64px;font-weight:800;line-height:1;color:#fff}
+#ust .big span{font-size:24px;color:var(--mut)}
+#ust .cats{display:grid;gap:8px;margin-top:16px}
+#ust .cat{display:flex;justify-content:space-between;gap:10px;background:#1C2016;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px}
+#ust .cat em{font-style:normal;font-weight:800}
+#ust .offer{margin-top:28px;background:var(--lime);color:var(--ink);border-radius:20px;padding:26px 22px}
+#ust .offer h2{color:var(--ink)}
+#ust .offer .code{display:inline-block;background:var(--ink);color:var(--lime);font-weight:800;letter-spacing:.08em;border-radius:8px;padding:4px 10px;margin:0 4px}
+#ust .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:18px}
+#ust .prod{background:var(--ink);color:var(--txt);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:6px}
+#ust .prod .tag{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--lime)}
+#ust .prod .nm{font-size:20px;font-weight:800;color:#fff}
+#ust .prod .pr{font-size:34px;font-weight:800;color:#fff;margin-top:4px}
+#ust .prod .pr s{font-size:18px;color:var(--mut);font-weight:600;margin-left:6px}
+#ust .prod .btn{margin-top:10px;width:100%;padding:15px 16px;font-size:15px}
+#ust .hide{display:none!important}
+#ust .gg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start}
+#ust .gl{position:sticky;top:90px}
+#ust .gr .q{margin-top:6px}
+#ust.wide .w{max-width:1120px}
+@media(max-width:860px){#ust .gg{grid-template-columns:1fr;gap:10px}#ust .gl{position:static}#ust .gl svg{max-height:38vh;width:auto;max-width:100%;margin:0 auto}#ust .gr .q{margin:8px 0}}
+@media(max-width:520px){#ust{padding:32px 12px 72px}#ust .q{font-size:17px}#ust .opt{font-size:15px;padding:12px 13px}}
+</style>
+<div class="w">
+
+<section id="ust-intro">
+  <div class="pill"><b>PAUSE &amp; DECIDE · 100 SITUATIONS</b>&nbsp;&nbsp;Your copy</div>
+  <h1>100 real match moments.<br><span>Train your eye every day.</span></h1>
+  <p class="lead">20 situations for every position, drawn to scale on a real pitch. Read the picture, pick in 15 seconds, then see the pro pick and why. Play a quick 10 each day or all 20 for your position. Your best scores are saved on this device.</p>
+  <div class="card" style="margin-top:26px">
+    <p style="font-weight:800;color:#fff">Choose a position</p>
+    <div class="pos" id="ust-pos">
+      <button data-p="striker">Striker</button><button data-p="winger">Winger</button><button data-p="ten">No. 10</button><button data-p="mid">Midfielder</button><button data-p="def">Defender</button>
+    </div>
+    <div class="row"><button class="btn" id="ust-start" disabled>Quick 10 →</button><button class="btn ghost" id="ust-all" disabled>Play all 20</button></div>
+    <p class="small" id="ust-best" style="margin-top:12px"></p>
+  </div>
+</section>
+
+<section id="ust-game" class="hide">
+  <div class="top"><span class="small" id="ust-n">1 / 8</span><div class="prog"><i id="ust-prog" style="width:0"></i></div><span class="sb"><span id="ust-min">80'</span><span class="s" id="ust-score">1-0</span></span></div>
+  <div class="gg">
+    <div class="gl"><div id="ust-pitch"></div><p id="ust-scanhint"></p></div>
+    <div class="gr">
+      <p class="small" id="ust-role" style="color:var(--lime);font-weight:800;letter-spacing:.08em"></p>
+      <p class="q" id="ust-q"></p>
+      <div class="timer" id="ust-timer"><i id="ust-tbar"></i></div>
+      <div class="opts" id="ust-opts"></div>
+      <div class="fb hide" id="ust-fb"></div>
+      <div class="row"><button class="btn hide" id="ust-next">Next situation →</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="ust-res" class="hide">
+  <div class="pill"><b>YOUR RESULT</b></div>
+  <div class="row" style="margin-top:16px"><div class="big" id="ust-pts">0<span>/8</span></div></div>
+  <h2 id="ust-tier" style="margin-top:14px"></h2>
+  <p class="lead" id="ust-tierTxt"></p>
+  <div class="cats" id="ust-cats"></div>
+  <p class="small" style="margin-top:14px">Play again tomorrow: the situations come in a different order every time. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
+
+  <div class="row"><button class="btn ghost" id="ust-again">Take it again</button><button class="btn ghost" id="ust-other">Try another position</button></div>
+</section>
+</div>
+
+<script>
+(function(){
+var POS={striker:{n:'Striker Pack',id:28},winger:{n:'Winger Pack',id:29},ten:{n:'Number 10 Pack',id:30},mid:{n:'Number 10 Pack',id:30},def:null};
+var CATS={state:'Reading the score & clock',scan:'Scanning before the ball',finish:'Finishing',onev:'1v1 decisions',pass:'Seeing the pass',react:'Reacting after losing it',move:'Movement off the ball',cross:'Final ball from wide',shoot:'Shooting choices',hold:'Back to goal',switchp:'Switching the play',shape:'Body shape & receiving',delay:'Defending 1v1 & delaying',line:'Stepping up or dropping',cover:'Covering & clearing',build:'Playing out from the back',aerial:'Defending crosses',track:'Tracking runners'};
+/* Real pitch in metres. x: 0 = left touchline, 68 = right touchline. y: 0 = goal line at the top.
+   Attacking questions: top = their goal. Defending questions (g:'your goal'): top = your goal.
+   p: [team, x, y, label]  team: me | us | them | gk.  ball:[x,y]  pass/run: [x1,y1,x2,y2]  v:[yTop,yBottom] visible range */
+var QS={
+striker:[
+{cat:'finish',role:'STRIKER',min:"60'",sc:'1-1',q:"Your right winger plays it low across the six-yard box. You get there first.",
+ p:[['gk','them',37,1.5,'GK'],['me',0,31,6,''],['them',0,33.5,8.5,'CB'],['them',0,27,9.5,'CB'],['them',0,44,6.5,'FB'],['us',0,27,15,'10'],['them',0,28.5,17.5,'CM'],['us',0,63,1.5,'W']],ball:[62,2],pass:[63,1.5,32,5.5],
+ o:[['Side-foot it first time into the far corner',2,[31,6,31.5,-0.5],"Look at the keeper: he had to cover his near post for the cross, so the far corner is open. First time, inside of the foot, on target. From my notes on Haaland: accuracy, not power."],
+    ['Take one touch across the defender, then shoot',1,[31,6,28,5],"Can work, but the center back is right behind you and the keeper gets a second to reset."],
+    ['Dummy it for your 10 behind you',0,[31,6,29,15],"Their midfielder is marking your 10. The dummy gives the ball to them."]],pro:0},
+{cat:'finish',role:'STRIKER',min:"70'",sc:'0-0',q:"You're through on goal. The keeper comes off his line.",
+ p:[['gk','them',35,6.5,'GK'],['me',0,31,15,''],['them',0,33,19.5,'CB'],['them',0,20,20,'FB']],ball:[32,14],
+ o:[['Go round the keeper',1,[31,15,22,7],"Works if he dives. But it's slow, and their center back is only a few metres behind you."],
+    ['Chip him',0,[31,15,34,-0.5],"He's only 6 metres off his line. A chip needs him much further out, or it lands in his hands."],
+    ['Shoot early, low, across him into the far corner',2,[31,15,31,-0.5],"A keeper coming out covers his near post and his body. Early and low across him gives him the least time, before the defender arrives."]],pro:2},
+{cat:'move',role:'STRIKER',min:"35'",sc:'0-0',q:"Your right winger is about to cross. Where do you run?",
+ p:[['gk','them',35,1.5,'GK'],['me',0,33,19,''],['them',0,32,14,'CB'],['them',0,24,13,'CB'],['them',0,51,9,'FB'],['them',0,35,22.5,'CM'],['us',0,60,11,'W']],ball:[59,11.5],
+ o:[['Near post, into the gap between center back and full-back',2,[33,19,44,6],"Look at the gap between their center back and full-back. Arrive in it at full speed and you get in front of your defender. From my notes: lots of striker goals come from a quick run to the near post, just putting it on target."],
+    ['Far post, behind everyone',1,[33,19,22,6],"Good for a high cross. Your winger is low and close to goal, so it won't get past the near defenders."],
+    ['Hold at the penalty spot for a cut-back',0,[33,19,34,12],"Their midfielder is sitting exactly there. A cut-back goes straight to him."]],pro:0},
+{cat:'move',role:'STRIKER',min:"25'",sc:'0-0',q:"Your midfielder has the ball. You're on their last line.",
+ p:[['gk','them',34,3,'GK'],['me',0,41,17,''],['them',0,37,16,'CB'],['them',0,28,16,'CB'],['them',0,55,15.5,'FB'],['them',0,13,16,'FB'],['them',0,26,30,'CM'],['them',0,46,30,'CM'],['us',0,35,40,'CM']],ball:[35,38.5],
+ o:[['Come short to his feet',1,[41,17,40,30],"Useful when he's under pressure. Look again: nobody is on him. He has time to play forward."],
+    ['Sprint straight in behind now',0,[41,17,42,4],"Go before he's looked up and you're offside, or the defender just turns and runs with you."],
+    ['Curve across the center back\'s blind side, then go',2,[41,17,33,5],"Nobody's pressing your midfielder, so the pass in behind is on. The center back has to watch the ball, so he can't see you curve behind him. Stay onside, then go the moment your midfielder looks up."]],pro:2},
+{cat:'finish',role:'STRIKER',min:"50'",sc:'0-0',q:"Your teammate shoots from outside the box.",
+ p:[['gk','them',34,2.5,'GK'],['me',0,29,11,''],['them',0,31,12.5,'CB'],['them',0,38,10,'CB'],['us',0,45,21,'CM'],['them',0,42,24,'CM']],ball:[45,20],pass:[45,21,36,1],
+ o:[['Drop back to the edge of the box',0,[29,11,30,20],"Someone should, but not the striker. Your job is in the six-yard box."],
+    ['Follow the shot in towards the keeper',2,[29,11,33,4],"From my notes on Haaland: he always keeps his run going and waits for the rebound, and a lot of his goals come that way. The center back is watching the shot. You're already moving."],
+    ['Spin out to the back post',1,[29,11,22,4],"Can get a deflection, but most rebounds come back out in front of the keeper."]],pro:1},
+{cat:'hold',role:'STRIKER',min:"40'",sc:'0-1',q:"A long ball comes up to you. A center back is right behind you.",
+ p:[['gk','them',34,3,'GK'],['me',0,34,26,''],['them',0,34,24,'CB'],['them',0,26,19,'CB'],['them',0,46,20,'FB'],['them',0,26,34,'CM'],['us',0,42,35,'10'],['us',0,18,36,'W']],ball:[34,27.5],pass:[34,56,34,27.5],
+ o:[['Turn him on your first touch',0,[34,26,40,20],"He's touching you and the other center back is covering. Turning into that usually means losing it."],
+    ['Hold it up and wait for runners',1,[34,26,34,27],"Keeps the ball, but slows the attack. Someone is already arriving."],
+    ['Lay it off first time to your 10',2,[34,26,41,34],"Your 10 is arriving facing goal and nobody's on him. One touch and you've beaten the center back's pressure without a duel. Then spin and run."]],pro:2},
+{cat:'pass',role:'STRIKER',min:"89'",sc:'0-0',q:"Counter attack. You have the ball, a teammate is with you, one defender back.",
+ p:[['gk','them',34,3,'GK'],['me',0,28,31,''],['us',0,50,32,'W'],['them',0,42,22,'CB'],['them',0,20,46,'CM']],ball:[29.5,30],
+ o:[['Pass to your teammate',0,[28,31,50,31],"Look where the defender is: he's already moving across to block your teammate. The pass goes straight into his path."],
+    ['Drive into the box yourself',2,[28,31,30,16],"He's covering your teammate, so the space is in front of you. Keep going and shoot. If he switches to you, slip it to your teammate."],
+    ['Slow down and wait for support',1,[28,31,28,32],"Safe, but in the 89th minute a 2v1 is the chance. Support comes, but so do their defenders."]],pro:1},
+{cat:'move',role:'STRIKER',min:"70'",sc:'1-1',q:"Your team has a corner from the right. Where do you set up?",
+ p:[['gk','them',33,1.5,'GK'],['me',0,34,15,''],['us',0,68,0,''],['them',0,38,3,'P'],['them',0,40,5,''],['them',0,37,7,''],['us',0,41,6,''],['them',0,30,8,''],['us',0,24,10,'']],ball:[67.5,0.5],
+ o:[['Near post, with the crowd',1,[34,15,39,5],"Someone has to attack the near post, but look: three of theirs are already there."],
+    ['Middle of the box, then attack the ball',2,[34,15,33,7],"From my notes: Lewandowski stands in the middle of the box and makes his run from there. You can attack the first ball, and you're right there for the second ball."],
+    ['Edge of the box for the clearance',0,[34,15,34,20],"That's a midfielder's job. Strikers score inside the six-yard box."]],pro:1}
+],
+winger:[
+{cat:'state',role:'RIGHT WINGER',min:"80'",sc:'1-0',q:"The ball comes to you on the wing. 1-0 up, ten minutes left.",
+ p:[['gk','them',34,2,'GK'],['me',0,60,22,''],['them',0,55,18,'FB'],['them',0,59,29,'CM'],['them',0,36,12,'CB'],['them',0,30,11,'CB'],['us',0,33,13,'ST'],['us',0,40,40,'CM']],ball:[61,21],
+ o:[['Take it to the corner flag and shield it',2,[60,22,67,1],"1-0 up in the 80th minute, the clock is your teammate. Look at the box: your striker is alone against two center backs. Every second by their corner flag is a second they can't score."],
+    ['Cross it into the box',1,[60,22,33,11],"Not wrong if your striker can win it, but here it's one against two. A cleared cross is a counter."],
+    ['Cut inside and shoot',0,[60,22,44,16],"Two defenders are closing, and losing it here means a break against you with ten minutes left."]],pro:0},
+{cat:'onev',role:'RIGHT WINGER',min:"20'",sc:'0-0',q:"You're 1v1 with their full-back.",
+ p:[['gk','them',34,2,'GK'],['me',0,61,31,''],['them',0,59,25,'FB'],['them',0,40,14,'CB'],['them',0,28,14,'CB'],['them',0,45,25,'CM'],['us',0,32,18,'ST'],['us',0,63,47,'FB']],ball:[61,29.8],
+ o:[['Cut inside onto your other foot',1,[61,31,49,24],"Good when he's showing you outside. But look inside: their midfielder is covering that space."],
+    ['Knock it past him down the line and run',2,[61,31,65,8],"Their center back is miles away, so there's 20 metres of space behind the full-back. One touch past him and race. From my notes on Vinícius: stay wide, then go."],
+    ['Wait for your full-back to overlap',0,[61,31,61,32],"Your full-back is 16 metres behind. By the time he arrives, their midfielder has come across to help."]],pro:1},
+{cat:'cross',role:'RIGHT WINGER',min:"30'",sc:'0-0',q:"You've beaten your man and reached the byline.",
+ p:[['gk','them',36,1.5,'GK'],['me',0,63,3,''],['them',0,40,4,'CB'],['them',0,33,5,'CB'],['us',0,38,5.5,'ST'],['them',0,25,7,'FB'],['us',0,33,14,'10'],['them',0,45,17,'CM']],ball:[62,3.5],
+ o:[['Float it to the far post',1,[63,3,24,4],"Works with a tall target at the far post. Here their full-back is the only one there."],
+    ['Cut it back to the penalty spot',2,[63,3,33,13],"Their defenders are running towards their own goal and are marking your striker. Your 10 is arriving behind them, unmarked, facing goal."],
+    ['Drill it hard across the six-yard box',1,[63,3,30,3],"Dangerous ball, but your striker has a defender on him and the keeper is close."]],pro:1},
+{cat:'cross',role:'RIGHT WINGER',min:"55'",sc:'0-0',q:"You have the ball wide, about 30 metres from goal.",
+ p:[['gk','them',34,1.5,'GK'],['me',0,59,23,''],['them',0,40,13,'CB'],['them',0,31,12.5,'CB'],['them',0,22,14,'FB'],['them',0,54,17,'FB'],['us',0,33,19,'ST'],['them',0,40,28,'CM']],ball:[58,22],run:[33,19,32,7],
+ o:[['Take it on to the byline',1,[59,23,64,3],"Not wrong, but by the time you get there their defenders are back and set."],
+    ['Whip it in early, between their defenders and the keeper',2,[59,23,32,7],"Their back line is still running back towards their own goal, and your striker is already attacking the space. Coaches call it the corridor of uncertainty: defenders can't attack the ball and the keeper can't come for it."],
+    ['Cut inside and shoot',0,[59,23,44,16],"Long range with a defender in front. Your striker's run is the better chance."]],pro:1},
+{cat:'move',role:'RIGHT WINGER',min:"20'",sc:'0-0',q:"Your midfielder has the ball. Their full-back has followed you every time you've come short.",
+ p:[['gk','them',34,2,'GK'],['me',0,63,38,''],['them',0,62,35,'FB'],['them',0,42,18,'CB'],['them',0,30,18,'CB'],['us',0,40,47,'CM'],['us',0,34,22,'ST']],ball:[40,45.5],
+ o:[['Come short to his feet again',0,[63,38,62,44],"From my notes: you get it with your back to the game, pinned against the line, and can't move the play forward. Same as every time."],
+    ['Spin in behind the full-back',2,[63,38,64,12],"He's tight on you and the center back is far away, so there's huge space behind him. From my notes: use it. After a few runs he drops off, and then you can receive and turn."],
+    ['Drift inside between full-back and center back',1,[63,38,52,26],"Clever, but now nobody is wide, and the center back can step out to you."]],pro:1},
+{cat:'shoot',role:'RIGHT WINGER (LEFT-FOOTED)',min:"65'",sc:'0-0',q:"You've cut inside onto your left foot.",
+ p:[['gk','them',34,2,'GK'],['me',0,48,20,''],['them',0,44,15.5,'CB'],['them',0,32,12,'CB'],['them',0,38,9,'FB'],['us',0,30,9,'ST'],['them',0,56,24,'FB']],ball:[47,19],
+ o:[['Shoot, far post',2,[48,20,31,-0.5],"The center back is 5 metres off you and backing away, so he's giving you the shot. Take it. Cut in and curl it far post. If he'd closed you down, then you look for a runner."],
+    ['Slip it to your striker',1,[48,20,30,9],"Their full-back has him. Possible, but tight."],
+    ['Keep dribbling at the center back',0,[48,20,40,13],"Now you're running into two defenders. The shooting window was right now."]],pro:0},
+{g:'your goal',cat:'track',role:'RIGHT WINGER',min:"60'",sc:'1-1',q:"They have the ball in midfield, on your side.",
+ p:[['gk','us',34,2,'GK'],['me',0,52,32,''],['them',0,60,38,'FB'],['them',0,40,40,'CM'],['them',0,62,22,'W'],['us',0,60,18,'FB'],['us',0,40,16,'CB'],['us',0,40,30,'CM']],ball:[41,38.5],run:[60,38,63,12],
+ o:[['Press the player on the ball',1,[52,32,42,38],"Your midfielder is closer to him. If you go, their full-back is free."],
+    ['Stay up for the counter attack',0,[52,32,52,40],"Look at your full-back: if their full-back keeps running, he's 2v1. If they cross and score, nobody remembers your counter."],
+    ['Follow the full-back\'s run',2,[52,32,62,14],"Their full-back is overlapping, and your full-back already has their winger. From my notes on Bale: when the full-back goes, he follows him, even back into the defensive line."]],pro:2},
+{cat:'react',role:'LEFT WINGER',min:"40'",sc:'1-1',q:"You've just lost the ball on the left. Your team is pushed up high.",
+ p:[['me',0,15,28,''],['them',0,18,32,'FB'],['them',0,32,40,'CM'],['them',0,52,44,'W'],['us',0,34,26,'CM'],['us',0,30,50,'CB'],['us',0,40,50,'CB']],ball:[18.5,30.8],v:[-4,60],
+ o:[['Press him straight away',2,[15,28,18,31],"He hasn't looked up yet, and your midfielder is close to help. The best moment to win it back is the second you lose it. Five hard seconds, then drop."],
+    ['Get back into your position',1,[15,28,10,44],"Better than nothing, but your team is high and he has time to play the long ball."],
+    ['Cut off the pass inside to their midfielder',1,[15,28,24,36],"Smart, but slower. He can still go down the line."]],pro:0}
+],
+ten:[
+{cat:'pass',role:'NUMBER 10',min:"55'",sc:'0-0',q:"You get the ball between their lines, facing goal. Their center back comes out to you.",
+ p:[['gk','them',34,2.5,'GK'],['me',0,33,29,''],['them',0,34,24,'CB'],['them',0,25,17,'CB'],['them',0,48,17,'FB'],['us',0,40,18,'ST'],['us',0,20,40,'CM'],['them',0,40,37,'CM']],ball:[33,27.8],run:[40,18,37,7],
+ o:[['Shoot from 30 metres',0,[33,29,34,0],"The center back is closing you, so it's probably blocked."],
+    ['Play it into the space he left',2,[33,29,36,9],"When a center back steps out, he leaves a hole, and your striker is already running into it. The best 10s see it before the ball arrives."],
+    ['Lay it off to your midfielder',1,[33,29,21,39],"Safe, but you had the chance to put your striker through."]],pro:1},
+{cat:'scan',role:'NUMBER 10',min:"30'",sc:'0-0',q:"The ball is coming to you between their lines. You checked your shoulder.",
+ p:[['gk','them',34,2.5,'GK'],['me',0,34,31,''],['them',0,27,37,'CM'],['them',0,43,38,'CM'],['them',0,30,17,'CB'],['them',0,40,17,'CB'],['us',0,34,52,'CB'],['us',0,44,19,'ST']],pass:[34,52,34,33],v:[-4,58],
+ o:[['Play it back first time',1,[34,31,34,50],"Never wrong. But look behind you: nobody's within 8 metres. That's wasted."],
+    ['Control it facing your own goal and hold',0,[34,31,34,32],"Receiving square lets their midfielders recover and squeeze you."],
+    ['Open up, receive on the half-turn and drive at them',2,[34,31,36,22],"Your scan showed space behind you. Receive side-on, with your back foot, and you're facing goal in one touch, running at a back line that has to react."]],pro:2},
+{cat:'shoot',role:'NUMBER 10',min:"75'",sc:'0-0',q:"You have the ball about 22 metres out, central.",
+ p:[['gk','them',34,2,'GK'],['me',0,34,22,''],['them',0,29,17,'CB'],['them',0,40,15,'CB'],['them',0,47,12,'FB'],['us',0,46,10,'W'],['them',0,30,28,'CM']],ball:[34,20.8],run:[46,10,43,5],
+ o:[['Shoot low to the far post',2,[34,22,31,-0.5],"Neither center back is stepping to you, so there's a clear lane. From my notes on Dybala and Asensio: shoot from distance, hard and accurate to the far post."],
+    ['Slip in your winger\'s run',1,[34,22,43,6],"Their full-back is tracking him. Possible, but the shot is the better chance."],
+    ['Dribble at the center backs',0,[34,22,34,15],"You'd be running into two defenders. The shooting window is now."]],pro:0},
+{cat:'move',role:'NUMBER 10',min:"35'",sc:'0-0',q:"Your center back has the ball. You're between their lines.",
+ p:[['gk','them',34,2,'GK'],['me',0,34,22,''],['them',0,34,24,'CM'],['them',0,24,20,'CM'],['them',0,44,20,'CM'],['them',0,28,12,'CB'],['them',0,40,12,'CB'],['us',0,34,50,'CB'],['us',0,38,14,'ST']],ball:[34,48.6],v:[-4,56],
+ o:[['Stay between their lines',0,[34,22,34,22.5],"Their midfield is sitting right on top of their defence. There's no space for you there."],
+    ['Drop deeper to get it facing forward',2,[34,22,30,38],"When there's no space between the lines, the 10 drops to receive facing forward. If their midfielder follows you, the space you left opens up for your striker."],
+    ['Run in behind their defence',1,[34,22,36,6],"Good against a high line. They're so deep there are only 12 metres behind them."]],pro:1},
+{cat:'move',role:'NUMBER 10',min:"60'",sc:'0-0',q:"Your left winger is about to cross. You're on the edge of the box.",
+ p:[['gk','them',33,1.5,'GK'],['me',0,33,19,''],['us',0,8,8,'W'],['us',0,30,8,'ST'],['them',0,29,6,'CB'],['them',0,35,7,'CB'],['them',0,36,18,'CM'],['them',0,47,8,'FB']],ball:[9,8.5],
+ o:[['Hold at the edge for the second ball',1,[33,19,34,21],"Someone needs to be there, but their midfielder is already covering it."],
+    ['Arrive late into the box, towards the far side',2,[33,19,42,8],"Their defenders are all on your striker. From my notes: when it's crossed from the other side, a great 10 arrives late and finishes first time into the far corner."],
+    ['Attack the near post with your striker',0,[33,19,28,5],"Two of theirs are already there with your striker. You'd make it easier to defend."]],pro:1},
+{cat:'move',role:'NUMBER 10',min:"45'",sc:'0-0',q:"Your striker drops short to get the ball.",
+ p:[['gk','them',34,2,'GK'],['me',0,44,25,''],['us',0,34,27,'ST'],['them',0,34,24,'CB'],['them',0,24,15,'CB'],['them',0,50,15,'FB'],['us',0,34,46,'CM']],ball:[34,44.6],pass:[34,46,34,28.5],v:[-4,56],
+ o:[['Run into the space the center back left',2,[44,25,37,10],"Look where their center back went: he followed your striker. From my notes: when the striker drops, there's a lot of space up top. That's where the chances come from."],
+    ['Come short as well',0,[44,25,40,32],"Now two of you are in the same space, and nobody's threatening their goal."],
+    ['Move wide to give him an option',1,[44,25,58,26],"A safe option, but you're missing the biggest gap on the pitch."]],pro:0},
+{cat:'pass',role:'NUMBER 10',min:"80'",sc:'0-0',q:"You're on the edge of the box with a defender closing you.",
+ p:[['gk','them',34,2,'GK'],['me',0,34,20,''],['them',0,37,23,'CM'],['us',0,29,15,'ST'],['them',0,28,12,'CB'],['them',0,38,12,'CB'],['them',0,46,14,'FB']],ball:[34,18.8],
+ o:[['Shoot through the bodies',0,[34,20,34,0],"Three defenders between you and goal. It gets blocked."],
+    ['Pass to your striker and sprint for the one-two',2,[34,20,36,9],"The center back is behind your striker, not in front, so he can play it first time. From my notes: pass, sprint, get it back, and you're in behind."],
+    ['Turn back and recycle',1,[34,20,32,32],"Safe, but you were in the danger zone."]],pro:1},
+{cat:'react',role:'NUMBER 10',min:"40'",sc:'0-0',q:"You've just lost the ball in the middle.",
+ p:[['me',0,34,34,''],['them',0,35,38,'CM'],['them',0,20,46,'CM'],['them',0,52,46,'W'],['us',0,24,32,'CM'],['us',0,44,32,'CM'],['us',0,30,55,'CB'],['us',0,40,55,'CB']],ball:[35.5,36.8],v:[-4,62],
+ o:[['Drop back and protect the middle',1,[34,34,34,48],"Solid, but he's facing his own goal and hasn't turned yet. Wasted chance."],
+    ['Foul him straight away',0,[34,34,35,37],"A cheap free kick and maybe a yellow."],
+    ['Press him straight away',2,[34,34,35,37],"From my notes on Foden: if he loses the ball, he presses straight away and wins it back. Their player is facing his own goal, and your midfielders are close to help."]],pro:2}
+],
+mid:[
+{cat:'scan',role:'CENTRAL MIDFIELDER',min:"30'",sc:'0-0',q:"Your center back passes to you. A defender is on your back. You checked your shoulder.",
+ p:[['me',0,34,48,''],['them',0,34,44.5,'CM'],['us',0,34,68,'CB'],['them',0,47,40,'CM'],['us',0,14,40,'FB'],['us',0,56,42,'W'],['them',0,24,28,'CB'],['us',0,36,24,'ST']],pass:[34,68,34,50],v:[10,72],
+ o:[['Play it back to the center back',1,[34,48,34,66],"Safe and never really wrong. But your scan showed space on your left."],
+    ['Hold it and wait for help',0,[34,48,34,49],"Holding the ball with a defender on your back invites the tackle."],
+    ['Spin him on your first touch, to your left',2,[34,48,24,40],"Your scan showed nobody on your left. Take your first touch away from where the defender is coming from, and you're past him facing forward."]],pro:2},
+{cat:'switchp',role:'CENTRAL MIDFIELDER',min:"25'",sc:'0-0',q:"You have the ball. Your left back is next to you.",
+ p:[['me',0,28,44,''],['us',0,8,42,'FB'],['them',0,12,36,'W'],['them',0,22,36,'CM'],['them',0,30,34,'CM'],['them',0,20,22,'CB'],['them',0,36,22,'CB'],['us',0,62,28,'W'],['them',0,50,24,'FB']],ball:[29.5,43],v:[6,66],
+ o:[['Switch it to your right winger',2,[28,44,61,29],"Look at their shape: everyone has shifted over to your left. Your right winger is 1v1, with their full-back 10 metres off him."],
+    ['Play it back to your left back',1,[28,44,9,43],"Keeps the ball, but keeps it where they're strongest."],
+    ['Force it forward through the middle',0,[28,44,30,26],"Their midfielders and center backs are stacked there."]],pro:0},
+{cat:'pass',role:'CENTRAL MIDFIELDER',min:"35'",sc:'0-0',q:"You're receiving with a player tight on your back.",
+ p:[['me',0,34,46,''],['them',0,34,49.5,'CM'],['us',0,46,48,'CM'],['them',0,46,36,'CM'],['them',0,24,40,'W'],['us',0,24,28,'W'],['us',0,34,66,'CB']],pass:[34,66,34,48],v:[10,72],
+ o:[['Turn anyway',0,[34,46,30,38],"With a defender touching your back, that's how you lose it in the middle of the pitch."],
+    ['Lay it off first time to your other midfielder',2,[34,46,45,47],"He's facing forward with nobody near him. If you can't turn, find the player who can. Then move and get it back."],
+    ['Shield it and wait',1,[34,46,34,47],"You might keep it, but their team gets time to press everyone else."]],pro:1},
+{cat:'shape',role:'CENTRAL MIDFIELDER',min:"15'",sc:'0-0',q:"Your center back is about to pass to you.",
+ p:[['me',0,30,46,''],['us',0,26,66,'CB'],['them',0,42,40,'CM'],['them',0,20,36,'CM'],['us',0,54,32,'W'],['us',0,12,30,'W'],['them',0,34,22,'CB']],pass:[26,66,29.5,48],v:[10,72],
+ o:[['Receive facing your center back',0,[30,46,30,47],"Now you need an extra touch just to turn around, and their midfielder closes you."],
+    ['Come closer to him to make the pass easier',1,[30,46,28,54],"Safer pass, but you move away from the space."],
+    ['Stand side-on and take it across your body',2,[30,46,40,34],"Nobody's within 10 metres of you. With an open body you see the whole pitch, and your first touch takes you forward. The best midfielders receive like this every time."]],pro:2},
+{cat:'state',role:'CENTRAL MIDFIELDER',min:"88'",sc:'2-1',q:"You win the ball in midfield. 2-1 up, two minutes left.",
+ p:[['me',0,34,44,''],['them',0,38,40,'CM'],['us',0,18,48,'FB'],['us',0,50,48,'CM'],['them',0,28,32,'CM'],['us',0,36,22,'ST'],['them',0,32,18,'CB'],['them',0,42,18,'CB']],ball:[35,42.6],v:[6,66],
+ o:[['Try the pass over the top to your striker',0,[34,44,36,8],"Two center backs and the keeper are waiting. If it fails, they have the ball again."],
+    ['Keep it with a simple pass',2,[34,44,49,47],"Winning late, the ball is your best defender. Your teammate is free. Short, safe passes, and make them chase."],
+    ['Dribble forward',1,[34,44,34,34],"Can win a foul, but if you lose it, they're attacking."]],pro:1},
+{g:'your goal',cat:'delay',role:'CENTRAL MIDFIELDER',min:"50'",sc:'1-1',q:"They break. Their midfielder runs at you with the ball.",
+ p:[['gk','us',34,2,'GK'],['me',0,34,32,''],['them',0,35,40,'CM'],['them',0,54,38,'W'],['them',0,20,36,'ST'],['us',0,28,18,'CB'],['us',0,42,20,'CB'],['us',0,52,46,'CM']],ball:[35.5,38.6],run:[52,46,48,34],
+ o:[['Slow him down and show him wide',2,[34,32,40,34],"Your center backs are set, and your teammate is sprinting back. Get side-on, don't dive, and push him wide. Every second you win, the 3v3 becomes 3v4."],
+    ['Dive in for the tackle',0,[34,32,35,38],"Miss it and it's 3v2 against your center backs."],
+    ['Take a tactical foul',1,[34,32,35,38],"Sometimes smart, but it costs a yellow. First try to slow him down."]],pro:0},
+{cat:'pass',role:'CENTRAL MIDFIELDER',min:"60'",sc:'0-0',q:"You have the ball. Their midfield has pushed up to press.",
+ p:[['me',0,34,44,''],['them',0,30,38,'CM'],['them',0,40,38,'CM'],['them',0,26,20,'CB'],['them',0,42,20,'CB'],['us',0,35,26,'ST'],['us',0,58,44,'W'],['gk','them',34,2,'GK']],ball:[34.5,42.5],v:[-4,60],
+ o:[['Play it wide',1,[34,44,57,44],"Safe, but you let them reset."],
+    ['Pass over the top',0,[34,44,36,8],"Their center backs are deep and the keeper is behind them. It just goes to them."],
+    ['Play it into your striker\'s feet, between their midfielders',2,[34,44,35,28],"Look at the gap between their midfielders and their defence. One pass breaks their whole midfield line. Then sprint up to support him."]],pro:2},
+{cat:'shoot',role:'CENTRAL MIDFIELDER',min:"70'",sc:'0-0',q:"Your winger cuts it back to you on the edge of the box.",
+ p:[['gk','them',34,2,'GK'],['me',0,34,19,''],['us',0,60,5,'W'],['them',0,29,10,'CB'],['them',0,40,9,'CB'],['them',0,45,18,'CM'],['us',0,22,15,'W']],pass:[60,5,34,18],
+ o:[['Shoot first time, low',2,[34,19,31,-0.5],"Their midfielder is 11 metres away and the lane to goal is open. The cut-back is made for a first-time shot. Low and hard is hardest to save through bodies."],
+    ['Take a touch to set yourself',1,[34,19,33,17],"That's the extra second their midfielder needs to block."],
+    ['Pass to your other winger',0,[34,19,22,15],"You're in the better spot. Take responsibility."]],pro:0}
+],
+def:[
+{g:'your goal',cat:'line',role:'CENTER BACK',min:"20'",sc:'0-0',q:"Their midfielder has the ball. Their striker is on your shoulder.",
+ p:[['gk','us',34,2,'GK'],['me',0,31,24,''],['them',0,33,46,'CM'],['them',0,34,25,'ST'],['us',0,20,24,'CB'],['us',0,46,25,'FB'],['us',0,40,36,'CM'],['us',0,24,38,'CM']],ball:[33,44.6],v:[-4,58],
+ o:[['Step up to squeeze the space',0,[31,24,31,34],"Look at the ball: nobody's pressing him. He can play it over your head into all the space you just left."],
+    ['Drop a few metres and protect the space behind',2,[31,24,31,17],"No pressure on the ball means a pass in behind is coming. Drop, and keep the striker in front of you. When your midfield presses him again, step back up."],
+    ['Stay where you are',1,[31,24,31,24],"Not terrible, but a quick striker gets the first step on you."]],pro:1},
+{g:'your goal',cat:'line',role:'CENTER BACK',min:"30'",sc:'0-0',q:"They pass into their striker's feet.",
+ p:[['gk','us',34,2,'GK'],['me',0,34,22,''],['them',0,34,26,'ST'],['them',0,34,46,'CM'],['us',0,22,20,'CB'],['us',0,46,20,'FB'],['us',0,38,32,'CM'],['us',0,28,32,'CM']],pass:[34,46,34,27],v:[-4,56],
+ o:[['Step in tight and stop him turning',2,[34,22,34,25],"His back is to goal, and your center back partner and midfielders are covering. That's your moment: get tight, touch him, don't let him turn."],
+    ['Stay off and wait',1,[34,22,34,21],"Gives him time to turn and run at you."],
+    ['Go round him for the interception',0,[34,22,34,30],"If you're late, he turns into the space and he's through."]],pro:0},
+{g:'your goal',cat:'delay',role:'CENTER BACK',min:"55'",sc:'0-0',q:"Their winger runs at you in the channel.",
+ p:[['gk','us',34,2,'GK'],['me',0,48,18,''],['them',0,51,28,'W'],['us',0,34,16,'CB'],['us',0,56,34,'FB'],['them',0,34,24,'ST']],ball:[51,26.6],run:[56,34,52,24],
+ o:[['Dive in to win it',0,[48,18,51,26],"Against a quick player, one dive and he's past you, in your box."],
+    ['Back off into your box',1,[48,18,46,10],"Buys time, but too far and he shoots."],
+    ['Get side-on and show him down the line',2,[48,18,54,20],"Your full-back is sprinting back and your partner is covering their striker. Jockey, stay on your feet, and push him wide, away from goal."]],pro:2},
+{g:'your goal',cat:'cover',role:'CENTER BACK',min:"85'",sc:'1-1',q:"The ball drops to you in your box after a corner.",
+ p:[['gk','us',34,2,'GK'],['me',0,34,11,''],['them',0,30,14,'ST'],['them',0,39,14,'CB'],['us',0,26,8,'CB'],['them',0,44,20,'CM']],ball:[34.5,12.2],
+ o:[['Pass it back to your keeper',1,[34,11,34,3],"Safe if he's ready, but their striker can still block it."],
+    ['Clear it high and wide',2,[34,11,66,34],"Two of theirs are closing you in your own box. Safety first. High and wide gives your team time to reset."],
+    ['Take a touch and play out',0,[34,11,40,16],"Lose it here and it's a goal."]],pro:1},
+{g:'your goal',cat:'build',role:'CENTER BACK',min:"10'",sc:'0-0',q:"Your keeper passes to you. Their striker comes to press you.",
+ p:[['gk','us',34,2,'GK'],['me',0,24,12,''],['them',0,29,16,'ST'],['us',0,34,26,'CM'],['them',0,35,30,'10'],['us',0,6,24,'FB'],['them',0,14,34,'W'],['us',0,44,12,'CB']],pass:[34,2,25,11],v:[-4,52],
+ o:[['Play it to your free full-back',2,[24,12,7,23],"Their striker came to you, so the space is wide. Their winger is 10 metres from your full-back. Find the free man and you're through their first line."],
+    ['Kick it long',1,[24,12,40,70],"Safe, but you're giving the ball away 50/50 when a free pass was on."],
+    ['Force it into your midfielder',0,[24,12,33,25],"Their 10 is right behind him. A pass into a marked player in your own half is how goals are conceded."]],pro:0},
+{g:'your goal',cat:'cover',role:'CENTER BACK',min:"40'",sc:'0-0',q:"Your partner center back steps out to press their striker.",
+ p:[['gk','us',34,2,'GK'],['me',0,42,18,''],['us',0,27,26,'CB'],['them',0,26,29,'ST'],['them',0,40,24,'10'],['us',0,58,20,'FB'],['them',0,26,46,'CM']],pass:[26,46,26,30],v:[-4,54],
+ o:[['Push up with him',0,[42,18,42,26],"Now there's nobody behind either of you."],
+    ['Tuck in and cover the space behind him',2,[42,18,32,16],"When one center back steps, the other covers. If their striker flicks it on or turns, you're there."],
+    ['Stay with their 10',1,[42,18,40,22],"He's a threat, but the space behind your partner is the bigger danger."]],pro:1},
+{g:'your goal',cat:'state',role:'CENTER BACK',min:"90+2'",sc:'1-0',q:"The ball comes to you. 1-0 up, stoppage time.",
+ p:[['gk','us',34,2,'GK'],['me',0,30,24,''],['them',0,34,28,'ST'],['us',0,14,30,'FB'],['us',0,40,36,'CM'],['them',0,42,40,'CM']],pass:[14,30,29,25],v:[-4,56],
+ o:[['Play it out through the middle',0,[30,24,40,35],"Their striker is closing you and their midfielder is near yours. One mistake and it's 1-1."],
+    ['Pass it back to your keeper',1,[30,24,34,4],"Safe, but their striker follows it and it stays near your goal."],
+    ['Kick it long towards their corner',2,[30,24,66,100],"With seconds left, the safest place for the ball is far from your goal. Towards their corner, they need the whole pitch to come back."]],pro:2},
+{g:'your goal',cat:'aerial',role:'CENTER BACK',min:"65'",sc:'0-0',q:"A cross is coming in from their left. You're marking their striker.",
+ p:[['gk','us',34,2,'GK'],['me',0,33,12,''],['them',0,34.5,13.5,'ST'],['them',0,6,14,'W'],['us',0,40,9,'FB'],['them',0,42,16,'CM']],pass:[6,14,33,10],
+ o:[['Let it drop and clear it',0,[33,12,33,13],"The striker attacks it before you."],
+    ['Attack the ball first and head it away',2,[33,12,32,10],"You're goal-side of him and the ball is coming into your zone. First to the ball wins: head it high and wide, away from the middle."],
+    ['Stay tight on the striker',1,[33,12,34,13],"Marking is right, but if you don't go for the ball, he gets a free header."]],pro:1}
+]};
+
+var QS2={};
+// NEW CATS: press:'Pressing from the front', offside:'Timing & the offside line'
+QS2.striker=[
+{cat:'press',role:'STRIKER',min:"30'",sc:'0-0',q:"Their center back has the ball in his own half. You're the first to press.",
+ p:[['gk','them',34,6,'GK'],['them',0,24,28,'CB'],['them',0,44,27,'CB'],['them',0,31,39,'DM'],['them',0,6,36,'FB'],['me',0,37,36,''],['us',0,11,42,'W'],['us',0,40,47,'CM']],ball:[25,29.2],
+ o:[["Sprint straight at him",0,[37,36,26,30],"Look behind you: their DM is free in the middle. Run straight at the center back and he just slips it into the DM, and you're out of the game."],
+    ["Curve your run from inside, block the pass into the middle, push him to the touchline",2,[37,36,30,33.5],"Look at their DM, free behind you. Curve your run so your body covers him, and the only pass left is out to the full-back, where your winger is waiting. From my notes on Vardy: he always blocks the pass into the middle and just steers the center back to one side."],
+    ["Drop off and mark their DM",1,[37,36,32,38],"Takes the DM away, but the center back gets time to carry it forward or switch to the other center back."]],pro:1},
+{cat:'press',role:'STRIKER',min:"65'",sc:'0-0',q:"Their full-back plays it back to their center back. You're the closest to him.",
+ p:[['gk','them',34,4,'GK'],['them',0,46,28,'CB'],['them',0,24,26,'CB'],['them',0,60,31,'FB'],['them',0,36,39,'DM'],['me',0,37,32,''],['us',0,56,39,'W'],['us',0,29,42,'10']],ball:[45,24.5],
+ o:[["Sprint at him now, curving to cut off the other center back",2,[37,32,43,25],"Look at the ball: it's bounced off his foot, towards his own goal. He has to turn and chase it, so he can't look up. That's the moment. From my notes on Rashford: press the center back when he takes a bad touch or the pass goes backwards."],
+    ["Hold your spot and block the pass to the other center back",1,[37,32,34,29],"That's your normal job. But this touch is a gift, and if you wait he gets the ball under control and plays."],
+    ["Wait for your midfield to push up first",0,[37,32,36,35],"Pressing together is usually right, but this chance lasts a second. By the time they're up, he's tidied it up."]],pro:0},
+{cat:'move',role:'STRIKER',min:"55'",sc:'0-1',q:"Your right winger has reached the byline inside the box. You're running in.",
+ p:[['gk','them',37,1.5,'GK'],['them',0,39,4,'CB'],['them',0,30,5,'CB'],['them',0,61,7,'FB'],['us',0,60,3,'W'],['me',0,35,10,''],['them',0,24,21,'CM'],['us',0,30,24,'CM']],ball:[58.8,3.5],
+ o:[["Keep going, attack the near post",1,[35,10,38.5,2.5],"Usually a good run, but look at the near post: both center backs and the keeper are packed in there. The ball has to get past three of them."],
+    ["Run across to the far post",0,[35,10,28,3],"A pull-back from the byline won't get past those bodies to the far post. Even if it does, it's a tight angle."],
+    ["Stop and drop back towards the penalty spot",2,[35,10,33,15.5],"Look at the space between their center backs and the edge of the box: empty. They've all dropped onto the goal line. Pull back, and the cut-back finds you facing goal with time."]],pro:2},
+{cat:'offside',role:'STRIKER',min:"20'",sc:'0-0',q:"Your run in behind didn't get the ball. You're now behind their back line.",
+ p:[['gk','them',34,3,'GK'],['me',0,36,11,''],['them',0,28,18,'CB'],['them',0,40,18,'CB'],['them',0,14,19,'FB'],['them',0,54,19,'FB'],['them',0,36,40.5,'CM'],['us',0,34,43,'CM']],ball:[33.4,44.3],
+ o:[["Sprint back onside right now",1,[36,11,36,21],"You're onside, but now you're standing still in front of them and they're all watching you."],
+    ["Drift back slowly on their blind side, then go when your midfielder turns",2,[36,11,47,19],"Look at your midfielder: back to goal with a man on him. No pass is coming yet, so you have time. From my notes on Ronaldo: he doesn't rush back from offside. He lets the defence forget him, gets back onside, then gets the ball free."],
+    ["Stay where you are and call for it",0,[36,11,35,9],"You're offside. Any pass to you is a free kick for them."]],pro:1},
+{cat:'onev',role:'STRIKER',min:"75'",sc:'1-1',q:"You've got in down the right side of the box. The keeper is coming across.",
+ p:[['gk','them',37.5,2.5,'GK'],['me',0,51,8,''],['them',0,55,12,'CB'],['them',0,28,7,'CB'],['us',0,25,9,'W'],['us',0,36,16,'10'],['them',0,22,22,'CM']],ball:[50,7],
+ o:[["Shoot at the near post",0,[51,8,37.5,0],"Look at the keeper: he's sitting on his near post. From this angle there's almost nothing to aim at."],
+    ["Lift it over him towards the far post",1,[51,8,31,-0.5],"It can go in, but from this tight angle it's a hard finish, and their center back is covering the far post."],
+    ["Cut it back to your 10 at the penalty spot",2,[51,8,36,15],"Look at the penalty spot: your 10 is arriving and nobody's picked him up. The keeper is stuck at his near post, so your 10 has most of the goal to aim at."]],pro:2},
+{cat:'state',role:'STRIKER',min:"86'",sc:'1-0',q:"You're 1-0 up. You win the ball back near their box.",
+ p:[['gk','them',34,3.5,'GK'],['me',0,36,15,''],['them',0,40,19,'CB'],['them',0,21,12,'CB'],['them',0,53,17,'FB'],['us',0,55,28,'W'],['them',0,30,26,'CM']],ball:[35.4,13.8],
+ o:[["Shoot low, now",2,[36,15,32,-0.5],"Look in front of you: nobody between you and the keeper, and you're 15 metres out. Running down the clock is for when nothing's on. A goal here ends the game."],
+    ["Take it to the corner flag and shield it",1,[36,15,63,3],"Right when there's no chance. Here you'd be throwing away a clean shot to kill the game."],
+    ["Wait for your winger and give it to him",0,[36,15,54,27],"By the time he gets there, their center back is back on you and the chance is gone."]],pro:0},
+{cat:'finish',role:'STRIKER',min:"40'",sc:'0-0',q:"Your right winger crosses. You're arriving to head it.",
+ p:[['gk','them',31.5,2,'GK'],['me',0,31,8,''],['them',0,28,11,'CB'],['them',0,41,6,'CB'],['them',0,22,8,'FB'],['us',0,34,16,'10'],['them',0,37,18,'CM'],['us',0,61,17,'W']],pass:[60,16,31.5,7.5],
+ o:[["Head it on into the far corner",0,[31,8,31,-0.5],"Look at the keeper: he's moved across with the cross and is standing right by that post."],
+    ["Head it down, back the way it came, towards the near post",2,[31,8,37,-0.5],"The keeper followed the ball across, so the side it came from is open. Head it down so it bounces: those are the hardest headers to save."],
+    ["Knock it down for your 10",1,[31,8,34,15],"Keeps the move alive, but their midfielder is right with him, and you're already in the best spot to score."]],pro:1},
+{cat:'hold',role:'STRIKER',min:"30'",sc:'0-0',q:"A through ball into the right channel. You get there, but their center back gets back too.",
+ p:[['gk','them',34,3,'GK'],['me',0,52,22,''],['them',0,51,18.5,'CB'],['them',0,35,14,'CB'],['us',0,60,34,'W'],['us',0,40,34,'CM'],['them',0,40,29,'DM']],ball:[52.5,20.7],run:[60,34,62,20],
+ o:[["Shield it, then slip your winger round the outside",2,[52,22,62,13],"Look behind you: your winger is flying up the line. Their center back is goal-side with cover inside, so turning won't work. Hold him off, then play the winger round him."],
+    ["Cut inside and shoot",0,[52,22,42,15],"Their center back is goal-side and the other one is covering the middle. You'd be shooting through two bodies."],
+    ["Lay it back to your midfielder",1,[52,22,41,32],"Keeps the ball, but their DM is close to him, and you give up the position you just won."]],pro:0},
+{cat:'pass',role:'STRIKER',min:"70'",sc:'1-1',q:"Counter attack, 3 against 2. You're carrying the ball through the middle.",
+ p:[['gk','them',34,4,'GK'],['me',0,34,34,''],['us',0,14,32,'W'],['us',0,55,34,'W'],['them',0,35,27,'CB'],['them',0,23,22,'CB'],['them',0,30,45,'CM']],ball:[34,32.6],run:[55,34,53,22],
+ o:[["Drive into the gap between them",1,[34,34,29,24],"Usually right in a 3v2, to drag both defenders in. But one has already come to you. Dribbling into him just gives the other one time to get across."],
+    ["Slip your left winger in",0,[34,34,16,22],"Look where their other center back is: right in that lane."],
+    ["Play your right winger in now",2,[34,34,52,20],"Look at their center back: he's already stepped up to you, and nobody is on your right winger. Play it into his run now and he's in on goal."]],pro:2},
+{cat:'shoot',role:'STRIKER',min:"60'",sc:'0-1',q:"You receive just outside their box, facing goal.",
+ p:[['gk','them',34,3,'GK'],['me',0,37,20,''],['them',0,40,12,'CB'],['them',0,27,12,'CB'],['them',0,51,14,'FB'],['us',0,27,26,'CM'],['them',0,30,23,'DM']],ball:[37,18.7],
+ o:[["Lay it off to your midfielder",0,[37,20,28,25.5],"Their midfielder is tracking him step for step. The lay-off just hands them a chance to block."],
+    ["Shoot low, now",2,[37,20,31.5,-0.5],"Look at their center back: he's sitting off you, about 8 metres away, and not coming. That's a free shot. Low and on target into the corner."],
+    ["Dribble at the center back to get closer",1,[37,20,39,14],"You get closer, but you give him the chance to close you down and block it. The shot is on right now."]],pro:1},
+{cat:'offside',role:'STRIKER',min:"50'",sc:'2-2',q:"Your teammate is about to whip in a free kick from the left. You're lined up with their defenders.",
+ p:[['gk','them',34,3,'GK'],['us',0,9,27.5,''],['them',0,16.5,20,''],['them',0,22,16,'CB'],['them',0,30,16,'CB'],['them',0,39,16,'CM'],['them',0,47,16,'FB'],['me',0,34.5,16.6,''],['us',0,26,16.6,'CB'],['us',0,43,16.6,'CB']],ball:[10,26],
+ o:[["Stay level with their line, then sprint as he strikes it",2,[34.5,16.6,31,6],"Look at their line: they're holding it high, right on the edge of the box. All the space is behind them, in front of the keeper. Go on the strike and you're attacking that space at full speed while they're still turning."],
+    ["Get a head start into the space before he kicks it",0,[34.5,16.6,35,10],"Their line is holding high. Go early and you're offside the moment he strikes it."],
+    ["Hang back at the edge for the second ball",1,[34.5,16.6,34,24],"Someone should cover it, but that takes your best header threat out of the box."]],pro:0},
+{cat:'react',role:'STRIKER',min:"15'",sc:'0-0',q:"Their midfielder takes the ball off you in their half.",
+ p:[['gk','them',34,4,'GK'],['me',0,34,26.5,''],['them',0,36,32.5,'CM'],['us',0,41,37,'10'],['us',0,31,38,'CM'],['them',0,55,30,'FB'],['them',0,22,36,'CM'],['them',0,40,20,'CB']],ball:[36.6,33.6],
+ o:[["Drop back into shape",1,[34,26.5,33,36],"Fine if you're on your own. But look: two teammates are right around the ball."],
+    ["Stay high, ready for when you win it back",0,[34,26.5,37,19],"If they get out of this, your team is one player short behind the ball."],
+    ["Press him straight away, from behind",2,[34,26.5,35.6,31],"Look: your 10 and your midfielder are right in front of him, so his forward pass is blocked. Press from behind now and he's trapped between three of you. The first few seconds after losing it are the best time to win it back."]],pro:2}
+];
+
+// NEW CATS: press:'Pressing from the front', counter:'Counter-attacks', setp:'Set pieces & throw-ins'
+QS2.winger=[
+{cat:'pass',role:'LEFT WINGER',min:"25'",sc:'0-0',q:"You have the ball on the left, about 30 metres from goal. Your full-back is overlapping.",
+ p:[['gk','them',34,2,'GK'],['me',0,10,28,''],['them',0,12,22,'FB'],['them',0,24,11,'CB'],['them',0,34,10,'CB'],['them',0,24,26,'CM'],['them',0,20,41,'W'],['us',0,6,42,'FB'],['us',0,30,14,'ST']],ball:[10.4,26.7],run:[6,42,4,20],
+ o:[['Slide it down the line, into the space ahead of him',2,[10,28,4,12],"Their winger didn\'t track him, so he\'s free, and their full-back is stuck facing you. Play it in front of him. From my notes on Luis Díaz: play the overlap so he can cross first time with his body facing forward, not behind him so he has to stop."],
+    ['Play it to his feet as he goes past',1,[10,28,5,32],"He\'s free, but now he has to stop the ball, and their full-back gets time to turn and close him down."],
+    ['Take their full-back on down the line yourself',0,[10,28,6,14],"You\'d run into the same lane your full-back is using. Two of you in one channel, and their full-back only has to block one."]],pro:0},
+{cat:'move',role:'RIGHT WINGER',min:"35'",sc:'0-0',q:"Your full-back has the ball on the right touchline. You\'re ahead of him, out on the line.",
+ p:[['gk','them',34,2,'GK'],['me',0,64,30,''],['them',0,64,25,'FB'],['them',0,45,14,'CB'],['them',0,34,13,'CB'],['us',0,39,17,'ST'],['them',0,46,34,'CM'],['them',0,58,44,'W'],['us',0,63,48,'FB']],ball:[62.5,46.8],
+ o:[['Show for it to feet',0,[64,30,63,37],"Their full-back is right behind you. You get it with your back to goal against the line, and their winger is closing in too."],
+    ['Run inside him, into the gap before their center back',2,[64,30,54,14],"Look at the gap: their full-back is out on the line with you, and their center back is held by your striker. That channel is empty, and your full-back can slide it in."],
+    ['Spin down the line, behind him',1,[64,30,66,10],"Good run when he\'s tight on your inside. Here he\'s standing on the line, so he\'s already goal-side of it."]],pro:1},
+{cat:'shape',role:'LEFT WINGER',min:"50'",sc:'1-0',q:"Your midfielder switches the play out to you on the left. The ball is in the air.",
+ p:[['gk','them',34,2,'GK'],['me',0,5,36,''],['them',0,16,30,'FB'],['them',0,26,14,'CB'],['them',0,37,14,'CB'],['them',0,28,33,'CM'],['us',0,32,19,'ST'],['us',0,54,42,'CM'],['them',0,49,37,'CM']],pass:[54,42,6,35.5],
+ o:[['First touch inside, towards the box',0,[5,36,12,30],"Their full-back is coming from inside. A touch inside takes the ball straight into him."],
+    ['First touch forward, down the line',2,[5,36,5,22],"Look where their full-back is coming from: inside, at an angle, on the run. A first touch into the space down the line takes you past him before he can stop and set himself."],
+    ['Control it dead, then decide',1,[5,36,5,37.5],"Safe, but he\'s sprinting at you. By the time you look up, he\'s set and can show you wherever he wants."]],pro:1},
+{cat:'move',role:'RIGHT WINGER',min:"75'",sc:'1-1',q:"Your left winger is about to cross from the other side. You\'re wide on the right.",
+ p:[['gk','them',31,2,'GK'],['us',0,6,9,'W'],['them',0,10,14,'FB'],['them',0,30,8,'CB'],['them',0,37,9,'CB'],['us',0,33,11.5,'ST'],['them',0,46,15,'FB'],['them',0,36,21,'CM'],['me',0,59,20,'']],ball:[7.4,9.6],
+ o:[['Run to the far post, behind their full-back',2,[59,20,40,4],"Their full-back has tucked in and is watching the ball, so he can\'t see you. Arrive behind his back. From my notes on Sterling: on a cross from the other side, run to the far post so the defender loses you. If the lane closes, drift back towards the penalty spot."],
+    ['Stay wide for a switch or a second ball',0,[59,20,63,22],"Nobody is going to cross it out to the touchline. If the ball goes into the box and you\'re out here, you\'re not part of the chance."],
+    ['Edge of the box for a cut-back',1,[59,20,45,22],"A fair option, but their midfielder is already guarding that area, and your winger is crossing, not cutting it back."]],pro:0},
+{cat:'press',role:'RIGHT WINGER',min:"15'",sc:'0-0',q:"They\'re building from the back. Their center back on your side has the ball.",
+ p:[['gk','them',34,3,'GK'],['them',0,45,10,'CB'],['them',0,23,10,'CB'],['them',0,63,17,'FB'],['them',0,38,24,'CM'],['us',0,38,30,'CM'],['us',0,33,17,'ST'],['me',0,57,26,'']],ball:[44.5,11.4],
+ o:[['Sprint straight at the center back',1,[57,26,46,12.5],"Brave, but a straight line leaves the full-back free behind you. One pass and they\'re out of your press."],
+    ['Curve your run from outside, blocking the pass to the full-back',2,[57,26,54,14],"Look at his options: your midfielder has their CM, so the only easy pass is out to the full-back. Curve your run to cut that lane while you close him. From my notes on Di María: when you press the center back, close off the full-back on the run, or they get out of the press easily."],
+    ['Stay with their full-back',0,[57,26,61.5,19.5],"Now nobody is pressing the ball. The center back has all the time he wants to step in and pick a pass."]],pro:1},
+{cat:'counter',role:'RIGHT WINGER',min:"30'",sc:'0-0',q:"Your team has just won the ball. It\'s at your feet, just inside their half.",
+ p:[['me',0,54,49,''],['them',0,59,57,'FB'],['them',0,43,55,'CM'],['them',0,43,31,'CB'],['them',0,31,32,'CB'],['them',0,15,35,'FB'],['us',0,36,41,'ST'],['us',0,40,60,'CM']],ball:[53.6,47.6],
+ o:[['Pass into your striker\'s feet',1,[54,49,37,42],"Not bad, but he has two center backs in front of him and his back to goal. It slows the attack down."],
+    ['Hold it up and wait for support',0,[54,49,55,51],"Look behind you: their full-back and midfielder are already out of the game. Wait, and they get back."],
+    ['Drive into the space in front of you',2,[54,49,53,34],"Look at their full-back: he got caught upfield and he\'s behind you now. The whole right side is empty. Carry it at speed and make their center back choose between you and your striker."]],pro:2},
+{cat:'cross',role:'LEFT WINGER',min:"30'",sc:'0-0',q:"You have the ball wide on the left, level with the edge of their box.",
+ p:[['gk','them',33,2,'GK'],['me',0,7,18,''],['them',0,11,13.5,'FB'],['them',0,30,9,'CB'],['them',0,37,9.5,'CB'],['us',0,33,10,'ST'],['them',0,46,11,'FB'],['them',0,26,25,'CM'],['us',0,21,34,'CM'],['us',0,56,30,'W']],ball:[7.5,16.7],
+ o:[['Cross it now for your striker',0,[7,18,33,9],"Look in the box: your striker is alone against two center backs and the keeper. A cross now is a cleared ball, and maybe a counter."],
+    ['Cut inside and shoot',1,[7,18,16,18],"From out here, with their full-back and midfielder close, it\'s a low chance. At least it ends with a shot."],
+    ['Keep it: play it back and go again when runners arrive',2,[7,18,21,33],"One of yours in the box against two of theirs. Keep the ball, play it back to your midfielder, and cross it when more of your players can attack it."]],pro:2},
+{cat:'onev',role:'RIGHT WINGER (LEFT-FOOTED)',min:"40'",sc:'0-0',q:"You\'re 1v1 with their full-back on the right. He\'s showing you inside.",
+ p:[['gk','them',34,2,'GK'],['me',0,59,30,''],['them',0,61.5,25.5,'FB'],['them',0,50,24,'CM'],['them',0,44,13,'CB'],['them',0,33,12,'CB'],['us',0,36,17,'ST'],['us',0,48,40,'CM'],['us',0,64,44,'FB']],ball:[58.7,28.6],
+ o:[['Play it back to your midfielder and go again',2,[59,30,49,39],"Look inside: their midfielder is waiting right where the full-back is sending you. It\'s a trap. Recycle it, and attack him again once they\'ve shifted."],
+    ['Cut inside onto your left foot',0,[59,30,52,25],"That\'s exactly what they want. Their midfielder is already there, and losing it here starts their counter."],
+    ['Fake inside, then go outside him',1,[59,30,65,13],"Can work if your fake moves him, but he\'s standing on your outside with the line close. Low odds."]],pro:0},
+{cat:'state',role:'LEFT WINGER',min:"88'",sc:'0-1',q:"You\'re 1-0 down with two minutes left. The ball comes to you wide on the left, about 30 metres out.",
+ p:[['gk','them',34,2,'GK'],['me',0,8,30,''],['them',0,12,25,'FB'],['them',0,31,8,'CB'],['them',0,38,8,'CB'],['them',0,45,9,'FB'],['us',0,33,11,'ST'],['us',0,40,12.5,'CB'],['us',0,26,13,'10'],['us',0,22,42,'CM']],ball:[8.4,28.7],
+ o:[['Whip it in early, now',2,[8,30,34.5,6],"Look at the box: three of yours against three of theirs, and their line has dropped deep near the keeper. Two minutes left and a goal down, a dangerous ball now beats a perfect one later."],
+    ['Beat your man and get to the byline first',1,[8,30,5,6],"A cut-back from the byline is a better ball, but it eats time, and their full-back is set to stop it."],
+    ['Play it back and keep possession',0,[8,30,21,41],"Keeping the ball doesn\'t help you now. When you\'re losing late, the clock is on their side."]],pro:0},
+{g:'your goal',cat:'setp',role:'RIGHT WINGER',min:"60'",sc:'2-1',q:"They have a throw-in on your side, level with the edge of your half.",
+ p:[['gk','us',34,2,'GK'],['them',0,67.5,40,'FB'],['them',0,62,30,'W'],['us',0,61,26,'FB'],['them',0,54,49,'CM'],['us',0,52,45,'CM'],['me',0,59,36,''],['them',0,40,22,'ST'],['us',0,40,18,'CB']],ball:[67.8,41.2],
+ o:[['Mark the midfielder coming short',1,[59,36,53.5,46],"Your midfielder is already on him. Two of you on one player leaves someone else free."],
+    ['Stay tight to the thrower, ready for the return',2,[59,36,65,38],"Look around: their winger and midfielder are both marked. The free man is the thrower himself. He throws it short, steps back on and gets it back down the line. Be next to him."],
+    ['Drop and double up on their winger',0,[59,36,62,27],"Your full-back already has him, and your center back is inside. Dropping leaves the thrower free for the one-two."]],pro:1},
+{cat:'onev',role:'LEFT WINGER',min:"55'",sc:'1-1',q:"You\'re running at their full-back on the left. Your 10 is level with you, inside.",
+ p:[['gk','them',34,2,'GK'],['me',0,8,30,''],['us',0,21,30,'10'],['them',0,15.5,24,'FB'],['them',0,28,13,'CB'],['them',0,38,12,'CB'],['us',0,33,17,'ST'],['them',0,33,32,'CM']],ball:[8.5,28.7],
+ o:[['Pass to your 10',0,[8,30,20,30],"Their full-back has already stepped inside to cut that pass. It\'s the one option he\'s covering."],
+    ['Drive at him first to commit him',1,[8,30,13,25],"Normally right in a 2v1. Here he\'s already committed to your 10, so waiting just lets him recover."],
+    ['Go yourself, down the line',2,[8,30,6,10],"Look where their full-back is standing: inside, guarding the pass to your 10. That leaves the line open, and their center back is far across. Go."]],pro:2},
+{cat:'scan',role:'RIGHT WINGER',min:"10'",sc:'0-0',q:"Your center back plays it up to you on the right touchline, near halfway.",
+ p:[['me',0,64,50,''],['them',0,63.5,46,'FB'],['us',0,46,66,'CB'],['us',0,51,56,'CM'],['them',0,45,48,'CM'],['them',0,55,64,'W'],['them',0,44,32,'CB'],['them',0,32,32,'CB']],pass:[46,66,63.5,51.3],
+ o:[['Turn and go down the line',0,[64,50,66,34],"He\'s right on your back. Turning into him against the line is how you lose it, and then they\'re running at your defence."],
+    ['Control it and shield, wait for support',1,[64,50,64.5,52],"Safe enough, but he gets time to press, and their winger can come across and trap you against the line."],
+    ['Bounce it first time to your midfielder, then spin in behind',2,[64,50,51.5,55],"Look at your midfielder: free and facing forward. One touch to him and spin, and their full-back is left behind you with space to run into."]],pro:2}
+];
+
+// NEW CATS: press:'Pressing from the front', counter:'Counter-attacks', setp:'Set pieces'
+QS2.ten=[
+{cat:'move',role:'NUMBER 10',min:"25'",sc:'0-0',q:"Your midfielder has the ball. You're between their lines, waiting for it.",
+ p:[['gk','them',34,3,'GK'],['me',0,31,31,''],['them',0,28.5,37,'DM'],['them',0,46,38,'CM'],['them',0,28,20,'CB'],['them',0,40,20,'CB'],['them',0,52,22,'FB'],['us',0,35,21,'ST'],['us',0,24,48,'CM'],['us',0,44,50,'CM']],ball:[25,47],
+ o:[['Stay where you are and call for it',0,[31,31,31,32.5],"Look at their DM: he's standing right on the line between the ball and you. Ask for it there and he steps in and steals it."],
+    ['Drift off his shoulder, into his blind side',2,[31,31,39,30],"Their DM is watching the ball, and he's screening you. Slide a few metres to the side he can't see and the lane opens up. You get it on the half-turn with nobody on you."],
+    ['Drop deep next to your midfielder',1,[31,31,30,43],"You'd get the ball, but now you're in front of their midfield, not behind it. Good when there's no space between the lines. Here there is."]],pro:1},
+{cat:'move',role:'NUMBER 10',min:"38'",sc:'0-1',q:"Your left-back is passing into your left winger, who has his back to goal.",
+ p:[['gk','them',34,3,'GK'],['me',0,26,34,''],['us',0,7,26,'W'],['them',0,8,23,'FB'],['them',0,24,20,'CB'],['them',0,36,19,'CB'],['us',0,32,21,'ST'],['them',0,32,38,'CM'],['us',0,6,42,'FB']],pass:[6,42,7,27.5],
+ o:[['Come inside to offer him a short pass',1,[26,34,19,30],"A fine option if he's in trouble. But you're only giving him a sideways ball while the big chance is behind their full-back."],
+    ['Stay central and wait for a later ball',0,[26,34,31,30],"You're standing still while their whole left side is busy with your winger. That's the moment to go, not wait."],
+    ['Run into the channel behind their full-back',2,[26,34,15,13],"Look at their full-back: he's glued to your winger's back, and their center back hasn't moved across. Run now and your winger can flick it first time round the corner into your path. Third-man run."]],pro:2},
+{cat:'switchp',role:'NUMBER 10',min:"52'",sc:'1-1',q:"You get the ball in the left half-space. Two players are closing you down.",
+ p:[['gk','them',34,3,'GK'],['me',0,20,30,''],['them',0,25,34,'CM'],['them',0,11,25,'FB'],['us',0,6,22,'W'],['them',0,28,19,'CB'],['them',0,40,19,'CB'],['them',0,49,21,'FB'],['us',0,63,23,'W'],['them',0,33,37,'CM']],ball:[21,29],
+ o:[['Switch it yourself to your right winger',2,[20,30,61,23.5],"Look at their far full-back: he's tucked right in to help the middle, and your right winger is alone on the touchline. From my notes on Foden: when you're closed down, switch it yourself. It gives you much more space than if it goes back to the center back first."],
+    ['Play it back to your center back to switch',1,[20,30,26,46],"Safe, and it still gets there. But it takes two extra passes, and by then their full-back has slid back out."],
+    ['Play a one-two with your left winger',0,[20,30,7,23.5],"Their full-back is tight on him and there's a midfielder closing behind you. That corner is crowded. The free space is on the other side."]],pro:0},
+{cat:'shoot',role:'NUMBER 10',min:"68'",sc:'0-0',q:"You've cut inside from the left onto your right foot. You're at the edge of the box.",
+ p:[['gk','them',35.5,2.5,'GK'],['me',0,25,18,''],['them',0,23,23,'CM'],['them',0,30,13,'CB'],['them',0,38,12,'CB'],['us',0,34,13.5,'ST'],['them',0,48,12,'FB'],['us',0,46,22,'CM']],ball:[26,17],
+ o:[['Slip it into your striker',0,[25,18,33,12],"Both center backs are right on him. The pass gets cut out, or he has to take it with his back to goal."],
+    ['Curl it towards the far post',1,[25,18,37,-0.5],"It's the shot everyone expects from there. Your curl has to go round their center back, and the keeper is already leaning that way."],
+    ['Drive it low to the near post',2,[25,18,31,-0.5],"Look at the keeper: he's cheated towards his far post, waiting for the curler. The near post is open. Hit it low and hard before he can shift back."]],pro:2},
+{cat:'press',role:'NUMBER 10',min:"12'",sc:'0-0',q:"Their center back has the ball. Your striker is pressing him.",
+ p:[['gk','them',34,3,'GK'],['them',0,24,14,'CB'],['them',0,44,13,'CB'],['us',0,30,16,'ST'],['them',0,33,25,'DM'],['me',0,38,32,''],['them',0,8,24,'FB'],['them',0,60,24,'FB'],['them',0,48,33,'CM'],['us',0,46,38,'CM']],ball:[25,15],
+ o:[['Sprint at the center back too',0,[38,32,27,17],"Two of you on one man looks brave. But you leave their DM completely free, and one pass beats both of you."],
+    ['Jump tight onto their DM',2,[38,32,34,27],"Your striker is already pressing the ball and cutting off the other center back. That leaves one easy pass: into their DM. Get tight on him and the center back has nothing on except a long ball."],
+    ['Drop back into your midfield line',1,[38,32,38,41],"Solid, and right if your striker wasn't pressing. Here it just lets them play out through the middle."]],pro:1},
+{cat:'move',role:'NUMBER 10',min:"33'",sc:'1-0',q:"Your right winger has reached the byline and is about to cut it back.",
+ p:[['gk','them',34,2,'GK'],['us',0,60,3,'W'],['them',0,56,6,'FB'],['them',0,29,7,'CB'],['them',0,39,7,'CB'],['us',0,32,8.5,'ST'],['them',0,36,12,'DM'],['me',0,36,21,''],['them',0,25,23,'CM']],ball:[59,4],
+ o:[['Stop at the top of the box for the pull-back',2,[36,21,42,17],"Look at their DM: he's dropped onto the penalty spot. Run there and you're running into him. Stay at the top of the box and the cut-back comes to you with time to shoot."],
+    ['Arrive at the penalty spot',1,[36,21,37,11],"Usually the best spot for a cut-back. But their DM is already standing on it, so the ball ends up with him."],
+    ['Run to the near post',0,[36,21,46,5],"Their full-back and your winger are already there. You'd block your own cut-back lane."]],pro:0},
+{cat:'hold',role:'NUMBER 10',min:"47'",sc:'0-0',q:"Your center back plays it into your feet. You have your back to goal.",
+ p:[['gk','them',34,3,'GK'],['me',0,36,30,''],['them',0,34.5,27.5,'CM'],['them',0,22,31,'CM'],['us',0,28,44,'CM'],['them',0,29,40,'CM'],['them',0,28,18,'CB'],['them',0,40,18,'CB'],['us',0,34,19,'ST'],['us',0,36,54,'CB']],pass:[36,53,36,31.5],
+ o:[['Lay it off to your midfielder',1,[36,30,28.5,43],"Not wrong, but their midfielder is only a few metres from him. You pass the pressure on instead of beating it."],
+    ['Shield it and wait for help',0,[36,30,36,31],"He's right on you, and the longer you wait the more of them arrive. Holding only works when help is close."],
+    ['Roll him on your right side',2,[36,30,43,23],"Look where he's standing: tight on your left shoulder, and there's nobody covering on your right. Let it run across you and spin that way. From my notes on Foden: turn the defender yourself and you gain loads of space to run into."]],pro:2},
+{cat:'move',role:'NUMBER 10',min:"58'",sc:'2-2',q:"Your midfielder has the ball just inside their half, facing forward.",
+ p:[['gk','them',34,4,'GK'],['me',0,40,28,''],['them',0,37,31,'DM'],['them',0,28,21,'CB'],['them',0,40,21,'CB'],['them',0,16,22,'FB'],['them',0,54,23,'FB'],['us',0,34,22,'ST'],['us',0,30,46,'CM'],['them',0,26,40,'CM']],ball:[31,45],
+ o:[['Check short to get it to feet',1,[40,28,37,36],"Their DM is right next to you. You'd get it under pressure, facing your own goal."],
+    ['Run beyond your striker, in behind',2,[40,28,44,8],"Look how high their back line is: there are almost 20 metres behind it, and your midfielder is facing forward with time. Their DM won't follow you that far. Go now while you're still onside."],
+    ['Drift wide to the right',0,[40,28,55,30],"Their full-back is already there and the pass gets slower. You take yourself out of the most dangerous space."]],pro:1},
+{cat:'counter',role:'NUMBER 10',min:"65'",sc:'0-0',q:"You win the ball back in your own half. Their team was attacking.",
+ p:[['me',0,34,58,''],['them',0,30,62,'CM'],['them',0,42,63,'CM'],['them',0,28,36,'CB'],['them',0,41,37,'CB'],['them',0,14,45,'FB'],['us',0,10,48,'W'],['us',0,46,44,'ST']],ball:[34,56.8],
+ o:[['Carry it forward into the space',2,[34,58,33,44],"Look ahead: 20 metres of open grass, and their center backs are backing off. Run at them and they have to decide who steps out. From my notes: don't get rid of it too fast when you have space to drive forward."],
+    ['Play it early to your left winger',1,[34,58,11,47],"A good habit on the counter, but their full-back is right next to him. He'll take it under pressure and the break slows down."],
+    ['Hit a long ball in behind for your striker',0,[34,58,40,32],"Too early and too long. Both center backs are still between him and goal, so the keeper or a defender gets there first."]],pro:0},
+{cat:'setp',role:'NUMBER 10',min:"74'",sc:'1-1',q:"Your corner gets headed out. It drops to you at the edge of the box.",
+ p:[['gk','them',34,2,'GK'],['me',0,30,21,''],['them',0,24,17,'CM'],['them',0,27,8,'CB'],['them',0,38,7,'CB'],['us',0,32.5,8,'CB'],['them',0,42,12,'CM'],['us',0,21,10,'ST'],['them',0,18,13,'FB'],['us',0,55,23,'FB']],pass:[28,9.5,30,19.5],
+ o:[['Hit it first time',1,[30,21,33,-0.5],"Sometimes it flies in. Here their player is already sprinting out at you and there are five bodies in the way. Probably blocked."],
+    ['Take a touch and shoot',0,[30,21,26,19],"The touch gives their player the second he needs to block you, and the box is still full."],
+    ['Play it out to your free full-back',2,[30,21,54,22.5],"Look right: your full-back is alone outside the box. Keep the ball, and he can cross it straight back in while all their players are still deep in their own box."]],pro:2},
+{cat:'state',role:'NUMBER 10',min:"87'",sc:'1-0',q:"You get the ball in their half. Your teammates are running forward.",
+ p:[['gk','them',34,3,'GK'],['me',0,38,30,''],['them',0,36,34,'CM'],['us',0,34,18,'ST'],['them',0,30,16,'CB'],['them',0,40,16,'CB'],['them',0,16,18,'FB'],['them',0,54,18,'FB'],['us',0,60,30,'W']],ball:[39,29],
+ o:[['Thread it through to your striker',0,[38,30,35,10],"Two center backs are on him. If it's cut out, they break against you with three minutes left."],
+    ['Take it towards their corner and keep it with your winger',2,[38,30,58,18],"Look at the clock and the score: 1-0, 87 minutes. Only you and your striker are up against four defenders. Keep the ball near their corner, win a throw or a foul, and the clock runs down."],
+    ['Shoot from 30 metres',1,[38,30,35,-0.5],"It's not a disaster, it goes out for a goal kick at worst. But you hand them the ball back when you could keep it."]],pro:1},
+{g:'your goal',cat:'track',role:'NUMBER 10',min:"60'",sc:'1-0',q:"They're breaking after winning the ball. You're sprinting back.",
+ p:[['gk','us',34,2,'GK'],['them',0,36,47,'CM'],['me',0,30,55,''],['them',0,23,51,'10'],['us',0,37,40,'CM'],['us',0,48,42,'CM'],['us',0,28,26,'CB'],['us',0,40,26,'CB'],['them',0,34,23,'ST'],['them',0,58,36,'W'],['us',0,56,30,'FB']],ball:[36,45.6],
+ o:[['Sprint to track their runner on the left',2,[30,55,23,40],"Look at their 10: he's free, and your midfielder has stepped up to the ball, leaving a big gap on your left. Get to that runner before the pass does."],
+    ['Chase the ball carrier from behind',1,[30,55,35,48],"You might nick it back, and your midfielder is already facing him. But if he plays it sideways, their 10 has all that space."],
+    ['Get back into the middle behind the ball',0,[30,55,34,44],"Right area, but you'd be ball-watching. Their free runner arrives in the gap and nobody has him."]],pro:0}
+];
+
+// NEW CATS: screen:'Screening & protecting', press:'Pressing triggers', foul:'Tactical fouls', setp:'Set pieces'
+QS2.mid=[
+{cat:'build',role:'DEFENSIVE MIDFIELDER',min:"10'",sc:'0-0',q:"Your left center back has the ball. Their front players are pressing your back line.",
+ p:[['me',0,34,62,''],['them',0,35,58,'10'],['them',0,28,74,'ST'],['them',0,40,74,'ST'],['us',0,22,80,'CB'],['us',0,46,80,'CB'],['us',0,6,70,'FB'],['us',0,62,70,'FB'],['them',0,22,58,'CM']],ball:[23.2,78.8],
+ o:[["Stay in midfield and show for the pass",0,[34,62,30,67],"Their 10 is right on your back and their striker can step into the lane. You'd receive facing your own goal with no way to turn."],
+    ["Drop between your center backs",2,[34,62,34,80],"Look at the back: their two strikers against your two center backs. Drop in between and it's 3v2, so one of you is always free to carry it forward."],
+    ["Push higher to drag their 10 away",1,[34,62,34,52],"It can open space, but it doesn't fix the problem. Your center backs are still 2v2 against their strikers."]],pro:1},
+{g:'your goal',cat:'screen',role:'DEFENSIVE MIDFIELDER',min:"55'",sc:'1-1',q:"Their midfielder has the ball in front of you. Your other midfielder is going to close him.",
+ p:[['gk','us',34,2,'GK'],['us',0,27,18,'CB'],['us',0,41,18,'CB'],['us',0,56,21,'FB'],['them',0,34,19.5,'ST'],['me',0,34,31,''],['them',0,41,27,'10'],['them',0,32,46,'CM'],['us',0,33,39,'CM'],['them',0,58,33,'W']],ball:[32,44.6],run:[33,39,32,43],
+ o:[["Hold your spot between the ball and their 10",2,[34,31,38.5,34],"Your teammate is already pressing the ball. Look at their 10, sitting in the gap in front of your center backs. Stay in the passing lane and that pass never arrives."],
+    ["Jump out and press the ball too",0,[34,31,32,43],"Two of you on one player, and their 10 is free behind you both. One pass and he's turning at your back line."],
+    ["Drop into your back line",1,[34,31,34,21],"Your back line is safer, but now their 10 gets the ball in front of you with time to turn and pick a pass."]],pro:0},
+{cat:'press',role:'CENTRAL MIDFIELDER',min:"25'",sc:'0-0',q:"Their right back passes it back to his center back. Your striker goes to press.",
+ p:[['gk','them',34,2,'GK'],['them',0,26,16,'CB'],['them',0,44,17,'CB'],['them',0,60,28,'FB'],['us',0,58,37,'W'],['us',0,36,24,'ST'],['them',0,35,31,'DM'],['me',0,41,42,''],['us',0,26,42,'CM'],['them',0,22,34,'CM']],pass:[60,28,45.5,18],run:[36,24,42,19],
+ o:[["Hold your spot in the midfield line",1,[41,42,39,40],"Fine if nobody is pressing. But your striker has gone, and if their DM stays free he just plays through the press."],
+    ["Sprint at the center back with your striker",0,[41,42,45,24],"Your striker already has him. Two on the center back leaves their DM free for an easy way out."],
+    ["Jump onto their DM while the ball travels back",2,[41,42,36,33],"A back pass is your signal to go. Look at your striker: he's curving in to cut off the other center back, so their DM is the only way out. Get tight on him while the ball is still rolling."]],pro:2},
+{cat:'cover',role:'DEFENSIVE MIDFIELDER',min:"65'",sc:'1-1',q:"Your right winger has the ball. Your right back has gone past him on the overlap.",
+ p:[['us',0,56,26,'W'],['them',0,58,21,'FB'],['us',0,60,32,'FB'],['them',0,40,38,'CM'],['us',0,24,40,'CM'],['me',0,36,48,''],['them',0,60,54,'W'],['them',0,32,62,'ST'],['us',0,26,70,'CB'],['us',0,42,70,'CB']],ball:[55,24.8],run:[60,32,64,16],
+ o:[["Push up to the edge of the box for a cut-back",0,[36,48,38,22],"You'd add a body in the box, but if the move breaks down nobody is in front of your back line."],
+    ["Shift across into the space your right back left",2,[36,48,52,57],"Look at their winger: still standing high on your right with nobody near him. Lose the ball now and one pass puts him running at your center back. Fill that space."],
+    ["Stay central in front of your center backs",1,[36,48,35,53],"Normally a good spot. But your center backs can handle their striker, and their winger is completely free on your right."]],pro:1},
+{cat:'pass',role:'CENTRAL MIDFIELDER',min:"20'",sc:'0-0',q:"You get the ball on the left of midfield. Their midfielder is closing you down.",
+ p:[['me',0,26,46,''],['them',0,29,42,'CM'],['us',0,8,50,'FB'],['them',0,10,38,'W'],['us',0,28,30,'ST'],['them',0,28,26.5,'CB'],['them',0,42,23,'CB'],['them',0,33,36,'CM'],['us',0,47,42,'CM']],ball:[26.2,44.6],run:[47,42,40,27],
+ o:[["Play it into your striker so he can set it for the runner",2,[26,46,27.5,31.5],"Look at their other midfielder: he's standing right in the lane to your runner. The lane to your striker is open. He lays it off first time and your teammate arrives on it facing goal."],
+    ["Play it back to your left back",1,[26,46,9,49.5],"Safe, and fine if nothing is on. But you'd miss a run that's already happening."],
+    ["Hit it straight into the runner's path",0,[26,46,40,28],"Their midfielder is in the way. That pass gets cut out, and you've lost it in the middle."]],pro:0},
+{cat:'switchp',role:'CENTRAL MIDFIELDER',min:"40'",sc:'0-0',q:"You have the ball on the left of midfield. Your right winger is wide on the far side.",
+ p:[['me',0,28,46,''],['them',0,30,41,'CM'],['them',0,40,40,'CM'],['us',0,62,30,'W'],['them',0,61,27.5,'FB'],['them',0,24,60,'ST'],['us',0,22,66,'CB'],['us',0,42,66,'CB'],['us',0,60,60,'FB']],ball:[28.6,44.7],
+ o:[["Hit the long switch to your right winger",1,[28,46,61,31],"The right idea when he's free. Here their full-back is right on him, and a long ball in the air gives him time to step in front."],
+    ["Turn and carry it forward",0,[28,46,31,35],"Two of their midfielders are squeezing you. That's how you lose it in the middle of the pitch."],
+    ["Recycle it to your right center back",2,[28,46,41,65],"Look at their full-back: tight on your winger. Your center back has nobody within 15 metres and your right back is free next to him. Two short passes on the ground get it to the far side safely."]],pro:2},
+{cat:'move',role:'CENTRAL MIDFIELDER',min:"78'",sc:'0-1',q:"Your left winger is about to cross. You're arriving from midfield.",
+ p:[['gk','them',33,2,'GK'],['us',0,7,12,'W'],['them',0,11,15,'FB'],['us',0,30,14,'ST'],['them',0,29,8.5,'CB'],['them',0,38,8,'CB'],['us',0,45,10,'W'],['them',0,48,7,'FB'],['them',0,42,19,'CM'],['me',0,32,28,'']],ball:[8.2,12.4],run:[30,14,27,6],
+ o:[["Arrive late around the penalty spot",2,[32,28,33,12],"Your striker is attacking the near post and your other winger is at the far post. Look at the penalty spot: nobody's there, and their midfielder is watching the ball. Time your run to arrive as the cross does."],
+    ["Sprint to the near post",0,[32,28,26,7],"Your striker is already going there. Two of you in the same space makes it easy for one defender."],
+    ["Wait at the edge for the second ball",1,[32,28,30,20],"A good job when you're level or winning. Losing late, you need another body in the box."]],pro:0},
+{cat:'react',role:'CENTRAL MIDFIELDER',min:"30'",sc:'0-0',q:"Your winger loses the ball near the right touchline in their half. Their full-back wins it.",
+ p:[['gk','them',34,2,'GK'],['them',0,46,16,'CB'],['them',0,60,30,'FB'],['us',0,63,36,'W'],['us',0,56,22,'ST'],['me',0,53,35,''],['them',0,44,28,'CM'],['us',0,44,33,'CM'],['them',0,64,50,'W']],ball:[59,31.2],
+ o:[["Drop back into your midfield spot",1,[53,35,44,48],"The safe choice when you're alone or far from the ball. Here you're five metres away with help around you."],
+    ["Close him down right now",2,[53,35,58.5,32],"Look around him: the touchline on one side, your winger and striker within a few metres, and their midfielder is marked. Three of you, one of him. Win it now and you're already in their half."],
+    ["Run back to track their winger",0,[53,35,62,49],"Your winger blocks the pass down the line. Turning your back on the ball lets their full-back walk out of trouble."]],pro:1},
+{cat:'state',role:'DEFENSIVE MIDFIELDER',min:"88'",sc:'0-1',q:"You have the ball in midfield. 0-1 down, two minutes left.",
+ p:[['gk','them',34,2,'GK'],['them',0,28,12.5,'CB'],['them',0,40,12.5,'CB'],['us',0,30,15.5,'ST'],['us',0,38,15.5,'CB'],['them',0,42,27,'CM'],['us',0,7,31,'W'],['them',0,9,27,'FB'],['them',0,12,35,'W'],['me',0,34,42,'']],ball:[34,40.6],
+ o:[["Play it out wide to your winger",1,[34,42,8,32],"Wide is often the way through a deep defence. But look: he's got two defenders on him, and the clock is running."],
+    ["Keep it and recycle across the back",0,[34,42,48,50],"That's what you do when you're winning. Down a goal with two minutes left, passing sideways helps them."],
+    ["Clip it into the box for your striker and center back",2,[34,42,34,14],"Look at the box: your center back has gone up, so it's 2v2 against their center backs. With two minutes left, get the ball where your big players are and fight for the second ball."]],pro:2},
+{g:'your goal',cat:'foul',role:'DEFENSIVE MIDFIELDER',min:"70'",sc:'1-0',q:"You lose the ball in their half. Their midfielder breaks past you at the halfway line.",
+ p:[['gk','us',34,2,'GK'],['us',0,27,28,'CB'],['us',0,41,28,'CB'],['them',0,12,44,'W'],['them',0,56,42,'W'],['them',0,33,50,'CM'],['me',0,39,54.5,''],['us',0,6,62,'FB'],['us',0,62,63,'FB']],ball:[33,48.6],run:[56,42,50,32],
+ o:[["Pull him back now and take the yellow",2,[39,54.5,34.5,50.5],"Look behind you: both full-backs are stranded up the pitch and it's 3v2 against your center backs. He's already past you. It costs you a yellow card and gives them a free kick on halfway. If you're already on a yellow, don't do it."],
+    ["Sprint back toward your goal to help",1,[39,54.5,37,36],"Right if you could get there first. But he's running with the ball facing forward, and it's 3v2 before you arrive."],
+    ["Chase him and slide in from behind",0,[39,54.5,33.5,46.5],"A slide from behind at full speed is how you get a red card, or give away a free kick much closer to your goal."]],pro:0},
+{cat:'build',role:'DEFENSIVE MIDFIELDER',min:"12'",sc:'0-0',q:"You get the ball deep in your own half. They're pressing high.",
+ p:[['me',0,34,72,''],['them',0,38,68,'ST'],['them',0,26,63,'CM'],['us',0,20,84,'CB'],['us',0,46,84,'CB'],['them',0,46,79,'W'],['them',0,28,45,'CB'],['them',0,40,45,'CB'],['us',0,34,47,'ST']],ball:[34,70.6],
+ o:[["Go long to your striker",1,[34,72,34,48],"Sometimes the right answer under a high press. But their two center backs are on him, so it's a 50/50 at best."],
+    ["Lay it back to your left center back",2,[34,72,21,83],"Their striker jumped to you, which left your left center back with nobody near him. Give it to him: he has time to carry it out or pick a pass."],
+    ["Turn and dribble out of the press",0,[34,72,30,62],"Their striker is closing from one side and their midfielder from the other. Lose it here and they're through on goal."]],pro:1},
+{cat:'setp',role:'DEFENSIVE MIDFIELDER',min:"80'",sc:'1-0',q:"Your team has a corner on the right. Where do you go?",
+ p:[['gk','them',34,2,'GK'],['us',0,31,10,'CB'],['them',0,28.5,7,'CB'],['us',0,39,9,'ST'],['them',0,41.5,6,'CB'],['me',0,34,25,''],['them',0,28,47,'ST'],['them',0,41,47,'W'],['us',0,34,55,'CB']],ball:[66.5,1],
+ o:[["Go into the box to attack the corner",0,[34,25,35,11],"More bodies in the box can win the header, but it leaves nobody to stop the counter."],
+    ["Stand on the edge of the box for the second ball",1,[34,25,34,19],"Often your job on a corner. But if the ball flies over you, you're 30 metres from the action."],
+    ["Stay deep with your center back to guard the counter",2,[34,25,36,43],"Look at halfway: their two forwards stayed up against your one center back. 1-0 up with ten minutes left, if they clear it and win it, that's 2v1 at your goal. Make it 2v2."]],pro:2}
+];
+
+// NEW CATS: stepout:'Stepping out of the line', fbpos:'Full-back positioning', carry:'Carrying the ball', setp:'Defending set pieces'
+QS2.def=[
+{g:'your goal',cat:'line',role:'CENTER BACK',min:"20'",sc:'0-0',q:"Their midfielder has the ball in the centre circle. Their striker is level with you.",
+ p:[['gk','us',34,2,'GK'],['me',0,30,26,''],['us',0,42,26,'CB'],['us',0,14,27,'FB'],['us',0,54,27,'FB'],['them',0,34,28.5,'ST'],['them',0,34,51,'CM'],['us',0,34,47,'CM'],['them',0,22,44,'CM'],['us',0,24,39,'CM']],ball:[35,50],
+ o:[['Drop ten metres to protect the space behind',1,[30,26,30,16],"Feels safe, but he can't hit a long pass with a player right on him. Drop now and you leave a big gap between your defence and midfield for them to play into."],
+    ['Hold the line where it is',2,[30,26,30,27],"Look at the ball: your midfielder is right on him, so he can't lift his head and hit it over you. Hold your line and keep the team compact. The moment he's free to look up, then you drop."],
+    ['Step up ten metres to squeeze the space',0,[30,26,30,36],"The ball hasn't gone backwards and your line isn't stepping with you. Go on your own and one flick over the top puts their striker in behind."]],pro:1},
+{g:'your goal',cat:'line',role:'CENTER BACK',min:"35'",sc:'0-0',q:"Their winger has the ball out wide and passes it.",
+ p:[['gk','us',34,2,'GK'],['me',0,38,22,''],['us',0,26,22,'CB'],['us',0,14,23,'FB'],['us',0,54,27,'FB'],['them',0,59,33,'W'],['them',0,34,27,'ST'],['them',0,20,27,'W'],['them',0,47,45,'CM'],['us',0,40,38,'CM']],pass:[59,33,47.5,43.5],
+ o:[['Step up together with your back line',2,[38,22,38,30],"Look at the pass: it's going backwards, away from your goal. That's your trigger. Step up together, quickly: their striker is left offside and there's less space for them to play into."],
+    ['Hold your position',1,[38,22,38,23],"Not a disaster, but you give away free metres. Their midfielder can now play forward with your line still deep."],
+    ['Drop to stay goal-side of the striker',0,[38,22,38,14],"Dropping when the ball goes backwards gives them space in front of your box and keeps everyone onside."]],pro:0},
+{g:'your goal',cat:'delay',role:'LEFT BACK',min:"55'",sc:'1-0',q:"Their winger runs at you down the line. Their full-back is overlapping outside him.",
+ p:[['gk','us',34,2,'GK'],['me',0,55,24,''],['them',0,53,35,'W'],['them',0,64,38,'FB'],['us',0,41,18,'CB'],['them',0,37,20,'ST'],['us',0,28,18,'CB'],['us',0,58,49,'W']],ball:[53.5,33.6],run:[58,49,63,41],
+ o:[['Close the winger down fast and tackle',0,[55,24,53.5,33],"He just lays it outside to their full-back as you arrive, and you're out of the game."],
+    ['Leave the winger and go with the overlap',1,[55,24,63,30],"Stops the pass outside, but now their winger has a free run inside at your center backs."],
+    ['Back off slowly and stay between the two',2,[55,24,57,20],"Look behind them: your winger is sprinting back to take the overlapping full-back. Don't commit. Jockey backwards, stay in between so neither option is easy, and buy him the two seconds he needs."]],pro:2},
+{g:'your goal',cat:'stepout',role:'CENTER BACK',min:"40'",sc:'0-0',q:"Their center back plays it into their 10, who has dropped into the space in front of you.",
+ p:[['gk','us',34,2,'GK'],['me',0,36,26,''],['us',0,25,22,'CB'],['them',0,27,24.5,'ST'],['us',0,12,22,'FB'],['us',0,52,24,'FB'],['them',0,36,37,'10'],['us',0,26,48,'CM'],['us',0,44,48,'CM']],pass:[30,64,35.5,38.5],
+ o:[['Step out and get tight on him before it arrives',2,[36,26,36,35],"Look behind you: your partner is already on their striker and your full-backs are tucked in. Nobody needs you in the line. Get tight before the ball arrives so he can't turn and run at your back four."],
+    ['Stay in your back line',1,[36,26,36,25],"Your line stays neat, but he gets to turn with time, facing your defence, with your midfielders behind him."],
+    ['Step out halfway and wait',0,[36,26,36,31],"The worst of both: you've left the line, but you're too far away to stop him turning."]],pro:0},
+{g:'your goal',cat:'fbpos',role:'RIGHT BACK',min:"30'",sc:'0-0',q:"Their right winger has the ball on the far side.",
+ p:[['gk','us',34,2,'GK'],['me',0,10,22,''],['us',0,28,20,'CB'],['us',0,40,20,'CB'],['us',0,54,26,'FB'],['them',0,59,34,'W'],['them',0,35,23,'ST'],['them',0,20,29,'CM'],['them',0,5,30,'W']],ball:[58,33],
+ o:[['Stay wide, tight to their winger',1,[10,22,6,28],"He's about 50 metres from the ball. A pass that long hangs in the air, so you'd have time to get out to him. Staying wide just keeps the gap open."],
+    ['Tuck in closer to your center back',2,[10,22,19,20],"Look at the gap between you and your center back: their midfielder is standing in it. Ball on the far side means you squeeze in. If they switch it, you get back out while the ball is in the air."],
+    ['Drop deeper to cover behind your center backs',0,[10,22,18,12],"Dropping on your own plays their winger and midfielder onside behind your line."]],pro:1},
+{cat:'fbpos',role:'LEFT BACK',min:"65'",sc:'0-0',q:"Your left winger has the ball, facing their full-back.",
+ p:[['me',0,10,54,''],['us',0,8,40,'W'],['them',0,12,34,'FB'],['them',0,15,61,'W'],['us',0,26,67,'CB'],['us',0,42,67,'CB'],['them',0,34,59,'ST'],['us',0,30,46,'CM'],['them',0,32,42,'CM']],ball:[9,38.8],
+ o:[['Overlap round the outside',1,[10,54,5,33],"It gives your winger a 2v1, and with more cover behind it's the right run. Here, if he loses it, their winger is free in the space you left."],
+    ['Underlap on the inside',0,[10,54,19,37],"Same gap behind you, and you run straight into their midfield."],
+    ['Stay behind him as his safe pass',2,[10,54,12,50],"Look behind you: their winger hasn't tracked back. He's waiting in your half. Go forward and lose it, and it's their winger and striker against your two center backs. Stay, and be the pass he can always play."]],pro:2},
+{cat:'build',role:'RIGHT BACK',min:"15'",sc:'0-0',q:"Your center back passes to you near the touchline. Their winger comes to press you.",
+ p:[['me',0,62,68,''],['us',0,44,77,'CB'],['them',0,37,69,'ST'],['them',0,55,63,'W'],['us',0,64,49,'W'],['them',0,51,44,'FB'],['us',0,44,56,'CM'],['them',0,44,52.5,'CM']],pass:[44,77,61,69],
+ o:[['Play it back to your center back',1,[62,68,45.5,76.5],"Safe, but their striker is already moving across to press him. You've just moved the problem."],
+    ['Pass it down the line to your winger',2,[62,68,64,50.5],"Look at their full-back: he's tucked in, 12 metres from your winger. Their winger coming to press you leaves the line open. One pass and you're past two of their players."],
+    ['Pass inside to your midfielder',0,[62,68,45.5,57],"Their midfielder is right behind him. A pass through the middle of your own half is the one that gets intercepted."]],pro:1},
+{g:'your goal',cat:'aerial',role:'LEFT BACK',min:"70'",sc:'1-1',q:"Their left winger is about to cross. You're at the back post.",
+ p:[['gk','us',34,2,'GK'],['me',0,44,8,''],['them',0,51,12,'W'],['us',0,31,10,'CB'],['them',0,34,12.5,'ST'],['us',0,38,11,'CB'],['them',0,7,23,'W'],['us',0,12,18,'FB'],['them',0,27,21,'CM']],ball:[8.5,22],
+ o:[['Hold the back post with your body open to him and the ball',2,[44,8,47,9.5],"Look over your shoulder: their right winger is coming in behind you. Stand where you can see the ball and him at the same time, so a high ball to the far post is yours, not his."],
+    ['Move in to help your center backs',0,[44,8,39,10],"The middle is covered by your two center backs. Move in and their winger has the whole back post to himself."],
+    ['Drop onto the goal line by the post',1,[44,8,38.5,1.5],"It might save a header on the line, but he gets a free jump at the ball in front of you."]],pro:0},
+{g:'your goal',cat:'shape',role:'CENTER BACK',min:"30'",sc:'0-0',q:"A long clearance from their defence drops towards you.",
+ p:[['me',0,33,42,''],['us',0,20,40,'CB'],['us',0,56,40,'FB'],['us',0,28,52,'CM'],['them',0,44,54,'ST'],['them',0,60,50,'W'],['them',0,20,58,'CM'],['us',0,46,62,'CM']],pass:[40,76,33.5,43],
+ o:[['Head it straight back into their half',1,[33,42,40,68],"Never wrong, but you're giving them another 50/50 when the ball could be yours."],
+    ['Head it back towards your keeper',0,[33,42,34,20],"A 40-metre header backwards is hard to judge. Get the weight wrong and you've handed them a chance for nothing."],
+    ['Bring it down and pass to your midfielder',2,[33,42,28.5,50.5],"Look how far away their nearest player is: more than 10 metres. You have time. Cushion it on your chest or thigh and find your free midfielder."]],pro:2},
+{cat:'carry',role:'CENTER BACK',min:"20'",sc:'0-0',q:"Your partner center back passes across to you.",
+ p:[['me',0,24,70,''],['us',0,42,70,'CB'],['them',0,38,62,'ST'],['us',0,26,56,'CM'],['them',0,26,52,'CM'],['us',0,42,55,'CM'],['them',0,42,51,'CM'],['us',0,6,60,'FB'],['them',0,10,55,'W']],pass:[42,70,25.5,70],
+ o:[['Carry the ball forward into the space',2,[24,70,22,59],"Look in front of you: nobody comes to press. Run it forward until someone has to leave his man to stop you. Then that man is free, and you pass to him."],
+    ['Pass it straight back to your partner',1,[24,70,40.5,70],"Keeps the ball, but nothing changes and their striker can shift across again."],
+    ['Play into your midfielder\'s feet now',0,[24,70,25.5,57.5],"Their midfielder is right behind him, waiting to step in. Draw a player out first."]],pro:0},
+{cat:'build',role:'CENTER BACK',min:"70'",sc:'0-1',q:"Their front three press your back line. You have the ball.",
+ p:[['gk','them',34,6,'GK'],['gk','us',34,98,'GK'],['me',0,40,78,''],['them',0,37,72,'ST'],['us',0,34,62,'CM'],['them',0,34,58.5,'CM'],['them',0,28,46,'CB'],['them',0,42,46,'CB'],['us',0,36,50,'ST']],ball:[40.5,76.6],run:[36,50,46,34],
+ o:[['Pass into your midfielder',0,[40,78,34.5,63.5],"Their midfielder is tight on his back. Under this press, that's a turnover 35 metres from your goal."],
+    ['Clip it in behind their back line for your striker',2,[40,78,47,32],"Look how high their back line is: there are 40 metres behind it, and your striker is already running. When they press with everyone, the space is behind them."],
+    ['Pass back to your keeper',1,[40,78,34.5,96],"Safe for now, but their striker follows it and you face the same press even closer to your goal."]],pro:1},
+{g:'your goal',cat:'setp',role:'CENTER BACK',min:"80'",sc:'2-1',q:"Corner against you. Your team defends it zonally, and your zone is in front of the near post.",
+ p:[['gk','us',33,2,'GK'],['me',0,38,6,''],['us',0,32,6,'CB'],['us',0,26,7,'FB'],['us',0,34,11.5,'CM'],['them',0,33,18,'CB'],['them',0,41,14,'ST'],['them',0,26,14,'CM'],['them',0,67.5,0.5,'W']],ball:[66.5,1],
+ o:[['Follow their big center back wherever he runs',0,[38,6,34,16],"Leave your zone and there's a hole at the near post, the exact space your team trusted you with."],
+    ['Stand on the near post',1,[38,6,37.4,1.2],"Your keeper can handle the near post. On the line you can't attack anything."],
+    ['Hold your zone and attack any ball into it',2,[38,6,39,7.5],"Look at your setup: your teammates are spread across the six-yard box, each owning a space. Their big man's run is meant to drag you out. Stay, and be first to any ball that comes into your zone."]],pro:2}
+];
+
+['striker','winger','ten','mid','def'].forEach(function(k){QS[k]=QS[k].concat(QS2[k]||[])});
+Object.assign(CATS,{press:'Pressing',counter:'Counter-attacks',setp:'Set pieces',offside:'Timing & the offside line',screen:'Screening & protecting',foul:'Tactical fouls',stepout:'Stepping out of the line',fbpos:'Full-back positioning',carry:'Carrying the ball'});
+var Q=[];
+var $=function(id){return document.getElementById('ust-'+id)};
+var pos=null,i=0,pts=0,res={},tmr=null,locked=false,TIME=15;
+function el(t,a){var e=document.createElementNS('http://www.w3.org/2000/svg',t);for(var k in a)e.setAttribute(k,a[k]);return e}
+function arrow(svg,x1,y1,x2,y2,col,dash){var l=el('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:col,'stroke-width':0.75,'stroke-linecap':'round','marker-end':'url(#ah'+(col=='#C8F23A'?'L':col=='#E04848'?'R':'W')+')'});if(dash)l.setAttribute('stroke-dasharray','1.4 1.1');svg.appendChild(l);return l}
+function lines(svg,v){var L={stroke:'#D7E6DA','stroke-width':0.32,fill:'none',opacity:.8};var A=function(t,o){svg.appendChild(el(t,Object.assign({},o,L)))};
+ A('rect',{x:0,y:0,width:68,height:105});A('line',{x1:0,y1:52.5,x2:68,y2:52.5});A('circle',{cx:34,cy:52.5,r:9.15});
+ [[0,1],[105,-1]].forEach(function(g){var y0=g[0],d=g[1];
+  A('rect',{x:13.84,y:d>0?y0:y0-16.5,width:40.32,height:16.5});A('rect',{x:24.84,y:d>0?y0:y0-5.5,width:18.32,height:5.5});
+  A('rect',{x:30.34,y:d>0?y0-2:y0,width:7.32,height:2});
+  var sy=y0+d*11;svg.appendChild(el('circle',{cx:34,cy:sy,r:.3,fill:'#D7E6DA'}));
+  var ay=y0+d*16.5,dx=Math.sqrt(9.15*9.15-5.5*5.5);A('path',{d:'M'+(34-dx)+','+ay+' A9.15,9.15 0 0 '+(d>0?0:1)+' '+(34+dx)+','+ay});});
+ svg.appendChild(el('circle',{cx:34,cy:52.5,r:.3,fill:'#D7E6DA'}));}
+function bounds(s){var ys=s.p.map(function(q){return q[3]});if(s.ball)ys.push(s.ball[1]);[s.pass,s.run].forEach(function(a){if(a){ys.push(a[1]);ys.push(a[3])}});
+ var mn=Math.min.apply(null,ys),mx=Math.max.apply(null,ys);var top=mn<24?-4:mn-8;var bot=Math.min(105,Math.max(top+34,mx+6));return [top,bot]}
+function draw(s){var v=bounds(s);var svg=el('svg',{viewBox:'-3 '+v[0]+' 74 '+(v[1]-v[0])});
+ var defs=el('defs',{});[['L','#C8F23A'],['R','#E04848'],['W','#FFFFFF']].forEach(function(m){var mk=el('marker',{id:'ah'+m[0],viewBox:'0 0 10 10',refX:'7',refY:'5',markerWidth:'4.5',markerHeight:'4.5',orient:'auto-start-reverse'});mk.appendChild(el('path',{d:'M0,0 L10,5 L0,10 z',fill:m[1]}));defs.appendChild(mk)});svg.appendChild(defs);
+ svg.appendChild(el('rect',{x:-3,y:v[0],width:74,height:v[1]-v[0],fill:'#11301D'}));
+ for(var k=0;k<15;k++)if(k%2)svg.appendChild(el('rect',{x:0,y:k*7,width:68,height:7,fill:'#14381F'}));
+ lines(svg,v);
+ if(s.pass)arrow(svg,s.pass[0],s.pass[1],s.pass[2],s.pass[3],'#FFFFFF',true);
+ if(s.run)arrow(svg,s.run[0],s.run[1],s.run[2],s.run[3],'#C8F23A',true);
+ var g=el('g',{id:'ust-arr'});svg.appendChild(g);
+ var pg=el('g',{id:'ust-players'});svg.appendChild(pg);var svgRoot=svg;svg=pg;
+ s.p.forEach(function(p){var t=p[0],x=p[2],y=p[3],lab=p[4];var r=1.25;
+  if(t=='me'){svg.appendChild(el('circle',{cx:x,cy:y,r:2.1,fill:'none',stroke:'#C8F23A','stroke-width':.4}));svg.appendChild(el('circle',{cx:x,cy:y,r:1.35,fill:'#C8F23A',stroke:'#fff','stroke-width':.3}));lab='YOU'}
+  else {var fill=t=='gk'?(p[1]=='us'?'#F2A93B':'#F2A93B'):t=='us'?'#F4F5EF':'#E04848';svg.appendChild(el('circle',{cx:x,cy:y,r:r,fill:fill,stroke:t=='us'?'#7D8577':'#fff','stroke-width':.25}))}
+  var below=s.p.some(function(o){if(o===p)return false;if(Math.abs(o[2]-x)>=2.6)return false;var d=o[3]-y;return d>0?d<4.2:false});
+  if(lab){var tx=el('text',{x:x,y:below?y-1.9:y+(t=='me'?3.6:2.9),'text-anchor':'middle','font-size':t=='me'?1.9:1.55,'font-weight':800,fill:t=='me'?'#C8F23A':t=='them'?'#FFB3B3':'#E9EDE4','paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.35});tx.textContent=lab;svg.appendChild(tx)}
+ });
+ var b=s.ball||(s.pass?[s.pass[0],s.pass[1]]:null);if(b)svg.appendChild(el('circle',{cx:b[0],cy:b[1],r:.62,fill:'#fff',stroke:'#111','stroke-width':.18}));
+ svg=svgRoot;var key=el('text',{x:-2,y:v[0]+2.4,'font-size':1.8,fill:'#D7E6DA',opacity:.85});key.textContent='▲ '+(s.g||'their goal');svg.appendChild(key);
+ return svg}
+function showArrows(s,mine){var g=document.getElementById('ust-arr');if(!g)return;g.innerHTML='';
+ s.o.forEach(function(op,k){if(!(k===s.pro||k===mine))return;var a=op[2];var col=k===s.pro?'#C8F23A':'#E04848';arrow(g,a[0],a[1],a[2],a[3],col,false);
+  var lb=el('text',{x:(a[0]+a[2])/2+1.4,y:(a[1]+a[3])/2,'font-size':2.2,'font-weight':800,fill:col,'paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.4});lb.textContent=L(s,k);g.appendChild(lb)})}
+function L(s,k){return 'ABC'[s._ord.indexOf(k)]}
+function render(){var s=Q[i];locked=false;var o=[0,1,2];for(var a=2;a>0;a--){var r=Math.floor(Math.random()*(a+1));var t=o[a];o[a]=o[r];o[r]=t}s._ord=o;
+ $('n').textContent=(i+1)+' / '+Q.length;$('prog').style.width=(i/Q.length*100)+'%';$('min').textContent=s.min;$('score').textContent=s.sc;$('role').textContent='YOU: '+s.role;$('q').innerHTML=s.q;
+ var pc=$('pitch');pc.innerHTML='';pc.appendChild(draw(s));
+ var oc=$('opts');oc.innerHTML='';s._ord.forEach(function(k,j){var op=s.o[k];var b=document.createElement('button');b.className='opt';b.setAttribute('data-k',k);b.innerHTML='<span class="k">'+'ABC'[j]+'</span><span>'+op[0]+'</span>';b.onclick=function(){answer(k)};oc.appendChild(b)});
+ $('fb').classList.add('hide');$('next').classList.add('hide');$('timer').classList.remove('hide');
+ var bar=$('tbar');bar.style.transition='none';bar.style.transform='scaleX(1)';void bar.offsetWidth;bar.style.transition='transform '+TIME+'s linear';bar.style.transform='scaleX(0)';
+ clearTimeout(tmr);tmr=setTimeout(function(){answer(-1)},TIME*1000);
+ document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
+function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
+ var bar=$('tbar');var cs=getComputedStyle(bar).transform;bar.style.transition='none';bar.style.transform=cs;
+ var got=k===s.pro?1:0;var half=k>=0?s.o[k][1]===1:false;pts+=got;res[s.cat]=(res[s.cat]||0)+got;
+ var btns=$('opts').children;for(var j=0;j<btns.length;j++){var kk=parseInt(btns[j].getAttribute('data-k'));btns[j].disabled=true;if(kk===s.pro)btns[j].classList.add('pro');if(kk===k)btns[j].classList.add('mine')}
+ showArrows(s,k);
+ var head=k<0?"⏱ Too slow. In a game the defender's already on you.":k===s.pro?'✅ Pro pick. +1':half?'🟡 Close, but not the pro pick. +0':'❌ Not this time. +0';
+ var html='<div class="h">'+head+'</div><div class="why"><b style="color:#C8F23A">Pro pick: '+L(s,s.pro)+'.</b> '+s.o[s.pro][3]+'</div>';
+ if(k>=0)if(k!==s.pro)html+='<div class="mineTxt">Your pick ('+L(s,k)+'): '+s.o[k][3]+'</div>';
+ var fb=$('fb');fb.innerHTML=html;fb.classList.remove('hide');
+ var nx=$('next');nx.textContent=i<Q.length-1?'Next situation →':'See my result →';nx.classList.remove('hide')}
+function finish(){document.getElementById('ust').classList.remove('wide');$('game').classList.add('hide');$('res').classList.remove('hide');
+ $('pts').innerHTML=pts+'<span>/'+Q.length+'</span>';
+ var R=pts/Q.length;var t=R>=1?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:R>=0.75?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
+ $('tier').textContent=t[0];$('tierTxt').textContent=t[1];
+ var max={};Q.forEach(function(s){max[s.cat]=(max[s.cat]||0)+1});
+ $('cats').innerHTML=Object.keys(max).map(function(c){var v=res[c]||0,m=max[c];return '<div class="cat"><span>'+CATS[c]+'</span><em style="color:'+(v===m?'#C8F23A':v>0?'#F2A93B':'#E04848')+'">'+v+'/'+m+'</em></div>'}).join('');
+ var pk=POS[pos];($('packtip')||{}).innerHTML=pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
+ $('prog').style.width='100%';try{var bb=JSON.parse(localStorage.getItem('us_best')||'{}');var sc=pts+'/'+Q.length;var cur=bb[pos];if(!cur||pts/Q.length>parseInt(cur)/parseInt(cur.split('/')[1]))bb[pos]=sc;localStorage.setItem('us_best',JSON.stringify(bb))}catch(e){}var ot=$('other');if(ot)ot.onclick=function(){$('res').classList.add('hide');$('intro').classList.remove('hide');$('best').textContent=bestTxt();document.getElementById('ust').scrollIntoView({behavior:'smooth'})};document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
+async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
+ try{var r=await fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};var cj=await r.json();var have=(cj.items||[]).some(function(it){return it.id===id});
+  if(!have)await fetch('/wp-json/wc/store/v1/cart/add-item',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({id:id,quantity:1})});
+  await fetch('/wp-json/wc/store/v1/cart/apply-coupon',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({code:'pause10'})});
+  location.href='/checkout/';}
+ catch(e){location.href='/checkout/?add-to-cart='+id}}
+document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false;$('all').disabled=false}});
+var MODE=10;function pick(){var a=(QS[pos]||QS.mid).slice();for(var x=a.length-1;x>0;x--){var r=Math.floor(Math.random()*(x+1));var t=a[x];a[x]=a[r];a[r]=t}return a.slice(0,MODE)}
+function bestTxt(){try{var b=JSON.parse(localStorage.getItem('us_best')||'{}');var k=Object.keys(b);if(!k.length)return '';return 'Best scores: '+k.map(function(p){return ({striker:'Striker',winger:'Winger',ten:'No. 10',mid:'Midfielder',def:'Defender'})[p]+' '+b[p]}).join(' · ')}catch(e){return ''}}
+$('best').textContent=bestTxt();
+var ALL=0;$('all').onclick=function(){ALL=1;$('start').onclick()};
+$('start').onclick=function(){MODE=ALL?20:10;ALL=0;Q=pick();try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+$('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
+$('again').onclick=function(){Q=pick();document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
+})();
+</script>
+</div>
