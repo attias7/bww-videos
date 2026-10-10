@@ -188,7 +188,7 @@ function draw(s,showArr){var svg=el('svg',{viewBox:'-4 -8 108 112'});
  var key=el('text',{x:-2,y:-3,'font-size':3.2,fill:'#CDDED0',opacity:.8});key.textContent='▲ their goal';svg.appendChild(key);
  return svg}
 function showArrows(s,mine){var g=document.getElementById('ust-arr');if(!g)return;g.innerHTML='';
- s.o.forEach(function(op,k){if(k!==s.pro&&k!==mine)return;var a=op[2];var l=arrow(g,a[0],a[1],a[2],a[3],k===s.pro?'#C8F23A':'#E04848',false);
+ s.o.forEach(function(op,k){if(!(k===s.pro||k===mine))return;var a=op[2];var l=arrow(g,a[0],a[1],a[2],a[3],k===s.pro?'#C8F23A':'#E04848',false);
   var lb=el('text',{x:(a[0]+a[2])/2+2,y:(a[1]+a[3])/2,'font-size':3.6,'font-weight':800,fill:k===s.pro?'#C8F23A':'#E04848'});lb.textContent='ABC'[k];g.appendChild(lb)})}
 function render(){var s=Q[i];locked=false;
  $('n').textContent=(i+1)+' / '+Q.length;$('prog').style.width=(i/Q.length*100)+'%';$('min').textContent=s.min;$('score').textContent=s.sc;$('role').textContent=s.role;$('q').innerHTML=s.q;
@@ -205,7 +205,7 @@ function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
  showArrows(s,k);
  var head=k<0?"⏱ Too slow. In a game the defender's already on you.":k===s.pro?'✅ Pro pick. +2':got===1?'🟡 Not wrong, but not the best. +1':'❌ Not this time. +0';
  var html='<div class="h">'+head+'</div><div class="why"><b style="color:#C8F23A">Pro pick: '+'ABC'[s.pro]+'.</b> '+s.o[s.pro][3]+'</div>';
- if(k>=0&&k!==s.pro)html+='<div class="mineTxt">Your pick ('+'ABC'[k]+'): '+s.o[k][3]+'</div>';
+ if(k>=0)if(k!==s.pro)html+='<div class="mineTxt">Your pick ('+'ABC'[k]+'): '+s.o[k][3]+'</div>';
  var fb=$('fb');fb.innerHTML=html;fb.classList.remove('hide');
  var nx=$('next');nx.textContent=i<Q.length-1?'Next situation →':'See my result →';nx.classList.remove('hide')}
 function finish(){$('game').classList.add('hide');$('res').classList.remove('hide');
