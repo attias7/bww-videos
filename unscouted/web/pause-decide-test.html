@@ -59,6 +59,11 @@
 #ust .prod .pr s{font-size:18px;color:var(--mut);font-weight:600;margin-left:6px}
 #ust .prod .btn{margin-top:10px;width:100%;padding:15px 16px;font-size:15px}
 #ust .hide{display:none!important}
+#ust .gg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start}
+#ust .gl{position:sticky;top:90px}
+#ust .gr .q{margin-top:6px}
+#ust.wide .w{max-width:1120px}
+@media(max-width:860px){#ust .gg{grid-template-columns:1fr;gap:10px}#ust .gl{position:static}#ust .gl svg{max-height:38vh;width:auto;max-width:100%;margin:0 auto}#ust .gr .q{margin:8px 0}}
 @media(max-width:520px){#ust{padding:32px 12px 72px}#ust .q{font-size:17px}#ust .opt{font-size:15px;padding:12px 13px}}
 </style>
 <div class="w">
@@ -79,13 +84,17 @@
 
 <section id="ust-game" class="hide">
   <div class="top"><span class="small" id="ust-n">1 / 8</span><div class="prog"><i id="ust-prog" style="width:0"></i></div><span class="sb"><span id="ust-min">80'</span><span class="s" id="ust-score">1-0</span></span></div>
-  <p class="small" id="ust-role" style="color:var(--lime);font-weight:800;letter-spacing:.08em"></p>
-  <p class="q" id="ust-q"></p>
-  <div id="ust-pitch"></div>
-  <div class="timer" id="ust-timer"><i id="ust-tbar"></i></div>
-  <div class="opts" id="ust-opts"></div>
-  <div class="fb hide" id="ust-fb"></div>
-  <div class="row"><button class="btn hide" id="ust-next">Next situation →</button></div>
+  <div class="gg">
+    <div class="gl"><div id="ust-pitch"></div></div>
+    <div class="gr">
+      <p class="small" id="ust-role" style="color:var(--lime);font-weight:800;letter-spacing:.08em"></p>
+      <p class="q" id="ust-q"></p>
+      <div class="timer" id="ust-timer"><i id="ust-tbar"></i></div>
+      <div class="opts" id="ust-opts"></div>
+      <div class="fb hide" id="ust-fb"></div>
+      <div class="row"><button class="btn hide" id="ust-next">Next situation →</button></div>
+    </div>
+  </div>
 </section>
 
 <section id="ust-res" class="hide">
@@ -208,7 +217,7 @@ function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
  if(k>=0)if(k!==s.pro)html+='<div class="mineTxt">Your pick ('+'ABC'[k]+'): '+s.o[k][3]+'</div>';
  var fb=$('fb');fb.innerHTML=html;fb.classList.remove('hide');
  var nx=$('next');nx.textContent=i<Q.length-1?'Next situation →':'See my result →';nx.classList.remove('hide')}
-function finish(){$('game').classList.add('hide');$('res').classList.remove('hide');
+function finish(){document.getElementById('ust').classList.remove('wide');$('game').classList.add('hide');$('res').classList.remove('hide');
  $('pts').innerHTML=pts+'<span>/'+(Q.length*2)+'</span>';
  var t=pts>=14?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:pts>=9?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
  $('tier').textContent=t[0];$('tierTxt').textContent=t[1];
@@ -223,9 +232,9 @@ async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discou
   location.href='/checkout/';}
  catch(e){location.href='/checkout/?add-to-cart='+id}}
 document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false}});
-$('start').onclick=function(){$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+$('start').onclick=function(){document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 $('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
-$('again').onclick=function(){$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+$('again').onclick=function(){document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
 })();
 </script>
