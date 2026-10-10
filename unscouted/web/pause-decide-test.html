@@ -404,8 +404,8 @@ function finish(){document.getElementById('ust').classList.remove('wide');$('gam
  var pk=POS[pos];$('packtip').innerHTML=pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
  $('prog').style.width='100%';document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
 async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
- try{var r=await fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};
-  await fetch('/wp-json/wc/store/v1/cart/add-item',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({id:id,quantity:1})});
+ try{var r=await fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};var cj=await r.json();var have=(cj.items||[]).some(function(it){return it.id===id});
+  if(!have)await fetch('/wp-json/wc/store/v1/cart/add-item',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({id:id,quantity:1})});
   await fetch('/wp-json/wc/store/v1/cart/apply-coupon',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({code:'pause10'})});
   location.href='/checkout/';}
  catch(e){location.href='/checkout/?add-to-cart='+id}}
