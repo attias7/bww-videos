@@ -27,6 +27,7 @@
 #ust .q{font-size:19px;line-height:1.5;color:#fff;margin:14px 0}
 #ust .q b{color:var(--lime)}
 #ust svg{width:100%;height:auto;display:block;border-radius:14px}
+#ust #ust-players{transition:opacity .8s}#ust #ust-players.fade{opacity:.08}#ust #ust-scanhint{font-size:13px;color:#A9AEA2;margin:6px 0 0}
 #ust .timer{height:5px;background:#22261C;border-radius:9px;overflow:hidden;margin:12px 0 4px}
 #ust .timer i{display:block;height:100%;width:100%;background:var(--lime);transform-origin:left}
 #ust .opts{display:grid;gap:10px;margin-top:12px}
@@ -71,7 +72,7 @@
 <section id="ust-intro">
   <div class="pill"><b>FREE · 8 REAL MATCH MOMENTS</b>&nbsp;&nbsp;3 minutes</div>
   <h1>Pause &amp; decide.<br><span>Do you see the game like a pro?</span></h1>
-  <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position. 3 options each, 25 seconds to decide. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
+  <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position. 3 options each, 15 seconds to decide, and the picture fades after 6 seconds, like a real shoulder check. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
   <div class="card" style="margin-top:26px">
     <p style="font-weight:800;color:#fff">What position do you play?</p>
     <div class="pos" id="ust-pos">
@@ -85,7 +86,7 @@
 <section id="ust-game" class="hide">
   <div class="top"><span class="small" id="ust-n">1 / 8</span><div class="prog"><i id="ust-prog" style="width:0"></i></div><span class="sb"><span id="ust-min">80'</span><span class="s" id="ust-score">1-0</span></span></div>
   <div class="gg">
-    <div class="gl"><div id="ust-pitch"></div></div>
+    <div class="gl"><div id="ust-pitch"></div><p id="ust-scanhint"></p></div>
     <div class="gr">
       <p class="small" id="ust-role" style="color:var(--lime);font-weight:800;letter-spacing:.08em"></p>
       <p class="q" id="ust-q"></p>
@@ -99,7 +100,7 @@
 
 <section id="ust-res" class="hide">
   <div class="pill"><b>YOUR RESULT</b></div>
-  <div class="row" style="margin-top:16px"><div class="big" id="ust-pts">0<span>/16</span></div></div>
+  <div class="row" style="margin-top:16px"><div class="big" id="ust-pts">0<span>/8</span></div></div>
   <h2 id="ust-tier" style="margin-top:14px"></h2>
   <p class="lead" id="ust-tierTxt"></p>
   <div class="cats" id="ust-cats"></div>
@@ -340,7 +341,7 @@ def:[
 
 var Q=[];
 var $=function(id){return document.getElementById('ust-'+id)};
-var pos=null,i=0,pts=0,res={},tmr=null,locked=false,TIME=25;
+var pos=null,i=0,pts=0,res={},tmr=null,locked=false,TIME=15;
 function el(t,a){var e=document.createElementNS('http://www.w3.org/2000/svg',t);for(var k in a)e.setAttribute(k,a[k]);return e}
 function arrow(svg,x1,y1,x2,y2,col,dash){var l=el('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:col,'stroke-width':0.75,'stroke-linecap':'round','marker-end':'url(#ah'+(col=='#C8F23A'?'L':col=='#E04848'?'R':'W')+')'});if(dash)l.setAttribute('stroke-dasharray','1.4 1.1');svg.appendChild(l);return l}
 function lines(svg,v){var L={stroke:'#D7E6DA','stroke-width':0.32,fill:'none',opacity:.8};var A=function(t,o){svg.appendChild(el(t,Object.assign({},o,L)))};
@@ -361,6 +362,7 @@ function draw(s){var v=bounds(s);var svg=el('svg',{viewBox:'-3 '+v[0]+' 74 '+(v[
  if(s.pass)arrow(svg,s.pass[0],s.pass[1],s.pass[2],s.pass[3],'#FFFFFF',true);
  if(s.run)arrow(svg,s.run[0],s.run[1],s.run[2],s.run[3],'#C8F23A',true);
  var g=el('g',{id:'ust-arr'});svg.appendChild(g);
+ var pg=el('g',{id:'ust-players'});svg.appendChild(pg);var svgRoot=svg;svg=pg;
  s.p.forEach(function(p){var t=p[0],x=p[2],y=p[3],lab=p[4];var r=1.25;
   if(t=='me'){svg.appendChild(el('circle',{cx:x,cy:y,r:2.1,fill:'none',stroke:'#C8F23A','stroke-width':.4}));svg.appendChild(el('circle',{cx:x,cy:y,r:1.35,fill:'#C8F23A',stroke:'#fff','stroke-width':.3}));lab='YOU'}
   else {var fill=t=='gk'?(p[1]=='us'?'#F2A93B':'#F2A93B'):t=='us'?'#F4F5EF':'#E04848';svg.appendChild(el('circle',{cx:x,cy:y,r:r,fill:fill,stroke:t=='us'?'#7D8577':'#fff','stroke-width':.25}))}
@@ -368,34 +370,36 @@ function draw(s){var v=bounds(s);var svg=el('svg',{viewBox:'-3 '+v[0]+' 74 '+(v[
   if(lab){var tx=el('text',{x:x,y:below?y-1.9:y+(t=='me'?3.6:2.9),'text-anchor':'middle','font-size':t=='me'?1.9:1.55,'font-weight':800,fill:t=='me'?'#C8F23A':t=='them'?'#FFB3B3':'#E9EDE4','paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.35});tx.textContent=lab;svg.appendChild(tx)}
  });
  var b=s.ball||(s.pass?[s.pass[0],s.pass[1]]:null);if(b)svg.appendChild(el('circle',{cx:b[0],cy:b[1],r:.62,fill:'#fff',stroke:'#111','stroke-width':.18}));
- var key=el('text',{x:-2,y:v[0]+2.4,'font-size':1.8,fill:'#D7E6DA',opacity:.85});key.textContent='▲ '+(s.g||'their goal');svg.appendChild(key);
+ svg=svgRoot;var key=el('text',{x:-2,y:v[0]+2.4,'font-size':1.8,fill:'#D7E6DA',opacity:.85});key.textContent='▲ '+(s.g||'their goal');svg.appendChild(key);
  return svg}
 function showArrows(s,mine){var g=document.getElementById('ust-arr');if(!g)return;g.innerHTML='';
  s.o.forEach(function(op,k){if(!(k===s.pro||k===mine))return;var a=op[2];var col=k===s.pro?'#C8F23A':'#E04848';arrow(g,a[0],a[1],a[2],a[3],col,false);
-  var lb=el('text',{x:(a[0]+a[2])/2+1.4,y:(a[1]+a[3])/2,'font-size':2.2,'font-weight':800,fill:col,'paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.4});lb.textContent='ABC'[k];g.appendChild(lb)})}
-function render(){var s=Q[i];locked=false;
+  var lb=el('text',{x:(a[0]+a[2])/2+1.4,y:(a[1]+a[3])/2,'font-size':2.2,'font-weight':800,fill:col,'paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.4});lb.textContent=L(s,k);g.appendChild(lb)})}
+function L(s,k){return 'ABC'[s._ord.indexOf(k)]}
+function render(){var s=Q[i];locked=false;var o=[0,1,2];for(var a=2;a>0;a--){var r=Math.floor(Math.random()*(a+1));var t=o[a];o[a]=o[r];o[r]=t}s._ord=o;
  $('n').textContent=(i+1)+' / '+Q.length;$('prog').style.width=(i/Q.length*100)+'%';$('min').textContent=s.min;$('score').textContent=s.sc;$('role').textContent='YOU: '+s.role;$('q').innerHTML=s.q;
  var pc=$('pitch');pc.innerHTML='';pc.appendChild(draw(s));
- var oc=$('opts');oc.innerHTML='';s.o.forEach(function(op,k){var b=document.createElement('button');b.className='opt';b.innerHTML='<span class="k">'+'ABC'[k]+'</span><span>'+op[0]+'</span>';b.onclick=function(){answer(k)};oc.appendChild(b)});
+ var oc=$('opts');oc.innerHTML='';s._ord.forEach(function(k,j){var op=s.o[k];var b=document.createElement('button');b.className='opt';b.setAttribute('data-k',k);b.innerHTML='<span class="k">'+'ABC'[j]+'</span><span>'+op[0]+'</span>';b.onclick=function(){answer(k)};oc.appendChild(b)});
+ clearTimeout(window._ustFade);var pl=document.getElementById('ust-players');window._ustFade=setTimeout(function(){if(pl)pl.classList.add('fade');var h=$('scanhint');if(h)h.textContent='Picture gone. Decide from what you saw.'},6000);var sh=$('scanhint');if(sh)sh.textContent='Scan the picture: it fades in 6 seconds.';
  $('fb').classList.add('hide');$('next').classList.add('hide');$('timer').classList.remove('hide');
  var bar=$('tbar');bar.style.transition='none';bar.style.transform='scaleX(1)';void bar.offsetWidth;bar.style.transition='transform '+TIME+'s linear';bar.style.transform='scaleX(0)';
  clearTimeout(tmr);tmr=setTimeout(function(){answer(-1)},TIME*1000);
  document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
 function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
  var bar=$('tbar');var cs=getComputedStyle(bar).transform;bar.style.transition='none';bar.style.transform=cs;
- var got=k>=0?s.o[k][1]:0;pts+=got;res[s.cat]=(res[s.cat]||0)+got;
- var btns=$('opts').children;for(var j=0;j<btns.length;j++){btns[j].disabled=true;if(j===s.pro)btns[j].classList.add('pro');if(j===k)btns[j].classList.add('mine')}
+ clearTimeout(window._ustFade);var pl=document.getElementById('ust-players');if(pl)pl.classList.remove('fade');var sh=$('scanhint');if(sh)sh.textContent='';var got=k===s.pro?1:0;var half=k>=0?s.o[k][1]===1:false;pts+=got;res[s.cat]=(res[s.cat]||0)+got;
+ var btns=$('opts').children;for(var j=0;j<btns.length;j++){var kk=parseInt(btns[j].getAttribute('data-k'));btns[j].disabled=true;if(kk===s.pro)btns[j].classList.add('pro');if(kk===k)btns[j].classList.add('mine')}
  showArrows(s,k);
- var head=k<0?"⏱ Too slow. In a game the defender's already on you.":k===s.pro?'✅ Pro pick. +2':got===1?'🟡 Not wrong, but not the best. +1':'❌ Not this time. +0';
- var html='<div class="h">'+head+'</div><div class="why"><b style="color:#C8F23A">Pro pick: '+'ABC'[s.pro]+'.</b> '+s.o[s.pro][3]+'</div>';
- if(k>=0)if(k!==s.pro)html+='<div class="mineTxt">Your pick ('+'ABC'[k]+'): '+s.o[k][3]+'</div>';
+ var head=k<0?"⏱ Too slow. In a game the defender's already on you.":k===s.pro?'✅ Pro pick. +1':half?'🟡 Close, but not the pro pick. +0':'❌ Not this time. +0';
+ var html='<div class="h">'+head+'</div><div class="why"><b style="color:#C8F23A">Pro pick: '+L(s,s.pro)+'.</b> '+s.o[s.pro][3]+'</div>';
+ if(k>=0)if(k!==s.pro)html+='<div class="mineTxt">Your pick ('+L(s,k)+'): '+s.o[k][3]+'</div>';
  var fb=$('fb');fb.innerHTML=html;fb.classList.remove('hide');
  var nx=$('next');nx.textContent=i<Q.length-1?'Next situation →':'See my result →';nx.classList.remove('hide')}
 function finish(){document.getElementById('ust').classList.remove('wide');$('game').classList.add('hide');$('res').classList.remove('hide');
- $('pts').innerHTML=pts+'<span>/'+(Q.length*2)+'</span>';
- var t=pts>=14?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:pts>=9?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
+ $('pts').innerHTML=pts+'<span>/'+Q.length+'</span>';
+ var t=pts>=8?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:pts>=6?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
  $('tier').textContent=t[0];$('tierTxt').textContent=t[1];
- var max={};Q.forEach(function(s){max[s.cat]=(max[s.cat]||0)+2});
+ var max={};Q.forEach(function(s){max[s.cat]=(max[s.cat]||0)+1});
  $('cats').innerHTML=Object.keys(max).map(function(c){var v=res[c]||0,m=max[c];return '<div class="cat"><span>'+CATS[c]+'</span><em style="color:'+(v===m?'#C8F23A':v>0?'#F2A93B':'#E04848')+'">'+v+'/'+m+'</em></div>'}).join('');
  var pk=POS[pos];$('packtip').innerHTML=pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
  $('prog').style.width='100%';document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
