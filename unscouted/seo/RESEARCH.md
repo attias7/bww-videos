@@ -345,3 +345,42 @@ Not worth alternative pages: Techne Futbol, Anytime Soccer, DribbleUp and TopYa 
 - Every page gets: a byline from the brand (no owner name), a "last updated" date, and one real worked example or board image.
 - No result promises ("get scouted", "go pro"). Use "improve how you read the game".
 - Re-check competitor prices quarterly and keep the "checked on" dates visible.
+
+---
+
+## 6. Round 2 competitor pages (researched 2026-10-10)
+
+Same method as above: WebSearch + WebFetch only, not a live Google SERP. Check the live SERP before publishing.
+
+### #19 soccer intelligym vs be your best → `/soccer-intelligym-vs-be-your-best/`
+- **SERP:** For "soccer intelligym vs be your best" and "intelligym or be your best" the tool returned only IntelliGym's own pages (including [Why IntelliGym Is the Best Soccer IQ App](https://soccer.intelligym.com/why-intelligym-is-the-best-soccer-iq-app/): ~650 words, H2s "Science-Backed Origins &amp; Proven Results" / "Conclusion", a table vs unnamed "Other Soccer IQ Apps or Methods", no prices, no competitor named), Wikipedia, CORDIS and Be Your Best's own [Top Soccer Training Apps](https://beyourbest.com/insight/top-soccer-training-apps-for-players) (Sept 2024, 3 apps, doesn't mention IntelliGym). **No neutral head-to-head exists.**
+- **Gap we fill:** neutral table, real 12-month cost per player, "seeing vs deciding" framing, list of inconsistencies to check on both sites, third option disclosed.
+- **New verified facts:** Be Your Best FAQ says scenarios exist for every outfield position (goalkeeper "coming soon"), no minimum age (VR from 12+), PC version in Chrome, "minimum subscription length is 12 months" (conflicts with $29 monthly plan), headset list still names Quest 1/2 and Pico Neo 2 ([FAQ](https://www.beyourbest.com/faq)). Home page claims 28% scan-rate increase in 9 weeks (German youth national team) and cites Jordet, Bloomfield &amp; Heijmerikx 2013 ([en-us](https://beyourbest.com/en-us)). IntelliGym "why" page claims 27% greater on-field improvement in a VU Amsterdam study with PSV/AZ academies vs video-only (vendor claim). IntelliGym pricing page lists "Full access to computer software" only on annual plans ([pricing](https://soccerapp.intelligym.com/)). IntelliGym iOS app: "Only for iPhone" ([App Store](https://apps.apple.com/app/id6538727452)). The "$262" next to the annual plan ≈ $21.90 × 12, so it's likely the monthly plan's yearly cost shown for comparison (our inference, flagged as such on the page).
+- **Correction to section 4:** IntelliGym's *product page* doesn't say "adaptive"; the adaptive-difficulty claim is from its [FAQ](https://soccer.intelligym.com/faq-items/how-is-intelligym-different-from-a-video-game/).
+
+### #20 best soccer iq apps → `/best-soccer-iq-apps/`
+- **SERP:** IntelliGym's own "best soccer IQ app" page, IntelliGym pricing and App Store, [Playermaker's training-apps list](https://www.playermaker.com/blogs/news/soccer-training-apps) (~1,800 words; Playermaker, Train Effective, Techne, DribbleUp, Soccer Pulse, Tactical Pad; **no IQ/decision apps, no prices**), an iMore list, and a TrustMRR page for a fan stats app called "Soccer IQ". **No independent list of decision/IQ apps with prices.**
+- **Included (all verified on official site or App Store, Oct 2026):**
+
+| App | Trains | Price | Platform | Source |
+|---|---|---|---|---|
+| Soccer IntelliGym | Cognitive sim (see §4) | see §4 | Desktop/mobile, iPhone app | §4 |
+| Be Your Best | VR scanning/decisions | see §4 | Meta Quest + iOS/Android companion | §4 |
+| Train Effective | 150+ drills, fitness, mindset, Game Brain | PRO $13/mo billed yearly, Academy $33/mo billed yearly, Clubs $50/player/yr, 7-day trial. US App Store IAPs $12.99–$399.99 | iOS, Android (1M+ downloads, ~4.5★ ~32K reviews on Play, updated 10 Sep 2026; UK App Store 4.8★ 7.2k) | [pricing](https://traineffective.com/en/pricing), [Game Brain](https://traineffective.com/en/tactics), [App Store](https://apps.apple.com/us/app/train-effective-soccer-academy/id1425844780), [Play](https://play.google.com/store/apps/details?id=com.traineffective) |
+| ScanBeat | Apple Watch vibration reminders to scan; presets 5s→1s | $1.99/wk, $5.99/mo, $59.99/yr; 15-min trial | iPhone + Apple Watch | [App Store](https://apps.apple.com/us/app/scanbeat/id6758786061) |
+| ProScan360 | On-screen number/colour cues for scanning/decision drills | $0.99 one-off, no ads/subs | iPhone/iPad | [App Store](https://apps.apple.com/us/app/proscan360/id6755746708) |
+| Football Scan Trainer | Flash-cue scanning/reaction drills, 21 drills, ages 5–12 | $2.99 one-off | iPhone, offline | [App Store](https://apps.apple.com/us/app/football-scan-trainer/id6777511549) |
+
+- **Excluded, with reasons:** Soccer Training IQ ([App Store](https://apps.apple.com/app/id6737512667): technical/fitness despite the name, $12.99/mo, $69.99/yr, $199.99 lifetime, 4.5★/68); "Soccer IQ" by TrustMRR (fan match-stats app); trivia apps (Footy Brains etc.); Techne/DribbleUp (technical); Rezzil (Meta store page exists but no details visible); Evolver 360 ([App Store](https://apps.apple.com/us/app/evolver-360/id6740585567): free, cognitive decision/scanning, but last update 19 Sep 2025 and no ratings; mentioned as "couldn't judge").
+- **Ranking:** "best for" labels, no #1. Ours listed 4th with an explicit "this one is ours" label.
+- Train Effective App Store age rating is now **4+** (section 4 said 9+).
+
+### #21 train effective alternative → `/train-effective-alternative/`
+- **Candidate check:** Train Effective (real, current, large: 1M+ Play downloads, updated Sep 2026, has a named decision feature "Game Brain") ✔. Techne Futbol: real but pure ball-mastery, intent mismatch ✘. Other decision trainers found (ScanBeat, ProScan360, Evolver 360, Football Scan Trainer) are new with no ratings and no brand search presence ✘.
+- **SERP:** "train effective alternative" returned only app-analytics pages (Similarweb, Apptopia) and store listings. **No alternatives article exists.** Brand volume is real (big app), "alternative" volume is unverified and probably small.
+- **Angle:** for the buyer who wants the Game Brain part (decisions): watching an analyst explain a pro's decision vs making the call yourself under a clock. Fair to Train Effective as an all-round app; "use both" section.
+- **Board:** 1 board (central midfielder, build-up, opponent winger leaves the full-back to press the CB → first-time pass to the free left back, pro = B). Files: `seo/pages/train-effective-alternative-boards.js`, `seo/pages/img/train-effective-alternative-1.png` / `-1-answer.png` (1066×720).
+- **Study cited:** [Zhao et al. 2022, Frontiers in Human Neuroscience](https://www.frontiersin.org/articles/10.3389/fnhum.2022.945067), read via fetch: 10 studies, 8 showed post-test improvement, no meta-analysis, samples of 16–48, only one study had a transfer (on-field) test.
+
+### Internal links added
+The three new pages link to each other and to `/soccer-intelligym-alternative/`, `/vr-soccer-training-alternative/`, `/soccer-iq-test/`, `/soccer-iq-training/`, `/football-decision-making-training/`, `/analyse-a-football-match-as-a-player/`. Consider adding links back from the two older alternative pages and `/soccer-iq-training/` to `/best-soccer-iq-apps/` and `/soccer-intelligym-vs-be-your-best/`.
