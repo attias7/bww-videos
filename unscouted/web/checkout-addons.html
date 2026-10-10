@@ -20,15 +20,15 @@
 <script>
 (function(){
 var IMG='/wp-content/uploads/2026/10/';
-var P={28:{n:'Striker Pack',p:17,img:'striker-pack.jpg'},29:{n:'Winger Pack',p:17,img:'winger-pack.jpg'},30:{n:'Number 10 Pack',p:17,img:'number-10-pack.jpg'},31:{n:'Game Library',p:27,img:'game-library.jpg'}};
+var P={28:{n:'Striker Pack',p:17,img:'striker-pack.jpg'},29:{n:'Winger Pack',p:17,img:'winger-pack.jpg'},30:{n:'Number 10 Pack',p:17,img:'number-10-pack.jpg'},31:{n:'Game Library',p:27,img:'game-library.jpg'},77:{n:'Defender Pack',p:17,img:'defender-pack.jpg'},78:{n:'Pause & Decide: 100 Situations',p:27,img:'pause-decide-100.jpg'}};
 var D={
- striker:{28:'Finishing sessions, the striker\'s code and my breakdowns of Haaland, Kane, Henry, Mbappé and more.',31:'84 pro games. Watch the striker for one half, write your analysis, then compare with my notes.'},
- winger:{29:'1v1 sessions, the winger\'s code and my notes on 33 wide players, from Vinícius to Saka.',31:'84 pro games. Watch the winger for one half, write your analysis, then compare with my notes.'},
- ten:{30:'Finding space between the lines, the final pass and shooting from distance. Musiala, Foden, Palmer and more.',31:'84 pro games. Watch the 10 for one half, write your analysis, then compare with my notes.'},
- mid:{30:'For midfielders who want to play forward: receiving between the lines, the final pass and shooting from distance.',31:'84 pro games. Watch one player for one half, write your analysis, then compare with my notes.'},
- def:{31:'Learn how the attackers you face think. 84 pro games, with my notes on how the best attackers move and decide.'}
+ striker:{78:'20 match situations for your position, plus 80 more. Decide in 15 seconds, then see the pro pick and why.',28:'Finishing sessions, the striker\'s code and my breakdowns of Haaland, Kane, Henry, Mbappé and more.',31:'84 pro games. Watch the striker for one half, write your analysis, then compare with my notes.'},
+ winger:{78:'20 match situations for your position, plus 80 more. Decide in 15 seconds, then see the pro pick and why.',29:'1v1 sessions, the winger\'s code and my notes on 33 wide players, from Vinícius to Saka.',31:'84 pro games. Watch the winger for one half, write your analysis, then compare with my notes.'},
+ ten:{78:'20 match situations for your position, plus 80 more. Decide in 15 seconds, then see the pro pick and why.',30:'Finding space between the lines, the final pass and shooting from distance. Musiala, Foden, Palmer and more.',31:'84 pro games. Watch the 10 for one half, write your analysis, then compare with my notes.'},
+ mid:{78:'20 match situations for your position, plus 80 more. Decide in 15 seconds, then see the pro pick and why.',30:'For midfielders who want to play forward: receiving between the lines, the final pass and shooting from distance.',31:'84 pro games. Watch one player for one half, write your analysis, then compare with my notes.'},
+ def:{77:'The defender\'s code, 7 sessions and breakdowns of Van Dijk, Dias, Saliba and more.',78:'20 match situations for your position, plus 80 more. Decide in 15 seconds, then see the pro pick and why.'}
 };
-var SETS={striker:[28,31],winger:[29,31],ten:[30,31],mid:[30,31],def:[31]};
+var SETS={striker:[28,78],winger:[29,78],ten:[30,78],mid:[30,78],def:[77,78]};
 var pos=null;try{pos=localStorage.getItem('us_pos')}catch(e){}
 var nonce=null;
 function api(path,opt){opt=opt||{};opt.credentials='same-origin';opt.headers=Object.assign({'Content-Type':'application/json'},nonce?{'Nonce':nonce}:{},opt.headers||{});return fetch('/wp-json/wc/store/v1/'+path,opt)}
@@ -37,7 +37,7 @@ function card(id,desc,chips){var x=P[id];var d=document.createElement('div');d.c
  var b=document.createElement('button');b.textContent='+ Add';b.onclick=function(){add(id,b)};d.appendChild(b);return d}
 function chipCard(inCart){var d=document.createElement('div');d.className='it';
  d.innerHTML='<img alt="" src="'+IMG+'winger-pack.jpg"><div class="tx"><div class="nm">Your position pack</div><div class="ds">My notes and sessions for your position.</div><div class="pr">+$17</div><div class="chips"></div></div>';
- var c=d.querySelector('.chips');[[28,'Striker'],[29,'Winger'],[30,'No. 10']].forEach(function(o){if(inCart.indexOf(o[0])>=0)return;var b=document.createElement('button');b.textContent='+ '+o[1];b.onclick=function(){add(o[0],b)};c.appendChild(b)});
+ var c=d.querySelector('.chips');[[28,'Striker'],[29,'Winger'],[30,'No. 10'],[77,'Defender']].forEach(function(o){if(inCart.indexOf(o[0])>=0)return;var b=document.createElement('button');b.textContent='+ '+o[1];b.onclick=function(){add(o[0],b)};c.appendChild(b)});
  return c.children.length?d:null}
 async function add(id,b){b.disabled=true;b.textContent='Adding…';try{await api('cart/add-item',{method:'POST',body:JSON.stringify({id:id,quantity:1})});}catch(e){}location.reload()}
 async function init(){var r=await api('cart');nonce=r.headers.get('Nonce');var cart=await r.json();var ids=(cart.items||[]).map(function(i){return i.id});
@@ -45,7 +45,7 @@ async function init(){var r=await api('cart');nonce=r.headers.get('Nonce');var c
  var list=document.getElementById('usa-list');
  if(SETS[pos||"none"]){SETS[pos].forEach(function(id){if(ids.indexOf(id)<0)list.appendChild(card(id,D[pos][id]))});}
  else{document.getElementById('usa-sub').textContent='Go deeper. One click, same download.';
-  if(ids.indexOf(31)<0)list.appendChild(card(31,'84 pro games. Watch one player for one half, write your analysis, then compare with my notes.'));
+  if(ids.indexOf(78)<0)list.appendChild(card(78,'100 match situations, 20 per position. Decide in 15 seconds, then see the pro pick and why.'));
   var cc=chipCard(ids);if(cc)list.appendChild(cc);}
  if(list.children.length)document.getElementById('usa').style.display='block'}
 init();
