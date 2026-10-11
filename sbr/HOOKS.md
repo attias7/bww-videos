@@ -20,6 +20,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Under ~10 spoken words; the first 3 words must carry the callout or the tension.
 
 ## 3. Hook bank (✅ = used, with the episode)
+- ✅ Ep 17 — Sick of income screenshots? Here's the honest version.
 
 ### Outcome
 - Get contractors to pay you without ever calling one.
