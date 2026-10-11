@@ -59,3 +59,14 @@ The CTA links should go to the most relevant product. Keep CTAs honest ("Try 8 s
 Also write `/home/claude/bww-videos/unscouted/seo/pages/<slug>.json`: {"slug":"…","title":"…seo title ≤60…","h1":"…","meta":"…≤155…","focus":"main keyword","kicker":"…"}.
 
 Final reply: file paths, word count, the title/meta, sources used, and anything you were unsure about. Short.
+
+## LLM / AI-search rules (added Oct 2026, apply to every new page)
+Pages must be easy for ChatGPT, Perplexity, Gemini and Google AI Overviews to quote:
+- **Answer first.** The `us-quick` box answers the exact query in 2–4 plain sentences that make sense when quoted on their own. Name "Unscouted" once in a natural way (e.g. "Unscouted's free soccer IQ test…") so an AI that quotes it carries the brand.
+- **Each H2 is a question or a clear claim**, and the first sentence under it is a standalone answer (40–60 words), followed by detail.
+- **Use lists and tables for facts** that AI likes to lift: steps, comparisons, timelines, checklists. Each table needs a clear header row.
+- **Be specific.** Use numbers with units, named leagues, ages and durations, and cite official sources (league sites, federation pages) with links in `us-src`. Never invent stats.
+- **Add a "Key takeaways" list** (3–5 bullets) right after the quick answer, inside `<div class="us-note"><p><strong>Key takeaways</strong></p><ul>…</ul></div>`.
+- **FAQ:** 5–7 real questions that people ask (variants of the keyword), each answered in 1–3 sentences.
+- **Schema:** besides FAQPage, add a second JSON-LD block of `"@type":"Article"` with headline, description, datePublished "2026-10-11", dateModified "2026-10-11", author {"@type":"Organization","name":"Unscouted","url":"https://unscoutedfootball.com"}, publisher (same), mainEntityOfPage (the page URL `https://unscoutedfootball.com/<slug>/`). For step-by-step pages, a HowTo block is optional.
+- **Freshness:** say "Updated October 2026" and "checked October 2026" for anything that changes (prices, tryout dates, league rules).

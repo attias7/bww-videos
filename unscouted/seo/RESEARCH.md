@@ -384,3 +384,31 @@ Same method as above: WebSearch + WebFetch only, not a live Google SERP. Check t
 
 ### Internal links added
 The three new pages link to each other and to `/soccer-intelligym-alternative/`, `/vr-soccer-training-alternative/`, `/soccer-iq-test/`, `/soccer-iq-training/`, `/football-decision-making-training/`, `/analyse-a-football-match-as-a-player/`. Consider adding links back from the two older alternative pages and `/soccer-iq-training/` to `/best-soccer-iq-apps/` and `/soccer-intelligym-vs-be-your-best/`.
+
+---
+
+## 7. Semrush round (2026-10-11, free account, 10 queries, US database)
+
+Volumes are Semrush estimates. Treat them as rough direction only, not exact numbers.
+
+**Competitor organic top 10 (free plan shows only the top 10 by traffic):**
+- IntelliGym (only root-domain data on free): ranks #1 for "soccer iq training" (50/mo, KD 15), "soccer intelligence" (50, pos 6), "soccer training system" (210, KD 18, pos 2). The rest are brand terms.
+- beyourbest.com: 1.4K keywords, 2.2K traffic. Top terms are brand terms plus blog posts ("soccer formations" 5.4K, "gifts for soccer players" 1.3K). No BOFU non-brand terms in the top 10.
+- traineffective.com: 273 keywords. "football academy online" (70, KD 21) goes to /en/virtual-academy, "train effective camps" goes to /en/get-scouted, and "how to be a better soccer player" (110, KD 22) to a tips post.
+
+**Keyword Magic (top 10 rows each):**
+- online soccer training: "online soccer training program" 90 (KD 51), "soccer online training program" 90 (KD 45), "top online soccer training courses with drills and feedback" 70 (KD 17, I+C), "online soccer training" 50 (KD 54), "best online soccer training programs" 30 (KD 40, I+C).
+- soccer training plan: "soccer training plan" 390 (KD 24), "training plan for soccer" 110 (KD 21), "soccer training plans" 90 (KD 21), "soccer training plan for youth" 40 (KD 11). The "individual" modifier covers 10 keywords. Most of this SERP is written for coaches, so the angle is a plan for a player training alone.
+- how to become a professional soccer player: 590 (KD 14), plus variants "how do i…" 260 (KD 0), "how to be a professional soccer player" 260 (KD 3), "how can you become…" 210 (KD 4), "how do you become…" 210 (KD 19), "how can i become…" 170 (KD 2), "how can you be…" 170 (KD 15). That is ~1,900/mo of near-identical intent with very low KD. **Top priority.**
+- soccer iq: "soccer iq" 480 (KD 7), "soccer iq dan blank" 170 (KD 16), "soccer iq book" 140 (KD 22, I+T), "soccer iq test" 140 (KD 15, we have this page), "soccer iq quiz" 110 (KD 7, on the test page).
+- scanning: "what is scanning in soccer" 50, "soccer scanning drills" 30, "how to scan in soccer" 20, plus about 8 more at 20. The cluster is ~320/mo with no KD shown.
+- solo soccer training: mostly equipment (SKLZ Star-Kick). **Skip.**
+- soccer tryouts: "pro soccer tryouts" 260 (KD 14), "professional soccer tryouts" 260 (KD 9), "usl soccer tryouts" 210 (KD 22), "major league soccer tryouts" 210 (KD 18), "soccer tryout drills" 260 (KD 24), "odp soccer tryouts" 260. "Near me" terms are local, so skip them.
+
+**New pages chosen (round 3):**
+1. /how-to-become-a-professional-soccer-player: cluster ~1.9K, KD 0–19. Sells the Basics Kit and Bundle.
+2. /pro-soccer-tryouts: how to prepare for pro / semi-pro open tryouts (USL, MLS NEXT Pro, UPSL…), plus tryout drills. Sells the Basics Kit and position packs.
+3. /best-online-soccer-training-programs: comparison (Train Effective virtual academy, IntelliGym, Be Your Best, Techne, Unscouted). Sells the Bundle.
+4. /soccer-iq-book: Dan Blank's *Soccer iQ* book, what it covers, and book vs scenario training (alternative angle). Sells Pause & Decide.
+5. /soccer-training-plan: individual 12-week plan for a player training alone. Sells the Basics Kit.
+6. /how-to-scan-in-soccer: what scanning is, plus solo scanning drills. Sells the free test, then Pause & Decide.
