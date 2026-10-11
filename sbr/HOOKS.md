@@ -79,7 +79,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - From scrolling at 2am to building something real.
 
 ### Hybrid (best performers — WHO + RESULT + WITHOUT X)
-- Introverts: get contractors to pay you, no sales calls.
+- ✅ Ep 15 — Introverts: get contractors to pay you, no sales calls.
 - Never built a site? Build one without code.
 - Shy? Find a paying contractor with one written post.
 - Hate selling? Let Google bring the customer to you.
