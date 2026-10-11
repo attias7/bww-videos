@@ -412,3 +412,5 @@ Volumes are Semrush estimates. Treat them as rough direction only, not exact num
 4. /soccer-iq-book: Dan Blank's *Soccer iQ* book, what it covers, and book vs scenario training (alternative angle). Sells Pause & Decide.
 5. /soccer-training-plan: individual 12-week plan for a player training alone. Sells the Basics Kit.
 6. /how-to-scan-in-soccer: what scanning is, plus solo scanning drills. Sells the free test, then Pause & Decide.
+
+**Published 2026-10-11 (round 3):** page IDs 139 how-to-become-a-professional-soccer-player, 140 pro-soccer-tryouts, 141 best-online-soccer-training-programs, 142 soccer-iq-book, 143 soccer-training-plan, 144 how-to-scan-in-soccer. The footer GUIDES column now also links: Become a pro, Pro tryouts, Training plan, How to scan. Indexing was requested in Search Console for 139, 140 and possibly 141, then the daily quota ran out. The sitemap was resubmitted.
