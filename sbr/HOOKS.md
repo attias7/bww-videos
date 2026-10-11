@@ -67,8 +67,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Every side hustle ends with "now get on a call."
 - Tired of courses that upsell you into calls?
 - You don't hate business. You hate selling.
-- Scared to message a business owner? Same.
-
+- ✅ Ep 19 — Scared to message a business owner? Same.
 ### Mechanism
 - ✅ Ep 2 — How 1 Google search turns into a contractor paying me.
 - The no-cold-call close: give the first lead away.
