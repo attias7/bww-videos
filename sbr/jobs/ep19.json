@@ -1,0 +1,387 @@
+{
+ "episode": 19,
+ "series": "NO COLD CALLS · EP. 19",
+ "hook": "Scared to message a business owner? Same.",
+ "voice": "../voices/ep19.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep19_message_contractors_shy.mp4",
+ "lines": [
+  "Scared to message a business owner? Same.",
+  "Here's how I reach contractors without a call.",
+  "Everything is written.",
+  "I posted once in a contractor Facebook group.",
+  "Twenty-seven contractors commented.",
+  "Comments aren't customers. But it taught me something.",
+  "The offer does the talking.",
+  "Here's the idea of the message.",
+  "I have a site that gets quote requests in your area.",
+  "Want the next one? You pay ten percent only if you close it.",
+  "No pitch. No call. Just a yes or no.",
+  "Real talk.",
+  "Some won't reply. Some leads won't close.",
+  "And you'll still talk to people. Just in writing.",
+  "Follow. Ep. twenty is for anyone who feels behind."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 80,
+     "segs": [
+      [
+       "Scared to message a",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 680,
+     "size": 104,
+     "segs": [
+      [
+       "business owner?",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 960,
+     "size": 160,
+     "segs": [
+      [
+       "Same.",
+       "g"
+      ]
+     ],
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 520,
+     "size": 72,
+     "segs": [
+      [
+       "How I reach contractors",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "crossphone",
+     "at": 1,
+     "y": 820,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1060,
+     "size": 92,
+     "segs": [
+      [
+       "without a call.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1260,
+     "size": 92,
+     "segs": [
+      [
+       "Everything is ",
+       "w"
+      ],
+      [
+       "written.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 480,
+     "size": 80,
+     "segs": [
+      [
+       "I posted ",
+       "w"
+      ],
+      [
+       "once",
+       "y"
+      ],
+      [
+       " in a",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 590,
+     "size": 70,
+     "segs": [
+      [
+       "contractor Facebook group.",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 880,
+     "text": "27",
+     "size": 300,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1100,
+     "size": 76,
+     "segs": [
+      [
+       "contractors commented.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1300,
+     "size": 76,
+     "segs": [
+      [
+       "Comments aren't customers.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 5,
+     "y": 1450,
+     "text": "real post · no results claimed",
+     "fill": null,
+     "color": "grey",
+     "size": 34,
+     "dt": 0.6,
+     "outline": "grey"
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 620,
+     "size": 110,
+     "segs": [
+      [
+       "The ",
+       "w"
+      ],
+      [
+       "offer",
+       "y"
+      ],
+      [
+       " does",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 760,
+     "size": 110,
+     "segs": [
+      [
+       "the talking.",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1000,
+     "size": 64,
+     "segs": [
+      [
+       "The idea of the message:",
+       "grey"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "chat",
+     "at": 8,
+     "y": 340,
+     "name": "Local Roofer",
+     "sub": "example · illustrative",
+     "messages": [
+      "I have a site that gets\nquote requests in your area.",
+      "Want the next one?\nYou pay 10% only if\nyou close it."
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1460,
+     "size": 84,
+     "segs": [
+      [
+       "No pitch. No call.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1570,
+     "size": 84,
+     "segs": [
+      [
+       "Just a yes or no.",
+       "g"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 660,
+     "size": 84,
+     "segs": [
+      [
+       "Some won't reply.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 770,
+     "size": 80,
+     "segs": [
+      [
+       "Some leads won't close.",
+       "r"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 960,
+     "size": 74,
+     "segs": [
+      [
+       "You still talk to people.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1070,
+     "size": 92,
+     "segs": [
+      [
+       "Just in writing.",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 860,
+     "text": "Follow · Ep. 20: if you feel behind",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1030,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

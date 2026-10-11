@@ -1,0 +1,339 @@
+{
+ "episode": 18,
+ "series": "NO COLD CALLS · EP. 18",
+ "hook": "Never heard of SEO? Here it is in thirty seconds.",
+ "voice": "../voices/ep18.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep18_seo_30_seconds.mp4",
+ "lines": [
+  "Never heard of SEO? Here it is in thirty seconds.",
+  "SEO just means getting found on Google.",
+  "When someone searches roof repair Smalltown,",
+  "Google picks which pages to show.",
+  "It mostly looks at three things.",
+  "One. Does the page clearly answer the search?",
+  "Two. Is it actually useful?",
+  "Three. Do other sites mention or link to it?",
+  "Here's why it's worth learning.",
+  "A post dies in a day. A ranking page can keep showing up.",
+  "Real talk.",
+  "It's slow. Months, not days. And nobody controls Google.",
+  "But it's a skill that stacks.",
+  "Follow. Ep. nineteen is messaging contractors when you're shy."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 540,
+     "size": 100,
+     "segs": [
+      [
+       "Never heard of",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 690,
+     "size": 160,
+     "segs": [
+      [
+       "SEO?",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "size": 80,
+     "segs": [
+      [
+       "Here it is in",
+       "w"
+      ]
+     ],
+     "dt": 1.0
+    },
+    {
+     "type": "bignum",
+     "at": 0,
+     "y": 1120,
+     "dt": 1.3,
+     "text": "30 sec",
+     "size": 180,
+     "color": "g"
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 330,
+     "size": 70,
+     "segs": [
+      [
+       "SEO = getting ",
+       "w"
+      ],
+      [
+       "found on Google.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "google_phone",
+     "at": 2,
+     "y": 470,
+     "query": "roof repair smalltown"
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1720,
+     "size": 58,
+     "segs": [
+      [
+       "Google picks which pages to show.",
+       "w"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 460,
+     "size": 76,
+     "segs": [
+      [
+       "It mostly looks at ",
+       "w"
+      ],
+      [
+       "3 things:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "checklist",
+     "at": 5,
+     "y": 640,
+     "items": [
+      {
+       "text": "Answers the search?",
+       "ok": true,
+       "at": 5
+      },
+      {
+       "text": "Actually useful?",
+       "ok": true,
+       "at": 6
+      },
+      {
+       "text": "Other sites link to it?",
+       "ok": true,
+       "at": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 460,
+     "size": 80,
+     "segs": [
+      [
+       "Why it's ",
+       "w"
+      ],
+      [
+       "worth learning:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "versus",
+     "at": 9,
+     "y": 640,
+     "heads": [
+      "A post",
+      "A ranking page"
+     ],
+     "rows": [
+      [
+       "dies in a day",
+       "keeps showing up"
+      ]
+     ],
+     "step": 1.2
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1100,
+     "size": 110,
+     "segs": [
+      [
+       "It ",
+       "w"
+      ],
+      [
+       "stacks.",
+       "g"
+      ]
+     ],
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 660,
+     "size": 84,
+     "segs": [
+      [
+       "Slow. ",
+       "w"
+      ],
+      [
+       "Months,",
+       "y"
+      ],
+      [
+       " not days.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 780,
+     "size": 76,
+     "segs": [
+      [
+       "Nobody controls Google.",
+       "r"
+      ]
+     ],
+     "dt": 1.4
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1000,
+     "size": 84,
+     "segs": [
+      [
+       "But it's a skill",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1110,
+     "size": 110,
+     "segs": [
+      [
+       "that stacks.",
+       "g"
+      ]
+     ],
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "text",
+     "at": 13,
+     "y": 700,
+     "size": 64,
+     "segs": [
+      [
+       "Next: messaging contractors",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 800,
+     "size": 84,
+     "segs": [
+      [
+       "when you're shy.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "y": 1050,
+     "text": "Follow · Ep. 19 next",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1220,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,475 @@
+{
+ "episode": 15,
+ "series": "NO COLD CALLS · EP. 15",
+ "hook": "Introverts: get contractors to pay you, no sales calls.",
+ "voice": "../voices/ep15.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep15_introverts_no_sales_calls.mp4",
+ "lines": [
+  "Introverts: get contractors to pay you, no sales calls.",
+  "Every make money online thing ends the same way.",
+  "Now get on a call.",
+  "Agency? Sales calls. Freelancing? Sales calls.",
+  "So I looked for a model where the customer finds you.",
+  "It's called rank and rent.",
+  "You build a small site for one service in one small town.",
+  "Like roof repair in Smalltown.",
+  "A homeowner searches Google, finds your site, and asks for a quote.",
+  "You send that lead to a local contractor.",
+  "He pays ten percent only if he closes the job.",
+  "Real talk.",
+  "Ranking takes months, and plenty of leads don't close.",
+  "But nobody has to be convinced on a call.",
+  "Follow. Ep. sixteen is building the site without code."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 120,
+     "segs": [
+      [
+       "Introverts:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "size": 92,
+     "segs": [
+      [
+       "get contractors",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 830,
+     "size": 92,
+     "segs": [
+      [
+       "to pay you",
+       "g"
+      ]
+     ],
+     "dt": 0.9
+    },
+    {
+     "type": "crossphone",
+     "at": 0,
+     "y": 1150,
+     "dt": 1.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1400,
+     "size": 96,
+     "segs": [
+      [
+       "no sales calls.",
+       "r"
+      ]
+     ],
+     "dt": 1.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 520,
+     "size": 70,
+     "segs": [
+      [
+       "Every \"make money online\"",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 620,
+     "size": 70,
+     "segs": [
+      [
+       "thing ends the same way:",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "phone_call",
+     "at": 2,
+     "y": 720,
+     "decline_at": 2,
+     "decline_dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1540,
+     "size": 92,
+     "segs": [
+      [
+       "\"Now get on a call.\"",
+       "r"
+      ]
+     ],
+     "dt": 0.1
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 3,
+     "y": 620,
+     "items": [
+      {
+       "text": "Agency = sales calls",
+       "ok": false,
+       "at": 3
+      },
+      {
+       "text": "Freelancing = sales calls",
+       "ok": false,
+       "at": 3,
+       "dt": 1.0
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1100,
+     "size": 76,
+     "segs": [
+      [
+       "A model where the",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1210,
+     "size": 92,
+     "segs": [
+      [
+       "customer finds you.",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 520,
+     "size": 120,
+     "segs": [
+      [
+       "Rank & rent",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 700,
+     "size": 72,
+     "segs": [
+      [
+       "1 service · 1 small town",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "browser",
+     "at": 6,
+     "y": 820,
+     "dt": 0.4,
+     "url": "roofrepair-smalltown.com",
+     "title": "Roof Repair in Smalltown"
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 1770,
+     "text": "example site · illustrative",
+     "fill": null,
+     "color": "grey",
+     "size": 34,
+     "outline": "grey"
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 330,
+     "size": 70,
+     "segs": [
+      [
+       "Homeowner ",
+       "w"
+      ],
+      [
+       "searches Google",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "form",
+     "at": 8,
+     "y": 450,
+     "dt": 0.6,
+     "title": "Get a free roof quote",
+     "fields": [
+      [
+       "Name",
+       "J. ••••••"
+      ],
+      [
+       "Town",
+       "Smalltown"
+      ],
+      [
+       "What's going on?",
+       "Leak over the kitchen"
+      ]
+     ],
+     "notif": [
+      "New quote request",
+      "Roof repair · Smalltown"
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 9,
+     "y": 420,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "Homeowner asks for a quote",
+       "color": "y",
+       "at": 9
+      },
+      {
+       "label": "You send it to a contractor",
+       "color": "b",
+       "at": 9,
+       "dt": 0.8
+      },
+      {
+       "label": "Job closes?",
+       "color": "w",
+       "at": 10
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1260,
+     "size": 100,
+     "segs": [
+      [
+       "He pays ",
+       "w"
+      ],
+      [
+       "10%",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1380,
+     "size": 66,
+     "segs": [
+      [
+       "only if he closes the job.",
+       "w"
+      ]
+     ],
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "calendar",
+     "at": 12,
+     "y": 760,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 980,
+     "size": 80,
+     "segs": [
+      [
+       "Ranking takes ",
+       "w"
+      ],
+      [
+       "months.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1090,
+     "size": 72,
+     "segs": [
+      [
+       "Plenty of leads ",
+       "w"
+      ],
+      [
+       "don't close.",
+       "r"
+      ]
+     ],
+     "dt": 1.4
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1300,
+     "size": 76,
+     "segs": [
+      [
+       "But nobody gets ",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1410,
+     "size": 84,
+     "segs": [
+      [
+       "convinced on a call.",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 700,
+     "size": 100,
+     "segs": [
+      [
+       "No cold calls.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 830,
+     "size": 100,
+     "segs": [
+      [
+       "No sales calls.",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1180,
+     "text": "Follow · Ep. 16: a site without code",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1350,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,344 @@
+{
+ "episode": 21,
+ "series": "NO COLD CALLS · EP. 21",
+ "hook": "A two thousand dollar course won't make you less shy.",
+ "voice": "../voices/ep21.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep21_course_wont_fix_shy.mp4",
+ "lines": [
+  "A two thousand dollar course won't make you less shy.",
+  "A lot of them still end the same way.",
+  "Book a call. Cold call. DM fifty owners.",
+  "If you're an introvert, that's where you quit.",
+  "So build around it instead.",
+  "Let Google bring the homeowner to your site.",
+  "Send the lead to a contractor in writing.",
+  "He pays ten percent only if the job closes.",
+  "I put the whole process in the thirty-seven dollar Starter Kit.",
+  "No calls. No upsell.",
+  "Real talk.",
+  "It's not fast, and results vary.",
+  "Ranking takes months. Plenty of leads don't close.",
+  "But you won't have to become a salesman to try.",
+  "Follow. Ep. twenty-two drops next week."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 110,
+     "segs": [
+      [
+       "A ",
+       "w"
+      ],
+      [
+       "$2,000",
+       "r"
+      ],
+      [
+       " course",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 680,
+     "size": 92,
+     "segs": [
+      [
+       "won't make you",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 800,
+     "size": 120,
+     "segs": [
+      [
+       "less shy.",
+       "y"
+      ]
+     ],
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "size": 64,
+     "segs": [
+      [
+       "A lot still end the same way:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "at": 2,
+     "y": 560,
+     "items": [
+      {
+       "text": "Book a call",
+       "at": 2
+      },
+      {
+       "text": "Cold call",
+       "at": 2,
+       "dt": 0.6
+      },
+      {
+       "text": "DM 50 owners",
+       "at": 2,
+       "dt": 1.2
+      }
+     ],
+     "strike_at": 3
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1280,
+     "size": 88,
+     "segs": [
+      [
+       "Introverts quit ",
+       "w"
+      ],
+      [
+       "here.",
+       "r"
+      ]
+     ],
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 420,
+     "size": 100,
+     "segs": [
+      [
+       "Build ",
+       "w"
+      ],
+      [
+       "around",
+       "y"
+      ],
+      [
+       " it.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "flow",
+     "at": 5,
+     "y": 600,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "Google brings the homeowner",
+       "color": "y",
+       "at": 5
+      },
+      {
+       "label": "Lead goes to a contractor",
+       "color": "b",
+       "at": 6
+      },
+      {
+       "label": "Pays 10% only if it closes",
+       "color": "g",
+       "at": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 560,
+     "size": 76,
+     "segs": [
+      [
+       "The whole process:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "size": 120,
+     "segs": [
+      [
+       "Starter Kit",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "bignum",
+     "at": 8,
+     "y": 920,
+     "dt": 1.2,
+     "text": "$37",
+     "size": 220,
+     "color": "g"
+    },
+    {
+     "type": "checklist",
+     "at": 9,
+     "y": 1120,
+     "items": [
+      {
+       "text": "No calls",
+       "ok": true,
+       "at": 9
+      },
+      {
+       "text": "No upsell",
+       "ok": true,
+       "at": 9,
+       "dt": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 660,
+     "size": 80,
+     "segs": [
+      [
+       "Not fast. ",
+       "w"
+      ],
+      [
+       "Results vary.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "calendar",
+     "at": 12,
+     "y": 900
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1120,
+     "size": 72,
+     "segs": [
+      [
+       "Plenty of leads ",
+       "w"
+      ],
+      [
+       "don't close.",
+       "r"
+      ]
+     ],
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "text",
+     "at": 13,
+     "y": 640,
+     "size": 70,
+     "segs": [
+      [
+       "You won't have to become",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 750,
+     "size": 92,
+     "segs": [
+      [
+       "a salesman to try.",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1050,
+     "text": "Follow · Ep. 22 next week",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1220,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}
