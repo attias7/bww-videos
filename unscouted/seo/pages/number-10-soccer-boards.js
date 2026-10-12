@@ -1,0 +1,17 @@
+QS2.mid=[
+{cat:'hold',role:'NUMBER 10',min:"30'",sc:'0-0',q:"Your left midfielder plays it into you between their lines. You have your back to their goal.",
+ p:[['gk','them',34,3,'GK'],['them',0,28,17,'CB'],['them',0,40,17,'CB'],['them',0,15,20,'FB'],['them',0,53,20,'FB'],['us',0,34,15,'ST'],['me',0,38,32,''],['them',0,38.5,28.5,'DM'],['them',0,24,38,'CM'],['us',0,26,46,'CM'],['us',0,47,46,'CM']],pass:[26.5,45,37.2,33.3],
+ o:[["Turn and drive at their back line",0,[38,32,41,22],"Turning is right when nobody is behind you. Look at their DM: he is tight on your back, goal-side. Try to turn and you turn straight into him."],
+    ["Set it back first time to your right midfielder",2,[38,32,46,44.5],"Look at your right midfielder: free, facing forward, nobody within 10 metres. One touch back to him and he plays forward with time, while their DM is stuck behind you. Spin off and you can get it again."],
+    ["Take a touch and shield it",1,[38,32,37.5,33],"You keep it for a moment, and it is the call when no teammate is free. Here the free man is right there, and every second you hold it their other midfielder gets closer."]],pro:1},
+{cat:'pass',role:'NUMBER 10',min:"62'",sc:'0-0',q:"You have the ball facing forward, 25 metres out in the left half-space. Your striker and both wingers are up.",
+ p:[['gk','them',34,2,'GK'],['me',0,24,27,''],['them',0,29,13,'CB'],['them',0,39,13,'CB'],['them',0,16,17,'FB'],['them',0,55,15,'FB'],['us',0,34,11,'ST'],['us',0,9,21,'W'],['us',0,60,14,'W'],['them',0,31,24,'DM'],['them',0,19,33,'CM']],ball:[25,26],run:[9,21,18,10],
+ o:[["Shoot from 25 metres",0,[24,27,32,-0.5],"A shot is a good answer when the lane is clear. Look at their left center back: he is standing right in the line between you and the goal. It gets blocked."],
+    ["Switch it to your right winger",1,[24,27,59,15],"The switch is right when the far full-back has tucked in. Here he is only five metres from your winger, so the ball travels a long way and the 1v1 is still waiting at the end of it."],
+    ["Slide it into the channel for your left winger's run",2,[24,27,19,9],"Look at the gap between their right full-back and their center back: more than 12 metres, and your winger is already running into it from behind the line, so he is onside. Play it into the space in front of him, not to his feet."]],pro:2},
+{cat:'press',role:'NUMBER 10',min:"20'",sc:'0-0',q:"They are building from the back. Their center back passes into their midfielder in front of you.",
+ p:[['gk','them',34,4,'GK'],['them',0,26,20,'CB'],['them',0,43,20,'CB'],['them',0,34,27,'DM'],['us',0,36.5,24.5,'ST'],['them',0,33,36,'CM'],['me',0,36,42,''],['us',0,25,41,'CM'],['us',0,46,44,'CM'],['them',0,49,38,'CM'],['us',0,30,56,'CB'],['us',0,40,56,'CB']],pass:[42.5,21.5,33.8,34.6],
+ o:[["Press him from behind as the ball arrives",2,[36,42,34.5,38],"This is a pressing trigger. Look at the pass: he is coming towards his own center back, so he takes it facing his own goal. Your left midfielder closes one side, your striker is covering their DM, so there is no easy bounce pass. Arrive with the ball and he has to go backwards or lose it."],
+    ["Step across to their other midfielder",0,[36,42,47,39],"Your right midfielder is already on him. Leave and you give the man on the ball time to turn into the space you just left."],
+    ["Drop back to protect the space behind you",1,[36,42,36,50],"Safe, and right when the receiver is facing forward. Here he has his back to you, so dropping gives him time to turn instead of making him play backwards."]],pro:0}
+];

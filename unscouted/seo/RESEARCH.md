@@ -414,3 +414,10 @@ Volumes are Semrush estimates. Treat them as rough direction only, not exact num
 6. /how-to-scan-in-soccer: what scanning is, plus solo scanning drills. Sells the free test, then Pause & Decide.
 
 **Published 2026-10-11 (round 3):** page IDs 139 how-to-become-a-professional-soccer-player, 140 pro-soccer-tryouts, 141 best-online-soccer-training-programs, 142 soccer-iq-book, 143 soccer-training-plan, 144 how-to-scan-in-soccer. The footer GUIDES column now also links: Become a pro, Pro tryouts, Training plan, How to scan. Indexing was requested in Search Console for 139, 140 and possibly 141, then the daily quota ran out. The sitemap was resubmitted.
+
+## 8. Position guides: Semrush (2026-10-12, 6 queries, US)
+- Striker: "soccer striker" 1,600 (KD 25), "striker in soccer" 1,600 (KD 24), "striker soccer" 1,600 (KD 31), "striker position in soccer" 880 (KD 23), "what is a striker in soccer" 720 (KD 23). "How to be a better striker" is tiny (20). **Main keyword: "striker in soccer" / "soccer striker". Slug /soccer-striker/**
+- Winger: "winger soccer" 1,000 (KD 9), "left wing soccer" 590, "right wing soccer" 590, "winger position in soccer" 480 (KD 24), "what is a winger in soccer" 320 (KD 5). **Main: "winger soccer". Slug /winger-soccer/**
+- Number 10: "number 10 in soccer" 590 (KD 61), "number 10 soccer" 590 (KD 63), "number 10 soccer players" 260 (KD 21), "soccer number 10 players" 170 (KD 20). The KD is high on the head terms. **Main: "number 10 in soccer", also targeting the "number 10 soccer players" angle. Slug /number-10-soccer/**
+- Center back: "center back soccer" 2,900 (KD 13), "center back soccer position" 320, "center back position soccer" 260, "what is a center back in soccer" 170. Also "how to be a good defender soccer" 110 (KD 10) and "… in soccer" 90. **Main: "center back soccer". Slug /center-back-soccer/**
+- Intent is mostly informational, but these searchers are our audience (players learning their position). The angle for each page: what the role is, then how to play it (decisions in situations), then how to train it alone. Each page sells its $17 pack.

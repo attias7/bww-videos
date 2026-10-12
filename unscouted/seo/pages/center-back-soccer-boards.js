@@ -1,0 +1,17 @@
+QS2.mid=[
+{g:'your goal',cat:'stepout',role:'LEFT CENTER BACK',min:"25'",sc:'0-0',q:"Their striker drops away from you towards halfway to get a pass into his feet.",
+ p:[['gk','us',34,2,'GK'],['me',0,40,30,''],['us',0,27,30,'CB'],['us',0,57,47,'FB'],['us',0,13,31,'FB'],['us',0,33,50,'CM'],['them',0,38,44,'ST'],['them',0,30,59,'CM'],['them',0,60,42,'W'],['them',0,8,42,'W']],pass:[30,59,37.2,45.3],run:[60,42,48,24],
+ o:[["Follow him and get tight before the ball arrives",1,[40,30,38.5,41.5],"Following a dropping striker is right when someone covers the space you leave. Here nobody does: you would open a gap right where their winger is running."],
+    ["Hold your spot and let your midfielder close him",2,[40,30,41,31],"Look at their right winger: he is already running into the gap between you and your left back, who is caught high. Your midfielder is only a few yards from the striker and can stop him turning. Stay, shout \"yours\", and guard the space behind."],
+    ["Drop to the edge of your box",0,[40,30,40,19],"Dropping deep gives their striker time to turn and face you, and pulls your whole line back for no reason."]],pro:1},
+{g:'your goal',cat:'aerial',role:'LEFT CENTER BACK',min:"62'",sc:'1-1',q:"Their right winger has got past your left back and is near your byline. You're the center back closest to the ball.",
+ p:[['gk','us',35,2,'GK'],['me',0,37,11,''],['us',0,30,10,'CB'],['us',0,19,11,'FB'],['us',0,34,21.5,'CM'],['them',0,38,17,'ST'],['them',0,35,25.5,'CM'],['them',0,59,6,'W'],['us',0,56,12,'FB'],['them',0,15,17,'W']],ball:[57.7,6.6],run:[38,17,44.5,9.5],
+ o:[["Step out to the penalty spot to block a cut-back",1,[37,11,34.5,15.5],"The cut-back is often the most dangerous ball from the byline. But look: your midfielder is already goal-side of their midfielder, so that pass is covered."],
+    ["Stay level with your partner and watch the ball",0,[37,11,36,10.5],"Their striker is already running across in front of you. If you only watch the ball, he gets to the near post first."],
+    ["Get across to the near post, goal-side of their striker",2,[37,11,40,5.2],"Look at their striker: he is sprinting to the near post and nobody is on it. The back post is covered by your partner and your right back, and your midfielder has the cut-back. The near post is yours: get there first, goal-side, and attack the ball."]],pro:2},
+{cat:'build',role:'RIGHT CENTER BACK',min:"14'",sc:'0-0',q:"Your partner passes it across to you. Their striker chases the pass to press you.",
+ p:[['gk','us',34,97,'GK'],['me',0,44,82,''],['us',0,22,83,'CB'],['them',0,31,77,'ST'],['us',0,42,65,'CM'],['them',0,34,54,'CM'],['us',0,25,62,'CM'],['them',0,27,58,'CM'],['us',0,61,71,'FB'],['them',0,56,68,'W'],['us',0,8,70,'FB'],['them',0,13,63,'W']],pass:[22,83,42.6,82.2],
+ o:[["Pass into your midfielder",2,[44,82,42.3,66.5],"Look at your right-sided midfielder: the nearest opponent is more than ten yards away and he is half-turned. The striker's press has left the middle open. A firm pass into him beats their first line of pressure."],
+    ["Switch it long to your left back",1,[44,82,9.5,70.5],"Switching is good when one side is crowded. Look at their striker, though: he is running straight across the line of that pass."],
+    ["Clear it long down the right",0,[44,82,62,45],"Nobody is pressing you hard enough to force this. You give away the ball for free when a simple pass is on."]],pro:0}
+];
