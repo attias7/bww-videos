@@ -421,3 +421,11 @@ Volumes are Semrush estimates. Treat them as rough direction only, not exact num
 - Number 10: "number 10 in soccer" 590 (KD 61), "number 10 soccer" 590 (KD 63), "number 10 soccer players" 260 (KD 21), "soccer number 10 players" 170 (KD 20). The KD is high on the head terms. **Main: "number 10 in soccer", also targeting the "number 10 soccer players" angle. Slug /number-10-soccer/**
 - Center back: "center back soccer" 2,900 (KD 13), "center back soccer position" 320, "center back position soccer" 260, "what is a center back in soccer" 170. Also "how to be a good defender soccer" 110 (KD 10) and "… in soccer" 90. **Main: "center back soccer". Slug /center-back-soccer/**
 - Intent is mostly informational, but these searchers are our audience (players learning their position). The angle for each page: what the role is, then how to play it (decisions in situations), then how to train it alone. Each page sells its $17 pack.
+
+**Published 2026-10-12 (round 4):**
+- **New pages (IDs):** 170 soccer-striker, 171 winger-soccer, 172 number-10-soccer, 173 center-back-soccer, 174 football-scanning-test (free tool).
+- **Product SEO:** Rank Math title, description and focus keyword set on all 9 products. Product and Offer structured data was already being output.
+- **Internal links:** a "Related guides" box was added before the FAQ on pages 99–111 and 139–144.
+- **Footer:** now links the Scanning test and the 4 position guides.
+- **Indexing requested:** all 5 new pages, plus best-online-soccer-training-programs and soccer-iq-book.
+- **Community answers:** drafts are in COMMUNITY_ANSWERS.md (10 Quora threads, plus searches to run on Reddit).
