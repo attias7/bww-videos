@@ -17,6 +17,11 @@
 #ust .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
 #ust .pos{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 #ust .pos button{background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+#ust .pos button.allp{border-style:dashed}
+#ust .share{margin-top:22px;background:#12160E;border:1.5px solid var(--line);border-radius:16px;padding:20px}
+#ust .share .sc{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;line-height:1.05;color:#fff;text-transform:uppercase;margin:0}
+#ust .share .sc b{color:var(--lime)}
+#ust .share .su{color:#A7AE9C;font-size:14px;margin:8px 0 0}
 #ust .pos button.on{border-color:var(--lime);background:#232B14;color:var(--lime)}
 #ust .top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
 #ust .prog{flex:1;height:6px;background:#22261C;border-radius:9px;overflow:hidden}
@@ -82,8 +87,9 @@
   <div class="card" style="margin-top:26px">
     <p style="font-weight:800;color:#fff">What position do you play?</p>
     <div class="pos" id="ust-pos">
-      <button data-p="striker">Striker</button><button data-p="winger">Winger</button><button data-p="ten">No. 10</button><button data-p="mid">Midfielder</button><button data-p="def">Defender</button>
+      <button data-p="striker">Striker</button><button data-p="winger">Winger</button><button data-p="ten">No. 10</button><button data-p="mid">Midfielder</button><button data-p="def">Defender</button><button data-p="all" class="allp">All positions · 40</button>
     </div>
+    <p class="small" id="ust-allnote" style="margin-top:10px">Pick your position for the quick 8, or take all 40 situations (about 12 minutes) for the full read.</p>
     <div class="row"><button class="btn" id="ust-start" disabled>Start the test →</button></div>
     <p class="small" style="margin-top:12px">No sign-up. Just decide like you would in a real game.</p>
   </div>
@@ -110,7 +116,8 @@
   <p class="tierh" id="ust-tier" style="margin-top:14px"></p>
   <p class="lead" id="ust-tierTxt"></p>
   <div class="cats" id="ust-cats"></div>
-  <p class="small" style="margin-top:14px">8 moments is a quick check, not a scout's verdict. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
+  <div class="share" id="ust-share"><p class="small" style="font-weight:800;letter-spacing:.1em;margin:0 0 8px">CHALLENGE YOUR TEAMMATES</p><p class="sc" id="ust-shareTxt"></p><p class="su">unscoutedfootball.com/soccer-iq-test</p><div class="row" style="margin-top:14px"><button class="btn" id="ust-shareBtn">Share my score</button><button class="btn ghost" id="ust-copyBtn">Copy text</button></div><p class="small" id="ust-shareOk" style="margin-top:10px"></p></div>
+  <p class="small" id="ust-disc" style="margin-top:14px">8 moments is a quick check, not a scout's verdict. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
 
   <div class="offer">
     <p style="font-weight:800;letter-spacing:.1em;font-size:13px">FOR FINISHING THE TEST · $10 OFF</p>
@@ -402,11 +409,15 @@ function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
  var nx=$('next');nx.textContent=i<Q.length-1?'Next situation →':'See my result →';nx.classList.remove('hide')}
 function finish(){document.getElementById('ust').classList.remove('wide');$('game').classList.add('hide');$('res').classList.remove('hide');
  $('pts').innerHTML=pts+'<span>/'+Q.length+'</span>';
- var t=pts>=8?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:pts>=6?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
+ var pc=pts/Q.length;var t=pc>=0.95?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:pc>=0.7?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
  $('tier').textContent=t[0];$('tierTxt').textContent=t[1];
  var max={};Q.forEach(function(s){max[s.cat]=(max[s.cat]||0)+1});
  $('cats').innerHTML=Object.keys(max).map(function(c){var v=res[c]||0,m=max[c];return '<div class="cat"><span>'+CATS[c]+'</span><em style="color:'+(v===m?'#C8F23A':v>0?'#F2A93B':'#E04848')+'">'+v+'/'+m+'</em></div>'}).join('');
- var pk=POS[pos];$('packtip').innerHTML=pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
+ var PN={striker:'a striker',winger:'a winger',ten:'a number 10',mid:'a midfielder',def:'a defender',all:'every position'};var AS=pos=='all'?'across all 5 positions':'as '+PN[pos];
+ var st='I scored '+pts+'/'+Q.length+' '+AS+' on the Unscouted soccer IQ test. '+t[0].replace(/ \S+$/,'')+'. Can you beat it?';
+ SHARE=st;$('shareTxt').innerHTML='I scored <b>'+pts+'/'+Q.length+'</b> '+AS+'. '+t[0];$('shareOk').textContent='';
+ $('disc').textContent=Q.length>8?'40 moments is a solid read, but still not a scout\'s verdict. There\'s rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.':'8 moments is a quick check, not a scout\'s verdict. There\'s rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.';
+ var pk=POS[pos];$('packtip').innerHTML=pos=='all'?'Want every position in one place? The <b>Everything Bundle</b> has all 4 position packs.':pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
  $('prog').style.width='100%';document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
 async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
  try{var r=await fetch('/wp-json/wc/store/v1/cart?_='+Date.now(),{credentials:'same-origin',cache:'no-store'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};
@@ -417,9 +428,15 @@ async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discou
   location.href=ok?'/checkout/':'/checkout/?add-to-cart='+id;}
  catch(e){location.href='/checkout/?add-to-cart='+id}}
 document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false}});
-$('start').onclick=function(){Q=QS[pos]||QS.mid;try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+function buildQ(){if(pos=='all'){return [].concat(QS.striker,QS.winger,QS.ten,QS.mid,QS.def)}return QS[pos]||QS.mid}
+var SHARE='',URL_='https://unscoutedfootball.com/soccer-iq-test/';
+$('shareBtn').onclick=function(){var d={title:'Soccer IQ Test',text:SHARE,url:URL_};try{if(navigator.share){navigator.share(d).catch(function(){});return}}catch(e){}copyIt()};
+$('copyBtn').onclick=function(){copyIt()};
+function copyIt(){var t=SHARE+' '+URL_;function ok(){$('shareOk').textContent='Copied. Paste it in your team chat.'}try{navigator.clipboard.writeText(t).then(ok,function(){fb(t);ok()})}catch(e){fb(t);ok()}}
+function fb(t){try{var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}catch(e){}}
+$('start').onclick=function(){Q=buildQ();try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 $('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
-$('again').onclick=function(){Q=QS[pos]||QS.mid;document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+$('again').onclick=function(){Q=buildQ();document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
 })();
 </script>
