@@ -1,0 +1,61 @@
+{
+ "slug": "get-scouted-without-an-academy",
+ "keyword": "how to get scouted without an academy",
+ "title": null,
+ "meta": null,
+ "ops": [
+  {
+   "type": "insert_after",
+   "anchor": "you can train those on your own.</p></div>",
+   "html": "\n  <div class=\"us-note\"><p><strong>Key takeaways</strong></p><ul>\n    <li>Scouts go where good players already are, so the highest level you can hold a place at matters more than any single event.</li>\n    <li>They judge decisions, off-ball movement, consistency and attitude as much as technique, and you can train all four alone.</li>\n    <li>Make yourself easy to judge: a 3 to 5 minute video, one full half and a short message to a named coach.</li>\n    <li>A real club never asks you for money to trial. Check every invite through the club's official website.</li>\n    <li>Getting noticed usually leads to a second look and a trial, not a contract on the spot.</li>\n  </ul></div>"
+  },
+  {
+   "type": "replace",
+   "anchor": "<li><a href=\"#s3\">Where you can actually be seen</a></li>",
+   "html": "<li><a href=\"#s8\">What scouts look for in each position</a></li>\n    <li><a href=\"#s3\">Where you can actually be seen</a></li>\n    <li><a href=\"#s9\">How to contact a club or college coach</a></li>"
+  },
+  {
+   "type": "replace",
+   "anchor": "<li><a href=\"#s5\">Red flags: paid trials and fake agents</a></li>",
+   "html": "<li><a href=\"#s10\">What happens after a scout notices you</a></li>\n    <li><a href=\"#s5\">Red flags: paid trials and fake agents</a></li>"
+  },
+  {
+   "type": "replace",
+   "anchor": "<h2 id=\"s2\">What scouts watch that you can control</h2>\n  <p>You can't control your height, your birthday or who turns up to your game. You can control a lot of what scouts say they look for.</p>",
+   "html": "<h2 id=\"s2\">What do football scouts look for that you can control?</h2>\n  <p>Football scouts look for ability and attitude. In practice that means good decisions on the ball, useful movement off it, the same level game after game, and how you behave when things go wrong. You can't control your height, your birthday or who turns up to watch, but you can train all of those.</p>"
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<h2 id=\"s3\">Where you can actually be seen</h2>",
+   "html": "<h2 id=\"s8\">What do scouts look for in each position?</h2>\n  <p>Scouts judge every player on decisions, movement, consistency and attitude, but the details change with your position. A striker is judged on movement and finishing, a winger on 1v1s and the final ball, a central midfielder on scanning and passing forward, and a defender on positioning and reading danger early.</p>\n  <div class=\"us-tablewrap\"><table class=\"us-table\">\n    <thead><tr><th>Position</th><th>What stands out</th><th>What to show in a game</th></tr></thead>\n    <tbody>\n      <tr><td>Striker</td><td>Runs that create space, finishing with few touches, holding the ball up</td><td>Movement before the ball comes, first-time finishes, pressing the centre-backs. See our <a href=\"/soccer-striker/\">striker guide</a>.</td></tr>\n      <tr><td>Winger</td><td>Beating a player 1v1, choosing the right final ball, tracking back</td><td>Taking your full-back on when it's on, cutbacks and crosses picked on purpose, recovery runs. See our <a href=\"/winger-soccer/\">winger guide</a>.</td></tr>\n      <tr><td>Central midfield / number 10</td><td>Scanning, receiving on the half-turn, passing forward</td><td>Checking your shoulders before you receive, turning when there's space, the forward pass instead of the sideways one. See our <a href=\"/number-10-soccer/\">number 10 guide</a>.</td></tr>\n      <tr><td>Centre-back / defender</td><td>Positioning, reading danger early, passing out from the back</td><td>Stepping in at the right moment, covering teammates, simple clean passes under pressure. See our <a href=\"/center-back-soccer/\">centre-back guide</a>.</td></tr>\n      <tr><td>Goalkeeper</td><td>Handling, decisions on crosses, distribution, organising</td><td>Commanding your box, starting attacks quickly, talking to your defence all game.</td></tr>\n    </tbody>\n  </table></div>\n  <p>Pick the row for your position and turn one line of it into your weekly target. That is far more useful than practising a trick nobody at a trial will ask for.</p>\n\n  "
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<h2 id=\"s4\">Your highlight video</h2>",
+   "html": "<h2 id=\"s9\">How do you contact a club or college coach?</h2>\n  <p>Send a short, polite message to a named coach at the club's official email or the coach's university email. Say who you are, your position, your age or grad year, your current team, one highlight link, one full-match link and your next games. Keep it under 150 words, because coaches get many messages and the easy ones get read.</p>\n  <div class=\"us-note\"><p><strong>Message template</strong></p>\n    <p>Subject: [Position], [age or grad year], [current team], video and fixtures</p>\n    <p>Hi Coach [surname], my name is [name]. I'm a [position] born in [year], playing for [team] in [league]. I'd like to be considered for [your trial, your reserves, your programme]. My highlights are here: [link]. A full half is here: [link]. My next home games are [dates and place]. Thank you for your time. [Name, phone, email, and a parent or guardian's contact if you're under 18]</p></div>\n  <ul>\n    <li><strong>Pick your level honestly.</strong> Ten clubs or colleges where you'd really fit beat a hundred copied emails.</li>\n    <li><strong>Find a name.</strong> A message to a named coach is more likely to be read than one sent to a general inbox.</li>\n    <li><strong>Follow up once.</strong> If you hear nothing after about two weeks, send one short reminder with any new clips or results. Then move on.</li>\n    <li><strong>Under 18?</strong> Copy in a parent or guardian. Real clubs and colleges expect it.</li>\n  </ul>\n\n  "
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<h2 id=\"s5\">Red flags: paid trials and fake agents</h2>",
+   "html": "<h2 id=\"s10\">What happens after a scout notices you?</h2>\n  <p>Usually nothing dramatic at first. A scout who likes you will normally want to see you again, then the club contacts you, or your parent or guardian if you're under 18, through official channels and invites you to train or play a trial game. A contract, if one comes, follows a period of assessment, not a single match.</p>\n  <ol>\n    <li><strong>A second look.</strong> Consistency matters here. The scout wants to see the same level again.</li>\n    <li><strong>Official contact.</strong> An email, call or letter from the club. Check it through the contact details on the club's own website.</li>\n    <li><strong>Trial or training period.</strong> You train or play with the team. Ask what they'll judge and how long it lasts.</li>\n    <li><strong>A decision.</strong> You might be offered a place, asked back, or told no. Whatever the answer, ask what you should work on.</li>\n    <li><strong>If there's an offer.</strong> Read everything before you sign, involve a parent or guardian if you're under 18, and never pay anyone to get the deal done.</li>\n  </ol>\n  <p>A \"no\" is useful information. Take the feedback, put it into your next 12-week block and go again.</p>\n\n  "
+  }
+ ],
+ "faq_add": [
+  {
+   "q": "How old do you have to be to get scouted?",
+   "a": "There is no single age. Academies scout very young players, but later routes exist: US college coaches recruit high school players, and the US pro and semi-pro open tryouts we checked set minimum ages between 16 and 18. Being good now matters more than your birthday."
+  },
+  {
+   "q": "Can you get scouted playing Sunday league or for your school?",
+   "a": "It's possible but less likely, because scouts spend most of their time watching higher levels. Use Sunday league or school games to improve and build your video, but also try to get into the highest-level team you can hold a place in."
+  },
+  {
+   "q": "Can you get scouted from a highlight video on social media?",
+   "a": "A video alone rarely gets you signed, but it can get a coach to watch you live or invite you to train. Send it directly to named coaches, add one full half, and ignore accounts that ask for money to share it."
+  },
+  {
+   "q": "How do you get scouted for soccer in the US?",
+   "a": "Most late players in the US get noticed through college soccer. Play for the strongest club or high school team you can, go to ID camps at colleges that fit your level, email coaches yourself with a video, and try USL League Two or pro open tryouts once you're old enough."
+  }
+ ]
+}

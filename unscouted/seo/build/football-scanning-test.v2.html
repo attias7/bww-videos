@@ -1,0 +1,403 @@
+<div class="us-art">
+<header class="us-art-hero"><div class="in">
+  <p class="us-art-kick">FREE TOOL · SCANNING</p>
+  <h1>Football Scanning Test: How Well Do You See the Pitch?</h1>
+  <p class="lead">One quick look at a match picture, then the players disappear. Can you still say where the free teammate was? 10 rounds, about 3 minutes, no sign-up.</p>
+  <a class="us-btn" href="#ust-scan">Start the scanning test ↓</a>
+  <p class="us-art-meta">By Unscouted · Updated October 2026 · 3 min test + 5 min read</p>
+</div></header>
+<div class="us-art-body">
+  <div class="us-quick"><p><strong>Quick answer:</strong> A football scanning test checks how much of the pitch you take in from one quick look. Unscouted's free scanning test shows you a tactics board for 2 seconds, hides the players, then asks one question, such as where the free teammate was, whether a defender was behind you, or which side was open. You get 10 rounds, a score out of 10 and your average answer time.</p></div>
+
+<div id="ust-scan">
+<style>
+#ust-scan{--ink:#0B0D0A;--lime:#C8F23A;--card:#15180F;--line:#262A20;--mut:#A9AEA2;--txt:#F4F5EF;--red:#E04848;background:radial-gradient(700px 380px at 10% -10%,rgba(200,242,58,.14),transparent 62%),#0B0D0A;color:#F4F5EF;border-radius:22px;padding:24px 20px 26px;margin:26px 0 10px;font-size:16px;line-height:1.5;scroll-margin-top:80px}
+#ust-scan *{box-sizing:border-box}
+#ust-scan p{margin:0;color:inherit}
+#ust-scan .ust-hide{display:none!important}
+#ust-scan .ust-pill{display:inline-block;border:1px solid rgba(200,242,58,.45);border-radius:999px;padding:6px 13px;font-size:13px;color:#D6DBCF;font-weight:600}
+#ust-scan .ust-pill b{color:#C8F23A;letter-spacing:.06em}
+#ust-scan .ust-h{margin:14px 0 6px;font-size:clamp(22px,4vw,30px);line-height:1.15;font-weight:800;letter-spacing:-.015em;color:#fff}
+#ust-scan .ust-sub{color:#C9CEC0;font-size:16px;line-height:1.55}
+#ust-scan .ust-small{font-size:14px;color:#A9AEA2;line-height:1.5}
+#ust-scan .ust-lab{font-size:13px;font-weight:800;letter-spacing:.1em;color:#C8F23A;margin:20px 0 8px}
+#ust-scan .ust-diff{display:flex;flex-wrap:wrap;gap:10px}
+#ust-scan .ust-diff button{background:#1C2016;border:1.5px solid #262A20;color:#F4F5EF;border-radius:12px;padding:11px 16px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit;line-height:1.2;text-transform:none;letter-spacing:0;min-height:0;box-shadow:none}
+#ust-scan .ust-diff button span{display:block;font-size:12px;font-weight:600;color:#A9AEA2;margin-top:2px}
+#ust-scan .ust-diff button.ust-on{border-color:#C8F23A;background:#232B14;color:#C8F23A}
+#ust-scan .ust-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px}
+#ust-scan .ust-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#C8F23A;color:#0B0D0A!important;font-weight:800;letter-spacing:.03em;text-transform:none;text-decoration:none!important;padding:15px 24px;border-radius:12px;border:0;cursor:pointer;font-size:16px;line-height:1.2;box-shadow:0 10px 30px rgba(200,242,58,.25);font-family:inherit;min-height:0}
+#ust-scan .ust-btn.ust-ghost{background:transparent;color:#F4F5EF!important;border:1.5px solid rgba(244,245,239,.35);box-shadow:none}
+#ust-scan .ust-best{margin-top:12px;font-size:14px;color:#D6DBCF}
+#ust-scan .ust-best b{color:#C8F23A}
+#ust-scan .ust-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+#ust-scan .ust-prog{flex:1;height:6px;background:#22261C;border-radius:9px;overflow:hidden}
+#ust-scan .ust-prog i{display:block;height:100%;background:#C8F23A;transition:width .3s}
+#ust-scan .ust-pts{background:#000;border:1px solid #262A20;border-radius:9px;padding:4px 9px;font-weight:800;font-size:14px;color:#C8F23A;white-space:nowrap}
+#ust-scan .ust-role{font-size:13px;font-weight:800;letter-spacing:.08em;color:#C8F23A}
+#ust-scan .ust-ctx{font-size:17px;color:#fff;margin:4px 0 10px;line-height:1.45}
+#ust-scan .ust-phase{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:800;letter-spacing:.1em;color:#A9AEA2;margin:0 0 6px;min-height:20px}
+#ust-scan .ust-phase.ust-look{color:#C8F23A}
+#ust-scan .ust-timer{height:5px;background:#22261C;border-radius:9px;overflow:hidden;margin:0 0 8px}
+#ust-scan .ust-timer i{display:block;height:100%;width:100%;background:#C8F23A;transform-origin:left;transform:scaleX(0)}
+#ust-scan .ust-pitch svg{display:block;width:100%;height:auto;max-height:54vh;border-radius:14px;margin:0 auto;background:#11301D}
+#ust-scan .ust-pl{transition:opacity .12s}
+#ust-scan .ust-pl.ust-off{opacity:0;visibility:hidden}
+#ust-scan .ust-zone{cursor:pointer}
+#ust-scan .ust-q{font-size:19px;font-weight:800;color:#fff;margin:14px 0 10px;line-height:1.35}
+#ust-scan .ust-opts{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+#ust-scan .ust-opt{display:flex;gap:10px;align-items:center;text-align:left;background:#1C2016;border:1.5px solid #262A20;color:#F4F5EF;border-radius:13px;padding:12px 14px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;width:100%;line-height:1.3;text-transform:none;letter-spacing:0;min-height:0;box-shadow:none}
+#ust-scan .ust-opt .ust-k{flex:none;width:28px;height:28px;border-radius:8px;background:#2A3020;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+#ust-scan .ust-opt:hover{border-color:#C8F23A}
+#ust-scan .ust-opt:disabled{cursor:default;border-color:#262A20}
+#ust-scan .ust-opt.ust-ok{border-color:#C8F23A;background:#232B14}
+#ust-scan .ust-opt.ust-ok .ust-k{background:#C8F23A;color:#0B0D0A}
+#ust-scan .ust-opt.ust-bad{border-color:#E04848}
+#ust-scan .ust-opt.ust-bad .ust-k{background:#E04848}
+#ust-scan .ust-fb{margin-top:12px;border-radius:13px;padding:14px 16px;background:#1C2312;border:1px solid #3A4A1A;line-height:1.5}
+#ust-scan .ust-fb .ust-fh{font-weight:800;font-size:17px;margin-bottom:4px;color:#fff}
+#ust-scan .ust-fb .ust-why{color:#D6DBCF;font-size:15px}
+#ust-scan .ust-big{font-size:60px;font-weight:800;line-height:1;color:#fff;margin-top:14px}
+#ust-scan .ust-big span{font-size:24px;color:#A9AEA2}
+#ust-scan .ust-stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+#ust-scan .ust-stat{background:#1C2016;border:1px solid #262A20;border-radius:10px;padding:8px 12px;font-size:14px;color:#D6DBCF}
+#ust-scan .ust-stat b{color:#fff}
+#ust-scan .ust-band{font-size:28px;font-weight:800;color:#C8F23A;margin-top:16px;line-height:1.2}
+#ust-scan .ust-adv{font-size:16px;color:#D6DBCF;margin-top:6px;line-height:1.55}
+#ust-scan .ust-cats{display:grid;gap:7px;margin-top:14px}
+#ust-scan .ust-cat{display:flex;justify-content:space-between;gap:10px;background:#1C2016;border:1px solid #262A20;border-radius:11px;padding:10px 13px;font-size:15px}
+#ust-scan .ust-cat em{font-style:normal;font-weight:800}
+#ust-scan .ust-share{margin-top:16px;background:#15180F;border:1px solid #262A20;border-radius:14px;padding:14px 16px}
+#ust-scan .ust-share p.ust-st{font-size:15px;color:#E7EADF;margin-bottom:10px}
+#ust-scan .ust-offer{margin-top:18px;background:#C8F23A;color:#0B0D0A;border-radius:18px;padding:20px 18px}
+#ust-scan .ust-offer p{color:#1F2418}
+#ust-scan .ust-offer .ust-oh{font-size:21px;font-weight:800;color:#0B0D0A;line-height:1.25}
+#ust-scan .ust-offer .ust-btn{background:#0B0D0A;color:#C8F23A!important;box-shadow:none}
+#ust-scan .ust-offer .ust-btn.ust-ghost{background:transparent;color:#0B0D0A!important;border-color:rgba(11,13,10,.45)}
+@media(max-width:520px){#ust-scan{padding:18px 12px 20px;border-radius:18px;margin-left:-6px;margin-right:-6px}#ust-scan .ust-q{font-size:17px}#ust-scan .ust-ctx{font-size:16px}#ust-scan .ust-opts{grid-template-columns:1fr 1fr}#ust-scan .ust-opt{padding:11px 10px;font-size:14px}#ust-scan .ust-btn{padding:14px 18px}}
+</style>
+<section id="ust-s-intro">
+  <div class="ust-pill"><b>FREE SCANNING TEST</b> · 10 rounds · no sign-up</div>
+  <p class="ust-h">One look. Then the players vanish.</p>
+  <p class="ust-sub">Each round shows a match picture for a moment, like the glance you get before the ball reaches you. Then the players disappear and you answer one question about what you saw. Left and right always mean the board as you see it, with the goal at the top.</p>
+  <p class="ust-lab">HOW LONG DO YOU GET TO LOOK?</p>
+  <div class="ust-diff" id="ust-s-diff">
+    <button type="button" data-d="easy">Easy<span>3 seconds</span></button><button type="button" data-d="normal" class="ust-on">Normal<span>2 seconds</span></button><button type="button" data-d="hard">Hard<span>1.2 seconds</span></button>
+  </div>
+  <div class="ust-row"><button type="button" class="ust-btn" id="ust-s-start">Start the test →</button></div>
+  <p class="ust-best ust-hide" id="ust-s-best"></p>
+</section>
+<section id="ust-s-game" class="ust-hide">
+  <div class="ust-top"><span class="ust-small" id="ust-s-n">1 / 10</span><div class="ust-prog"><i id="ust-s-prog" style="width:0"></i></div><span class="ust-pts" id="ust-s-pts">0 pts</span></div>
+  <p class="ust-role" id="ust-s-role"></p>
+  <p class="ust-ctx" id="ust-s-ctx"></p>
+  <p class="ust-phase" id="ust-s-phase"><span id="ust-s-ph">GET READY</span><span id="ust-s-dl"></span></p>
+  <div class="ust-timer"><i id="ust-s-bar"></i></div>
+  <div class="ust-pitch" id="ust-s-pitch"></div>
+  <p class="ust-q ust-hide" id="ust-s-q"></p>
+  <div class="ust-opts" id="ust-s-opts"></div>
+  <div class="ust-fb ust-hide" id="ust-s-fb"></div>
+  <div class="ust-row"><button type="button" class="ust-btn ust-hide" id="ust-s-next">Next round →</button></div>
+</section>
+<section id="ust-s-res" class="ust-hide">
+  <div class="ust-pill"><b>YOUR RESULT</b> · <span id="ust-s-rdiff"></span></div>
+  <p class="ust-big" id="ust-s-score">0<span>/10</span></p>
+  <div class="ust-stats"><span class="ust-stat">Average answer time: <b id="ust-s-avg"></b></span><span class="ust-stat" id="ust-s-rbest"></span></div>
+  <p class="ust-band" id="ust-s-band"></p>
+  <p class="ust-adv" id="ust-s-adv"></p>
+  <div class="ust-cats" id="ust-s-cats"></div>
+  <p class="ust-small" style="margin-top:12px">A screen test checks how much you keep from one look. It can't see whether you actually look in games. That part is up to you.</p>
+  <div class="ust-share">
+    <p class="ust-st" id="ust-s-stext"></p>
+    <div class="ust-row" style="margin-top:0"><button type="button" class="ust-btn ust-ghost" id="ust-s-share">Share my result</button><span class="ust-small" id="ust-s-copied"></span></div>
+  </div>
+  <div class="ust-offer">
+    <p style="font-weight:800;letter-spacing:.1em;font-size:12px">NEXT STEP</p>
+    <p class="ust-oh" style="margin-top:6px">Seeing the picture is step one. Deciding what to do with it is step two.</p>
+    <p style="margin-top:8px;font-size:16px;line-height:1.55">Pause &amp; Decide gives you 100 match situations (20 per position). You look, pick one of 3 options, then see the pro pick and why. Or try 8 situations free first.</p>
+    <div class="ust-row"><a class="ust-btn" href="/shop/#pause-and-decide">Get 100 situations, $27 →</a><a class="ust-btn ust-ghost" href="/soccer-iq-test/">Free decision test</a></div>
+  </div>
+  <div class="ust-row"><button type="button" class="ust-btn ust-ghost" id="ust-s-again">Try again</button><button type="button" class="ust-btn ust-ghost" id="ust-s-change">Change difficulty</button></div>
+</section>
+</div>
+
+  <div class="us-note"><p><strong>Key takeaways</strong></p><ul>
+    <li>The test shows a match picture for 3, 2 or 1.2 seconds, then hides the players and asks one question about what you saw.</li>
+    <li>It checks four things: finding the free player, pressure around you, the open side, and how many opponents are near you.</li>
+    <li>8–10 is "Scanner", 5–7 is "Glancer", 0–4 is "Ball-watcher". Your average answer time shows how ready the picture was.</li>
+    <li>A good score means you read one look well. Scanning in games also means taking that look, before every pass you receive.</li>
+  </ul></div>
+
+  <nav class="us-toc"><p>ON THIS PAGE</p><ol>
+    <li><a href="#s1">How does the scanning test work?</a></li>
+    <li><a href="#s2">What is scanning in football?</a></li>
+    <li><a href="#s3">What does your score mean?</a></li>
+    <li><a href="#s4">How do you get a better score?</a></li>
+    <li><a href="#s5">How often do professional players scan?</a></li>
+    <li><a href="#s6">How else is scanning tested?</a></li>
+    <li><a href="#s7">Can you do a scanning test on the pitch?</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ol></nav>
+
+  <h2 id="s1">How does the scanning test work?</h2>
+  <p>The test shows you a tactics board with you (the lime player), your teammates in white and their players in red, for a short time. Then every player except you disappears and you answer one question about the picture. It copies what happens in a match: you look away from the ball for a moment, and you have to remember what you saw.</p>
+  <ol>
+    <li><strong>Pick how long you get to look.</strong> Easy is 3 seconds, Normal is 2 seconds, Hard is 1.2 seconds.</li>
+    <li><strong>Read your role.</strong> Each round starts with one line, for example "Your center back is passing to you."</li>
+    <li><strong>Look.</strong> The players appear and a bar counts down.</li>
+    <li><strong>Answer.</strong> The players vanish. Tap an answer, or tap a zone on the board.</li>
+    <li><strong>Check.</strong> The players come back so you can see what you missed, with one line on why it matters.</li>
+  </ol>
+  <p>You play 10 rounds, picked at random from 12 situations, so two runs are rarely the same. The questions are the ones a coach shouts from the sideline: where's the free man, is someone on your back, which side is open, how much time do you have.</p>
+  <div class="us-tablewrap"><table class="us-table"><thead><tr><th>Question type</th><th>What it checks</th><th>Example</th></tr></thead><tbody>
+    <tr><td>Finding the free player</td><td>Did you see who had no defender near him?</td><td>"Where was the free teammate?"</td></tr>
+    <tr><td>Pressure on you</td><td>Did you know if someone was on your back before the ball came?</td><td>"Was a defender close behind you?"</td></tr>
+    <tr><td>Spotting the open side</td><td>Did you see where their team had shifted?</td><td>"Which side was open?"</td></tr>
+    <tr><td>Counting players</td><td>Did you take in the whole picture, not just one player?</td><td>"How many of their players were within 10 m of you?"</td></tr>
+  </tbody></table></div>
+
+  <h2 id="s2">What is scanning in football?</h2>
+  <p>Scanning means quick turns of the head, away from the ball, to see where opponents, teammates and space are before the ball reaches you. You take a picture, look back at the ball, and your first touch already knows where it is going. In soccer (the US name for the same game) coaches call it "checking your shoulder" or "having a look".</p>
+  <p>Scanning has two parts. The first is taking the look at the right moment, usually just before the pass to you is played and while it travels. The second is keeping what you saw. This test only trains the second part: how much one look gives you. For the first part, and for drills you can do alone with a ball and a wall, read our guide on <a href="/how-to-scan-in-soccer/">how to scan in soccer</a>.</p>
+
+  <h2 id="s3">What does your score mean?</h2>
+  <p>Your score shows how much of the picture you kept after one look. 8 or more out of 10 means you took in the free player, the pressure and the space. A low score usually means you only saw the ball and the nearest player. Your average answer time matters too: a slow answer means you had to rebuild the picture.</p>
+  <div class="us-tablewrap"><table class="us-table"><thead><tr><th>Score</th><th>Result</th><th>What it usually means</th><th>What to train next</th></tr></thead><tbody>
+    <tr><td>8–10</td><td>Scanner</td><td>One look gives you most of the picture: pressure, the free player and the open side.</td><td>Make sure you actually take the look in games. Count your shoulder checks in one session.</td></tr>
+    <tr><td>5–7</td><td>Glancer</td><td>You see the players near you but lose the far side or the man behind you.</td><td>Add one look to the side you can't see before every pass to you.</td></tr>
+    <tr><td>0–4</td><td>Ball-watcher</td><td>You mostly see the ball and the nearest player.</td><td>Start with one shoulder check before every pass in training, and name one thing you saw.</td></tr>
+  </tbody></table></div>
+  <p>Look at the breakdown under your score as well. If you got every "pressure on you" question but missed the free player, your looks are short and close. If you missed the counting questions, you're seeing one player, not the picture. Try Hard mode once you score 8 or more on Normal.</p>
+  <div class="us-note"><p>Be honest with yourself about what this measures. A screen test can't see whether you turn your head in a match, how fast the game feels when you're tired, or what you do with the ball. It checks one useful thing: how much you keep from a short look.</p></div>
+
+  <h2 id="s4">How do you get a better score?</h2>
+  <p>Look with a question in your head. Players who score well don't try to remember every dot. They check three things in order: is someone on me, where is the free teammate, and which side has space. That's also the order that decides your first touch in a game.</p>
+  <ul>
+    <li><strong>Check yourself first.</strong> Find the nearest red player to you and how far away he is.</li>
+    <li><strong>Then find the free man.</strong> Look for a white player with no red player close to him.</li>
+    <li><strong>Then the side.</strong> Notice which half of the board has fewer red players.</li>
+    <li><strong>Say it in words.</strong> "Man on, free on the right." Words are easier to keep than a picture.</li>
+    <li><strong>Train it with the ball.</strong> Use the wall-pass and shoulder-check drills in our <a href="/how-to-scan-in-soccer/">scanning guide</a>, so the look becomes a habit before every pass.</li>
+  </ul>
+  <p>Seeing the picture is only useful if you then pick the right option. That's what our <a href="/soccer-iq-test/">free soccer IQ test</a> checks: 8 situations for your position, 15 seconds each, and the pro pick explained after every answer. For more on training decisions, see <a href="/football-decision-making-training/">football decision-making training</a>.</p>
+
+  <h2 id="s5">How often do professional players scan?</h2>
+  <p>In a study of 27 players from one Premier League club, players made about 0.44 scans per second in the seconds before they received the ball, a little under one look every two seconds. Central midfielders and centre backs scanned the most, forwards the least, and everyone scanned less under heavy pressure.</p>
+  <ul>
+    <li><strong>More scanning, slightly better passing.</strong> In the same study, players who scanned more before receiving had a slightly higher chance of completing their next pass. The authors call it a small but positive effect (<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.553813/full" rel="nofollow noopener" target="_blank">Jordet et al., 2020</a>).</li>
+    <li><strong>Pros scan more than amateurs.</strong> Using Premier League player-cam footage, Geir Jordet's team compared 118 Premier League players with Dutch amateur players. The professionals scanned significantly more, and Frank Lampard and Steven Gerrard were the top two (<a href="https://www.skysports.com/football/news/11095/12341305/kevin-de-bruyne-is-a-master-at-scanning-geir-jordet-on-the-science-behind-the-importance-of-vision-and-perception-in-football" rel="nofollow noopener" target="_blank">Sky Sports, 2021</a>).</li>
+    <li><strong>A scan is a snapshot.</strong> An eye-tracking study of four elite midfielders in real 11 v 11 matches found their eyes settled on one spot in only 2.3% of scans, and they saw more opponents than teammates when they looked (<a href="https://doi.org/10.1371/journal.pone.0244118" rel="nofollow noopener" target="_blank">Aksum et al., 2021</a>).</li>
+  </ul>
+  <p>That last point is why this test only gives you 3 seconds or less. In a match you don't stare at the picture. You glance, and your brain has to keep enough from that glance to choose your first touch.</p>
+
+  <h2 id="s6">How else is scanning tested?</h2>
+  <p>Scanning is tested in five main ways: counting head turns on match video, eye-tracking glasses, passing tests on the pitch where targets can be behind you, VR headset drills, and screen tests like this one. Each method measures a different part of scanning, so treat any single score as one piece of the picture.</p>
+  <div class="us-tablewrap"><table class="us-table"><thead><tr><th>Method</th><th>What it measures</th><th>Who uses it</th><th>Can you do it yourself?</th></tr></thead><tbody>
+    <tr><td>Scan count on match video</td><td>How often you turn your head before you receive</td><td>Researchers and analysts, counted by hand from video</td><td>Yes, if someone films you with a wide view</td></tr>
+    <tr><td>Eye-tracking glasses</td><td>Where your eyes land during each scan</td><td>Research studies</td><td>No, it needs lab equipment</td></tr>
+    <tr><td>Passing test with targets behind you</td><td>Passes per minute when you must check 120, 180 or 360 degrees around you</td><td>Researchers testing pro players</td><td>A simple version, with one friend (see below)</td></tr>
+    <tr><td>VR headset drills</td><td>How often and when you look in a virtual game</td><td>VR apps such as Be Your Best (<a href="https://www.beyourbest.com/players" rel="nofollow noopener" target="_blank">from $19 a month billed annually, checked October 2026</a>)</td><td>Yes, with a Meta Quest headset</td></tr>
+    <tr><td>Screen recall test (this page)</td><td>How much you keep from one short look</td><td>Unscouted, free</td><td>Yes, right now</td></tr>
+  </tbody></table></div>
+  <p>The passing test is the newest. In a 2025 study, players from the first and reserve teams of two professional clubs in Ghana did three passing tests. Their average score dropped as more targets moved behind them: about 30 passes per minute at 120 degrees, 27 at 180 degrees and 26 at 360 degrees. First-team players scored higher than reserves, and better scores went with better results in 3 v 1 rondos (<a href="https://pure.ug.edu.gh/en/publications/scanning-when-passing-a-reliable-and-valid-standardized-soccer-te/" rel="nofollow noopener" target="_blank">Hunter et al., 2025, Biomechanics</a>).</p>
+
+  <h2 id="s7">Can you do a scanning test on the pitch?</h2>
+  <p>Yes. With a wall, a ball and one friend you can run a 2-minute scanning check: your friend shows fingers behind you while the ball comes back off the wall, and you call the number before your first touch. Count how many you get right out of 20 and repeat the same setup every week.</p>
+  <ol>
+    <li><strong>Set up.</strong> Stand 6 metres from a wall. Your friend stands about 4 metres behind you.</li>
+    <li><strong>Pass.</strong> Play the ball against the wall. As soon as it leaves your foot, your friend moves to your left or right and holds up 1 to 5 fingers.</li>
+    <li><strong>Look and call.</strong> Check your shoulder and shout the number before your first touch. A call after your touch counts as a miss.</li>
+    <li><strong>Score it.</strong> 20 passes, one point per correct call. Write the score down with the date.</li>
+    <li><strong>Make it harder.</strong> Return the ball first time, so you have to look earlier. Or your friend steps in on an even number and you turn away from him.</li>
+  </ol>
+  <div class="us-note"><p>This is our own practice check, not a research test, so there is no official "good" score. Its value is the comparison: same wall, same distances, same friend, week after week. Do the screen test above on the same day and you train both halves, taking the look and keeping the picture.</p></div>
+
+  <div class="us-cta"><h2>Turn the look into the right decision</h2><p>Pause &amp; Decide: 100 match situations, 20 for each position. Look at the board, pick one of 3 options, then see the pro pick and why. Or start with 8 free situations.</p><div class="row"><a class="us-btn" href="/shop/#pause-and-decide">Get 100 situations, $27</a><a class="us-btn ghost" href="/soccer-iq-test/">Try 8 situations free</a></div></div>
+
+  <h2 id="faq">FAQ</h2>
+  <div class="us-faq">
+    <details><summary>What is a football scanning test?</summary><p>A football scanning test checks how much of the pitch you take in from a quick look. This one shows a match picture for a few seconds, hides the players and asks a question about what you saw, like where the free teammate was.</p></details>
+    <details><summary>Is this soccer scanning test free?</summary><p>Yes. It's free, there's no sign-up, and it runs in your browser on a phone or a laptop. Your best score is saved on your own device only.</p></details>
+    <details><summary>What is a good score on the scanning test?</summary><p>8 or more out of 10 on Normal (2 seconds) is a strong result. Once you get there, try Hard mode, where you only get 1.2 seconds to look.</p></details>
+    <details><summary>Does a scanning test show how well I scan in games?</summary><p>Only partly. It shows how much you keep from one look. It can't see whether you turn your head in a real match, so pair it with scanning drills in training.</p></details>
+    <details><summary>How can I improve my scanning?</summary><p>Look with a question in mind: is someone on me, where is the free player, which side is open. Then build the habit in training with a shoulder check before every pass you receive, and name one thing you saw.</p></details>
+    <details><summary>How many times per second do pro footballers scan?</summary><p>In one study of a Premier League club, players averaged about 0.44 scans per second before receiving the ball, a little under one look every two seconds. Central midfielders and centre backs scanned the most and forwards the least.</p></details>
+    <details><summary>Why does the test only show the picture for 2 seconds?</summary><p>Because real scans are quick. You turn your head, take a snapshot and look back at the ball. An eye-tracking study of elite midfielders found their eyes settled on one spot in only 2.3% of scans, so a short look is normal.</p></details>
+    <details><summary>Can I test my scanning without a screen?</summary><p>Yes. Pass against a wall while a friend stands behind you and holds up fingers as the ball travels back. Call the number before your first touch, score yourself out of 20 and repeat the same setup each week to compare.</p></details>
+    <details><summary>Who are the best scanners in football?</summary><p>In Geir Jordet's research on Premier League player-cam footage, Frank Lampard and Steven Gerrard were the top two scanners among 118 players. A 2021 Sky Sports interview with Jordet also singled out Kevin De Bruyne as a master at scanning.</p></details>
+  </div>
+</div>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a football scanning test?","acceptedAnswer":{"@type":"Answer","text":"A football scanning test checks how much of the pitch you take in from a quick look. This one shows a match picture for a few seconds, hides the players and asks a question about what you saw, like where the free teammate was."}},{"@type":"Question","name":"Is this soccer scanning test free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It's free, there's no sign-up, and it runs in your browser on a phone or a laptop. Your best score is saved on your own device only."}},{"@type":"Question","name":"What is a good score on the scanning test?","acceptedAnswer":{"@type":"Answer","text":"8 or more out of 10 on Normal (2 seconds) is a strong result. Once you get there, try Hard mode, where you only get 1.2 seconds to look."}},{"@type":"Question","name":"Does a scanning test show how well I scan in games?","acceptedAnswer":{"@type":"Answer","text":"Only partly. It shows how much you keep from one look. It can't see whether you turn your head in a real match, so pair it with scanning drills in training."}},{"@type":"Question","name":"How can I improve my scanning?","acceptedAnswer":{"@type":"Answer","text":"Look with a question in mind: is someone on me, where is the free player, which side is open. Then build the habit in training with a shoulder check before every pass you receive, and name one thing you saw."}},{"@type":"Question","name":"How many times per second do pro footballers scan?","acceptedAnswer":{"@type":"Answer","text":"In one study of a Premier League club, players averaged about 0.44 scans per second before receiving the ball, a little under one look every two seconds. Central midfielders and centre backs scanned the most and forwards the least."}},{"@type":"Question","name":"Why does the test only show the picture for 2 seconds?","acceptedAnswer":{"@type":"Answer","text":"Because real scans are quick. You turn your head, take a snapshot and look back at the ball. An eye-tracking study of elite midfielders found their eyes settled on one spot in only 2.3% of scans, so a short look is normal."}},{"@type":"Question","name":"Can I test my scanning without a screen?","acceptedAnswer":{"@type":"Answer","text":"Yes. Pass against a wall while a friend stands behind you and holds up fingers as the ball travels back. Call the number before your first touch, score yourself out of 20 and repeat the same setup each week to compare."}},{"@type":"Question","name":"Who are the best scanners in football?","acceptedAnswer":{"@type":"Answer","text":"In Geir Jordet's research on Premier League player-cam footage, Frank Lampard and Steven Gerrard were the top two scanners among 118 players. A 2021 Sky Sports interview with Jordet also singled out Kevin De Bruyne as a master at scanning."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Football Scanning Test","url":"https://unscoutedfootball.com/football-scanning-test/","description":"Free football scanning test: see a match picture for 2 seconds, then answer where the free teammate was, whether a defender was behind you and which side was open. 10 rounds, score out of 10 and average answer time.","applicationCategory":"SportsApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Unscouted","url":"https://unscoutedfootball.com"},"audience":{"@type":"PeopleAudience","suggestedMinAge":15,"suggestedMaxAge":21}}</script>
+<script>
+(function(){
+var root=document.getElementById('ust-scan');if(!root){return}
+var $=function(id){return document.getElementById('ust-s-'+id)};
+/* Real pitch in metres. x: 0 = left touchline, 68 = right. y: 0 = goal line at the top. p: [kind, side, x, y, label]. z: answer zones [x, y, label]. a: index of the correct answer. */
+var SC=[
+{k:'free',role:'CENTRAL MIDFIELDER',ctx:'Your center back is passing to you.',
+ p:[['me',0,34,50,''],['us',0,30,66,'CB'],['them',0,34,46.5,'CM'],['us',0,10,38,'W'],['them',0,12,35.5,'FB'],['us',0,58,36,'W'],['them',0,50,24,'FB'],['us',0,35,22,'ST'],['them',0,34,19.5,'CB'],['them',0,24,20,'CB'],['us',0,46,54,'CM'],['them',0,45,50.5,'CM']],pass:[30,66,33.5,51.5],
+ q:'Where was the free teammate?',z:[[10,38,'Left wing'],[35,22,'Striker'],[58,36,'Right wing'],[46,54,'Your other midfielder']],a:2,
+ why:'Your right winger had nobody within 14 m. The other three all had a red shirt right next to them.'},
+{k:'press',role:'CENTRAL MIDFIELDER',ctx:'Your center back is passing to you. You are facing him.',
+ p:[['me',0,32,48,''],['us',0,28,64,'CB'],['them',0,33,44.5,'CM'],['them',0,46,40,'CM'],['us',0,12,36,'W'],['them',0,14,30,'FB'],['us',0,36,24,'ST'],['them',0,30,20,'CB'],['them',0,42,20,'CB'],['us',0,48,54,'CM']],pass:[28,64,31.6,49.6],
+ q:'Was a defender close behind you?',o:['Yes, within about 5 m','Yes, 5 to 10 m away','No, nobody within 10 m'],a:0,
+ why:'Their midfielder was about 4 m behind you, on your back. Turning blind here loses the ball, so set it first time or protect it.'},
+{k:'press',role:'CENTRAL MIDFIELDER',ctx:'Your center back is passing to you.',
+ p:[['me',0,36,46,''],['us',0,40,64,'CB'],['them',0,24,38,'CM'],['them',0,50,36,'CM'],['us',0,60,32,'W'],['them',0,56,24,'FB'],['us',0,10,36,'W'],['them',0,14,26,'FB'],['us',0,34,22,'ST'],['them',0,30,19,'CB'],['them',0,42,19,'CB']],pass:[40,64,36.4,47.6],
+ q:'Was a defender close behind you?',o:['Yes, within about 5 m','Yes, 5 to 10 m away','No, nobody within 10 m'],a:2,
+ why:'The nearest red shirt was about 14 m away. That picture says: open up and turn forward on your first touch.'},
+{k:'side',role:'CENTRAL MIDFIELDER',ctx:'You have the ball in midfield and want to switch the play.',
+ p:[['me',0,28,44,''],['them',0,10,41,'W'],['them',0,20,38,'CM'],['them',0,32,37,'CM'],['them',0,14,22,'FB'],['them',0,24,21,'CB'],['them',0,36,21,'CB'],['them',0,52,24,'FB'],['us',0,7,46,'FB'],['us',0,30,18,'ST'],['us',0,62,30,'W'],['us',0,44,49,'CM']],ball:[29.4,43],
+ q:'Which side was open?',o:['Left side ←','Right side →','Neither, both were crowded'],a:1,
+ why:'Most of their team had shifted to the left. On the right, your winger had their full-back more than 10 m away.'},
+{k:'side',role:'CENTRAL MIDFIELDER',ctx:'Your center back is passing to you. You want to turn.',
+ p:[['me',0,34,48,''],['us',0,34,66,'CB'],['them',0,29,45,'CM'],['them',0,50,38,'CM'],['us',0,58,40,'W'],['us',0,10,38,'W'],['them',0,12,30,'FB'],['us',0,38,22,'ST'],['them',0,32,20,'CB'],['them',0,44,20,'CB']],pass:[34,66,34,49.6],
+ q:'Which side was the nearest defender coming from?',o:['From the left ←','Straight behind ↑','From the right →'],a:0,
+ why:'Their midfielder was on the left, about 6 m away. So the safe turn was to the right, away from him.'},
+{k:'count',role:'NUMBER 10',ctx:'You are between their lines. A pass is coming to you.',
+ p:[['me',0,34,30,''],['us',0,22,46,'CM'],['them',0,29,34,'CM'],['them',0,40,35,'CM'],['them',0,28,15,'CB'],['them',0,40,15,'CB'],['them',0,52,17,'FB'],['them',0,15,18,'FB'],['us',0,35,11,'ST'],['us',0,58,24,'W'],['us',0,10,26,'W']],pass:[22,46,33,31.2],ring:10,
+ q:'How many of their players were within about 10 m of you?',o:['None','1','2','3 or more'],a:2,
+ why:'Two midfielders, about 6 and 8 m away (inside the ring). Their center backs were 15 m away, so you had space to turn into, just not much.'},
+{k:'free',role:'RIGHT WINGER',ctx:'You have reached the byline with the ball.',
+ p:[['me',0,62,4,''],['gk','them',35,1.5,'GK'],['us',0,38.5,5.5,'ST'],['them',0,36.5,7,'CB'],['them',0,29.5,5.5,'CB'],['us',0,24,8,'W'],['them',0,25.8,6.6,'FB'],['us',0,32,15,'10'],['them',0,45,19,'CM'],['them',0,55,10,'FB']],ball:[61,4.8],
+ q:'Where was the free teammate?',z:[[38.5,5.5,'Near post'],[32,15,'Penalty spot'],[24,8,'Far post']],a:1,
+ why:'Your 10 was arriving at the penalty spot with nobody within 8 m. The near post and far post runners were both marked.'},
+{g:'your goal',k:'free',role:'CENTER BACK',ctx:'They have the ball in midfield. You are marking their striker.',
+ p:[['gk','us',34,2,'GK'],['me',0,37,16,''],['them',0,37,19.5,'ST'],['them',0,28,28,'10'],['us',0,28,24.5,'CM'],['them',0,16,22,'W'],['us',0,8,15,'FB'],['us',0,26,15,'CB'],['them',0,56,26,'W'],['us',0,54,22,'FB'],['them',0,34,42,'CM'],['us',0,42,31,'CM']],ball:[34,40.6],
+ q:'Which of their attackers was unmarked?',z:[[16,22,'Left channel'],[28,28,'Their 10'],[37,19.5,'Their striker'],[56,26,'Right wing']],a:0,
+ why:'Their winger in the left channel had nobody within 10 m. Your full-back was too wide and your partner was too narrow. That is the run to warn about.'},
+{k:'press',role:'RIGHT WINGER',ctx:'Your midfielder is passing to you on the wing.',
+ p:[['me',0,62,36,''],['us',0,44,46,'CM'],['them',0,60,27,'FB'],['them',0,44,18,'CB'],['them',0,32,18,'CB'],['us',0,38,21,'ST'],['them',0,48,38,'CM'],['them',0,58,50,'W']],pass:[44,46,60.6,36.8],
+ q:'How close was their full-back to you?',o:['Tight, 2 to 3 m','About 8 to 10 m off','He was not there'],a:1,
+ why:'He was about 9 m off you, standing back. That means time: take a touch, face him and attack him.'},
+{k:'side',role:'NUMBER 10',ctx:'You have the ball about 20 m out, right of centre.',
+ p:[['me',0,44,20,''],['gk','them',36.8,2.2,'GK'],['them',0,32,9,'CB'],['them',0,24,10,'CB'],['us',0,27,7,'ST'],['them',0,52,10,'FB'],['us',0,58,8,'W'],['them',0,48,28,'CM']],ball:[43,19],
+ q:'Which corner was open?',o:['Left corner','Right corner','Neither, keeper was central'],a:0,
+ why:'Their keeper was standing near his right post, your near post. The far corner, on the left, was the open one.'},
+{g:'your goal',k:'count',role:'CENTER BACK',ctx:'Their winger is about to cross.',
+ p:[['gk','us',34,2,'GK'],['me',0,32,10.5,''],['them',0,28.5,9,'ST'],['them',0,20,10,'W'],['them',0,36,21,'10'],['them',0,44,26,'CM'],['them',0,58,18,'W'],['us',0,39,8,'CB'],['us',0,23,7,'FB'],['us',0,54,15.5,'FB'],['us',0,41,20,'CM']],ball:[57,17.2],
+ q:'How many attackers were in your box (not the crosser)?',o:['1','2','3','4'],a:1,
+ why:'Two: their striker right next to you and one at the far post. Their 10 was waiting just outside the box for the cut-back.'},
+{k:'free',role:'CENTER BACK',ctx:'Your keeper passes to you. Their striker comes to press.',
+ p:[['me',0,24,90,''],['gk','us',34,102,'GK'],['them',0,28,85,'ST'],['us',0,6,78,'FB'],['them',0,16,70,'W'],['us',0,34,76,'CM'],['them',0,34,72.5,'10'],['us',0,44,92,'CB'],['them',0,46,88.5,'CM'],['us',0,62,78,'FB'],['them',0,60,74.5,'W']],pass:[34,102,25.4,91],
+ q:'Where was the free teammate?',z:[[6,78,'Left back'],[34,76,'Midfielder'],[44,92,'Other center back'],[62,78,'Right back']],a:0,
+ why:'Your left back had their winger about 13 m away. Everyone else had a red shirt within 4 m. Their striker pressing you is the reason the left back is free.'}
+];
+var KIND={free:'Finding the free player',press:'Pressure on you',side:'Spotting the open side',count:'Counting players'};
+var DIFF={easy:3000,normal:2000,hard:1200},DNAME={easy:'Easy, 3 s',normal:'Normal, 2 s',hard:'Hard, 1.2 s'};
+var diff='normal',Q=[],i=0,pts=0,times=[],byK={},maxK={},t0=0,locked=true,tm=[],LETTERS='ABCD';
+var BKEY='ust_scan_best';
+function later(f,ms){tm.push(setTimeout(f,ms))}
+function clearT(){for(var j=0;j<tm.length;j++){clearTimeout(tm[j])}tm=[]}
+function now(){return window.performance?performance.now():Date.now()}
+function el(t,a){var e=document.createElementNS('http://www.w3.org/2000/svg',t);for(var k in a){e.setAttribute(k,a[k])}return e}
+function arrow(g,x1,y1,x2,y2,col,mk){var l=el('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:col,'stroke-width':0.75,'stroke-linecap':'round','stroke-dasharray':'1.4 1.1','marker-end':'url(#'+mk+')'});g.appendChild(l)}
+function lines(svg){var L={stroke:'#D7E6DA','stroke-width':0.32,fill:'none',opacity:.8};var A=function(t,o){for(var k in L){o[k]=L[k]}svg.appendChild(el(t,o))};
+ A('rect',{x:0,y:0,width:68,height:105});A('line',{x1:0,y1:52.5,x2:68,y2:52.5});A('circle',{cx:34,cy:52.5,r:9.15});
+ [[0,1],[105,-1]].forEach(function(gg){var y0=gg[0],d=gg[1];
+  A('rect',{x:13.84,y:d>0?y0:y0-16.5,width:40.32,height:16.5});A('rect',{x:24.84,y:d>0?y0:y0-5.5,width:18.32,height:5.5});
+  A('rect',{x:30.34,y:d>0?y0-2:y0,width:7.32,height:2});
+  svg.appendChild(el('circle',{cx:34,cy:y0+d*11,r:.3,fill:'#D7E6DA'}));
+  var ay=y0+d*16.5,dx=Math.sqrt(9.15*9.15-5.5*5.5);A('path',{d:'M'+(34-dx)+','+ay+' A9.15,9.15 0 0 '+(d>0?0:1)+' '+(34+dx)+','+ay})});
+ svg.appendChild(el('circle',{cx:34,cy:52.5,r:.3,fill:'#D7E6DA'}))}
+function bounds(s){var ys=s.p.map(function(q){return q[3]});if(s.ball){ys.push(s.ball[1])}if(s.pass){ys.push(s.pass[1]);ys.push(s.pass[3])}
+ var mn=Math.min.apply(null,ys),mx=Math.max.apply(null,ys);var top=mn<14?-4:mn-7;var bot=Math.min(107,Math.max(top+34,mx+6));return [top,bot]}
+function meP(s){for(var j=0;j<s.p.length;j++){if(s.p[j][0]=='me'){return s.p[j]}}return null}
+function dist(a,b){var dx=a[0]-b[0],dy=a[1]-b[1];return Math.sqrt(dx*dx+dy*dy)}
+var SZ=1;
+function player(g,s,p){var t=p[0],x=p[2],y=p[3],lab=p[4],Z=SZ;
+ if(t=='me'){g.appendChild(el('circle',{cx:x,cy:y,r:2.1*Z,fill:'none',stroke:'#C8F23A','stroke-width':.4}));g.appendChild(el('circle',{cx:x,cy:y,r:1.35*Z,fill:'#C8F23A',stroke:'#fff','stroke-width':.3}));lab='YOU'}
+ else{var fill=t=='gk'?'#F2A93B':t=='us'?'#F4F5EF':'#E04848';g.appendChild(el('circle',{cx:x,cy:y,r:1.25*Z,fill:fill,stroke:t=='us'?'#7D8577':'#fff','stroke-width':.25}))}
+ var below=s.p.some(function(o){if(o===p){return false}if(Math.abs(o[2]-x)>=2.6){return false}var d=o[3]-y;return d>0?d<4.2:false});
+ if(lab){var tx=el('text',{x:x,y:below?y-1.9*Z:y+(t=='me'?3.6:2.9)*Z,'text-anchor':'middle','font-size':(t=='me'?1.9:1.55)*Z,'font-weight':800,fill:t=='me'?'#C8F23A':t=='them'?'#FFB3B3':'#E9EDE4','paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.35});tx.textContent=lab;g.appendChild(tx)}}
+function draw(s){var v=bounds(s);SZ=root.clientWidth<560?1.3:1;var svg=el('svg',{viewBox:'-3 '+v[0]+' 74 '+(v[1]-v[0]),role:'img','aria-label':'Tactics board'});
+ var defs=el('defs',{});[['ustW','#FFFFFF']].forEach(function(m){var mk=el('marker',{id:m[0],viewBox:'0 0 10 10',refX:'7',refY:'5',markerWidth:'4.5',markerHeight:'4.5',orient:'auto-start-reverse'});mk.appendChild(el('path',{d:'M0,0 L10,5 L0,10 z',fill:m[1]}));defs.appendChild(mk)});svg.appendChild(defs);
+ svg.appendChild(el('rect',{x:-3,y:v[0],width:74,height:v[1]-v[0],fill:'#11301D'}));
+ for(var k=0;k<16;k++){if(k%2){svg.appendChild(el('rect',{x:0,y:k*7,width:68,height:7,fill:'#14381F'}))}}
+ lines(svg);
+ var zg=el('g',{id:'ust-s-zones'});svg.appendChild(zg);
+ var pl=el('g',{id:'ust-s-pl','class':'ust-pl ust-off'});svg.appendChild(pl);
+ var me=meP(s);var b=s.ball||(s.pass?[s.pass[0],s.pass[1]]:null);var ballMine=b?dist(b,[me[2],me[3]])<3:false;
+ if(s.pass){arrow(pl,s.pass[0],s.pass[1],s.pass[2],s.pass[3],'#FFFFFF','ustW')}
+ s.p.forEach(function(p){if(p[0]!='me'){player(pl,s,p)}});
+ if(b){if(!ballMine){pl.appendChild(el('circle',{cx:b[0],cy:b[1],r:.62,fill:'#fff',stroke:'#111','stroke-width':.18}))}}
+ var keep=el('g',{});svg.appendChild(keep);player(keep,s,me);
+ if(ballMine){keep.appendChild(el('circle',{cx:b[0],cy:b[1],r:.62,fill:'#fff',stroke:'#111','stroke-width':.18}))}
+ var key=el('text',{x:-2,y:v[0]+2.4,'font-size':1.8,fill:'#D7E6DA',opacity:.85});key.textContent='▲ '+(s.g||'their goal');svg.appendChild(key);
+ return svg}
+function zones(s,show){var zg=document.getElementById('ust-s-zones');if(!zg){return}zg.innerHTML='';if(!s.z){return}
+ s.z.forEach(function(z,j){var st=show?(j===s.a?'ok':(j===s._pick?'bad':'')):'';
+  var g=el('g',{'class':'ust-zone','data-z':j});
+  g.appendChild(el('circle',{cx:z[0],cy:z[1],r:4.2,fill:st=='ok'?'rgba(200,242,58,.28)':st=='bad'?'rgba(224,72,72,.25)':'rgba(255,255,255,.08)',stroke:st=='ok'?'#C8F23A':st=='bad'?'#E04848':'#FFFFFF','stroke-width':.35,'stroke-dasharray':st?'':'1 .8'}));
+  var tx=el('text',{x:z[0],y:z[1]+(show?-2.6:1),'text-anchor':'middle','font-size':show?2.2:2.8,'font-weight':800,fill:st=='ok'?'#C8F23A':st=='bad'?'#FF9C9C':'#FFFFFF','paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.4});tx.textContent=LETTERS.charAt(j);g.appendChild(tx);
+  if(!show){g.addEventListener('click',function(){answer(j)})}
+  zg.appendChild(g)})}
+function ring(s){if(!s.ring){return}var me=meP(s);var svg=document.querySelector('#ust-s-pitch svg');if(!svg){return}
+ svg.insertBefore(el('circle',{cx:me[2],cy:me[3],r:s.ring,fill:'rgba(200,242,58,.06)',stroke:'#C8F23A','stroke-width':.3,'stroke-dasharray':'1.2 1'}),document.getElementById('ust-s-pl'))}
+function shuffle(a){for(var j=a.length-1;j>0;j--){var r=Math.floor(Math.random()*(j+1));var t=a[j];a[j]=a[r];a[r]=t}return a}
+function getBest(){try{var r=JSON.parse(localStorage.getItem(BKEY)||'{}');return r?r:{}}catch(e){return {}}}
+function saveBest(b){try{localStorage.setItem(BKEY,JSON.stringify(b))}catch(e){}}
+function showBest(){var b=getBest(),x=b[diff],e=$('best');if(x){e.innerHTML='Your best on '+DNAME[diff]+': <b>'+x.s+'/10</b> (avg '+x.t.toFixed(1)+' s)';e.classList.remove('ust-hide')}else{e.classList.add('ust-hide')}}
+function phase(txt,look,right){$('ph').textContent=txt;$('dl').textContent=right||'';var p=$('phase');if(look){p.classList.add('ust-look')}else{p.classList.remove('ust-look')}}
+function bar(ms){var b=$('bar');b.style.transition='none';b.style.transform='scaleX(1)';void b.offsetWidth;b.style.transition='transform '+ms+'ms linear';b.style.transform='scaleX(0)'}
+function barOff(){var b=$('bar');b.style.transition='none';b.style.transform='scaleX(0)'}
+function start(){clearT();Q=shuffle(SC.slice()).slice(0,10);i=0;pts=0;times=[];byK={};maxK={};
+ Q.forEach(function(s){maxK[s.k]=(maxK[s.k]||0)+1});
+ $('intro').classList.add('ust-hide');$('res').classList.add('ust-hide');$('game').classList.remove('ust-hide');round()}
+function round(){clearT();var s=Q[i];s._pick=-1;locked=true;
+ $('n').textContent=(i+1)+' / '+Q.length;$('prog').style.width=(i/Q.length*100)+'%';$('pts').textContent=pts+' pts';
+ $('role').textContent='YOU: '+s.role;$('ctx').textContent=s.ctx;
+ $('q').classList.add('ust-hide');$('opts').innerHTML='';$('fb').classList.add('ust-hide');$('next').classList.add('ust-hide');
+ var pc=$('pitch');pc.innerHTML='';pc.appendChild(draw(s));
+ var r=root.getBoundingClientRect();if(r.top<-40){root.scrollIntoView({behavior:'smooth',block:'start'})}
+ phase('GET READY…',false,'');barOff();
+ later(function(){document.getElementById('ust-s-pl').classList.remove('ust-off');phase('LOOK NOW',true,(DIFF[diff]/1000).toFixed(1)+' s');bar(DIFF[diff]);
+  later(function(){document.getElementById('ust-s-pl').classList.add('ust-off');ask(s)},DIFF[diff])},1100)}
+function ask(s){phase('PLAYERS HIDDEN · ANSWER',false,'');barOff();
+ var q=$('q');q.textContent=s.q+(s.z?' Tap a zone or a letter.':'');q.classList.remove('ust-hide');
+ zones(s,false);
+ var oc=$('opts');oc.innerHTML='';var list=s.z?s.z.map(function(z){return z[2]}):s.o;
+ list.forEach(function(txt,j){var b=document.createElement('button');b.type='button';b.className='ust-opt';b.setAttribute('data-k',j);
+  b.innerHTML='<span class="ust-k">'+LETTERS.charAt(j)+'</span><span></span>';b.lastChild.textContent=txt;
+  b.addEventListener('click',function(){answer(j)});oc.appendChild(b)});
+ t0=now();locked=false}
+function answer(k){if(locked){return}locked=true;clearT();var s=Q[i];var t=(now()-t0)/1000;times.push(t);s._pick=k;
+ var ok=k===s.a;if(ok){pts++;byK[s.k]=(byK[s.k]||0)+1}
+ document.getElementById('ust-s-pl').classList.remove('ust-off');zones(s,true);ring(s);
+ var bs=$('opts').children;for(var j=0;j<bs.length;j++){bs[j].disabled=true;if(j===s.a){bs[j].classList.add('ust-ok')}else{if(j===k){bs[j].classList.add('ust-bad')}}}
+ phase('PLAYERS BACK · CHECK',false,t.toFixed(1)+' s');$('pts').textContent=pts+' pts';
+ var fb=$('fb');fb.innerHTML='<div class="ust-fh">'+(ok?'✅ Correct. +1':'❌ Not this time. Answer: '+LETTERS.charAt(s.a))+'</div><div class="ust-why"></div>';
+ fb.lastChild.textContent=s.why;fb.classList.remove('ust-hide');
+ var nx=$('next');nx.textContent=i<Q.length-1?'Next round →':'See my result →';nx.classList.remove('ust-hide')}
+function finish(){clearT();$('game').classList.add('ust-hide');$('res').classList.remove('ust-hide');$('prog').style.width='100%';
+ var sum=0;times.forEach(function(t){sum+=t});var avg=times.length?sum/times.length:0;
+ $('score').innerHTML=pts+'<span>/'+Q.length+'</span>';$('avg').textContent=avg.toFixed(1)+' s';$('rdiff').textContent=DNAME[diff];
+ var band=pts>=8?'Scanner':pts>=5?'Glancer':'Ball-watcher';
+ var adv=pts>=8?'One look gives you most of the picture. The test can\'t see whether you take that look in games, so count your shoulder checks in your next session.':pts>=5?'You catch the players near you but lose part of the picture. Before every pass to you, add one look to the side you can\'t see.':'Right now you mostly see the ball and the nearest player. That\'s normal and very trainable: one shoulder check before every pass in training, and name one thing you saw.';
+ if(avg>4){adv+=' You also took a while to answer. In a game the picture needs to be ready before the ball arrives.'}
+ $('band').textContent=band;$('adv').textContent=adv;
+ $('cats').innerHTML=Object.keys(maxK).map(function(c){var v=byK[c]||0,m=maxK[c];return '<div class="ust-cat"><span>'+KIND[c]+'</span><em style="color:'+(v===m?'#C8F23A':v>0?'#F2A93B':'#E04848')+'">'+v+'/'+m+'</em></div>'}).join('');
+ var b=getBest(),x=b[diff],better=true;if(x){if(x.s>pts){better=false}else{if(x.s===pts){if(x.t<=avg){better=false}}}}
+ if(better){b[diff]={s:pts,t:avg};saveBest(b);x=b[diff]}
+ $('rbest').innerHTML=better?'<b>New personal best</b> on '+DNAME[diff]:'Your best on '+DNAME[diff]+': <b>'+x.s+'/10</b>';
+ var st='I scored '+pts+'/10 on the Football Scanning Test ('+DNAME[diff]+' look, avg answer '+avg.toFixed(1)+' s). Result: '+band+'. How much do you see in one look?';
+ $('stext').textContent=st;$('share').setAttribute('data-t',st);$('copied').textContent='';
+ var r=root.getBoundingClientRect();if(r.top<-40){root.scrollIntoView({behavior:'smooth',block:'start'})}}
+function share(){var st=$('share').getAttribute('data-t')||'';var url='https://unscoutedfootball.com/football-scanning-test/';var full=st+' '+url;
+ if(navigator.share){navigator.share({text:st,url:url}).catch(function(){});return}
+ var done=function(){$('copied').textContent='Copied. Paste it anywhere.'};
+ if(navigator.clipboard){navigator.clipboard.writeText(full).then(done,function(){fallback(full);done()});return}
+ fallback(full);done()}
+function fallback(t){try{var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta)}catch(e){}}
+var db=$('diff').querySelectorAll('button');for(var j=0;j<db.length;j++){db[j].addEventListener('click',function(){for(var m=0;m<db.length;m++){db[m].classList.remove('ust-on')}this.classList.add('ust-on');diff=this.getAttribute('data-d');showBest()})}
+$('start').addEventListener('click',start);
+$('next').addEventListener('click',function(){if(i<Q.length-1){i++;round()}else{finish()}});
+$('again').addEventListener('click',start);
+$('change').addEventListener('click',function(){clearT();$('res').classList.add('ust-hide');$('intro').classList.remove('ust-hide');showBest();root.scrollIntoView({behavior:'smooth',block:'start'})});
+$('share').addEventListener('click',share);
+document.addEventListener('keydown',function(e){if(locked){return}if($('game').classList.contains('ust-hide')){return}var n=parseInt(e.key,10);if(n>=1){if(n<=4){var s=Q[i];var c=s.z?s.z.length:s.o.length;if(n<=c){answer(n-1)}}}});
+showBest();
+})();
+</script>

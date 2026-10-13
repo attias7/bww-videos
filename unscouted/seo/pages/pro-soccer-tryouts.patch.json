@@ -1,0 +1,62 @@
+{
+ "slug": "pro-soccer-tryouts",
+ "keyword": "pro soccer tryouts",
+ "title": "Pro Soccer Tryouts 2026: How They Work and How to Prepare",
+ "meta": null,
+ "ops": [
+  {
+   "type": "replace",
+   "anchor": "<li><a href=\"#s4\">The 8-week prep plan</a></li>",
+   "html": "<li><a href=\"#s9\">Tryout, combine, showcase or ID camp?</a></li>\n    <li><a href=\"#s4\">The 8-week prep plan</a></li>"
+  },
+  {
+   "type": "replace",
+   "anchor": "<li><a href=\"#s8\">Red flags: pay-to-try scams</a></li>",
+   "html": "<li><a href=\"#s10\">What to do after the tryout</a></li>\n    <li><a href=\"#s8\">Red flags: pay-to-try scams</a></li>"
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<tr><td>The Town FC (San Jose Earthquakes)</td>",
+   "html": "<tr><td>Ventura County FC (LA Galaxy)</td><td>MLS NEXT Pro</td><td>Nov 21–22, 2026 (upcoming, Las Vegas)</td><td>$195</td><td>17–25</td><td>Two 60-min 9v9 matches, one per day</td></tr>\n      "
+  },
+  {
+   "type": "replace",
+   "anchor": "<p>Checked October 2026 on each club's official page (links at the bottom). These are past events: next season's dates and prices will be different,",
+   "html": "<p>Checked October 2026 on each club's official page (links at the bottom). Apart from Ventura County FC's November 2026 event, these are past events: next season's dates and prices will be different,"
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<h2 id=\"s4\">How should you prepare in the 8 weeks before a tryout?</h2>",
+   "html": "<h2 id=\"s9\">Tryout, combine, showcase or ID camp: what's the difference?</h2>\n  <p>An open tryout is run by one club and open to anyone eligible who pays. A combine is the invite-only next round. A showcase is run by a private organiser who says several clubs or colleges will watch. A college ID camp is run by a college program for recruiting. A preseason trial means training with the first team, and you should never pay for it.</p>\n  <div class=\"us-tablewrap\"><table class=\"us-table\">\n    <thead><tr><th>Event</th><th>Who runs it</th><th>Who watches</th><th>What it can lead to</th><th>Cost</th></tr></thead>\n    <tbody>\n      <tr><td>Open tryout</td><td>One pro or semi-pro club</td><td>That club's staff</td><td>A combine or preseason invite</td><td>$40 to $225 on the pages we checked</td></tr>\n      <tr><td>Combine or second session</td><td>The same club</td><td>Technical and first-team staff</td><td>Preseason, sometimes a contract</td><td>Invite only</td></tr>\n      <tr><td>Showcase</td><td>A private organiser</td><td>Whoever the organiser has confirmed</td><td>Anything from nothing to a trial</td><td>Varies. Ask who is confirmed to attend</td></tr>\n      <tr><td>College ID camp</td><td>A college program</td><td>That college's coaches</td><td>College recruiting</td><td>Varies by school</td></tr>\n      <tr><td>Preseason trial</td><td>The club</td><td>The first-team coach</td><td>A contract, or a thank you</td><td>Free. A club won't ask you to pay for a trial</td></tr>\n    </tbody>\n  </table></div>\n  <p>If you're 16 or 17 and aiming at college, ID camps may be the better use of your money. If you're 18 or older and already playing adult soccer, club open tryouts are the most direct test.</p>\n\n  "
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<h2 id=\"s8\">How do you spot a pay-to-try soccer scam?</h2>",
+   "html": "<h2 id=\"s10\">What should you do after a tryout?</h2>\n  <p>After a tryout, thank the coaches, write down what went well and badly while it's fresh, and wait for the club's official email. If you're invited back, reply fast and ask what the next step involves. If you're not, ask for feedback, compare it with your own notes, and build your next 8 weeks around the biggest gap.</p>\n  <ul>\n    <li><strong>On the day:</strong> shake hands and thank the staff. It takes ten seconds and leaves a good impression.</li>\n    <li><strong>That evening:</strong> write 3 things you did well and 3 you'd change. Note which situations caught you out.</li>\n    <li><strong>If you get footage:</strong> some clubs give you video of your session (Spokane did). Watch your movement off the ball, not just your touches.</li>\n    <li><strong>If you're invited back:</strong> confirm by replying to the club's official email, and keep training lightly so you arrive sharp.</li>\n    <li><strong>If you're not:</strong> keep playing at the highest level you can and pick your next tryout. One tryout is a small sample, so plan for more than one.</li>\n  </ul>\n\n  "
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<li><strong>Guarantees.</strong>",
+   "html": "<li><strong>Odd payment methods.</strong> Ventura County FC's tryout page says it only takes registration through its official SportsEngine link, never asks for payment by Zelle, PayPal or Cash App, and only emails from an @lagalaxy.com address. Treat any request to pay another way as a scam.</li>\n    "
+  },
+  {
+   "type": "replace",
+   "anchor": "FIFA RSTP Article 19 (via The FA)</a></p>",
+   "html": "FIFA RSTP Article 19 (via The FA)</a> · <a href=\"https://www.lagalaxy.com/venturacountyfc/club/tryouts\" rel=\"nofollow noopener\" target=\"_blank\">Ventura County FC, MLS NEXT Pro open tryouts</a></p>"
+  }
+ ],
+ "faq_add": [
+  {
+   "q": "What is the difference between a tryout and a combine?",
+   "a": "An open tryout is open to anyone eligible who registers and pays. A combine is usually the invite-only next step for the players who stood out, often with first-team staff watching. San Jose's MLS NEXT Pro side, for example, invited selected tryout players to a December combine."
+  },
+  {
+   "q": "What should I do if I don't make it at a tryout?",
+   "a": "Ask for feedback if the club offers it, write down what caught you out, and build your next 8 weeks around that weakness. Keep playing at the highest level you can and pick another tryout. One tryout is a sample, not a verdict."
+  },
+  {
+   "q": "How do I find pro soccer tryouts near me?",
+   "a": "Search for the nearest USL Championship, USL League One, MLS NEXT Pro, USL League Two and UPSL clubs, then check each club's official website and social accounts from early autumn. Ignore listings that aren't on the club's own site."
+  }
+ ]
+}

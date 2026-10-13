@@ -1,0 +1,46 @@
+{
+ "slug": "how-to-become-a-professional-soccer-player",
+ "keyword": "how to become a professional soccer player",
+ "title": null,
+ "meta": null,
+ "ops": [
+  {
+   "type": "replace",
+   "anchor": "<li><a href=\"#s4\">What coaches and scouts look at</a></li>",
+   "html": "<li><a href=\"#s8\">How players actually sign a pro contract</a></li>\n    <li><a href=\"#s4\">What coaches and scouts look at</a></li>"
+  },
+  {
+   "type": "replace",
+   "anchor": "<p>League sizes and status were checked October 2026. USL has announced plans for a new top-flight league, USL Premier, so this table may change.</p>",
+   "html": "<p>League sizes and status were checked October 2026. USL has announced plans for a new top-flight league, USL Premier, so this table may change.</p>\n  <p>This table is the men's pyramid. In the women's game, the NWSL has been the top league since 2013, and U.S. Soccer gave the USL Super League Division One status in February 2024, so there are now two top-flight women's leagues. The same advice on this page applies to both.</p>"
+  },
+  {
+   "type": "insert_before",
+   "anchor": "<h2 id=\"s4\">What do coaches and scouts look at?</h2>",
+   "html": "<h2 id=\"s8\">How do players actually sign a pro contract?</h2>\n  <p>In the US, players sign their first pro contract in four main ways: as a Homegrown Player from an MLS club's academy, through the MLS SuperDraft after college, with an MLS NEXT Pro or USL team, or by impressing at an open tryout and then in preseason. If you're not in an academy, the last three are your routes.</p>\n  <div class=\"us-tablewrap\"><table class=\"us-table\">\n    <thead><tr><th>Route</th><th>How it works</th><th>Who it suits</th></tr></thead>\n    <tbody>\n      <tr><td>Homegrown contract</td><td>An MLS club can sign a player straight from its own academy, without the draft, once he has been in that academy for at least one year (MLS 2026 roster rules).</td><td>Players already in an MLS academy. Hard to reach late.</td></tr>\n      <tr><td>MLS SuperDraft</td><td>Mostly college players not tied to an MLS club. The 2026 draft was held on December 18, 2025: 3 rounds, 90 picks.</td><td>Strong college players, usually from top programs.</td></tr>\n      <tr><td>MLS NEXT Pro or USL team</td><td>Clubs sign players for their second team or lower-division side. MLS clubs can also call up players aged 25 or younger from their MLS NEXT Pro affiliate on short-term deals.</td><td>Players who stand out in college, USL League Two or tryouts.</td></tr>\n      <tr><td>Open tryout, then preseason</td><td>Pay to register, play well, get invited to a combine or preseason, and sometimes sign. Sacramento Republic FC says six players have signed with its first team after tryouts since 2014.</td><td>Late developers, aged about 16 to 25 depending on the club.</td></tr>\n    </tbody>\n  </table></div>\n  <p>What does a first contract pay? MLS's 2026 roster rules set a minimum base salary of $113,400 for senior roster slots 21 to 24 and $88,025 for reserve slots 25 to 30, which are for players aged 24 or younger. Contracts in the lower pro leagues are usually much smaller, and most players in amateur leagues like UPSL and NPSL aren't paid a salary at all. See <a href=\"/pro-soccer-tryouts/\">pro soccer tryouts</a> for how the open tryout route works in detail.</p>\n\n  "
+  },
+  {
+   "type": "replace",
+   "anchor": "FIFA RSTP Article 19 (via The FA)</a></p>",
+   "html": "FIFA RSTP Article 19 (via The FA)</a> · <a href=\"https://www.mlssoccer.com/news/2026-mls-roster-rules-and-regulations\" rel=\"nofollow noopener\" target=\"_blank\">MLS, 2026 roster rules and regulations</a> · <a href=\"https://en.wikipedia.org/wiki/2026_MLS_SuperDraft\" rel=\"nofollow noopener\" target=\"_blank\">Wikipedia, 2026 MLS SuperDraft</a> · <a href=\"https://www.lagalaxy.com/venturacountyfc/club/tryouts\" rel=\"nofollow noopener\" target=\"_blank\">Ventura County FC, MLS NEXT Pro open tryouts</a> · <a href=\"https://equalizersoccer.com/2024/02/09/usl-super-league-officially-sanctioned-first-division-nwsl-us-soccer/\" rel=\"nofollow noopener\" target=\"_blank\">The Equalizer, USL Super League sanctioned as first division</a></p>"
+  }
+ ],
+ "faq_add": [
+  {
+   "q": "Is 22 or 25 too late to go pro in soccer?",
+   "a": "It's late, but some doors are still open. Several pro open tryouts accept players up to 25, such as Ventura County FC's MLS NEXT Pro tryout in November 2026 for ages 17 to 25. At that age you need to already be standing out at a good adult level."
+  },
+  {
+   "q": "How much do professional soccer players make in the US?",
+   "a": "It depends hugely on the league. MLS's 2026 rules set minimum base salaries of $113,400 for senior roster slots 21 to 24 and $88,025 for reserve slots. Lower pro leagues pay much less, and most amateur league players aren't paid a salary."
+  },
+  {
+   "q": "What is the MLS SuperDraft?",
+   "a": "It is MLS's yearly draft of amateur players, mostly from college, who aren't tied to an MLS club. The 2026 SuperDraft was held on December 18, 2025, with 30 teams making 90 picks over 3 rounds. Being drafted doesn't guarantee a contract."
+  },
+  {
+   "q": "Can girls become professional soccer players in the US?",
+   "a": "Yes. The NWSL has been a top-flight women's league since 2013, and U.S. Soccer gave the USL Super League Division One status in 2024. The same steps apply: play at the highest level you can, train your weaknesses and use college and open tryouts."
+  }
+ ]
+}
