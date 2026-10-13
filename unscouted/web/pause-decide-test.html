@@ -7,7 +7,7 @@
 #ust .pill b{color:var(--lime);letter-spacing:.06em}
 #ust h1{margin:18px 0 0;font-size:clamp(34px,6vw,58px);line-height:1.03;font-weight:800;letter-spacing:-.025em;color:#fff}
 #ust h1 span{color:var(--lime)}
-#ust h2{margin:0;font-size:clamp(24px,4vw,34px);line-height:1.15;font-weight:800;letter-spacing:-.02em;color:#fff}
+#ust h2,#ust .tierh{margin:0;font-size:clamp(24px,4vw,34px);line-height:1.15;font-weight:800;letter-spacing:-.02em;color:#fff}
 #ust p{margin:0}
 #ust .lead{font-size:18px;line-height:1.6;color:#D6DBCF;margin-top:18px}
 #ust .small{font-size:14px;color:var(--mut);line-height:1.5}
@@ -77,7 +77,7 @@
 
 <section id="ust-intro">
   <div class="pill"><b>FREE · 8 REAL MATCH MOMENTS</b>&nbsp;&nbsp;3 minutes</div>
-  <h1>Soccer IQ Test (Football IQ Test):<br><span>What would you do?</span></h1>
+  <h1>Soccer IQ Test (Football IQ Test): <br><span>What would you do?</span></h1>
   <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position. 3 options each, 15 seconds to decide. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
   <div class="card" style="margin-top:26px">
     <p style="font-weight:800;color:#fff">What position do you play?</p>
@@ -107,17 +107,11 @@
 <section id="ust-res" class="hide">
   <div class="pill"><b>YOUR RESULT</b></div>
   <div class="row" style="margin-top:16px"><div class="big" id="ust-pts">0<span>/8</span></div></div>
-  <h2 id="ust-tier" style="margin-top:14px"></h2>
+  <p class="tierh" id="ust-tier" style="margin-top:14px"></p>
   <p class="lead" id="ust-tierTxt"></p>
   <div class="cats" id="ust-cats"></div>
   <p class="small" style="margin-top:14px">8 moments is a quick check, not a scout's verdict. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
 
-  <div class="mail hide" id="ust-mail">
-    <h3>Keep training: new situations by email</h3>
-    <p>Get your PAUSE10 code saved, plus a new match situation for your position every few days. Free, unsubscribe any time.</p>
-    <form id="ust-mailf"><input type="email" id="ust-email" placeholder="Your email" required autocomplete="email"><button class="btn" type="submit" id="ust-mailb">Send them →</button></form>
-    <p class="small" style="margin:10px 0 0">By signing up you agree to get emails from Unscouted. See our <a href="/privacy-policy/" style="color:#A9AEA2">privacy policy</a>.</p>
-  </div>
   <div class="offer">
     <p style="font-weight:800;letter-spacing:.1em;font-size:13px">FOR FINISHING THE TEST · $10 OFF</p>
     <h2 style="margin-top:8px">Train this every week, not just once.</h2>
@@ -426,12 +420,6 @@ document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=funct
 $('start').onclick=function(){Q=QS[pos]||QS.mid;try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 $('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
 $('again').onclick=function(){Q=QS[pos]||QS.mid;document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
-var REACH={id:'',group:''};
-if(REACH.id){$('mail').classList.remove('hide');}
-$('mailf').onsubmit=async function(e){e.preventDefault();var em=$('email').value.trim();if(!em)return;var b=$('mailb');b.disabled=true;b.textContent='Sending…';
- try{var r=await fetch('/wp-json/hostinger-reach/v1/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:REACH.id,group:REACH.group,email:em,tags:'free-test,'+(pos||'none')+',score-'+pts,metadata:{plugin:'hostinger-reach'}})});
-  if(r.ok){$('mailf').outerHTML='<p class="ok">Done. Check your inbox (and the spam folder, just in case).</p>'}else{b.disabled=false;b.textContent='Try again'}}
- catch(x){b.disabled=false;b.textContent='Try again'}};
 document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
 })();
 </script>

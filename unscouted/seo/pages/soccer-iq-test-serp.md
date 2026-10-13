@@ -67,3 +67,20 @@ SERP state: mostly off-intent (Roblox game stats page, Audible listing of Dan Bl
 | FAQ | No | No | No | 5 | 8 |
 | Schema | None | None | None | FAQPage | FAQPage + Article |
 | Freshness line | Jun 2026 | None | None | None | Updated October 2026 |
+
+## User-supplied competitors (Google, 2026-10-13)
+From the owner's live Google check (SEO extension screenshots):
+- **iqtest-free.org/challenges/soccer-iq-test**: title "Soccer IQ Test" (14 chars). H1 plus 4 H2s (Instructions, Results, Full length IQ test, What is the Soccer IQ Test?). 9 multiple-choice knowledge questions, no time limit. Meta keywords present, no robots, author or publisher tags. Heavy ads. Updated Oct 24, 2025.
+- **proprofs.com soccer-iq-quiz-how-high-does-your-knowledge-rank**: title "Soccer IQ Quiz: Test Your Soccer Knowledge - Quiz & Trivia". 1 H1 and 17 H2s, one per question (pressing, offside trap, overload, false nine, low block, protecting a lead, suspension rule, gegenpress, formations, kickoff rule, coin toss, rest defence, four phases, WM, positional roles). Leaderboard, 33 images, 109 links, heavy ads.
+- **footballiqscore.com/quiz/quick-quiz**: title "Quick IQ Test | Free 25 Question Football IQ Test". Wonderlic-style, 25 questions, about 6 minutes, score compared with players. H1 only, 0 H2s, no canonical, interstitial ad.
+
+**Gaps closed on our page:**
+- Added a comparison table of soccer IQ quiz formats.
+- Added a 10-term tactical glossary. It covers the ProProfs topics: pressing, gegenpress, low block, offside trap, overload, false 9, transition and rest defence.
+- Added FAQs on the Wonderlic and on question count.
+- Added Quiz schema.
+
+**Technical fixes on the live test:**
+- The H1 was missing a space ("Test):What").
+- An empty H2 (result tier) is now a styled p.
+- The unused Reach email form (an H3) is removed.
