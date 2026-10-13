@@ -254,6 +254,10 @@
 .uxb .q1-go p{font-family:Caveat,cursive!important;font-size:26px!important;color:var(--lime)!important;margin:0 0 12px!important;line-height:1.1!important}
 .uxb .q1-hint{font-size:14px!important;color:var(--mute)!important;margin:6px 0 0!important}
 @media (max-width:900px){.uxb .q1{grid-template-columns:1fr;gap:36px}.uxb .q1 .qtext{font-size:17px!important}.uxb .q1-opt{font-size:15px;padding:12px}}
+
+.uxb .bar{transform:translateY(110%);transition:transform .25s ease}
+.uxb .bar.on{transform:none}
+@media (prefers-reduced-motion:reduce){.uxb .bar{transition:none}}
 </style>
 
 
@@ -448,4 +452,9 @@ document.getElementById('uxbq-why').style.display='block';document.getElementByI
  </div>
 </div>
 
+<script>
+(function(){var bar=document.querySelector('.uxb .bar');var hero=document.querySelector('.uxb .hero');if(!bar){return;}
+function upd(){var y=hero?hero.getBoundingClientRect().bottom:0;if(y<60){bar.classList.add('on');}else{bar.classList.remove('on');}}
+window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();})();
+</script>
 </div>
