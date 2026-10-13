@@ -232,6 +232,28 @@
 .uxb .kit-buy .cta{display:block;text-align:center}
 }
 @media (prefers-reduced-motion:reduce){.uxb *{transition:none!important;animation:none!important}}
+
+/* one-question demo, right after the hero */
+.uxb .q1{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.uxb .q1-board{position:relative;background:#12301C;border:10px solid #2B3122;border-radius:10px;transform:rotate(-1.2deg);box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.uxb .q1-board:before{content:"";position:absolute;top:-24px;left:50%;transform:translateX(-50%);width:120px;height:28px;background:#2B3122;border-radius:6px 6px 10px 10px;border:2px solid #3D4630}
+.uxb .q1-board img{display:block;width:100%;height:auto;border-radius:2px}
+.uxb .q1-min{position:absolute;right:12px;top:12px;font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:22px;background:var(--lime);color:#090B08;padding:0 9px;border-radius:5px;line-height:1.3}
+.uxb .q1 .qtext{font-size:20px!important;line-height:1.45!important;font-weight:700!important;color:var(--text)!important;margin:0 0 18px!important;max-width:34ch}
+.uxb .q1 .who{font-family:Caveat,cursive!important;font-size:24px!important;color:#C9CFBE!important;margin:0 0 6px!important;line-height:1.1!important}
+.uxb .q1-opt{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:#0F120B;border:1.5px solid #2A2F22;color:var(--text);font:inherit;font-family:Manrope,system-ui,sans-serif;font-weight:700;font-size:16px;padding:14px 16px;border-radius:12px;margin:0 0 10px;cursor:pointer}
+.uxb .q1-opt:hover{border-color:var(--lime)}
+.uxb .q1-opt:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.uxb .q1-opt i{font-style:normal;flex:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:#1C2412;color:var(--lime);font-weight:800}
+.uxb .q1-opt.ok{border-color:#9CC72A;background:#1A260B}
+.uxb .q1-opt.no{border-color:#D94848;background:#291111;opacity:.85}
+.uxb .q1-opt:disabled{cursor:default}
+.uxb .q1-why{display:none;font-size:16px!important;line-height:1.55!important;color:#D5DACB!important;margin:8px 0 18px!important}
+.uxb .q1-why b{color:var(--lime)}
+.uxb .q1-go{display:none}
+.uxb .q1-go p{font-family:Caveat,cursive!important;font-size:26px!important;color:var(--lime)!important;margin:0 0 12px!important;line-height:1.1!important}
+.uxb .q1-hint{font-size:14px!important;color:var(--mute)!important;margin:6px 0 0!important}
+@media (max-width:900px){.uxb .q1{grid-template-columns:1fr;gap:36px}.uxb .q1 .qtext{font-size:17px!important}.uxb .q1-opt{font-size:15px;padding:12px}}
 </style>
 
 
@@ -257,6 +279,33 @@
   </div>
  </main>
 </div>
+
+
+<section class="sec" aria-labelledby="uxb-q1">
+ <div class="q1">
+  <div class="q1-board"><img id="uxbq-img" data-no-lazy="1" loading="lazy" src="/wp-content/uploads/2026/10/us-football-decision-making-training-1.jpg" width="1066" height="936" alt="Tactics board: you are the right winger receiving the ball on the touchline, their left back in front of you"><span class="q1-min">34'</span></div>
+  <div>
+   <p class="hand">The scout’s first question</p>
+   <h2 class="h" id="uxb-q1">What would you do here?</h2>
+   <p class="who">You’re the right winger. 0–0.</p>
+   <p class="qtext">Your right back plays it up the line to you. Their left back is in front of you. What do you do?</p>
+   <div id="uxbq">
+    <button class="q1-opt" data-k="0"><i>A</i>Play it inside to your 10</button>
+    <button class="q1-opt" data-k="1"><i>B</i>Lay it back to your right back</button>
+    <button class="q1-opt" data-k="2"><i>C</i>Take him on down the line</button>
+   </div>
+   <p class="q1-why" id="uxbq-why"><b>Pro pick: C.</b> Look behind their left back: their nearest centre back is about 17 metres inside him. He’s on his own, so attack the line. A looks free, but their DM is standing in that passing lane.</p>
+   <p class="q1-hint" id="uxbq-hint">Tap an answer to see what a pro would do.</p>
+   <div class="q1-go" id="uxbq-go"><p>That was 1 of 8 for your position.</p><a class="cta" href="/soccer-iq-test/">Take the full free test</a></div>
+  </div>
+ </div>
+</section>
+<script>
+(function(){var w=document.getElementById('uxbq');if(!w){return;}var bs=w.querySelectorAll('.q1-opt');
+bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.disabled=true;if(x.getAttribute('data-k')==='2'){x.classList.add('ok');}else{if(x===b){x.classList.add('no');}}});
+document.getElementById('uxbq-img').src='/wp-content/uploads/2026/10/us-football-decision-making-training-1-answer.jpg';
+document.getElementById('uxbq-why').style.display='block';document.getElementById('uxbq-go').style.display='block';document.getElementById('uxbq-hint').style.display='none';});});})();
+</script>
 
 
 <section class="sec pains" aria-labelledby="uxb-pains">
