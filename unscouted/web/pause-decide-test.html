@@ -417,7 +417,7 @@ function finish(){document.getElementById('ust').classList.remove('wide');$('gam
  var st='I scored '+pts+'/'+Q.length+' '+AS+' on the Unscouted soccer IQ test. '+t[0].replace(/ \S+$/,'')+'. Can you beat it?';
  SHARE=st;$('shareTxt').innerHTML='I scored <b>'+pts+'/'+Q.length+'</b> '+AS+'. '+t[0];$('shareOk').textContent='';
  $('disc').textContent=Q.length>8?'40 moments is a solid read, but still not a scout\'s verdict. There\'s rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.':'8 moments is a quick check, not a scout\'s verdict. There\'s rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.';
- var pk=POS[pos];$('packtip').innerHTML=pos=='all'?'Want every position in one place? The <b>Everything Bundle</b> has all 4 position packs.':pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
+ var pk=POS[pos];$('packtip').innerHTML=pos=='all'?'Want every position in one place? The <b>Everything Bundle</b> has all 4 position packs.':pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as '+PN[pos])+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
  $('prog').style.width='100%';document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
 async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
  try{var r=await fetch('/wp-json/wc/store/v1/cart?_='+Date.now(),{credentials:'same-origin',cache:'no-store'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};
