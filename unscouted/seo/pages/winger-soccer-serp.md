@@ -30,3 +30,58 @@ Definition, width, crossing/dribbling/speed, tracking back, lists of famous wing
 
 ## Plan
 Answer-first quick box, key takeaways, H2s as questions, comparison table of winger types, left vs right table, 6 decisions with 3 boards (1v1 inside/outside, cut-back vs cross, pressing the full-back), back-post and half-turn rules in text, weekly solo/one-friend plan table, TV analysis checklist, mistakes, FAQ x7, Winger Pack CTA mid and end. Player examples kept to safe, well-known facts (no stats).
+
+## Upgrade teardown 2026-10-13
+
+Searches run (WebSearch, which only approximates Google; real Google order, SERP features and AI Overview may differ): "winger soccer" (focus) and "winger position in soccer". Top 3 organic results with the same intent for the focus keyword, after skipping spam/scraped pages (audio.5by5.tv, api.bybrand.io, dimaggio-old.heartlight.org, tom-01.netbox.dev, notice.isiponline.ca): 1 Wikipedia "Winger (sports)", 2 thestadiumreviews.com, 3 yoursoccerhome.com (position/role page). All fetched 2026-10-13. (yoursoccerhome's "How to Play Winger" page ranks #5 and was reviewed yesterday.)
+
+### Competitor 1: Wikipedia, Winger (sports)
+- URL: https://en.wikipedia.org/wiki/Winger_(sports)
+- Title/H1: "Winger (sports)"
+- Words: ~60 on association football (multi-sport page)
+- Outline: one unheaded football paragraph inside a multi-sport article
+- Covers: definition ("attacking midfielder in a wide position"), fast/skilled dribblers, crosses and cut-backs, high-speed running from defense into attack
+- Media/tools: none for football. Schema: Wikipedia default. Freshness: no visible date. E-E-A-T: one citation (Cornell Daily Sun, 2017).
+- Weaknesses: ranks on domain authority only; no inverted wingers, no left vs right, no types, no examples, nothing practical.
+
+### Competitor 2: thestadiumreviews.com
+- URL: https://thestadiumreviews.com/blogs/info/what-is-a-winger-in-soccer/
+- Title/H1: "What is a Winger in Soccer?"
+- Words: ~1,000
+- H2 outline: What makes a good winger? / What is the role of the winger? / What side should wingers play? / What formations do wingers play? / Is a winger a midfielder or a forward? / Famous wingers in history / Conclusion
+- Covers: skills (speed, dribbling, crossing, shooting, separation, long passes, awareness, communication), attacking + first-line defending, strong-foot side and inverted wingers, formations (4-3-3, 3-4-3, 4-2-3-1), midfielder vs forward, 7 famous names
+- Media/tools: 6 section images, no tables, no tools. Schema: none visible. Freshness: no date. E-E-A-T: no author.
+- Weaknesses: misspellings (Cruff, Christina Ronaldo), contradicts itself on midfielder vs forward, formations listed without explanation, no training, no decisions.
+
+### Competitor 3: yoursoccerhome.com
+- URL: https://yoursoccerhome.com/the-winger-in-soccer-position-role-and-responsibilities/
+- Title/H1: "The Winger in Soccer: Position, Role, and Responsibilities"
+- Words: ~1,300
+- H2 outline: Position of a winger / A winger's number (right and left) / Role and responsibilities (5 H3: create chances, stretch the defense, move the ball up and bypass defenders, score, support the defense) / Winger vs forward vs striker / Find out more
+- Media/tools: position diagram + 3 photos, no tables. Schema: none visible. Freshness: no date. E-E-A-T: named author, fan/player bio.
+- Weaknesses: no inverted wingers, no formations, no FAQ, no training, overlapping roles, few examples (Cruyff, Beckham, Garrincha).
+
+### Our page before (2026-10-12 version)
+- Title "Winger in Soccer: Left vs Right Wing and How to Play It"; ~2,840 words; H2s: what is / left vs right (table) / types (table) / what a winger does (4 moments, bullets) / how a winger decides (6 rules + 3 boards) / skills / weekly plan (table) / study on TV / mistakes / FAQ (7). FAQPage + Article JSON-LD.
+- What the top 3 still did better: (1) famous wingers to learn from (comp 2, 3); (2) explicit winger vs forward vs striker comparison (comp 2, 3; we only had "midfielder or forward" in FAQ); (3) defensive duties as a clear answer (comp 2, 3); (4) formations including 3-4-3 (comp 2); (5) a "where a winger stands" picture by moment (comp 3 diagram); (6) awareness/long switches named as skills (comp 2).
+
+### Gap table
+
+| Subtopic / question / element | Wikipedia | thestadiumreviews | yoursoccerhome | Ours before | Ours after |
+|---|---|---|---|---|---|
+| Definition | Yes | Yes | Yes | Yes | Yes |
+| Left vs right wing | No | Yes (side by foot) | Numbers only | Table | Table |
+| Inverted wingers | No | Short | No | Yes + source | Yes + source |
+| Types (traditional, inverted, wide forward, wide mid, wing-back) | No | No | No | Table | Table |
+| Shirt numbers 7 / 11 | No | No | Yes | Yes | Yes |
+| Winger vs forward vs striker / midfielder or forward | No | Yes (contradictory) | Yes | FAQ only | New H2 + table |
+| Formations | No | List | No | Paragraph | Table incl. 3-4-3 and 3-5-2 |
+| Where a winger stands by moment | No | No | Diagram | Bullets | Table (where + first thought) |
+| Defensive duties | No | Yes | Yes | Bullet | New H2 + FAQ |
+| Skills | Short | Yes | No | List of 5 | List of 7 (awareness, switches of play added) |
+| How to beat a full-back 1v1 (steps) | No | No | Partial | Scattered | 5-step H2 + HowTo JSON-LD |
+| Famous wingers | No | 7 names | 3 names | 3 names in table | "Wingers to study" table (type + what to watch, national teams only) |
+| Worked tactics-board situations | No | No | No | 3 | 3 |
+| Weekly solo plan | No | No | No | Yes | Yes |
+| FAQ + schema | No | No | No | 7 + FAQPage | 8 + FAQPage |
+| Date / freshness | No | No | No | Oct 2026 | dateModified 2026-10-13 |

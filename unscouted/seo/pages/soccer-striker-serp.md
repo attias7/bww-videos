@@ -33,3 +33,67 @@ Also in results: several scraped/spam copies (grandavehousing.calpoly.edu, forms
 4. 3 tactics-board situations (run in behind, far-post run, shoot vs square pass) with options, pro pick and the visual cue.
 5. Weekly solo / one-friend striker plan (table), TV analysis checklist, common mistakes, 7-question FAQ.
 6. Internal links to scanning, decision-making, tryouts and the other position guides; Striker Pack CTA mid + end.
+
+## Upgrade teardown 2026-10-13
+
+Searches run (WebSearch, which only approximates Google; real Google order and SERP features may differ): "striker in soccer" (focus) and "what is a striker in soccer position role". Organic results with the same intent, in order, after skipping scraped/spam copies (grandavehousing.calpoly.edu, forms.nyislaw.com, msg.sysomos.com, dev.homewardtrails.org): 1 briefly.co.za, 2 yoursoccerhome.com, 3 jobsinfootball.com (both queries). All three fetched 2026-10-13.
+
+### Competitor 1: briefly.co.za
+- URL: https://briefly.co.za/sports/football/203601-what-a-striker-soccer-key-responsibilities-explained
+- Title/H1: "What does a striker in soccer do? Key responsibilities explained"
+- Words: ~1,000
+- H2 outline: What is a striker in soccer? / What is the soccer striker position? / What are the different types of strikers? / What does a striker do? (H3: creating chances, holding up, link-up, counter-attack, pressing) / What is the best skill for a striker? (finishing, movement + list) / Do strikers need to be fast? / Forward vs striker / Is striker a hard position? / Best striker in soccer
+- Covers: definition, 4 types (complete, target man, poacher, false 9), duties incl. counter-attacks, skills, speed, forward vs striker, difficulty, 5 "best" names
+- Media/tools: no tables, no images, no video, no tools. One quote.
+- Schema: none visible. No FAQ block.
+- Freshness: no date. E-E-A-T: lifestyle writer byline, no football credentials.
+- Weaknesses: thin (1–3 lines per section), vague/contradictory forward vs striker, unqualified "Ronaldo highest scorer", club listings that may be stale, no how-to, nothing for a player.
+
+### Competitor 2: yoursoccerhome.com
+- URL: https://yoursoccerhome.com/a-striker-in-soccer-the-complete-guide/
+- Title/H1: "A Striker in Soccer: The Complete Guide"
+- Words: ~2,600
+- H2 outline: What is a striker? / What position does a striker play / Striker position tips (5) / The number a striker wears / The role of a striker (5 H3) / What makes a great striker (9 H3: first touch, awareness, shooting, confident and calm, hold-up, bring others in, movement, patience, timing) / Striker vs forward / Conclusion
+- Covers: definition, where they play, positioning tips, number 9, 5 roles, 9 attributes incl. composure and patience, striker vs forward
+- Media/tools: header image, position diagram, number image, 2 list graphics, embedded "top 10 strikers" video, course promos
+- Schema: none visible. No FAQ.
+- Freshness: no date. E-E-A-T: named author, fan/player bio, no qualifications.
+- Weaknesses: no striker types, almost no examples, repetition, no worked situations, no training plan, no sources.
+
+### Competitor 3: jobsinfootball.com
+- URL: https://jobsinfootball.com/blog/positions/striker-in-soccer/
+- Title/H1: "What Is a Striker in Soccer? Role, Skills & Famous Strikers"
+- Words: ~2,100
+- H2 outline: What is a striker? / Key traits (shooting, composure, hold-up, technique, movement) / Types (7: number 9, false 9, target man, poacher, pressing, complete, second striker) / Best strikers right now (4) / Best strikers of all time (4) / FAQ (4: what does a striker do, striker vs forward, is a striker the same as a number 9, what makes a good striker)
+- Media/tools: player photos, no tables, no tools
+- Schema: none declared visibly (FAQ section present, no confirmed FAQPage).
+- Freshness: no date. E-E-A-T: named freelance football writer with bylines.
+- Weaknesses: stale goal tallies and "right now" list, one line per type, no training, no diagrams, no decision content.
+
+### Our page before (2026-10-12 version)
+- Title "Striker in Soccer: Role, 6 Types and How to Play It"; H1 "Striker in Soccer: What a Striker Does, the 6 Types, and How to Play the Position"; ~2,890 words.
+- H2s: what is / what does / 6 types (table) / skills (table) / how a striker decides (movement, offside Law 11, near/far post, shoot or pass, pressing triggers) / 3 tactics-board situations / weekly plan (table) / study on TV / common mistakes / FAQ (7). FAQPage + Article JSON-LD. Sources: IFAB, Wikipedia, Jordet 2020.
+- Still behind the top 3 on: (1) where a striker plays and positioning tips as a section (comp 1, 2); (2) striker vs forward as its own answer (all 3; we only did striker vs center forward); (3) composure/patience/confidence (comp 2, 3); (4) counter-attack role (comp 1); (5) famous/best strikers to learn from (comp 1, 3); (6) "is striker a hard position" (comp 1); (7) "is a striker the same as a number 9" (comp 3, partly covered).
+
+### Gap table
+
+| Subtopic / question / element | briefly | yoursoccerhome | jobsinfootball | Ours before | Ours after |
+|---|---|---|---|---|---|
+| What is a striker (definition) | Yes | Yes | Yes | Yes | Yes |
+| Where a striker plays / positioning tips | Short | Yes (5 tips) | No | Partial (in definition) | New H2 with zone table |
+| Number 9 | Partial | Yes | FAQ | Yes | Yes + terms table |
+| Striker vs forward | Short | Yes | FAQ | Only vs center forward | Terms table: forward, striker, center forward, 9, false 9, second striker + FAQ |
+| Duties incl. counter-attack | Yes | Yes | Short | No counter-attack | Counter-attack added |
+| Types of striker | 4 | No | 7 one-liners | 6 in table | 6 in table (kept) |
+| Skills / traits | Yes | 9 | 5 | 6 in table | 7 (composure added) + mental-side section |
+| Composure, patience, confidence after misses | No | Yes | Yes | No | Yes, with routine |
+| Do strikers need to be fast | Yes | No | No | FAQ (tall or fast) | Kept |
+| Is striker a hard position | Yes | No | No | No | FAQ |
+| Famous / best strikers | 5 names | 2 names | 8 names with stats | Examples in types table | "Strikers to study" table: what to watch, no stale clubs/stats |
+| Step-by-step how to play striker | No | Tips | No | Scattered | 6-step game routine + HowTo JSON-LD |
+| Worked tactics-board situations | No | No | No | 3 | 3 |
+| Solo weekly training plan | No | No | No | Yes | Yes |
+| Offside rule with official source | No | No | No | Yes | Yes (checked October 2026) |
+| FAQ + FAQPage schema | No | No | 4 Qs | 7 + schema | 8 + schema |
+| Tables | 0 | 0 | 0 | 4 | 7 |
+| Date / freshness | No | No | No | Oct 2026 | Updated October 2026, dateModified 2026-10-13 |
