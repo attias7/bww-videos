@@ -1,0 +1,79 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Caveat:wght@700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<div class="uxa">
+<style>
+.uxa{background:#090B08;color:#F2F4EC;font-family:Manrope,system-ui,sans-serif}
+.uxa *{box-sizing:border-box}
+.uxa{--ink:#090B08;--pitch:#10140D;--line:#252C1C;--lime:#C8F23A;--text:#F2F4EC;--mute:#A7AE9C}
+.uxa .hero{max-width:1240px;margin:0 auto;padding:18px 24px 40px;display:grid;grid-template-columns:.78fr 1.22fr;gap:44px;align-items:start}
+.uxa .copy{padding-top:40px}
+.uxa h1{font-family:"Big Shoulders Display",Manrope,sans-serif;font-weight:900;font-size:clamp(54px,6.4vw,92px);line-height:.9;letter-spacing:.005em;margin:0 0 20px;text-transform:uppercase}
+.uxa .lead{font-size:18px;line-height:1.55;color:#C9CFBE;margin:0 0 26px;max-width:30ch}
+.uxa .cta{display:inline-block;background:var(--lime);color:var(--ink);text-decoration:none;font-weight:800;font-size:17px;padding:17px 24px;border-radius:12px}
+.uxa .cta2{display:inline-block;margin-left:16px;font-weight:700;color:var(--text);text-underline-offset:4px}
+.uxa .fine{margin:14px 0 0;font-size:14px;color:var(--mute)}
+.uxa .tv{background:var(--pitch);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.uxa .bar{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);font-weight:700;font-size:14px}
+.uxa .clock{font-family:"Big Shoulders Display",sans-serif;font-size:24px;background:var(--lime);color:var(--ink);padding:0 10px;border-radius:6px;line-height:1.25}
+.uxa .score{font-family:"Big Shoulders Display",sans-serif;font-size:24px;border:1px solid var(--line);padding:0 10px;border-radius:6px;line-height:1.25}
+.uxa .who{margin-left:auto;color:var(--mute);font-weight:600}
+.uxa .stage{display:grid;grid-template-columns:1.05fr .95fr}
+.uxa .stage img{display:block;width:100%;height:100%;max-height:520px;object-fit:contain;background:#12301C}
+.uxa .ask{padding:20px 20px 22px;display:flex;flex-direction:column}
+.uxa .q{font-size:20px;line-height:1.4;font-weight:700;margin:0 0 16px}
+.uxa .opt{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:#0B0E09;border:1.5px solid var(--line);color:var(--text);font:inherit;font-weight:700;font-size:16px;padding:14px;border-radius:12px;margin-bottom:10px;cursor:pointer}
+.uxa .opt:hover{border-color:var(--lime)}
+.uxa .opt:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.uxa .opt i{font-style:normal;width:30px;height:30px;flex:none;border-radius:8px;display:grid;place-items:center;background:#1C2412;color:var(--lime);font-weight:800}
+.uxa .opt.ok{border-color:#9CC72A;background:#1A260B}
+.uxa .opt.no{border-color:#D94848;background:#291111;opacity:.8}
+.uxa .why{display:none;font-size:15px;line-height:1.5;color:#D5DACB;margin:6px 0 14px}
+.uxa .why b{color:var(--lime)}
+.uxa .next{display:none}
+.uxa .hint{margin-top:auto;font-size:13px;color:var(--mute);padding-top:6px}
+@media (max-width:900px){.uxa .hero{grid-template-columns:1fr;gap:18px;padding:6px 16px 32px}
+.uxa .copy{padding-top:0}
+.uxa h1{font-size:46px;margin-bottom:8px}
+.uxa .lead{font-size:15px;line-height:1.45;margin-bottom:0}
+.uxa .copy .cta,.uxa .copy .cta2,.uxa .copy .fine{display:none}
+.uxa .stage{grid-template-columns:1fr}
+.uxa .stage img{max-height:270px}
+.uxa .ask{padding:16px}
+.uxa .q{font-size:17px;margin-bottom:12px}
+.uxa .opt{padding:12px;font-size:15px;margin-bottom:8px}
+.uxa .bar{padding:10px 12px}
+.uxa .clock,.uxa .score{font-size:20px}}
+@media (prefers-reduced-motion:no-preference){.uxa .why,.uxa .next{animation:uxain .25s ease-out}}
+@keyframes uxain{from{opacity:0;transform:translateY(4px)}}
+</style>
+
+
+<main class="hero">
+ <div class="copy">
+  <h1>What would you do here?</h1>
+  <p class="lead">No academy means nobody coaches your decisions. So train them yourself, one real match situation at a time.</p>
+  <a class="cta" href="/soccer-iq-test/">Take the free test</a><a class="cta2" href="/shop/">See the kits</a>
+  <p class="fine">8 situations for your position. Free, no sign-up, about 3 minutes.</p>
+ </div>
+ <section class="tv" aria-label="Try one situation">
+  <div class="bar"><span class="clock">34'</span><span class="score">0–0</span><span class="who">You’re the right winger</span></div>
+  <div class="stage">
+   <img id="img" src="/wp-content/uploads/2026/10/us-football-decision-making-training-1.jpg" width="1066" height="936" alt="Tactics board: you receive the ball on the right touchline, their left back in front of you">
+   <div class="ask">
+    <p class="q">Your right back plays it up the line to you. Their left back is in front. What do you do?</p>
+    <button class="opt" data-k="0"><i>A</i>Play it inside to your 10</button>
+    <button class="opt" data-k="1"><i>B</i>Lay it back to your right back</button>
+    <button class="opt" data-k="2"><i>C</i>Take him on down the line</button>
+    <p class="why" id="why"><b>Pro pick: C.</b> Their nearest centre back is about 17 metres inside. Their left back is on his own, so attack the line. A looks free, but their DM is in that lane.</p>
+    <a class="cta next" id="next" href="/soccer-iq-test/">Try 7 more for your position</a>
+    <p class="hint" id="hint">Tap an answer. You’ll see what a pro would do.</p>
+   </div>
+  </div>
+ </section>
+</main>
+<script>
+(function(){var bs=document.querySelectorAll('.opt');bs.forEach(function(b){b.addEventListener('click',function(){
+ bs.forEach(function(x){x.disabled=true;var k=x.getAttribute('data-k');if(k==='2'){x.classList.add('ok')}else if(x===b){x.classList.add('no')}});
+ document.getElementById('img').src='/wp-content/uploads/2026/10/us-football-decision-making-training-1-answer.jpg';document.getElementById('why').style.display='block';document.getElementById('next').style.display='block';document.getElementById('hint').style.display='none';});});})();
+</script>
+
+</div>
