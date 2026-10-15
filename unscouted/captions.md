@@ -43,3 +43,7 @@ Getting closer to goal can cost you.
 From the corner of the six-yard box the goal is about 22° wide. From the penalty spot, about 37°. Closer, but a smaller target.
 Shoot or cut it back? Comment it 👇
 #football #soccer #footballtips #footballtraining #soccerplayer #footballiq #finishing #unscouted
+
+## Carousel · Ep 6 long shots — 2026-10-16 12:00
+IG: Your long shots aren't brave. They're a lottery. Swipe → / From the spot the goal is 37° of your view. From 25 metres, 17°. Shoot from distance only when the lane is clear. / Save this for your next game. / reel hashtags
+TT: Your long shots aren't brave. They're a lottery. Swipe → / 37° from the spot. 17° from 25 metres. / 7 hashtags
