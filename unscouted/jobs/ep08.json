@@ -1,0 +1,594 @@
+{
+ "episode": 8,
+ "series": "PAUSE & DECIDE \u00b7 #4",
+ "hook": "Dive in here, and he's gone.",
+ "voice": "../voices/ep08.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep08_pd04_fullback.mp4",
+ "lines": [
+  "Dive in here, and he's gone.",
+  "You're the right-back. It's one-one, sixty minutes in.",
+  "Their winger runs straight at you.",
+  "Your centre-back is busy with their striker.",
+  "Pause. What do you do?",
+  "A. Dive in and win the ball.",
+  "B. Show him down the line.",
+  "C. Show him inside.",
+  "Comment your answer.",
+  "I'd go B. Show him the touchline.",
+  "Your centre-back can't help, so inside means a shot at your goal.",
+  "Down the line, the worst he can do is cross from a tight angle.",
+  "Stay side-on, stay on your feet, and wait for the bad touch.",
+  "No perfect answer. If you've got cover inside, C can work too.",
+  "But diving in? That's exactly how he gets past you.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 620,
+     "size": 130,
+     "segs": [
+      [
+       "DIVE IN HERE,",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 800,
+     "size": 130,
+     "segs": [
+      [
+       "HE'S ",
+       "dark"
+      ],
+      [
+       "GONE.",
+       "r"
+      ]
+     ],
+     "dt": 0.3,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "dt": 0.7,
+     "y": 1080,
+     "text": "Full-backs, watch this",
+     "fill": "dark",
+     "color": "y",
+     "size": 48
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "y": 210,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "1-1",
+     "minute": "60'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.1,
+     "y": 470,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.82,
+       "y": 0.3,
+       "label": "YOU"
+      },
+      {
+       "id": "cb",
+       "team": "us",
+       "x": 0.45,
+       "y": 0.22,
+       "label": "CB"
+      },
+      {
+       "id": "gk",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.03
+      },
+      {
+       "id": "w",
+       "team": "them",
+       "x": 0.85,
+       "y": 0.75,
+       "path": [
+        {
+         "to": [
+          0.8,
+          0.45
+         ],
+         "at": 2,
+         "dur": 1.2
+        }
+       ]
+      },
+      {
+       "id": "st",
+       "team": "them",
+       "x": 0.56,
+       "y": 0.3,
+       "path": [
+        {
+         "to": [
+          0.56,
+          0.2
+         ],
+         "at": 3,
+         "dur": 0.8
+        }
+       ]
+      }
+     ],
+     "ball": {
+      "x": 0.85,
+      "y": 0.76,
+      "path": [
+       {
+        "with": "w",
+        "at": 2,
+        "dur": 0.2
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.84,
+        0.72
+       ],
+       "to": [
+        0.8,
+        0.5
+       ],
+       "color": "r",
+       "at": 2,
+       "dt": 0.2
+      }
+     ],
+     "pause": {
+      "at": 4
+     }
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 1500,
+     "text": "CB busy with their striker",
+     "fill": "y",
+     "color": "dark",
+     "size": 40
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "1v1 \u00b7 ",
+       "w"
+      ],
+      [
+       "no cover",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "options",
+     "at": 5,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Dive in, win it",
+       "at": 5
+      },
+      {
+       "key": "B",
+       "text": "Show him down the line",
+       "at": 6
+      },
+      {
+       "key": "C",
+       "text": "Show him inside",
+       "at": 7
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 8,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "1v1 \u00b7 ",
+       "w"
+      ],
+      [
+       "no cover",
+       "y"
+      ]
+     ],
+     "dt": -0.2
+    },
+    {
+     "type": "options",
+     "at": 5,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Dive in, win it",
+       "at": 9,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Show him down the line",
+       "at": 9,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Show him inside",
+       "at": 9,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 9,
+      "dt": 0.15,
+      "correct": "B"
+     }
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 110,
+     "segs": [
+      [
+       "B. ",
+       "y"
+      ],
+      [
+       "Down the line.",
+       "w"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "pitch",
+     "at": 10,
+     "dt": -0.1,
+     "y": 440,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.74,
+       "y": 0.42,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.82,
+          0.32
+         ],
+         "at": 12,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "cb",
+       "team": "us",
+       "x": 0.45,
+       "y": 0.22,
+       "label": "CB"
+      },
+      {
+       "id": "gk",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.03
+      },
+      {
+       "id": "w",
+       "team": "them",
+       "x": 0.8,
+       "y": 0.47,
+       "path": [
+        {
+         "to": [
+          0.92,
+          0.2
+         ],
+         "at": 11,
+         "dt": 0.4,
+         "dur": 1.2
+        }
+       ]
+      },
+      {
+       "id": "st",
+       "team": "them",
+       "x": 0.56,
+       "y": 0.26
+      }
+     ],
+     "ball": {
+      "with": "w"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.72,
+        0.44
+       ],
+       "to": [
+        0.55,
+        0.25
+       ],
+       "color": "r",
+       "at": 10,
+       "dt": 0.6,
+       "label": "inside = shot"
+      },
+      {
+       "from": [
+        0.84,
+        0.44
+       ],
+       "to": [
+        0.93,
+        0.18
+       ],
+       "color": "y",
+       "at": 11,
+       "dt": 0.3,
+       "label": "line"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Worst case: ",
+       "w"
+      ],
+      [
+       "a cross from a tight angle",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 260,
+     "text": "Show him the touchline",
+     "fill": "y",
+     "color": "dark",
+     "size": 44
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 560,
+     "size": 90,
+     "segs": [
+      [
+       "SIDE-ON.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "ON YOUR FEET.",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 840,
+     "size": 80,
+     "segs": [
+      [
+       "Wait for the ",
+       "w"
+      ],
+      [
+       "bad touch.",
+       "y"
+      ]
+     ],
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 13,
+     "y": 480,
+     "text": "NO PERFECT ANSWER",
+     "fill": "r",
+     "color": "w",
+     "size": 46
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 680,
+     "size": 76,
+     "segs": [
+      [
+       "Cover inside? ",
+       "w"
+      ],
+      [
+       "C works too.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 860,
+     "size": 84,
+     "segs": [
+      [
+       "Diving in? ",
+       "w"
+      ],
+      [
+       "He's past you.",
+       "r"
+      ]
+     ],
+     "dt": 0.1
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "elements": [
+    {
+     "type": "text",
+     "at": 15,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "dt": 0.6,
+     "y": 1000,
+     "text": "Free analysis test \u00b7 link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

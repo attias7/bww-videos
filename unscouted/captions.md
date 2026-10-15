@@ -47,3 +47,10 @@ Shoot or cut it back? Comment it 👇
 ## Carousel · Ep 6 long shots — 2026-10-16 12:00
 IG: Your long shots aren't brave. They're a lottery. Swipe → / From the spot the goal is 37° of your view. From 25 metres, 17°. Shoot from distance only when the lane is clear. / Save this for your next game. / reel hashtags
 TT: Your long shots aren't brave. They're a lottery. Swipe → / 37° from the spot. 17° from 25 metres. / 7 hashtags
+
+## Ep 8 · PD #4 · Full-back 1v1 — 2026-10-16
+Dive in here, and he's gone.
+You're the right-back, 1-1, sixty minutes in. Their winger runs at you and your centre-back is busy with the striker.
+Dive in, show him down the line, or show him inside? Comment A, B or C 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #fullback #unscouted

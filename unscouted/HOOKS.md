@@ -24,6 +24,7 @@ One line: *Unscouted helps players outside academies think and play like pros, u
 - This is why your coach subs you off at 70 minutes.
 - You're good in training. Then the game starts and you freeze.
 - One bad touch here and it's a goal for them.
+- Dive in here, and he's gone. ✅ *used: Ep 8 (PD #4, full-back)*
 
 ### Command / contrarian
 - Losing with five minutes left? Stop passing. ✅ *used: PD #2*
