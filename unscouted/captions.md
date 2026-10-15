@@ -54,3 +54,7 @@ You're the right-back, 1-1, sixty minutes in. Their winger runs at you and your 
 Dive in, show him down the line, or show him inside? Comment A, B or C 👇
 Free analysis test in bio.
 #football #soccer #footballtips #footballtraining #soccerplayer #footballiq #fullback #unscouted
+
+## Carousel · Ep 8 full-back — 2026-10-17 12:00
+IG: 60th minute, 1-1, their winger runs at you. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
+TT: same first two lines / 7 hashtags
