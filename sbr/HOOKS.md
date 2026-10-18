@@ -20,6 +20,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Under ~10 spoken words; the first 3 words must carry the callout or the tension.
 
 ## 3. Hook bank (✅ = used, with the episode)
+- ✅ Ep 25 — Why contractors say yes to: pay only if it closes.
 - ✅ Ep 22 — Every side hustle ends with: now get on a call.
 - ✅ Ep 21 — A two thousand dollar course won't make you less shy.
 - ✅ Ep 20 — If you feel behind, start with one small thing.
@@ -74,7 +75,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - ✅ Ep 2 — How 1 Google search turns into a contractor paying me.
 - The no-cold-call close: give the first lead away.
 - The one-town rule that makes ranking possible.
-- Why contractors say yes to "pay only if it closes."
+- ✅ Ep 25 — Why contractors say yes to "pay only if it closes."
 
 ### Transformation
 - From dreading calls to getting contractor DMs.
