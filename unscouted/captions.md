@@ -84,3 +84,14 @@ Free analysis test in bio.
 ## Carousel · Ep 10 No.10 gap — 2026-10-20 12:00
 IG: 0-0, 30th minute, their centre-back steps out to you. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
 TT: 0-0, 30th minute, their centre-back steps out to you. Swipe → / A, B or C? Decide before slide 4. / 7 hashtags
+
+## Ep 11 · PLAYER BREAKDOWN · Kane — 2026-10-20
+Stop trying to score worldies.
+Kane scores the easy ones, again and again. Four habits: be between the posts on every cross, body half-turned to goal, no extra power on first-time finishes, and on target before anything else.
+Which one do you skip? Comment 1, 2, 3 or 4 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #striker #unscouted
+
+## Carousel · Ep 11 Kane — 2026-10-21 12:00
+IG: Stop trying to score worldies. Swipe → / Kane's four habits: between the posts, body half-turned, direction over power, on target first. / Save this for your next game. / reel hashtags
+TT: Stop trying to score worldies. Swipe → / 4 habits from watching Kane. / 7 hashtags
