@@ -35,8 +35,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - It took me three months to get one lead. Worth it.
 - Five minutes on Google tells you if a town is worth it.
 - One Facebook post. Twenty-seven contractors replied.
-- Month one, nothing happens. Here's why that's normal.
-
+- ✅ Ep 24 — Month one, nothing happens. Here's why that's normal.
 ### Effort reduction (without…)
 - Make money online without a single sales call.
 - No cold calls, no ads, no camera. Here's the model.
