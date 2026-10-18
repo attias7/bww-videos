@@ -20,8 +20,6 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Under ~10 spoken words; the first 3 words must carry the callout or the tension.
 
 ## 3. Hook bank (✅ = used, with the episode)
-- ✅ Ep 25 — Why contractors say yes to: pay only if it closes.
-- ✅ Ep 22 — Every side hustle ends with: now get on a call.
 - ✅ Ep 21 — A two thousand dollar course won't make you less shy.
 - ✅ Ep 20 — If you feel behind, start with one small thing.
 - ✅ Ep 18 — Never heard of SEO? Here it is in thirty seconds.
@@ -60,7 +58,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - ✅ Ep 4 — You don't need to be good at sales to sell to contractors.
 - ✅ Ep 10 — Your website doesn't need to be pretty.
 - ✅ Ep 9 — The best rank and rent niche is a boring one.
-- "Learn sales first" is terrible advice for introverts.
+- ✅ Ep 28 — "Learn sales first" is terrible advice for introverts.
 - Stop trying to get more followers. Get one search.
 - A $2,000 course won't make you less shy.
 - Big cities are a trap for beginners.

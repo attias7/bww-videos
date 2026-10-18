@@ -300,7 +300,7 @@
     {
      "type": "checklist",
      "at": 12,
-     "y": 1000,
+     "y": 950,
      "dt": 1.8,
      "items": [
       {
@@ -320,7 +320,7 @@
     {
      "type": "chip",
      "at": 13,
-     "y": 1300,
+     "y": 1420,
      "text": "Follow · Ep. 29 next week",
      "fill": "y",
      "color": "dark",
@@ -330,7 +330,7 @@
     {
      "type": "text",
      "at": 13,
-     "y": 1470,
+     "y": 1590,
      "size": 70,
      "segs": [
       [

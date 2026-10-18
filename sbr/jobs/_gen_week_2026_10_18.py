@@ -385,9 +385,9 @@ J[28] = job(28, "learn_sales_bad_advice", "Learn sales first is terrible advice 
    T(12, 440, [["The whole process:", "w"]], 76),
    T(12, 570, [["Starter Kit", "y"]], 120, dt=0.5),
    E("bignum", 12, 760, dt=1.0, text="$37", size=200, color="g"),
-   E("checklist", 12, 1000, dt=1.8, items=[
+   E("checklist", 12, 950, dt=1.8, items=[
      {"text": "No calls", "ok": True, "at": 12, "dt": 1.8},
-     {"text": "No upsell", "ok": True, "at": 12, "dt": 2.3}])] + outro(13, "Ep. 29 next week", y=1300)}])
+     {"text": "No upsell", "ok": True, "at": 12, "dt": 2.3}])] + outro(13, "Ep. 29 next week", y=1420)}])
 
 for ep, j in J.items():
     n = len(j["lines"]); words = sum(len(l.split()) for l in j["lines"])
