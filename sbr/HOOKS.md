@@ -46,7 +46,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 ### Callout
 - Introverts who want their own income, watch this.
 - If sales calls make you sick, this is for you.
-- If you've never built a website, start here.
+- ✅ Ep 23 — If you've never built a website, start here.
 - Twenty-two and stuck in a job? Listen.
 - For people who hate DMing strangers.
 
