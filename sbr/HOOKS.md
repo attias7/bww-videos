@@ -20,6 +20,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Under ~10 spoken words; the first 3 words must carry the callout or the tension.
 
 ## 3. Hook bank (✅ = used, with the episode)
+- ✅ Ep 22 — Every side hustle ends with: now get on a call.
 - ✅ Ep 21 — A two thousand dollar course won't make you less shy.
 - ✅ Ep 20 — If you feel behind, start with one small thing.
 - ✅ Ep 18 — Never heard of SEO? Here it is in thirty seconds.
@@ -66,7 +67,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Big cities are a trap for beginners.
 
 ### Pain
-- Every side hustle ends with "now get on a call."
+- ✅ Ep 22 — Every side hustle ends with "now get on a call."
 - Tired of courses that upsell you into calls?
 - You don't hate business. You hate selling.
 - ✅ Ep 19 — Scared to message a business owner? Same.

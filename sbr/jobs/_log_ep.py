@@ -2,13 +2,13 @@
 import csv, sys, datetime, re, json, os
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + '/..')
 M = {
-15: ("2026-10-11","pain","Introverts: get contractors to pay you, no sales calls.","why every make-money-online path ends in a sales call + rank & rent where the customer finds you (months; leads don't always close)","ICP: night-time pain (sales dread) | hook type: hybrid (callout+result+objection removal)"),
-16: ("2026-10-12","fear-tech","Never built a site? Build one without code.","how small one lead site is (one service, one town, 3 parts; AI-assisted) + ranking is the hard part","ICP: fear (stuck on the tech) | hook type: hybrid (callout+ease)"),
-17: ("2026-10-13","suspicion","Sick of income screenshots? Here's the honest version.","what rank & rent actually takes: months, some sites never rank, leads that don't close","ICP: suspicion (income screenshots / courses) | hook type: callout/contrarian"),
-18: ("2026-10-14","education","Never heard of SEO? Here it is in thirty seconds.","SEO in plain words: answer the search, be useful, get mentioned; slow but a skill that stacks","ICP: goal (a skill that compounds) | hook type: callout"),
-19: ("2026-10-15","fear-owners","Scared to message a business owner? Same.","reaching contractors in writing: 27-comment group post + pay-on-close offer message (some won't reply)","ICP: fear (looking stupid talking to a business owner) | hook type: pain"),
-20: ("2026-10-16","build-in-public","If you feel behind, start with one small thing.","22 + introvert -> one service, one town, one site; first lead took ~1-3 months","ICP: night-time pain (feeling behind) + goal (proof to self/family) | hook type: callout/pain"),
-21: ("2026-10-17","enemy+soft-product","A two thousand dollar course won't make you less shy.","guru courses still end in calls; build around introversion + soft $37 Starter Kit mention (no calls, no upsell)","ICP: enemy ($2,000 courses with upsells/calls) | hook type: contrarian"),
+22: ("2026-10-18","pain","Every side hustle ends with: now get on a call.","why every side hustle (agency/freelancing/closing) ends in a call + flip it: customer finds you, contractor pays on close (months; leads don't always close)","ICP: night-time pain (sales dread) | hook type: pain"),
+23: ("2026-10-19","fear-tech","If you've never built a website, start here.","start with one service + one town, search it first, site = 3 things, AI helps; ranking takes months and might not happen","ICP: fear (stuck on the tech) | hook type: callout"),
+24: ("2026-10-20","suspicion","Month one, nothing happens. Here's why that's normal.","honest timeline: new site is a stranger to Google, month one is quiet, make page useful; first lead ~1-3 months; some sites never rank","ICP: suspicion (income screenshots skip the boring part) + fear (months and it never works) | hook type: time/honest"),
+25: ("2026-10-21","education","Why contractors say yes to: pay only if it closes.","pay-on-close from the contractor's side vs ads/lead sellers; risk on you; some say no, trust needed","ICP: goal (a skill that compounds: offer design) | hook type: mechanism"),
+26: ("2026-10-22","fear-owners","Find a contractor without picking up the phone.","3 written ways to reach contractors (FB group - the 27 comments, contact form, email from Google listing) + short message; comments aren't customers","ICP: fear (looking stupid talking to a business owner) | hook type: effort reduction"),
+27: ("2026-10-23","build-in-public","How I built a business around being an introvert.","22 + introvert -> 3 design rules (customers find me, writing not calls, pay-on-close); not zero talking; first lead ~1-3 months","ICP: night-time pain (dreads selling) + goal (proof they can do it) | hook type: how-I"),
+28: ("2026-10-24","enemy+soft-product","Learn sales first is terrible advice for introverts.","'learn sales first' advice vs changing the model + soft $37 Starter Kit mention (no calls, no upsell)","ICP: enemy ('you have to be good at sales' advice) | hook type: contrarian"),
 }
 n = int(sys.argv[1]); status = sys.argv[2]
 d, pillar, hook, topic, notes = M[n]
