@@ -73,3 +73,14 @@ Free analysis test in bio.
 ## Carousel · Ep 9 Saka — 2026-10-19 12:00
 IG: Stop asking for the ball to feet. Swipe → / Saka's four habits: run in behind, dart inside, far post then cut back, fewer touches. / Save this for your next game. / reel hashtags
 TT: Stop asking for the ball to feet. Swipe → / 4 habits from watching Saka. / 7 hashtags
+
+## Ep 10 · PD #5 · No.10 gap — 2026-10-19
+You've got one second. Find the gap.
+You're the number ten, 0-0, thirty minutes in. You get it just outside their box and their centre-back steps out to close you down. Your striker is right behind him.
+Shoot, lay it wide, or slip the striker in? Comment A, B or C 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #number10 #unscouted
+
+## Carousel · Ep 10 No.10 gap — 2026-10-20 12:00
+IG: 0-0, 30th minute, their centre-back steps out to you. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
+TT: 0-0, 30th minute, their centre-back steps out to you. Swipe → / A, B or C? Decide before slide 4. / 7 hashtags
