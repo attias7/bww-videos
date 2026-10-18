@@ -31,6 +31,8 @@ One line: *Unscouted helps players outside academies think and play like pros, u
 - Stop smashing your shots. ✅ *used: Haaland*
 - Stop watching highlights. They're making you worse.
 - Stop asking your coach what to work on.
+- Stop asking for the ball to feet. ✅ *used: Ep 9 (Saka)*
+- Stop trying to score worldies. ✅ *used: Ep 11 (Kane)*
 
 ### Curiosity gap (pros vs you)
 - Pros make this decision before the ball even arrives. ✅ *used: PD #3*
@@ -52,6 +54,8 @@ One line: *Unscouted helps players outside academies think and play like pros, u
 - Only real footballers get this right. A, B or C?
 - You have 3 seconds. What do you do?
 - Your coach is watching. Pick one.
+- You've got one second. Find the gap. ✅ *used: Ep 10 (PD #5, No.10)*
+- You're through on goal. Now what? ✅ *used: Ep 12 (PD #6, striker)*
 
 ### Transformation / story
 - I failed a Barcelona academy trial at 15. Here's what they told me.
