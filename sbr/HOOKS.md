@@ -41,8 +41,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Make money online without a single sales call.
 - No cold calls, no ads, no camera. Here's the model.
 - Build your first lead site without knowing how to code.
-- Find a contractor without picking up the phone.
-
+- ✅ Ep 26 — Find a contractor without picking up the phone.
 ### Callout
 - Introverts who want their own income, watch this.
 - If sales calls make you sick, this is for you.
