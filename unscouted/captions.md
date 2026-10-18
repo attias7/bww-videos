@@ -62,3 +62,14 @@ TT: same first two lines / 7 hashtags
 ## Carousel · Ep 7 tight angle — 2026-10-18 12:00
 IG: Getting closer to goal can cost you. Swipe → / From the corner of the six-yard box the goal is 22° wide. From the penalty spot, 37°. Tight angle? Look for the cutback first. / Save this for your next game. / reel hashtags
 TT: Getting closer to goal can cost you. Swipe → / 22° from the six-yard box corner. 37° from the spot. / 7 hashtags
+
+## Ep 9 · PLAYER BREAKDOWN · Saka — 2026-10-18
+Stop asking for the ball to feet.
+I broke down Saka's games at Arsenal. Four habits you can copy: run in behind when the full-back is close, dart inside when your full-back has it, far post then cut back, and fewer touches before the shot.
+Which one do you need most? Comment 1, 2, 3 or 4 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #winger #unscouted
+
+## Carousel · Ep 9 Saka — 2026-10-19 12:00
+IG: Stop asking for the ball to feet. Swipe → / Saka's four habits: run in behind, dart inside, far post then cut back, fewer touches. / Save this for your next game. / reel hashtags
+TT: Stop asking for the ball to feet. Swipe → / 4 habits from watching Saka. / 7 hashtags
