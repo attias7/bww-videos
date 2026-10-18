@@ -51,7 +51,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 
 ### "How I" (real facts only)
 - How I found a contractor without one phone call.
-- How I built a business around being an introvert.
+- ✅ Ep 27 — How I built a business around being an introvert.
 - How one post got twenty-seven contractors to reply.
 - ✅ Ep 11 — I'm twenty-two. And I'm an introvert.
 - ✅ Ep 5 — I posted once in a contractor Facebook group. Twenty-seven contractors commented.
