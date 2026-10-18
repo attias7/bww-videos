@@ -95,3 +95,10 @@ Free analysis test in bio.
 ## Carousel · Ep 11 Kane — 2026-10-21 12:00
 IG: Stop trying to score worldies. Swipe → / Kane's four habits: between the posts, body half-turned, direction over power, on target first. / Save this for your next game. / reel hashtags
 TT: Stop trying to score worldies. Swipe → / 4 habits from watching Kane. / 7 hashtags
+
+## Ep 12 · PD #6 · Striker through on goal — 2026-10-21
+You're through on goal. Now what?
+You're the striker, 1-0 down, seventy-five minutes in. The keeper is rushing out, your winger is free on your left and a defender is chasing you.
+Shoot early, square it, or round the keeper? Comment A, B or C 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #striker #unscouted
