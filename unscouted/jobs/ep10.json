@@ -1,0 +1,558 @@
+{
+ "episode": 10,
+ "series": "PAUSE & DECIDE · #5",
+ "hook": "You've got one second. Find the gap.",
+ "voice": "../voices/ep10.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep10_pd05_ten_gap.mp4",
+ "lines": [
+  "You've got one second. Find the gap.",
+  "You're the number ten. Nil-nil, thirty minutes in.",
+  "You get the ball just outside their box.",
+  "Their centre-back steps out of the line to close you down.",
+  "Your striker is right behind him.",
+  "Pause. What do you do?",
+  "A. Shoot from where you are.",
+  "B. Lay it wide to your winger.",
+  "C. Slip your striker into the gap.",
+  "Comment your answer.",
+  "I'd go C.",
+  "When a centre-back steps out, he leaves a hole behind him.",
+  "Your striker's already in it, one pass from the keeper.",
+  "Shooting through bodies from there? Low chance.",
+  "No perfect answer. If your striker's marked, lay it wide.",
+  "But scan before the ball comes, and you'll see the gap first.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 620,
+     "size": 130,
+     "segs": [
+      [
+       "ONE SECOND.",
+       "dark"
+      ]
+     ],
+     "bg": "y",
+     "dt": -0.5
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 800,
+     "size": 130,
+     "segs": [
+      [
+       "FIND THE ",
+       "dark"
+      ],
+      [
+       "GAP.",
+       "r"
+      ]
+     ],
+     "bg": "y",
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "dt": 0.8,
+     "y": 1080,
+     "text": "Number tens, watch this",
+     "fill": "dark",
+     "color": "y",
+     "size": 48
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "y": 210,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "0-0",
+     "minute": "30'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.1,
+     "y": 470,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.5,
+       "y": 0.5,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.43
+         ],
+         "at": 2,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "cb1",
+       "team": "them",
+       "x": 0.44,
+       "y": 0.24,
+       "path": [
+        {
+         "to": [
+          0.49,
+          0.35
+         ],
+         "at": 3,
+         "dt": 0.3,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "cb2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.24
+      },
+      {
+       "id": "dm",
+       "team": "them",
+       "x": 0.66,
+       "y": 0.4
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.42,
+       "y": 0.26,
+       "label": "ST"
+      },
+      {
+       "id": "w",
+       "team": "us",
+       "x": 0.9,
+       "y": 0.36,
+       "label": "W"
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.03
+      }
+     ],
+     "ball": {
+      "x": 0.5,
+      "y": 0.75,
+      "path": [
+       {
+        "with": "me",
+        "at": 2,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.45,
+        0.26
+       ],
+       "to": [
+        0.49,
+        0.33
+       ],
+       "color": "r",
+       "at": 3,
+       "dt": 0.4
+      }
+     ],
+     "pause": {
+      "at": 5
+     }
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "dt": 0.5,
+     "y": 1500,
+     "text": "Their CB steps out",
+     "fill": "y",
+     "color": "dark",
+     "size": 40
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "CB steps ",
+       "w"
+      ],
+      [
+       "out",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "options",
+     "at": 6,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Shoot from there",
+       "at": 6
+      },
+      {
+       "key": "B",
+       "text": "Lay it wide",
+       "at": 7
+      },
+      {
+       "key": "C",
+       "text": "Slip the striker in",
+       "at": 8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 9,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "CB steps ",
+       "w"
+      ],
+      [
+       "out",
+       "y"
+      ]
+     ],
+     "dt": -0.2
+    },
+    {
+     "type": "options",
+     "at": 10,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Shoot from there",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Lay it wide",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Slip the striker in",
+       "at": 10,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 10,
+      "dt": 0.15,
+      "correct": "C"
+     }
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1250,
+     "size": 110,
+     "segs": [
+      [
+       "C. ",
+       "y"
+      ],
+      [
+       "Slip him in.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 260,
+     "text": "A hole behind him",
+     "fill": "y",
+     "color": "dark",
+     "size": 44
+    },
+    {
+     "type": "pitch",
+     "at": 11,
+     "dt": -0.1,
+     "y": 440,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.5,
+       "y": 0.43,
+       "label": "YOU"
+      },
+      {
+       "id": "cb1",
+       "team": "them",
+       "x": 0.49,
+       "y": 0.35
+      },
+      {
+       "id": "cb2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.24
+      },
+      {
+       "id": "dm",
+       "team": "them",
+       "x": 0.66,
+       "y": 0.4
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.42,
+       "y": 0.26,
+       "label": "ST",
+       "path": [
+        {
+         "to": [
+          0.46,
+          0.12
+         ],
+         "at": 12,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.03
+      }
+     ],
+     "ball": {
+      "with": "me",
+      "path": [
+       {
+        "to": [
+         0.46,
+         0.13
+        ],
+        "at": 12,
+        "dt": 0.2,
+        "dur": 0.8
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.49,
+        0.41
+       ],
+       "to": [
+        0.46,
+        0.15
+       ],
+       "color": "y",
+       "at": 11,
+       "dt": 0.8,
+       "label": "the gap"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Shot through bodies: ",
+       "w"
+      ],
+      [
+       "low chance",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 480,
+     "text": "NO PERFECT ANSWER",
+     "fill": "r",
+     "color": "w",
+     "size": 46
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 680,
+     "size": 76,
+     "segs": [
+      [
+       "Striker marked? ",
+       "w"
+      ],
+      [
+       "B works.",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "bignum",
+     "at": 15,
+     "y": 940,
+     "text": "SCAN",
+     "size": 220,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1140,
+     "size": 64,
+     "segs": [
+      [
+       "before the ball comes",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "elements": [
+    {
+     "type": "text",
+     "at": 16,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 16,
+     "dt": 0.6,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 16,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "weight": "medium",
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}

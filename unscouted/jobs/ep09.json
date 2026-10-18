@@ -1,0 +1,656 @@
+{
+ "episode": 9,
+ "series": "PLAYER BREAKDOWN · SAKA",
+ "hook": "Stop asking for the ball to feet.",
+ "voice": "../voices/ep09.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep09_bd03_saka.mp4",
+ "lines": [
+  "Stop asking for the ball to feet.",
+  "Here's what I learned watching Saka.",
+  "I broke down his games at Arsenal.",
+  "One. When his full-back is close, he runs in behind.",
+  "That's where his best chances came from.",
+  "Two. When his full-back gets the ball, he darts inside.",
+  "So he receives facing the middle, not the touchline.",
+  "Three. On a cross from the other side, he attacks the far post.",
+  "If that's blocked, he cuts back to the middle for the shot.",
+  "Four. Fewer touches.",
+  "One extra touch, and his shot got blocked.",
+  "At that level, two touches beats three.",
+  "So next game, don't just come short. Run.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "size": 130,
+     "segs": [
+      [
+       "STOP ASKING",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 770,
+     "size": 130,
+     "segs": [
+      [
+       "TO ",
+       "dark"
+      ],
+      [
+       "FEET.",
+       "r"
+      ]
+     ],
+     "dt": 0.2,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "dt": 0.6,
+     "y": 1000,
+     "text": "SAKA · 4 HABITS",
+     "fill": "dark",
+     "color": "y",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 600,
+     "size": 90,
+     "segs": [
+      [
+       "What I learned",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 720,
+     "size": 90,
+     "segs": [
+      [
+       "watching ",
+       "w"
+      ],
+      [
+       "Saka",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 1000,
+     "text": "4",
+     "size": 260,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1210,
+     "size": 64,
+     "segs": [
+      [
+       "habits you can copy",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "1. Full-back close? ",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 420,
+     "size": 72,
+     "segs": [
+      [
+       "Run in behind.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "pitch",
+     "at": 3,
+     "y": 540,
+     "h": 900,
+     "players": [
+      {
+       "id": "s",
+       "team": "me",
+       "x": 0.94,
+       "y": 0.56,
+       "label": "SAKA",
+       "path": [
+        {
+         "to": [
+          0.88,
+          0.2
+         ],
+         "at": 3,
+         "dt": 0.8,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "them",
+       "x": 0.78,
+       "y": 0.46,
+       "label": "FULL-BACK",
+       "path": [
+        {
+         "to": [
+          0.85,
+          0.3
+         ],
+         "at": 4,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "cb",
+       "team": "them",
+       "x": 0.6,
+       "y": 0.32
+      },
+      {
+       "id": "m",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.72
+      }
+     ],
+     "ball": {
+      "with": "m",
+      "path": [
+       {
+        "to": [
+         0.86,
+         0.22
+        ],
+        "at": 4,
+        "dt": 0.1,
+        "dur": 0.8
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.94,
+        0.53
+       ],
+       "to": [
+        0.88,
+        0.22
+       ],
+       "color": "y",
+       "at": 3,
+       "dt": 0.6,
+       "label": "in behind"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1520,
+     "size": 64,
+     "segs": [
+      [
+       "His ",
+       "w"
+      ],
+      [
+       "best chances.",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "2. Full-back on the ball?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "size": 72,
+     "segs": [
+      [
+       "Dart inside.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "pitch",
+     "at": 5,
+     "dt": -0.1,
+     "y": 540,
+     "h": 900,
+     "players": [
+      {
+       "id": "rb",
+       "team": "us",
+       "x": 0.92,
+       "y": 0.82,
+       "label": "RB"
+      },
+      {
+       "id": "s",
+       "team": "me",
+       "x": 0.95,
+       "y": 0.5,
+       "label": "SAKA",
+       "path": [
+        {
+         "to": [
+          0.7,
+          0.55
+         ],
+         "at": 5,
+         "dt": 0.6,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "them",
+       "x": 0.88,
+       "y": 0.42,
+       "label": "FULL-BACK"
+      },
+      {
+       "id": "cm",
+       "team": "them",
+       "x": 0.55,
+       "y": 0.45
+      }
+     ],
+     "ball": {
+      "with": "rb",
+      "path": [
+       {
+        "with": "s",
+        "at": 6,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.94,
+        0.52
+       ],
+       "to": [
+        0.72,
+        0.55
+       ],
+       "color": "y",
+       "at": 5,
+       "dt": 0.5
+      },
+      {
+       "from": [
+        0.7,
+        0.52
+       ],
+       "to": [
+        0.5,
+        0.25
+       ],
+       "color": "w",
+       "at": 6,
+       "dt": 0.7,
+       "dashed": true,
+       "label": "facing the middle"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "3. Far post...",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 420,
+     "size": 72,
+     "segs": [
+      [
+       "then cut back.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "pitch",
+     "at": 7,
+     "dt": -0.1,
+     "y": 540,
+     "h": 900,
+     "players": [
+      {
+       "id": "lw",
+       "team": "us",
+       "x": 0.1,
+       "y": 0.28,
+       "label": "CROSS"
+      },
+      {
+       "id": "s",
+       "team": "me",
+       "x": 0.86,
+       "y": 0.4,
+       "label": "SAKA",
+       "path": [
+        {
+         "to": [
+          0.72,
+          0.12
+         ],
+         "at": 7,
+         "dt": 0.6,
+         "dur": 0.9
+        },
+        {
+         "to": [
+          0.55,
+          0.2
+         ],
+         "at": 8,
+         "dt": 0.4,
+         "dur": 0.7
+        }
+       ]
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.66,
+       "y": 0.1,
+       "path": [
+        {
+         "to": [
+          0.71,
+          0.1
+         ],
+         "at": 8,
+         "dur": 0.5
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.45,
+       "y": 0.12
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.02
+      }
+     ],
+     "ball": {
+      "with": "lw"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.84,
+        0.38
+       ],
+       "to": [
+        0.73,
+        0.14
+       ],
+       "color": "y",
+       "at": 7,
+       "dt": 0.4,
+       "label": "far post"
+      },
+      {
+       "from": [
+        0.71,
+        0.14
+       ],
+       "to": [
+        0.56,
+        0.21
+       ],
+       "color": "y",
+       "at": 8,
+       "dt": 0.3,
+       "label": "shot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 520,
+     "size": 100,
+     "segs": [
+      [
+       "4. Fewer ",
+       "w"
+      ],
+      [
+       "touches.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 760,
+     "size": 70,
+     "segs": [
+      [
+       "1 extra touch =",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 860,
+     "size": 70,
+     "segs": [
+      [
+       "shot blocked.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "bignum",
+     "at": 11,
+     "y": 1130,
+     "text": "2 > 3",
+     "size": 220,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 1340,
+     "size": 60,
+     "segs": [
+      [
+       "touches before the shot",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 640,
+     "size": 80,
+     "segs": [
+      [
+       "Don't just ",
+       "w"
+      ],
+      [
+       "come short.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 12,
+     "dt": 1.0,
+     "y": 880,
+     "text": "RUN.",
+     "size": 240,
+     "color": "y"
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "text",
+     "at": 13,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "dt": 0.6,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

@@ -58,3 +58,7 @@ Free analysis test in bio.
 ## Carousel · Ep 8 full-back — 2026-10-17 12:00
 IG: 60th minute, 1-1, their winger runs at you. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
 TT: same first two lines / 7 hashtags
+
+## Carousel · Ep 7 tight angle — 2026-10-18 12:00
+IG: Getting closer to goal can cost you. Swipe → / From the corner of the six-yard box the goal is 22° wide. From the penalty spot, 37°. Tight angle? Look for the cutback first. / Save this for your next game. / reel hashtags
+TT: Getting closer to goal can cost you. Swipe → / 22° from the six-yard box corner. 37° from the spot. / 7 hashtags

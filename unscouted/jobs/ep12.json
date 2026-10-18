@@ -1,0 +1,561 @@
+{
+ "episode": 12,
+ "series": "PAUSE & DECIDE · #6",
+ "hook": "You're through on goal. Now what?",
+ "voice": "../voices/ep12.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep12_pd06_through.mp4",
+ "lines": [
+  "You're through on goal. Now what?",
+  "You're the striker. One-nil down, seventy-five minutes in.",
+  "You're through, but the keeper is rushing out.",
+  "Your winger is running in on your left, totally free.",
+  "A defender is chasing you from behind.",
+  "Pause. What do you do?",
+  "A. Shoot early, before the keeper arrives.",
+  "B. Square it to your winger.",
+  "C. Take it round the keeper.",
+  "Comment your answer.",
+  "I'd go B.",
+  "The keeper's coming at you, so your angle is getting smaller.",
+  "One pass across him, and it's an empty net.",
+  "Rounding him is slow, and the defender catches up.",
+  "No perfect answer. If your winger's not level, shoot early.",
+  "But you only see that pass if you scanned before you got through.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 620,
+     "size": 130,
+     "segs": [
+      [
+       "YOU'RE THROUGH.",
+       "dark"
+      ]
+     ],
+     "bg": "y",
+     "dt": -0.5
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 800,
+     "size": 130,
+     "segs": [
+      [
+       "NOW ",
+       "dark"
+      ],
+      [
+       "WHAT?",
+       "r"
+      ]
+     ],
+     "bg": "y",
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "dt": 0.8,
+     "y": 1080,
+     "text": "Strikers, watch this",
+     "fill": "dark",
+     "color": "y",
+     "size": 48
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "y": 210,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "0-1",
+     "minute": "75'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.1,
+     "y": 470,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.55,
+       "y": 0.55,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.56,
+          0.3
+         ],
+         "at": 2,
+         "dur": 1.2
+        }
+       ]
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.03,
+       "path": [
+        {
+         "to": [
+          0.53,
+          0.14
+         ],
+         "at": 2,
+         "dt": 0.6,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "w",
+       "team": "us",
+       "x": 0.25,
+       "y": 0.55,
+       "label": "W",
+       "path": [
+        {
+         "to": [
+          0.33,
+          0.3
+         ],
+         "at": 3,
+         "dur": 1.1
+        }
+       ]
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.68,
+       "path": [
+        {
+         "to": [
+          0.6,
+          0.4
+         ],
+         "at": 4,
+         "dur": 1.0
+        }
+       ]
+      }
+     ],
+     "ball": {
+      "with": "me"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.6,
+        0.66
+       ],
+       "to": [
+        0.6,
+        0.42
+       ],
+       "color": "r",
+       "at": 4,
+       "dt": 0.1
+      }
+     ],
+     "pause": {
+      "at": 5
+     }
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "dt": 0.4,
+     "y": 1500,
+     "text": "Winger free on your left",
+     "fill": "y",
+     "color": "dark",
+     "size": 40
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Keeper ",
+       "w"
+      ],
+      [
+       "rushing out",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "options",
+     "at": 6,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Shoot early",
+       "at": 6
+      },
+      {
+       "key": "B",
+       "text": "Square it",
+       "at": 7
+      },
+      {
+       "key": "C",
+       "text": "Round the keeper",
+       "at": 8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 9,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Keeper ",
+       "w"
+      ],
+      [
+       "rushing out",
+       "y"
+      ]
+     ],
+     "dt": -0.2
+    },
+    {
+     "type": "options",
+     "at": 10,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Shoot early",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Square it",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Round the keeper",
+       "at": 10,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 10,
+      "dt": 0.15,
+      "correct": "B"
+     }
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1250,
+     "size": 110,
+     "segs": [
+      [
+       "B. ",
+       "y"
+      ],
+      [
+       "Square it.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 260,
+     "text": "Your angle is shrinking",
+     "fill": "y",
+     "color": "dark",
+     "size": 44
+    },
+    {
+     "type": "pitch",
+     "at": 11,
+     "dt": -0.1,
+     "y": 440,
+     "h": 960,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.58,
+       "y": 0.21,
+       "label": "YOU"
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.55,
+       "y": 0.126
+      },
+      {
+       "id": "w",
+       "team": "us",
+       "x": 0.32,
+       "y": 0.21,
+       "label": "W",
+       "path": [
+        {
+         "to": [
+          0.36,
+          0.11
+         ],
+         "at": 11,
+         "dt": 0.5,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.336,
+       "path": [
+        {
+         "to": [
+          0.6,
+          0.244
+         ],
+         "at": 13,
+         "dur": 0.9
+        }
+       ]
+      }
+     ],
+     "ball": {
+      "with": "me",
+      "path": [
+       {
+        "with": "w",
+        "at": 12,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.55,
+        0.2
+       ],
+       "to": [
+        0.38,
+        0.12
+       ],
+       "color": "y",
+       "at": 12,
+       "dt": -0.1,
+       "label": "empty net"
+      },
+      {
+       "from": [
+        0.62,
+        0.328
+       ],
+       "to": [
+        0.6,
+        0.252
+       ],
+       "color": "r",
+       "at": 13,
+       "dt": 0.2
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Rounding him? ",
+       "w"
+      ],
+      [
+       "Too slow.",
+       "r"
+      ]
+     ],
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 480,
+     "text": "NO PERFECT ANSWER",
+     "fill": "r",
+     "color": "w",
+     "size": 46
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 680,
+     "size": 72,
+     "segs": [
+      [
+       "Winger not level? ",
+       "w"
+      ],
+      [
+       "Shoot early.",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "bignum",
+     "at": 15,
+     "y": 940,
+     "text": "SCAN",
+     "size": 220,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1140,
+     "size": 60,
+     "segs": [
+      [
+       "before you're through",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "elements": [
+    {
+     "type": "text",
+     "at": 16,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 16,
+     "dt": 0.6,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 16,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "weight": "medium",
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}

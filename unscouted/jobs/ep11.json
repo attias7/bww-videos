@@ -1,0 +1,550 @@
+{
+ "episode": 11,
+ "series": "PLAYER BREAKDOWN · KANE",
+ "hook": "Stop trying to score worldies.",
+ "voice": "../voices/ep11.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep11_bd04_kane.mp4",
+ "lines": [
+  "Stop trying to score worldies.",
+  "Harry Kane scores the easy ones. Again and again.",
+  "Here's what I took from watching him.",
+  "One. Every cross, every shot from a teammate, he's between the two posts.",
+  "That's where the rebounds and tap-ins land.",
+  "Two. His body is always half-turned towards goal.",
+  "So one touch, and he's already shooting.",
+  "Three. First time from the wing? He doesn't add power.",
+  "He just points the ball at the goal.",
+  "Four. When he does shoot hard, it goes in the corner.",
+  "In training, the only thing he cares about is hitting the target.",
+  "Easy goals still count.",
+  "So next game, stop waiting for the worldie. Get between the posts.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "size": 130,
+     "segs": [
+      [
+       "STOP SCORING",
+       "dark"
+      ]
+     ],
+     "bg": "y",
+     "dt": -0.5
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 770,
+     "size": 130,
+     "segs": [
+      [
+       "WORLDIES.",
+       "r"
+      ]
+     ],
+     "bg": "y",
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "dt": 0.6,
+     "y": 1000,
+     "text": "KANE · 4 HABITS",
+     "fill": "dark",
+     "color": "y",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 600,
+     "size": 90,
+     "segs": [
+      [
+       "Kane scores",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 720,
+     "size": 90,
+     "segs": [
+      [
+       "the ",
+       "w"
+      ],
+      [
+       "easy ones.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 1000,
+     "text": "4",
+     "size": 260,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1210,
+     "size": 64,
+     "segs": [
+      [
+       "habits you can copy",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "1. Between ",
+       "w"
+      ],
+      [
+       "the posts.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 3,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "k",
+       "team": "me",
+       "x": 0.62,
+       "y": 0.21,
+       "label": "KANE",
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.092
+         ],
+         "at": 3,
+         "dt": 0.8,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "t",
+       "team": "us",
+       "x": 0.15,
+       "y": 0.231,
+       "label": "CROSS"
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.42,
+       "y": 0.126
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.6,
+       "y": 0.147
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "t"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.38,
+        0.05
+       ],
+       "to": [
+        0.62,
+        0.05
+       ],
+       "color": "y",
+       "at": 4,
+       "label": "tap-in zone"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Rebounds & tap-ins ",
+       "w"
+      ],
+      [
+       "land here.",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "2. Body ",
+       "w"
+      ],
+      [
+       "half-turned.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 5,
+     "dt": -0.1,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "k",
+       "team": "me",
+       "x": 0.55,
+       "y": 0.189,
+       "label": "KANE"
+      },
+      {
+       "id": "m",
+       "team": "us",
+       "x": 0.2,
+       "y": 0.357
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.48,
+       "y": 0.16
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "m",
+      "path": [
+       {
+        "with": "k",
+        "at": 6,
+        "dur": 0.6
+       },
+       {
+        "to": [
+         0.6,
+         0.008
+        ],
+        "at": 6,
+        "dt": 0.8,
+        "dur": 0.4
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.55,
+        0.181
+       ],
+       "to": [
+        0.62,
+        0.042
+       ],
+       "color": "y",
+       "at": 6,
+       "dt": 0.6,
+       "label": "1 touch, shot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 480,
+     "size": 80,
+     "segs": [
+      [
+       "3. First time? ",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 600,
+     "size": 80,
+     "segs": [
+      [
+       "No extra power.",
+       "y"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 860,
+     "size": 72,
+     "segs": [
+      [
+       "Just ",
+       "w"
+      ],
+      [
+       "aim it.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 8,
+     "dt": 0.6,
+     "y": 1060,
+     "text": "DIRECTION > POWER",
+     "fill": "y",
+     "color": "dark",
+     "size": 52
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 480,
+     "size": 76,
+     "segs": [
+      [
+       "4. Hit hard? ",
+       "w"
+      ],
+      [
+       "Corner.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "size": 64,
+     "segs": [
+      [
+       "In training he only cares",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 790,
+     "size": 64,
+     "segs": [
+      [
+       "about one thing:",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "dt": 1.2,
+     "y": 990,
+     "text": "ON TARGET",
+     "size": 150,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 1250,
+     "size": 70,
+     "segs": [
+      [
+       "Easy goals ",
+       "w"
+      ],
+      [
+       "still count.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 600,
+     "size": 76,
+     "segs": [
+      [
+       "Stop waiting for",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 700,
+     "size": 76,
+     "segs": [
+      [
+       "the worldie.",
+       "r"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "bignum",
+     "at": 12,
+     "dt": 1.6,
+     "y": 950,
+     "text": "POSTS.",
+     "size": 220,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1160,
+     "size": 60,
+     "segs": [
+      [
+       "Get between them.",
+       "w"
+      ]
+     ],
+     "dt": 1.9
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "text",
+     "at": 13,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "dt": 0.6,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "weight": "medium",
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}
