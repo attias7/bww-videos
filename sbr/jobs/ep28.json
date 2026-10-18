@@ -1,0 +1,346 @@
+{
+ "episode": 28,
+ "series": "NO COLD CALLS · EP. 28",
+ "hook": "Learn sales first is terrible advice for introverts.",
+ "voice": "../voices/ep28.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep28_learn_sales_bad_advice.mp4",
+ "lines": [
+  "Learn sales first is terrible advice for introverts.",
+  "Every guru says it.",
+  "Get good at the phone. Do a hundred cold calls.",
+  "For some people that works.",
+  "For people like me, it's why we never start.",
+  "So skip the part you dread and change the model.",
+  "Let Google bring the customer.",
+  "Reach contractors in writing.",
+  "Offer pay only if the job closes.",
+  "Real talk.",
+  "You'll still write messages, and some will say no.",
+  "And ranking takes months.",
+  "I put the whole process in the thirty-seven dollar Starter Kit. No calls, no upsell.",
+  "Follow. Ep. twenty-nine next week."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 92,
+     "segs": [
+      [
+       "\"Learn sales first\"",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 660,
+     "size": 88,
+     "segs": [
+      [
+       "is terrible advice",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "size": 96,
+     "segs": [
+      [
+       "for introverts.",
+       "r"
+      ]
+     ],
+     "dt": 1.1
+    },
+    {
+     "type": "crossphone",
+     "at": 0,
+     "y": 1100,
+     "dt": 1.5
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 520,
+     "size": 84,
+     "segs": [
+      [
+       "Every guru says it:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 700,
+     "items": [
+      {
+       "text": "Get good at the phone",
+       "ok": false,
+       "at": 2
+      },
+      {
+       "text": "100 cold calls",
+       "ok": false,
+       "at": 2,
+       "dt": 0.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1100,
+     "size": 84,
+     "segs": [
+      [
+       "Works for ",
+       "w"
+      ],
+      [
+       "some.",
+       "g"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1220,
+     "size": 66,
+     "segs": [
+      [
+       "For me? Why we ",
+       "w"
+      ],
+      [
+       "never start.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "size": 80,
+     "segs": [
+      [
+       "Skip what you dread.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 530,
+     "size": 92,
+     "segs": [
+      [
+       "Change the ",
+       "w"
+      ],
+      [
+       "model.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "flow",
+     "at": 6,
+     "y": 700,
+     "gap": 230,
+     "nodes": [
+      {
+       "label": "Google brings the customer",
+       "color": "y",
+       "at": 6
+      },
+      {
+       "label": "Contractors in writing",
+       "color": "b",
+       "at": 7
+      },
+      {
+       "label": "Pay only if it closes",
+       "color": "g",
+       "at": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 9,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 660,
+     "size": 70,
+     "segs": [
+      [
+       "You still write messages.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 770,
+     "size": 76,
+     "segs": [
+      [
+       "Some say ",
+       "w"
+      ],
+      [
+       "no.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 920,
+     "size": 80,
+     "segs": [
+      [
+       "Ranking takes ",
+       "w"
+      ],
+      [
+       "months.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "calendar",
+     "at": 11,
+     "y": 1100,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 440,
+     "size": 76,
+     "segs": [
+      [
+       "The whole process:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 570,
+     "size": 120,
+     "segs": [
+      [
+       "Starter Kit",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "bignum",
+     "at": 12,
+     "y": 760,
+     "dt": 1.0,
+     "text": "$37",
+     "size": 200,
+     "color": "g"
+    },
+    {
+     "type": "checklist",
+     "at": 12,
+     "y": 1000,
+     "dt": 1.8,
+     "items": [
+      {
+       "text": "No calls",
+       "ok": true,
+       "at": 12,
+       "dt": 1.8
+      },
+      {
+       "text": "No upsell",
+       "ok": true,
+       "at": 12,
+       "dt": 2.3
+      }
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "y": 1300,
+     "text": "Follow · Ep. 29 next week",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1470,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

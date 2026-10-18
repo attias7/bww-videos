@@ -1,0 +1,342 @@
+{
+ "episode": 26,
+ "series": "NO COLD CALLS · EP. 26",
+ "hook": "Find a contractor without picking up the phone.",
+ "voice": "../voices/ep26.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep26_contractor_without_phone.mp4",
+ "lines": [
+  "Find a contractor without picking up the phone.",
+  "When a quote request comes in, you need a contractor.",
+  "You can do that all in writing.",
+  "One. Post in a local contractor Facebook group.",
+  "I posted once, and twenty-seven contractors commented.",
+  "Two. Use the contact form on their website.",
+  "Three. Email the address on their Google listing.",
+  "Keep it short.",
+  "I have a homeowner in your town who wants a quote.",
+  "You only pay if you close the job.",
+  "Real talk.",
+  "Comments aren't customers.",
+  "Plenty won't reply, and some just say no.",
+  "But nobody made me pick up the phone.",
+  "Follow. Ep. twenty-seven is built for introverts."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 96,
+     "segs": [
+      [
+       "Find a contractor",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "crossphone",
+     "at": 0,
+     "y": 820,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1140,
+     "size": 96,
+     "segs": [
+      [
+       "no phone",
+       "r"
+      ],
+      [
+       " needed.",
+       "w"
+      ]
+     ],
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "form",
+     "at": 1,
+     "y": 340,
+     "title": "New quote request",
+     "fields": [
+      [
+       "Town",
+       "Smalltown"
+      ],
+      [
+       "Job",
+       "Gutter cleaning"
+      ]
+     ],
+     "button": "Request quote"
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1470,
+     "size": 92,
+     "segs": [
+      [
+       "Who gets it?",
+       "y"
+      ]
+     ],
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 640,
+     "size": 110,
+     "segs": [
+      [
+       "All in",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 780,
+     "size": 120,
+     "segs": [
+      [
+       "writing.",
+       "g"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "crossphone",
+     "at": 2,
+     "y": 1100,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "steps",
+     "at": 3,
+     "y": 420,
+     "items": [
+      {
+       "text": "1. Facebook group",
+       "at": 3
+      },
+      {
+       "text": "2. Contact form",
+       "at": 5
+      },
+      {
+       "text": "3. Email from Maps",
+       "at": 6
+      }
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 1110,
+     "text": "27",
+     "size": 200,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1320,
+     "size": 66,
+     "segs": [
+      [
+       "contractors commented",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 1440,
+     "text": "on one post",
+     "fill": null,
+     "color": "grey",
+     "size": 36,
+     "dt": 0.9,
+     "outline": "grey"
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 380,
+     "size": 100,
+     "segs": [
+      [
+       "Keep it ",
+       "w"
+      ],
+      [
+       "short.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "chat",
+     "at": 8,
+     "y": 540,
+     "name": "Smalltown Gutters",
+     "sub": "illustrative",
+     "messages": [
+      "I have a homeowner in your\ntown who wants a quote.",
+      "You only pay if you\nclose the job."
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 660,
+     "size": 80,
+     "segs": [
+      [
+       "Comments ",
+       "w"
+      ],
+      [
+       "aren't",
+       "r"
+      ],
+      [
+       " customers.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 800,
+     "size": 76,
+     "segs": [
+      [
+       "Plenty won't reply.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 910,
+     "size": 76,
+     "segs": [
+      [
+       "Some say ",
+       "w"
+      ],
+      [
+       "no.",
+       "r"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "text",
+     "at": 13,
+     "y": 600,
+     "size": 92,
+     "segs": [
+      [
+       "Nobody made me",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 720,
+     "size": 92,
+     "segs": [
+      [
+       "pick up the phone.",
+       "g"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1060,
+     "text": "Follow · Ep. 27: built for introverts",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1230,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

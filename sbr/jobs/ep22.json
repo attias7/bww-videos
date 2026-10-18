@@ -1,0 +1,394 @@
+{
+ "episode": 22,
+ "series": "NO COLD CALLS · EP. 22",
+ "hook": "Every side hustle ends with: now get on a call.",
+ "voice": "../voices/ep22.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep22_now_get_on_a_call.mp4",
+ "lines": [
+  "Every side hustle ends with: now get on a call.",
+  "Agency? Get on a call.",
+  "Freelancing? Get on a call.",
+  "Closing? That's literally the call.",
+  "If that makes your stomach drop, same.",
+  "So I flipped it.",
+  "Instead of finding customers, they find me.",
+  "A homeowner searches roof repair in Smalltown.",
+  "He finds my small site and asks for a quote.",
+  "I pass that lead to a local contractor.",
+  "He pays ten percent, only if he closes the job.",
+  "Real talk.",
+  "Getting a site to rank takes months.",
+  "And plenty of leads don't close.",
+  "But there's no pitch. No call.",
+  "Follow. Ep. twenty-three is your first site."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 96,
+     "segs": [
+      [
+       "Every side hustle",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "size": 96,
+     "segs": [
+      [
+       "ends with:",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "phone_call",
+     "at": 0,
+     "y": 760,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1560,
+     "size": 92,
+     "segs": [
+      [
+       "\"Now get on a call.\"",
+       "r"
+      ]
+     ],
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 1,
+     "y": 560,
+     "items": [
+      {
+       "text": "Agency = call",
+       "ok": false,
+       "at": 1
+      },
+      {
+       "text": "Freelancing = call",
+       "ok": false,
+       "at": 2
+      },
+      {
+       "text": "Closing = the call",
+       "ok": false,
+       "at": 3
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1200,
+     "size": 88,
+     "segs": [
+      [
+       "Stomach drop? ",
+       "w"
+      ],
+      [
+       "Same.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 560,
+     "size": 110,
+     "segs": [
+      [
+       "So I ",
+       "w"
+      ],
+      [
+       "flipped it.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 820,
+     "size": 92,
+     "segs": [
+      [
+       "The customer",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 940,
+     "size": 120,
+     "segs": [
+      [
+       "finds ",
+       "w"
+      ],
+      [
+       "me.",
+       "g"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "arrow",
+     "at": 6,
+     "y": 1120,
+     "dt": 0.2,
+     "y2": 1300
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "google_phone",
+     "at": 7,
+     "y": 380,
+     "query": "roof repair smalltown"
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "form",
+     "at": 8,
+     "y": 380,
+     "title": "Get a free roof quote",
+     "fields": [
+      [
+       "Name",
+       "J. ••••••"
+      ],
+      [
+       "Town",
+       "Smalltown"
+      ],
+      [
+       "Job",
+       "Leak over the kitchen"
+      ]
+     ],
+     "button": "Request quote"
+    },
+    {
+     "type": "chip",
+     "at": 8,
+     "y": 1470,
+     "text": "illustrative example",
+     "fill": null,
+     "color": "grey",
+     "size": 34,
+     "dt": 0.8,
+     "outline": "grey"
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 9,
+     "y": 440,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "Lead comes in",
+       "color": "y",
+       "at": 9
+      },
+      {
+       "label": "Goes to a local contractor",
+       "color": "b",
+       "at": 9,
+       "dt": 0.8
+      },
+      {
+       "label": "Job closes?",
+       "color": "w",
+       "at": 10
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1280,
+     "size": 100,
+     "segs": [
+      [
+       "He pays ",
+       "w"
+      ],
+      [
+       "10%",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1400,
+     "size": 70,
+     "segs": [
+      [
+       "only if he closes.",
+       "w"
+      ]
+     ],
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "calendar",
+     "at": 12,
+     "y": 700,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 940,
+     "size": 80,
+     "segs": [
+      [
+       "Ranking takes ",
+       "w"
+      ],
+      [
+       "months.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1080,
+     "size": 72,
+     "segs": [
+      [
+       "Plenty of leads ",
+       "w"
+      ],
+      [
+       "don't close.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 660,
+     "size": 110,
+     "segs": [
+      [
+       "No pitch.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 800,
+     "size": 110,
+     "segs": [
+      [
+       "No call.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "y": 1080,
+     "text": "Follow · Ep. 23: your first site",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1250,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

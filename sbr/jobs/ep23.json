@@ -1,0 +1,428 @@
+{
+ "episode": 23,
+ "series": "NO COLD CALLS · EP. 23",
+ "hook": "If you've never built a website, start here.",
+ "voice": "../voices/ep23.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep23_never_built_a_website.mp4",
+ "lines": [
+  "If you've never built a website, start here.",
+  "Don't start with the website.",
+  "Start with one service and one small town.",
+  "Like gutter cleaning in Smalltown.",
+  "Search it on Google first.",
+  "Old sites and directories? Good sign.",
+  "Then the site is just three things.",
+  "A page that says what you do and where.",
+  "A page about the service.",
+  "And a quote form.",
+  "AI can help you write it and set it up.",
+  "Real talk.",
+  "The site is the easy part.",
+  "Getting Google to show it takes months, and it might not.",
+  "But you don't need to know code to begin.",
+  "Follow. Ep. twenty-four is month one."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 540,
+     "size": 120,
+     "segs": [
+      [
+       "Never built",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 680,
+     "size": 120,
+     "segs": [
+      [
+       "a website?",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "size": 110,
+     "segs": [
+      [
+       "Start ",
+       "w"
+      ],
+      [
+       "here.",
+       "g"
+      ]
+     ],
+     "dt": 0.9
+    },
+    {
+     "type": "arrow",
+     "at": 0,
+     "y": 1080,
+     "dt": 1.2,
+     "y2": 1300
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 520,
+     "size": 84,
+     "segs": [
+      [
+       "Don't start with",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 630,
+     "size": 96,
+     "segs": [
+      [
+       "the website.",
+       "r"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 880,
+     "size": 110,
+     "segs": [
+      [
+       "1 service",
+       "g"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1020,
+     "size": 110,
+     "segs": [
+      [
+       "1 small town",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 1250,
+     "text": "gutter cleaning · Smalltown",
+     "fill": "y",
+     "color": "dark",
+     "size": 48
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "results",
+     "at": 4,
+     "y": 360,
+     "query": "gutter cleaning smalltown",
+     "items": [
+      [
+       "example-directory.com",
+       "Gutter Cleaners near Smalltown",
+       "Directory listing"
+      ],
+      [
+       "oldsite-example.com",
+       "Smalltown Gutters",
+       "Last updated years ago"
+      ]
+     ],
+     "mine": -1,
+     "label": ""
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 1300,
+     "text": "illustrative results",
+     "fill": null,
+     "color": "grey",
+     "size": 34,
+     "dt": 0.8,
+     "outline": "grey"
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 640,
+     "size": 96,
+     "segs": [
+      [
+       "Old sites +",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 760,
+     "size": 96,
+     "segs": [
+      [
+       "directories",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 920,
+     "size": 110,
+     "segs": [
+      [
+       "= good sign",
+       "g"
+      ]
+     ],
+     "dt": 0.7
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 400,
+     "size": 96,
+     "segs": [
+      [
+       "The site = ",
+       "w"
+      ],
+      [
+       "3 things",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "at": 7,
+     "y": 600,
+     "items": [
+      {
+       "text": "1. What + where",
+       "at": 7
+      },
+      {
+       "text": "2. The service",
+       "at": 8
+      },
+      {
+       "text": "3. Quote form",
+       "at": 9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "browser",
+     "at": 10,
+     "y": 380,
+     "url": "gutters-smalltown.com",
+     "title": "Gutter Cleaning in Smalltown",
+     "button": "Get a free quote"
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1340,
+     "size": 76,
+     "segs": [
+      [
+       "AI",
+       "y"
+      ],
+      [
+       " helps write + set up.",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 1520,
+     "text": "example site · illustrative",
+     "fill": null,
+     "color": "grey",
+     "size": 34,
+     "dt": 1.0,
+     "outline": "grey"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 660,
+     "size": 80,
+     "segs": [
+      [
+       "The site = the ",
+       "w"
+      ],
+      [
+       "easy",
+       "g"
+      ],
+      [
+       " part.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "calendar",
+     "at": 13,
+     "y": 860
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1090,
+     "size": 80,
+     "segs": [
+      [
+       "Google takes ",
+       "w"
+      ],
+      [
+       "months.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1200,
+     "size": 70,
+     "segs": [
+      [
+       "It might not show it.",
+       "r"
+      ]
+     ],
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 640,
+     "size": 92,
+     "segs": [
+      [
+       "No code needed",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 760,
+     "size": 100,
+     "segs": [
+      [
+       "to begin.",
+       "g"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "y": 1080,
+     "text": "Follow · Ep. 24: month one",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1250,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

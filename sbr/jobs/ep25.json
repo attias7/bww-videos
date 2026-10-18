@@ -1,0 +1,332 @@
+{
+ "episode": 25,
+ "series": "NO COLD CALLS · EP. 25",
+ "hook": "Why contractors say yes to: pay only if it closes.",
+ "voice": "../voices/ep25.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep25_why_contractors_say_yes.mp4",
+ "lines": [
+  "Why contractors say yes to: pay only if it closes.",
+  "Think about it from his side.",
+  "Ads? He pays before he knows if anyone calls.",
+  "Lead sellers? He pays per lead, even bad ones.",
+  "Now your offer.",
+  "Here's a homeowner who wants a quote.",
+  "You only pay me ten percent if you get the job.",
+  "If it doesn't close, he pays nothing.",
+  "So you don't need to be a smooth talker.",
+  "The offer does the convincing.",
+  "Real talk.",
+  "Some contractors still say no, or never reply.",
+  "And you have to trust him to tell you it closed.",
+  "The risk is on you, not him.",
+  "Follow. Ep. twenty-six: no phone needed."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 100,
+     "segs": [
+      [
+       "Why contractors",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "size": 100,
+     "segs": [
+      [
+       "say ",
+       "w"
+      ],
+      [
+       "yes",
+       "g"
+      ],
+      [
+       " to:",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 860,
+     "text": "pay only if it closes",
+     "fill": "y",
+     "color": "dark",
+     "size": 60,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 400,
+     "size": 96,
+     "segs": [
+      [
+       "From ",
+       "w"
+      ],
+      [
+       "his",
+       "y"
+      ],
+      [
+       " side:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "at": 2,
+     "y": 580,
+     "gap": 500,
+     "items": [
+      {
+       "head": "Ads: he pays",
+       "big": "first",
+       "sub": "even if nobody calls",
+       "color": "r",
+       "at": 2
+      },
+      {
+       "head": "Lead sellers: he pays",
+       "big": "each",
+       "sub": "lead, even bad ones",
+       "color": "r",
+       "at": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 400,
+     "size": 100,
+     "segs": [
+      [
+       "Your offer:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "chat",
+     "at": 5,
+     "y": 560,
+     "name": "Smalltown Roofing",
+     "sub": "illustrative",
+     "messages": [
+      "I have a homeowner in Smalltown\nwho wants a roof quote.",
+      "You only pay me 10%\nif you get the job."
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 560,
+     "size": 100,
+     "segs": [
+      [
+       "Doesn't close?",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 7,
+     "y": 700,
+     "dt": 0.4,
+     "text": "$0",
+     "size": 240,
+     "color": "g"
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1060,
+     "size": 84,
+     "segs": [
+      [
+       "No smooth talking.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1180,
+     "size": 92,
+     "segs": [
+      [
+       "The ",
+       "w"
+      ],
+      [
+       "offer",
+       "y"
+      ],
+      [
+       " convinces.",
+       "w"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 660,
+     "size": 66,
+     "segs": [
+      [
+       "Some say ",
+       "w"
+      ],
+      [
+       "no.",
+       "r"
+      ],
+      [
+       " Some never reply.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 840,
+     "size": 76,
+     "segs": [
+      [
+       "You have to ",
+       "w"
+      ],
+      [
+       "trust",
+       "y"
+      ],
+      [
+       " him",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 950,
+     "size": 72,
+     "segs": [
+      [
+       "to tell you it closed.",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "text",
+     "at": 13,
+     "y": 620,
+     "size": 100,
+     "segs": [
+      [
+       "Risk on ",
+       "w"
+      ],
+      [
+       "you,",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 750,
+     "size": 100,
+     "segs": [
+      [
+       "not him.",
+       "g"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 1060,
+     "text": "Follow · Ep. 26: no phone needed",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 1230,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

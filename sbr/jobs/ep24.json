@@ -1,0 +1,457 @@
+{
+ "episode": 24,
+ "series": "NO COLD CALLS · EP. 24",
+ "hook": "Month one, nothing happens. Here's why that's normal.",
+ "voice": "../voices/ep24.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep24_month_one_nothing.mp4",
+ "lines": [
+  "Month one, nothing happens. Here's why that's normal.",
+  "Gurus show the screenshot.",
+  "They skip the boring part.",
+  "When your site is new, Google doesn't know it.",
+  "It's a stranger.",
+  "So month one, you get almost no visits.",
+  "No calls. No forms. Nothing.",
+  "That's where most people quit.",
+  "What you do instead: make the page more useful.",
+  "Answer the questions people in that town actually search.",
+  "My first lead took about one to three months.",
+  "Real talk.",
+  "Some sites never rank at all.",
+  "And a lead isn't money until a job closes.",
+  "But now you know month one isn't failure.",
+  "Follow. Ep. twenty-five is why contractors say yes."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 520,
+     "size": 120,
+     "segs": [
+      [
+       "Month one:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 680,
+     "size": 96,
+     "segs": [
+      [
+       "nothing happens.",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "calendar",
+     "at": 0,
+     "y": 900,
+     "dt": 0.9,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1160,
+     "size": 72,
+     "segs": [
+      [
+       "Here's why that's ",
+       "w"
+      ],
+      [
+       "normal.",
+       "g"
+      ]
+     ],
+     "dt": 1.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 560,
+     "text": "income screenshot",
+     "fill": "grey",
+     "color": "w",
+     "size": 52
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 700,
+     "size": 76,
+     "segs": [
+      [
+       "= what they show",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 920,
+     "size": 84,
+     "segs": [
+      [
+       "They skip the",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1030,
+     "size": 100,
+     "segs": [
+      [
+       "boring part.",
+       "r"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 520,
+     "size": 110,
+     "segs": [
+      [
+       "New site?",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 670,
+     "size": 76,
+     "segs": [
+      [
+       "Google doesn't know it.",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "search",
+     "at": 3,
+     "y": 880,
+     "dt": 0.8,
+     "query": "roof repair smalltown"
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1150,
+     "size": 100,
+     "segs": [
+      [
+       "It's a ",
+       "w"
+      ],
+      [
+       "stranger.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 520,
+     "size": 100,
+     "segs": [
+      [
+       "Month one:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 650,
+     "size": 84,
+     "segs": [
+      [
+       "almost no visits.",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "checklist",
+     "at": 6,
+     "y": 840,
+     "items": [
+      {
+       "text": "No calls",
+       "ok": false,
+       "at": 6
+      },
+      {
+       "text": "No forms",
+       "ok": false,
+       "at": 6,
+       "dt": 0.5
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1240,
+     "size": 76,
+     "segs": [
+      [
+       "Where most people ",
+       "w"
+      ],
+      [
+       "quit.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 480,
+     "size": 100,
+     "segs": [
+      [
+       "Instead:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 610,
+     "size": 68,
+     "segs": [
+      [
+       "make the page more useful.",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "steps",
+     "at": 9,
+     "y": 780,
+     "items": [
+      {
+       "text": "What's the price?",
+       "at": 9
+      },
+      {
+       "text": "Can you come today?",
+       "at": 9,
+       "dt": 0.6
+      },
+      {
+       "text": "Serve my street?",
+       "at": 9,
+       "dt": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 640,
+     "size": 92,
+     "segs": [
+      [
+       "My first lead:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 780,
+     "dt": 0.4,
+     "text": "1-3",
+     "size": 240,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1110,
+     "size": 100,
+     "segs": [
+      [
+       "months.",
+       "w"
+      ]
+     ],
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 660,
+     "size": 84,
+     "segs": [
+      [
+       "Some sites ",
+       "w"
+      ],
+      [
+       "never rank.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 820,
+     "size": 76,
+     "segs": [
+      [
+       "A lead isn't money",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 930,
+     "size": 76,
+     "segs": [
+      [
+       "until a job ",
+       "w"
+      ],
+      [
+       "closes.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 600,
+     "size": 100,
+     "segs": [
+      [
+       "Month one",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 730,
+     "size": 100,
+     "segs": [
+      [
+       "isn't failure.",
+       "g"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "y": 1060,
+     "text": "Follow · Ep. 25: why contractors say yes",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1230,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}
