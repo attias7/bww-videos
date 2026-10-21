@@ -1,0 +1,670 @@
+{
+ "episode": 15,
+ "series": "PLAYER BREAKDOWN · DYBALA",
+ "hook": "Stop taking three touches before you shoot.",
+ "voice": "../voices/ep15.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep15_bd06_dybala.mp4",
+ "lines": [
+  "Stop taking three touches before you shoot.",
+  "I broke down Paulo Dybala's shooting. Four habits to copy.",
+  "He's not big or strong. He's just quicker to the shot.",
+  "One. He shoots fast.",
+  "First time, or two touches max. Before the defender can close him.",
+  "Two. He doesn't get stuck on one corner.",
+  "Near post, far post, high, low. The keeper can't guess.",
+  "Three. Every time a teammate shoots, he runs in.",
+  "If the keeper spills it, he's first to the rebound.",
+  "Four. He doesn't dribble to beat players.",
+  "He dribbles to pull defenders in. Then he finds the runner.",
+  "So next game, one touch to set it. Then shoot.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 120,
+     "segs": [
+      [
+       "STOP TAKING",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "size": 120,
+     "segs": [
+      [
+       "3 TOUCHES",
+       "r"
+      ]
+     ],
+     "dt": 0.2,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 880,
+     "size": 90,
+     "segs": [
+      [
+       "BEFORE YOU SHOOT.",
+       "dark"
+      ]
+     ],
+     "dt": 0.5,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1100,
+     "text": "DYBALA · 4 HABITS",
+     "fill": "dark",
+     "color": "y",
+     "size": 56,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 560,
+     "size": 90,
+     "segs": [
+      [
+       "Paulo Dybala",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 820,
+     "text": "4",
+     "size": 240,
+     "color": "y",
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1010,
+     "size": 64,
+     "segs": [
+      [
+       "shooting habits",
+       "w"
+      ]
+     ],
+     "dt": 1.1
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1240,
+     "size": 62,
+     "segs": [
+      [
+       "Not big. ",
+       "w"
+      ],
+      [
+       "Just quicker.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "1. Shoot ",
+       "w"
+      ],
+      [
+       "fast.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 3,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.4,
+       "y": 0.3,
+       "label": "DYBALA"
+      },
+      {
+       "id": "m",
+       "team": "us",
+       "x": 0.75,
+       "y": 0.38
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.45,
+       "y": 0.2,
+       "path": [
+        {
+         "to": [
+          0.42,
+          0.26
+         ],
+         "at": 4,
+         "dt": 0.8,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "m",
+      "path": [
+       {
+        "with": "p",
+        "at": 4,
+        "dur": 0.6
+       },
+       {
+        "to": [
+         0.58,
+         0.006
+        ],
+        "at": 4,
+        "dt": 0.75,
+        "dur": 0.45
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.41,
+        0.29
+       ],
+       "to": [
+        0.58,
+        0.02
+       ],
+       "color": "y",
+       "at": 4,
+       "dt": 0.7
+      }
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 1500,
+     "text": "1–2 touches max",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "size": 72,
+     "segs": [
+      [
+       "2. Not ",
+       "w"
+      ],
+      [
+       "one corner.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 6,
+     "y": 640,
+     "text": "NEAR POST",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.0
+    },
+    {
+     "type": "chip",
+     "at": 6,
+     "y": 780,
+     "text": "FAR POST",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 6,
+     "y": 920,
+     "text": "HIGH",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    },
+    {
+     "type": "chip",
+     "at": 6,
+     "y": 1060,
+     "text": "LOW",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.9
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1280,
+     "size": 66,
+     "segs": [
+      [
+       "The keeper ",
+       "w"
+      ],
+      [
+       "can't guess.",
+       "y"
+      ]
+     ],
+     "dt": 1.3
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "3. Teammate shoots? ",
+       "w"
+      ],
+      [
+       "Run in.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 7,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "t",
+       "team": "us",
+       "x": 0.35,
+       "y": 0.36
+      },
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.65,
+       "y": 0.3,
+       "label": "DYBALA",
+       "path": [
+        {
+         "to": [
+          0.56,
+          0.09
+         ],
+         "at": 7,
+         "dt": 0.8,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.22
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "t",
+      "path": [
+       {
+        "to": [
+         0.5,
+         0.04
+        ],
+        "at": 7,
+        "dt": 0.6,
+        "dur": 0.5
+       },
+       {
+        "to": [
+         0.56,
+         0.1
+        ],
+        "at": 8,
+        "dur": 0.5
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.64,
+        0.28
+       ],
+       "to": [
+        0.57,
+        0.11
+       ],
+       "color": "y",
+       "at": 7,
+       "dt": 0.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "First to the ",
+       "w"
+      ],
+      [
+       "rebound.",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 320,
+     "size": 66,
+     "segs": [
+      [
+       "4. Dribble to ",
+       "w"
+      ],
+      [
+       "pull them in.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 9,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.45,
+       "y": 0.36,
+       "label": "DYBALA",
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.3
+         ],
+         "at": 9,
+         "dt": 0.5,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.38,
+       "y": 0.22,
+       "path": [
+        {
+         "to": [
+          0.45,
+          0.27
+         ],
+         "at": 10,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.24,
+       "path": [
+        {
+         "to": [
+          0.56,
+          0.28
+         ],
+         "at": 10,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "r",
+       "team": "us",
+       "x": 0.8,
+       "y": 0.3,
+       "label": "RUNNER",
+       "path": [
+        {
+         "to": [
+          0.72,
+          0.12
+         ],
+         "at": 10,
+         "dt": 0.5,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "p",
+      "path": [
+       {
+        "with": "r",
+        "at": 10,
+        "dt": 1.2,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.52,
+        0.29
+       ],
+       "to": [
+        0.71,
+        0.13
+       ],
+       "color": "y",
+       "at": 10,
+       "dt": 1.1
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Then find ",
+       "w"
+      ],
+      [
+       "the runner.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 600,
+     "size": 80,
+     "segs": [
+      [
+       "One touch to ",
+       "w"
+      ],
+      [
+       "set it.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 11,
+     "y": 880,
+     "text": "SHOOT.",
+     "size": 220,
+     "color": "y",
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 12,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "dt": 0.6,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

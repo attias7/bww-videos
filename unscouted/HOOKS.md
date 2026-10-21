@@ -25,6 +25,7 @@ One line: *Unscouted helps players outside academies think and play like pros, u
 - You're good in training. Then the game starts and you freeze.
 - One bad touch here and it's a goal for them.
 - Dive in here, and he's gone. ✅ *used: Ep 8 (PD #4, full-back)*
+- Lose it here, and it's a goal. ✅ *used: Ep 14 (PD #7, centre-back)*
 
 ### Command / contrarian
 - Losing with five minutes left? Stop passing. ✅ *used: PD #2*
@@ -33,6 +34,8 @@ One line: *Unscouted helps players outside academies think and play like pros, u
 - Stop asking your coach what to work on.
 - Stop asking for the ball to feet. ✅ *used: Ep 9 (Saka)*
 - Stop trying to score worldies. ✅ *used: Ep 11 (Kane)*
+- Stop doing tricks. Change speed instead. ✅ *used: Ep 13 (Foden)*
+- Stop taking three touches before you shoot. ✅ *used: Ep 15 (Dybala)*
 
 ### Curiosity gap (pros vs you)
 - Pros make this decision before the ball even arrives. ✅ *used: PD #3*

@@ -1,0 +1,600 @@
+{
+ "episode": 14,
+ "series": "PAUSE & DECIDE · #7",
+ "hook": "Lose it here, and it's a goal.",
+ "voice": "../voices/ep14.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep14_pd07_centreback.mp4",
+ "lines": [
+  "Lose it here, and it's a goal.",
+  "You're the centre-back. Nil-nil, twenty minutes in.",
+  "Your keeper rolls it to you. Their striker sprints to press you.",
+  "Your full-back is marked.",
+  "Your midfielder drops into the gap. He's free.",
+  "Pause. What do you do?",
+  "A. Smash it clear.",
+  "B. Pass it back to your keeper.",
+  "C. Play it into your midfielder.",
+  "Comment your answer.",
+  "I'd go C.",
+  "The striker pressing you has just left his zone.",
+  "One pass past him, and your team is attacking.",
+  "Smash it clear, and you just give them the ball back.",
+  "No perfect answer. If your midfielder's marked, go back to the keeper.",
+  "Just never dribble at the striker in your own box.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 620,
+     "size": 120,
+     "segs": [
+      [
+       "LOSE IT HERE,",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 790,
+     "size": 120,
+     "segs": [
+      [
+       "IT'S A ",
+       "dark"
+      ],
+      [
+       "GOAL.",
+       "r"
+      ]
+     ],
+     "dt": 0.4,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1080,
+     "text": "Centre-backs, watch this",
+     "fill": "dark",
+     "color": "y",
+     "size": 48,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "y": 210,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "0-0",
+     "minute": "20'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.1,
+     "y": 470,
+     "h": 960,
+     "players": [
+      {
+       "id": "gk",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.03,
+       "label": "GK"
+      },
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.33,
+       "y": 0.2,
+       "label": "YOU"
+      },
+      {
+       "id": "cb2",
+       "team": "us",
+       "x": 0.68,
+       "y": 0.2
+      },
+      {
+       "id": "st",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.45,
+       "path": [
+        {
+         "to": [
+          0.44,
+          0.31
+         ],
+         "at": 2,
+         "dt": 0.8,
+         "dur": 1.2
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "us",
+       "x": 0.1,
+       "y": 0.38,
+       "label": "FB"
+      },
+      {
+       "id": "w",
+       "team": "them",
+       "x": 0.15,
+       "y": 0.42,
+       "path": [
+        {
+         "to": [
+          0.12,
+          0.35
+         ],
+         "at": 3,
+         "dur": 0.6
+        }
+       ]
+      },
+      {
+       "id": "mid",
+       "team": "us",
+       "x": 0.55,
+       "y": 0.62,
+       "label": "MID",
+       "path": [
+        {
+         "to": [
+          0.47,
+          0.47
+         ],
+         "at": 4,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "m1",
+       "team": "them",
+       "x": 0.28,
+       "y": 0.6
+      },
+      {
+       "id": "m2",
+       "team": "them",
+       "x": 0.72,
+       "y": 0.58
+      }
+     ],
+     "ball": {
+      "with": "gk",
+      "path": [
+       {
+        "with": "me",
+        "at": 2,
+        "dur": 0.7
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.48,
+        0.43
+       ],
+       "to": [
+        0.45,
+        0.33
+       ],
+       "color": "r",
+       "at": 2,
+       "dt": 0.9
+      }
+     ],
+     "pause": {
+      "at": 5
+     }
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 1500,
+     "text": "Midfielder free in the gap",
+     "fill": "y",
+     "color": "dark",
+     "size": 40,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Striker ",
+       "w"
+      ],
+      [
+       "pressing you",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "options",
+     "at": 6,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Smash it clear",
+       "at": 6
+      },
+      {
+       "key": "B",
+       "text": "Back to the keeper",
+       "at": 7
+      },
+      {
+       "key": "C",
+       "text": "Into your midfielder",
+       "at": 8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 9,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Striker ",
+       "w"
+      ],
+      [
+       "pressing you",
+       "y"
+      ]
+     ],
+     "dt": -0.2
+    },
+    {
+     "type": "options",
+     "at": 10,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Smash it clear",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Back to the keeper",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Into your midfielder",
+       "at": 10,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 10,
+      "dt": 0.15,
+      "correct": "C"
+     }
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1250,
+     "size": 96,
+     "segs": [
+      [
+       "C. ",
+       "y"
+      ],
+      [
+       "Into midfield.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 260,
+     "text": "He left his zone",
+     "fill": "y",
+     "color": "dark",
+     "size": 44
+    },
+    {
+     "type": "pitch",
+     "at": 11,
+     "dt": -0.1,
+     "y": 440,
+     "h": 960,
+     "players": [
+      {
+       "id": "gk",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.03,
+       "label": "GK"
+      },
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.33,
+       "y": 0.2,
+       "label": "YOU"
+      },
+      {
+       "id": "st",
+       "team": "them",
+       "x": 0.44,
+       "y": 0.31
+      },
+      {
+       "id": "mid",
+       "team": "us",
+       "x": 0.47,
+       "y": 0.47,
+       "label": "MID",
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.62
+         ],
+         "at": 12,
+         "dt": 0.6,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "m1",
+       "team": "them",
+       "x": 0.28,
+       "y": 0.6
+      },
+      {
+       "id": "m2",
+       "team": "them",
+       "x": 0.72,
+       "y": 0.58
+      }
+     ],
+     "ball": {
+      "with": "me",
+      "path": [
+       {
+        "with": "mid",
+        "at": 12,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.34,
+        0.25
+       ],
+       "to": [
+        0.46,
+        0.45
+       ],
+       "color": "y",
+       "at": 12,
+       "dt": -0.1
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Smash it clear? ",
+       "w"
+      ],
+      [
+       "Their ball.",
+       "r"
+      ]
+     ],
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 480,
+     "text": "NO PERFECT ANSWER",
+     "fill": "r",
+     "color": "w",
+     "size": 46
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 680,
+     "size": 68,
+     "segs": [
+      [
+       "Midfielder marked? ",
+       "w"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 780,
+     "size": 68,
+     "segs": [
+      [
+       "Back to the keeper.",
+       "y"
+      ]
+     ],
+     "dt": 1.2
+    },
+    {
+     "type": "bignum",
+     "at": 15,
+     "y": 1000,
+     "text": "NEVER",
+     "size": 200,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1190,
+     "size": 58,
+     "segs": [
+      [
+       "dribble at the striker",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1270,
+     "size": 58,
+     "segs": [
+      [
+       "in your own box",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "elements": [
+    {
+     "type": "text",
+     "at": 16,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 16,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "dt": 0.6,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 16,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}

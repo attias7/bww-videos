@@ -1,0 +1,577 @@
+{
+ "episode": 13,
+ "series": "PLAYER BREAKDOWN · FODEN",
+ "hook": "Stop doing tricks. Change speed instead.",
+ "voice": "../voices/ep13.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep13_bd05_foden.mp4",
+ "lines": [
+  "Stop doing tricks. Change speed instead.",
+  "I watched a lot of Phil Foden. Four things you can copy.",
+  "One. The ball is always close to his foot.",
+  "Every touch, he can still do anything he wants.",
+  "Two. He barely does tricks.",
+  "He slows down, then explodes. That's what beats the defender.",
+  "Three. Before he takes on the full-back, he checks two things.",
+  "Is there space, or are four players around him?",
+  "And are there enough teammates in the box?",
+  "If not, it's not worth it.",
+  "Four. Near post run? Shoot near corner.",
+  "Turning your whole body to the far post is much harder.",
+  "So next game, keep it close and change your speed.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "size": 130,
+     "segs": [
+      [
+       "STOP DOING",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 770,
+     "size": 130,
+     "segs": [
+      [
+       "TRICKS.",
+       "r"
+      ]
+     ],
+     "dt": 0.2,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1000,
+     "text": "FODEN · 4 HABITS",
+     "fill": "dark",
+     "color": "y",
+     "size": 56,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 600,
+     "size": 90,
+     "segs": [
+      [
+       "Phil Foden",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 880,
+     "text": "4",
+     "size": 260,
+     "color": "y",
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1090,
+     "size": 64,
+     "segs": [
+      [
+       "things you can copy",
+       "w"
+      ]
+     ],
+     "dt": 1.1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "1. Ball ",
+       "w"
+      ],
+      [
+       "always close.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 2,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "f",
+       "team": "me",
+       "x": 0.3,
+       "y": 0.33,
+       "label": "FODEN",
+       "path": [
+        {
+         "to": [
+          0.45,
+          0.25
+         ],
+         "at": 2,
+         "dt": 0.6,
+         "dur": 1.4
+        }
+       ]
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.22
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.3
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "f"
+     }
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Every touch: ",
+       "w"
+      ],
+      [
+       "any option.",
+       "y"
+      ]
+     ],
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 480,
+     "size": 80,
+     "segs": [
+      [
+       "2. No tricks.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 640,
+     "size": 80,
+     "segs": [
+      [
+       "Slow. ",
+       "w"
+      ],
+      [
+       "Explode.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 5,
+     "dt": 0.3,
+     "y": 780,
+     "h": 700,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "f",
+       "team": "me",
+       "x": 0.35,
+       "y": 0.3,
+       "label": "FODEN",
+       "path": [
+        {
+         "to": [
+          0.42,
+          0.27
+         ],
+         "at": 5,
+         "dt": 0.6,
+         "dur": 1.0
+        },
+        {
+         "to": [
+          0.62,
+          0.16
+         ],
+         "at": 5,
+         "dt": 1.7,
+         "dur": 0.5
+        }
+       ]
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.48,
+       "y": 0.22,
+       "path": [
+        {
+         "to": [
+          0.46,
+          0.24
+         ],
+         "at": 5,
+         "dt": 1.7,
+         "dur": 0.6
+        }
+       ]
+      }
+     ],
+     "ball": {
+      "with": "f"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.44,
+        0.26
+       ],
+       "to": [
+        0.62,
+        0.16
+       ],
+       "color": "y",
+       "at": 5,
+       "dt": 1.6,
+       "label": "change speed"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 330,
+     "size": 66,
+     "segs": [
+      [
+       "3. Before a 1v1, ",
+       "w"
+      ],
+      [
+       "check 2 things.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 620,
+     "text": "1  Space? Not 4 players around you",
+     "fill": "y",
+     "color": "dark",
+     "size": 44
+    },
+    {
+     "type": "chip",
+     "at": 8,
+     "y": 800,
+     "text": "2  Enough teammates in the box?",
+     "fill": "y",
+     "color": "dark",
+     "size": 44
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1080,
+     "size": 78,
+     "segs": [
+      [
+       "If not, ",
+       "w"
+      ],
+      [
+       "not worth it.",
+       "r"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 320,
+     "size": 72,
+     "segs": [
+      [
+       "4. Near post? ",
+       "w"
+      ],
+      [
+       "Near corner.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 10,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "f",
+       "team": "me",
+       "x": 0.55,
+       "y": 0.26,
+       "label": "FODEN",
+       "path": [
+        {
+         "to": [
+          0.6,
+          0.12
+         ],
+         "at": 10,
+         "dt": 0.3,
+         "dur": 0.9
+        }
+       ]
+      },
+      {
+       "id": "w",
+       "team": "us",
+       "x": 0.9,
+       "y": 0.15,
+       "label": "W"
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.13
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "w",
+      "path": [
+       {
+        "with": "f",
+        "at": 10,
+        "dt": 1.2,
+        "dur": 0.5
+       },
+       {
+        "to": [
+         0.57,
+         0.005
+        ],
+        "at": 11,
+        "dur": 0.4
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.6,
+        0.115
+       ],
+       "to": [
+        0.57,
+        0.01
+       ],
+       "color": "y",
+       "at": 11
+      },
+      {
+       "from": [
+        0.6,
+        0.115
+       ],
+       "to": [
+        0.4,
+        0.01
+       ],
+       "color": "r",
+       "at": 11,
+       "dt": 0.8,
+       "dashed": true
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 1500,
+     "size": 62,
+     "segs": [
+      [
+       "Whole body far post? ",
+       "w"
+      ],
+      [
+       "Harder.",
+       "r"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 600,
+     "size": 80,
+     "segs": [
+      [
+       "Keep it ",
+       "w"
+      ],
+      [
+       "close.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 12,
+     "y": 880,
+     "text": "CHANGE",
+     "size": 200,
+     "color": "y",
+     "dt": 0.9
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1080,
+     "size": 72,
+     "segs": [
+      [
+       "your speed.",
+       "w"
+      ]
+     ],
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "elements": [
+    {
+     "type": "text",
+     "at": 13,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 13,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "dt": 0.6,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ]
+}
