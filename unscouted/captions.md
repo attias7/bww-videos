@@ -102,3 +102,7 @@ You're the striker, 1-0 down, seventy-five minutes in. The keeper is rushing out
 Shoot early, square it, or round the keeper? Comment A, B or C 👇
 Free analysis test in bio.
 #football #soccer #footballtips #footballtraining #soccerplayer #footballiq #striker #unscouted
+
+## Carousel · Ep 12 striker through — 2026-10-22 12:00
+IG: 1-0 down, 75th minute, you're through and the keeper rushes out. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
+TT: same first line / A, B or C? Decide before slide 4. / 7 hashtags
