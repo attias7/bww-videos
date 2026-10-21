@@ -290,8 +290,7 @@
        ],
        "color": "y",
        "at": 5,
-       "dt": 1.6,
-       "label": "change speed"
+       "dt": 1.6
       }
      ]
     }
