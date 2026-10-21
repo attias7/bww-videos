@@ -106,3 +106,10 @@ Free analysis test in bio.
 ## Carousel · Ep 12 striker through — 2026-10-22 12:00
 IG: 1-0 down, 75th minute, you're through and the keeper rushes out. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
 TT: same first line / A, B or C? Decide before slide 4. / 7 hashtags
+
+## Ep 13 · PLAYER BREAKDOWN · Foden — 2026-10-22
+Stop doing tricks. Change speed instead.
+I watched a lot of Foden. Four habits you can copy: ball always close, slow then explode, check two things before a 1v1, and near post means near corner.
+Which one do you need most? Comment 1, 2, 3 or 4 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #dribbling #unscouted
