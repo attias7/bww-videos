@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Build the daily upload email for one Israel date.
-Usage: python3 uploads/render_email.py YYYY-MM-DD [--check]
-Writes /tmp/upload_email.json = {"subject", "html", "text", "count", "missing"}.
---check  HEADs every download link and lists the ones that don't return 200.
+Usage: python3 uploads/render_email.py YYYY-MM-DD [--check] [--unsent]
+Writes /tmp/upload_email.json = {"subject", "html", "text", "count", "missing", "keys"}.
+--check   HEADs every download link and lists the ones that don't return 200.
+--unsent  only items not yet listed in uploads/sent.jsonl (after sending, run uploads/mark_sent.py).
 """
 import datetime, html, json, os, subprocess, sys
 
@@ -22,14 +23,22 @@ def ok(url):
 def main():
     day = sys.argv[1]
     check = "--check" in sys.argv
+    unsent = "--unsent" in sys.argv
+    S = os.path.join(ROOT, "uploads", "sent.jsonl")
+    sent = set()
+    if unsent and os.path.exists(S):
+        sent = {json.loads(l)["key"] for l in open(S) if l.strip()}
+    key = lambda i: f'{i["date"]}|{i["brand"]}|{i["kind"]}'
     items = []
     if os.path.exists(Q):
         items = [json.loads(l) for l in open(Q) if l.strip()]
-    items = sorted([i for i in items if i["date"] == day], key=lambda i: (i["time"], i["brand"]))
+    items = sorted([i for i in items if i["date"] == day and key(i) not in sent], key=lambda i: (i["time"], i["brand"]))
+    already = unsent and any(k.startswith(day + "|") for k in sent)
     d = datetime.date.fromisoformat(day)
     nice = d.strftime("%a %-d %b")
     n = len(items)
-    subject = f"📲 Upload today – {nice} ({n} post{'s' if n != 1 else ''})"
+    subject = (f"➕ More to upload today – {nice} ({n} new post{'s' if n != 1 else ''})" if already
+               else f"📲 Upload today – {nice} ({n} post{'s' if n != 1 else ''})")
     missing = []
     h, t = [], []
     h.append('<div style="font-family:-apple-system,Segoe UI,Arial,sans-serif;max-width:640px;color:#1f2328;line-height:1.45">')
@@ -82,7 +91,8 @@ def main():
             t.append("Notes: " + i["notes"])
         h.append("</div>")
     h.append("</div>")
-    out = {"subject": subject, "html": "".join(h), "text": "\n".join(t), "count": n, "missing": missing}
+    out = {"subject": subject, "html": "".join(h), "text": "\n".join(t), "count": n, "missing": missing,
+           "keys": [key(i) for i in items]}
     json.dump(out, open("/tmp/upload_email.json", "w"), ensure_ascii=False)
     print(json.dumps({"subject": subject, "count": n, "missing": missing}, ensure_ascii=False))
 
