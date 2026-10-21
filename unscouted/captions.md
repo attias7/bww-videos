@@ -128,3 +128,10 @@ TT: Stop doing tricks. Change speed instead. Swipe → / 4 habits from watching 
 ## Carousel · Ep 14 centre-back — 2026-10-24 12:00
 IG: 0-0, 20th minute, their striker presses you as the keeper rolls it out. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
 TT: same first line / A, B or C? Decide before slide 4. / 7 hashtags
+
+## Ep 15 · PLAYER BREAKDOWN · Dybala — 2026-10-24
+Stop taking three touches before you shoot.
+I broke down Dybala's shooting. Four habits you can copy: shoot in one or two touches, don't get stuck on one corner, run in every time a teammate shoots, and dribble to pull defenders in, then find the runner.
+Which one do you need most? Comment 1, 2, 3 or 4 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #shooting #unscouted
