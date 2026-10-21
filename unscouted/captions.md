@@ -113,3 +113,18 @@ I watched a lot of Foden. Four habits you can copy: ball always close, slow then
 Which one do you need most? Comment 1, 2, 3 or 4 👇
 Free analysis test in bio.
 #football #soccer #footballtips #footballtraining #soccerplayer #footballiq #dribbling #unscouted
+
+## Ep 14 · PD #7 · Centre-back under press — 2026-10-23
+Lose it here, and it's a goal.
+You're the centre-back, 0-0, twenty minutes in. Your keeper rolls it to you, their striker sprints to press, your full-back is marked and your midfielder drops into the gap.
+Smash it clear, back to the keeper, or into midfield? Comment A, B or C 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #centreback #unscouted
+
+## Carousel · Ep 13 Foden — 2026-10-23 12:00
+IG: Stop doing tricks. Change speed instead. Swipe → / Foden's four habits: ball always close, slow then explode, two checks before a 1v1, near post means near corner. / Save this for your next game. / reel hashtags
+TT: Stop doing tricks. Change speed instead. Swipe → / 4 habits from watching Foden. / 7 hashtags
+
+## Carousel · Ep 14 centre-back — 2026-10-24 12:00
+IG: 0-0, 20th minute, their striker presses you as the keeper rolls it out. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
+TT: same first line / A, B or C? Decide before slide 4. / 7 hashtags
