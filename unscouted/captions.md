@@ -135,3 +135,7 @@ I broke down Dybala's shooting. Four habits you can copy: shoot in one or two to
 Which one do you need most? Comment 1, 2, 3 or 4 👇
 Free analysis test in bio.
 #football #soccer #footballtips #footballtraining #soccerplayer #footballiq #shooting #unscouted
+
+## Carousel · Ep 15 Dybala — 2026-10-25 12:00
+IG: Stop taking three touches before you shoot. Swipe → / Dybala's four shooting habits: 1–2 touches, vary corners, run in for rebounds, dribble to draw then find the runner. / Save this for your next game. / reel hashtags
+TT: same / 7 hashtags
