@@ -2,7 +2,18 @@
 
 Every morning one scheduled task makes **one new reel for each of the 4 accounts** and emails Adi
 (adiattias2003@gmail.com) the pack before **09:30 Israel time**: download link, caption, TikTok title,
-and a trending sound for TikTok and for Instagram. Adi adds the sound in the app and posts himself.
+and a trending sound for TikTok and for Instagram.
+Since 2026-10-25 (Adi: "each day post in those 6 accounts"): Sign Build Run, Remodel in 360 and SetToRank post
+themselves at their time on **Instagram (Reel published, built-in music)** and **TikTok (draft sent to the account's
+inbox; Adi adds the trending sound and taps Post)** via the "Auto-post due videos" task. Unscouted stays manual (email).
+
+## Skills to load (if available in the run)
+- `hormozi-hooks`: every hook (draft 5, keep the best).
+- `sign-build-run-reels`: Sign Build Run script + brand rules (ignore its Publer/scheduling/voice-download steps).
+- `tiktok-studio`: what the TikTok algorithm rewards now (first 2 s, retention, length, caption/title) for all 4 brands.
+- `humanizer`: one pass over every caption so it doesn't read like AI.
+- `grand-slam-offer` / `landing-page-copy`: only for the occasional soft product-mention reel (offer wording).
+Ignore any step in a skill that posts, schedules, uses Buffer/Publer/Metricool, the Mac, Chrome or device tools.
 Started 2026-10-25. It replaces the old Sunday/Wednesday batch runs and the old Mac/Chrome download step.
 
 Everything runs in the cloud container. **Never use the Mac, Chrome, computer use or device tools.**

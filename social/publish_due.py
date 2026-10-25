@@ -29,7 +29,8 @@ def tiktok_connected():
 def main():
     dry = "--dry-run" in sys.argv
     now = datetime.datetime.now(ZoneInfo("Asia/Jerusalem"))
-    today = now.strftime("%Y-%m-%d"); limit = (now + datetime.timedelta(minutes=10)).strftime("%H:%M")
+    today = now.strftime("%Y-%m-%d"); soon = now + datetime.timedelta(minutes=10)
+    limit = soon.strftime("%H:%M") if soon.date() == now.date() else "23:59"  # 23:52 run must still see 23:30 items
     done = set()
     if os.path.exists(LOG):
         done = {(json.loads(l)["key"], json.loads(l)["platform"]) for l in open(LOG) if l.strip()}

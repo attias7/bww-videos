@@ -47,7 +47,9 @@ Per-account refresh/long-lived tokens are stored **encrypted with SOCIAL_TOKEN_K
 - [x] All 3 TikTok logins redone under the new key (2026-10-25): sbr (Sign Build Run), r360 (Remodelin360), str (settorank) → tokens.enc
 - [x] TikTok draft test: sbr_ep29 → SEND_TO_USER_INBOX in sandbox (2026-10-25) — inbox upload works without audit
 - [x] Instagram Reel test: @remodelin360 published 2026-10-25 https://www.instagram.com/reel/De6_tIuFTZw/
-- [ ] Switch the daily run: build two audio versions, post, keep a short summary email
+- [x] Switch the daily run (2026-10-25): daily/README.md step 5/8 builds both mixes and queues `ig_file` + `tiktok_draft`
+  for SBR, R360, SetToRank → 6 accounts posted every day. All 6 tokens refreshed OK 2026-10-25. First auto-posted day: 2026-10-26.
+- [x] publish_due.py: the 23:52 run now also sees 23:30 items (the +10 min limit no longer wraps past midnight).
 
 ## TikTok login links (state = brand key)
 Make sure the browser is logged into THAT TikTok account (or use "Switch account" / incognito), click Continue, and send
