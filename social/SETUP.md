@@ -8,13 +8,14 @@ No Buffer / Publer / Metricool.
 | brand | TikTok (draft to inbox) | Instagram (auto-publish Reel) |
 |---|---|---|
 | Sign Build Run | yes | yes |
-| Unscouted | yes (@unscouted.football) | yes (@unscouted.football) |
+| Unscouted | **skipped for now (2026-10-25)** – stays on the daily email, posted by hand | skipped for now |
 | Remodel in 360 | yes (@remodelin360) | yes |
 | SetToRank | yes (new) | yes (new) |
 
 ## Credentials (never in chat, never in git in plain text)
 Environment variables in the cloud environment settings:
-`TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `IG_APP_ID`, `IG_APP_SECRET`, `SOCIAL_TOKEN_KEY` (any long random passphrase).
+`TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `IG_APP_ID`, `IG_APP_SECRET`, `IG_TOKEN_SBR`, `IG_TOKEN_R360`, `IG_TOKEN_STR`,
+`SOCIAL_TOKEN_KEY` (any long random passphrase). (No Unscouted token for now.)
 Per-account refresh/long-lived tokens are stored **encrypted with SOCIAL_TOKEN_KEY** in `social/tokens.enc`
 (so the daily run can rotate them). Without the env vars nothing can be decrypted.
 
@@ -38,7 +39,8 @@ Per-account refresh/long-lived tokens are stored **encrypted with SOCIAL_TOKEN_K
   voice-only version so the trending sound is the music.
 
 ## Status
-- [ ] Adi creates both apps and adds the env vars (steps sent in chat 2026-10-25)
+- [x] Adi created both apps with 3 accounts (SBR, R360, SetToRank) on 2026-10-25; Unscouted skipped for now
+- [ ] Env vars added in the environment settings
 - [ ] New session: one-time login per account → tokens.enc
-- [ ] Test with Unscouted (1 TikTok draft + 1 IG Reel)
+- [ ] Test with Sign Build Run (1 TikTok draft + 1 IG Reel)
 - [ ] Switch the daily run: build two audio versions, post, keep a short summary email
