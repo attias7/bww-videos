@@ -72,7 +72,10 @@ def main():
         if i.get("ig_file"):
             auto.append(f"✅ Instagram posts automatically at {i['time']} — don't post it there yourself.")
         if i.get("tiktok_draft"):
-            auto.append(f"📥 TikTok: the draft lands in your TikTok inbox at {i['time']} — open it, add the sound, tap Post.")
+            auto.append("📥 TikTok: the draft is in your TikTok inbox the morning before — add the sound and schedule it "
+                        f"for {i['date']} {i['time']} (or post it whenever you can that day).")
+        if i.get("buffer"):
+            auto.append(f"✅ Scheduled in Buffer for {i['date']} {i['time']} on Instagram + TikTok (built-in music) — nothing to do.")
         for a in auto:
             h.append(f'<div style="margin:0 0 8px;padding:6px 10px;background:#eef6ee;border-radius:6px;font-size:14px">{html.escape(a)}</div>')
             t.append(a)

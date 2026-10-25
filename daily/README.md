@@ -6,7 +6,7 @@ and a trending sound for TikTok and for Instagram.
 Since 2026-10-25 (Adi: "each day post in those 6 accounts"): Sign Build Run, Remodel in 360 and SetToRank post
 themselves on **Instagram (Reel published at 23:00 on its post day, built-in music)** and **TikTok (draft sent to the
 account's inbox ~10:00 the DAY BEFORE; Adi adds the trending sound and schedules it for 23:00 in the TikTok app)** via the
-"Auto-post due videos" task. Reels are made one day ahead (step 2). Unscouted stays manual (email).
+"Auto-post due videos" task. Reels are made one day ahead (step 2). Unscouted posts through **Buffer** (Instagram + TikTok @unscouted.football, built-in music, no trending sound) — see "Unscouted → Buffer" below.
 
 ## Skills to load (if available in the run)
 - `hormozi-hooks`: every hook (draft 5, keep the best).
@@ -33,7 +33,8 @@ for the accounts listed in social/SETUP.md. Never use Buffer, Publer or Metricoo
 
 Job format and every element type: `sbr/README.md` (football elements: `unscouted/README.md`).
 Good examples to copy: `sbr/jobs/ep29.json`, `unscouted/jobs/ep16.json`, `r360/jobs/d001.json`, `settorank/jobs/ep01.json`.
-Always set `"music_vol": 0` (voice only, so Adi's trending sound is the music).
+Set `"music_vol": 0` (voice only, so Adi's trending sound is the music) — EXCEPT Unscouted: `"music_vol": 0.45`
+(built-in music, posted as-is through Buffer, no trending sound; Adi 2026-10-25).
 Avoid arrow glyphs (→) in on-screen text: Poppins has none, they render as boxes. Frame 1080x1920, keep text between y≈300 and y≈1600. Big elements: browser is 880 px tall, form 1000 px,
 cards 460 px each, steps 200 px per item, checklist 170 px per item; don't stack them over other elements.
 
@@ -94,6 +95,16 @@ are brand accounts — if they're Business accounts only the commercial library 
 cleared for business use, and always add "if it's not in your library: search <mood> in the Commercial Music Library".
 Write them as `"sound_tiktok": "<Song> – <Artist> (why it fits)"`, `"sound_instagram": "..."`.
 Never invent a sound or a usage count.
+
+## Unscouted → Buffer (since 2026-10-25)
+Adi: "for Unscouted I want it on Buffer, no trending song, you do all the work". The daily run builds the Unscouted reel with
+built-in music and queues it (date P, time 19:00, no sound_* fields, notes "Buffer"). The separate scheduled task
+"Unscouted → Buffer" (09:20 + 10:20 Israel, Buffer connector) creates the two Buffer posts for every Unscouted reel in the
+queue that has no "buffer" field yet: Instagram channel 6ac8ebeb6a5c39ccb661692a (type reel, share to feed, AI-generated on)
+and TikTok channel 6ab6bbbcea19ca0bdee8df8a (title = tiktok_title, AI-generated on, caption without #soccerplayer),
+customScheduled at date+time Israel, video = raw.githubusercontent URL of files[0]; then writes
+"buffer": {"instagram": id, "tiktok": id} into the queue line. Buffer free plan: max 10 scheduled posts at once.
+Carousels are not made by the daily run.
 
 ## Daily steps
 
