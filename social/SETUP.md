@@ -10,7 +10,7 @@ No Buffer / Publer / Metricool.
 | Sign Build Run | yes | yes |
 | Unscouted | **skipped for now (2026-10-25)** – stays on the daily email, posted by hand | skipped for now |
 | Remodel in 360 | yes (@remodelin360) | yes |
-| SetToRank | **later** – Adi couldn't log in on 2026-10-25; TikTok stays on the email until connected | yes (new) |
+| SetToRank | yes (login worked 2026-10-25) | yes (new) |
 
 ## Credentials (never in chat, never in git in plain text)
 Environment variables in the cloud environment settings:
