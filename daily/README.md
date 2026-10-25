@@ -79,7 +79,9 @@ Never invent a sound or a usage count.
 3. Numbering: SBR / Unscouted next ep = max ep in their `episodes.csv` + 1; Remodel in 360 next id = max `dNNN` in
    `r360/episodes.csv` + 1; SetToRank next ep = max in `settorank/episodes.csv` + 1. Read the last ~10 rows of each log
    and the HOOKS files first so hooks/topics/pain points never repeat.
-4. Write all 4 scripts (hook = Hormozi method: WHO + RESULT + EASE/OBJECTION REMOVAL, under ~10 spoken words, draft 5,
+4. If a job file for the next episode already exists but has no video in `<brand>/videos/` yet (e.g. unscouted/jobs/ep17–19.json written
+   by the old batch run on 2026-10-25), reuse its lines/scenes instead of writing a new script (set "music_vol": 0).
+   Write all 4 scripts (hook = Hormozi method: WHO + RESULT + EASE/OBJECTION REMOVAL, under ~10 spoken words, draft 5,
    keep the best). Then generate the 4 voices (`generations_count: 1`; poll `creative_get_flow_run_status`;
    concurrency error → wait 2 min and try once more; never re-run a success). Download each `content_url` with curl
    into `<brand>/voices/`.
