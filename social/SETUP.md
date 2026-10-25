@@ -40,7 +40,7 @@ Per-account refresh/long-lived tokens are stored **encrypted with SOCIAL_TOKEN_K
 
 ## Status
 - [x] Adi created both apps with 3 accounts (SBR, R360, SetToRank) on 2026-10-25; Unscouted skipped for now
-- [ ] Env vars added in the environment settings
+- [x] Env vars added in the environment settings (2026-10-25, plain env vars: the network-secret form only injects headers, which TikTok token exchange and 3 IG accounts on one host can't use)
 - [ ] New session: one-time login per account → tokens.enc
 - [ ] Test with Sign Build Run (1 TikTok draft + 1 IG Reel)
 - [ ] Switch the daily run: build two audio versions, post, keep a short summary email
