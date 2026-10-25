@@ -1,0 +1,3 @@
+HELD — nothing built, no ElevenLabs credits used.
+daily/README.md (committed 2026-10-25 08:31 UTC) says the new Daily 4-brand run replaces the Sunday batch runs and already has sbr/jobs/ep29.json prepared for today; building Ep 29-35 here would clash with it (different voice/music setup, duplicate ep29).
+To build the week anyway: tell Claude "run the Sign Build Run batch".
