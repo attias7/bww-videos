@@ -25,7 +25,7 @@ for the accounts listed in social/SETUP.md. Never use Buffer, Publer or Metricoo
 
 | brand | builder | voice (ElevenLabs) | job folder | series / accent | post time (Israel) |
 |---|---|---|---|---|---|
-| Sign Build Run | `sbr/kit/sbr_build.py` | Arthur `sfJopaWaOtauCD3HKX6Q`, `eleven_v4`, lines end `...` | `sbr/jobs/epNN.json` | `NO COLD CALLS · EP. N`, yellow | 19:00 |
+| Sign Build Run | `sbr/kit/sbr_build.py` | Arthur `sfJopaWaOtauCD3HKX6Q`, `eleven_v4`, lines end `...` | `sbr/jobs/epNN.json` | `NO COLD CALLS · EP. N`, yellow | 23:00 (afternoon US Eastern) |
 | Unscouted | `unscouted/kit/us_build.py` | Archie `kmSVBPu7loj4ayNinwWM`, `eleven_v3`, lines end `...` | `unscouted/jobs/epNN.json` | `PAUSE & DECIDE · #N` or `PLAYER BREAKDOWN · NAME`, lime | 19:00 |
 | Remodel in 360 | `kit/brand_build.py` | Arlo `RckSZHfvva0yOVRPzRfv`, `eleven_multilingual_v2`, `<break time="0.8s" />` between lines | `r360/jobs/dNNN.json` | `KITCHEN & BATH CONTRACTORS`, accent `[255,128,82]` | 23:00 (afternoon US Eastern) |
 | SetToRank | `kit/brand_build.py` | Matt `3iY0r3RaYmOh6WfIwMIH`, `eleven_v4`, lines end `...` | `settorank/jobs/epNN.json` | `RANK & RENT · BUILD FASTER`, accent `[64,200,255]` | 23:00 (afternoon US Eastern) |
@@ -72,7 +72,18 @@ Honest: it builds the site, it doesn't guarantee rankings; no invented stats, te
 CTA: "Build one free. Link in bio."
 Hashtags: #rankandrent #localseo #wordpress #seo #leadgeneration
 
+## Posting time (researched 2026-10-25)
+All 3 auto-posted brands (Sign Build Run, Remodel in 360, SetToRank) post at **23:00 Israel**, Instagram and TikTok at the
+same time. Their audiences are in the US: 23:00 Israel = 5 pm Eastern / 2 pm Pacific (4 pm / 1 pm after US clocks change
+on Nov 1). That sits inside the window most 2026 studies agree on: Sprout Social TikTok (2–6 pm local, Tue–Thu strongest),
+Metricool/Buffer (engagement climbs from late afternoon into the evening), Buffer Instagram (Wed 6 pm among the top slots).
+Later US evening (7–10 pm ET) would be 01:00–04:00 Israel; that's too late, because Adi has to tap Post on the TikTok drafts.
+Unscouted stays 19:00 (manual). Revisit once the accounts have ~3 weeks of posts: Instagram Insights → "Most active times"
+and TikTok Analytics → Followers → "Follower activity", then move the time in this table and the "Auto-post due videos" cron.
+
 ## Trending sounds (in every email)
+**English or instrumental only — never a Hebrew song** (the audiences are English-speaking, mostly US). Search for US/global
+trending charts, not Israeli ones.
 
 Research once per run, for TikTok and Instagram separately: WebSearch (mode extended) for "TikTok trending sounds this week
 <month year>" and "Instagram trending audio this week <month year>". Only use sources dated in the last ~7 days and note the
