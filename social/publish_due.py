@@ -18,7 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 Q = os.path.join(ROOT, "uploads", "queue.jsonl")
 LOG = os.path.join(HERE, "posted.jsonl")
-BRAND = {"Sign Build Run": "sbr", "Remodel in 360": "r360", "SetToRank": "str"}
+BRAND = {"Sign Build Run": "sbr", "Remodel in 360": "r360", "SetToRank": "str", "Subletli": "sbl"}
 IG_ENV = {"sbr": "IG_TOKEN_SBR", "r360": "IG_TOKEN_R360", "str": "IG_TOKEN_STR"}
 
 def tiktok_connected():
@@ -47,7 +47,7 @@ def main():
             continue
         key = f'{i["date"]}|{i["brand"]}|{i["kind"]}'
         jobs = []
-        if (i.get("ig_file") and i["date"] == today and i["time"] <= limit and os.environ.get(IG_ENV[b])
+        if (i.get("ig_file") and i["date"] == today and i["time"] <= limit and os.environ.get(IG_ENV.get(b, ""))
                 and (key, "instagram") not in done):
             jobs.append(("instagram", ["ig", b, i["ig_file"]]))
         if i.get("tiktok_draft") and b in tt and (key, "tiktok") not in done:

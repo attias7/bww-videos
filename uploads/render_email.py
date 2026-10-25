@@ -10,7 +10,7 @@ import datetime, html, json, os, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 Q = os.path.join(ROOT, "uploads", "queue.jsonl")
 RAW = "https://raw.githubusercontent.com/attias7/bww-videos/main/"
-COLORS = {"Sign Build Run": "#1f6feb", "Unscouted": "#2da44e", "Remodel in 360": "#bf8700", "SetToRank": "#0a7ea4"}
+COLORS = {"Sign Build Run": "#1f6feb", "Unscouted": "#2da44e", "Remodel in 360": "#bf8700", "SetToRank": "#0a7ea4", "Subletli": "#d99a00"}
 
 def ok(url):
     try:

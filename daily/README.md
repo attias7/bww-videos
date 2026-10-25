@@ -1,6 +1,6 @@
 # Daily 4-brand run (cloud only)
 
-Every morning one scheduled task makes **one new reel for each of the 4 accounts** and emails Adi
+Every morning one scheduled task makes **one new reel for each of the 5 accounts** and emails Adi
 (adiattias2003@gmail.com) the pack before **09:30 Israel time**: download link, caption, TikTok title,
 and a trending sound for TikTok and for Instagram.
 Since 2026-10-25 (Adi: "each day post in those 6 accounts"): Sign Build Run, Remodel in 360 and SetToRank post
@@ -30,6 +30,7 @@ for the accounts listed in social/SETUP.md. Never use Buffer, Publer or Metricoo
 | Unscouted | `unscouted/kit/us_build.py` | Archie `kmSVBPu7loj4ayNinwWM`, `eleven_v3`, lines end `...` | `unscouted/jobs/epNN.json` | `PAUSE & DECIDE · #N` or `PLAYER BREAKDOWN · NAME`, lime | 19:00 |
 | Remodel in 360 | `kit/brand_build.py` | Arlo `RckSZHfvva0yOVRPzRfv`, `eleven_multilingual_v2`, `<break time="0.8s" />` between lines | `r360/jobs/dNNN.json` | `KITCHEN & BATH CONTRACTORS`, accent `[255,128,82]` | 23:00 (afternoon US Eastern) |
 | SetToRank | `kit/brand_build.py` | Matt `3iY0r3RaYmOh6WfIwMIH`, `eleven_v4`, lines end `...` | `settorank/jobs/epNN.json` | `RANK & RENT · BUILD FASTER`, accent `[64,200,255]` | 23:00 (afternoon US Eastern) |
+| Subletli | `kit/text_reel.py` (text only, Hebrew RTL) | **no voice** (Adi, 2026-10-25) | `subletli/jobs/epNN.json` | brand yellow `[255,201,74]` on navy `[11,19,36]` | 20:00 Israel (TikTok only) |
 
 Job format and every element type: `sbr/README.md` (football elements: `unscouted/README.md`).
 Good examples to copy: `sbr/jobs/ep29.json`, `unscouted/jobs/ep16.json`, `r360/jobs/d001.json`, `settorank/jobs/ep01.json`.
@@ -74,13 +75,32 @@ Honest: it builds the site, it doesn't guarantee rankings; no invented stats, te
 CTA: "Build one free. Link in bio."
 Hashtags: #rankandrent #localseo #wordpress #seo #leadgeneration
 
+**Subletli** (subletli.com, TikTok @subletli only — added 2026-10-25). Free Israeli site for short-term sublets (סאבלט) in 100+
+cities: seekers pick a city + dates and see only apartments whose host confirmed they're still available (verified by email every
+3 days, green "אומתה" badge; unverified for a week drops down; past dates removed); send a request (name, dates, short intro) →
+host gets it by email, seeker gets the host's WhatsApp. Hosts paste their Facebook post and the site fills city/dates/price/rooms;
+phone stays private. Everything free: no commission, no credit card, no time limit. Saved searches + email alerts.
+Enemy: Facebook sublet groups (no date filter, same apartment in ten groups, "already rented", endless scrolling).
+Audience: Israelis 20–35 — students, people between apartments, travellers abroad who want to sublet their place.
+**Hebrew only**, casual and direct, short lines, right-to-left. **No voice**: text-on-screen reel with `kit/text_reel.py`
+(job format in its docstring; example `subletli/jobs/ep01.json`), 6–8 scenes, 15–22 s, first scene = hook on the yellow card,
+last scene = CTA with the `subletli.com` chip. Angles to rotate: Facebook-group pain; seeker tips (dates, viewing, safety:
+don't pay before seeing it, check the owner approves subletting, put it in writing); host side (going abroad? sublet your
+place in 2 minutes, phone stays private); city spotlights (Tel Aviv, Jerusalem, Haifa, Be'er Sheva...); student season /
+summer / reserve duty (מילואים) timing. Honest: no invented listing counts, prices or testimonials; the site is not a party
+to the deal. Trending sound: **Hebrew songs are allowed and preferred for Subletli** (Israeli TikTok trending), or a
+trending instrumental. Caption: Hebrew, hook first, 1–2 lines, CTA "הקישור בביו" / subletli.com, hashtags
+#סאבלט #סאבלטים #דירות #דירהלהשכרה #סטודנטים #תלאביב #ישראל #subletli. tiktok_draft true, no ig_file (no Instagram).
+Build: `cd subletli/jobs && python3 ../../kit/text_reel.py epNN.json` (~20 s), check `<out>_sync.jpg`, copy `<out>_upload.mp4`
+to `subletli/videos/sbl_epNN_<slug>.mp4`, log in `subletli/episodes.csv`.
+
 ## Posting time (researched 2026-10-25)
 All 3 auto-posted brands (Sign Build Run, Remodel in 360, SetToRank) post at **23:00 Israel**, Instagram and TikTok at the
 same time. Their audiences are in the US: 23:00 Israel = 5 pm Eastern / 2 pm Pacific (4 pm / 1 pm after US clocks change
 on Nov 1). That sits inside the window most 2026 studies agree on: Sprout Social TikTok (2–6 pm local, Tue–Thu strongest),
 Metricool/Buffer (engagement climbs from late afternoon into the evening), Buffer Instagram (Wed 6 pm among the top slots).
 Later US evening (7–10 pm ET) would be 01:00–04:00 Israel; that's too late, because Adi has to tap Post on the TikTok drafts.
-Unscouted stays 19:00 (manual). Revisit once the accounts have ~3 weeks of posts: Instagram Insights → "Most active times"
+Unscouted stays 19:00 (Buffer). Subletli posts 20:00 Israel (its audience is in Israel; TikTok evening peak 18–22 local). Revisit once the accounts have ~3 weeks of posts: Instagram Insights → "Most active times"
 and TikTok Analytics → Followers → "Follower activity", then move the time in this table and the "Auto-post due videos" cron.
 
 ## Trending sounds (in every email)

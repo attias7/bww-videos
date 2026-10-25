@@ -5,7 +5,7 @@ Usage:
   python3 social/post.py ig <brand> <repo-relative mp4> <caption-file>     → publishes a Reel, prints the media id
   python3 social/post.py tiktok <brand> <repo-relative mp4>                → sends a draft to the TikTok inbox
   python3 social/post.py refresh                                           → refreshes every saved token (run once per day)
-brand = sbr | r360 | str  (Unscouted is not connected).
+brand = sbr | r360 | str | sbl (Subletli: TikTok only).  Unscouted goes through Buffer.
 
 Credentials: env IG_TOKEN_SBR / IG_TOKEN_R360 / IG_TOKEN_STR (seed tokens), TIKTOK_CLIENT_KEY / _SECRET,
 SOCIAL_TOKEN_KEY (unlocks social/tokens.enc). Never print a token.

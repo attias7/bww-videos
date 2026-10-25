@@ -6,7 +6,7 @@ import json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 Q = os.path.join(ROOT, "uploads", "queue.jsonl")
-BRANDS = {"Sign Build Run", "Unscouted", "Remodel in 360", "SetToRank"}
+BRANDS = {"Sign Build Run", "Unscouted", "Remodel in 360", "SetToRank", "Subletli"}
 
 def main():
     item = json.loads(sys.argv[1])
