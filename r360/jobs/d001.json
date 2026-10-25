@@ -339,26 +339,51 @@
      ]
     },
     {
-     "type": "bignum",
+     "type": "text",
      "at": 9,
-     "y": 740,
-     "text": "3 → 5-6",
-     "size": 180,
-     "color": "y",
+     "y": 640,
+     "size": 76,
+     "segs": [
+      [
+       "from ",
+       "w"
+      ],
+      [
+       "3 in 10",
+       "r"
+      ]
+     ],
      "dt": 0.4
     },
     {
      "type": "text",
      "at": 9,
-     "y": 920,
-     "size": 66,
+     "y": 780,
+     "size": 96,
      "segs": [
       [
-       "in 10 estimates closed",
+       "to ",
        "w"
+      ],
+      [
+       "5-6 in 10",
+       "y"
       ]
      ],
-     "dt": 0.8
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 900,
+     "size": 56,
+     "segs": [
+      [
+       "estimates closed",
+       "grey"
+      ]
+     ],
+     "dt": 1.4
     },
     {
      "type": "chip",

@@ -21,7 +21,7 @@ Never post, schedule or delete anything on any social platform, Buffer, Publer o
 Job format and every element type: `sbr/README.md` (football elements: `unscouted/README.md`).
 Good examples to copy: `sbr/jobs/ep29.json`, `unscouted/jobs/ep16.json`, `r360/jobs/d001.json`, `settorank/jobs/ep01.json`.
 Always set `"music_vol": 0` (voice only, so Adi's trending sound is the music).
-Frame 1080x1920, keep text between y≈300 and y≈1600. Big elements: browser is 880 px tall, form 1000 px,
+Avoid arrow glyphs (→) in on-screen text: Poppins has none, they render as boxes. Frame 1080x1920, keep text between y≈300 and y≈1600. Big elements: browser is 880 px tall, form 1000 px,
 cards 460 px each, steps 200 px per item, checklist 170 px per item; don't stack them over other elements.
 
 ## Brand rules (short — the full rules are in each brand's files)
