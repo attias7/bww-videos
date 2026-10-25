@@ -481,23 +481,31 @@ def main(jobpath):
     r = subprocess.run([sys.executable, os.path.join(HERE, "sbr_music.py")], cwd=tmp, env={**os.environ, "OUT": mus}, capture_output=True, text=True)
     if r.returncode: print(r.stderr); sys.exit(1)
 
-    mixf = (f'[1:a]adelay={int(LEAD*1000)}|{int(LEAD*1000)},aresample=44100,aformat=channel_layouts=stereo,highpass=f=70,'
-            f'acompressor=threshold=-20dB:ratio=3:attack=8:release=160:makeup=3,apad=whole_dur={DUR},asplit=2[voc][sc];'
-            f'[2:a]volume={job.get("music_vol", 0.45)}[mus];[mus][sc]sidechaincompress=threshold=0.03:ratio=5:attack=30:release=400[duck];'
-            f'[voc][duck]amix=inputs=2:normalize=0,alimiter=limit=0.92[a]')
-    if job.get("music_vol", 0.45) == 0:
-        mixf = (f'[1:a]adelay={int(LEAD*1000)}|{int(LEAD*1000)},aresample=44100,aformat=channel_layouts=stereo,highpass=f=70,'
+    def mix_filter(music_on):
+        if music_on:
+            return (f'[1:a]adelay={int(LEAD*1000)}|{int(LEAD*1000)},aresample=44100,aformat=channel_layouts=stereo,highpass=f=70,'
+                    f'acompressor=threshold=-20dB:ratio=3:attack=8:release=160:makeup=3,apad=whole_dur={DUR},asplit=2[voc][sc];'
+                    f'[2:a]volume={job.get("music_vol", 0.45) or 0.45}[mus];[mus][sc]sidechaincompress=threshold=0.03:ratio=5:attack=30:release=400[duck];'
+                    f'[voc][duck]amix=inputs=2:normalize=0,alimiter=limit=0.92[a]')
+        return (f'[1:a]adelay={int(LEAD*1000)}|{int(LEAD*1000)},aresample=44100,aformat=channel_layouts=stereo,highpass=f=70,'
                 f'acompressor=threshold=-20dB:ratio=3:attack=8:release=160:makeup=3,apad=whole_dur={DUR},alimiter=limit=0.92[a]')
-    master = out
-    run(f'ffmpeg -v error -y -i "{vid}" -i "{fast}" -i "{mus}" -filter_complex "{mixf}" -map 0:v -map "[a]" -c:v libx264 -preset slow '
-        f'-b:v 5M -maxrate 6M -bufsize 12M -vf hqdn3d=2:2:3:3 -pix_fmt yuv420p -c:a aac -b:a 192k -t {DUR} -movflags +faststart "{master}"')
-    # upload version (<max_mb) 720x1280, two-pass
-    up = base + "_upload.mp4"; mb = job.get("max_mb", 9.0)
-    br = int(mb * 8 * 1024 / DUR - 140)
-    vf = "scale=720:1280:flags=lanczos,hqdn3d=4:4:6:6"
-    pl = os.path.join(tmp, "pass")
-    run(f'ffmpeg -v error -y -i "{master}" -vf "{vf}" -c:v libx264 -preset slow -b:v {br}k -maxrate {br*3//2}k -bufsize {br*2}k -pass 1 -passlogfile "{pl}" -an -f null /dev/null')
-    run(f'ffmpeg -v error -y -i "{master}" -vf "{vf}" -c:v libx264 -preset slow -b:v {br}k -maxrate {br*3//2}k -bufsize {br*2}k -pass 2 -passlogfile "{pl}" -c:a aac -b:a 128k -movflags +faststart "{up}"')
+
+    def render(master, up, music_on):
+        run(f'ffmpeg -v error -y -i "{vid}" -i "{fast}" -i "{mus}" -filter_complex "{mix_filter(music_on)}" -map 0:v -map "[a]" -c:v libx264 -preset slow '
+            f'-b:v 5M -maxrate 6M -bufsize 12M -vf hqdn3d=2:2:3:3 -pix_fmt yuv420p -c:a aac -b:a 192k -t {DUR} -movflags +faststart "{master}"')
+        # upload version (<max_mb) 720x1280, two-pass
+        mb = job.get("max_mb", 9.0)
+        br = int(mb * 8 * 1024 / DUR - 140)
+        vf = "scale=720:1280:flags=lanczos,hqdn3d=4:4:6:6"
+        pl = os.path.join(tmp, "pass")
+        run(f'ffmpeg -v error -y -i "{master}" -vf "{vf}" -c:v libx264 -preset slow -b:v {br}k -maxrate {br*3//2}k -bufsize {br*2}k -pass 1 -passlogfile "{pl}" -an -f null /dev/null')
+        run(f'ffmpeg -v error -y -i "{master}" -vf "{vf}" -c:v libx264 -preset slow -b:v {br}k -maxrate {br*3//2}k -bufsize {br*2}k -pass 2 -passlogfile "{pl}" -c:a aac -b:a 128k -movflags +faststart "{up}"')
+
+    # "both_mixes": voice-only master (TikTok, trending sound added in the app) + "<out>_music" (Instagram, built-in music)
+    master = out; up = base + "_upload.mp4"
+    render(master, up, music_on=job.get("music_vol", 0.45) != 0 and not job.get("both_mixes"))
+    if job.get("both_mixes"):
+        render(base + "_music.mp4", base + "_music_upload.mp4", music_on=True)
     # sync sheet
     thumbs = []
     for k, s in enumerate(starts):

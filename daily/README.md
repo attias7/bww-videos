@@ -7,7 +7,8 @@ Started 2026-10-25. It replaces the old Sunday/Wednesday batch runs and the old 
 
 Everything runs in the cloud container. **Never use the Mac, Chrome, computer use or device tools.**
 ElevenLabs audio is downloaded with plain `curl` from the `content_url` (storage.googleapis.com works).
-Never post, schedule or delete anything on any social platform, Buffer, Publer or Metricool.
+The daily run never posts itself. Posting happens only through `social/publish_due.py` (the "Auto-post due videos" task),
+for the accounts listed in social/SETUP.md. Never use Buffer, Publer or Metricool.
 
 ## The 4 brands
 
@@ -15,8 +16,8 @@ Never post, schedule or delete anything on any social platform, Buffer, Publer o
 |---|---|---|---|---|---|
 | Sign Build Run | `sbr/kit/sbr_build.py` | Arthur `sfJopaWaOtauCD3HKX6Q`, `eleven_v4`, lines end `...` | `sbr/jobs/epNN.json` | `NO COLD CALLS · EP. N`, yellow | 19:00 |
 | Unscouted | `unscouted/kit/us_build.py` | Archie `kmSVBPu7loj4ayNinwWM`, `eleven_v3`, lines end `...` | `unscouted/jobs/epNN.json` | `PAUSE & DECIDE · #N` or `PLAYER BREAKDOWN · NAME`, lime | 19:00 |
-| Remodel in 360 | `kit/brand_build.py` | Arlo `RckSZHfvva0yOVRPzRfv`, `eleven_multilingual_v2`, `<break time="0.8s" />` between lines | `r360/jobs/dNNN.json` | `KITCHEN & BATH CONTRACTORS`, accent `[255,128,82]` | 23:30 (afternoon US Eastern; schedule it in the app) |
-| SetToRank | `kit/brand_build.py` | Matt `3iY0r3RaYmOh6WfIwMIH`, `eleven_v4`, lines end `...` | `settorank/jobs/epNN.json` | `RANK & RENT · BUILD FASTER`, accent `[64,200,255]` | 23:30 (afternoon US Eastern; schedule it in the app) |
+| Remodel in 360 | `kit/brand_build.py` | Arlo `RckSZHfvva0yOVRPzRfv`, `eleven_multilingual_v2`, `<break time="0.8s" />` between lines | `r360/jobs/dNNN.json` | `KITCHEN & BATH CONTRACTORS`, accent `[255,128,82]` | 23:00 (afternoon US Eastern) |
+| SetToRank | `kit/brand_build.py` | Matt `3iY0r3RaYmOh6WfIwMIH`, `eleven_v4`, lines end `...` | `settorank/jobs/epNN.json` | `RANK & RENT · BUILD FASTER`, accent `[64,200,255]` | 23:00 (afternoon US Eastern) |
 
 Job format and every element type: `sbr/README.md` (football elements: `unscouted/README.md`).
 Good examples to copy: `sbr/jobs/ep29.json`, `unscouted/jobs/ep16.json`, `r360/jobs/d001.json`, `settorank/jobs/ep01.json`.
@@ -85,19 +86,27 @@ Never invent a sound or a usage count.
    keep the best). Then generate the 4 voices (`generations_count: 1`; poll `creative_get_flow_run_status`;
    concurrency error → wait 2 min and try once more; never re-run a success). Download each `content_url` with curl
    into `<brand>/voices/`.
-5. Write the 4 jobs, then build at most 2 at a time in the background
+5. Write the 4 jobs (for Sign Build Run, Remodel in 360 and SetToRank add `"both_mixes": true` — the builder then also
+   writes `<out>_music_upload.mp4`, the Instagram version with built-in music), then build at most 2 at a time in the background
    (`cd <brand>/jobs && nohup python3 <builder> <job>.json > /tmp/<id>.log 2>&1 &`), poll until the log prints `OK`.
    "fewer speech chunks than lines" → merge lines or pass "spans" and rebuild.
 6. Check every `<out>_sync.jpg` (each tile shows its own line; nothing cut or overlapping) and the frame at 0.5 s (hook).
    Fix and rebuild if needed.
 7. Copy each `<out>_upload.mp4` to `<brand>/videos/<file>.mp4` (sbr/videos/sbr_epNN_<slug>.mp4,
    unscouted/videos/US_epNN_<slug>.mp4, r360/videos/r360_dNNN_<slug>.mp4, settorank/videos/str_epNN_<slug>.mp4; < 15 MB).
-   Commit + push, `curl -sI` each raw.githubusercontent URL → 200.
+   For the 3 auto-posted brands also copy `<out>_music_upload.mp4` to the same name with `_ig` before `.mp4`
+   (e.g. r360/videos/r360_dNNN_<slug>_ig.mp4). Commit + push, `curl -sI` each raw.githubusercontent URL → 200.
 8. Queue each with `python3 uploads/queue_add.py '<json>'`: {"date": D, "time": <post time>, "brand", "kind": "reel", "ep",
    "platforms": ["Instagram (Reel)", "TikTok"], "files": [<video>], "caption", "tiktok_title": <hook>,
    "sound_tiktok", "sound_instagram", "music": "voice at 100%, sound at 5–15%",
    "notes": "TikTok: turn on the AI-generated content label (AI voice). Cover: the first frame (hook card)."}.
    Caption: line 1 = the hook, 1–3 short lines, a question or CTA, then the brand hashtags.
+   AUTO-POSTING (see social/SETUP.md): for Sign Build Run, Remodel in 360 and SetToRank add `"ig_file": "<the _ig.mp4>"`
+   (Instagram publishes it automatically at its time), and add `"tiktok_draft": true` only for brands with a TikTok login
+   (`python3 social/tokens.py status` lists them). The separate "Auto-post due videos" task publishes them at their
+   time — the daily run never posts. Unscouted stays manual (no ig_file / tiktok_draft).
+   Also run `python3 social/post.py refresh` once per run (rotates the Instagram + TikTok tokens) and commit
+   `social/tokens.enc` if it changed.
 9. Log a row per brand in its episodes.csv (SBR/Unscouted keep their columns; r360/settorank:
    id/ep, post_date, angle, hook, topic, file, status, processed_at, notes). Mark hooks ✅ in HOOKS files where they exist.
 10. `python3 uploads/render_email.py D --check --unsent` → if `missing` is empty, send with `mcp__Gmail__send_message`

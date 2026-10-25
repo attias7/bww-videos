@@ -68,6 +68,14 @@ def main():
             if f.endswith(".zip"):
                 name = "⬇ all slides (.zip)"
             links.append((name, url))
+        auto = []
+        if i.get("ig_file"):
+            auto.append(f"✅ Instagram posts automatically at {i['time']} — don't post it there yourself.")
+        if i.get("tiktok_draft"):
+            auto.append(f"📥 TikTok: the draft lands in your TikTok inbox at {i['time']} — open it, add the sound, tap Post.")
+        for a in auto:
+            h.append(f'<div style="margin:0 0 8px;padding:6px 10px;background:#eef6ee;border-radius:6px;font-size:14px">{html.escape(a)}</div>')
+            t.append(a)
         if i["kind"] == "reel":
             h.append(f'<a href="{links[0][1]}" style="display:inline-block;background:{c};color:#fff;text-decoration:none;'
                      f'padding:9px 14px;border-radius:6px;font-weight:600">⬇ Download video</a>')

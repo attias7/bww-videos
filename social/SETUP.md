@@ -43,7 +43,18 @@ Per-account refresh/long-lived tokens are stored **encrypted with SOCIAL_TOKEN_K
 - [x] Env vars added in the environment settings (2026-10-25, plain env vars: the network-secret form only injects headers, which TikTok token exchange and 3 IG accounts on one host can't use)
 - [x] TikTok logins for sbr + r360 saved in tokens.enc (2026-10-25; refresh valid 1 year). SetToRank TikTok: later.
 - [x] Instagram tokens checked: @signbuildrun (creator), @remodelin360 (business), @settorank (creator); publish quota 100/day each
-- [ ] Adi lengthens SOCIAL_TOKEN_KEY (12 chars is too short for a public repo) → re-encrypt → commit tokens.enc
+- [x] Adi lengthened SOCIAL_TOKEN_KEY (2026-10-25). The 2 TikTok logins were made under the old key, so they must be redone ONCE in a new session (links: social/SETUP.md) → tokens.enc is then committed with the new key. Until then the publisher skips TikTok (drafts stay on the email).
 - [x] TikTok draft test: sbr_ep29 → SEND_TO_USER_INBOX in sandbox (2026-10-25) — inbox upload works without audit
-- [ ] Instagram Reel test (needs Adi's OK — it publishes publicly)
+- [x] Instagram Reel test: @remodelin360 published 2026-10-25 https://www.instagram.com/reel/De6_tIuFTZw/
 - [ ] Switch the daily run: build two audio versions, post, keep a short summary email
+
+## TikTok login links (state = brand key)
+Make sure the browser is logged into THAT TikTok account (or use "Switch account" / incognito), click Continue, and send
+back the address you land on. Then run `python3 social/connect_tiktok.py "<address>"`.
+- sbr:  https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=sbr
+- r360: https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=r360
+- str:  https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=str
+
+## Posting times (Israel)
+Sign Build Run 19:00; Remodel in 360 + SetToRank 23:00 (US afternoon). The "Auto-post due videos" task fires at
+18:52, 19:52, 22:52 and 23:52 and posts anything due within 10 minutes that isn't in social/posted.jsonl yet.
