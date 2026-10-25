@@ -4,8 +4,9 @@ Every morning one scheduled task makes **one new reel for each of the 4 accounts
 (adiattias2003@gmail.com) the pack before **09:30 Israel time**: download link, caption, TikTok title,
 and a trending sound for TikTok and for Instagram.
 Since 2026-10-25 (Adi: "each day post in those 6 accounts"): Sign Build Run, Remodel in 360 and SetToRank post
-themselves at their time on **Instagram (Reel published, built-in music)** and **TikTok (draft sent to the account's
-inbox; Adi adds the trending sound and taps Post)** via the "Auto-post due videos" task. Unscouted stays manual (email).
+themselves on **Instagram (Reel published at 23:00 on its post day, built-in music)** and **TikTok (draft sent to the
+account's inbox ~10:00 the DAY BEFORE; Adi adds the trending sound and schedules it for 23:00 in the TikTok app)** via the
+"Auto-post due videos" task. Reels are made one day ahead (step 2). Unscouted stays manual (email).
 
 ## Skills to load (if available in the run)
 - `hormozi-hooks`: every hook (draft 5, keep the best).
@@ -98,7 +99,11 @@ Never invent a sound or a usage count.
 
 1. D = today's Israel date. Check `runs/D_daily.done` (exists → stop, "Already done today") and `runs/D_daily.lock`
    (less than 100 min old → stop, "Previous attempt still running"). Otherwise write the lock (ISO time), commit + push.
-2. For each brand, skip it if `uploads/queue.jsonl` already has a line with date D, that brand and kind "reel".
+2. ONE DAY AHEAD (Adi, 2026-10-25: "draft it for the day after, then I'll have a full day to add a sound"): this run makes
+   the reels for P = D+1 (tomorrow), so the TikTok drafts reach Adi's inbox this morning and post tomorrow at 23:00.
+   For each brand, skip it if `uploads/queue.jsonl` already has a line with date P, that brand and kind "reel".
+   Catch-up: if a brand also has no reel for D yet and it's before 12:00, make D's too (queue it with date D) — e.g. the first
+   day of the change, 2026-10-26, makes both 10-26 and 10-27.
 3. Numbering: SBR / Unscouted next ep = max ep in their `episodes.csv` + 1; Remodel in 360 next id = max `dNNN` in
    `r360/episodes.csv` + 1; SetToRank next ep = max in `settorank/episodes.csv` + 1. Read the last ~10 rows of each log
    and the HOOKS files first so hooks/topics/pain points never repeat.
@@ -118,10 +123,12 @@ Never invent a sound or a usage count.
    unscouted/videos/US_epNN_<slug>.mp4, r360/videos/r360_dNNN_<slug>.mp4, settorank/videos/str_epNN_<slug>.mp4; < 15 MB).
    For the 3 auto-posted brands also copy `<out>_music_upload.mp4` to the same name with `_ig` before `.mp4`
    (e.g. r360/videos/r360_dNNN_<slug>_ig.mp4). Commit + push, `curl -sI` each raw.githubusercontent URL → 200.
-8. Queue each with `python3 uploads/queue_add.py '<json>'`: {"date": D, "time": <post time>, "brand", "kind": "reel", "ep",
+8. Queue each with `python3 uploads/queue_add.py '<json>'`: {"date": P (the post day), "time": <post time>, "brand", "kind": "reel", "ep",
    "platforms": ["Instagram (Reel)", "TikTok"], "files": [<video>], "caption", "tiktok_title": <hook>,
    "sound_tiktok", "sound_instagram", "music": "voice at 100%, sound at 5–15%",
    "notes": "TikTok: turn on the AI-generated content label (AI voice). Cover: the first frame (hook card)."}.
+   For the 3 auto-posted brands the notes instead start: "Instagram posts itself <P> 23:00. TikTok: the draft is already in
+   your TikTok inbox — add the sound and schedule it for <P> 23:00 in the app (or post it whenever you can that day)."
    Caption: line 1 = the hook, 1–3 short lines, a question or CTA, then the brand hashtags.
    AUTO-POSTING (see social/SETUP.md): for Sign Build Run, Remodel in 360 and SetToRank add `"ig_file": "<the _ig.mp4>"`
    (Instagram publishes it automatically at its time), and add `"tiktok_draft": true` only for brands with a TikTok login
@@ -131,7 +138,7 @@ Never invent a sound or a usage count.
    `social/tokens.enc` if it changed.
 9. Log a row per brand in its episodes.csv (SBR/Unscouted keep their columns; r360/settorank:
    id/ep, post_date, angle, hook, topic, file, status, processed_at, notes). Mark hooks ✅ in HOOKS files where they exist.
-10. `python3 uploads/render_email.py D --check --unsent` → if `missing` is empty, send with `mcp__Gmail__send_message`
+10. `python3 uploads/render_email.py P --check --unsent` (and D too if anything for D is unsent) → if `missing` is empty, send with `mcp__Gmail__send_message`
     to ["adiattias2003@gmail.com"], subject/htmlBody/body from /tmp/upload_email.json; confirm with get_message;
     `python3 uploads/mark_sent.py <message id>`. If count is 0 because another task already emailed today's items, that's fine.
 11. Write `runs/D_daily.done` (2–3 lines: what was made, credits used, sound sources), delete the lock, commit + push

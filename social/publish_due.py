@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Publish every queued post that is due now (run by the "Auto-post due videos" scheduled task).
 
-For each line in uploads/queue.jsonl with date == today (Israel) and time <= now + 10 min:
-  - Instagram: if the item has "ig_file" and the brand has an Instagram token → publish the Reel (social/post.py ig).
-  - TikTok:    if the item has "tiktok_draft": true and the brand has a TikTok login in tokens.enc → send the draft.
+For each line in uploads/queue.jsonl:
+  - Instagram: date == today (Israel), time <= now + 10 min, item has "ig_file" and the brand has an Instagram token
+               → publish the Reel (social/post.py ig).
+  - TikTok:    date == today or tomorrow, item has "tiktok_draft": true and the brand has a TikTok login in tokens.enc
+               → send the draft right away (a day ahead, so Adi has a full day to add a sound and schedule it in the
+               TikTok app for the post time).
 Each success is logged in social/posted.jsonl ({key, platform, id/permalink, at}) so nothing is posted twice.
 Usage: python3 social/publish_due.py [--dry-run]
 Prints one JSON line per action; exit code 1 if anything failed.
@@ -31,6 +34,7 @@ def main():
     now = datetime.datetime.now(ZoneInfo("Asia/Jerusalem"))
     today = now.strftime("%Y-%m-%d"); soon = now + datetime.timedelta(minutes=10)
     limit = soon.strftime("%H:%M") if soon.date() == now.date() else "23:59"  # 23:52 run must still see 23:30 items
+    tomorrow = (now + datetime.timedelta(days=1)).strftime("%Y-%m-%d")
     done = set()
     if os.path.exists(LOG):
         done = {(json.loads(l)["key"], json.loads(l)["platform"]) for l in open(LOG) if l.strip()}
@@ -39,11 +43,12 @@ def main():
     failed = False
     for i in items:
         b = BRAND.get(i["brand"])
-        if not b or i["date"] != today or i["time"] > limit:
+        if not b or i["date"] not in (today, tomorrow):
             continue
         key = f'{i["date"]}|{i["brand"]}|{i["kind"]}'
         jobs = []
-        if i.get("ig_file") and os.environ.get(IG_ENV[b]) and (key, "instagram") not in done:
+        if (i.get("ig_file") and i["date"] == today and i["time"] <= limit and os.environ.get(IG_ENV[b])
+                and (key, "instagram") not in done):
             jobs.append(("instagram", ["ig", b, i["ig_file"]]))
         if i.get("tiktok_draft") and b in tt and (key, "tiktok") not in done:
             jobs.append(("tiktok", ["tiktok", b, i["files"][0]]))

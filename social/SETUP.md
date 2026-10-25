@@ -59,6 +59,7 @@ back the address you land on. Then run `python3 social/connect_tiktok.py "<addre
 - str:  https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=str
 
 ## Posting times (Israel)
-All 3 auto-posted brands at 23:00 Israel (US afternoon; research in daily/README.md "Posting time"), Instagram and
-TikTok together. The "Auto-post due videos" task fires at 22:52 (posts what's due by 23:02) and 23:52 (retry / anything
-due later that day) and posts anything not in social/posted.jsonl yet.
+All 3 auto-posted brands at 23:00 Israel (US afternoon; research in daily/README.md "Posting time").
+Reels are made a day ahead. The "Auto-post due videos" task fires at 09:52 and 10:52 (sends the TikTok drafts for today's
+and tomorrow's reels, so Adi has a full day to add a sound and schedule them for 23:00 in the TikTok app), and at 22:52
+(publishes the Instagram Reels due by 23:02) and 23:52 (retry). Nothing in social/posted.jsonl is posted twice.
