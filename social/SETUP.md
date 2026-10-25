@@ -11,6 +11,7 @@ No Buffer / Publer / Metricool.
 | Unscouted | **skipped for now (2026-10-25)** – stays on the daily email, posted by hand | skipped for now |
 | Remodel in 360 | yes (@remodelin360) | yes |
 | SetToRank | yes (login saved 2026-10-25) | yes (new) |
+| Subletli (@subletli, Hebrew, added 2026-10-25) | yes — needs sandbox target user + login (state=sbl) | no Instagram |
 
 ## Credentials (never in chat, never in git in plain text)
 Environment variables in the cloud environment settings:
@@ -57,6 +58,7 @@ back the address you land on. Then run `python3 social/connect_tiktok.py "<addre
 - sbr:  https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=sbr
 - r360: https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=r360
 - str:  https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=str
+- sbl:  https://www.tiktok.com/v2/auth/authorize/?client_key=sbawrt6b7sea88xixk&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fsignbuildrun.com%2F&state=sbl
 
 ## Posting times (Israel)
 All 3 auto-posted brands at 23:00 Israel (US afternoon; research in daily/README.md "Posting time").
