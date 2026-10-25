@@ -1,0 +1,362 @@
+{
+ "episode": 1,
+ "series": "RANK & RENT · BUILD FASTER",
+ "hook": "Rank and renters: stop building sites by hand.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep01.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep01_stop_building_by_hand.mp4",
+ "lines": [
+  "Rank and renters: stop building sites by hand.",
+  "One lead site needs a lot.",
+  "A page for every service.",
+  "A page for every nearby city.",
+  "Titles, FAQs, local schema, a quote form, a call button.",
+  "By hand, that's days of work for one site.",
+  "SetToRank builds it from a niche and a city.",
+  "Real pages for each service and each town. Not copies.",
+  "Then it publishes to your own WordPress, and routes the leads.",
+  "Real talk. It builds the site. Google still decides how fast it ranks.",
+  "Building and previewing is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 96,
+     "segs": [
+      [
+       "RANK & RENTERS:",
+       "dark"
+      ]
+     ],
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "size": 104,
+     "segs": [
+      [
+       "STOP BUILDING",
+       "dark"
+      ]
+     ],
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "size": 104,
+     "segs": [
+      [
+       "SITES ",
+       "dark"
+      ],
+      [
+       "BY HAND.",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 440,
+     "size": 80,
+     "segs": [
+      [
+       "One lead site needs:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 600,
+     "items": [
+      {
+       "text": "A page per service",
+       "ok": true,
+       "at": 2
+      },
+      {
+       "text": "A page per nearby city",
+       "ok": true,
+       "at": 3
+      },
+      {
+       "text": "Titles + FAQs",
+       "ok": true,
+       "at": 4
+      },
+      {
+       "text": "Local schema",
+       "ok": true,
+       "at": 4,
+       "dt": 0.7
+      },
+      {
+       "text": "Quote form + call button",
+       "ok": true,
+       "at": 4,
+       "dt": 1.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 600,
+     "size": 80,
+     "segs": [
+      [
+       "By hand:",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 800,
+     "text": "DAYS",
+     "size": 200,
+     "color": "r",
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 980,
+     "size": 66,
+     "segs": [
+      [
+       "for one site",
+       "grey"
+      ]
+     ],
+     "dt": 0.7
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 420,
+     "size": 76,
+     "segs": [
+      [
+       "SetToRank builds it from",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "flow",
+     "at": 6,
+     "y": 560,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Niche: kitchen remodeling",
+       "color": "y",
+       "at": 6,
+       "dt": 0.4
+      },
+      {
+       "label": "City: Reno, NV",
+       "color": "b",
+       "at": 6,
+       "dt": 1.0
+      },
+      {
+       "label": "Service + city pages",
+       "color": "g",
+       "at": 7
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1300,
+     "size": 70,
+     "segs": [
+      [
+       "Real pages. ",
+       "w"
+      ],
+      [
+       "Not copies.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "browser",
+     "at": 8,
+     "y": 420,
+     "url": "your-site.com",
+     "title": "Kitchen Remodeling in Reno",
+     "button": "Get a quote"
+    },
+    {
+     "type": "chip",
+     "at": 8,
+     "y": 1420,
+     "text": "Your WordPress · leads routed",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40,
+     "dt": 1.6
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 9,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 660,
+     "size": 76,
+     "segs": [
+      [
+       "It builds the site.",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 790,
+     "size": 72,
+     "segs": [
+      [
+       "Google decides",
+       "w"
+      ]
+     ],
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 890,
+     "size": 72,
+     "segs": [
+      [
+       "how fast it ",
+       "w"
+      ],
+      [
+       "ranks.",
+       "y"
+      ]
+     ],
+     "dt": 2.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 620,
+     "size": 84,
+     "segs": [
+      [
+       "Build + preview",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 740,
+     "size": 120,
+     "segs": [
+      [
+       "FREE",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 1000,
+     "text": "Link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 46,
+     "pad": 40,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1200,
+     "size": 80,
+     "segs": [
+      [
+       "SetToRank",
+       "y"
+      ]
+     ],
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}

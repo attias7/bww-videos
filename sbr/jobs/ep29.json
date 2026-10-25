@@ -1,0 +1,438 @@
+{
+ "episode": 29,
+ "series": "NO COLD CALLS · EP. 29",
+ "hook": "Not every Google search is worth money.",
+ "voice": "../voices/ep29.mp3",
+ "atempo": 1.1,
+ "music_vol": 0,
+ "out": "../out/ep29_buyer_intent.mp4",
+ "lines": [
+  "Not every Google search is worth money.",
+  "Someone types kitchen ideas.",
+  "They're dreaming. Saving pictures. Maybe next year.",
+  "Someone else types kitchen remodel near me.",
+  "That person wants a quote this week.",
+  "That's buyer intent.",
+  "Rank and rent only works on the second kind.",
+  "So before I build anything, I search it myself.",
+  "Are there ads? Are contractors paying for it?",
+  "If nobody pays for that search, nobody will pay me for the lead.",
+  "Real talk.",
+  "Even a good search takes months to rank for.",
+  "Follow. Ep. thirty is how I pick the town."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "size": 110,
+     "segs": [
+      [
+       "NOT EVERY",
+       "dark"
+      ]
+     ],
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 740,
+     "size": 110,
+     "segs": [
+      [
+       "SEARCH IS",
+       "dark"
+      ]
+     ],
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 880,
+     "size": 110,
+     "segs": [
+      [
+       "WORTH ",
+       "dark"
+      ],
+      [
+       "MONEY.",
+       "r"
+      ]
+     ],
+     "dt": 0.7
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1150,
+     "text": "Rank & rent, explained",
+     "fill": "dark",
+     "color": "y",
+     "size": 46,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "search",
+     "at": 1,
+     "y": 480,
+     "query": "kitchen ideas"
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 760,
+     "size": 76,
+     "segs": [
+      [
+       "Dreaming.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 870,
+     "size": 76,
+     "segs": [
+      [
+       "Saving pictures.",
+       "w"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 980,
+     "size": 76,
+     "segs": [
+      [
+       "Maybe ",
+       "w"
+      ],
+      [
+       "next year.",
+       "grey"
+      ]
+     ],
+     "dt": 1.2
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 1200,
+     "text": "Not buying yet",
+     "fill": "r",
+     "color": "w",
+     "size": 46,
+     "dt": 1.6
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "search",
+     "at": 3,
+     "y": 480,
+     "query": "kitchen remodel near me"
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 760,
+     "size": 80,
+     "segs": [
+      [
+       "Wants a quote",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 870,
+     "size": 90,
+     "segs": [
+      [
+       "this week.",
+       "g"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "chip",
+     "at": 5,
+     "y": 1100,
+     "text": "BUYER INTENT",
+     "fill": "y",
+     "color": "dark",
+     "size": 56,
+     "pad": 44
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 440,
+     "size": 76,
+     "segs": [
+      [
+       "Rank & rent only works",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 550,
+     "size": 84,
+     "segs": [
+      [
+       "on the ",
+       "w"
+      ],
+      [
+       "second kind.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 760,
+     "size": 68,
+     "segs": [
+      [
+       "Before I build,",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 860,
+     "size": 68,
+     "segs": [
+      [
+       "I search it ",
+       "w"
+      ],
+      [
+       "myself.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "checklist",
+     "at": 8,
+     "y": 1040,
+     "items": [
+      {
+       "text": "Ads on the search?",
+       "ok": true,
+       "at": 8
+      },
+      {
+       "text": "Contractors paying for it?",
+       "ok": true,
+       "at": 8,
+       "dt": 0.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 560,
+     "size": 76,
+     "segs": [
+      [
+       "Nobody pays for",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 670,
+     "size": 76,
+     "segs": [
+      [
+       "the search?",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 820,
+     "size": 80,
+     "segs": [
+      [
+       "Nobody pays",
+       "w"
+      ]
+     ],
+     "dt": 1.2
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 930,
+     "size": 84,
+     "segs": [
+      [
+       "for the ",
+       "w"
+      ],
+      [
+       "lead.",
+       "r"
+      ]
+     ],
+     "dt": 1.6
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 470,
+     "text": "REAL TALK",
+     "fill": "r",
+     "color": "w",
+     "size": 48
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 680,
+     "size": 76,
+     "segs": [
+      [
+       "Even a good search",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 790,
+     "size": 84,
+     "segs": [
+      [
+       "takes ",
+       "w"
+      ],
+      [
+       "months.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    },
+    {
+     "type": "calendar",
+     "at": 11,
+     "y": 1000,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 640,
+     "size": 80,
+     "segs": [
+      [
+       "Ep. 30:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 760,
+     "size": 76,
+     "segs": [
+      [
+       "how I pick the town",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 12,
+     "y": 1100,
+     "text": "Follow · Ep. 30 next",
+     "fill": "y",
+     "color": "dark",
+     "size": 44,
+     "pad": 40,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1300,
+     "size": 70,
+     "segs": [
+      [
+       "Sign Build Run",
+       "y"
+      ]
+     ],
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}

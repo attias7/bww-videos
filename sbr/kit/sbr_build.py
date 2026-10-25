@@ -23,8 +23,11 @@ from PIL import Image, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 W, H, FPS = 1080, 1920, 30
-FB = "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf"
-FM = "/usr/share/fonts/truetype/google-fonts/Poppins-Medium.ttf"
+_SYS = "/usr/share/fonts/truetype/google-fonts"
+_REPO = os.path.join(HERE, "..", "..", "kit", "fonts")          # fallback for cloud containers
+_FDIR = _SYS if os.path.exists(os.path.join(_SYS, "Poppins-Bold.ttf")) else _REPO
+FB = os.path.join(_FDIR, "Poppins-Bold.ttf")
+FM = os.path.join(_FDIR, "Poppins-Medium.ttf")
 BG = (14, 15, 19); BG2 = (22, 24, 31)
 COL = {"w": (245, 245, 240), "y": (255, 214, 64), "r": (240, 72, 72), "g": (70, 210, 120),
        "b": (80, 150, 255), "grey": (150, 153, 165), "dark": (14, 15, 19)}
@@ -482,6 +485,9 @@ def main(jobpath):
             f'acompressor=threshold=-20dB:ratio=3:attack=8:release=160:makeup=3,apad=whole_dur={DUR},asplit=2[voc][sc];'
             f'[2:a]volume={job.get("music_vol", 0.45)}[mus];[mus][sc]sidechaincompress=threshold=0.03:ratio=5:attack=30:release=400[duck];'
             f'[voc][duck]amix=inputs=2:normalize=0,alimiter=limit=0.92[a]')
+    if job.get("music_vol", 0.45) == 0:
+        mixf = (f'[1:a]adelay={int(LEAD*1000)}|{int(LEAD*1000)},aresample=44100,aformat=channel_layouts=stereo,highpass=f=70,'
+                f'acompressor=threshold=-20dB:ratio=3:attack=8:release=160:makeup=3,apad=whole_dur={DUR},alimiter=limit=0.92[a]')
     master = out
     run(f'ffmpeg -v error -y -i "{vid}" -i "{fast}" -i "{mus}" -filter_complex "{mixf}" -map 0:v -map "[a]" -c:v libx264 -preset slow '
         f'-b:v 5M -maxrate 6M -bufsize 12M -vf hqdn3d=2:2:3:3 -pix_fmt yuv420p -c:a aac -b:a 192k -t {DUR} -movflags +faststart "{master}"')

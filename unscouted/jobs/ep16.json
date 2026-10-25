@@ -1,0 +1,506 @@
+{
+ "episode": 16,
+ "series": "PAUSE & DECIDE · #8",
+ "hook": "You didn't scan. Now he's on you.",
+ "voice": "../voices/ep16.mp3",
+ "atempo": 1.1,
+ "music_vol": 0,
+ "out": "../out/ep16_pd08_midfield_scan.mp4",
+ "lines": [
+  "You didn't scan. Now he's on you.",
+  "You're the midfielder. One-nil down, seventy minutes in.",
+  "Your centre-back passes into your feet.",
+  "Their midfielder is right on your back.",
+  "Your full-back is wide and free.",
+  "Pause. What do you do?",
+  "A. Turn and go.",
+  "B. One touch back to the centre-back.",
+  "C. Bounce it wide to the full-back.",
+  "Comment your answer.",
+  "I'd go C.",
+  "He's tight, so turning is how you lose it.",
+  "One touch wide, and you're facing forward again.",
+  "Back to the centre-back is safe, but you're losing. You need forward.",
+  "No perfect answer. If you'd scanned, you'd know before the ball arrived.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 620,
+     "size": 120,
+     "segs": [
+      [
+       "YOU DIDN'T",
+       "dark"
+      ]
+     ],
+     "dt": -0.5
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 790,
+     "size": 120,
+     "segs": [
+      [
+       "SCAN.",
+       "r"
+      ]
+     ],
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1080,
+     "text": "Midfielders, watch this",
+     "fill": "dark",
+     "color": "y",
+     "size": 48,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "y": 210,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "0-1",
+     "minute": "70'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.1,
+     "y": 470,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.5,
+       "y": 0.66,
+       "label": "YOU"
+      },
+      {
+       "id": "cb",
+       "team": "us",
+       "x": 0.42,
+       "y": 0.95,
+       "label": "CB"
+      },
+      {
+       "id": "opp",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.45,
+       "path": [
+        {
+         "to": [
+          0.52,
+          0.6
+         ],
+         "at": 3,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "us",
+       "x": 0.1,
+       "y": 0.55,
+       "label": "FB",
+       "path": [
+        {
+         "to": [
+          0.08,
+          0.5
+         ],
+         "at": 4,
+         "dur": 0.6
+        }
+       ]
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.2,
+       "label": "ST"
+      },
+      {
+       "id": "d1",
+       "team": "them",
+       "x": 0.35,
+       "y": 0.3
+      },
+      {
+       "id": "d2",
+       "team": "them",
+       "x": 0.65,
+       "y": 0.3
+      },
+      {
+       "id": "w",
+       "team": "them",
+       "x": 0.3,
+       "y": 0.72
+      },
+      {
+       "id": "m2",
+       "team": "them",
+       "x": 0.75,
+       "y": 0.6
+      }
+     ],
+     "ball": {
+      "with": "cb",
+      "path": [
+       {
+        "with": "me",
+        "at": 2,
+        "dur": 0.7
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.6,
+        0.47
+       ],
+       "to": [
+        0.53,
+        0.58
+       ],
+       "color": "r",
+       "at": 3,
+       "dt": 0.4
+      }
+     ],
+     "pause": {
+      "at": 5
+     }
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 1500,
+     "text": "Full-back wide and free",
+     "fill": "y",
+     "color": "dark",
+     "size": 40,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "He's ",
+       "w"
+      ],
+      [
+       "on your back",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "options",
+     "at": 6,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Turn and go",
+       "at": 6
+      },
+      {
+       "key": "B",
+       "text": "One touch back",
+       "at": 7
+      },
+      {
+       "key": "C",
+       "text": "Bounce it wide",
+       "at": 8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 9,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "He's ",
+       "w"
+      ],
+      [
+       "on your back",
+       "y"
+      ]
+     ],
+     "dt": -0.2
+    },
+    {
+     "type": "options",
+     "at": 10,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Turn and go",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "One touch back",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Bounce it wide",
+       "at": 10,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 10,
+      "dt": 0.15,
+      "correct": "C"
+     }
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1250,
+     "size": 96,
+     "segs": [
+      [
+       "C. ",
+       "y"
+      ],
+      [
+       "Wide.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 420,
+     "text": "He's tight",
+     "fill": "r",
+     "color": "w",
+     "size": 44
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 560,
+     "size": 74,
+     "segs": [
+      [
+       "Turn = ",
+       "w"
+      ],
+      [
+       "you lose it.",
+       "r"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 760,
+     "size": 74,
+     "segs": [
+      [
+       "One touch wide,",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 870,
+     "size": 80,
+     "segs": [
+      [
+       "facing ",
+       "w"
+      ],
+      [
+       "forward.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1080,
+     "size": 62,
+     "segs": [
+      [
+       "Back to the CB is safe…",
+       "grey"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1180,
+     "size": 70,
+     "segs": [
+      [
+       "but you're ",
+       "w"
+      ],
+      [
+       "losing.",
+       "r"
+      ]
+     ],
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "text",
+     "at": 14,
+     "y": 560,
+     "size": 72,
+     "segs": [
+      [
+       "No perfect answer.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 700,
+     "size": 70,
+     "segs": [
+      [
+       "Scan ",
+       "y"
+      ],
+      [
+       "before",
+       "w"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 800,
+     "size": 70,
+     "segs": [
+      [
+       "the ball arrives.",
+       "w"
+      ]
+     ],
+     "dt": 1.2
+    },
+    {
+     "type": "chip",
+     "at": 15,
+     "y": 1150,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1340,
+     "size": 80,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

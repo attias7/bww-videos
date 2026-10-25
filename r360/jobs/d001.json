@@ -1,0 +1,389 @@
+{
+ "id": "d001",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "\"We'll think about it\" usually means you lost.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d001.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d001_think_about_it.mp4",
+ "lines": [
+  "\"We'll think about it\" usually means you lost.",
+  "Say you give ten estimates a month.",
+  "Two hours in the home. Plus the drive. Plus the quote at night.",
+  "Seven of them say, we'll think about it.",
+  "Then silence.",
+  "That's over twenty hours a month for nothing.",
+  "They're not thinking. They just can't picture it.",
+  "All they have is a number on a PDF, so they compare numbers.",
+  "Show them their own room, finished, before they decide.",
+  "Our own remodeling company went from three in ten, to five or six in ten.",
+  "First tour free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 100,
+     "segs": [
+      [
+       "\"WE'LL THINK",
+       "dark"
+      ]
+     ],
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 690,
+     "size": 100,
+     "segs": [
+      [
+       "ABOUT IT\"",
+       "dark"
+      ]
+     ],
+     "dt": 0.1
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "size": 84,
+     "segs": [
+      [
+       "usually means",
+       "dark"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 980,
+     "size": 110,
+     "segs": [
+      [
+       "YOU LOST.",
+       "w"
+      ]
+     ],
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "size": 66,
+     "segs": [
+      [
+       "Example:",
+       "grey"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 520,
+     "size": 84,
+     "segs": [
+      [
+       "10 estimates",
+       "y"
+      ],
+      [
+       " / month",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    },
+    {
+     "type": "steps",
+     "at": 2,
+     "y": 720,
+     "items": [
+      {
+       "text": "2 hours in the home",
+       "at": 2
+      },
+      {
+       "text": "+ the drive",
+       "at": 2,
+       "dt": 0.9
+      },
+      {
+       "text": "+ the quote at night",
+       "at": 2,
+       "dt": 1.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 560,
+     "text": "7 of 10",
+     "size": 170,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 740,
+     "size": 66,
+     "segs": [
+      [
+       "\"we'll think about it\"",
+       "w"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 920,
+     "size": 104,
+     "segs": [
+      [
+       "Then… ",
+       "w"
+      ],
+      [
+       "silence.",
+       "r"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 1180,
+     "text": "20+ hrs",
+     "size": 170,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1360,
+     "size": 60,
+     "segs": [
+      [
+       "a month, for nothing",
+       "grey"
+      ]
+     ],
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 400,
+     "size": 72,
+     "segs": [
+      [
+       "They're not thinking.",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 510,
+     "size": 80,
+     "segs": [
+      [
+       "They can't ",
+       "w"
+      ],
+      [
+       "picture it.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    },
+    {
+     "type": "browser",
+     "at": 7,
+     "y": 630,
+     "url": "estimate.pdf",
+     "title": "Bath remodel: $28,400",
+     "button": "Total"
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1590,
+     "size": 64,
+     "segs": [
+      [
+       "So they compare ",
+       "w"
+      ],
+      [
+       "numbers.",
+       "r"
+      ]
+     ],
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 480,
+     "size": 76,
+     "segs": [
+      [
+       "Show them",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 600,
+     "size": 90,
+     "segs": [
+      [
+       "their own room,",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 720,
+     "size": 90,
+     "segs": [
+      [
+       "finished.",
+       "y"
+      ]
+     ],
+     "dt": 0.9
+    },
+    {
+     "type": "versus",
+     "at": 8,
+     "y": 900,
+     "heads": [
+      "The PDF",
+      "Their room"
+     ],
+     "rows": [
+      [
+       "Compare price",
+       "Picture it"
+      ],
+      [
+       "\"We'll think\"",
+       "Decide"
+      ]
+     ],
+     "step": 0.6
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 520,
+     "size": 62,
+     "segs": [
+      [
+       "Our own remodeling company:",
+       "grey"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 9,
+     "y": 740,
+     "text": "3 → 5-6",
+     "size": 180,
+     "color": "y",
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 920,
+     "size": 66,
+     "segs": [
+      [
+       "in 10 estimates closed",
+       "w"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 1200,
+     "text": "First tour free · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 46,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1380,
+     "size": 74,
+     "segs": [
+      [
+       "Remodel in 360",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  }
+ ]
+}

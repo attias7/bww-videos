@@ -10,7 +10,7 @@ import datetime, html, json, os, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 Q = os.path.join(ROOT, "uploads", "queue.jsonl")
 RAW = "https://raw.githubusercontent.com/attias7/bww-videos/main/"
-COLORS = {"Sign Build Run": "#1f6feb", "Unscouted": "#2da44e", "Remodel in 360": "#bf8700"}
+COLORS = {"Sign Build Run": "#1f6feb", "Unscouted": "#2da44e", "Remodel in 360": "#bf8700", "SetToRank": "#0a7ea4"}
 
 def ok(url):
     try:
@@ -80,6 +80,10 @@ def main():
         if i.get("tiktok_title"):
             h.append(f'<div style="margin-top:10px"><b>TikTok title:</b> {html.escape(i["tiktok_title"])}</div>')
             t.append("TikTok title: " + i["tiktok_title"])
+        for k, lab in (("sound_tiktok", "🎵 TikTok sound"), ("sound_instagram", "🎵 Instagram sound")):
+            if i.get(k):
+                h.append(f'<div style="margin-top:6px"><b>{lab}:</b> {html.escape(i[k])}</div>')
+                t.append(f"{lab}: {i[k]}")
         if i.get("music"):
             h.append(f'<div style="margin-top:6px"><b>Music:</b> {html.escape(i["music"])}</div>')
             t.append("Music: " + i["music"])
