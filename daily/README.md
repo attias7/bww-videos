@@ -98,8 +98,8 @@ Never invent a sound or a usage count.
 
 ## Unscouted → Buffer (since 2026-10-25)
 Adi: "for Unscouted I want it on Buffer, no trending song, you do all the work". The daily run builds the Unscouted reel with
-built-in music and queues it (date P, time 19:00, no sound_* fields, notes "Buffer"). The separate scheduled task
-"Unscouted → Buffer" (09:20 + 10:20 Israel, Buffer connector) creates the two Buffer posts for every Unscouted reel in the
+built-in music and queues it (date P, time 19:00, no sound_* fields, notes "Buffer"). The scheduled task
+"Auto-post due videos" (09:52 + 10:52 Israel) runs `python3 social/buffer_unscouted.py` (Buffer API, env BUFFER_API_KEY), which creates the two Buffer posts for every Unscouted reel in the
 queue that has no "buffer" field yet: Instagram channel 6ac8ebeb6a5c39ccb661692a (type reel, share to feed, AI-generated on)
 and TikTok channel 6ab6bbbcea19ca0bdee8df8a (title = tiktok_title, AI-generated on, caption without #soccerplayer),
 customScheduled at date+time Israel, video = raw.githubusercontent URL of files[0]; then writes
