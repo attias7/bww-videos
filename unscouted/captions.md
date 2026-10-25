@@ -167,3 +167,15 @@ I broke down Lamine Yamal. Four habits you can copy: study your full-back during
 Which one do you need most? Comment 1, 2, 3 or 4 👇
 Free analysis test in bio.
 #football #soccer #footballtips #footballtraining #soccerplayer #footballiq #winger #unscouted
+
+## Carousel · Ep 16 midfield scan (daily-run reel) — 2026-10-26 12:00
+IG: 1-0 down, 70th minute, he's right on your back. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / #midfielder hashtags
+TT: same / 7 hashtags
+
+## Carousel · Ep 17 Henry — 2026-10-27 12:00
+IG: Stop running where defenders can see you. Swipe → / Henry's four habits. / Save this for your next game. / reel hashtags
+TT: same / 7 hashtags
+
+## Carousel · Ep 18 winger overlap — 2026-10-28 12:00
+IG: 1-1, 60th minute, your full-back is overlapping. 2 v 1. Swipe → / Decide before slide 4. A, B or C? 👇 / Save this for your next game. / reel hashtags
+TT: same / 7 hashtags
