@@ -1,0 +1,588 @@
+{
+ "episode": 17,
+ "series": "PLAYER BREAKDOWN · HENRY",
+ "hook": "Stop running where defenders can see you.",
+ "voice": "../voices/ep17.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep17_bd07_henry.mp4",
+ "lines": [
+  "Stop running where defenders can see you.",
+  "I broke down Thierry Henry's finishing. Four habits to copy.",
+  "His goals look simple. That's the point.",
+  "One. He runs between the full-back and the centre-back.",
+  "The full-back is blocked by his body. The centre-back can't see him.",
+  "Two. With time, he opens his body.",
+  "And curls it low into the far corner. Accuracy, not power.",
+  "Three. When the keeper rushes out, he stays calm.",
+  "In the box, you have more time than you think.",
+  "Four. He doesn't dribble past everyone.",
+  "One-two, or a run in behind, then finish. Simple goals.",
+  "So next game, start your run from their blind side.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 110,
+     "segs": [
+      [
+       "STOP RUNNING",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 710,
+     "size": 110,
+     "segs": [
+      [
+       "WHERE THEY",
+       "dark"
+      ]
+     ],
+     "dt": 0.2,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "size": 130,
+     "segs": [
+      [
+       "SEE YOU.",
+       "r"
+      ]
+     ],
+     "dt": 0.5,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1100,
+     "text": "HENRY · 4 HABITS",
+     "fill": "dark",
+     "color": "y",
+     "size": 56,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 560,
+     "size": 90,
+     "segs": [
+      [
+       "Thierry Henry",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 820,
+     "text": "4",
+     "size": 240,
+     "color": "y",
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1010,
+     "size": 64,
+     "segs": [
+      [
+       "finishing habits",
+       "w"
+      ]
+     ],
+     "dt": 1.1
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1240,
+     "size": 62,
+     "segs": [
+      [
+       "Simple goals. ",
+       "w"
+      ],
+      [
+       "That's the point.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 320,
+     "size": 66,
+     "segs": [
+      [
+       "1. Run ",
+       "w"
+      ],
+      [
+       "between them.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 3,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.74,
+       "y": 0.38,
+       "label": "HENRY",
+       "path": [
+        {
+         "to": [
+          0.72,
+          0.1
+         ],
+         "at": 4,
+         "dt": 0.2,
+         "dur": 1.4
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "them",
+       "x": 0.88,
+       "y": 0.26,
+       "label": "FB"
+      },
+      {
+       "id": "cb",
+       "team": "them",
+       "x": 0.56,
+       "y": 0.24,
+       "label": "CB"
+      },
+      {
+       "id": "m",
+       "team": "us",
+       "x": 0.4,
+       "y": 0.38
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "m",
+      "path": [
+       {
+        "to": [
+         0.72,
+         0.1
+        ],
+        "at": 4,
+        "dt": 1.0,
+        "dur": 0.7
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.74,
+        0.36
+       ],
+       "to": [
+        0.72,
+        0.12
+       ],
+       "color": "y",
+       "at": 4,
+       "dt": 0.1
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1500,
+     "size": 58,
+     "segs": [
+      [
+       "CB ",
+       "w"
+      ],
+      [
+       "can't see him.",
+       "y"
+      ]
+     ],
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 320,
+     "size": 66,
+     "segs": [
+      [
+       "2. Open body. ",
+       "w"
+      ],
+      [
+       "Far corner.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 5,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.32,
+       "y": 0.22,
+       "label": "HENRY"
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.22,
+       "y": 0.3
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "p",
+      "path": [
+       {
+        "to": [
+         0.6,
+         0.006
+        ],
+        "at": 6,
+        "dt": 0.3,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.33,
+        0.21
+       ],
+       "to": [
+        0.6,
+        0.02
+       ],
+       "color": "y",
+       "at": 6,
+       "dt": 0.2
+      }
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 6,
+     "y": 1500,
+     "text": "Accuracy, not power",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "size": 72,
+     "segs": [
+      [
+       "3. Keeper rushes? ",
+       "w"
+      ],
+      [
+       "Calm.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 8,
+     "y": 760,
+     "text": "MORE TIME",
+     "size": 150,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 940,
+     "size": 64,
+     "segs": [
+      [
+       "than you think.",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 320,
+     "size": 66,
+     "segs": [
+      [
+       "4. No solo runs. ",
+       "w"
+      ],
+      [
+       "Simple.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 9,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.42,
+     "players": [
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.45,
+       "y": 0.36,
+       "label": "HENRY",
+       "path": [
+        {
+         "to": [
+          0.55,
+          0.15
+         ],
+         "at": 10,
+         "dt": 0.3,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "t",
+       "team": "us",
+       "x": 0.25,
+       "y": 0.3
+      },
+      {
+       "id": "d",
+       "team": "them",
+       "x": 0.45,
+       "y": 0.27
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "p",
+      "path": [
+       {
+        "with": "t",
+        "at": 10,
+        "dur": 0.5
+       },
+       {
+        "to": [
+         0.55,
+         0.15
+        ],
+        "at": 10,
+        "dt": 0.8,
+        "dur": 0.5
+       },
+       {
+        "to": [
+         0.42,
+         0.006
+        ],
+        "at": 10,
+        "dt": 1.6,
+        "dur": 0.4
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.27,
+        0.29
+       ],
+       "to": [
+        0.54,
+        0.16
+       ],
+       "color": "y",
+       "at": 10,
+       "dt": 0.7
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1500,
+     "size": 60,
+     "segs": [
+      [
+       "One-two. ",
+       "w"
+      ],
+      [
+       "Finish.",
+       "y"
+      ]
+     ],
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 600,
+     "size": 80,
+     "segs": [
+      [
+       "Start from their",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 11,
+     "y": 860,
+     "text": "BLIND SIDE.",
+     "size": 150,
+     "color": "y",
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 12,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "dt": 0.6,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ],
+ "music_vol": 0
+}

@@ -26,6 +26,7 @@ One line: *Unscouted helps players outside academies think and play like pros, u
 - One bad touch here and it's a goal for them.
 - Dive in here, and he's gone. ✅ *used: Ep 8 (PD #4, full-back)*
 - Lose it here, and it's a goal. ✅ *used: Ep 14 (PD #7, centre-back)*
+- It's two on one. Don't waste it. ✅ *used: Ep 18 (PD #9, winger overlap)*
 
 ### Command / contrarian
 - Losing with five minutes left? Stop passing. ✅ *used: PD #2*
@@ -36,12 +37,15 @@ One line: *Unscouted helps players outside academies think and play like pros, u
 - Stop trying to score worldies. ✅ *used: Ep 11 (Kane)*
 - Stop doing tricks. Change speed instead. ✅ *used: Ep 13 (Foden)*
 - Stop taking three touches before you shoot. ✅ *used: Ep 15 (Dybala)*
+- Stop running where defenders can see you. ✅ *used: Ep 17 (Henry)*
+- Nobody's pressing you. So why pass? ✅ *reserved: spare PD #10 (midfielder carry, built, not queued)*
 
 ### Curiosity gap (pros vs you)
 - Pros make this decision before the ball even arrives. ✅ *used: PD #3*
 - Watch his head, not the ball.
 - Haaland's goals have one thing in common, and it isn't power.
 - The best players are lazy in one specific way.
+- Your defender has a weakness. Find it. ✅ *used: Ep 19 (Yamal)*
 
 ### Steal / mechanism
 - Steal Vinícius's two-move trick for one-v-ones. ✅ *used: Vinícius*

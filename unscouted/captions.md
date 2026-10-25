@@ -139,3 +139,31 @@ Free analysis test in bio.
 ## Carousel · Ep 15 Dybala — 2026-10-25 12:00
 IG: Stop taking three touches before you shoot. Swipe → / Dybala's four shooting habits: 1–2 touches, vary corners, run in for rebounds, dribble to draw then find the runner. / Save this for your next game. / reel hashtags
 TT: same / 7 hashtags
+
+## Ep 18 · PD #9 · Winger 2v1 overlap — 2026-10-27
+It's two on one. Don't waste it.
+You're the winger, 1-1, sixty minutes in. Ball wide, their full-back in front of you, your full-back overlapping on the outside.
+Take him on inside, slip the overlap, or cross early? Comment A, B or C 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #winger #unscouted
+
+## Ep 17 · PLAYER BREAKDOWN · Henry — 2026-10-26
+Stop running where defenders can see you.
+I broke down Thierry Henry's finishing. Four habits you can copy: run between the full-back and centre-back, open your body and curl it low far post, stay calm when the keeper rushes out, and keep your goals simple.
+Which one do you need most? Comment 1, 2, 3 or 4 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #striker #unscouted
+
+## Spare · PD #10 · Midfielder with space — not queued
+Nobody's pressing you. So why pass?
+You're the central midfielder, 2-2, eighty minutes in. You turn and nobody closes you down. Your striker runs in behind, your number ten is between the lines.
+Long ball, into the ten, or carry it? Comment A, B or C 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #midfielder #unscouted
+
+## Ep 19 · PLAYER BREAKDOWN · Yamal — 2026-10-28
+Your defender has a weakness. Find it.
+I broke down Lamine Yamal. Four habits you can copy: study your full-back during the game, cut in and slip the runner, track back with your full-back, and keep it simple in your own third.
+Which one do you need most? Comment 1, 2, 3 or 4 👇
+Free analysis test in bio.
+#football #soccer #footballtips #footballtraining #soccerplayer #footballiq #winger #unscouted

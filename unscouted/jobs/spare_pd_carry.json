@@ -1,0 +1,611 @@
+{
+ "episode": null,
+ "series": "PAUSE & DECIDE · #10",
+ "hook": "Nobody's pressing you. So why pass?",
+ "voice": "../voices/spare_carry.mp3",
+ "atempo": 1.1,
+ "out": "../out/spare_pd_carry.mp4",
+ "lines": [
+  "Nobody's pressing you. So why pass?",
+  "You're the central midfielder. Two-two, eighty minutes in.",
+  "Your centre-back plays it into you. You turn. Nobody closes you down.",
+  "Your striker is making a run in behind.",
+  "Your number ten is between their lines.",
+  "Pause. What do you do?",
+  "A. Hit the long ball to the striker.",
+  "B. Pass into your number ten.",
+  "C. Carry it forward.",
+  "Comment your answer.",
+  "I'd go C.",
+  "Nobody's on you, so take the space.",
+  "Carry it until a midfielder steps out to you.",
+  "The moment he steps, the ten is free. Now pass.",
+  "No perfect answer. If your striker is clean in behind, hit it early.",
+  "But space in front of you is a gift. Use it.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "size": 110,
+     "segs": [
+      [
+       "NOBODY'S",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "size": 110,
+     "segs": [
+      [
+       "PRESSING YOU.",
+       "dark"
+      ]
+     ],
+     "dt": 0.1,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "size": 130,
+     "segs": [
+      [
+       "WHY ",
+       "dark"
+      ],
+      [
+       "PASS?",
+       "r"
+      ]
+     ],
+     "dt": 0.6,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1120,
+     "text": "Midfielders, watch this",
+     "fill": "dark",
+     "color": "y",
+     "size": 48,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "scoreboard",
+     "at": 1,
+     "y": 210,
+     "home": "YOU",
+     "away": "THEM",
+     "score": "2-2",
+     "minute": "80'"
+    },
+    {
+     "type": "pitch",
+     "at": 1,
+     "dt": 0.1,
+     "y": 470,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.5,
+       "y": 0.72,
+       "label": "YOU"
+      },
+      {
+       "id": "cb",
+       "team": "us",
+       "x": 0.42,
+       "y": 0.95,
+       "label": "CB"
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.55,
+       "y": 0.2,
+       "label": "ST",
+       "path": [
+        {
+         "to": [
+          0.6,
+          0.08
+         ],
+         "at": 3,
+         "dur": 1.2
+        }
+       ]
+      },
+      {
+       "id": "ten",
+       "team": "us",
+       "x": 0.42,
+       "y": 0.4,
+       "label": "10"
+      },
+      {
+       "id": "dc1",
+       "team": "them",
+       "x": 0.4,
+       "y": 0.18
+      },
+      {
+       "id": "dc2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.18
+      },
+      {
+       "id": "dm1",
+       "team": "them",
+       "x": 0.3,
+       "y": 0.5
+      },
+      {
+       "id": "dm2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.5
+      },
+      {
+       "id": "w",
+       "team": "us",
+       "x": 0.88,
+       "y": 0.4
+      }
+     ],
+     "ball": {
+      "with": "cb",
+      "path": [
+       {
+        "with": "me",
+        "at": 2,
+        "dur": 0.7
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.56,
+        0.19
+       ],
+       "to": [
+        0.6,
+        0.09
+       ],
+       "color": "y",
+       "at": 3,
+       "dt": 0.1,
+       "dashed": true
+      }
+     ],
+     "pause": {
+      "at": 5
+     }
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 1500,
+     "text": "Nobody closes you down",
+     "fill": "y",
+     "color": "dark",
+     "size": 40,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Space ",
+       "w"
+      ],
+      [
+       "in front of you",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "options",
+     "at": 6,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Long ball to the striker",
+       "at": 6
+      },
+      {
+       "key": "B",
+       "text": "Into your number ten",
+       "at": 7
+      },
+      {
+       "key": "C",
+       "text": "Carry it forward",
+       "at": 8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "size": 66,
+     "segs": [
+      [
+       "Comment ",
+       "w"
+      ],
+      [
+       "A, B or C",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "countdown",
+     "at": 9,
+     "dt": 0.2,
+     "y": 1500,
+     "n": 3,
+     "dur": 0.45
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "size": 70,
+     "segs": [
+      [
+       "Space ",
+       "w"
+      ],
+      [
+       "in front of you",
+       "y"
+      ]
+     ],
+     "dt": -0.2
+    },
+    {
+     "type": "options",
+     "at": 10,
+     "y": 640,
+     "items": [
+      {
+       "key": "A",
+       "text": "Long ball to the striker",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "B",
+       "text": "Into your number ten",
+       "at": 10,
+       "dt": -0.2
+      },
+      {
+       "key": "C",
+       "text": "Carry it forward",
+       "at": 10,
+       "dt": -0.2
+      }
+     ],
+     "reveal": {
+      "at": 10,
+      "dt": 0.15,
+      "correct": "C"
+     }
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1250,
+     "size": 96,
+     "segs": [
+      [
+       "C. ",
+       "y"
+      ],
+      [
+       "Carry it.",
+       "w"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 260,
+     "text": "Carry until someone steps",
+     "fill": "y",
+     "color": "dark",
+     "size": 44
+    },
+    {
+     "type": "pitch",
+     "at": 11,
+     "dt": -0.1,
+     "y": 440,
+     "h": 960,
+     "players": [
+      {
+       "id": "me",
+       "team": "me",
+       "x": 0.5,
+       "y": 0.72,
+       "label": "YOU",
+       "path": [
+        {
+         "to": [
+          0.5,
+          0.55
+         ],
+         "at": 12,
+         "dur": 1.2
+        }
+       ]
+      },
+      {
+       "id": "ten",
+       "team": "us",
+       "x": 0.42,
+       "y": 0.4,
+       "label": "10"
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.6,
+       "y": 0.08,
+       "label": "ST"
+      },
+      {
+       "id": "dc1",
+       "team": "them",
+       "x": 0.4,
+       "y": 0.18
+      },
+      {
+       "id": "dc2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.18
+      },
+      {
+       "id": "dm1",
+       "team": "them",
+       "x": 0.3,
+       "y": 0.5,
+       "path": [
+        {
+         "to": [
+          0.45,
+          0.52
+         ],
+         "at": 13,
+         "dur": 0.8
+        }
+       ]
+      },
+      {
+       "id": "dm2",
+       "team": "them",
+       "x": 0.62,
+       "y": 0.5
+      }
+     ],
+     "ball": {
+      "with": "me",
+      "path": [
+       {
+        "with": "ten",
+        "at": 13,
+        "dt": 1.0,
+        "dur": 0.5
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.5,
+        0.7
+       ],
+       "to": [
+        0.5,
+        0.57
+       ],
+       "color": "y",
+       "at": 12,
+       "dt": -0.1
+      },
+      {
+       "from": [
+        0.49,
+        0.53
+       ],
+       "to": [
+        0.43,
+        0.42
+       ],
+       "color": "y",
+       "at": 13,
+       "dt": 0.9
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 13,
+     "y": 1500,
+     "size": 60,
+     "segs": [
+      [
+       "He steps? ",
+       "w"
+      ],
+      [
+       "Ten is free.",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 14,
+     "y": 480,
+     "text": "NO PERFECT ANSWER",
+     "fill": "r",
+     "color": "w",
+     "size": 46
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 680,
+     "size": 64,
+     "segs": [
+      [
+       "Striker clean in behind?",
+       "w"
+      ]
+     ],
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 14,
+     "y": 780,
+     "size": 68,
+     "segs": [
+      [
+       "Hit it early.",
+       "y"
+      ]
+     ],
+     "dt": 1.4
+    },
+    {
+     "type": "text",
+     "at": 15,
+     "y": 1000,
+     "size": 66,
+     "segs": [
+      [
+       "Space in front of you",
+       "w"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 15,
+     "y": 1190,
+     "text": "= A GIFT",
+     "size": 170,
+     "color": "y",
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "elements": [
+    {
+     "type": "text",
+     "at": 16,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 16,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "dt": 0.6,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 16,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ],
+ "music_vol": 0
+}

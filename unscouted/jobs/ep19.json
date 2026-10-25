@@ -1,0 +1,542 @@
+{
+ "episode": 19,
+ "series": "PLAYER BREAKDOWN · YAMAL",
+ "hook": "Your defender has a weakness. Find it.",
+ "voice": "../voices/ep19.mp3",
+ "atempo": 1.1,
+ "out": "../out/ep19_bd08_yamal.mp4",
+ "lines": [
+  "Your defender has a weakness. Find it.",
+  "I broke down Lamine Yamal. Four habits to copy.",
+  "He's young, but he studies the game like a coach.",
+  "One. He studies his full-back during the game.",
+  "He saw he was faster, so he kept going down the line.",
+  "Two. He cuts onto his left and slips it to the runners.",
+  "Not just the dribble. The pass after the cut.",
+  "Three. He tracks back with his full-back.",
+  "In one half I watched, his full-back never faced a two-v-one.",
+  "Four. In his own third, keep it simple.",
+  "He lost a few balls there trying to dribble. Don't copy that part.",
+  "So next game, spend the first ten minutes testing your defender.",
+  "Follow for the next one. The free analysis test is in my bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "size": 110,
+     "segs": [
+      [
+       "YOUR DEFENDER",
+       "dark"
+      ]
+     ],
+     "dt": -0.5,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 710,
+     "size": 110,
+     "segs": [
+      [
+       "HAS A",
+       "dark"
+      ]
+     ],
+     "dt": 0.2,
+     "bg": "y"
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 870,
+     "size": 130,
+     "segs": [
+      [
+       "WEAKNESS.",
+       "r"
+      ]
+     ],
+     "dt": 0.4,
+     "bg": "y"
+    },
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 1100,
+     "text": "YAMAL · 4 HABITS",
+     "fill": "dark",
+     "color": "y",
+     "size": 56,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 560,
+     "size": 90,
+     "segs": [
+      [
+       "Lamine Yamal",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 820,
+     "text": "4",
+     "size": 240,
+     "color": "y",
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1010,
+     "size": 64,
+     "segs": [
+      [
+       "habits to copy",
+       "w"
+      ]
+     ],
+     "dt": 1.1
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1240,
+     "size": 62,
+     "segs": [
+      [
+       "Studies the game ",
+       "w"
+      ],
+      [
+       "like a coach.",
+       "y"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 320,
+     "size": 66,
+     "segs": [
+      [
+       "1. Study ",
+       "w"
+      ],
+      [
+       "your full-back.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 3,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.6,
+     "players": [
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.8,
+       "y": 0.5,
+       "label": "YAMAL",
+       "path": [
+        {
+         "to": [
+          0.84,
+          0.14
+         ],
+         "at": 4,
+         "dt": 0.3,
+         "dur": 1.3
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "them",
+       "x": 0.74,
+       "y": 0.38,
+       "label": "FB",
+       "path": [
+        {
+         "to": [
+          0.74,
+          0.24
+         ],
+         "at": 4,
+         "dt": 0.5,
+         "dur": 1.3
+        }
+       ]
+      },
+      {
+       "id": "cb",
+       "team": "them",
+       "x": 0.55,
+       "y": 0.14
+      },
+      {
+       "id": "st",
+       "team": "us",
+       "x": 0.5,
+       "y": 0.2
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "p"
+     },
+     "arrows": [
+      {
+       "from": [
+        0.8,
+        0.47
+       ],
+       "to": [
+        0.84,
+        0.16
+       ],
+       "color": "y",
+       "at": 4,
+       "dt": 0.2
+      }
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 1500,
+     "text": "Faster? Go down the line",
+     "fill": "y",
+     "color": "dark",
+     "size": 46,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 320,
+     "size": 66,
+     "segs": [
+      [
+       "2. Cut in. ",
+       "w"
+      ],
+      [
+       "Slip the runner.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "pitch",
+     "at": 5,
+     "y": 480,
+     "h": 900,
+     "zoom": 0.6,
+     "players": [
+      {
+       "id": "p",
+       "team": "me",
+       "x": 0.82,
+       "y": 0.38,
+       "label": "YAMAL",
+       "path": [
+        {
+         "to": [
+          0.68,
+          0.33
+         ],
+         "at": 5,
+         "dt": 0.6,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "fb",
+       "team": "them",
+       "x": 0.8,
+       "y": 0.3
+      },
+      {
+       "id": "cb",
+       "team": "them",
+       "x": 0.42,
+       "y": 0.14
+      },
+      {
+       "id": "r",
+       "team": "us",
+       "x": 0.48,
+       "y": 0.3,
+       "label": "RUNNER",
+       "path": [
+        {
+         "to": [
+          0.62,
+          0.1
+         ],
+         "at": 6,
+         "dur": 1.0
+        }
+       ]
+      },
+      {
+       "id": "gk",
+       "team": "them",
+       "x": 0.5,
+       "y": 0.025
+      }
+     ],
+     "ball": {
+      "with": "p",
+      "path": [
+       {
+        "with": "r",
+        "at": 6,
+        "dt": 0.5,
+        "dur": 0.6
+       }
+      ]
+     },
+     "arrows": [
+      {
+       "from": [
+        0.67,
+        0.31
+       ],
+       "to": [
+        0.62,
+        0.12
+       ],
+       "color": "y",
+       "at": 6,
+       "dt": 0.4
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1500,
+     "size": 60,
+     "segs": [
+      [
+       "The pass ",
+       "w"
+      ],
+      [
+       "after the cut.",
+       "y"
+      ]
+     ],
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "size": 72,
+     "segs": [
+      [
+       "3. Track back ",
+       "w"
+      ],
+      [
+       "with your FB.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 8,
+     "y": 760,
+     "text": "NO 2 v 1",
+     "size": 170,
+     "color": "y"
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 940,
+     "size": 58,
+     "segs": [
+      [
+       "for his full-back, one whole half.",
+       "w"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 420,
+     "size": 72,
+     "segs": [
+      [
+       "4. Own third? ",
+       "w"
+      ],
+      [
+       "Simple.",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 760,
+     "text": "NO TRICKS",
+     "size": 160,
+     "color": "r"
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 940,
+     "size": 62,
+     "segs": [
+      [
+       "where losing it ",
+       "w"
+      ],
+      [
+       "costs a goal.",
+       "y"
+      ]
+     ],
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 560,
+     "size": 80,
+     "segs": [
+      [
+       "First ",
+       "w"
+      ],
+      [
+       "10 minutes:",
+       "y"
+      ]
+     ]
+    },
+    {
+     "type": "bignum",
+     "at": 11,
+     "y": 820,
+     "text": "TEST HIM.",
+     "size": 190,
+     "color": "y",
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "elements": [
+    {
+     "type": "text",
+     "at": 12,
+     "y": 700,
+     "size": 90,
+     "segs": [
+      [
+       "Follow for the ",
+       "w"
+      ],
+      [
+       "next one.",
+       "y"
+      ]
+     ],
+     "dt": -0.1
+    },
+    {
+     "type": "chip",
+     "at": 12,
+     "y": 1000,
+     "text": "Free analysis test · link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 42,
+     "dt": 0.6,
+     "pad": 40
+    },
+    {
+     "type": "text",
+     "at": 12,
+     "y": 1160,
+     "size": 44,
+     "segs": [
+      [
+       "UNSCOUTED",
+       "grey"
+      ]
+     ],
+     "dt": 1.0,
+     "weight": "medium"
+    }
+   ]
+  }
+ ],
+ "music_vol": 0
+}
