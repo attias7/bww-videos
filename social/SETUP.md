@@ -10,7 +10,7 @@ No Buffer / Publer / Metricool.
 | Sign Build Run | yes | yes |
 | Unscouted | **skipped for now (2026-10-25)** – stays on the daily email, posted by hand | skipped for now |
 | Remodel in 360 | yes (@remodelin360) | yes |
-| SetToRank | yes (login worked 2026-10-25) | yes (new) |
+| SetToRank | yes (login saved 2026-10-25) | yes (new) |
 
 ## Credentials (never in chat, never in git in plain text)
 Environment variables in the cloud environment settings:
@@ -44,6 +44,7 @@ Per-account refresh/long-lived tokens are stored **encrypted with SOCIAL_TOKEN_K
 - [x] TikTok logins for sbr + r360 saved in tokens.enc (2026-10-25; refresh valid 1 year). SetToRank TikTok: later.
 - [x] Instagram tokens checked: @signbuildrun (creator), @remodelin360 (business), @settorank (creator); publish quota 100/day each
 - [x] Adi lengthened SOCIAL_TOKEN_KEY (2026-10-25). The 2 TikTok logins were made under the old key, so they must be redone ONCE in a new session (links: social/SETUP.md) → tokens.enc is then committed with the new key. Until then the publisher skips TikTok (drafts stay on the email).
+- [x] All 3 TikTok logins redone under the new key (2026-10-25): sbr (Sign Build Run), r360 (Remodelin360), str (settorank) → tokens.enc
 - [x] TikTok draft test: sbr_ep29 → SEND_TO_USER_INBOX in sandbox (2026-10-25) — inbox upload works without audit
 - [x] Instagram Reel test: @remodelin360 published 2026-10-25 https://www.instagram.com/reel/De6_tIuFTZw/
 - [ ] Switch the daily run: build two audio versions, post, keep a short summary email
