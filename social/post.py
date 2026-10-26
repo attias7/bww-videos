@@ -70,6 +70,14 @@ def ig_post(brand, path, caption):
     store = load(); tok = ig_token(store, brand)
     me = _req(IG + "/me?" + urllib.parse.urlencode({"fields": "user_id,username", "access_token": tok}))
     uid = me["user_id"]
+    # safety net: never publish the same caption twice in 36 h (e.g. if social/posted.jsonl couldn't be pushed)
+    recent = _req(IG + f"/{uid}/media?" + urllib.parse.urlencode({"fields": "id,caption,timestamp,permalink", "limit": 10,
+                                                                   "access_token": tok})).get("data", [])
+    for m in recent:
+        ts = time.mktime(time.strptime(m.get("timestamp", "1970-01-01T00:00:00+0000")[:19], "%Y-%m-%dT%H:%M:%S")) - time.timezone
+        if (m.get("caption") or "").strip() == caption.strip() and time.time() - ts < 36 * 3600:
+            print(json.dumps({"brand": brand, "account": me.get("username"), "media_id": m["id"],
+                              "permalink": m.get("permalink", ""), "already_posted": True})); return
     c = _req(IG + f"/{uid}/media", data=urllib.parse.urlencode({
         "media_type": "REELS", "video_url": RAW + path, "caption": caption, "share_to_feed": "true",
         "access_token": tok}).encode())
