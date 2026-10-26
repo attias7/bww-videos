@@ -1,0 +1,434 @@
+{
+ "episode": "d002",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Losing kitchens to the cheaper bid? Here's why.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d002.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/d002_cheaper_bid.mp4",
+ "lines": [
+  "Losing kitchens to the cheaper bid? Here's why.",
+  "Say two contractors bid the same kitchen.",
+  "You're at forty-two thousand. He's at thirty-six.",
+  "Both send a PDF with a number on it.",
+  "The homeowner can't picture either kitchen.",
+  "So they compare the only thing they can see. The price.",
+  "The cheaper number wins. Not the better job.",
+  "Now say your bid came with their own kitchen, finished.",
+  "Same room, after the remodel. They can look around it.",
+  "Now they're not comparing numbers. They're picturing their kitchen.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "LOSING KITCHENS",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "TO THE ",
+       "dark"
+      ],
+      [
+       "CHEAPER",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.1
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "BID?",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 380,
+     "segs": [
+      [
+       "SAME KITCHEN. TWO BIDS.",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "cards",
+     "at": 2,
+     "y": 560,
+     "gap": 40,
+     "items": [
+      {
+       "head": "YOU",
+       "big": "$42k",
+       "sub": "full scope",
+       "color": "y",
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "head": "HIM",
+       "big": "$36k",
+       "sub": "same kitchen",
+       "color": "grey",
+       "at": 2,
+       "dt": 0.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1240,
+     "segs": [
+      [
+       "EXAMPLE NUMBERS",
+       "grey"
+      ]
+     ],
+     "size": 48,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 400,
+     "segs": [
+      [
+       "BOTH SEND A ",
+       "w"
+      ],
+      [
+       "PDF",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 3,
+     "y": 600,
+     "items": [
+      {
+       "text": "A number",
+       "ok": true,
+       "at": 3,
+       "dt": 0.4
+      },
+      {
+       "text": "A scope list",
+       "ok": true,
+       "at": 3,
+       "dt": 0.9
+      },
+      {
+       "text": "What it will look like",
+       "ok": false,
+       "at": 4,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 700,
+     "segs": [
+      [
+       "SO THEY COMPARE",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 880,
+     "segs": [
+      [
+       "THE PRICE.",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "versus",
+     "at": 6,
+     "y": 520,
+     "heads": [
+      "CHEAPER",
+      "BETTER"
+     ],
+     "rows": [
+      [
+       "$36k",
+       "$42k"
+      ],
+      [
+       "wins",
+       "loses"
+      ]
+     ],
+     "step": 0.6
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1350,
+     "segs": [
+      [
+       "NOT THE BETTER JOB.",
+       "r"
+      ]
+     ],
+     "size": 70,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN KITCHEN,",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 760,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1000,
+     "segs": [
+      [
+       "SAME ROOM · AFTER THE REMODEL",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 8,
+     "y": 1200,
+     "text": "360° TOUR",
+     "fill": "y",
+     "color": "dark",
+     "size": 56,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 700,
+     "segs": [
+      [
+       "NOT COMPARING NUMBERS.",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 880,
+     "segs": [
+      [
+       "PICTURING THEIR KITCHEN.",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w"
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 200,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

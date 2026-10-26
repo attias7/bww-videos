@@ -4,3 +4,4 @@
 *.sync.jpg
 /carousels/*/_sheet.jpg
 __pycache__/
+/subletli/out/

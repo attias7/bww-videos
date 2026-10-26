@@ -115,7 +115,9 @@ def scene_frame(sc, t, accent, footer, p_total):
         else:
             d.line([(icx - 13, cy - 13), (icx + 13, cy + 13)], fill=(255, 255, 255), width=8)
             d.line([(icx - 13, cy + 13), (icx + 13, cy - 13)], fill=(255, 255, 255), width=8)
-        fi = font(52, "Bold")
+        fs_ = 52; fi = font(fs_, "Bold")
+        while d.textlength(it["t"], font=fi, direction=DIR) > (x1 - x0) - 170 and fs_ > 30:
+            fs_ -= 2; fi = font(fs_, "Bold")
         tx = (icx - 70) if RTL else (icx + 70)
         d.text((tx, cy), it["t"], font=fi, fill=mix(bg, fg, k), anchor="rm" if RTL else "lm", direction=DIR)
     if sc.get("chip"):

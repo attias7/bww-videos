@@ -1,0 +1,397 @@
+{
+ "episode": 30,
+ "series": "NO COLD CALLS · EP. 30",
+ "hook": "You don't hate business. You hate selling.",
+ "voice": "../voices/ep30.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep30_hate_selling.mp4",
+ "lines": [
+  "You don't hate business. You hate selling.",
+  "Every side hustle has the same last step.",
+  "Now get on a call.",
+  "So you never start.",
+  "But a business doesn't have to run on calls.",
+  "Rank and rent runs on search.",
+  "Someone in a small town Googles a roofer.",
+  "Your little site shows up. They call the roofer, not you.",
+  "The roofer pays you when the job closes.",
+  "You talk to one contractor. In writing.",
+  "Real talk. My first lead took one to three months.",
+  "But I never made a sales call. Follow for the next one."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 620,
+     "segs": [
+      [
+       "YOU DON'T HATE",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 760,
+     "segs": [
+      [
+       "BUSINESS.",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.2
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 960,
+     "segs": [
+      [
+       "YOU HATE ",
+       "dark"
+      ],
+      [
+       "SELLING.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "segs": [
+      [
+       "EVERY SIDE HUSTLE",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "steps",
+     "at": 1,
+     "y": 620,
+     "items": [
+      {
+       "text": "Learn the skill",
+       "at": 1,
+       "dt": 0.3
+      },
+      {
+       "text": "Build the thing",
+       "at": 1,
+       "dt": 0.8
+      },
+      {
+       "text": "Now get on a call",
+       "at": 2,
+       "dt": 0
+      }
+     ],
+     "strike_at": 2,
+     "strike_dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 820,
+     "segs": [
+      [
+       "SO YOU",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 960,
+     "segs": [
+      [
+       "NEVER START.",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "crossphone",
+     "at": 4,
+     "y": 700
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1250,
+     "segs": [
+      [
+       "NO CALLS NEEDED",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "segs": [
+      [
+       "RANK & RENT RUNS ON",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 540,
+     "segs": [
+      [
+       "SEARCH",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.2
+    },
+    {
+     "type": "google_phone",
+     "at": 6,
+     "y": 720,
+     "query": "roofer near me"
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "results",
+     "at": 7,
+     "y": 420,
+     "query": "roofer near me",
+     "items": [
+      [
+       "yourtownroofing.com",
+       "Roof Repair in Your Town",
+       "Call now · free quote"
+      ],
+      [
+       "bigbrand.com",
+       "Roofing Services",
+       "Nationwide"
+      ],
+      [
+       "directory.com",
+       "Top 10 Roofers",
+       "Reviews"
+      ]
+     ],
+     "mine": 0,
+     "label": "YOUR SITE"
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1350,
+     "segs": [
+      [
+       "THEY CALL THE ",
+       "w"
+      ],
+      [
+       "ROOFER",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 520,
+     "gap": 260,
+     "nodes": [
+      {
+       "label": "Lead",
+       "color": "b",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Job closes",
+       "color": "g",
+       "at": 8,
+       "dt": 0.6
+      },
+      {
+       "label": "You get paid",
+       "color": "y",
+       "at": 8,
+       "dt": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "chat",
+     "at": 9,
+     "y": 480,
+     "name": "Roofer",
+     "sub": "contractor",
+     "messages": [
+      "Got a new lead for you from the site.",
+      "You only pay if it closes."
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1450,
+     "segs": [
+      [
+       "IN WRITING. NO CALLS.",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 440,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "calendar",
+     "at": 10,
+     "y": 620,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1350,
+     "segs": [
+      [
+       "FIRST LEAD: 1–3 MONTHS",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "ZERO",
+       "y"
+      ]
+     ],
+     "size": 150,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 880,
+     "segs": [
+      [
+       "SALES CALLS.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1200,
+     "text": "Follow for the next one",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}

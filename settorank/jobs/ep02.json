@@ -1,0 +1,376 @@
+{
+ "episode": 2,
+ "series": "RANK & RENT · BUILD FASTER",
+ "hook": "Copy-paste city pages don't rank. Here's why.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep02.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep02_copy_paste_city_pages.mp4",
+ "lines": [
+  "Copy-paste city pages don't rank. Here's why.",
+  "Most rank and rent sites do the same thing.",
+  "One page. Then swap the city name. Twenty times.",
+  "Google sees the same page twenty times.",
+  "So most of them never rank.",
+  "A real city page talks about that city.",
+  "The nearby towns, the local questions, the actual service area.",
+  "Writing that by hand for twenty towns takes forever.",
+  "SetToRank writes a unique page for each city and each service.",
+  "Real talk. It builds the site. Google still decides how fast it ranks.",
+  "Building and previewing is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "COPY-PASTE",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 750,
+     "segs": [
+      [
+       "CITY PAGES",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "DON'T ",
+       "dark"
+      ],
+      [
+       "RANK.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 440,
+     "segs": [
+      [
+       "MOST SITES DO THIS:",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "cards",
+     "at": 2,
+     "y": 620,
+     "gap": 30,
+     "items": [
+      {
+       "head": "PAGE 1",
+       "big": "Plumber in Austin",
+       "sub": "same text",
+       "color": "grey",
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "head": "PAGE 2",
+       "big": "Plumber in Dallas",
+       "sub": "same text",
+       "color": "grey",
+       "at": 2,
+       "dt": 0.7
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1350,
+     "segs": [
+      [
+       "× 20",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 600,
+     "segs": [
+      [
+       "GOOGLE SEES",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 750,
+     "segs": [
+      [
+       "THE SAME PAGE",
+       "r"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1000,
+     "segs": [
+      [
+       "MOST NEVER RANK.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "segs": [
+      [
+       "A REAL CITY PAGE",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 5,
+     "y": 600,
+     "items": [
+      {
+       "text": "Nearby towns",
+       "ok": true,
+       "at": 6,
+       "dt": 0
+      },
+      {
+       "text": "Local questions",
+       "ok": true,
+       "at": 6,
+       "dt": 0.8
+      },
+      {
+       "text": "The real service area",
+       "ok": true,
+       "at": 6,
+       "dt": 1.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 700,
+     "segs": [
+      [
+       "BY HAND × 20 TOWNS",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 880,
+     "segs": [
+      [
+       "= FOREVER",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "browser",
+     "at": 8,
+     "y": 420,
+     "url": "yoursite.com/plumber-round-rock",
+     "title": "Plumber in Round Rock",
+     "button": "Get a quote"
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1400,
+     "segs": [
+      [
+       "UNIQUE PAGE PER CITY + SERVICE",
+       "y"
+      ]
+     ],
+     "size": 56,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 900,
+     "segs": [
+      [
+       "GOOGLE DECIDES",
+       "grey"
+      ]
+     ],
+     "size": 76,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1020,
+     "segs": [
+      [
+       "HOW FAST IT RANKS.",
+       "grey"
+      ]
+     ],
+     "size": 76,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 10,
+     "y": 1150,
+     "text": "Link in bio · settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}
