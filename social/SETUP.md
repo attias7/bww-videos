@@ -11,7 +11,7 @@ No Buffer / Publer / Metricool.
 | Unscouted | **skipped for now (2026-10-25)** – stays on the daily email, posted by hand | skipped for now |
 | Remodel in 360 | yes (@remodelin360) | yes |
 | SetToRank | yes (login saved 2026-10-25) | yes (new) |
-| Subletli (@subletli, Hebrew, added 2026-10-25) | yes — needs sandbox target user + login (state=sbl) | no Instagram |
+| Subletli (@subletli, Hebrew, added 2026-10-25) | yes (login saved 2026-10-26) | no Instagram |
 
 ## Credentials (never in chat, never in git in plain text)
 Environment variables in the cloud environment settings:
