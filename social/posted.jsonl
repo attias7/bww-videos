@@ -2,3 +2,5 @@
 {"key": "2026-10-25|Remodel in 360|reel", "platform": "tiktok", "result": {"tiktok": "SEND_TO_USER_INBOX"}, "at": "2026-10-25 (setup test)"}
 {"key": "2026-10-25|Sign Build Run|reel", "platform": "tiktok", "result": {"tiktok": "SEND_TO_USER_INBOX"}, "at": "2026-10-25 (setup test)"}
 {"key": "2026-10-26|Sign Build Run|reel", "platform": "tiktok", "result": {"brand": "sbr", "tiktok": "SEND_TO_USER_INBOX", "publish_id": "v_inbox_file~v2.7700909429579646983"}, "at": "2026-10-26T11:41:55.584875+02:00"}
+{"key": "2026-10-26|Remodel in 360|reel", "platform": "tiktok", "result": {"brand": "r360", "tiktok": "SEND_TO_USER_INBOX", "publish_id": "v_inbox_file~v2.7700914490736379911"}, "at": "2026-10-26T12:01:32.513492+02:00"}
+{"key": "2026-10-26|SetToRank|reel", "platform": "tiktok", "result": {"brand": "str", "tiktok": "SEND_TO_USER_INBOX", "publish_id": "v_inbox_file~v2.7700914540405606420"}, "at": "2026-10-26T12:01:32.513492+02:00"}
