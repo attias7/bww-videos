@@ -94,6 +94,12 @@ trending instrumental. Caption: Hebrew, hook first, 1–2 lines, CTA "הקישו
 Build: `cd subletli/jobs && python3 ../../kit/text_reel.py epNN.json` (~20 s), check `<out>_sync.jpg`, copy `<out>_upload.mp4`
 to `subletli/videos/sbl_epNN_<slug>.mp4`, log in `subletli/episodes.csv`.
 
+## Covers and TikTok captions (2026-10-26)
+Both builders now replace the first 0.2 s with the finished hook card (`kit/add_cover.py`, called automatically), so the
+default cover on TikTok and Instagram is the hook, not a dark frame. Override with `"cover_at": <seconds>` in the job.
+TikTok's inbox-draft API can't carry a caption or cover choice: the draft opens with only "#AdiPosting" (the app name).
+Adi pastes the caption from the email. Instagram gets the full caption automatically.
+
 ## Posting time (researched 2026-10-25)
 All 3 auto-posted brands (Sign Build Run, Remodel in 360, SetToRank) post at **23:00 Israel**, Instagram and TikTok at the
 same time. Their audiences are in the US: 23:00 Israel = 5 pm Eastern / 2 pm Pacific (4 pm / 1 pm after US clocks change

@@ -506,6 +506,11 @@ def main(jobpath):
     render(master, up, music_on=job.get("music_vol", 0.45) != 0 and not job.get("both_mixes"))
     if job.get("both_mixes"):
         render(base + "_music.mp4", base + "_music_upload.mp4", music_on=True)
+    # cover: the first frames show the finished hook card (TikTok/Instagram use frame 0 as the default cover)
+    sys.path.insert(0, os.path.join(HERE, "..", "..", "kit")); from add_cover import add_cover
+    cover_at = job.get("cover_at", (starts[1] - 0.25) if len(starts) > 1 else 1.5)
+    for f in (up, base + "_music_upload.mp4"):
+        if os.path.exists(f): add_cover(f, cover_at)
     # sync sheet
     thumbs = []
     for k, s in enumerate(starts):

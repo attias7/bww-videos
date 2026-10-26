@@ -172,6 +172,8 @@ def main(path):
     mb = job.get("max_mb", 8.0); br = int(mb * 8 * 1024 / dur - 80)
     run(f'ffmpeg -v error -y -i "{out}" -vf scale=720:1280:flags=lanczos -c:v libx264 -preset slow -b:v {br}k -maxrate {br*3//2}k '
         f'-bufsize {br*2}k -c:a aac -b:a 64k -movflags +faststart "{base}_upload.mp4"')
+    sys.path.insert(0, HERE); from add_cover import add_cover
+    add_cover(base + "_upload.mp4", job.get("cover_at", scenes[0].get("dur", 2.5) - 0.2))
     if thumbs:
         cols = min(6, len(thumbs)); rows = (len(thumbs) + cols - 1) // cols
         sheet = Image.new("RGB", (cols * 216, rows * 384), (0, 0, 0))
