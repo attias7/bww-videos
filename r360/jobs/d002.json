@@ -102,41 +102,61 @@
      "dt": 0
     },
     {
-     "type": "cards",
+     "type": "text",
      "at": 2,
      "y": 560,
-     "gap": 40,
-     "items": [
-      {
-       "head": "YOU",
-       "big": "$42k",
-       "sub": "full scope",
-       "color": "y",
-       "at": 2,
-       "dt": 0
-      },
-      {
-       "head": "HIM",
-       "big": "$36k",
-       "sub": "same kitchen",
-       "color": "grey",
-       "at": 2,
-       "dt": 0.8
-      }
-     ]
+     "segs": [
+      [
+       "YOU",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 700,
+     "text": "$42k",
+     "size": 190,
+     "color": "y",
+     "dt": 0
     },
     {
      "type": "text",
      "at": 2,
-     "y": 1240,
+     "y": 930,
+     "segs": [
+      [
+       "HIM",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 1.2
+    },
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 1070,
+     "text": "$36k",
+     "size": 190,
+     "color": "w",
+     "dt": 1.2
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1320,
      "segs": [
       [
        "EXAMPLE NUMBERS",
        "grey"
       ]
      ],
-     "size": 48,
-     "dt": 1.2
+     "size": 46,
+     "dt": 1.6
     }
    ]
   },
@@ -222,37 +242,43 @@
    "from": 6,
    "elements": [
     {
-     "type": "versus",
+     "type": "text",
      "at": 6,
-     "y": 520,
-     "heads": [
-      "CHEAPER",
-      "BETTER"
-     ],
-     "rows": [
+     "y": 640,
+     "segs": [
       [
-       "$36k",
-       "$42k"
-      ],
-      [
-       "wins",
-       "loses"
+       "THE CHEAPER",
+       "w"
       ]
      ],
-     "step": 0.6
+     "size": 100,
+     "dt": 0
     },
     {
      "type": "text",
      "at": 6,
-     "y": 1350,
+     "y": 790,
      "segs": [
       [
-       "NOT THE BETTER JOB.",
+       "NUMBER WINS.",
        "r"
       ]
      ],
+     "size": 110,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1050,
+     "segs": [
+      [
+       "NOT THE BETTER JOB.",
+       "grey"
+      ]
+     ],
      "size": 70,
-     "dt": 1.2
+     "dt": 1.3
     }
    ]
   },

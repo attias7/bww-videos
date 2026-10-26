@@ -81,52 +81,62 @@
     {
      "type": "text",
      "at": 1,
-     "y": 440,
+     "y": 420,
      "segs": [
       [
        "MOST SITES DO THIS:",
        "w"
       ]
      ],
-     "size": 80,
+     "size": 76,
      "dt": 0
     },
     {
-     "type": "cards",
+     "type": "chip",
      "at": 2,
-     "y": 620,
-     "gap": 30,
-     "items": [
-      {
-       "head": "PAGE 1",
-       "big": "Plumber in Austin",
-       "sub": "same text",
-       "color": "grey",
-       "at": 2,
-       "dt": 0
-      },
-      {
-       "head": "PAGE 2",
-       "big": "Plumber in Dallas",
-       "sub": "same text",
-       "color": "grey",
-       "at": 2,
-       "dt": 0.7
-      }
-     ]
+     "y": 640,
+     "text": "Plumber in Austin",
+     "fill": "grey",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 800,
+     "text": "Plumber in Dallas",
+     "fill": "grey",
+     "color": "dark",
+     "size": 56,
+     "dt": 0.5
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 960,
+     "text": "Plumber in Plano",
+     "fill": "grey",
+     "color": "dark",
+     "size": 56,
+     "dt": 1.0
     },
     {
      "type": "text",
      "at": 2,
-     "y": 1350,
+     "y": 1150,
      "segs": [
+      [
+       "SAME TEXT. ",
+       "w"
+      ],
       [
        "× 20",
        "r"
       ]
      ],
-     "size": 110,
-     "dt": 1.4
+     "size": 96,
+     "dt": 1.5
     }
    ]
   },
