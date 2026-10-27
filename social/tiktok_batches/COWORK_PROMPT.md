@@ -1,11 +1,12 @@
 # Weekly TikTok batch — prompt for Claude Cowork
 
 Paste this into Claude Cowork on the account's batch day (Sunday = Sign Build Run, Monday = Subletli,
-Tuesday = Remodel in 360, Wednesday = SetToRank). Replace the words in CAPITALS (ACCOUNT_NAME appears 3 times, LIST_NAME once).
+Tuesday = Remodel in 360, Wednesday = SetToRank). Replace the words in CAPITALS: ACCOUNT_NAME (3 times), LIST_NAME and CHROME_PROFILE (the Chrome profile/Google
+account where that TikTok account is logged in — kept in Adi's own notes, not in this public repo).
 
 ```
-Schedule this week's TikToks for my account ACCOUNT_NAME in TikTok Studio. Use the Chrome profile named
-"TikTok – ACCOUNT_NAME" on my computer (each TikTok account stays logged in inside its own Chrome profile).
+Schedule this week's TikToks for my account ACCOUNT_NAME in TikTok Studio. Use my Chrome profile CHROME_PROFILE
+(that profile is where ACCOUNT_NAME is logged in on tiktok.com — each TikTok account has its own Chrome profile).
 
 The list of posts (video link, date, time, caption, sound mood) is here:
 https://github.com/attias7/bww-videos/blob/main/social/tiktok_batches/LIST_NAME.md
