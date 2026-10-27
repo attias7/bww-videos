@@ -136,11 +136,6 @@
        "directory.com",
        "Top 10 Roofers",
        "Reviews"
-      ],
-      [
-       "oldroofer.com",
-       "Smalltown Roofing",
-       "Since 1998"
       ]
      ],
      "mine": -1,
@@ -149,7 +144,7 @@
     {
      "type": "text",
      "at": 3,
-     "y": 1450,
+     "y": 1430,
      "segs": [
       [
        "GOOGLE DECIDES. NOT YOU.",
@@ -242,7 +237,7 @@
     {
      "type": "text",
      "at": 7,
-     "y": 1450,
+     "y": 1430,
      "segs": [
       [
        "AGREE IN WRITING FIRST",

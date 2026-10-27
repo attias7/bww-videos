@@ -142,11 +142,6 @@
        "Sponsored · topcontractors.com",
        "Find a Roofer",
        "Ad"
-      ],
-      [
-       "oldroofer.com",
-       "Smalltown Roofing",
-       "Since 1998"
       ]
      ],
      "mine": -1,
@@ -155,7 +150,7 @@
     {
      "type": "text",
      "at": 4,
-     "y": 1450,
+     "y": 1430,
      "segs": [
       [
        "= CONTRACTORS PAY FOR THESE",
