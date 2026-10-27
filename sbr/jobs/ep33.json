@@ -142,16 +142,13 @@
      "label": ""
     },
     {
-     "type": "text",
+     "type": "chip",
      "at": 3,
      "y": 1430,
-     "segs": [
-      [
-       "GOOGLE DECIDES. NOT YOU.",
-       "w"
-      ]
-     ],
-     "size": 64,
+     "text": "Google decides, not you.",
+     "fill": "y",
+     "color": "dark",
+     "size": 46,
      "dt": 0.2
     }
    ]

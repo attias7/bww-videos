@@ -148,16 +148,13 @@
      "label": ""
     },
     {
-     "type": "text",
+     "type": "chip",
      "at": 4,
      "y": 1430,
-     "segs": [
-      [
-       "= CONTRACTORS PAY FOR THESE",
-       "g"
-      ]
-     ],
-     "size": 56,
+     "text": "Contractors pay for these",
+     "fill": "y",
+     "color": "dark",
+     "size": 46,
      "dt": 0.2
     }
    ]
