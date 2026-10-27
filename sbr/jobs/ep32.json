@@ -253,12 +253,25 @@
     {
      "type": "calendar",
      "at": 10,
-     "y": 900,
+     "y": 980,
      "labels": [
       "M1",
       "M2",
       "M3"
      ]
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1450,
+     "segs": [
+      [
+       "RANKING: MONTHS",
+       "r"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.6
     }
    ]
   },
