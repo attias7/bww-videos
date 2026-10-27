@@ -141,6 +141,12 @@ Carousels are not made by the daily run.
    For each brand, skip it if `uploads/queue.jsonl` already has a line with date P, that brand and kind "reel".
    Catch-up: if a brand also has no reel for D yet and it's before 12:00, make D's too (queue it with date D) — e.g. the first
    day of the change, 2026-10-26, makes both 10-26 and 10-27.
+   WEEKLY TIKTOK BATCHES (Adi, 2026-10-27): Sign Build Run, Subletli, Remodel in 360 and SetToRank get their TikToks scheduled
+   once a week by Adi with Claude Cowork in TikTok Studio — Sunday Sign Build Run, Monday Subletli, Tuesday Remodel in 360,
+   Wednesday SetToRank — each covering the 7 days after its batch day (social/tiktok_batch.py,
+   social/tiktok_batches/COWORK_PROMPT.md). So for these 4 brands BUILD AHEAD: the target dates are D+1 … D+8; make the
+   missing ones in date order, at most 3 per brand per run (the buffer fills up over a few days; Subletli reels have no
+   voice so they're cheap). Unscouted (Buffer) keeps the one-day-ahead rule above.
 3. Numbering: SBR / Unscouted next ep = max ep in their `episodes.csv` + 1; Remodel in 360 next id = max `dNNN` in
    `r360/episodes.csv` + 1; SetToRank next ep = max in `settorank/episodes.csv` + 1. Read the last ~10 rows of each log
    and the HOOKS files first so hooks/topics/pain points never repeat.
@@ -169,13 +175,17 @@ Carousels are not made by the daily run.
    Caption: line 1 = the hook, 1–3 short lines, a question or CTA, then the brand hashtags.
    AUTO-POSTING (see social/SETUP.md): for Sign Build Run, Remodel in 360 and SetToRank add `"ig_file": "<the _ig.mp4>"`
    (Instagram publishes it automatically at its time), and add `"tiktok_draft": true` only for brands with a TikTok login
-   (`python3 social/tokens.py status` lists them). The separate "Auto-post due videos" task publishes them at their
+   (`python3 social/tokens.py status` lists them) AND only if `tiktok_batch.uses_batch(brand, P)` is False — from each
+   brand's first batch week on (SBR 2026-11-02, Subletli 11-03, R360 11-04, SetToRank 11-05) Cowork schedules the TikTok,
+   so no inbox draft. For those posts set "music" to a short sound MOOD (Cowork picks the actual trending sound then) and
+   the notes to "Instagram posts itself <P> <time>. TikTok: scheduled in this week's Cowork batch."  The separate "Auto-post due videos" task publishes them at their
    time — the daily run never posts. Unscouted stays manual (no ig_file / tiktok_draft).
    Also run `python3 social/post.py refresh` once per run (rotates the Instagram + TikTok tokens) and commit
    `social/tokens.enc` if it changed.
 9. Log a row per brand in its episodes.csv (SBR/Unscouted keep their columns; r360/settorank:
    id/ep, post_date, angle, hook, topic, file, status, processed_at, notes). Mark hooks ✅ in HOOKS files where they exist.
-10. `python3 uploads/render_email.py P --check --unsent` (and D too if anything for D is unsent) → if `missing` is empty, send with `mcp__Gmail__send_message`
+10. `python3 social/tiktok_batch.py D` (rewrites the 4 weekly TikTok lists in social/tiktok_batches/), commit + push.
+    Then `python3 uploads/render_email.py P --check --unsent` (and D too if anything for D is unsent) → if `missing` is empty, send with `mcp__Gmail__send_message`
     to ["adiattias2003@gmail.com"], subject/htmlBody/body from /tmp/upload_email.json; confirm with get_message;
     `python3 uploads/mark_sent.py <message id>`. If count is 0 because another task already emailed today's items, that's fine.
 11. Write `runs/D_daily.done` (2–3 lines: what was made, credits used, sound sources), delete the lock, commit + push

@@ -46,6 +46,16 @@ def main():
     h.append('<p style="margin:0 0 16px;color:#59636e">Download → open Instagram / TikTok → add a trending sound '
              '(keep the voice at 100%, the music low, around 5–15%) → paste the caption → post or schedule in the app.</p>')
     t.append(f"Upload today – {nice}\n")
+    # weekly TikTok batch reminder (social/tiktok_batch.py): one account per weekday, scheduled with Claude Cowork
+    sys.path.insert(0, os.path.join(ROOT, "social"))
+    import tiktok_batch as TB
+    for b in TB.batch_today(d):
+        link = TB.PAGE + TB.BATCH[b][1] + ".md"
+        prompt = TB.PAGE + "COWORK_PROMPT.md"
+        h.append(f'<div style="margin:0 0 16px;padding:10px 12px;background:#fff4e5;border:1px solid #f0b35a;border-radius:8px">'
+                 f'<b>📅 Today: schedule {html.escape(b)}\'s TikToks for the next 7 days.</b><br>Open Claude Cowork and paste the '
+                 f'<a href="{prompt}">weekly prompt</a> with this list: <a href="{link}">{html.escape(link)}</a></div>')
+        t.append(f"📅 Today: schedule {b}'s TikToks for the next 7 days. Open Claude Cowork, paste the weekly prompt ({prompt}) with this list: {link}")
     if not items:
         h.append("<p>Nothing queued for today.</p>")
         t.append("Nothing queued for today.")

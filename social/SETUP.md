@@ -65,3 +65,13 @@ All 3 auto-posted brands at 23:00 Israel (US afternoon; research in daily/README
 Reels are made a day ahead. The "Auto-post due videos" task fires at 09:52 and 10:52 (sends the TikTok drafts for today's
 and tomorrow's reels, so Adi has a full day to add a sound and schedule them for 23:00 in the TikTok app), and at 22:52
 (publishes the Instagram Reels due by 23:02) and 23:52 (retry). Nothing in social/posted.jsonl is posted twice.
+
+## Weekly TikTok batches with Claude Cowork (Adi, 2026-10-27)
+TikTok Studio's desktop editor has a Sounds panel, so Adi schedules each account's TikToks a week at a time with Claude
+Cowork instead of the daily inbox drafts. One account per weekday, each covering the next 7 days:
+Sunday Sign Build Run (from 2026-11-01), Monday Subletli (from 11-02), Tuesday Remodel in 360 (from 11-03),
+Wednesday SetToRank (from 11-04). Lists: social/tiktok_batches/<slug>.md (rewritten by the daily run);
+prompt: social/tiktok_batches/COWORK_PROMPT.md; the morning email shows a reminder on each batch day.
+Daily inbox drafts continue until each brand's first covered date (social/tiktok_batch.py FIRST_COVERED).
+The daily run builds these 4 brands up to 8 days ahead (max 3 per brand per run). Instagram stays automatic.
+Unscouted stays on Buffer.
