@@ -1,0 +1,496 @@
+{
+ "episode": "d005",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Add up the hours your lost estimates cost you.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d005.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d005_lost_estimate_hours.mp4",
+ "lines": [
+  "Add up the hours your lost estimates cost you.",
+  "Say you do twelve estimates a month.",
+  "An hour driving. An hour in the home.",
+  "Another hour writing the quote at night.",
+  "That's three hours each. Thirty-six hours a month.",
+  "If you close four, eight of them went nowhere.",
+  "That's twenty-four hours. Three full workdays, gone.",
+  "Real talk, you'll never close all of them. Nobody does.",
+  "But even two more yeses changes that math.",
+  "People say yes faster when they can see the finished room.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "ADD UP THE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "HOURS YOUR",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "LOST ESTIMATES",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1060,
+     "segs": [
+      [
+       "COST YOU.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "12",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "ESTIMATES A MONTH",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 560,
+     "items": [
+      {
+       "text": "1 hr driving",
+       "ok": true,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "1 hr in the home",
+       "ok": true,
+       "at": 2,
+       "dt": 0.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 3,
+     "y": 560,
+     "items": [
+      {
+       "text": "1 hr driving",
+       "ok": true,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "1 hr in the home",
+       "ok": true,
+       "at": 2,
+       "dt": 0.9
+      },
+      {
+       "text": "1 hr writing at night",
+       "ok": true,
+       "at": 3,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 460,
+     "segs": [
+      [
+       "3 HRS EACH",
+       "grey"
+      ]
+     ],
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 720,
+     "text": "36 hrs",
+     "size": 200,
+     "color": "w",
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 930,
+     "segs": [
+      [
+       "A MONTH",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 600,
+     "segs": [
+      [
+       "CLOSE 4",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 780,
+     "segs": [
+      [
+       "8 GO NOWHERE.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1300,
+     "segs": [
+      [
+       "EXAMPLE NUMBERS",
+       "grey"
+      ]
+     ],
+     "size": 46,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 6,
+     "y": 700,
+     "text": "24 hrs",
+     "size": 200,
+     "color": "r",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 930,
+     "segs": [
+      [
+       "3 FULL WORKDAYS. GONE.",
+       "w"
+      ]
+     ],
+     "size": 68,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "NOBODY CLOSES",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 900,
+     "segs": [
+      [
+       "ALL OF THEM.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "2 MORE YESES",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 860,
+     "segs": [
+      [
+       "CHANGES THE MATH.",
+       "y"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "THEY SAY YES FASTER",
+       "w"
+      ]
+     ],
+     "size": 78,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 790,
+     "segs": [
+      [
+       "WHEN THEY CAN SEE",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 940,
+     "segs": [
+      [
+       "THE FINISHED ROOM.",
+       "y"
+      ]
+     ],
+     "size": 83,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

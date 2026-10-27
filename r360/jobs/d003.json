@@ -1,0 +1,512 @@
+{
+ "episode": "d003",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Your ads aren't too expensive. Your close rate is.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d003.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d003_ads_close_rate.mp4",
+ "lines": [
+  "Your ads aren't too expensive. Your close rate is.",
+  "Say you spend fifteen hundred a month on ads.",
+  "That gets you ten estimates.",
+  "You close three. That's five hundred dollars per job.",
+  "Most guys fix that with more ad money.",
+  "Close five of the same ten, it drops to three hundred.",
+  "Same ads. Same leads. Two more jobs.",
+  "Real talk, this won't fix a bad price or a bad crew.",
+  "Most jobs are lost after the estimate.",
+  "Homeowners say no when they can't picture the result.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "YOUR ADS AREN'T",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "TOO EXPENSIVE.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "YOUR CLOSE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1060,
+     "segs": [
+      [
+       "RATE IS.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 500,
+     "segs": [
+      [
+       "AD SPEND",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "$1,500",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 900,
+     "segs": [
+      [
+       "A MONTH",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 700,
+     "text": "10",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 920,
+     "segs": [
+      [
+       "ESTIMATES",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 420,
+     "segs": [
+      [
+       "CLOSE 3",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 720,
+     "text": "$500",
+     "size": 230,
+     "color": "r",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 930,
+     "segs": [
+      [
+       "PER JOB",
+       "grey"
+      ]
+     ],
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1300,
+     "segs": [
+      [
+       "EXAMPLE NUMBERS",
+       "grey"
+      ]
+     ],
+     "size": 46,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 700,
+     "segs": [
+      [
+       "THE USUAL FIX:",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 860,
+     "segs": [
+      [
+       "MORE AD MONEY.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "segs": [
+      [
+       "CLOSE 5 OF THE SAME 10",
+       "w"
+      ]
+     ],
+     "size": 68,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 720,
+     "text": "$300",
+     "size": 230,
+     "color": "y",
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 930,
+     "segs": [
+      [
+       "PER JOB",
+       "grey"
+      ]
+     ],
+     "size": 60,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 6,
+     "y": 560,
+     "items": [
+      {
+       "text": "Same ads",
+       "ok": true,
+       "at": 6,
+       "dt": 0
+      },
+      {
+       "text": "Same leads",
+       "ok": true,
+       "at": 6,
+       "dt": 0.5
+      },
+      {
+       "text": "2 more jobs",
+       "ok": true,
+       "at": 6,
+       "dt": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "WON'T FIX A BAD PRICE",
+       "w"
+      ]
+     ],
+     "size": 71,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 900,
+     "segs": [
+      [
+       "OR A BAD CREW.",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "MOST JOBS ARE LOST",
+       "w"
+      ]
+     ],
+     "size": 83,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 860,
+     "segs": [
+      [
+       "AFTER THE ESTIMATE.",
+       "y"
+      ]
+     ],
+     "size": 78,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 700,
+     "segs": [
+      [
+       "THEY CAN'T",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 850,
+     "segs": [
+      [
+       "PICTURE IT.",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

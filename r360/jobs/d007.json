@@ -1,0 +1,499 @@
+{
+ "episode": "d007",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "\"Just email me the quote\" is a warning sign.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d007.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d007_email_me_the_quote.mp4",
+ "lines": [
+  "\"Just email me the quote\" is a warning sign.",
+  "Say five homeowners tell you that this month.",
+  "You spend your evenings writing all five.",
+  "Two reply. Three go quiet.",
+  "You follow up once. Twice. Nothing.",
+  "They didn't hate your price. They had nothing to look at.",
+  "A quote is a list of words and a number.",
+  "Real talk, some people are just collecting bids.",
+  "But the serious ones needed to see it.",
+  "Show them their own room, finished, before you leave the house.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "\"JUST EMAIL ME",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "THE QUOTE\"",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "IS A WARNING",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1060,
+     "segs": [
+      [
+       "SIGN.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "5",
+     "size": 280,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "HOMEOWNERS SAY IT",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 700,
+     "segs": [
+      [
+       "5 EVENINGS",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 860,
+     "segs": [
+      [
+       "WRITING QUOTES",
+       "grey"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 3,
+     "y": 560,
+     "items": [
+      {
+       "text": "2 reply",
+       "ok": true,
+       "at": 3,
+       "dt": 0
+      },
+      {
+       "text": "3 go quiet",
+       "ok": false,
+       "at": 3,
+       "dt": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 600,
+     "text": "Follow-up #1",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 760,
+     "text": "Follow-up #2",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 980,
+     "segs": [
+      [
+       "NOTHING.",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 640,
+     "segs": [
+      [
+       "THEY DIDN'T HATE",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 790,
+     "segs": [
+      [
+       "YOUR PRICE.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 960,
+     "segs": [
+      [
+       "NOTHING TO LOOK AT.",
+       "y"
+      ]
+     ],
+     "size": 78,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 640,
+     "segs": [
+      [
+       "A QUOTE IS",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 800,
+     "segs": [
+      [
+       "WORDS + A NUMBER.",
+       "grey"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "SOME ARE JUST",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 900,
+     "segs": [
+      [
+       "COLLECTING BIDS.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "THE SERIOUS ONES",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 860,
+     "segs": [
+      [
+       "NEEDED TO SEE IT.",
+       "y"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 960,
+     "segs": [
+      [
+       "BEFORE YOU LEAVE THE HOUSE",
+       "grey"
+      ]
+     ],
+     "size": 52,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

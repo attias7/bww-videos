@@ -1,0 +1,483 @@
+{
+ "episode": "d004",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Your bid gets decided when you're not in the room.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d004.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d004_not_in_the_room.mp4",
+ "lines": [
+  "Your bid gets decided when you're not in the room.",
+  "Say you walk a bathroom with the wife on Tuesday.",
+  "She loves your ideas. You send the quote that night.",
+  "Thursday, she shows it to her husband.",
+  "He never met you. He never heard the ideas.",
+  "All he sees is twenty-two thousand dollars.",
+  "So the answer is, let's get more quotes.",
+  "Real talk, some of those deals were never yours.",
+  "But a lot die because the idea stayed in your head.",
+  "Send something he can see. Their own bathroom, finished.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "YOUR BID GETS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "DECIDED WHEN",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "YOU'RE NOT",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1060,
+     "segs": [
+      [
+       "IN THE ROOM.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 560,
+     "text": "TUESDAY",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 780,
+     "segs": [
+      [
+       "BATHROOM WALK-THROUGH",
+       "w"
+      ]
+     ],
+     "size": 71,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 640,
+     "segs": [
+      [
+       "SHE LOVES IT.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 820,
+     "segs": [
+      [
+       "QUOTE SENT THAT NIGHT.",
+       "w"
+      ]
+     ],
+     "size": 68,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 560,
+     "text": "THURSDAY",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 780,
+     "segs": [
+      [
+       "SHE SHOWS HER HUSBAND",
+       "w"
+      ]
+     ],
+     "size": 71,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 4,
+     "y": 600,
+     "items": [
+      {
+       "text": "Never met you",
+       "ok": false,
+       "at": 4,
+       "dt": 0
+      },
+      {
+       "text": "Never heard the ideas",
+       "ok": false,
+       "at": 4,
+       "dt": 0.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 520,
+     "segs": [
+      [
+       "ALL HE SEES",
+       "grey"
+      ]
+     ],
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 760,
+     "text": "$22,000",
+     "size": 200,
+     "color": "r",
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 700,
+     "segs": [
+      [
+       "\"LET'S GET",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 850,
+     "segs": [
+      [
+       "MORE QUOTES.\"",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "SOME DEALS WERE",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 900,
+     "segs": [
+      [
+       "NEVER YOURS.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 640,
+     "segs": [
+      [
+       "MOST DIE BECAUSE",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 790,
+     "segs": [
+      [
+       "THE IDEA STAYED",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 940,
+     "segs": [
+      [
+       "IN YOUR HEAD.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "SEND SOMETHING",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 790,
+     "segs": [
+      [
+       "HE CAN SEE.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 9,
+     "y": 1050,
+     "text": "THEIR BATHROOM · FINISHED",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

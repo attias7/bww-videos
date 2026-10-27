@@ -1,0 +1,512 @@
+{
+ "episode": "d009",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Following up a week later? It's already gone.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d009.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d009_late_follow_up.mp4",
+ "lines": [
+  "Following up a week later? It's already gone.",
+  "Say a homeowner gets three bids for a bathroom.",
+  "Yours lands Monday. The other two by Friday.",
+  "Over the weekend, they pick one.",
+  "You call the next Tuesday. They went with someone else.",
+  "Not the cheapest one. The one they could picture.",
+  "The decision happened while you were waiting.",
+  "Real talk, a faster follow-up won't save a weak bid.",
+  "In those first days, they need something to look at.",
+  "Their own bathroom, finished, on their phone the same night.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "FOLLOWING UP",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "A WEEK LATER?",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "IT'S ALREADY",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1060,
+     "segs": [
+      [
+       "GONE.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "3",
+     "size": 280,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "BIDS. ONE BATHROOM.",
+       "w"
+      ]
+     ],
+     "size": 78,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 560,
+     "items": [
+      {
+       "text": "Mon: your bid",
+       "ok": true,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "Fri: the other two",
+       "ok": true,
+       "at": 2,
+       "dt": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 600,
+     "text": "THE WEEKEND",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 820,
+     "segs": [
+      [
+       "THEY PICK ONE.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 560,
+     "text": "NEXT TUESDAY",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 780,
+     "segs": [
+      [
+       "YOU CALL.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 930,
+     "segs": [
+      [
+       "THEY WENT WITH",
+       "r"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1060,
+     "segs": [
+      [
+       "SOMEONE ELSE.",
+       "r"
+      ]
+     ],
+     "size": 84,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 640,
+     "segs": [
+      [
+       "NOT THE CHEAPEST.",
+       "grey"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 800,
+     "segs": [
+      [
+       "THE ONE THEY",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.7
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 940,
+     "segs": [
+      [
+       "COULD PICTURE.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 700,
+     "segs": [
+      [
+       "IT WAS DECIDED",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 860,
+     "segs": [
+      [
+       "WHILE YOU WAITED.",
+       "r"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "FASTER FOLLOW-UP WON'T",
+       "w"
+      ]
+     ],
+     "size": 68,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 900,
+     "segs": [
+      [
+       "SAVE A WEAK BID.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "THOSE FIRST DAYS,",
+       "w"
+      ]
+     ],
+     "size": 88,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 860,
+     "segs": [
+      [
+       "THEY NEED TO SEE IT.",
+       "y"
+      ]
+     ],
+     "size": 75,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 600,
+     "segs": [
+      [
+       "THEIR BATHROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 960,
+     "segs": [
+      [
+       "ON THEIR PHONE THAT NIGHT",
+       "grey"
+      ]
+     ],
+     "size": 52,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

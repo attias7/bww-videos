@@ -1,0 +1,518 @@
+{
+ "episode": "d006",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Paying for renderings on jobs you never win?",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d006.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d006_paid_renderings.mp4",
+ "lines": [
+  "Paying for renderings on jobs you never win?",
+  "Say a designer charges you three hundred per rendering.",
+  "You do ten estimates a month. You render all ten.",
+  "That's three thousand dollars.",
+  "You close three. Seven renderings, paid for nothing.",
+  "That's twenty-one hundred a month, straight out of your margin.",
+  "Skip the renderings, and you look like every other bid.",
+  "Real talk, good design still matters.",
+  "The fix: show the idea before you pay for design.",
+  "Two phone photos of their room, turned into the finished version.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "PAYING FOR",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "RENDERINGS",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "ON JOBS YOU",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1060,
+     "segs": [
+      [
+       "NEVER WIN?",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 500,
+     "segs": [
+      [
+       "DESIGNER",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 720,
+     "text": "$300",
+     "size": 230,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 930,
+     "segs": [
+      [
+       "PER RENDERING",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 640,
+     "segs": [
+      [
+       "10 ESTIMATES",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 800,
+     "segs": [
+      [
+       "10 RENDERINGS",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 720,
+     "text": "$3,000",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 930,
+     "segs": [
+      [
+       "A MONTH",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1300,
+     "segs": [
+      [
+       "EXAMPLE NUMBERS",
+       "grey"
+      ]
+     ],
+     "size": 46,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 600,
+     "segs": [
+      [
+       "CLOSE 3",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 780,
+     "segs": [
+      [
+       "7 PAID FOR NOTHING.",
+       "r"
+      ]
+     ],
+     "size": 78,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 720,
+     "text": "$2,100",
+     "size": 200,
+     "color": "r",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 930,
+     "segs": [
+      [
+       "OUT OF YOUR MARGIN",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 640,
+     "segs": [
+      [
+       "SKIP THEM",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 800,
+     "segs": [
+      [
+       "AND YOU LOOK LIKE",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 940,
+     "segs": [
+      [
+       "EVERY OTHER BID.",
+       "grey"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 600,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 820,
+     "segs": [
+      [
+       "GOOD DESIGN STILL MATTERS.",
+       "w"
+      ]
+     ],
+     "size": 57,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 640,
+     "segs": [
+      [
+       "SHOW THE IDEA",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 790,
+     "segs": [
+      [
+       "BEFORE",
+       "y"
+      ],
+      [
+       " YOU PAY",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 940,
+     "segs": [
+      [
+       "FOR DESIGN.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 9,
+     "y": 560,
+     "text": "2 PHONE PHOTOS",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 800,
+     "segs": [
+      [
+       "TURNED INTO",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 940,
+     "segs": [
+      [
+       "THE FINISHED ROOM.",
+       "y"
+      ]
+     ],
+     "size": 83,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

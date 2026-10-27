@@ -1,0 +1,511 @@
+{
+ "episode": "d008",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Your portfolio is selling someone else's kitchen.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d008.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d008_portfolio.mp4",
+ "lines": [
+  "Your portfolio is selling someone else's kitchen.",
+  "Say you show a homeowner twenty photos of past jobs.",
+  "Beautiful work. Different house. Different layout.",
+  "They nod. Then they ask, but what would mine look like?",
+  "You say, trust me, it'll look great.",
+  "The next contractor says the same thing. For six grand less.",
+  "Now it comes down to price.",
+  "Real talk, your portfolio still builds trust. Keep it.",
+  "But trust doesn't close the job. Picturing their own room does.",
+  "Show them their kitchen, finished, from their own photos.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "YOUR PORTFOLIO",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "IS SELLING",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "SOMEONE ELSE'S",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1060,
+     "segs": [
+      [
+       "KITCHEN.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "20",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "PHOTOS OF PAST JOBS",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 560,
+     "items": [
+      {
+       "text": "Beautiful work",
+       "ok": true,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "Different house",
+       "ok": false,
+       "at": 2,
+       "dt": 0.7
+      },
+      {
+       "text": "Different layout",
+       "ok": false,
+       "at": 2,
+       "dt": 1.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 640,
+     "segs": [
+      [
+       "\"BUT WHAT WOULD",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 800,
+     "segs": [
+      [
+       "MINE",
+       "y"
+      ],
+      [
+       " LOOK LIKE?\"",
+       "w"
+      ]
+     ],
+     "size": 93,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 700,
+     "segs": [
+      [
+       "\"TRUST ME.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 860,
+     "segs": [
+      [
+       "IT'LL LOOK GREAT.\"",
+       "w"
+      ]
+     ],
+     "size": 83,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 520,
+     "segs": [
+      [
+       "NEXT CONTRACTOR:",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 680,
+     "segs": [
+      [
+       "SAME LINE.",
+       "grey"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    },
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 920,
+     "text": "-$6k",
+     "size": 200,
+     "color": "r",
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 700,
+     "segs": [
+      [
+       "NOW IT'S",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 860,
+     "segs": [
+      [
+       "PRICE.",
+       "r"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "YOUR PORTFOLIO",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 900,
+     "segs": [
+      [
+       "BUILDS TRUST. KEEP IT.",
+       "w"
+      ]
+     ],
+     "size": 68,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 640,
+     "segs": [
+      [
+       "TRUST DOESN'T CLOSE.",
+       "w"
+      ]
+     ],
+     "size": 75,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 800,
+     "segs": [
+      [
+       "PICTURING THEIR",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 940,
+     "segs": [
+      [
+       "OWN ROOM DOES.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 600,
+     "segs": [
+      [
+       "THEIR KITCHEN,",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 960,
+     "segs": [
+      [
+       "FROM THEIR OWN PHOTOS",
+       "grey"
+      ]
+     ],
+     "size": 52,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5–6 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio · remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}
