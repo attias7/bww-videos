@@ -1,0 +1,416 @@
+{
+ "episode": 4,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Rank and renters: do you actually own your site?",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep04.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep04_own_your_site.mp4",
+ "lines": [
+  "Rank and renters: do you actually own your site?",
+  "Some builders keep your site on their platform.",
+  "Stop paying, and the site can disappear.",
+  "So does every page that was starting to rank.",
+  "In rank and rent, the site is the asset.",
+  "It's the thing you rent out every month.",
+  "SetToRank publishes to your own WordPress.",
+  "Your hosting. Your domain. Your login.",
+  "Want to move it later? It's a normal WordPress site. Take it anywhere.",
+  "Building and previewing is free.",
+  "Real talk. It builds the site. Google still decides how fast it ranks.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "DO YOU",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "ACTUALLY OWN",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "YOUR SITE?",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ],
+   "bg": "yellow"
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "segs": [
+      [
+       "THEIR PLATFORM",
+       "r"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "browser",
+     "at": 1,
+     "y": 560,
+     "url": "builder-platform.com/your-site",
+     "title": "Plumber in Tucson",
+     "button": "Get a quote"
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 600,
+     "segs": [
+      [
+       "STOP PAYING",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 760,
+     "segs": [
+      [
+       "= SITE GONE",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1000,
+     "segs": [
+      [
+       "+ EVERY PAGE THAT",
+       "grey"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1100,
+     "segs": [
+      [
+       "WAS STARTING TO RANK",
+       "grey"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 600,
+     "segs": [
+      [
+       "THE SITE IS",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 760,
+     "segs": [
+      [
+       "THE ASSET.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 5,
+     "y": 1050,
+     "text": "You rent it out every month",
+     "fill": "grey",
+     "color": "dark",
+     "size": 48,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 420,
+     "segs": [
+      [
+       "YOUR OWN WORDPRESS",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 7,
+     "y": 580,
+     "items": [
+      {
+       "text": "Your hosting",
+       "ok": true,
+       "at": 7,
+       "dt": 0
+      },
+      {
+       "text": "Your domain",
+       "ok": true,
+       "at": 7,
+       "dt": 0.6
+      },
+      {
+       "text": "Your login",
+       "ok": true,
+       "at": 7,
+       "dt": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 600,
+     "segs": [
+      [
+       "MOVE IT LATER?",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 760,
+     "segs": [
+      [
+       "NORMAL WORDPRESS.",
+       "g"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 900,
+     "segs": [
+      [
+       "TAKE IT ANYWHERE.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 2.0
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD + PREVIEW:",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 860,
+     "segs": [
+      [
+       "FREE",
+       "y"
+      ]
+     ],
+     "size": 140,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "GOOGLE DECIDES",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "HOW FAST IT RANKS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

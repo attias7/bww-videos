@@ -1,0 +1,421 @@
+{
+ "episode": 7,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your site got a lead. Where did it go?",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep07.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep07_lead_routing.mp4",
+ "lines": [
+  "Your site got a lead. Where did it go?",
+  "In rank and rent, the lead is the product.",
+  "If it sits in an inbox nobody checks, the renter never sees it.",
+  "And a renter who sees no leads stops paying.",
+  "So every lead has to land in the right place, fast.",
+  "SetToRank adds a quote form and a click-to-call button.",
+  "Quote requests go out by email. To you, or straight to the renter.",
+  "Calls ring the number you put on the site.",
+  "No copy-pasting leads. No forms lost in a dashboard.",
+  "Building and previewing is free.",
+  "Real talk. It builds the site. It doesn't guarantee rankings or leads.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "YOUR SITE GOT",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "A LEAD.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "WHERE DID IT GO?",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ],
+   "bg": "yellow"
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 640,
+     "segs": [
+      [
+       "THE LEAD IS",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 800,
+     "segs": [
+      [
+       "THE PRODUCT.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 560,
+     "segs": [
+      [
+       "UNREAD INBOX",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 720,
+     "segs": [
+      [
+       "RENTER NEVER SEES IT",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 960,
+     "segs": [
+      [
+       "NO LEADS =",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1100,
+     "segs": [
+      [
+       "NO RENT.",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 640,
+     "segs": [
+      [
+       "RIGHT PLACE.",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 800,
+     "segs": [
+      [
+       "FAST.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "form",
+     "at": 5,
+     "y": 340,
+     "title": "Get a free quote",
+     "fields": [
+      [
+       "Name",
+       "Dana"
+      ],
+      [
+       "Phone",
+       "(512) 555-0142"
+      ],
+      [
+       "Job",
+       "Leaking water heater"
+      ]
+     ],
+     "button": "Send my quote request",
+     "notif": [
+      "New quote request",
+      "Emailed to the renter"
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 640,
+     "text": "Call now",
+     "fill": "g",
+     "color": "dark",
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 860,
+     "segs": [
+      [
+       "RINGS THE NUMBER",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 980,
+     "segs": [
+      [
+       "ON THE SITE",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1200,
+     "segs": [
+      [
+       "NO COPY-PASTING.",
+       "grey"
+      ]
+     ],
+     "size": 66,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1300,
+     "segs": [
+      [
+       "NO LOST FORMS.",
+       "grey"
+      ]
+     ],
+     "size": 66,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD + PREVIEW:",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 860,
+     "segs": [
+      [
+       "FREE",
+       "y"
+      ]
+     ],
+     "size": 140,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "NO GUARANTEED",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "RANKINGS OR LEADS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

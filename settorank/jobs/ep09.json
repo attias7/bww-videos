@@ -1,0 +1,392 @@
+{
+ "episode": 9,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Visitors want a price before they call.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep09.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep09_cost_calculator.mp4",
+ "lines": [
+  "Visitors want a price before they call.",
+  "Most local sites just say call for a quote.",
+  "So the visitor leaves and checks the next site.",
+  "A simple cost calculator keeps them on the page.",
+  "Pick the job. Pick the size. See a rough range.",
+  "Then the quote form is right there.",
+  "By hand, that's custom code or another plugin.",
+  "SetToRank adds a cost calculator to every site it builds.",
+  "Along with the service pages, the city pages and the call button.",
+  "It's your WordPress site, so you can edit anything after.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "VISITORS WANT",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "A PRICE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "BEFORE THEY CALL.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ],
+   "bg": "yellow"
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 640,
+     "text": "Call for a quote",
+     "fill": "grey",
+     "color": "dark",
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 880,
+     "segs": [
+      [
+       "SO THEY LEAVE",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1020,
+     "segs": [
+      [
+       "AND CHECK THE NEXT SITE",
+       "w"
+      ]
+     ],
+     "size": 66,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 420,
+     "segs": [
+      [
+       "A COST CALCULATOR",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "versus",
+     "at": 4,
+     "y": 600,
+     "heads": [
+      "Pick",
+      "Result"
+     ],
+     "rows": [
+      [
+       "Job: water heater",
+       "Rough range"
+      ],
+      [
+       "Size: 50 gallon",
+       "Shown on page"
+      ]
+     ],
+     "step": 0.6
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1150,
+     "segs": [
+      [
+       "THEN THE QUOTE FORM",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1260,
+     "segs": [
+      [
+       "IS RIGHT THERE",
+       "g"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 640,
+     "segs": [
+      [
+       "BY HAND:",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 800,
+     "segs": [
+      [
+       "CUSTOM CODE",
+       "r"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 930,
+     "segs": [
+      [
+       "OR ANOTHER PLUGIN",
+       "r"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "segs": [
+      [
+       "SETTORANK BUILDS IT IN",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 7,
+     "y": 560,
+     "items": [
+      {
+       "text": "Cost calculator",
+       "ok": true,
+       "at": 7,
+       "dt": 0.6
+      },
+      {
+       "text": "Service + city pages",
+       "ok": true,
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "text": "Call button",
+       "ok": true,
+       "at": 8,
+       "dt": 0.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1180,
+     "segs": [
+      [
+       "YOUR WORDPRESS.",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1280,
+     "segs": [
+      [
+       "EDIT ANYTHING.",
+       "g"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

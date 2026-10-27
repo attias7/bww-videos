@@ -1,0 +1,425 @@
+{
+ "episode": 3,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your AI site builder just made up reviews.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep03.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep03_fake_ai_reviews.mp4",
+ "lines": [
+  "Your AI site builder just made up reviews.",
+  "A lot of AI builders fill the page for you.",
+  "Five stars from people who don't exist.",
+  "A license number nobody checked.",
+  "Twenty years in business, for a site you made today.",
+  "That's fake proof. And the renter's name is on it.",
+  "Fake reviews can get a business in real trouble.",
+  "SetToRank never invents reviews, licenses or years in business.",
+  "Real proof comes from the real business, once you rent it out.",
+  "Everything else is built. Pages, FAQs, schema, a quote form.",
+  "Real talk. It builds the site. It doesn't promise rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "YOUR AI BUILDER",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "MADE UP",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "REVIEWS.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ],
+   "bg": "yellow"
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 640,
+     "segs": [
+      [
+       "MANY AI BUILDERS",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 790,
+     "segs": [
+      [
+       "FILL IT IN ",
+       "w"
+      ],
+      [
+       "FOR YOU",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 420,
+     "segs": [
+      [
+       "WHAT IT INVENTS:",
+       "r"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 580,
+     "items": [
+      {
+       "text": "5-star reviews: fake",
+       "ok": false,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "License #: unchecked",
+       "ok": false,
+       "at": 3,
+       "dt": 0
+      },
+      {
+       "text": "\"20 years\": made today",
+       "ok": false,
+       "at": 4,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 560,
+     "segs": [
+      [
+       "FAKE PROOF.",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 760,
+     "segs": [
+      [
+       "THE RENTER'S NAME",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 880,
+     "segs": [
+      [
+       "IS ON IT.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1120,
+     "segs": [
+      [
+       "FAKE REVIEWS = ",
+       "w"
+      ],
+      [
+       "REAL TROUBLE",
+       "r"
+      ]
+     ],
+     "size": 64,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "segs": [
+      [
+       "SETTORANK NEVER INVENTS:",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 7,
+     "y": 560,
+     "items": [
+      {
+       "text": "Reviews",
+       "ok": false,
+       "at": 7,
+       "dt": 0.6
+      },
+      {
+       "text": "Licenses",
+       "ok": false,
+       "at": 7,
+       "dt": 1.2
+      },
+      {
+       "text": "Years in business",
+       "ok": false,
+       "at": 7,
+       "dt": 1.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1200,
+     "segs": [
+      [
+       "REAL PROOF COMES FROM",
+       "w"
+      ]
+     ],
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1300,
+     "segs": [
+      [
+       "THE REAL BUSINESS",
+       "g"
+      ]
+     ],
+     "size": 60,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 400,
+     "segs": [
+      [
+       "EVERYTHING ELSE: BUILT",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 9,
+     "y": 540,
+     "items": [
+      {
+       "text": "Service + city pages",
+       "ok": true,
+       "at": 9,
+       "dt": 0.6
+      },
+      {
+       "text": "FAQs + schema",
+       "ok": true,
+       "at": 9,
+       "dt": 1.2
+      },
+      {
+       "text": "Quote form",
+       "ok": true,
+       "at": 9,
+       "dt": 1.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "PROMISE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

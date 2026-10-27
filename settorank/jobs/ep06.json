@@ -1,0 +1,388 @@
+{
+ "episode": 6,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Rank and renters: don't only target the big city.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep06.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep06_nearby_towns.mp4",
+ "lines": [
+  "Rank and renters: don't only target the big city.",
+  "Everyone goes after the biggest city on the map.",
+  "That's where the competition is too.",
+  "The towns around it still need plumbers and roofers.",
+  "Often with fewer sites fighting for them.",
+  "So pick one niche and one main city.",
+  "Then the nearby towns inside the real service area.",
+  "Each town gets its own page, written for that town.",
+  "SetToRank builds that from the niche and city you type in.",
+  "Every service page. Every nearby town page.",
+  "Real talk. It builds the site. Google still decides how fast it ranks.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "DON'T ONLY",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "TARGET THE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "BIG CITY.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ],
+   "bg": "yellow"
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "segs": [
+      [
+       "EVERYONE GOES HERE",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "mappin",
+     "at": 1,
+     "y": 800
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1250,
+     "segs": [
+      [
+       "SO DOES THE ",
+       "w"
+      ],
+      [
+       "COMPETITION",
+       "r"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 420,
+     "segs": [
+      [
+       "THE TOWNS AROUND IT",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 640,
+     "text": "Round Rock",
+     "fill": "grey",
+     "color": "dark",
+     "size": 54,
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 800,
+     "text": "Cedar Park",
+     "fill": "grey",
+     "color": "dark",
+     "size": 54,
+     "dt": 0.8
+    },
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 960,
+     "text": "Georgetown",
+     "fill": "grey",
+     "color": "dark",
+     "size": 54,
+     "dt": 1.2
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1200,
+     "segs": [
+      [
+       "OFTEN FEWER SITES",
+       "g"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1310,
+     "segs": [
+      [
+       "FIGHTING FOR THEM",
+       "g"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 5,
+     "y": 480,
+     "gap": 220,
+     "nodes": [
+      {
+       "label": "One niche",
+       "color": "y",
+       "at": 5,
+       "dt": 0.2
+      },
+      {
+       "label": "One main city",
+       "color": "b",
+       "at": 5,
+       "dt": 0.9
+      },
+      {
+       "label": "Nearby towns",
+       "color": "g",
+       "at": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 640,
+     "segs": [
+      [
+       "EACH TOWN:",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 800,
+     "segs": [
+      [
+       "ITS OWN PAGE",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 940,
+     "segs": [
+      [
+       "WRITTEN FOR IT",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "browser",
+     "at": 8,
+     "y": 420,
+     "url": "yoursite.com/roofing-cedar-park",
+     "title": "Roofing in Cedar Park",
+     "button": "Get a quote"
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1400,
+     "segs": [
+      [
+       "EVERY SERVICE. EVERY TOWN.",
+       "y"
+      ]
+     ],
+     "size": 58,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "GOOGLE DECIDES",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "HOW FAST IT RANKS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

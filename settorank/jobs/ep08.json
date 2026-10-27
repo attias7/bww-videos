@@ -1,0 +1,396 @@
+{
+ "episode": 8,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Two things most rank and rent sites skip.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep08.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep08_faqs_and_schema.mp4",
+ "lines": [
+  "Two things most rank and rent sites skip.",
+  "FAQs and local schema.",
+  "FAQs answer the questions people really search.",
+  "How much does a water heater cost in Boise?",
+  "Do you work weekends?",
+  "Each answer gives Google one more reason to show your page.",
+  "Local schema is code that Google reads, not people.",
+  "It says what the business does, and which area it serves.",
+  "Most people skip it, because it's fiddly to write by hand.",
+  "SetToRank adds FAQs and local schema to every page it builds.",
+  "Real talk. It builds the site. Google still decides how fast it ranks.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "2 THINGS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "MOST SITES",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "SKIP.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ],
+   "bg": "yellow"
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 640,
+     "segs": [
+      [
+       "FAQs",
+       "y"
+      ]
+     ],
+     "size": 140,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 820,
+     "segs": [
+      [
+       "+ LOCAL SCHEMA",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 420,
+     "segs": [
+      [
+       "WHAT PEOPLE SEARCH:",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "search",
+     "at": 3,
+     "y": 640,
+     "query": "water heater cost boise"
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 900,
+     "text": "Do you work weekends?",
+     "fill": "grey",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 600,
+     "segs": [
+      [
+       "EACH ANSWER =",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 760,
+     "segs": [
+      [
+       "ONE MORE REASON",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 880,
+     "segs": [
+      [
+       "TO SHOW YOUR PAGE",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 420,
+     "segs": [
+      [
+       "LOCAL SCHEMA",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 560,
+     "segs": [
+      [
+       "CODE GOOGLE READS",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.6
+    },
+    {
+     "type": "checklist",
+     "at": 7,
+     "y": 700,
+     "items": [
+      {
+       "text": "What the business does",
+       "ok": true,
+       "at": 7,
+       "dt": 0
+      },
+      {
+       "text": "The area it serves",
+       "ok": true,
+       "at": 7,
+       "dt": 0.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1150,
+     "segs": [
+      [
+       "FIDDLY BY HAND,",
+       "grey"
+      ]
+     ],
+     "size": 66,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1250,
+     "segs": [
+      [
+       "SO MOST SKIP IT",
+       "grey"
+      ]
+     ],
+     "size": 66,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 420,
+     "segs": [
+      [
+       "ON EVERY PAGE:",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 9,
+     "y": 580,
+     "items": [
+      {
+       "text": "FAQs",
+       "ok": true,
+       "at": 9,
+       "dt": 0.8
+      },
+      {
+       "text": "Local schema",
+       "ok": true,
+       "at": 9,
+       "dt": 1.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "GOOGLE DECIDES",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "HOW FAST IT RANKS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

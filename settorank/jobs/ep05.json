@@ -1,0 +1,310 @@
+{
+ "episode": 5,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your rank and rent site is missing one of these.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep05.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "both_mixes": true,
+ "out": "../out/ep05_site_checklist.mp4",
+ "lines": [
+  "Your rank and rent site is missing one of these.",
+  "Here's the checklist before you go live.",
+  "One. A page for every service, not one page for all of them.",
+  "Two. A page for every nearby city.",
+  "Three. Titles that say the service and the city.",
+  "Four. FAQs that answer what locals actually ask.",
+  "Five. Local schema, so Google knows the service area.",
+  "Six. A quote form and a click-to-call button.",
+  "Skip the last one, and the calls have nowhere to go.",
+  "SetToRank builds all six from a niche and a city.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "YOUR SITE IS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "MISSING ONE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "OF THESE.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ],
+   "bg": "yellow"
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "segs": [
+      [
+       "BEFORE YOU GO LIVE:",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 540,
+     "items": [
+      {
+       "text": "A page per service",
+       "ok": true,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "A page per nearby city",
+       "ok": true,
+       "at": 3,
+       "dt": 0
+      },
+      {
+       "text": "Service + city titles",
+       "ok": true,
+       "at": 4,
+       "dt": 0
+      },
+      {
+       "text": "Real local FAQs",
+       "ok": true,
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "text": "Local schema",
+       "ok": true,
+       "at": 6,
+       "dt": 0
+      },
+      {
+       "text": "Quote form + call button",
+       "ok": true,
+       "at": 7,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 640,
+     "segs": [
+      [
+       "SKIP THE LAST ONE",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 800,
+     "segs": [
+      [
+       "CALLS HAVE",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 940,
+     "segs": [
+      [
+       "NOWHERE TO GO.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 9,
+     "y": 520,
+     "gap": 220,
+     "nodes": [
+      {
+       "label": "Niche + city",
+       "color": "y",
+       "at": 9,
+       "dt": 0.3
+      },
+      {
+       "label": "SetToRank",
+       "color": "b",
+       "at": 9,
+       "dt": 0.9
+      },
+      {
+       "label": "All six, built",
+       "color": "g",
+       "at": 9,
+       "dt": 1.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}
