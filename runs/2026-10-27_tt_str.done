@@ -1,0 +1,19 @@
+SetToRank TikTok week (made 2026-10-27, run by hand after an early scheduled fire; covers 2026-10-30..11-05)
+| date | time | scheduled | sound |
+|---|---|---|---|
+| 2026-10-30 | 23:00 | yes | Cavendish Banana - Bruno Boe |
+| 2026-10-31 | 23:00 | yes | Mint Breeze - RITA |
+| 2026-11-01 | 23:00 | yes | Espresso Soul - edivieira |
+| 2026-11-02 | 23:00 | yes | Self Aware - Mark Allan Wolfe |
+| 2026-11-03 | 23:00 | yes | Cavendish Banana - Bruno Boe |
+| 2026-11-04 | 23:00 | yes | Mint Breeze - RITA |
+| 2026-11-05 | 23:00 | yes | Espresso Soul - edivieira |
+All verified in Studio Posts (alarm icon, "<date>, 11:00 PM"). Sounds at -16 dB, voice 0 dB, AI-generated label on.
+Sound sources: Metricool trending TikTok songs (updated 2026-10-19), Buffer trending songs (2026-10-20).
+ElevenLabs: 7 Matt voices (eleven_v4), ~4,400 credits. Jobs settorank/jobs/ep03..ep09.json, captions in jobs/captions_ep03-09.json.
+Notes for next week:
+- 3 Chrome extensions were connected; selecting the browser needs Adi (switch_browser). Unattended runs stop there.
+- This Chrome profile blocks multiple automatic downloads: download all voices as ONE combined file (JSON header + concatenated mp3s), split in the container.
+- The Studio tab must be the active tab in a front window ("hidden" tab = uploads stall; once uploaded, editing works hidden).
+- Drop "both_mixes" from jobs (TikTok only) - saves ~8 min per build. Start builds with setsid nohup (plain nohup jobs died).
+- AI-generated toggle is not remembered between uploads; check it every time.

@@ -10,7 +10,6 @@
  "voice": "../voices/ep06.mp3",
  "atempo": 1.08,
  "music_vol": 0,
- "both_mixes": true,
  "out": "../out/ep06_nearby_towns.mp4",
  "lines": [
   "Rank and renters: don't only target the big city.",

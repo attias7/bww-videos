@@ -10,7 +10,6 @@
  "voice": "../voices/ep09.mp3",
  "atempo": 1.08,
  "music_vol": 0,
- "both_mixes": true,
  "out": "../out/ep09_cost_calculator.mp4",
  "lines": [
   "Visitors want a price before they call.",

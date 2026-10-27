@@ -10,7 +10,6 @@
  "voice": "../voices/ep07.mp3",
  "atempo": 1.08,
  "music_vol": 0,
- "both_mixes": true,
  "out": "../out/ep07_lead_routing.mp4",
  "lines": [
   "Your site got a lead. Where did it go?",

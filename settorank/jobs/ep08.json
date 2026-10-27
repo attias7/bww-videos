@@ -10,7 +10,6 @@
  "voice": "../voices/ep08.mp3",
  "atempo": 1.08,
  "music_vol": 0,
- "both_mixes": true,
  "out": "../out/ep08_faqs_and_schema.mp4",
  "lines": [
   "Two things most rank and rent sites skip.",
