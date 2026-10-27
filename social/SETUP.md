@@ -69,7 +69,7 @@ and tomorrow's reels, so Adi has a full day to add a sound and schedule them for
 ## Weekly TikTok batches with Claude Cowork (Adi, 2026-10-27)
 TikTok Studio's desktop editor has a Sounds panel, so Adi schedules each account's TikToks a week at a time with Claude
 Cowork instead of the daily inbox drafts. One account per weekday, each covering the next 7 days:
-Sunday Sign Build Run (from 2026-11-01), Monday Subletli (from 11-02), Tuesday Remodel in 360 (from 11-03),
+Sunday Sign Build Run (from 2026-11-01), Monday Subletli (PAUSED until Adi adds its Chrome profile — keeps daily inbox drafts), Tuesday Remodel in 360 (from 11-03),
 Wednesday SetToRank (from 11-04). Lists: social/tiktok_batches/<slug>.md (rewritten by the daily run);
 prompt: social/tiktok_batches/COWORK_PROMPT.md; the morning email shows a reminder on each batch day.
 Daily inbox drafts continue until each brand's first covered date (social/tiktok_batch.py FIRST_COVERED).

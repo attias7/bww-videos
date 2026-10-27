@@ -24,7 +24,8 @@ BATCH = {"Sign Build Run": (6, "sign-build-run", "Sign Build Run"),
          "SetToRank": (2, "settorank", "SetToRank")}
 # First post date each brand's weekly batch covers (Adi chose weekly Cowork batches on 2026-10-27). Before it, the old
 # daily TikTok inbox drafts keep running ("tiktok_draft": true in the queue line).
-FIRST_COVERED = {"Sign Build Run": "2026-11-02", "Subletli": "2026-11-03", "Remodel in 360": "2026-11-04", "SetToRank": "2026-11-05"}
+FIRST_COVERED = {"Sign Build Run": "2026-11-02", "Subletli": "2099-01-01",  # paused until Adi sets up its Chrome profile (2026-10-27); keeps daily drafts
+                 "Remodel in 360": "2026-11-04", "SetToRank": "2026-11-05"}
 
 def uses_batch(brand, date):
     """True if this brand's TikTok on this date is scheduled by the weekly Cowork batch (so: no inbox draft)."""
