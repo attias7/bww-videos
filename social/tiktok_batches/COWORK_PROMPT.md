@@ -1,10 +1,11 @@
 # Weekly TikTok batch — prompt for Claude Cowork
 
 Paste this into Claude Cowork on the account's batch day (Sunday = Sign Build Run, Monday = Subletli,
-Tuesday = Remodel in 360, Wednesday = SetToRank). Replace the two words in CAPITALS.
+Tuesday = Remodel in 360, Wednesday = SetToRank). Replace the words in CAPITALS (ACCOUNT_NAME appears 3 times, LIST_NAME once).
 
 ```
-Schedule this week's TikToks for my account ACCOUNT_NAME in TikTok Studio, using Chrome on my computer.
+Schedule this week's TikToks for my account ACCOUNT_NAME in TikTok Studio. Use the Chrome profile named
+"TikTok – ACCOUNT_NAME" on my computer (each TikTok account stays logged in inside its own Chrome profile).
 
 The list of posts (video link, date, time, caption, sound mood) is here:
 https://github.com/attias7/bww-videos/blob/main/social/tiktok_batches/LIST_NAME.md
@@ -13,9 +14,8 @@ Open it and work through every post marked with a date and time. Skip any marked
 For each post, one at a time:
 1. Download the video from its link (it saves to my Downloads folder).
 2. Go to https://www.tiktok.com/tiktokstudio/upload and make sure the account at the top right is ACCOUNT_NAME.
-   If it's a different account, use TikTok's own "Switch account" menu (profile picture → Switch account) to pick
-   ACCOUNT_NAME if it's listed there. If it isn't listed or TikTok asks for a password or code, stop and ask me —
-   never type a password yourself.
+   If it's a different account or you're logged out, you're in the wrong Chrome profile or the login expired: stop and
+   ask me. Never log out, and never type a password yourself.
 3. Upload the downloaded video.
 4. Paste the caption exactly as written into Description.
 5. Click "Edit video" → Sounds. Pick a sound that is trending right now (look at the "For You" tab, or search the
