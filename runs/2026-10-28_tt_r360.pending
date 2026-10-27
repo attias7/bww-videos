@@ -1,0 +1,4 @@
+R360 TikTok week (fired Tue 2026-10-27, covers 2026-10-29..11-04) - STOPPED, nothing scheduled.
+Done: account check (Browser 2 = @remodelin360, no posts scheduled for 10-29..11-04), 7 scripts + captions, 7 Arlo voices (~5,000 ElevenLabs credits) -> r360/week_2026-10-29.json.
+Blocked: the Mac's Downloads folder isn't connected to this session and the folder-access request was denied in the unattended run, so the voices can't be brought from Chrome into the container (container proxy 403s storage.googleapis.com). Uploading finished videos to TikTok works straight from /mnt/user-data/outputs.
+Sound research: Metricool 2026-10-19 (Self Aware - Mark Allan Wolfe, Sunset in Girona, Time Back - Sinny & 7vvch), Buffer 2026-10-20.
