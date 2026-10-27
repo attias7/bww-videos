@@ -32,7 +32,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 
 ### Time / speed (honest)
 - It took me three months to get one lead. Worth it.
-- Five minutes on Google tells you if a town is worth it.
+- ✅ Ep 34 — Five minutes on Google tells you if a town is worth it.
 - One Facebook post. Twenty-seven contractors replied.
 - ✅ Ep 24 — Month one, nothing happens. Here's why that's normal.
 ### Effort reduction (without…)
@@ -42,7 +42,7 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - ✅ Ep 26 — Find a contractor without picking up the phone.
 ### Callout
 - Introverts who want their own income, watch this.
-- If sales calls make you sick, this is for you.
+- ✅ Ep 36 — If sales calls make you sick, this is for you.
 - ✅ Ep 23 — If you've never built a website, start here.
 - Twenty-two and stuck in a job? Listen.
 - For people who hate DMing strangers.
@@ -65,19 +65,19 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 
 ### Pain
 - ✅ Ep 22 — Every side hustle ends with "now get on a call."
-- Tired of courses that upsell you into calls?
+- ✅ Ep 37 — Tired of courses that upsell you into calls?
 - ✅ Ep 30 — You don't hate business. You hate selling.
 - ✅ Ep 19 — Scared to message a business owner? Same.
 ### Mechanism
 - ✅ Ep 2 — How 1 Google search turns into a contractor paying me.
-- The no-cold-call close: give the first lead away.
+- ✅ Ep 31 — The no-cold-call close: give the first lead away.
 - The one-town rule that makes ranking possible.
 - ✅ Ep 25 — Why contractors say yes to "pay only if it closes."
 
 ### Transformation
 - From dreading calls to getting contractor DMs.
 - From "I can't build a website" to a live site.
-- From scrolling at 2am to building something real.
+- ✅ Ep 35 — From scrolling at 2am to building something real.
 
 ### Hybrid (best performers — WHO + RESULT + WITHOUT X)
 - ✅ Ep 15 — Introverts: get contractors to pay you, no sales calls.
@@ -87,6 +87,8 @@ One line: *Sign Build Run helps introverts build one small lead site and get pai
 - Beginners: one small town, one site, zero cold calls.
 
 ### Already used (don't repeat)
+- ✅ Ep 32 — A lead site is just five things. That's it.
+- ✅ Ep 33 — Nobody tells you how rank and rent can fail.
 - ✅ Ep 1 — I wanted an online business. I just didn't want to call strangers.
 - ✅ Ep 3 — If you're new to this, don't pick New York. Pick a tiny town.
 - ✅ Ep 6 — My first lead took about one to three months. Nobody posts that part.
