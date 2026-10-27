@@ -1,0 +1,15 @@
+Remodel in 360 TikTok week (made 2026-10-27, fired a day early; covers 2026-10-29..11-04)
+| date | time | scheduled | sound |
+|---|---|---|---|
+| 2026-10-29 | 23:00 | yes | Self Aware - Mark Allan Wolfe |
+| 2026-10-30 | 23:00 | yes | Sunset in Girona - Noah Preminger & Max Light |
+| 2026-10-31 | 23:00 | yes | Time Back - Sinny & 7vvch |
+| 2026-11-01 | 23:00 | yes | Mint Breeze - RITA |
+| 2026-11-02 | 23:00 | yes | Sunset in Girona - Noah Preminger & Max Light |
+| 2026-11-03 | 23:00 | yes | Time Back - Sinny & 7vvch |
+| 2026-11-04 | 23:00 | yes (was "Processing" at last check) | Self Aware - Mark Allan Wolfe |
+Sounds at -16 dB, voice 0 dB, AI-generated label on. Sound source: Metricool trending list (2026-10-19), Buffer (2026-10-20).
+ElevenLabs: 7 Arlo voices, ~5,000 credits. Jobs r360/jobs/d003..d009.json.
+Notes for next week: upload a ~2 MB re-encode (crf 26, maxrate 900k) - the 8.7 MB files crash the Chrome extension.
+A caption starting with a quote mark doesn't type into Studio. After typing a volume, click an empty panel spot before selecting another track.
+The run needs the Mac's Downloads folder connected (voices come down through Chrome).
