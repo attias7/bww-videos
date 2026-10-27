@@ -1,0 +1,381 @@
+{
+ "episode": 35,
+ "series": "NO COLD CALLS · EP. 35",
+ "hook": "From scrolling at two a.m. to building something real.",
+ "voice": "../voices/ep35.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep35_scrolling_at_2am.mp4",
+ "lines": [
+  "From scrolling at two a.m. to building something real.",
+  "Maybe that's you right now.",
+  "Watching money videos. Every one ends the same.",
+  "Now get on a call.",
+  "So you watch another one. And build nothing.",
+  "I'm twenty two and an introvert. Same problem.",
+  "So I picked a model with no sales calls.",
+  "One service. One town. One small site.",
+  "Google brings the customer. A contractor pays when the job closes.",
+  "Real talk. My first lead took one to three months.",
+  "But I never made a cold call.",
+  "Close the money videos. Build one small thing. Follow for the next one."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "FROM SCROLLING",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 740,
+     "segs": [
+      [
+       "AT 2AM",
+       "w"
+      ]
+     ],
+     "size": 130,
+     "dt": -0.050000000000000044
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 922,
+     "segs": [
+      [
+       "TO BUILDING",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.29999999999999993
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1062,
+     "segs": [
+      [
+       "SOMETHING REAL",
+       "dark"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.6499999999999998
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 520,
+     "segs": [
+      [
+       "MAYBE THAT'S YOU",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 700,
+     "segs": [
+      [
+       "EVERY MONEY VIDEO",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "steps",
+     "at": 2,
+     "y": 860,
+     "items": [
+      {
+       "text": "Watch the video",
+       "at": 2,
+       "dt": 0.4
+      },
+      {
+       "text": "Buy the course",
+       "at": 2,
+       "dt": 0.9
+      },
+      {
+       "text": "Now get on a call",
+       "at": 3,
+       "dt": 0
+      }
+     ],
+     "strike_at": 3,
+     "strike_dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 720,
+     "segs": [
+      [
+       "WATCH ANOTHER ONE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 880,
+     "segs": [
+      [
+       "BUILD NOTHING.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 600,
+     "segs": [
+      [
+       "22. ",
+       "y"
+      ],
+      [
+       "INTROVERT.",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 780,
+     "segs": [
+      [
+       "SAME PROBLEM.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.8
+    },
+    {
+     "type": "crossphone",
+     "at": 6,
+     "y": 980
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 7,
+     "y": 480,
+     "gap": 260,
+     "nodes": [
+      {
+       "label": "1 service",
+       "color": "b",
+       "at": 7,
+       "dt": 0
+      },
+      {
+       "label": "1 town",
+       "color": "y",
+       "at": 7,
+       "dt": 0.4
+      },
+      {
+       "label": "1 site",
+       "color": "g",
+       "at": 7,
+       "dt": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "google_phone",
+     "at": 8,
+     "y": 420,
+     "query": "gutter cleaning near me"
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1450,
+     "segs": [
+      [
+       "CONTRACTOR PAYS ON CLOSE",
+       "y"
+      ]
+     ],
+     "size": 64,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 440,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "calendar",
+     "at": 9,
+     "y": 620,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1350,
+     "segs": [
+      [
+       "FIRST LEAD: 1–3 MONTHS",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 640,
+     "segs": [
+      [
+       "ZERO",
+       "y"
+      ]
+     ],
+     "size": 150,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 820,
+     "segs": [
+      [
+       "COLD CALLS.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 600,
+     "segs": [
+      [
+       "CLOSE THE VIDEOS.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "BUILD ONE ",
+       "w"
+      ],
+      [
+       "SMALL THING.",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.8
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Follow for the next one",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 1.8
+    }
+   ]
+  }
+ ]
+}

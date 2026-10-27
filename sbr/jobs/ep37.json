@@ -1,0 +1,331 @@
+{
+ "episode": 37,
+ "series": "NO COLD CALLS · EP. 37",
+ "hook": "Tired of courses that upsell you into calls?",
+ "voice": "../voices/ep37.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep37_courses_upsell_calls.mp4",
+ "lines": [
+  "Tired of courses that upsell you into calls?",
+  "You pay for the course. Then the real offer comes.",
+  "Book a call. Join the mastermind. Talk to a coach.",
+  "If you hate calls, that's backwards.",
+  "So I put my whole process in writing.",
+  "Picking a niche and a town. Building the site.",
+  "Reaching contractors without calling them.",
+  "It's the Starter Kit. Thirty seven dollars.",
+  "No calls. No coaching. Just the steps.",
+  "Real talk. It won't do the work for you.",
+  "Ranking still takes months.",
+  "But you'll know what to do next. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "TIRED OF COURSES",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 734,
+     "segs": [
+      [
+       "THAT UPSELL YOU",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.050000000000000044
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 868,
+     "segs": [
+      [
+       "INTO ",
+       "dark"
+      ],
+      [
+       "CALLS?",
+       "r"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.29999999999999993
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "segs": [
+      [
+       "YOU PAY. THEN...",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "steps",
+     "at": 2,
+     "y": 600,
+     "items": [
+      {
+       "text": "Book a call",
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "Join the mastermind",
+       "at": 2,
+       "dt": 0.5
+      },
+      {
+       "text": "Talk to a coach",
+       "at": 2,
+       "dt": 1.0
+      }
+     ],
+     "strike_at": 3,
+     "strike_dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1350,
+     "segs": [
+      [
+       "BACKWARDS FOR INTROVERTS",
+       "r"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 420,
+     "segs": [
+      [
+       "ALL OF IT, ",
+       "w"
+      ],
+      [
+       "IN WRITING",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 5,
+     "y": 600,
+     "items": [
+      {
+       "text": "Pick a niche + town",
+       "ok": true,
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "text": "Build the site",
+       "ok": true,
+       "at": 5,
+       "dt": 0.8
+      },
+      {
+       "text": "Reach contractors, no calls",
+       "ok": true,
+       "at": 6,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 560,
+     "segs": [
+      [
+       "STARTER KIT",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 720,
+     "segs": [
+      [
+       "$37",
+       "w"
+      ]
+     ],
+     "size": 150,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1000,
+     "segs": [
+      [
+       "NO CALLS. NO COACHING.",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1110,
+     "segs": [
+      [
+       "JUST THE STEPS.",
+       "g"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 440,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "IT WON'T DO",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 780,
+     "segs": [
+      [
+       "THE WORK FOR YOU",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1000,
+     "segs": [
+      [
+       "RANKING: MONTHS",
+       "r"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 640,
+     "segs": [
+      [
+       "KNOW WHAT",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 790,
+     "segs": [
+      [
+       "TO DO NEXT",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}

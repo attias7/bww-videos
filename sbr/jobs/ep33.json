@@ -1,0 +1,343 @@
+{
+ "episode": 33,
+ "series": "NO COLD CALLS · EP. 33",
+ "hook": "Nobody tells you how rank and rent can fail.",
+ "voice": "../voices/ep33.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep33_how_it_can_fail.mp4",
+ "lines": [
+  "Nobody tells you how rank and rent can fail.",
+  "So here are the three ways it does.",
+  "One. The site never ranks.",
+  "Google decides, not you. Some towns are too competitive.",
+  "Two. It ranks, but the leads don't close.",
+  "Price shoppers. Wrong area. People just asking.",
+  "Three. A contractor gets the leads and goes quiet.",
+  "That's why you agree in writing first.",
+  "If someone only shows you screenshots,",
+  "ask them about these three.",
+  "I still do it. Because I know the risks going in.",
+  "Follow for the honest version."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "NOBODY TELLS YOU",
+       "dark"
+      ]
+     ],
+     "size": 92,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 728,
+     "segs": [
+      [
+       "HOW RANK & RENT",
+       "dark"
+      ]
+     ],
+     "size": 92,
+     "dt": -0.050000000000000044
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 856,
+     "segs": [
+      [
+       "CAN ",
+       "dark"
+      ],
+      [
+       "FAIL.",
+       "r"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.29999999999999993
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 800,
+     "segs": [
+      [
+       "3 WAYS",
+       "y"
+      ]
+     ],
+     "size": 150,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 980,
+     "segs": [
+      [
+       "IT DOES",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 420,
+     "segs": [
+      [
+       "1. ",
+       "y"
+      ],
+      [
+       "IT NEVER RANKS",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "results",
+     "at": 2,
+     "y": 580,
+     "query": "roofer smalltown",
+     "items": [
+      [
+       "bigbrand.com",
+       "Roofing Services",
+       "Nationwide"
+      ],
+      [
+       "directory.com",
+       "Top 10 Roofers",
+       "Reviews"
+      ],
+      [
+       "oldroofer.com",
+       "Smalltown Roofing",
+       "Since 1998"
+      ]
+     ],
+     "mine": -1,
+     "label": ""
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1450,
+     "segs": [
+      [
+       "GOOGLE DECIDES. NOT YOU.",
+       "w"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 420,
+     "segs": [
+      [
+       "2. ",
+       "y"
+      ],
+      [
+       "LEADS DON'T CLOSE",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 5,
+     "y": 620,
+     "items": [
+      {
+       "text": "Price shoppers",
+       "ok": false,
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "text": "Wrong area",
+       "ok": false,
+       "at": 5,
+       "dt": 0.5
+      },
+      {
+       "text": "Just asking",
+       "ok": false,
+       "at": 5,
+       "dt": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 420,
+     "segs": [
+      [
+       "3. ",
+       "y"
+      ],
+      [
+       "CONTRACTOR GOES QUIET",
+       "w"
+      ]
+     ],
+     "size": 66,
+     "dt": 0
+    },
+    {
+     "type": "chat",
+     "at": 6,
+     "y": 580,
+     "name": "Contractor",
+     "sub": "last seen 2 weeks ago",
+     "messages": [
+      "Did that job close?",
+      "Hello?"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1450,
+     "segs": [
+      [
+       "AGREE IN WRITING FIRST",
+       "y"
+      ]
+     ],
+     "size": 66,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 640,
+     "segs": [
+      [
+       "ONLY SCREENSHOTS?",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 820,
+     "segs": [
+      [
+       "ASK ABOUT",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 960,
+     "segs": [
+      [
+       "THESE 3.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 640,
+     "segs": [
+      [
+       "I STILL DO IT.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 800,
+     "segs": [
+      [
+       "RISKS KNOWN.",
+       "g"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.8
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Follow for the honest version",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.3
+    }
+   ]
+  }
+ ]
+}

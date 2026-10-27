@@ -1,0 +1,307 @@
+{
+ "episode": 32,
+ "series": "NO COLD CALLS · EP. 32",
+ "hook": "A lead site is just five things. That's it.",
+ "voice": "../voices/ep32.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep32_lead_site_five_things.mp4",
+ "lines": [
+  "A lead site is just five things. That's it.",
+  "Never built a website? This is the whole list.",
+  "One. A headline with the service and the town.",
+  "Two. A phone number people can tap.",
+  "Three. A short quote form.",
+  "Four. A page on what the job costs.",
+  "Five. Answers to the questions people actually ask.",
+  "No logo. No fancy design. No code.",
+  "You can build it with AI.",
+  "Real talk. Building it is the small part.",
+  "Ranking it on Google takes months. And it might not happen.",
+  "Save this list for your first site."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "A LEAD SITE IS",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 740,
+     "segs": [
+      [
+       "JUST ",
+       "dark"
+      ],
+      [
+       "5 THINGS.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": -0.050000000000000044
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 908,
+     "segs": [
+      [
+       "THAT'S IT.",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.29999999999999993
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 500,
+     "segs": [
+      [
+       "NEVER BUILT A WEBSITE?",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 640,
+     "segs": [
+      [
+       "THE WHOLE ",
+       "w"
+      ],
+      [
+       "LIST",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 420,
+     "items": [
+      {
+       "text": "Service + town headline",
+       "ok": true,
+       "at": 2,
+       "dt": 0.2
+      },
+      {
+       "text": "Tap-to-call number",
+       "ok": true,
+       "at": 3,
+       "dt": 0.1
+      },
+      {
+       "text": "Short quote form",
+       "ok": true,
+       "at": 4,
+       "dt": 0.1
+      },
+      {
+       "text": "What the job costs",
+       "ok": true,
+       "at": 5,
+       "dt": 0.1
+      },
+      {
+       "text": "Real customer questions",
+       "ok": true,
+       "at": 6,
+       "dt": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 560,
+     "segs": [
+      [
+       "NO LOGO.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 700,
+     "segs": [
+      [
+       "NO FANCY DESIGN.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 840,
+     "segs": [
+      [
+       "NO CODE.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1150,
+     "segs": [
+      [
+       "BUILD IT WITH ",
+       "w"
+      ],
+      [
+       "AI",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 440,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "BUILDING IT:",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 760,
+     "segs": [
+      [
+       "THE SMALL PART",
+       "g"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.5
+    },
+    {
+     "type": "calendar",
+     "at": 10,
+     "y": 900,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "SAVE THIS",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 870,
+     "segs": [
+      [
+       "FOR YOUR FIRST SITE",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Follow for the next one",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}

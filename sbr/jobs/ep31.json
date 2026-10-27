@@ -1,0 +1,371 @@
+{
+ "episode": 31,
+ "series": "NO COLD CALLS · EP. 31",
+ "hook": "The no cold call close. Give the first lead away.",
+ "voice": "../voices/ep31.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep31_give_first_lead_away.mp4",
+ "lines": [
+  "The no cold call close. Give the first lead away.",
+  "Here's the problem every introvert hits.",
+  "You built a site. Now you need a contractor.",
+  "And pitching a stranger feels awful.",
+  "So don't pitch. Send proof.",
+  "When your site gets a real request,",
+  "send it to a local contractor. For free.",
+  "One short message. In writing.",
+  "Here's a lead from my site. Want the next ones too?",
+  "Now you're not selling. You're delivering.",
+  "Real talk. Some won't reply. Some leads won't close.",
+  "But one free lead says more than any pitch. Follow for the next one."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "THE NO COLD CALL",
+       "dark"
+      ]
+     ],
+     "size": 92,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 728,
+     "segs": [
+      [
+       "CLOSE:",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.050000000000000044
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 882,
+     "segs": [
+      [
+       "GIVE THE FIRST",
+       "dark"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.29999999999999993
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1010,
+     "segs": [
+      [
+       "LEAD ",
+       "w"
+      ],
+      [
+       "AWAY.",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.6499999999999998
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 520,
+     "segs": [
+      [
+       "YOU BUILT A SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 700,
+     "segs": [
+      [
+       "NOW YOU NEED A ",
+       "w"
+      ],
+      [
+       "CONTRACTOR",
+       "y"
+      ]
+     ],
+     "size": 72,
+     "dt": 0.2
+    },
+    {
+     "type": "phone_call",
+     "at": 3,
+     "y": 900,
+     "decline_at": 3,
+     "decline_dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 700,
+     "segs": [
+      [
+       "DON'T ",
+       "w"
+      ],
+      [
+       "PITCH.",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 900,
+     "segs": [
+      [
+       "SEND ",
+       "w"
+      ],
+      [
+       "PROOF.",
+       "g"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "form",
+     "at": 5,
+     "y": 380,
+     "title": "Get a free quote",
+     "fields": [
+      [
+       "Name",
+       "Sarah M."
+      ],
+      [
+       "Service",
+       "Roof repair"
+      ],
+      [
+       "Town",
+       "Smalltown"
+      ]
+     ],
+     "button": "Send request",
+     "notif": [
+      "New request",
+      "from yourtownroofing.com"
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 6,
+     "y": 560,
+     "gap": 260,
+     "nodes": [
+      {
+       "label": "Request",
+       "color": "b",
+       "at": 6,
+       "dt": 0
+      },
+      {
+       "label": "Contractor",
+       "color": "y",
+       "at": 6,
+       "dt": 0.6
+      },
+      {
+       "label": "FREE",
+       "color": "g",
+       "at": 6,
+       "dt": 1.2
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1400,
+     "segs": [
+      [
+       "ONE MESSAGE. ",
+       "w"
+      ],
+      [
+       "IN WRITING.",
+       "y"
+      ]
+     ],
+     "size": 66,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "chat",
+     "at": 8,
+     "y": 480,
+     "name": "Roofer",
+     "sub": "contractor",
+     "messages": [
+      "Here's a lead from my site.",
+      "Want the next ones too?"
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 700,
+     "segs": [
+      [
+       "NOT SELLING.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 860,
+     "segs": [
+      [
+       "DELIVERING.",
+       "g"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.7
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 440,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 10,
+     "y": 640,
+     "items": [
+      {
+       "text": "Some won't reply",
+       "ok": false,
+       "at": 10,
+       "dt": 0.4
+      },
+      {
+       "text": "Some leads won't close",
+       "ok": false,
+       "at": 10,
+       "dt": 1.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 640,
+     "segs": [
+      [
+       "1 FREE LEAD",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 800,
+     "segs": [
+      [
+       "BEATS ANY PITCH",
+       "w"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Follow for the next one",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 1.2
+    }
+   ]
+  }
+ ]
+}

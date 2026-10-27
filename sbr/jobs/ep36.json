@@ -1,0 +1,334 @@
+{
+ "episode": 36,
+ "series": "NO COLD CALLS · EP. 36",
+ "hook": "If sales calls make you sick, this is for you.",
+ "voice": "../voices/ep36.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep36_sales_calls_make_you_sick.mp4",
+ "lines": [
+  "If sales calls make you sick, this is for you.",
+  "Most online businesses need you to sell.",
+  "Agencies. Freelancing. Closing.",
+  "This one needs you to write.",
+  "You build a small site for one service in one town.",
+  "Like gutter cleaning in a town of twenty thousand.",
+  "People search. They find your site. They ask for a quote.",
+  "You pass the request to a local contractor.",
+  "By text or email. No calls.",
+  "He pays you a cut when the job closes.",
+  "Real talk. It's slow. Months, not weeks.",
+  "But you never have to pitch anyone. Follow for more."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "IF SALES CALLS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 745,
+     "segs": [
+      [
+       "MAKE YOU ",
+       "dark"
+      ],
+      [
+       "SICK,",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.050000000000000044
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 899,
+     "segs": [
+      [
+       "THIS IS FOR YOU.",
+       "dark"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.29999999999999993
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 420,
+     "segs": [
+      [
+       "MOST ONLINE BUSINESSES",
+       "w"
+      ]
+     ],
+     "size": 66,
+     "dt": 0
+    },
+    {
+     "type": "steps",
+     "at": 2,
+     "y": 600,
+     "items": [
+      {
+       "text": "Agencies: sell",
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "Freelancing: sell",
+       "at": 2,
+       "dt": 0.5
+      },
+      {
+       "text": "Closing: sell",
+       "at": 2,
+       "dt": 1.0
+      }
+     ],
+     "strike_at": 3,
+     "strike_dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1350,
+     "segs": [
+      [
+       "THIS ONE: ",
+       "w"
+      ],
+      [
+       "WRITE",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "browser",
+     "at": 4,
+     "y": 420,
+     "url": "smalltowngutters.com",
+     "title": "Gutter Cleaning in Smalltown",
+     "button": "Get a quote"
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1450,
+     "segs": [
+      [
+       "TOWN OF 20,000",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "form",
+     "at": 6,
+     "y": 380,
+     "title": "Get a free quote",
+     "fields": [
+      [
+       "Name",
+       "Mike R."
+      ],
+      [
+       "Service",
+       "Gutter cleaning"
+      ],
+      [
+       "Town",
+       "Smalltown"
+      ]
+     ],
+     "button": "Send request",
+     "notif": [
+      "New request",
+      "from smalltowngutters.com"
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chat",
+     "at": 7,
+     "y": 480,
+     "name": "Gutter pro",
+     "sub": "contractor",
+     "messages": [
+      "New quote request for you.",
+      "Smalltown, gutter cleaning."
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1450,
+     "segs": [
+      [
+       "TEXT OR EMAIL. NO CALLS.",
+       "y"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 9,
+     "y": 560,
+     "gap": 260,
+     "nodes": [
+      {
+       "label": "Lead",
+       "color": "b",
+       "at": 9,
+       "dt": 0
+      },
+      {
+       "label": "Job closes",
+       "color": "g",
+       "at": 9,
+       "dt": 0.5
+      },
+      {
+       "label": "You get a cut",
+       "color": "y",
+       "at": 9,
+       "dt": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 440,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 660,
+     "segs": [
+      [
+       "MONTHS,",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 820,
+     "segs": [
+      [
+       "NOT WEEKS.",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 640,
+     "segs": [
+      [
+       "NEVER PITCH",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 790,
+     "segs": [
+      [
+       "ANYONE.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Follow for more",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 1.2
+    }
+   ]
+  }
+ ]
+}

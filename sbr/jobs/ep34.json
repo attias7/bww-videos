@@ -1,0 +1,339 @@
+{
+ "episode": 34,
+ "series": "NO COLD CALLS · EP. 34",
+ "hook": "Five minutes on Google tells you if a town is worth it.",
+ "voice": "../voices/ep34.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep34_check_a_town_five_minutes.mp4",
+ "lines": [
+  "Five minutes on Google tells you if a town is worth it.",
+  "Before you build anything, search it.",
+  "Type the service and the town. Like roofer in Smalltown.",
+  "Check one. Are there ads at the top?",
+  "Ads mean contractors pay for these customers.",
+  "Check two. Look at the map results.",
+  "Few reviews means there's room for you.",
+  "Check three. Open the top sites.",
+  "If they're old and thin, you can beat them.",
+  "Real talk. This doesn't guarantee you'll rank.",
+  "But it stops you building in the wrong town.",
+  "Save this before your next search."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 600,
+     "segs": [
+      [
+       "5 MINUTES",
+       "w"
+      ]
+     ],
+     "size": 130,
+     "dt": -0.4
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 782,
+     "segs": [
+      [
+       "ON GOOGLE",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.050000000000000044
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 936,
+     "segs": [
+      [
+       "IS THIS TOWN",
+       "dark"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.29999999999999993
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1064,
+     "segs": [
+      [
+       "WORTH IT?",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.6499999999999998
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 440,
+     "segs": [
+      [
+       "SEARCH ",
+       "y"
+      ],
+      [
+       "BEFORE YOU BUILD",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    },
+    {
+     "type": "google_phone",
+     "at": 2,
+     "y": 620,
+     "query": "roofer smalltown"
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 420,
+     "segs": [
+      [
+       "CHECK 1: ",
+       "y"
+      ],
+      [
+       "ADS AT THE TOP?",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    },
+    {
+     "type": "results",
+     "at": 3,
+     "y": 580,
+     "query": "roofer smalltown",
+     "items": [
+      [
+       "Sponsored · fastroof.com",
+       "Roof Repair Today",
+       "Ad"
+      ],
+      [
+       "Sponsored · topcontractors.com",
+       "Find a Roofer",
+       "Ad"
+      ],
+      [
+       "oldroofer.com",
+       "Smalltown Roofing",
+       "Since 1998"
+      ]
+     ],
+     "mine": -1,
+     "label": ""
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1450,
+     "segs": [
+      [
+       "= CONTRACTORS PAY FOR THESE",
+       "g"
+      ]
+     ],
+     "size": 56,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "segs": [
+      [
+       "CHECK 2: ",
+       "y"
+      ],
+      [
+       "THE MAP",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "mappin",
+     "at": 5,
+     "y": 600
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1400,
+     "segs": [
+      [
+       "FEW REVIEWS = ROOM FOR YOU",
+       "g"
+      ]
+     ],
+     "size": 60,
+     "dt": 0.1
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "segs": [
+      [
+       "CHECK 3: ",
+       "y"
+      ],
+      [
+       "TOP SITES",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "browser",
+     "at": 7,
+     "y": 580,
+     "url": "oldroofer.com",
+     "title": "Welcome to our website (2014)",
+     "button": "Contact"
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1500,
+     "segs": [
+      [
+       "OLD & THIN? YOU CAN BEAT IT",
+       "g"
+      ]
+     ],
+     "size": 56,
+     "dt": 0.1
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 440,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "NO GUARANTEE",
+       "r"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 820,
+     "segs": [
+      [
+       "BUT NO WRONG TOWN",
+       "g"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "SAVE THIS",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 870,
+     "segs": [
+      [
+       "BEFORE YOUR NEXT SEARCH",
+       "w"
+      ]
+     ],
+     "size": 66,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Follow for the next one",
+     "fill": "y",
+     "color": "dark",
+     "size": 52,
+     "dt": 1.0
+    }
+   ]
+  }
+ ]
+}
