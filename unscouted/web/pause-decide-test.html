@@ -17,7 +17,6 @@
 #ust .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
 #ust .pos{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 #ust .pos button{background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
-#ust .pos button.allp{border-style:dashed}
 #ust .share{margin-top:22px;background:#12160E;border:1.5px solid var(--line);border-radius:16px;padding:20px}
 #ust .share .sc{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;line-height:1.05;color:#fff;text-transform:uppercase;margin:0}
 #ust .share .sc b{color:var(--lime)}
@@ -70,6 +69,13 @@
 #ust .prod .pr{font-size:34px;font-weight:800;color:#fff;margin-top:4px}
 #ust .prod .pr s{font-size:18px;color:var(--mut);font-weight:600;margin-left:6px}
 #ust .prod .btn{margin-top:10px;width:100%;padding:15px 16px;font-size:15px}
+#ust .lockc{display:flex;align-items:center;gap:14px;background:var(--ink);color:#fff;border-radius:14px;padding:16px 18px;margin-top:16px}
+#ust .lockc .ic{font-size:26px}
+#ust .lockc b{display:block;font-size:17px}
+#ust .lockc span{color:var(--mut);font-size:14px}
+#ust .weak{margin-top:16px;font-size:17px;line-height:1.55;color:#1F2418}
+#ust .parent{margin-top:18px;border-top:1px solid rgba(11,13,10,.18);padding-top:16px}
+#ust .parent .btn{background:var(--ink);color:var(--lime)!important}
 #ust .hide{display:none!important}
 #ust .gg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start}
 #ust .gl{position:sticky;top:90px}
@@ -81,15 +87,14 @@
 <div class="w">
 
 <section id="ust-intro">
-  <div class="pill"><b>FREE · 8 OR 40 REAL MATCH MOMENTS</b>&nbsp;&nbsp;3 minutes</div>
+  <div class="pill"><b>FREE · 8 REAL MATCH MOMENTS</b>&nbsp;&nbsp;3 minutes</div>
   <h1>Soccer IQ Test (Football IQ Test): <br><span>What would you do?</span></h1>
-  <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position, or all 40 if you want the full read. 3 options each, 15 seconds to decide. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
+  <p class="lead">Like the reels, but you're on the pitch. 8 situations built for your position. 3 options each, 15 seconds to decide. After every answer you see the pro pick and why. At the end you get your score and what to work on.</p>
   <div class="card" style="margin-top:26px">
     <p style="font-weight:800;color:#fff">What position do you play?</p>
     <div class="pos" id="ust-pos">
-      <button data-p="striker">Striker</button><button data-p="winger">Winger</button><button data-p="ten">No. 10</button><button data-p="mid">Midfielder</button><button data-p="def">Defender</button><button data-p="all" class="allp">All positions · 40</button>
+      <button data-p="striker">Striker</button><button data-p="winger">Winger</button><button data-p="ten">No. 10</button><button data-p="mid">Midfielder</button><button data-p="def">Defender</button>
     </div>
-    <p class="small" id="ust-allnote" style="margin-top:10px">Pick your position for the quick 8, or take all 40 situations (about 12 minutes) for the full read.</p>
     <div class="row"><button class="btn" id="ust-start" disabled>Start the test →</button></div>
     <p class="small" style="margin-top:12px">No sign-up. Just decide like you would in a real game.</p>
   </div>
@@ -116,20 +121,25 @@
   <p class="tierh" id="ust-tier" style="margin-top:14px"></p>
   <p class="lead" id="ust-tierTxt"></p>
   <div class="cats" id="ust-cats"></div>
-  <div class="share" id="ust-share"><p class="small" style="font-weight:800;letter-spacing:.1em;margin:0 0 8px">CHALLENGE YOUR TEAMMATES</p><p class="sc" id="ust-shareTxt"></p><p class="su">unscoutedfootball.com/soccer-iq-test</p><div class="row" style="margin-top:14px"><button class="btn" id="ust-shareBtn">Share my score</button><button class="btn ghost" id="ust-copyBtn">Copy text</button></div><p class="small" id="ust-shareOk" style="margin-top:10px"></p></div>
-  <p class="small" id="ust-disc" style="margin-top:14px">8 moments is a quick check, not a scout's verdict. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
 
-  <div class="offer">
-    <p style="font-weight:800;letter-spacing:.1em;font-size:13px">FOR FINISHING THE TEST · $10 OFF</p>
-    <p class="tierh" style="margin-top:8px;color:#10120D">Train this every week, not just once.</p>
-    <p style="margin-top:10px;font-size:17px;line-height:1.55;color:#1F2418">The Basics Kit is the full method behind this test: how to analyse players, games and yourself, the 9 basics and a 12-week plan. Your code <span class="code">PAUSE10</span> takes $10 off the Kit or the Bundle. The button adds it for you.</p>
+  <p class="small" id="ust-disc" style="margin-top:14px">8 moments is a quick check, not a scout's verdict. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
+  <div class="offer" id="ust-offer">
+    <p style="font-weight:800;letter-spacing:.1em;font-size:13px">YOU'VE PLAYED 8 OF 100</p>
+    <div class="lockc"><span class="ic">🔒</span><div><b id="ust-lockT">Situation 9 is ready</b><span id="ust-lockS">12 more for your position, 92 in total you haven't seen.</span></div></div>
+    <p class="weak" id="ust-weak"></p>
     <div class="prods">
-      <div class="prod"><span class="tag">MOST COMPLETE</span><span class="nm">Everything Bundle</span><span class="small">Basics Kit + all 4 position packs + 84-game library + 100 Situations</span><span class="pr">$89<s>$99</s></span><button class="btn" data-buy="32">Get the bundle →</button></div>
-      <div class="prod"><span class="tag">START HERE</span><span class="nm">The Basics Kit</span><span class="small">10 guides, worksheets, 12-week plan</span><span class="pr">$37<s>$47</s></span><button class="btn" data-buy="27">Get the kit →</button></div>
+      <div class="prod"><span class="tag">ALL 5 POSITIONS · BEST VALUE</span><span class="nm">Pause &amp; Decide: all 100</span><span class="small">20 situations for every position. Same format as this test, 92 moments you haven't played. Plays on any phone, yours to keep.</span><span class="pr">$27</span><button class="btn" data-buy="78" data-c="">Unlock all 100 →</button></div>
+      <div class="prod"><span class="tag">JUST YOUR POSITION</span><span class="nm" id="ust-p9n">Your position: 20 situations</span><span class="small" id="ust-p9s">The 12 you haven't seen plus the 8 you just played.</span><span class="pr">$9</span><button class="btn" id="ust-buy9" data-buy="263" data-c="">Unlock my 20 →</button></div>
     </div>
-    <p id="ust-packtip" style="margin-top:14px;font-size:15px;color:#1F2418"></p>
+    <div class="parent">
+      <p style="font-weight:800;margin:0 0 4px;color:#10120D">Parents usually pay for training. Send it to yours.</p>
+      <p style="margin:0 0 12px;font-size:15px;color:#1F2418">It sends your score, your weak spot and the link to the full 100.</p>
+      <div class="row" style="margin-top:0"><button class="btn" id="ust-parentBtn">Send this to my parent</button></div>
+      <p class="small" id="ust-parentOk" style="margin-top:10px;color:#1F2418"></p>
+    </div>
   </div>
-  <div class="row"><button class="btn ghost" id="ust-again">Take it again</button><a class="btn ghost" href="/product/free-test-pdf/">Printable analysis test (free PDF)</a></div>
+  <div class="share" id="ust-share"><p class="small" style="font-weight:800;letter-spacing:.1em;margin:0 0 8px">CHALLENGE YOUR TEAMMATES</p><p class="sc" id="ust-shareTxt"></p><p class="su">unscoutedfootball.com/soccer-iq-test</p><div class="row" style="margin-top:14px"><button class="btn" id="ust-shareBtn">Share my score</button><button class="btn ghost" id="ust-copyBtn">Copy text</button></div><p class="small" id="ust-shareOk" style="margin-top:10px"></p></div>
+  <div class="row"><button class="btn ghost" id="ust-again">Take it again</button><a class="btn ghost" href="/product/free-test-pdf/">Printable analysis test (free PDF)</a><a class="btn ghost" href="/shop/">See the full shop</a></div>
 </section>
 </div>
 
@@ -413,22 +423,30 @@ function finish(){document.getElementById('ust').classList.remove('wide');$('gam
  $('tier').textContent=t[0];$('tierTxt').textContent=t[1];
  var max={};Q.forEach(function(s){max[s.cat]=(max[s.cat]||0)+1});
  $('cats').innerHTML=Object.keys(max).map(function(c){var v=res[c]||0,m=max[c];return '<div class="cat"><span>'+CATS[c]+'</span><em style="color:'+(v===m?'#C8F23A':v>0?'#F2A93B':'#E04848')+'">'+v+'/'+m+'</em></div>'}).join('');
- var PN={striker:'a striker',winger:'a winger',ten:'a number 10',mid:'a midfielder',def:'a defender',all:'every position'};var AS=pos=='all'?'across all 5 positions':'as '+PN[pos];
+ var PN={striker:'a striker',winger:'a winger',ten:'a number 10',mid:'a midfielder',def:'a defender'};var AS='as '+PN[pos];
  var st='I scored '+pts+'/'+Q.length+' '+AS+' on the Unscouted soccer IQ test. '+t[0].replace(/ \S+$/,'')+'. Can you beat it?';
  SHARE=st;$('shareTxt').innerHTML='I scored <b>'+pts+'/'+Q.length+'</b> '+AS+'. '+t[0];$('shareOk').textContent='';
- $('disc').textContent=Q.length>8?'40 moments is a solid read, but still not a scout\'s verdict. There\'s rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.':'8 moments is a quick check, not a scout\'s verdict. There\'s rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.';
- var pk=POS[pos];$('packtip').innerHTML=pos=='all'?'Want every position in one place? The <b>Everything Bundle</b> has all 4 position packs.':pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as '+PN[pos])+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
+ var wk=null,wr=2;Object.keys(max).forEach(function(c){var r=(res[c]||0)/max[c];if(r<1)if(r<wr||(r===wr)*(max[c]>max[wk])){wr=r;wk=c}});
+ var PL={striker:'strikers',winger:'wingers',ten:'number 10s',mid:'midfielders',def:'defenders'},PT={striker:'Striker',winger:'Winger',ten:'Number 10',mid:'Midfielder',def:'Defender'};
+ WEAK=wk?CATS[wk]:'';
+ $('weak').innerHTML=wk?'Your weak spot: <b>'+CATS[wk].toLowerCase()+'</b>. You got '+(res[wk]||0)+' of '+max[wk]+' right. The full version has 20 situations for '+PL[pos]+', 12 you haven\'t seen yet, so you can train exactly this a few minutes a day.':pts+' out of '+Q.length+'. Clean. There are 12 more situations for '+PL[pos]+' you haven\'t seen, plus 80 for the other positions.';
+ $('lockT').textContent='Situation 9 of 20 for '+PL[pos]+' is ready';
+ $('p9n').textContent=PT[pos]+': 20 situations';$('buy9').setAttribute('data-buy',P9[pos]||P9.mid);
+ PARENT='I just did the Unscouted soccer IQ test and scored '+pts+'/'+Q.length+' '+AS+'.'+(wk?' My weak spot is '+CATS[wk].toLowerCase()+'.':'')+' There\'s a full version with 100 real match situations to train it ($27, or $9 for just my position). Can you get it for me?';$('parentOk').textContent='';
+ try{if(window.clarity)clarity('event','iq_test_finished')}catch(e){}
  $('prog').style.width='100%';document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
-async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
+async function buy(id,btn,cp){btn.disabled=true;btn.textContent=cp?'Adding your discount…':'Opening checkout…';try{if(window.clarity)clarity('event','iq_buy_'+id)}catch(e){}
  try{var r=await fetch('/wp-json/wc/store/v1/cart?_='+Date.now(),{credentials:'same-origin',cache:'no-store'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};
   await fetch('/wp-json/wc/store/v1/cart/add-item?_='+Date.now(),{method:'POST',credentials:'same-origin',cache:'no-store',headers:h,body:JSON.stringify({id:id,quantity:1})});
-  var c=await fetch('/wp-json/wc/store/v1/cart/apply-coupon?_='+Date.now(),{method:'POST',credentials:'same-origin',cache:'no-store',headers:h,body:JSON.stringify({code:'pause10'})});
+  if(cp)await fetch('/wp-json/wc/store/v1/cart/apply-coupon?_='+Date.now(),{method:'POST',credentials:'same-origin',cache:'no-store',headers:h,body:JSON.stringify({code:cp})});
   var f=await (await fetch('/wp-json/wc/store/v1/cart?_='+Date.now(),{credentials:'same-origin',cache:'no-store'})).json();
   var ok=(f.items||[]).some(function(it){return it.id===id});
   location.href=ok?'/checkout/':'/checkout/?add-to-cart='+id;}
  catch(e){location.href='/checkout/?add-to-cart='+id}}
 document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false}});
-function buildQ(){if(pos=='all'){return [].concat(QS.striker,QS.winger,QS.ten,QS.mid,QS.def)}return QS[pos]||QS.mid}
+function buildQ(){return QS[pos]||QS.mid}
+var P9={striker:263,winger:265,ten:267,mid:269,def:271},WEAK='',PARENT='',PURL='https://unscoutedfootball.com/product/pause-and-decide-100/';
+$('parentBtn').onclick=function(){try{if(window.clarity)clarity('event','iq_parent_share')}catch(e){}var d={title:'Pause & Decide: 100 situations',text:PARENT,url:PURL};try{if(navigator.share){navigator.share(d).catch(function(){});return}}catch(e){}var t=PARENT+' '+PURL;function ok(){$('parentOk').textContent='Copied. Paste it in a message to your parent.'}try{navigator.clipboard.writeText(t).then(ok,function(){fb(t);ok()})}catch(e){fb(t);ok()}};
 var SHARE='',URL_='https://unscoutedfootball.com/soccer-iq-test/';
 $('shareBtn').onclick=function(){var d={title:'Soccer IQ Test',text:SHARE,url:URL_};try{if(navigator.share){navigator.share(d).catch(function(){});return}}catch(e){}copyIt()};
 $('copyBtn').onclick=function(){copyIt()};
@@ -437,7 +455,7 @@ function fb(t){try{var a=document.createElement('textarea');a.value=t;document.b
 $('start').onclick=function(){Q=buildQ();try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
 $('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
 $('again').onclick=function(){Q=buildQ();document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
-document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
+document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b,b.getAttribute('data-c')||'')}});
 })();
 </script>
 </div>
