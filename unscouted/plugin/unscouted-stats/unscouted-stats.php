@@ -2,12 +2,12 @@
 /*
 Plugin Name: Unscouted Stats
 Description: First-party funnel tracking for the Unscouted interactives (views, starts, finishes, offer clicks, checkout, orders) and an email list, with an admin dashboard.
-Version: 1.0.0
+Version: 1.0.1
 Author: Unscouted
 */
 if (!defined('ABSPATH')) exit;
 
-define('USS_VER', '1.0.0');
+define('USS_VER', '1.0.1');
 
 function uss_t($n){ global $wpdb; return $wpdb->prefix.'us_'.$n; }
 
@@ -211,6 +211,12 @@ if(document.readyState=='loading')document.addEventListener('DOMContentLoaded',i
 /* ---------- admin ---------- */
 add_action('admin_menu', function(){
   add_menu_page('Unscouted Stats', 'Unscouted Stats', 'manage_options', 'unscouted-stats', 'uss_page', 'dashicons-chart-bar', 3);
+});
+add_action('admin_post_uss_purge_qa', function(){
+  if (!current_user_can('manage_options')) wp_die('no');
+  check_admin_referer('uss_purge_qa');
+  global $wpdb; $n = $wpdb->query("DELETE FROM ".uss_t('events')." WHERE vid LIKE 'qatest%'"); $m = $wpdb->query("DELETE FROM ".uss_t('emails')." WHERE vid LIKE 'qatest%'");
+  wp_safe_redirect(admin_url('admin.php?page=unscouted-stats&purged='.(int)$n.'-'.(int)$m)); exit;
 });
 add_action('admin_post_uss_csv', function(){
   if (!current_user_can('manage_options')) wp_die('no');
