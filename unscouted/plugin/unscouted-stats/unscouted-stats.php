@@ -2,12 +2,12 @@
 /*
 Plugin Name: Unscouted Stats
 Description: First-party funnel tracking for the Unscouted interactives (views, starts, finishes, offer clicks, checkout, orders) and an email list, with an admin dashboard.
-Version: 1.0.1
+Version: 1.0.2
 Author: Unscouted
 */
 if (!defined('ABSPATH')) exit;
 
-define('USS_VER', '1.0.1');
+define('USS_VER', '1.0.2');
 
 function uss_t($n){ global $wpdb; return $wpdb->prefix.'us_'.$n; }
 
@@ -188,7 +188,7 @@ window.usT=send;
 var ref='';try{var q=new URLSearchParams(location.search);ref=q.get('utm_source')||'';if(!ref)if(document.referrer)if(document.referrer.indexOf(location.host)<0)ref=document.referrer.split('/')[2]||''}catch(e){}
 send('view',{r:ref});
 function $(i){return document.getElementById(i)}
-function pos(){var b=document.querySelector('#ust-pos button.on,#ust-s-diff button.on,#ust-s-diff .on');return b?(b.getAttribute('data-p')||b.getAttribute('data-d')||b.textContent||'').trim().slice(0,16):''}
+function pos(){var b=document.querySelector('#ust-pos button.on,#ust-s-diff .ust-on,#ust-s-diff .on');return b?(b.getAttribute('data-p')||b.getAttribute('data-d')||'').trim().slice(0,16):''}
 document.addEventListener('click',function(e){var t=e.target.closest?e.target.closest('button,a'):null;if(!t)return;var i=t.id||'',h=t.getAttribute('href')||'';
  if(i=='ust-start'||i=='ust-all'||i=='ust-s-start'){send('test_start',{pos:pos(),x:i=='ust-all'?'all20':''});return}
  if(i=='ust-next'||i=='ust-s-next'){var n=($(i=='ust-next'?'ust-n':'ust-s-n')||{}).textContent||'';send('q_next',{pos:pos(),val:parseInt(n,10)||0});return}
@@ -234,6 +234,7 @@ function uss_pname($id){
   $n = '#'.$id; if (function_exists('wc_get_product')) { $p = wc_get_product((int)$id); if ($p) $n = html_entity_decode($p->get_name()).' ($'.$p->get_price().')'; }
   return $c[$id] = $n;
 }
+function uss_posname($p){ $m = array('striker'=>'Striker','winger'=>'Winger','ten'=>'Number 10','mid'=>'Midfielder','def'=>'Defender','easy'=>'Easy (scanning)','normal'=>'Normal (scanning)','hard'=>'Hard (scanning)'); return isset($m[$p]) ? $m[$p] : ($p ? $p : '–'); }
 function uss_pct($a,$b){ return $b ? round(100*$a/$b).'%' : '–'; }
 
 function uss_page(){
@@ -284,6 +285,7 @@ function uss_page(){
   $days = $wpdb->get_results($wpdb->prepare("SELECT DATE(ts) dd, COUNT(DISTINCT IF(ev='view',vid,NULL)) v, COUNT(DISTINCT IF(ev='test_start',vid,NULL)) s, COUNT(DISTINCT IF(ev='test_finish',vid,NULL)) f, COUNT(DISTINCT IF(ev IN ('buy_click','parent_share'),vid,NULL)) c, COUNT(DISTINCT IF(ev='checkout_view',vid,NULL)) co, SUM(ev='order_paid') o FROM $E WHERE ts>=%s GROUP BY dd ORDER BY dd DESC LIMIT 60", $since));
   $emails = $wpdb->get_results("SELECT email, MIN(ts) first_seen, GROUP_CONCAT(DISTINCT source) sources, COUNT(*) n, SUBSTRING_INDEX(GROUP_CONCAT(detail ORDER BY ts DESC SEPARATOR '||'),'||',1) detail FROM $M GROUP BY email ORDER BY first_seen DESC LIMIT 500");
   $first = $q("SELECT MIN(ts) FROM $E");
+  $qa = (int)$q("SELECT COUNT(*) FROM $E WHERE vid LIKE 'qatest%'");
   $base = admin_url('admin.php?page=unscouted-stats');
   $testpages = $wpdb->get_col("SELECT DISTINCT page FROM $E WHERE ev='test_start'"); if (!in_array('/soccer-iq-test/', $testpages, true)) array_unshift($testpages, '/soccer-iq-test/');
   ?>
@@ -307,6 +309,7 @@ function uss_page(){
   <div class="wrap uss">
   <h1>Unscouted Stats</h1>
   <p class="sub">Your own first-party numbers. Your admin visits are not counted. Tracking started <?php echo $first ? esc_html(date('M j, Y H:i', strtotime($first))) : 'just now'; ?>; orders and emails include older data from WooCommerce.</p>
+  <?php if ($qa) echo '<div class="note">'.$qa.' test events from setup are in the numbers. <a class="button" href="'.esc_url(wp_nonce_url(admin_url('admin-post.php?action=uss_purge_qa'),'uss_purge_qa')).'">Remove test data</a></div>'; ?>
   <div class="rng"><?php foreach ($ranges as $k=>$l) echo '<a class="'.($k===$d?'on':'').'" href="'.esc_url(add_query_arg(array('d'=>$k,'tp'=>$test),$base)).'">'.esc_html($l).'</a>'; ?></div>
 
   <div class="kp" style="margin-top:12px">
@@ -362,9 +365,9 @@ function uss_page(){
 
   <div class="grid2">
   <div>
-    <h2>By position (<?php echo esc_html($test); ?>)</h2>
+    <h2>By position / level (<?php echo esc_html($test); ?>)</h2>
     <table><tr><th>Position</th><th class="r">Starts</th><th class="r">Finishes</th><th class="r">Avg score</th><th class="r">Buy clicks</th></tr>
-    <?php if (!$posrows) echo '<tr><td colspan="5">No data yet</td></tr>'; foreach ($posrows as $r) echo '<tr><td>'.esc_html($r->pos ? $r->pos : '–').'</td><td class="r">'.(int)$r->s.'</td><td class="r">'.(int)$r->f.'</td><td class="r">'.($r->a!==null?number_format((float)$r->a,1):'–').'</td><td class="r">'.(int)$r->b.'</td></tr>'; ?>
+    <?php if (!$posrows) echo '<tr><td colspan="5">No data yet</td></tr>'; foreach ($posrows as $r) echo '<tr><td>'.esc_html(uss_posname($r->pos)).'</td><td class="r">'.(int)$r->s.'</td><td class="r">'.(int)$r->f.'</td><td class="r">'.($r->a!==null?number_format((float)$r->a,1):'–').'</td><td class="r">'.(int)$r->b.'</td></tr>'; ?>
     </table>
   </div>
   <div>
