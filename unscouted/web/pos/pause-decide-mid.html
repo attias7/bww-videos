@@ -1,0 +1,310 @@
+<div id="ust">
+<style>
+#ust{--ink:#0B0D0A;--lime:#C8F23A;--card:#15180F;--line:#262A20;--mut:#A9AEA2;--txt:#F4F5EF;--red:#E04848;background:radial-gradient(900px 520px at 12% -10%,rgba(200,242,58,.16),transparent 62%),var(--ink);color:var(--txt);padding:48px 16px 80px;min-height:80vh}
+#ust *{box-sizing:border-box}
+#ust .w{max-width:720px;margin:0 auto}
+#ust .pill{display:inline-block;border:1px solid rgba(200,242,58,.45);border-radius:999px;padding:7px 14px;font-size:13px;color:#D6DBCF}
+#ust .pill b{color:var(--lime);letter-spacing:.06em}
+#ust h1{margin:18px 0 0;font-size:clamp(34px,6vw,58px);line-height:1.03;font-weight:800;letter-spacing:-.025em;color:#fff}
+#ust h1 span{color:var(--lime)}
+#ust h2{margin:0;font-size:clamp(24px,4vw,34px);line-height:1.15;font-weight:800;letter-spacing:-.02em;color:#fff}
+#ust p{margin:0}
+#ust .lead{font-size:18px;line-height:1.6;color:#D6DBCF;margin-top:18px}
+#ust .small{font-size:14px;color:var(--mut);line-height:1.5}
+#ust .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--lime);color:var(--ink)!important;font-weight:800;letter-spacing:.04em;text-transform:uppercase;text-decoration:none!important;padding:17px 28px;border-radius:12px;border:0;cursor:pointer;font-size:16px;box-shadow:0 12px 34px rgba(200,242,58,.3);font-family:inherit}
+#ust .btn.ghost{background:transparent;color:var(--txt)!important;border:1.5px solid rgba(244,245,239,.35);box-shadow:none}
+#ust .btn:disabled{opacity:.5;cursor:default}
+#ust .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+#ust .pos{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+#ust .pos button{background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+#ust .pos button.on{border-color:var(--lime);background:#232B14;color:var(--lime)}
+#ust .top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+#ust .prog{flex:1;height:6px;background:#22261C;border-radius:9px;overflow:hidden}
+#ust .prog i{display:block;height:100%;background:var(--lime);transition:width .3s}
+#ust .sb{display:inline-flex;align-items:center;gap:8px;background:#000;border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-weight:800;font-size:14px}
+#ust .sb .s{background:var(--lime);color:var(--ink);border-radius:6px;padding:2px 8px}
+#ust .sb .m{background:var(--red);color:#fff;border-radius:6px;padding:2px 7px}
+#ust .q{font-size:19px;line-height:1.5;color:#fff;margin:14px 0}
+#ust .q b{color:var(--lime)}
+#ust svg{width:100%;height:auto;display:block;border-radius:14px}
+#ust #ust-players{transition:opacity .8s}#ust #ust-players.fade{opacity:.08}#ust #ust-scanhint{font-size:13px;color:#A9AEA2;margin:6px 0 0}
+#ust .timer{height:5px;background:#22261C;border-radius:9px;overflow:hidden;margin:12px 0 4px}
+#ust .timer i{display:block;height:100%;width:100%;background:var(--lime);transform-origin:left}
+#ust .opts{display:grid;gap:10px;margin-top:12px}
+#ust .opt{display:flex;gap:12px;align-items:center;text-align:left;background:#1C2016;border:1.5px solid var(--line);color:var(--txt);border-radius:14px;padding:14px 16px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;width:100%}
+#ust .opt .k{flex:none;width:32px;height:32px;border-radius:9px;background:#2A3020;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+#ust .opt:hover:not(:disabled){border-color:var(--lime)}
+#ust .opt.pro{border-color:var(--lime);background:#232B14}
+#ust .opt.pro .k{background:var(--lime);color:var(--ink)}
+#ust .opt.mine:not(.pro){border-color:var(--red)}
+#ust .opt.mine:not(.pro) .k{background:var(--red)}
+#ust .opt:disabled{cursor:default}
+#ust .fb{margin-top:14px;border-radius:14px;padding:16px 18px;background:#1C2312;border:1px solid #3A4A1A;line-height:1.55}
+#ust .fb .h{font-weight:800;font-size:17px;margin-bottom:6px}
+#ust .fb .why{color:#D6DBCF;font-size:16px}
+#ust .fb .mineTxt{color:var(--mut);font-size:15px;margin-top:8px}
+#ust .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px}
+#ust .big{font-size:64px;font-weight:800;line-height:1;color:#fff}
+#ust .big span{font-size:24px;color:var(--mut)}
+#ust .cats{display:grid;gap:8px;margin-top:16px}
+#ust .cat{display:flex;justify-content:space-between;gap:10px;background:#1C2016;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px}
+#ust .cat em{font-style:normal;font-weight:800}
+#ust .offer{margin-top:28px;background:var(--lime);color:var(--ink);border-radius:20px;padding:26px 22px}
+#ust .offer h2{color:var(--ink)}
+#ust .offer .code{display:inline-block;background:var(--ink);color:var(--lime);font-weight:800;letter-spacing:.08em;border-radius:8px;padding:4px 10px;margin:0 4px}
+#ust .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:18px}
+#ust .prod{background:var(--ink);color:var(--txt);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:6px}
+#ust .prod .tag{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--lime)}
+#ust .prod .nm{font-size:20px;font-weight:800;color:#fff}
+#ust .prod .pr{font-size:34px;font-weight:800;color:#fff;margin-top:4px}
+#ust .prod .pr s{font-size:18px;color:var(--mut);font-weight:600;margin-left:6px}
+#ust .prod .btn{margin-top:10px;width:100%;padding:15px 16px;font-size:15px}
+#ust .hide{display:none!important}
+#ust .gg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start}
+#ust .gl{position:sticky;top:90px}
+#ust .gr .q{margin-top:6px}
+#ust.wide .w{max-width:1120px}
+@media(max-width:860px){#ust .gg{grid-template-columns:1fr;gap:10px}#ust .gl{position:static}#ust .gl svg{max-height:38vh;width:auto;max-width:100%;margin:0 auto}#ust .gr .q{margin:8px 0}}
+@media(max-width:520px){#ust{padding:32px 12px 72px}#ust .q{font-size:17px}#ust .opt{font-size:15px;padding:12px 13px}}
+</style>
+<div class="w">
+
+<section id="ust-intro">
+  <div class="pill"><b>PAUSE &amp; DECIDE · MIDFIELDER · 20 SITUATIONS</b>&nbsp;&nbsp;Your copy</div>
+  <h1>20 match moments for midfielders.<br><span>Train your eye every day.</span></h1>
+  <p class="lead">20 situations for midfielders, drawn to scale on a real pitch. Read the picture, pick in 15 seconds, then see the pro pick and why. Play a quick 10 each day or all 20 for your position. Your best scores are saved on this device.</p>
+  <div class="card" style="margin-top:26px">
+    <p style="font-weight:800;color:#fff">Your position: Midfielder</p>
+    <div class="pos" id="ust-pos"><button data-p="mid" class="on">Midfielder</button></div>
+    <div class="row"><button class="btn" id="ust-start">Quick 10 →</button><button class="btn ghost" id="ust-all">Play all 20</button></div>
+    <p class="small" id="ust-best" style="margin-top:12px"></p>
+  </div>
+</section>
+
+<section id="ust-game" class="hide">
+  <div class="top"><span class="small" id="ust-n">1 / 8</span><div class="prog"><i id="ust-prog" style="width:0"></i></div><span class="sb"><span id="ust-min">80'</span><span class="s" id="ust-score">1-0</span></span></div>
+  <div class="gg">
+    <div class="gl"><div id="ust-pitch"></div><p id="ust-scanhint"></p></div>
+    <div class="gr">
+      <p class="small" id="ust-role" style="color:var(--lime);font-weight:800;letter-spacing:.08em"></p>
+      <p class="q" id="ust-q"></p>
+      <div class="timer" id="ust-timer"><i id="ust-tbar"></i></div>
+      <div class="opts" id="ust-opts"></div>
+      <div class="fb hide" id="ust-fb"></div>
+      <div class="row"><button class="btn hide" id="ust-next">Next situation →</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="ust-res" class="hide">
+  <div class="pill"><b>YOUR RESULT</b></div>
+  <div class="row" style="margin-top:16px"><div class="big" id="ust-pts">0<span>/8</span></div></div>
+  <h2 id="ust-tier" style="margin-top:14px"></h2>
+  <p class="lead" id="ust-tierTxt"></p>
+  <div class="cats" id="ust-cats"></div>
+  <p class="small" style="margin-top:14px">Play again tomorrow: the situations come in a different order every time. There's rarely one perfect answer in football. The score, the time and what you saw before the ball came should change your decision.</p>
+
+  <div class="card" style="margin-top:22px"><p style="font-weight:800;color:#fff;margin:0 0 6px">Want every position?</p><p class="small" style="margin:0 0 14px">The full Pause &amp; Decide has 100 situations, 20 for each of the 5 positions. Your $9 counts toward it: use code <b style="color:#C8F23A">UPGRADE9</b> and the other 80 cost $18.</p><a class="btn" href="/checkout/?add-to-cart=78">Get all 100 for $18 →</a></div>
+  <div class="row"><button class="btn ghost" id="ust-again">Take it again</button></div>
+</section>
+</div>
+
+<script>
+(function(){
+var POS={striker:{n:'Striker Pack',id:28},winger:{n:'Winger Pack',id:29},ten:{n:'Number 10 Pack',id:30},mid:{n:'Number 10 Pack',id:30},def:null};
+var CATS={state:'Reading the score & clock',scan:'Scanning before the ball',finish:'Finishing',onev:'1v1 decisions',pass:'Seeing the pass',react:'Reacting after losing it',move:'Movement off the ball',cross:'Final ball from wide',shoot:'Shooting choices',hold:'Back to goal',switchp:'Switching the play',shape:'Body shape & receiving',delay:'Defending 1v1 & delaying',line:'Stepping up or dropping',cover:'Covering & clearing',build:'Playing out from the back',aerial:'Defending crosses',track:'Tracking runners'};
+/* Real pitch in metres. x: 0 = left touchline, 68 = right touchline. y: 0 = goal line at the top.
+   Attacking questions: top = their goal. Defending questions (g:'your goal'): top = your goal.
+   p: [team, x, y, label]  team: me | us | them | gk.  ball:[x,y]  pass/run: [x1,y1,x2,y2]  v:[yTop,yBottom] visible range */
+var QS={striker:[],winger:[],ten:[],mid:[],def:[],
+mid:[
+{cat:'scan',role:'CENTRAL MIDFIELDER',min:"30'",sc:'0-0',q:"Your center back passes to you. A defender is on your back. You checked your shoulder.",
+ p:[['me',0,34,48,''],['them',0,34,44.5,'CM'],['us',0,34,68,'CB'],['them',0,47,40,'CM'],['us',0,14,40,'FB'],['us',0,56,42,'W'],['them',0,24,28,'CB'],['us',0,36,24,'ST']],pass:[34,68,34,50],v:[10,72],
+ o:[['Play it back to the center back',1,[34,48,34,66],"Safe and never really wrong. But your scan showed space on your left."],
+    ['Hold it and wait for help',0,[34,48,34,49],"Holding the ball with a defender on your back invites the tackle."],
+    ['Spin him on your first touch, to your left',2,[34,48,24,40],"Your scan showed nobody on your left. Take your first touch away from where the defender is coming from, and you're past him facing forward."]],pro:2},
+{cat:'switchp',role:'CENTRAL MIDFIELDER',min:"25'",sc:'0-0',q:"You have the ball. Your left back is next to you.",
+ p:[['me',0,28,44,''],['us',0,8,42,'FB'],['them',0,12,36,'W'],['them',0,22,36,'CM'],['them',0,30,34,'CM'],['them',0,20,22,'CB'],['them',0,36,22,'CB'],['us',0,62,28,'W'],['them',0,50,24,'FB']],ball:[29.5,43],v:[6,66],
+ o:[['Switch it to your right winger',2,[28,44,61,29],"Look at their shape: everyone has shifted over to your left. Your right winger is 1v1, with their full-back 10 metres off him."],
+    ['Play it back to your left back',1,[28,44,9,43],"Keeps the ball, but keeps it where they're strongest."],
+    ['Force it forward through the middle',0,[28,44,30,26],"Their midfielders and center backs are stacked there."]],pro:0},
+{cat:'pass',role:'CENTRAL MIDFIELDER',min:"35'",sc:'0-0',q:"You're receiving with a player tight on your back.",
+ p:[['me',0,34,46,''],['them',0,34,49.5,'CM'],['us',0,46,48,'CM'],['them',0,46,36,'CM'],['them',0,24,40,'W'],['us',0,24,28,'W'],['us',0,34,66,'CB']],pass:[34,66,34,48],v:[10,72],
+ o:[['Turn anyway',0,[34,46,30,38],"With a defender touching your back, that's how you lose it in the middle of the pitch."],
+    ['Lay it off first time to your other midfielder',2,[34,46,45,47],"He's facing forward with nobody near him. If you can't turn, find the player who can. Then move and get it back."],
+    ['Shield it and wait',1,[34,46,34,47],"You might keep it, but their team gets time to press everyone else."]],pro:1},
+{cat:'shape',role:'CENTRAL MIDFIELDER',min:"15'",sc:'0-0',q:"Your center back is about to pass to you.",
+ p:[['me',0,30,46,''],['us',0,26,66,'CB'],['them',0,42,40,'CM'],['them',0,20,36,'CM'],['us',0,54,32,'W'],['us',0,12,30,'W'],['them',0,34,22,'CB']],pass:[26,66,29.5,48],v:[10,72],
+ o:[['Receive facing your center back',0,[30,46,30,47],"Now you need an extra touch just to turn around, and their midfielder closes you."],
+    ['Come closer to him to make the pass easier',1,[30,46,28,54],"Safer pass, but you move away from the space."],
+    ['Stand side-on and take it across your body',2,[30,46,40,34],"Nobody's within 10 metres of you. With an open body you see the whole pitch, and your first touch takes you forward. The best midfielders receive like this every time."]],pro:2},
+{cat:'state',role:'CENTRAL MIDFIELDER',min:"88'",sc:'2-1',q:"You win the ball in midfield. 2-1 up, two minutes left.",
+ p:[['me',0,34,44,''],['them',0,38,40,'CM'],['us',0,18,48,'FB'],['us',0,50,48,'CM'],['them',0,28,32,'CM'],['us',0,36,22,'ST'],['them',0,32,18,'CB'],['them',0,42,18,'CB']],ball:[35,42.6],v:[6,66],
+ o:[['Try the pass over the top to your striker',0,[34,44,36,8],"Two center backs and the keeper are waiting. If it fails, they have the ball again."],
+    ['Keep it with a simple pass',2,[34,44,49,47],"Winning late, the ball is your best defender. Your teammate is free. Short, safe passes, and make them chase."],
+    ['Dribble forward',1,[34,44,34,34],"Can win a foul, but if you lose it, they're attacking."]],pro:1},
+{g:'your goal',cat:'delay',role:'CENTRAL MIDFIELDER',min:"50'",sc:'1-1',q:"They break. Their midfielder runs at you with the ball.",
+ p:[['gk','us',34,2,'GK'],['me',0,34,32,''],['them',0,35,40,'CM'],['them',0,54,38,'W'],['them',0,20,36,'ST'],['us',0,28,18,'CB'],['us',0,42,20,'CB'],['us',0,52,46,'CM']],ball:[35.5,38.6],run:[52,46,48,34],
+ o:[['Slow him down and show him wide',2,[34,32,40,34],"Your center backs are set, and your teammate is sprinting back. Get side-on, don't dive, and push him wide. Every second you win, the 3v3 becomes 3v4."],
+    ['Dive in for the tackle',0,[34,32,35,38],"Miss it and it's 3v2 against your center backs."],
+    ['Take a tactical foul',1,[34,32,35,38],"Sometimes smart, but it costs a yellow. First try to slow him down."]],pro:0},
+{cat:'pass',role:'CENTRAL MIDFIELDER',min:"60'",sc:'0-0',q:"You have the ball. Their midfield has pushed up to press.",
+ p:[['me',0,34,44,''],['them',0,30,38,'CM'],['them',0,40,38,'CM'],['them',0,26,20,'CB'],['them',0,42,20,'CB'],['us',0,35,26,'ST'],['us',0,58,44,'W'],['gk','them',34,2,'GK']],ball:[34.5,42.5],v:[-4,60],
+ o:[['Play it wide',1,[34,44,57,44],"Safe, but you let them reset."],
+    ['Pass over the top',0,[34,44,36,8],"Their center backs are deep and the keeper is behind them. It just goes to them."],
+    ['Play it into your striker\'s feet, between their midfielders',2,[34,44,35,28],"Look at the gap between their midfielders and their defence. One pass breaks their whole midfield line. Then sprint up to support him."]],pro:2},
+{cat:'shoot',role:'CENTRAL MIDFIELDER',min:"70'",sc:'0-0',q:"Your winger cuts it back to you on the edge of the box.",
+ p:[['gk','them',34,2,'GK'],['me',0,34,19,''],['us',0,60,5,'W'],['them',0,29,10,'CB'],['them',0,40,9,'CB'],['them',0,45,18,'CM'],['us',0,22,15,'W']],pass:[60,5,34,18],
+ o:[['Shoot first time, low',2,[34,19,31,-0.5],"Their midfielder is 11 metres away and the lane to goal is open. The cut-back is made for a first-time shot. Low and hard is hardest to save through bodies."],
+    ['Take a touch to set yourself',1,[34,19,33,17],"That's the extra second their midfielder needs to block."],
+    ['Pass to your other winger',0,[34,19,22,15],"You're in the better spot. Take responsibility."]],pro:0}
+]};
+
+var QS2={};
+QS2.mid=[
+{cat:'build',role:'DEFENSIVE MIDFIELDER',min:"10'",sc:'0-0',q:"Your left center back has the ball. Their front players are pressing your back line.",
+ p:[['me',0,34,62,''],['them',0,35,58,'10'],['them',0,28,74,'ST'],['them',0,40,74,'ST'],['us',0,22,80,'CB'],['us',0,46,80,'CB'],['us',0,6,70,'FB'],['us',0,62,70,'FB'],['them',0,22,58,'CM']],ball:[23.2,78.8],
+ o:[["Stay in midfield and show for the pass",0,[34,62,30,67],"Their 10 is right on your back and their striker can step into the lane. You'd receive facing your own goal with no way to turn."],
+    ["Drop between your center backs",2,[34,62,34,80],"Look at the back: their two strikers against your two center backs. Drop in between and it's 3v2, so one of you is always free to carry it forward."],
+    ["Push higher to drag their 10 away",1,[34,62,34,52],"It can open space, but it doesn't fix the problem. Your center backs are still 2v2 against their strikers."]],pro:1},
+{g:'your goal',cat:'screen',role:'DEFENSIVE MIDFIELDER',min:"55'",sc:'1-1',q:"Their midfielder has the ball in front of you. Your other midfielder is going to close him.",
+ p:[['gk','us',34,2,'GK'],['us',0,27,18,'CB'],['us',0,41,18,'CB'],['us',0,56,21,'FB'],['them',0,34,19.5,'ST'],['me',0,34,31,''],['them',0,41,27,'10'],['them',0,32,46,'CM'],['us',0,33,39,'CM'],['them',0,58,33,'W']],ball:[32,44.6],run:[33,39,32,43],
+ o:[["Hold your spot between the ball and their 10",2,[34,31,38.5,34],"Your teammate is already pressing the ball. Look at their 10, sitting in the gap in front of your center backs. Stay in the passing lane and that pass never arrives."],
+    ["Jump out and press the ball too",0,[34,31,32,43],"Two of you on one player, and their 10 is free behind you both. One pass and he's turning at your back line."],
+    ["Drop into your back line",1,[34,31,34,21],"Your back line is safer, but now their 10 gets the ball in front of you with time to turn and pick a pass."]],pro:0},
+{cat:'press',role:'CENTRAL MIDFIELDER',min:"25'",sc:'0-0',q:"Their right back passes it back to his center back. Your striker goes to press.",
+ p:[['gk','them',34,2,'GK'],['them',0,26,16,'CB'],['them',0,44,17,'CB'],['them',0,60,28,'FB'],['us',0,58,37,'W'],['us',0,36,24,'ST'],['them',0,35,31,'DM'],['me',0,41,42,''],['us',0,26,42,'CM'],['them',0,22,34,'CM']],pass:[60,28,45.5,18],run:[36,24,42,19],
+ o:[["Hold your spot in the midfield line",1,[41,42,39,40],"Fine if nobody is pressing. But your striker has gone, and if their DM stays free he just plays through the press."],
+    ["Sprint at the center back with your striker",0,[41,42,45,24],"Your striker already has him. Two on the center back leaves their DM free for an easy way out."],
+    ["Jump onto their DM while the ball travels back",2,[41,42,36,33],"A back pass is your signal to go. Look at your striker: he's curving in to cut off the other center back, so their DM is the only way out. Get tight on him while the ball is still rolling."]],pro:2},
+{cat:'cover',role:'DEFENSIVE MIDFIELDER',min:"65'",sc:'1-1',q:"Your right winger has the ball. Your right back has gone past him on the overlap.",
+ p:[['us',0,56,26,'W'],['them',0,58,21,'FB'],['us',0,60,32,'FB'],['them',0,40,38,'CM'],['us',0,24,40,'CM'],['me',0,36,48,''],['them',0,60,54,'W'],['them',0,32,62,'ST'],['us',0,26,70,'CB'],['us',0,42,70,'CB']],ball:[55,24.8],run:[60,32,64,16],
+ o:[["Push up to the edge of the box for a cut-back",0,[36,48,38,22],"You'd add a body in the box, but if the move breaks down nobody is in front of your back line."],
+    ["Shift across into the space your right back left",2,[36,48,52,57],"Look at their winger: still standing high on your right with nobody near him. Lose the ball now and one pass puts him running at your center back. Fill that space."],
+    ["Stay central in front of your center backs",1,[36,48,35,53],"Normally a good spot. But your center backs can handle their striker, and their winger is completely free on your right."]],pro:1},
+{cat:'pass',role:'CENTRAL MIDFIELDER',min:"20'",sc:'0-0',q:"You get the ball on the left of midfield. Their midfielder is closing you down.",
+ p:[['me',0,26,46,''],['them',0,29,42,'CM'],['us',0,8,50,'FB'],['them',0,10,38,'W'],['us',0,28,30,'ST'],['them',0,28,26.5,'CB'],['them',0,42,23,'CB'],['them',0,33,36,'CM'],['us',0,47,42,'CM']],ball:[26.2,44.6],run:[47,42,40,27],
+ o:[["Play it into your striker so he can set it for the runner",2,[26,46,27.5,31.5],"Look at their other midfielder: he's standing right in the lane to your runner. The lane to your striker is open. He lays it off first time and your teammate arrives on it facing goal."],
+    ["Play it back to your left back",1,[26,46,9,49.5],"Safe, and fine if nothing is on. But you'd miss a run that's already happening."],
+    ["Hit it straight into the runner's path",0,[26,46,40,28],"Their midfielder is in the way. That pass gets cut out, and you've lost it in the middle."]],pro:0},
+{cat:'switchp',role:'CENTRAL MIDFIELDER',min:"40'",sc:'0-0',q:"You have the ball on the left of midfield. Your right winger is wide on the far side.",
+ p:[['me',0,28,46,''],['them',0,30,41,'CM'],['them',0,40,40,'CM'],['us',0,62,30,'W'],['them',0,61,27.5,'FB'],['them',0,24,60,'ST'],['us',0,22,66,'CB'],['us',0,42,66,'CB'],['us',0,60,60,'FB']],ball:[28.6,44.7],
+ o:[["Hit the long switch to your right winger",1,[28,46,61,31],"The right idea when he's free. Here their full-back is right on him, and a long ball in the air gives him time to step in front."],
+    ["Turn and carry it forward",0,[28,46,31,35],"Two of their midfielders are squeezing you. That's how you lose it in the middle of the pitch."],
+    ["Recycle it to your right center back",2,[28,46,41,65],"Look at their full-back: tight on your winger. Your center back has nobody within 15 metres and your right back is free next to him. Two short passes on the ground get it to the far side safely."]],pro:2},
+{cat:'move',role:'CENTRAL MIDFIELDER',min:"78'",sc:'0-1',q:"Your left winger is about to cross. You're arriving from midfield.",
+ p:[['gk','them',33,2,'GK'],['us',0,7,12,'W'],['them',0,11,15,'FB'],['us',0,30,14,'ST'],['them',0,29,8.5,'CB'],['them',0,38,8,'CB'],['us',0,45,10,'W'],['them',0,48,7,'FB'],['them',0,42,19,'CM'],['me',0,32,28,'']],ball:[8.2,12.4],run:[30,14,27,6],
+ o:[["Arrive late around the penalty spot",2,[32,28,33,12],"Your striker is attacking the near post and your other winger is at the far post. Look at the penalty spot: nobody's there, and their midfielder is watching the ball. Time your run to arrive as the cross does."],
+    ["Sprint to the near post",0,[32,28,26,7],"Your striker is already going there. Two of you in the same space makes it easy for one defender."],
+    ["Wait at the edge for the second ball",1,[32,28,30,20],"A good job when you're level or winning. Losing late, you need another body in the box."]],pro:0},
+{cat:'react',role:'CENTRAL MIDFIELDER',min:"30'",sc:'0-0',q:"Your winger loses the ball near the right touchline in their half. Their full-back wins it.",
+ p:[['gk','them',34,2,'GK'],['them',0,46,16,'CB'],['them',0,60,30,'FB'],['us',0,63,36,'W'],['us',0,56,22,'ST'],['me',0,53,35,''],['them',0,44,28,'CM'],['us',0,44,33,'CM'],['them',0,64,50,'W']],ball:[59,31.2],
+ o:[["Drop back into your midfield spot",1,[53,35,44,48],"The safe choice when you're alone or far from the ball. Here you're five metres away with help around you."],
+    ["Close him down right now",2,[53,35,58.5,32],"Look around him: the touchline on one side, your winger and striker within a few metres, and their midfielder is marked. Three of you, one of him. Win it now and you're already in their half."],
+    ["Run back to track their winger",0,[53,35,62,49],"Your winger blocks the pass down the line. Turning your back on the ball lets their full-back walk out of trouble."]],pro:1},
+{cat:'state',role:'DEFENSIVE MIDFIELDER',min:"88'",sc:'0-1',q:"You have the ball in midfield. 0-1 down, two minutes left.",
+ p:[['gk','them',34,2,'GK'],['them',0,28,12.5,'CB'],['them',0,40,12.5,'CB'],['us',0,30,15.5,'ST'],['us',0,38,15.5,'CB'],['them',0,42,27,'CM'],['us',0,7,31,'W'],['them',0,9,27,'FB'],['them',0,12,35,'W'],['me',0,34,42,'']],ball:[34,40.6],
+ o:[["Play it out wide to your winger",1,[34,42,8,32],"Wide is often the way through a deep defence. But look: he's got two defenders on him, and the clock is running."],
+    ["Keep it and recycle across the back",0,[34,42,48,50],"That's what you do when you're winning. Down a goal with two minutes left, passing sideways helps them."],
+    ["Clip it into the box for your striker and center back",2,[34,42,34,14],"Look at the box: your center back has gone up, so it's 2v2 against their center backs. With two minutes left, get the ball where your big players are and fight for the second ball."]],pro:2},
+{g:'your goal',cat:'foul',role:'DEFENSIVE MIDFIELDER',min:"70'",sc:'1-0',q:"You lose the ball in their half. Their midfielder breaks past you at the halfway line.",
+ p:[['gk','us',34,2,'GK'],['us',0,27,28,'CB'],['us',0,41,28,'CB'],['them',0,12,44,'W'],['them',0,56,42,'W'],['them',0,33,50,'CM'],['me',0,39,54.5,''],['us',0,6,62,'FB'],['us',0,62,63,'FB']],ball:[33,48.6],run:[56,42,50,32],
+ o:[["Pull him back now and take the yellow",2,[39,54.5,34.5,50.5],"Look behind you: both full-backs are stranded up the pitch and it's 3v2 against your center backs. He's already past you. It costs you a yellow card and gives them a free kick on halfway. If you're already on a yellow, don't do it."],
+    ["Sprint back toward your goal to help",1,[39,54.5,37,36],"Right if you could get there first. But he's running with the ball facing forward, and it's 3v2 before you arrive."],
+    ["Chase him and slide in from behind",0,[39,54.5,33.5,46.5],"A slide from behind at full speed is how you get a red card, or give away a free kick much closer to your goal."]],pro:0},
+{cat:'build',role:'DEFENSIVE MIDFIELDER',min:"12'",sc:'0-0',q:"You get the ball deep in your own half. They're pressing high.",
+ p:[['me',0,34,72,''],['them',0,38,68,'ST'],['them',0,26,63,'CM'],['us',0,20,84,'CB'],['us',0,46,84,'CB'],['them',0,46,79,'W'],['them',0,28,45,'CB'],['them',0,40,45,'CB'],['us',0,34,47,'ST']],ball:[34,70.6],
+ o:[["Go long to your striker",1,[34,72,34,48],"Sometimes the right answer under a high press. But their two center backs are on him, so it's a 50/50 at best."],
+    ["Lay it back to your left center back",2,[34,72,21,83],"Their striker jumped to you, which left your left center back with nobody near him. Give it to him: he has time to carry it out or pick a pass."],
+    ["Turn and dribble out of the press",0,[34,72,30,62],"Their striker is closing from one side and their midfielder from the other. Lose it here and they're through on goal."]],pro:1},
+{cat:'setp',role:'DEFENSIVE MIDFIELDER',min:"80'",sc:'1-0',q:"Your team has a corner on the right. Where do you go?",
+ p:[['gk','them',34,2,'GK'],['us',0,31,10,'CB'],['them',0,28.5,7,'CB'],['us',0,39,9,'ST'],['them',0,41.5,6,'CB'],['me',0,34,25,''],['them',0,28,47,'ST'],['them',0,41,47,'W'],['us',0,34,55,'CB']],ball:[66.5,1],
+ o:[["Go into the box to attack the corner",0,[34,25,35,11],"More bodies in the box can win the header, but it leaves nobody to stop the counter."],
+    ["Stand on the edge of the box for the second ball",1,[34,25,34,19],"Often your job on a corner. But if the ball flies over you, you're 30 metres from the action."],
+    ["Stay deep with your center back to guard the counter",2,[34,25,36,43],"Look at halfway: their two forwards stayed up against your one center back. 1-0 up with ten minutes left, if they clear it and win it, that's 2v1 at your goal. Make it 2v2."]],pro:2}
+];
+
+
+['striker','winger','ten','mid','def'].forEach(function(k){QS[k]=QS[k].concat(QS2[k]||[])});
+Object.assign(CATS,{press:'Pressing',counter:'Counter-attacks',setp:'Set pieces',offside:'Timing & the offside line',screen:'Screening & protecting',foul:'Tactical fouls',stepout:'Stepping out of the line',fbpos:'Full-back positioning',carry:'Carrying the ball'});
+var Q=[];
+var $=function(id){return document.getElementById('ust-'+id)};
+var pos='mid',i=0,pts=0,res={},tmr=null,locked=false,TIME=15;
+function el(t,a){var e=document.createElementNS('http://www.w3.org/2000/svg',t);for(var k in a)e.setAttribute(k,a[k]);return e}
+function arrow(svg,x1,y1,x2,y2,col,dash){var l=el('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:col,'stroke-width':0.75,'stroke-linecap':'round','marker-end':'url(#ah'+(col=='#C8F23A'?'L':col=='#E04848'?'R':'W')+')'});if(dash)l.setAttribute('stroke-dasharray','1.4 1.1');svg.appendChild(l);return l}
+function lines(svg,v){var L={stroke:'#D7E6DA','stroke-width':0.32,fill:'none',opacity:.8};var A=function(t,o){svg.appendChild(el(t,Object.assign({},o,L)))};
+ A('rect',{x:0,y:0,width:68,height:105});A('line',{x1:0,y1:52.5,x2:68,y2:52.5});A('circle',{cx:34,cy:52.5,r:9.15});
+ [[0,1],[105,-1]].forEach(function(g){var y0=g[0],d=g[1];
+  A('rect',{x:13.84,y:d>0?y0:y0-16.5,width:40.32,height:16.5});A('rect',{x:24.84,y:d>0?y0:y0-5.5,width:18.32,height:5.5});
+  A('rect',{x:30.34,y:d>0?y0-2:y0,width:7.32,height:2});
+  var sy=y0+d*11;svg.appendChild(el('circle',{cx:34,cy:sy,r:.3,fill:'#D7E6DA'}));
+  var ay=y0+d*16.5,dx=Math.sqrt(9.15*9.15-5.5*5.5);A('path',{d:'M'+(34-dx)+','+ay+' A9.15,9.15 0 0 '+(d>0?0:1)+' '+(34+dx)+','+ay});});
+ svg.appendChild(el('circle',{cx:34,cy:52.5,r:.3,fill:'#D7E6DA'}));}
+function bounds(s){var ys=s.p.map(function(q){return q[3]});if(s.ball)ys.push(s.ball[1]);[s.pass,s.run].forEach(function(a){if(a){ys.push(a[1]);ys.push(a[3])}});
+ var mn=Math.min.apply(null,ys),mx=Math.max.apply(null,ys);var top=mn<24?-4:mn-8;var bot=Math.min(105,Math.max(top+34,mx+6));return [top,bot]}
+function draw(s){var v=bounds(s);var svg=el('svg',{viewBox:'-3 '+v[0]+' 74 '+(v[1]-v[0])});
+ var defs=el('defs',{});[['L','#C8F23A'],['R','#E04848'],['W','#FFFFFF']].forEach(function(m){var mk=el('marker',{id:'ah'+m[0],viewBox:'0 0 10 10',refX:'7',refY:'5',markerWidth:'4.5',markerHeight:'4.5',orient:'auto-start-reverse'});mk.appendChild(el('path',{d:'M0,0 L10,5 L0,10 z',fill:m[1]}));defs.appendChild(mk)});svg.appendChild(defs);
+ svg.appendChild(el('rect',{x:-3,y:v[0],width:74,height:v[1]-v[0],fill:'#11301D'}));
+ for(var k=0;k<15;k++)if(k%2)svg.appendChild(el('rect',{x:0,y:k*7,width:68,height:7,fill:'#14381F'}));
+ lines(svg,v);
+ if(s.pass)arrow(svg,s.pass[0],s.pass[1],s.pass[2],s.pass[3],'#FFFFFF',true);
+ if(s.run)arrow(svg,s.run[0],s.run[1],s.run[2],s.run[3],'#C8F23A',true);
+ var g=el('g',{id:'ust-arr'});svg.appendChild(g);
+ var pg=el('g',{id:'ust-players'});svg.appendChild(pg);var svgRoot=svg;svg=pg;
+ s.p.forEach(function(p){var t=p[0],x=p[2],y=p[3],lab=p[4];var r=1.25;
+  if(t=='me'){svg.appendChild(el('circle',{cx:x,cy:y,r:2.1,fill:'none',stroke:'#C8F23A','stroke-width':.4}));svg.appendChild(el('circle',{cx:x,cy:y,r:1.35,fill:'#C8F23A',stroke:'#fff','stroke-width':.3}));lab='YOU'}
+  else {var fill=t=='gk'?(p[1]=='us'?'#F2A93B':'#F2A93B'):t=='us'?'#F4F5EF':'#E04848';svg.appendChild(el('circle',{cx:x,cy:y,r:r,fill:fill,stroke:t=='us'?'#7D8577':'#fff','stroke-width':.25}))}
+  var below=s.p.some(function(o){if(o===p)return false;if(Math.abs(o[2]-x)>=2.6)return false;var d=o[3]-y;return d>0?d<4.2:false});
+  if(lab){var tx=el('text',{x:x,y:below?y-1.9:y+(t=='me'?3.6:2.9),'text-anchor':'middle','font-size':t=='me'?1.9:1.55,'font-weight':800,fill:t=='me'?'#C8F23A':t=='them'?'#FFB3B3':'#E9EDE4','paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.35});tx.textContent=lab;svg.appendChild(tx)}
+ });
+ var b=s.ball||(s.pass?[s.pass[0],s.pass[1]]:null);if(b)svg.appendChild(el('circle',{cx:b[0],cy:b[1],r:.62,fill:'#fff',stroke:'#111','stroke-width':.18}));
+ svg=svgRoot;var key=el('text',{x:-2,y:v[0]+2.4,'font-size':1.8,fill:'#D7E6DA',opacity:.85});key.textContent='▲ '+(s.g||'their goal');svg.appendChild(key);
+ return svg}
+function showArrows(s,mine){var g=document.getElementById('ust-arr');if(!g)return;g.innerHTML='';
+ s.o.forEach(function(op,k){if(!(k===s.pro||k===mine))return;var a=op[2];var col=k===s.pro?'#C8F23A':'#E04848';arrow(g,a[0],a[1],a[2],a[3],col,false);
+  var lb=el('text',{x:(a[0]+a[2])/2+1.4,y:(a[1]+a[3])/2,'font-size':2.2,'font-weight':800,fill:col,'paint-order':'stroke',stroke:'#0B0D0A','stroke-width':.4});lb.textContent=L(s,k);g.appendChild(lb)})}
+function L(s,k){return 'ABC'[s._ord.indexOf(k)]}
+function render(){var s=Q[i];locked=false;var o=[0,1,2];for(var a=2;a>0;a--){var r=Math.floor(Math.random()*(a+1));var t=o[a];o[a]=o[r];o[r]=t}s._ord=o;
+ $('n').textContent=(i+1)+' / '+Q.length;$('prog').style.width=(i/Q.length*100)+'%';$('min').textContent=s.min;$('score').textContent=s.sc;$('role').textContent='YOU: '+s.role;$('q').innerHTML=s.q;
+ var pc=$('pitch');pc.innerHTML='';pc.appendChild(draw(s));
+ var oc=$('opts');oc.innerHTML='';s._ord.forEach(function(k,j){var op=s.o[k];var b=document.createElement('button');b.className='opt';b.setAttribute('data-k',k);b.innerHTML='<span class="k">'+'ABC'[j]+'</span><span>'+op[0]+'</span>';b.onclick=function(){answer(k)};oc.appendChild(b)});
+ $('fb').classList.add('hide');$('next').classList.add('hide');$('timer').classList.remove('hide');
+ var bar=$('tbar');bar.style.transition='none';bar.style.transform='scaleX(1)';void bar.offsetWidth;bar.style.transition='transform '+TIME+'s linear';bar.style.transform='scaleX(0)';
+ clearTimeout(tmr);tmr=setTimeout(function(){answer(-1)},TIME*1000);
+ document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
+function answer(k){if(locked)return;locked=true;clearTimeout(tmr);var s=Q[i];
+ var bar=$('tbar');var cs=getComputedStyle(bar).transform;bar.style.transition='none';bar.style.transform=cs;
+ var got=k===s.pro?1:0;var half=k>=0?s.o[k][1]===1:false;pts+=got;res[s.cat]=(res[s.cat]||0)+got;
+ var btns=$('opts').children;for(var j=0;j<btns.length;j++){var kk=parseInt(btns[j].getAttribute('data-k'));btns[j].disabled=true;if(kk===s.pro)btns[j].classList.add('pro');if(kk===k)btns[j].classList.add('mine')}
+ showArrows(s,k);
+ var head=k<0?"⏱ Too slow. In a game the defender's already on you.":k===s.pro?'✅ Pro pick. +1':half?'🟡 Close, but not the pro pick. +0':'❌ Not this time. +0';
+ var html='<div class="h">'+head+'</div><div class="why"><b style="color:#C8F23A">Pro pick: '+L(s,s.pro)+'.</b> '+s.o[s.pro][3]+'</div>';
+ if(k>=0)if(k!==s.pro)html+='<div class="mineTxt">Your pick ('+L(s,k)+'): '+s.o[k][3]+'</div>';
+ var fb=$('fb');fb.innerHTML=html;fb.classList.remove('hide');
+ var nx=$('next');nx.textContent=i<Q.length-1?'Next situation →':'See my result →';nx.classList.remove('hide')}
+function finish(){document.getElementById('ust').classList.remove('wide');$('game').classList.add('hide');$('res').classList.remove('hide');
+ $('pts').innerHTML=pts+'<span>/'+Q.length+'</span>';
+ var R=pts/Q.length;var t=R>=1?['Analyst eyes 🧠','You see the game like a coach. You read the score, the clock and the space before the ball arrives. Now the work is doing it at full speed, every game.']:R>=0.75?['Player eyes ⚽','Good instincts, with a few gaps. The moments you missed are exactly what you can train by watching pros the right way.']:['Fan eyes 👀',"Right now you watch the ball, not the game. That's normal, and it's the most trainable thing in football. Watch one player, pause, decide, compare. Every week."];
+ $('tier').textContent=t[0];$('tierTxt').textContent=t[1];
+ var max={};Q.forEach(function(s){max[s.cat]=(max[s.cat]||0)+1});
+ $('cats').innerHTML=Object.keys(max).map(function(c){var v=res[c]||0,m=max[c];return '<div class="cat"><span>'+CATS[c]+'</span><em style="color:'+(v===m?'#C8F23A':v>0?'#F2A93B':'#E04848')+'">'+v+'/'+m+'</em></div>'}).join('');
+ var pk=POS[pos];($('packtip')||{}).innerHTML=pk?'Playing '+(pos=='ten'?'as a number 10':pos=='mid'?'in midfield':'as a '+pos)+'? The <b>'+pk.n+'</b> is in the Bundle, or $17 on its own.':'';
+ $('prog').style.width='100%';try{var bb=JSON.parse(localStorage.getItem('us_best')||'{}');var sc=pts+'/'+Q.length;var cur=bb[pos];if(!cur||pts/Q.length>parseInt(cur)/parseInt(cur.split('/')[1]))bb[pos]=sc;localStorage.setItem('us_best',JSON.stringify(bb))}catch(e){}var ot=$('other');if(ot)ot.onclick=function(){$('res').classList.add('hide');$('intro').classList.remove('hide');$('best').textContent=bestTxt();document.getElementById('ust').scrollIntoView({behavior:'smooth'})};document.getElementById('ust').scrollIntoView({behavior:'smooth',block:'start'})}
+async function buy(id,btn){btn.disabled=true;btn.textContent='Adding your discount…';
+ try{var r=await fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin'});var n=r.headers.get('Nonce');var h={'Content-Type':'application/json','Nonce':n};var cj=await r.json();var have=(cj.items||[]).some(function(it){return it.id===id});
+  if(!have)await fetch('/wp-json/wc/store/v1/cart/add-item',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({id:id,quantity:1})});
+  await fetch('/wp-json/wc/store/v1/cart/apply-coupon',{method:'POST',credentials:'same-origin',headers:h,body:JSON.stringify({code:'pause10'})});
+  location.href='/checkout/';}
+ catch(e){location.href='/checkout/?add-to-cart='+id}}
+document.querySelectorAll('#ust-pos button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#ust-pos button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');pos=b.getAttribute('data-p');$('start').disabled=false;$('all').disabled=false}});
+var MODE=10;function pick(){var a=(QS[pos]||QS.mid).slice();for(var x=a.length-1;x>0;x--){var r=Math.floor(Math.random()*(x+1));var t=a[x];a[x]=a[r];a[r]=t}return a.slice(0,MODE)}
+function bestTxt(){try{var b=JSON.parse(localStorage.getItem('us_best')||'{}');var k=Object.keys(b);if(!k.length)return '';return 'Best scores: '+k.map(function(p){return ({striker:'Striker',winger:'Winger',ten:'No. 10',mid:'Midfielder',def:'Defender'})[p]+' '+b[p]}).join(' · ')}catch(e){return ''}}
+$('best').textContent=bestTxt();
+var ALL=0;$('all').onclick=function(){ALL=1;$('start').onclick()};
+$('start').onclick=function(){MODE=ALL?20:10;ALL=0;Q=pick();try{localStorage.setItem('us_pos',pos)}catch(e){};document.getElementById('ust').classList.add('wide');$('intro').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+$('next').onclick=function(){if(i<Q.length-1){i++;render()}else finish()};
+$('again').onclick=function(){Q=pick();document.getElementById('ust').classList.add('wide');$('res').classList.add('hide');$('game').classList.remove('hide');i=0;pts=0;res={};render()};
+document.querySelectorAll('#ust [data-buy]').forEach(function(b){b.onclick=function(){buy(parseInt(b.getAttribute('data-buy')),b)}});
+})();
+</script>
+</div>
