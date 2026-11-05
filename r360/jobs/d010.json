@@ -1,0 +1,494 @@
+{
+ "episode": "d010",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "More leads won't fix a 3 in 10 close rate.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d010.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d010_more_leads.mp4",
+ "lines": [
+  "More leads won't fix a three in ten close rate.",
+  "Say you run twenty estimates a month.",
+  "You close three in ten. That's six jobs.",
+  "So you buy more leads. Thirty estimates, nine jobs.",
+  "Ten more nights of driving and measuring for three jobs.",
+  "Now keep the twenty and close five in ten.",
+  "That's ten jobs. No new ad spend.",
+  "Real talk, no tool closes a bad fit.",
+  "But most of your losses aren't bad fits.",
+  "They just couldn't see the finished room.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "MORE LEADS WON'T FIX",
+       "dark"
+      ]
+     ],
+     "size": 77,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "A 3 IN 10",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "CLOSE RATE.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "20",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "ESTIMATES A MONTH",
+       "w"
+      ]
+     ],
+     "size": 78,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 640,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 900,
+     "segs": [
+      [
+       "= 6 JOBS",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 520,
+     "text": "BUY MORE LEADS",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 760,
+     "text": "30",
+     "size": 220,
+     "color": "w",
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1000,
+     "segs": [
+      [
+       "ESTIMATES = 9 JOBS",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 700,
+     "segs": [
+      [
+       "10 MORE NIGHTS",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 850,
+     "segs": [
+      [
+       "FOR 3 JOBS.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 5,
+     "y": 520,
+     "text": "OR",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 720,
+     "segs": [
+      [
+       "KEEP 20.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 870,
+     "segs": [
+      [
+       "CLOSE 5 IN 10.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 6,
+     "y": 680,
+     "text": "10",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 900,
+     "segs": [
+      [
+       "JOBS.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1040,
+     "segs": [
+      [
+       "NO NEW AD SPEND.",
+       "g"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "NO TOOL CLOSES",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 910,
+     "segs": [
+      [
+       "A BAD FIT.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "MOST LOSSES",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "segs": [
+      [
+       "AREN'T BAD FITS.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "THEY COULDN'T SEE",
+       "w"
+      ]
+     ],
+     "size": 91,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 790,
+     "segs": [
+      [
+       "THE FINISHED",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 930,
+     "segs": [
+      [
+       "ROOM.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

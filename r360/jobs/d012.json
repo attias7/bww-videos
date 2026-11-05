@@ -1,0 +1,496 @@
+{
+ "episode": "d012",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Writing estimates at 11 pm? Do this math.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d012.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d012_late_estimates.mp4",
+ "lines": [
+  "Writing estimates at eleven at night? Do this math.",
+  "Say each estimate takes you three hours.",
+  "Visit, measure, price it out, write it up.",
+  "Ten estimates a month is thirty hours.",
+  "You close three. The other seven go quiet.",
+  "That's twenty-one hours a month for nothing.",
+  "Almost three full workdays, every month.",
+  "Real talk, you'll never close all of them.",
+  "But each one you turn into a yes gets those hours back.",
+  "Show them their finished room, not just a number.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "WRITING ESTIMATES",
+       "dark"
+      ]
+     ],
+     "size": 91,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "AT 11 PM?",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "DO THIS MATH.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "3 HRS",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "PER ESTIMATE",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 520,
+     "items": [
+      {
+       "text": "Visit",
+       "ok": true,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "Measure",
+       "ok": true,
+       "at": 2,
+       "dt": 0.5
+      },
+      {
+       "text": "Price it out",
+       "ok": true,
+       "at": 2,
+       "dt": 1.0
+      },
+      {
+       "text": "Write it up",
+       "ok": true,
+       "at": 2,
+       "dt": 1.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 600,
+     "segs": [
+      [
+       "10 ESTIMATES",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 840,
+     "text": "30 HRS",
+     "size": 200,
+     "color": "y",
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1060,
+     "segs": [
+      [
+       "A MONTH",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 700,
+     "segs": [
+      [
+       "YOU CLOSE 3.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 850,
+     "segs": [
+      [
+       "7 GO QUIET.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 5,
+     "y": 680,
+     "text": "21 HRS",
+     "size": 220,
+     "color": "r",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 920,
+     "segs": [
+      [
+       "A MONTH. FOR NOTHING.",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 700,
+     "segs": [
+      [
+       "ALMOST 3",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 850,
+     "segs": [
+      [
+       "FULL WORKDAYS.",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1000,
+     "segs": [
+      [
+       "EVERY MONTH.",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.7
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "YOU'LL NEVER",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 910,
+     "segs": [
+      [
+       "CLOSE THEM ALL.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "EVERY NEW YES",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "segs": [
+      [
+       "GETS HOURS BACK.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "SHOW THEM",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 790,
+     "segs": [
+      [
+       "THE FINISHED ROOM.",
+       "y"
+      ]
+     ],
+     "size": 86,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 940,
+     "segs": [
+      [
+       "NOT JUST A NUMBER.",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+Remodel in 360 TikTok week (fired 2026-11-04 09:31 UTC, work done 2026-11-05; covers 2026-11-05..11-11)
+| date | time | scheduled | sound |
+|---|---|---|---|
+| 2026-11-05 | 23:00 | yes | Deep Reflection - Morris Tapes |
+| 2026-11-06 | 23:00 | yes | Echoes of What Could've Been - Gritty Grind |
+| 2026-11-07 | 23:00 | yes | Late Night Loops - Chuckles the Band |
+| 2026-11-08 | 23:00 | yes | Countless - Official Sound Studio |
+| 2026-11-09 | 23:00 | yes | Hideaway - Maverick Rabbit |
+| 2026-11-10 | 23:00 | yes | Green Glass Walls - Soda Soda |
+| 2026-11-11 | 23:00 | yes | Inside Algorithm - Cool Ember Sync |
+Sounds at -16 dB, voice 0 dB, AI-generated label on. Sounds picked from Studio's Unlimited (commercial) tab, since the
+Business account can't use the general trending charts. Trend check: newengen.com/tiktok-trends, tokchart.com (2026-11-05).
+ElevenLabs: 7 Arlo voices (~4,840 credits). Jobs r360/jobs/d010..d016.json, d0xx log rows in r360/episodes.csv.
+Notes for next week:
+- Studio now shows "Continue to post? ... Post now" if you click Schedule before "Content check lite" finishes (~5-10 min).
+  Click Cancel, wait for "No issues found", then click Schedule again. Never click that "Post now".
+- ElevenLabs audio now comes from elevenlabsusercontent.com (also blocked in the container). Chrome blocks a 2nd
+  automatic download from that site; fetch all clips from an elevenlabs.io tab (CORS ok) and download them as ONE
+  concatenated .bin, then split by byte sizes in the container.
+- Scroll the page up ~3 ticks before opening the date/time pickers so they open fully (they open upward).
+- 4 builds in parallel take ~30 min on the 2-core container.

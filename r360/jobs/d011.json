@@ -1,0 +1,510 @@
+{
+ "episode": "d011",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Your price isn't the problem. Your PDF is.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d011.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d011_pdf_price.mp4",
+ "lines": [
+  "Your price isn't the problem. Your PDF is.",
+  "A homeowner gets three bids for a kitchen.",
+  "Three PDFs. Line items they don't understand.",
+  "So they do the only math they can.",
+  "Forty-five thousand, forty-one, thirty-eight.",
+  "The cheapest PDF wins by default.",
+  "Not because they wanted cheap. Because nothing else was clear.",
+  "Real talk, some people will always pick the lowest number.",
+  "Most just need one bid they can actually picture.",
+  "Their own kitchen, finished, from two phone photos.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 640,
+     "segs": [
+      [
+       "YOUR PRICE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 780,
+     "segs": [
+      [
+       "ISN'T THE PROBLEM.",
+       "dark"
+      ]
+     ],
+     "size": 86,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 920,
+     "segs": [
+      [
+       "YOUR PDF IS.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "3",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "BIDS. ONE KITCHEN.",
+       "w"
+      ]
+     ],
+     "size": 78,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 560,
+     "text": "PDF  \u00b7  PDF  \u00b7  PDF",
+     "fill": "w",
+     "color": "dark",
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 780,
+     "segs": [
+      [
+       "LINE ITEMS THEY",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 910,
+     "segs": [
+      [
+       "DON'T UNDERSTAND.",
+       "r"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.7
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 700,
+     "segs": [
+      [
+       "SO THEY DO",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 850,
+     "segs": [
+      [
+       "THE ONLY MATH",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 990,
+     "segs": [
+      [
+       "THEY CAN.",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 600,
+     "text": "$45K",
+     "size": 170,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 820,
+     "text": "$41K",
+     "size": 170,
+     "color": "w",
+     "dt": 0.6
+    },
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 1040,
+     "text": "$38K",
+     "size": 170,
+     "color": "y",
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 700,
+     "segs": [
+      [
+       "THE CHEAPEST PDF",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 850,
+     "segs": [
+      [
+       "WINS BY DEFAULT.",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 640,
+     "segs": [
+      [
+       "NOT BECAUSE",
+       "grey"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 780,
+     "segs": [
+      [
+       "THEY WANTED CHEAP.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 940,
+     "segs": [
+      [
+       "NOTHING ELSE WAS CLEAR.",
+       "y"
+      ]
+     ],
+     "size": 67,
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "SOME WILL ALWAYS",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 900,
+     "segs": [
+      [
+       "PICK THE LOWEST.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "MOST NEED ONE BID",
+       "w"
+      ]
+     ],
+     "size": 91,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "segs": [
+      [
+       "THEY CAN PICTURE.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 600,
+     "segs": [
+      [
+       "THEIR KITCHEN,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 960,
+     "segs": [
+      [
+       "FROM 2 PHONE PHOTOS",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

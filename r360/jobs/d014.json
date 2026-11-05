@@ -1,0 +1,513 @@
+{
+ "episode": "d014",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Free designs are the most expensive thing you give away.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d014.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d014_free_designs.mp4",
+ "lines": [
+  "Free designs are the most expensive thing you give away.",
+  "Say one kitchen layout takes you six hours.",
+  "You do ten a month to win jobs.",
+  "That's sixty hours of design work.",
+  "Three of them sign. Seven walk away with your layout.",
+  "Some of them hand it to a cheaper contractor.",
+  "Forty-two hours a month, working for someone else.",
+  "Real talk, you still need to show them something.",
+  "Just not a full design before they've signed.",
+  "Show them their own room, finished, from two phone photos.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "FREE DESIGNS ARE",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "THE MOST EXPENSIVE",
+       "dark"
+      ]
+     ],
+     "size": 86,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "THING YOU",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "GIVE AWAY.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "6 HRS",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "PER KITCHEN LAYOUT",
+       "w"
+      ]
+     ],
+     "size": 78,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 700,
+     "text": "10",
+     "size": 260,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 920,
+     "segs": [
+      [
+       "DESIGNS A MONTH",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 700,
+     "text": "60 HRS",
+     "size": 220,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 940,
+     "segs": [
+      [
+       "OF DESIGN WORK",
+       "w"
+      ]
+     ],
+     "size": 78,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 640,
+     "segs": [
+      [
+       "3 SIGN.",
+       "g"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 800,
+     "segs": [
+      [
+       "7 WALK AWAY",
+       "r"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 940,
+     "segs": [
+      [
+       "WITH YOUR LAYOUT.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 700,
+     "segs": [
+      [
+       "SOME HAND IT TO",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 850,
+     "segs": [
+      [
+       "A CHEAPER",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 990,
+     "segs": [
+      [
+       "CONTRACTOR.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 6,
+     "y": 640,
+     "text": "42 HRS",
+     "size": 220,
+     "color": "r",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 880,
+     "segs": [
+      [
+       "A MONTH, WORKING",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1000,
+     "segs": [
+      [
+       "FOR SOMEONE ELSE.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "YOU STILL NEED",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 910,
+     "segs": [
+      [
+       "TO SHOW THEM SOMETHING.",
+       "w"
+      ]
+     ],
+     "size": 67,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "NOT A FULL DESIGN",
+       "w"
+      ]
+     ],
+     "size": 91,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "segs": [
+      [
+       "BEFORE THEY SIGN.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 960,
+     "segs": [
+      [
+       "FROM 2 PHONE PHOTOS",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

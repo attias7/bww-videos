@@ -1,0 +1,502 @@
+{
+ "episode": "d013",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "\"I need to talk to my spouse.\" Here's what's really happening.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d013.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d013_talk_to_spouse.mp4",
+ "lines": [
+  "I need to talk to my spouse. Here's what's really happening.",
+  "You walked the bathroom with one of them.",
+  "They saw your tile samples. They heard your plan.",
+  "That night, they try to explain it at the kitchen table.",
+  "Their partner hears one thing. Twenty-eight thousand dollars.",
+  "No picture. Just a number and a secondhand story.",
+  "So it becomes, we'll think about it.",
+  "Real talk, you can't be at that table.",
+  "But your bid can be. Something they can both look at.",
+  "Their own bathroom, finished, on one phone.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "\"I NEED TO TALK",
+       "dark"
+      ]
+     ],
+     "size": 103,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "TO MY SPOUSE.\"",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "HERE'S WHAT'S",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "REALLY HAPPENING.",
+       "w"
+      ]
+     ],
+     "size": 91,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 700,
+     "segs": [
+      [
+       "YOU WALKED",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 850,
+     "segs": [
+      [
+       "THE BATHROOM",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 990,
+     "segs": [
+      [
+       "WITH ONE OF THEM.",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 2,
+     "y": 600,
+     "items": [
+      {
+       "text": "Saw the tile",
+       "ok": true,
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "text": "Heard the plan",
+       "ok": true,
+       "at": 2,
+       "dt": 0.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 560,
+     "text": "THAT NIGHT",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 780,
+     "segs": [
+      [
+       "AT THE KITCHEN",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 910,
+     "segs": [
+      [
+       "TABLE.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 560,
+     "segs": [
+      [
+       "THEIR PARTNER HEARS:",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 4,
+     "y": 820,
+     "text": "$28,000",
+     "size": 190,
+     "color": "r",
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 700,
+     "segs": [
+      [
+       "NO PICTURE.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 850,
+     "segs": [
+      [
+       "JUST A NUMBER.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 700,
+     "segs": [
+      [
+       "\"WE'LL THINK",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 850,
+     "segs": [
+      [
+       "ABOUT IT.\"",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.2
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "YOU CAN'T BE",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 910,
+     "segs": [
+      [
+       "AT THAT TABLE.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "YOUR BID CAN.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "segs": [
+      [
+       "SOMETHING TO SEE.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 600,
+     "segs": [
+      [
+       "THEIR BATHROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 960,
+     "segs": [
+      [
+       "ON ONE PHONE",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0.9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

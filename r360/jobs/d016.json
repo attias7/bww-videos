@@ -1,0 +1,510 @@
+{
+ "episode": "d016",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Before you double your ad budget, check this number.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d016.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d016_ad_budget.mp4",
+ "lines": [
+  "Before you double your ad budget, check this number.",
+  "Say you spend two thousand dollars a month on leads.",
+  "That gets you ten estimates.",
+  "You close three. That's about six hundred sixty per job.",
+  "Double the budget, and you pay the same per job. Twice.",
+  "Now keep two thousand and close five.",
+  "That's four hundred a job. Same leads.",
+  "Real talk, leads still matter.",
+  "But closing more of the ones you have is cheaper.",
+  "Let them see their own room, finished, before they decide.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "BEFORE YOU DOUBLE",
+       "dark"
+      ]
+     ],
+     "size": 91,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "YOUR AD BUDGET,",
+       "dark"
+      ]
+     ],
+     "size": 103,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "CHECK THIS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "NUMBER.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "$2,000",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "A MONTH ON LEADS",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 2,
+     "y": 700,
+     "text": "10",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 920,
+     "segs": [
+      [
+       "ESTIMATES",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 600,
+     "segs": [
+      [
+       "YOU CLOSE 3.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 3,
+     "y": 840,
+     "text": "$660",
+     "size": 220,
+     "color": "r",
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1060,
+     "segs": [
+      [
+       "PER JOB",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 700,
+     "segs": [
+      [
+       "DOUBLE THE BUDGET:",
+       "w"
+      ]
+     ],
+     "size": 86,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 850,
+     "segs": [
+      [
+       "SAME COST PER JOB.",
+       "r"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 980,
+     "segs": [
+      [
+       "TWICE.",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 5,
+     "y": 520,
+     "text": "OR",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 720,
+     "segs": [
+      [
+       "KEEP $2,000.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.2
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 870,
+     "segs": [
+      [
+       "CLOSE 5.",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 6,
+     "y": 700,
+     "text": "$400",
+     "size": 240,
+     "color": "g",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 940,
+     "segs": [
+      [
+       "PER JOB. SAME LEADS.",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "LEADS STILL",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 910,
+     "segs": [
+      [
+       "MATTER.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "CLOSING MORE",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "segs": [
+      [
+       "IS CHEAPER.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 600,
+     "segs": [
+      [
+       "LET THEM SEE",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 750,
+     "segs": [
+      [
+       "THEIR ROOM,",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 900,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

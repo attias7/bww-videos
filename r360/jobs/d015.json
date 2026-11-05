@@ -1,0 +1,493 @@
+{
+ "episode": "d015",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Same tile. Same cabinets. Why did they pick him?",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d015.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d015_same_tile.mp4",
+ "lines": [
+  "Same tile. Same cabinets. Why did they pick him?",
+  "Two contractors bid the same bathroom.",
+  "Same materials. Prices within a thousand dollars.",
+  "You both did the job right on paper.",
+  "He sent a picture of what it would look like.",
+  "You sent a spreadsheet.",
+  "The homeowner could see his. They had to imagine yours.",
+  "Real talk, it wasn't about skill.",
+  "People buy what they can picture.",
+  "Make your bid the one they can see. Their room, finished.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "at": 0,
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "SAME TILE.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "SAME CABINETS.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "WHY DID THEY",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "PICK HIM?",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.5999999999999999
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "at": 1,
+     "y": 700,
+     "text": "2",
+     "size": 260,
+     "color": "y",
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 920,
+     "segs": [
+      [
+       "BIDS. ONE BATHROOM.",
+       "w"
+      ]
+     ],
+     "size": 78,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 640,
+     "segs": [
+      [
+       "SAME MATERIALS.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 800,
+     "segs": [
+      [
+       "WITHIN $1,000.",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 700,
+     "segs": [
+      [
+       "BOTH RIGHT",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 850,
+     "segs": [
+      [
+       "ON PAPER.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 560,
+     "text": "HIM",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 780,
+     "segs": [
+      [
+       "SENT A PICTURE.",
+       "g"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 5,
+     "y": 560,
+     "text": "YOU",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 780,
+     "segs": [
+      [
+       "SENT A SPREADSHEET.",
+       "r"
+      ]
+     ],
+     "size": 81,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 640,
+     "segs": [
+      [
+       "THEY COULD SEE HIS.",
+       "y"
+      ]
+     ],
+     "size": 81,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 800,
+     "segs": [
+      [
+       "THEY HAD TO",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.2
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 940,
+     "segs": [
+      [
+       "IMAGINE YOURS.",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 780,
+     "segs": [
+      [
+       "IT WASN'T",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 910,
+     "segs": [
+      [
+       "ABOUT SKILL.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "PEOPLE BUY WHAT",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 850,
+     "segs": [
+      [
+       "THEY CAN PICTURE.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 640,
+     "segs": [
+      [
+       "MAKE YOURS",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 790,
+     "segs": [
+      [
+       "THE ONE THEY SEE.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 940,
+     "segs": [
+      [
+       "THEIR ROOM, FINISHED.",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0
+    },
+    {
+     "type": "bignum",
+     "at": 10,
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}
