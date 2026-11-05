@@ -1,0 +1,370 @@
+{
+ "episode": 15,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Rank and rent is slow. Building shouldn't be.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep15.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep15_slow_ranking_fast_build.mp4",
+ "lines": [
+  "Rank and rent is slow. Building shouldn't be.",
+  "Ranking a new site takes months. Nobody can skip that.",
+  "What you can skip is the weeks of building.",
+  "Writing every service page. Every city page.",
+  "Titles, FAQs, schema, the form, the call button.",
+  "Every week spent building is a week the site isn't live.",
+  "And Google can't rank a site that doesn't exist yet.",
+  "SetToRank builds the whole site from a niche and a city.",
+  "Then publishes it to your own WordPress.",
+  "So the slow part, ranking, starts sooner.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "RANK AND RENT",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "IS SLOW.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "BUILDING SHOULDN'T BE.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "calendar",
+     "at": 1,
+     "y": 620,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 1000,
+     "segs": [
+      [
+       "RANKING TAKES MONTHS",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1150,
+     "segs": [
+      [
+       "BUILDING DOESN'T HAVE TO",
+       "g"
+      ]
+     ],
+     "size": 62,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 420,
+     "segs": [
+      [
+       "THE WEEKS OF BUILDING",
+       "r"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 3,
+     "y": 560,
+     "items": [
+      {
+       "text": "Service pages",
+       "ok": false,
+       "at": 3,
+       "dt": 0.4
+      },
+      {
+       "text": "City pages",
+       "ok": false,
+       "at": 3,
+       "dt": 1.0
+      },
+      {
+       "text": "Titles + FAQs",
+       "ok": false,
+       "at": 4,
+       "dt": 0
+      },
+      {
+       "text": "Schema",
+       "ok": false,
+       "at": 4,
+       "dt": 0.6
+      },
+      {
+       "text": "Form + call button",
+       "ok": false,
+       "at": 4,
+       "dt": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 600,
+     "segs": [
+      [
+       "NOT LIVE YET?",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 780,
+     "segs": [
+      [
+       "NOTHING",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 940,
+     "segs": [
+      [
+       "TO RANK.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "segs": [
+      [
+       "SETTORANK",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "flow",
+     "at": 7,
+     "y": 600,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Niche + city",
+       "color": "y",
+       "at": 7,
+       "dt": 0.4
+      },
+      {
+       "label": "Whole site",
+       "color": "w",
+       "at": 7,
+       "dt": 1.0
+      },
+      {
+       "label": "Your WordPress",
+       "color": "g",
+       "at": 8,
+       "dt": 0
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1300,
+     "segs": [
+      [
+       "RANKING STARTS SOONER",
+       "g"
+      ]
+     ],
+     "size": 64,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

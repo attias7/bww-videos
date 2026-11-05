@@ -1,0 +1,345 @@
+{
+ "episode": 12,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your visitor is on a phone. Can they call?",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep12.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep12_click_to_call.mp4",
+ "lines": [
+  "Your visitor is on a phone. Can they call?",
+  "Their water heater just died. They search on their phone.",
+  "They land on your site and want to talk now.",
+  "If the number is buried in the footer, they hit back.",
+  "If it's plain text, they have to copy it.",
+  "One tap to call. That's the whole job.",
+  "Put the call button at the top.",
+  "SetToRank adds a click-to-call button to every site it builds.",
+  "And the calls ring the number on the site.",
+  "Plus a quote form for people who'd rather type.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "YOUR VISITOR",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "IS ON A PHONE.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "CAN THEY CALL?",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "google_phone",
+     "at": 1,
+     "y": 420,
+     "query": "water heater repair near me"
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1500,
+     "segs": [
+      [
+       "THEY WANT TO TALK. NOW.",
+       "y"
+      ]
+     ],
+     "size": 64,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 3,
+     "y": 560,
+     "text": "Number in the footer",
+     "fill": "grey",
+     "color": "dark",
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 720,
+     "segs": [
+      [
+       "BACK BUTTON",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.6
+    },
+    {
+     "type": "chip",
+     "at": 4,
+     "y": 920,
+     "text": "Plain text number",
+     "fill": "grey",
+     "color": "dark",
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1080,
+     "segs": [
+      [
+       "COPY. PASTE. GONE.",
+       "r"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 600,
+     "segs": [
+      [
+       "ONE TAP",
+       "g"
+      ]
+     ],
+     "size": 130,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 760,
+     "segs": [
+      [
+       "TO CALL.",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 6,
+     "y": 1000,
+     "text": "\u260e  Call now",
+     "fill": "g",
+     "color": "dark",
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1160,
+     "segs": [
+      [
+       "AT THE TOP",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "segs": [
+      [
+       "SETTORANK BUILDS IT IN",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 7,
+     "y": 560,
+     "items": [
+      {
+       "text": "Click-to-call button",
+       "ok": true,
+       "at": 7,
+       "dt": 0.6
+      },
+      {
+       "text": "Rings the site number",
+       "ok": true,
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "text": "Quote form",
+       "ok": true,
+       "at": 9,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

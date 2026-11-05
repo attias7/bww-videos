@@ -1,0 +1,388 @@
+{
+ "episode": 10,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your page titles are costing you clicks.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep10.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep10_page_titles.mp4",
+ "lines": [
+  "Your page titles are costing you clicks.",
+  "Most rank and rent pages just say Home or Services.",
+  "That's the line people see in Google before they click.",
+  "A good title says the service and the city.",
+  "Water heater repair in Mesa. Not Services.",
+  "Every service page needs its own. Every city page too.",
+  "By hand, across forty pages, that takes hours.",
+  "SetToRank writes a title for every page it builds.",
+  "Service pages, city pages, the home page, all of them.",
+  "You can still edit any of them in WordPress.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "YOUR PAGE TITLES",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "ARE COSTING YOU",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "CLICKS.",
+       "w"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 600,
+     "text": "Home",
+     "fill": "grey",
+     "color": "dark",
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 1,
+     "y": 740,
+     "text": "Services",
+     "fill": "grey",
+     "color": "dark",
+     "size": 60,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 960,
+     "segs": [
+      [
+       "THAT'S WHAT GOOGLE",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1060,
+     "segs": [
+      [
+       "SHOWS BEFORE THE CLICK",
+       "r"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 480,
+     "segs": [
+      [
+       "SERVICE + CITY",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0
+    },
+    {
+     "type": "versus",
+     "at": 4,
+     "y": 660,
+     "heads": [
+      "Weak",
+      "Strong"
+     ],
+     "rows": [
+      [
+       "Services",
+       "Water Heater Repair in Mesa"
+      ],
+      [
+       "Home",
+       "Mesa Plumbing Repair"
+      ]
+     ],
+     "step": 0.6
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1200,
+     "segs": [
+      [
+       "ONE PER PAGE",
+       "g"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 640,
+     "segs": [
+      [
+       "BY HAND:",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 800,
+     "segs": [
+      [
+       "40 PAGES",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 950,
+     "segs": [
+      [
+       "OF TITLES",
+       "r"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "segs": [
+      [
+       "SETTORANK WRITES THEM",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 7,
+     "y": 560,
+     "items": [
+      {
+       "text": "Service pages",
+       "ok": true,
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "text": "City pages",
+       "ok": true,
+       "at": 8,
+       "dt": 0.5
+      },
+      {
+       "text": "Home page",
+       "ok": true,
+       "at": 8,
+       "dt": 1.0
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1180,
+     "segs": [
+      [
+       "YOUR WORDPRESS.",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1280,
+     "segs": [
+      [
+       "EDIT ANYTHING.",
+       "g"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

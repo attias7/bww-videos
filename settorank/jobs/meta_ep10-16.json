@@ -1,0 +1,37 @@
+{
+ "10": {
+  "slug": "page_titles",
+  "date": "2026-11-06",
+  "angle": "page titles"
+ },
+ "11": {
+  "slug": "niche_first",
+  "date": "2026-11-07",
+  "angle": "niche before city"
+ },
+ "12": {
+  "slug": "click_to_call",
+  "date": "2026-11-08",
+  "angle": "click-to-call on mobile"
+ },
+ "13": {
+  "slug": "thin_pages",
+  "date": "2026-11-09",
+  "angle": "thin service pages"
+ },
+ "14": {
+  "slug": "short_quote_form",
+  "date": "2026-11-10",
+  "angle": "short quote form"
+ },
+ "15": {
+  "slug": "slow_ranking_fast_build",
+  "date": "2026-11-11",
+  "angle": "ranking is slow, building shouldn't be"
+ },
+ "16": {
+  "slug": "preview_before_paying",
+  "date": "2026-11-12",
+  "angle": "free build + preview"
+ }
+}

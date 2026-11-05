@@ -1,0 +1,356 @@
+{
+ "episode": 13,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "A page with three sentences isn't a service page.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep13.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep13_thin_pages.mp4",
+ "lines": [
+  "A page with three sentences isn't a service page.",
+  "Lots of rank and rent sites look like this.",
+  "A heading, a stock photo, call now.",
+  "Google has nothing to go on. Neither does the visitor.",
+  "A real service page answers the questions people have.",
+  "What's included. Rough cost. How fast you come.",
+  "Which towns you cover. How to get a quote.",
+  "Writing that for every service is the slow part.",
+  "SetToRank writes a full page for every service and every city.",
+  "Unique pages, not copies, with FAQs and a quote form.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "THREE SENTENCES",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "ISN'T A",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "SERVICE PAGE.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 560,
+     "text": "Heading",
+     "fill": "grey",
+     "color": "dark",
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 700,
+     "text": "Stock photo",
+     "fill": "grey",
+     "color": "dark",
+     "size": 60,
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 2,
+     "y": 840,
+     "text": "Call now",
+     "fill": "grey",
+     "color": "dark",
+     "size": 60,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1060,
+     "segs": [
+      [
+       "NOTHING TO GO ON",
+       "r"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 420,
+     "segs": [
+      [
+       "A REAL PAGE ANSWERS",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 5,
+     "y": 560,
+     "items": [
+      {
+       "text": "What's included",
+       "ok": true,
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "text": "Rough cost",
+       "ok": true,
+       "at": 5,
+       "dt": 0.7
+      },
+      {
+       "text": "How fast",
+       "ok": true,
+       "at": 5,
+       "dt": 1.4
+      },
+      {
+       "text": "Towns covered",
+       "ok": true,
+       "at": 6,
+       "dt": 0
+      },
+      {
+       "text": "How to get a quote",
+       "ok": true,
+       "at": 6,
+       "dt": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 640,
+     "segs": [
+      [
+       "FOR EVERY SERVICE?",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 800,
+     "segs": [
+      [
+       "THE SLOW PART",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 420,
+     "segs": [
+      [
+       "SETTORANK WRITES",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 8,
+     "y": 560,
+     "items": [
+      {
+       "text": "Every service page",
+       "ok": true,
+       "at": 8,
+       "dt": 0.5
+      },
+      {
+       "text": "Every city page",
+       "ok": true,
+       "at": 8,
+       "dt": 1.2
+      },
+      {
+       "text": "Unique, not copies",
+       "ok": true,
+       "at": 9,
+       "dt": 0
+      },
+      {
+       "text": "FAQs + quote form",
+       "ok": true,
+       "at": 9,
+       "dt": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

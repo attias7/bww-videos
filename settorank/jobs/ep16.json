@@ -1,0 +1,342 @@
+{
+ "episode": 16,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Rank and renters: see the whole site before you pay.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep16.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep16_preview_before_paying.mp4",
+ "lines": [
+  "Rank and renters: see the whole site before you pay.",
+  "You shouldn't have to pay to find out if a site is any good.",
+  "SetToRank works the other way.",
+  "Type a niche and a city.",
+  "It builds the site. Service pages, city pages, the calculator, the form.",
+  "You click through every page.",
+  "Read the copy. Check the towns. See if it fits.",
+  "Building and previewing is free.",
+  "If you like it, plans start at forty seven a month.",
+  "If it's not right, you've lost nothing.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "SEE THE WHOLE SITE",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 730,
+     "segs": [
+      [
+       "BEFORE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 900,
+     "segs": [
+      [
+       "YOU PAY.",
+       "w"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 620,
+     "segs": [
+      [
+       "PAY FIRST,",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 770,
+     "segs": [
+      [
+       "FIND OUT LATER?",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.5
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1000,
+     "segs": [
+      [
+       "OTHER WAY AROUND.",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "search",
+     "at": 3,
+     "y": 420,
+     "query": "Plumbing \u00b7 Mesa, AZ"
+    },
+    {
+     "type": "checklist",
+     "at": 4,
+     "y": 620,
+     "items": [
+      {
+       "text": "Service pages",
+       "ok": true,
+       "at": 4,
+       "dt": 0.3
+      },
+      {
+       "text": "City pages",
+       "ok": true,
+       "at": 4,
+       "dt": 0.9
+      },
+      {
+       "text": "Cost calculator",
+       "ok": true,
+       "at": 4,
+       "dt": 1.5
+      },
+      {
+       "text": "Quote form",
+       "ok": true,
+       "at": 4,
+       "dt": 2.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "browser",
+     "at": 5,
+     "y": 420,
+     "url": "preview.settorank.com",
+     "title": "Water Heater Repair in Mesa",
+     "button": "Get a quote"
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1380,
+     "segs": [
+      [
+       "READ IT. CHECK IT.",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 560,
+     "segs": [
+      [
+       "BUILD + PREVIEW",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 700,
+     "segs": [
+      [
+       "FREE",
+       "g"
+      ]
+     ],
+     "size": 140,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 900,
+     "segs": [
+      [
+       "PLANS FROM $47/MO",
+       "y"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1050,
+     "segs": [
+      [
+       "NOT RIGHT? NOTHING LOST.",
+       "w"
+      ]
+     ],
+     "size": 60,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}
