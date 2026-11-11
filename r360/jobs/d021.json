@@ -1,0 +1,478 @@
+{
+ "episode": "d021",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Your renders take a week. They decide in two days.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d021.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d021_render_week.mp4",
+ "lines": [
+  "Your renders take a week. They decide in two days.",
+  "Say you send the drawings out after the walkthrough.",
+  "The designer needs five to seven days.",
+  "Meanwhile, two other contractors already sent prices.",
+  "By the time your render lands, they've picked one.",
+  "You paid three hundred dollars to show up late.",
+  "Real talk, detailed drawings still matter for the build.",
+  "But the decision happens in the first few days.",
+  "That's when they need to see it.",
+  "Their own room, finished, the same day.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "YOUR RENDERS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "TAKE A WEEK.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "THEY DECIDE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "IN TWO DAYS.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "DRAWINGS GO OUT",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "AFTER THE VISIT.",
+       "grey"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "5\u20137",
+     "size": 240,
+     "color": "y",
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "DAYS",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "2",
+     "size": 280,
+     "color": "r",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "OTHER PRICES ALREADY IN",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.4,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "RENDER LANDS.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "THEY PICKED ONE.",
+       "r"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.6,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "$300",
+     "size": 220,
+     "color": "r",
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "TO SHOW UP LATE",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "DRAWINGS STILL",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "MATTER FOR THE BUILD.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THEY DECIDE IN",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "THE FIRST DAYS.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THAT'S WHEN",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "THEY NEED TO SEE IT.",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.3,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "THE SAME DAY.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.5,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}

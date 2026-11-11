@@ -1,0 +1,460 @@
+{
+ "episode": "d023",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Raise your prices ten percent, or close one more job?",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d023.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d023_price_vs_close.mp4",
+ "lines": [
+  "Raise your prices ten percent, or close one more job?",
+  "Say your average job is thirty thousand.",
+  "You close three out of ten estimates a month.",
+  "That's ninety thousand a month.",
+  "Raise prices ten percent. Ninety-nine thousand.",
+  "Close just one more. A hundred twenty thousand.",
+  "One extra yes beats the price hike by twenty-one grand.",
+  "Real talk, if you're underpriced, raise it anyway.",
+  "But the bigger lever is your close rate.",
+  "Show them their own room, finished, before they decide.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "RAISE PRICES 10%",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "OR CLOSE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "ONE MORE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "JOB?",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "AVERAGE JOB",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "$30,000",
+     "size": 200,
+     "color": "w",
+     "dt": 0.2,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "YOU CLOSE",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "3 / 10",
+     "size": 220,
+     "color": "w",
+     "dt": 0.2,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "$90K",
+     "size": 240,
+     "color": "w",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "A MONTH",
+       "grey"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.3,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 520,
+     "text": "+10% PRICE",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "bignum",
+     "y": 760,
+     "text": "$99K",
+     "size": 240,
+     "color": "y",
+     "dt": 0.4,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 520,
+     "text": "+1 JOB",
+     "fill": "y",
+     "color": "dark",
+     "size": 54,
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "bignum",
+     "y": 760,
+     "text": "$120K",
+     "size": 240,
+     "color": "g",
+     "dt": 0.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "+$21K",
+     "size": 230,
+     "color": "g",
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "FROM ONE MORE YES",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "UNDERPRICED?",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "RAISE IT ANYWAY.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THE BIGGER LEVER:",
+       "w"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "CLOSE RATE.",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "BEFORE THEY DECIDE.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,508 @@
+{
+ "episode": "d019",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Why your referrals close and your ad leads don't.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d019.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d019_referrals_vs_ads.mp4",
+ "lines": [
+  "Why your referrals close and your ad leads don't.",
+  "A referral already saw a kitchen you finished.",
+  "At their friend's house. In real life.",
+  "An ad lead saw nothing. Just your logo.",
+  "Say referrals close seven in ten.",
+  "And ad leads close two in ten.",
+  "The gap isn't your price. It's what they've seen.",
+  "Real talk, you can't make every lead a referral.",
+  "But you can show them a finished room first.",
+  "Their own room, finished, before they decide.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "WHY REFERRALS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "CLOSE AND",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "YOUR AD LEADS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "DON'T.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "REFERRAL",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 720,
+     "segs": [
+      [
+       "ALREADY SAW",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.2,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 870,
+     "segs": [
+      [
+       "YOUR WORK.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.4,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "AT A FRIEND'S HOUSE.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "IN REAL LIFE.",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.5,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "AD LEAD",
+       "grey"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 720,
+     "segs": [
+      [
+       "SAW NOTHING.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.2,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 870,
+     "segs": [
+      [
+       "JUST A LOGO.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.6,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "REFERRALS",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "7 / 10",
+     "size": 220,
+     "color": "g",
+     "dt": 0.2,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "AD LEADS",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "2 / 10",
+     "size": 220,
+     "color": "r",
+     "dt": 0.2,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "NOT YOUR PRICE.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "WHAT THEY'VE SEEN.",
+       "y"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.6,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "NOT EVERY LEAD",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "IS A REFERRAL.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "SHOW A FINISHED",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "ROOM FIRST.",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "BEFORE THEY DECIDE.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}

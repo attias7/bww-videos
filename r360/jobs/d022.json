@@ -1,0 +1,478 @@
+{
+ "episode": "d022",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "The best time to close is before you leave the driveway.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d022.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d022_driveway.mp4",
+ "lines": [
+  "The best time to close is before you leave the driveway.",
+  "At the walkthrough, they're excited. They're picturing it.",
+  "A week later, they're comparing three PDFs.",
+  "Say you leave ten homes a month with I'll send a quote.",
+  "If three would have said yes that night...",
+  "That's three jobs you let cool down.",
+  "Real talk, nobody should be pushed into a kitchen.",
+  "But excitement fades faster than you think.",
+  "Give them something to keep the picture alive.",
+  "Their own room, finished, on their phone tonight.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "THE BEST TIME",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "TO CLOSE IS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "BEFORE YOU LEAVE",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "THE DRIVEWAY.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "AT THE WALKTHROUGH:",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "EXCITED.",
+       "g"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.6,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "A WEEK LATER:",
+       "grey"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "bignum",
+     "y": 800,
+     "text": "3 PDFs",
+     "size": 200,
+     "color": "r",
+     "dt": 0.3,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "10",
+     "size": 260,
+     "color": "w",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "\"I'LL SEND A QUOTE.\"",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.5,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3",
+     "size": 280,
+     "color": "y",
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "WOULD HAVE SAID YES",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.3,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "3 JOBS YOU LET",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "COOL DOWN.",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "NOBODY SHOULD",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "BE PUSHED.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "EXCITEMENT",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "FADES FAST.",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "KEEP THE PICTURE",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "ALIVE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "ON THEIR PHONE.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.5,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}

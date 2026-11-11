@@ -1,0 +1,470 @@
+{
+ "episode": "d017",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Ghosted after the estimate? Count what it cost you.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d017.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d017_ghosted.mp4",
+ "lines": [
+  "Ghosted after the estimate? Count what it cost you.",
+  "Say you give ten estimates a month.",
+  "Four of them just go quiet.",
+  "Each one took about three hours. Visit, measure, write up.",
+  "That's twelve hours a month for nothing.",
+  "Almost a hundred and fifty hours a year.",
+  "Real talk, some of them were never buying.",
+  "But most go quiet because they can't picture it.",
+  "Silence is easier than saying no to a guess.",
+  "Show them their own room, finished, before you leave.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "GHOSTED AFTER",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "THE ESTIMATE?",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "COUNT WHAT",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "IT COST YOU.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "10",
+     "size": 260,
+     "color": "w",
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 920,
+     "segs": [
+      [
+       "ESTIMATES A MONTH",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.0,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "4",
+     "size": 280,
+     "color": "r",
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "GO QUIET",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 HRS",
+     "size": 200,
+     "color": "y",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 920,
+     "segs": [
+      [
+       "VISIT \u00b7 MEASURE \u00b7 WRITE UP",
+       "grey"
+      ]
+     ],
+     "size": 56,
+     "dt": 0.4,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "12 HRS",
+     "size": 200,
+     "color": "r",
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 920,
+     "segs": [
+      [
+       "A MONTH. FOR NOTHING.",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.4,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "~150",
+     "size": 240,
+     "color": "r",
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "HOURS A YEAR",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "SOME WERE",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "NEVER BUYING.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THEY CAN'T",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "PICTURE IT.",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "SILENCE IS EASIER",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "THAN SAYING NO.",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.5,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "SHOW THEM",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "THEIR ROOM,",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FINISHED.",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.5,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}
