@@ -1,0 +1,15 @@
+SetToRank TikTok week (2026-11-12, covers 11-13..11-19)
+| date | time | TikTok | sound | Instagram |
+|---|---|---|---|---|
+| 2026-11-13 | 23:00 | yes | Aesthetic vibes - TopGoat | no |
+| 2026-11-14 | 23:00 | yes | Soft Foggy Morning - Ember | no |
+| 2026-11-15 | 23:00 | yes | Motivational Story - Carla bxd | no |
+| 2026-11-16 | 23:00 | yes | Open - Alexa Minoral | no |
+| 2026-11-17 | 23:00 | yes | Break From The Crowd - Carla Winthrop | no |
+| 2026-11-18 | 23:00 | yes | Obsidian Pulse - Dov Kenny | no |
+| 2026-11-19 | 23:00 | yes | Finance - ZydSounds | no |
+All 7 verified in Studio Posts ('<date>, 11:00 PM (GMT+2) Jerusalem'). Sounds -16 dB, voice 0 dB, AI label on. Scripts reused from 2026-11-05 blocked run (ep10-16).
+Instagram: Meta Business Suite (business.facebook.com) showed the login page in the settorank Chrome profile -> stopped IG, nothing scheduled. Videos are in ~/Downloads/TikTok batch/SetToRank/2026-11-13..19.mp4.
+Sounds: picked from Studio For You (English/instrumental, Business account library). Research: socialpilot.co/blog/tiktok-trends, tokchart.com/tiktok-trending-sounds (Nov 2026).
+Known glitch: ep12/ep14 call-button icon renders as a small box (emoji glyph missing in font).
+Voices: ElevenLabs downloads via Chrome now from elevenlabsusercontent.com (container + Mac shell get proxy 403).
