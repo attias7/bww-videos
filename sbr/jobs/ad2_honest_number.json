@@ -1,0 +1,360 @@
+{
+ "episode": 0,
+ "series": "SIGN BUILD RUN",
+ "hook": "My best rank and rent site sends a contractor five to seven leads a month.",
+ "voice": "../voices/ad2.mp3",
+ "atempo": 1.08,
+ "out": "../out/ad2_honest_number.mp4",
+ "lines": [
+  "My best rank and rent site sends a contractor five to seven leads a month.",
+  "That's it. Not a hundred.",
+  "And honestly? That's enough to start.",
+  "It's one small site. One service. One town.",
+  "A homeowner searches Google, finds the site, and asks for a quote.",
+  "That request goes straight to the contractor.",
+  "I never cold called anyone to set it up.",
+  "Real talk. Ranking took months.",
+  "And not every lead turns into a job.",
+  "But one real site beats a hundred big promises.",
+  "I put the whole process in the Starter Kit.",
+  "Thirty seven dollars. Tap the link."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 430,
+     "segs": [
+      [
+       "MY BEST SITE",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.3
+    },
+    {
+     "type": "bignum",
+     "at": 0,
+     "y": 620,
+     "text": "5\u20137",
+     "size": 300,
+     "color": "dark",
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "LEADS A MONTH",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 560,
+     "segs": [
+      [
+       "NOT ",
+       "w"
+      ],
+      [
+       "100",
+       "r"
+      ]
+     ],
+     "size": 130,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 820,
+     "segs": [
+      [
+       "ENOUGH",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 960,
+     "segs": [
+      [
+       "TO START",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 3,
+     "y": 420,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "One small site",
+       "color": "y",
+       "at": 3
+      },
+      {
+       "label": "One service",
+       "color": "y",
+       "at": 3,
+       "dt": 0.6
+      },
+      {
+       "label": "One town",
+       "color": "g",
+       "at": 3,
+       "dt": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "google_phone",
+     "at": 4,
+     "dt": 0.0,
+     "y": 520,
+     "query": "roof repair smalltown"
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "form",
+     "at": 5,
+     "dt": -0.1,
+     "y": 470,
+     "fields": [
+      [
+       "Name",
+       "J. \u2022\u2022\u2022\u2022\u2022\u2022"
+      ],
+      [
+       "Phone",
+       "(\u2022\u2022\u2022) \u2022\u2022\u2022-\u2022\u2022\u2022\u2022"
+      ],
+      [
+       "What's going on?",
+       "Leak over the kitchen"
+      ]
+     ],
+     "notif": [
+      "New quote request",
+      "Example \u00b7 Smalltown"
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "crossphone",
+     "at": 6,
+     "y": 620
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1250,
+     "segs": [
+      [
+       "ZERO COLD CALLS",
+       "g"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 420,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "calendar",
+     "at": 7,
+     "dt": 0.4,
+     "y": 600,
+     "labels": [
+      "M1",
+      "M2",
+      "M3"
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1250,
+     "segs": [
+      [
+       "NOT EVERY LEAD",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1360,
+     "segs": [
+      [
+       "CLOSES",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 560,
+     "segs": [
+      [
+       "ONE REAL SITE",
+       "g"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 720,
+     "segs": [
+      [
+       ">",
+       "grey"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 860,
+     "segs": [
+      [
+       "100 BIG PROMISES",
+       "r"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.7
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 520,
+     "segs": [
+      [
+       "STARTER KIT",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "$37",
+       "w"
+      ]
+     ],
+     "size": 170,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 900,
+     "segs": [
+      [
+       "ONE-TIME",
+       "grey"
+      ]
+     ],
+     "size": 60,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Tap the link",
+     "fill": "y",
+     "color": "dark",
+     "size": 56,
+     "dt": 0.8
+    }
+   ]
+  }
+ ]
+}

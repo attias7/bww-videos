@@ -1,0 +1,308 @@
+{
+ "episode": 0,
+ "series": "SIGN BUILD RUN",
+ "hook": "Google's update this year cut the traffic to my rank and rent sites.",
+ "voice": "../voices/ad3.mp3",
+ "atempo": 1.08,
+ "out": "../out/ad3_spam_update.mp4",
+ "lines": [
+  "Google's update this year cut the traffic to my rank and rent sites.",
+  "Here's what I build differently now.",
+  "The old advice? Make a page for every city.",
+  "Kitchen remodel Austin. Kitchen remodel Dallas. Hundreds of copies.",
+  "Google saw them as thin pages. And cut them.",
+  "Now I keep it small.",
+  "One service. One town. Pages that actually help someone.",
+  "Real talk. Some of my sites are still recovering.",
+  "And nothing here is guaranteed.",
+  "But I wrote down the method I use now.",
+  "The first chapter is free.",
+  "Tap the link and grab it."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "GOOGLE'S UPDATE",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 700,
+     "segs": [
+      [
+       "CUT MY",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 850,
+     "segs": [
+      [
+       "TRAFFIC",
+       "r"
+      ]
+     ],
+     "size": 140,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 700,
+     "segs": [
+      [
+       "WHAT I BUILD",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 850,
+     "segs": [
+      [
+       "DIFFERENTLY NOW",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "at": 2,
+     "y": 400,
+     "segs": [
+      [
+       "THE OLD ADVICE",
+       "grey"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "steps",
+     "at": 3,
+     "y": 560,
+     "items": [
+      {
+       "text": "kitchen remodel austin",
+       "at": 3
+      },
+      {
+       "text": "kitchen remodel dallas",
+       "at": 3,
+       "dt": 0.6
+      },
+      {
+       "text": "... x 300 copies",
+       "at": 3,
+       "dt": 1.2
+      }
+     ],
+     "strike_at": 4,
+     "strike_dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1350,
+     "segs": [
+      [
+       "THIN PAGES. CUT.",
+       "r"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 420,
+     "segs": [
+      [
+       "NOW: SMALL",
+       "g"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "flow",
+     "at": 6,
+     "y": 580,
+     "gap": 240,
+     "nodes": [
+      {
+       "label": "One service",
+       "color": "y",
+       "at": 6
+      },
+      {
+       "label": "One town",
+       "color": "y",
+       "at": 6,
+       "dt": 0.6
+      },
+      {
+       "label": "Pages that help",
+       "color": "g",
+       "at": 6,
+       "dt": 1.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 520,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 700,
+     "segs": [
+      [
+       "STILL RECOVERING",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 960,
+     "segs": [
+      [
+       "NO GUARANTEES",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.1
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "at": 9,
+     "y": 540,
+     "segs": [
+      [
+       "THE METHOD",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 680,
+     "segs": [
+      [
+       "I USE NOW",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 920,
+     "segs": [
+      [
+       "CHAPTER 1:",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1060,
+     "segs": [
+      [
+       "FREE",
+       "g"
+      ]
+     ],
+     "size": 150,
+     "dt": 0.3
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1330,
+     "text": "Tap the link",
+     "fill": "y",
+     "color": "dark",
+     "size": 56,
+     "dt": 0.2
+    }
+   ]
+  }
+ ]
+}
