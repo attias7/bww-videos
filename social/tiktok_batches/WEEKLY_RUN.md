@@ -73,3 +73,13 @@ One post per day at **23:00 Israel** (5 pm US Eastern), dates D+1 … D+7. First
 - `runs/D_tt_<slug>.done`: table date | time | scheduled yes/no | sound, plus research sources. Delete lock, commit, push
   (Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>). Close tabs you opened.
 - End with the table so Adi gets it in the push notification. If stopped partway: say exactly which dates are left.
+
+## 6. Which browser + Meta (Instagram + Facebook) — Remodel in 360 (Adi, 2026-11-18)
+- Several Chrome browsers are connected. Don't stop on the first one: `select_browser` each and check.
+  As of 2026-11-18: TikTok remodelin360 = "Browser 1"; Meta Business Suite "Remodel in 360" asset = "Browser 3"
+  (Hebrew UI, asset_id=1401806479686199, business_id=1419486413686863). Browser 1's Business Suite only has
+  Sign Build Run / Set To Rank / Subletli; Browser 2 has none of them.
+- R360 Reels always go to BOTH Instagram remodelin360 AND the Remodel in 360 Facebook page (Publish to: both ticked).
+  Switching the Business Suite asset to Remodel in 360 is allowed. Flow: reels_composer URL → hook
+  HTMLInputElement.prototype.click, Add video, file_upload → caption → Next → Next → Schedule (תזמון) → FB + IG date and
+  23:00 (type hour, click minute, type 00) → Schedule button → check Planner.
