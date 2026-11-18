@@ -1,0 +1,14 @@
+Remodel in 360 TikTok week 2026-11-19..11-25 (scheduled 2026-11-18, cloud run)
+| date | time | TikTok scheduled | sound | Instagram scheduled |
+|---|---|---|---|---|
+| 2026-11-19 | 23:00 | yes | Deep Reflection - Morris Tapes | no |
+| 2026-11-20 | 23:00 | yes | Natural Emotions - Muspace Lofi | no |
+| 2026-11-21 | 23:00 | yes | An Unspoken Prayer - Akari Hirano | no |
+| 2026-11-22 | 23:00 | yes | Echoes of What Could've Been - Gritty Grind | no |
+| 2026-11-23 | 23:00 | yes | Silent Desire - T. Cruz | no |
+| 2026-11-24 | 23:00 | yes | Static Eclipse - Treadlighter | no |
+| 2026-11-25 | 23:00 | yes | Storm's Crest - Rhythm Pants | no |
+Sounds from Studio "Unlimited" (commercial) tab, -16 dB, voice 0 dB, AI-generated label on. Chrome "Browser 1" = remodelin360.
+Instagram: NOT scheduled. Meta Business Suite in Browser 1 had "Sign Build Run" selected as the account; rule says don't switch accounts, so IG was stopped. All 7 IG dates (Nov 19-25) still open. Videos: r360/videos/r360_d024..d030_*.mp4 and Mac ~/Downloads/TikTok batch/Remodel in 360/<date>.mp4; captions in r360/week_2026-11-19.json.
+Research: SocialBee trending TikTok songs (2026-11-12), tokchart US trending sounds (2026-11-17). ElevenLabs flow 9hwGDeRB59cH3AO7zyQc (~4,850 credits).
+Note: elevenlabsusercontent.com is blocked from the container and the Mac shell; Chrome allows only one download per tab, so d025-d030 voices were fetched in one tab and downloaded as one concatenated bundle, then split by byte sizes.

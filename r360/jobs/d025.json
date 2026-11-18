@@ -1,0 +1,474 @@
+{
+ "episode": "d025",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "\"We'll decide after the holidays.\" Do this math.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d025.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d025_after_holidays.mp4",
+ "lines": [
+  "\"We'll decide after the holidays.\" Do this math.",
+  "Say you've got six open bids right now.",
+  "Average job, twenty-eight thousand.",
+  "That's a hundred sixty-eight thousand sitting on hold.",
+  "In January, maybe two of them call back.",
+  "The rest started over with someone else.",
+  "Real talk, some people really do wait for the new year.",
+  "But \"after the holidays\" usually means \"I'm not sure yet.\"",
+  "Not sure, because they can't picture it.",
+  "Show them their own room, finished, before the holidays hit.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "\"WE'LL DECIDE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "AFTER THE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "HOLIDAYS.\"",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "DO THIS MATH.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "6",
+     "size": 280,
+     "color": "w",
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "OPEN BIDS",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.3,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "AVERAGE JOB",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "$28,000",
+     "size": 190,
+     "color": "w",
+     "dt": 0.2,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "$168K",
+     "size": 230,
+     "color": "r",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "ON HOLD",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "2",
+     "size": 280,
+     "color": "y",
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "CALL BACK IN JANUARY",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.3,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THE REST",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "STARTED OVER.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "SOME REALLY DO",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "WAIT FOR JANUARY.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "\"AFTER THE HOLIDAYS\"",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "= \"NOT SURE YET.\"",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.5,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "NOT SURE,",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "CAN'T PICTURE IT.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "BEFORE THE HOLIDAYS.",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}
