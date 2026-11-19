@@ -1,8 +1,8 @@
 SetToRank TikTok week (2026-11-19, covers 11-20..11-26)
 | date | time | TikTok | sound | Instagram |
 |---|---|---|---|---|
-| 2026-11-20 | 23:00 | yes | Tech Upbeat - Momot | no |
-| 2026-11-21 | 23:00 | yes | Future Technology - ZydSounds | no |
+| 2026-11-20 | 23:00 | yes | Tech Upbeat - Momot | yes (+FB) |
+| 2026-11-21 | 23:00 | yes | Future Technology - ZydSounds | yes (+FB) |
 | 2026-11-22 | 23:00 | yes | Technology Upbeat - ZydSounds | no |
 | 2026-11-23 | 23:00 | yes | Upbeat Funk - FASSounds | no |
 | 2026-11-24 | 23:00 | yes | Innovation Technology - ZydSounds | no |
@@ -13,3 +13,4 @@ Instagram NOT scheduled: Browser 1 is logged out of Meta Business Suite; Browser
 First attempt (scheduled 08:44 UTC run) stopped: ElevenLabs connector sign-in refused; rerun on Adi's 'now' after reconnect.
 Voices: elevenlabsusercontent.com blocked from container + Mac shell; Chrome download works for the first file per origin only, so cached all 7 in Cache Storage and postMessage'd one bundle to a tiktok.com/robots.txt tab which downloaded it (str_voices_ep17-23.bin, JSON size header + mp3s). A 419-byte junk file str_ep17.mp3 was left in ~/Downloads (no delete permission).
 Research: socialpilot.co/blog/tiktok-trends (Nov 2026), tokchart.com/tiktok-trending-sounds.
+Update (Adi: "keep going and post also to facebook"): Business Suite in Browser 3 switched asset Sign Build Run -> Set To Rank (FB page + IG settorank). Reels for 11-20 and 11-21 scheduled 11:00 PM Asia/Jerusalem on FB + IG ("Reel scheduled" dialog). Then the Mac's Chrome extensions all disconnected (internet dropped); 11-22..11-26 IG+FB still to do. Flow: reels_composer, hook HTMLInputElement.click, Add Video, file_upload, caption, Next, Next, Scheduling options > Schedule, FB date (picker below field) + IG date (picker above), type 11 / 00 PM, footer Schedule.
