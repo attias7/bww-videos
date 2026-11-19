@@ -1,0 +1,355 @@
+{
+ "episode": 17,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your city pages have no way in.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep17.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep17_internal_links.mp4",
+ "lines": [
+  "Your city pages have no way in.",
+  "You built a page for every town.",
+  "But nothing on the site links to them.",
+  "Google finds pages by following links. So do visitors.",
+  "A page nobody links to is a page nobody finds.",
+  "Link each service page to the towns it covers.",
+  "Link each town page back to its services.",
+  "And put the main ones in the menu.",
+  "SetToRank builds a page for every service and every nearby city.",
+  "It publishes to your own WordPress, so you can change any link.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "YOUR CITY PAGES",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "HAVE NO",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "WAY IN.",
+       "w"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 1,
+     "y": 480,
+     "items": [
+      {
+       "text": "Mesa",
+       "ok": true,
+       "at": 1,
+       "dt": 0
+      },
+      {
+       "text": "Gilbert",
+       "ok": true,
+       "at": 1,
+       "dt": 0.3
+      },
+      {
+       "text": "Chandler",
+       "ok": true,
+       "at": 1,
+       "dt": 0.6
+      },
+      {
+       "text": "Tempe",
+       "ok": true,
+       "at": 1,
+       "dt": 0.9
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1250,
+     "segs": [
+      [
+       "LINKS TO THEM: ",
+       "w"
+      ],
+      [
+       "0",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 600,
+     "segs": [
+      [
+       "GOOGLE FOLLOWS LINKS.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 760,
+     "segs": [
+      [
+       "SO DO VISITORS.",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 1.2
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1000,
+     "segs": [
+      [
+       "NO LINK = NOT FOUND",
+       "r"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 5,
+     "y": 520,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Service page",
+       "color": "w",
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "label": "Town pages",
+       "color": "y",
+       "at": 5,
+       "dt": 0.8
+      },
+      {
+       "label": "Back to services",
+       "color": "g",
+       "at": 6,
+       "dt": 0
+      }
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 1300,
+     "text": "Main pages in the menu",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 560,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Every service",
+       "color": "w",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Every nearby city",
+       "color": "y",
+       "at": 8,
+       "dt": 0.8
+      },
+      {
+       "label": "Your WordPress",
+       "color": "g",
+       "at": 9,
+       "dt": 0
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1300,
+     "segs": [
+      [
+       "CHANGE ANY LINK",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,358 @@
+{
+ "episode": 18,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Rank and renters: one site, one niche.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep18.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep18_one_niche_per_site.mp4",
+ "lines": [
+  "Rank and renters: one site, one niche.",
+  "Plumbing, roofing and pest control on one site?",
+  "That's three half-sites.",
+  "It's harder to tell what the site is even about.",
+  "And no plumber wants to rent a site that also sells roofs.",
+  "Pick one service people search when something breaks.",
+  "Give each part of that service its own page.",
+  "Then a page for each town you cover.",
+  "SetToRank builds it that way. One niche, one city, the towns around it.",
+  "Want a second niche? Build a second site.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "ONE SITE.",
+       "dark"
+      ]
+     ],
+     "size": 120,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "ONE",
+       "dark"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "NICHE.",
+       "w"
+      ]
+     ],
+     "size": 140,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 1,
+     "y": 480,
+     "items": [
+      {
+       "text": "Plumbing",
+       "ok": false,
+       "at": 1,
+       "dt": 0
+      },
+      {
+       "text": "Roofing",
+       "ok": false,
+       "at": 1,
+       "dt": 0.4
+      },
+      {
+       "text": "Pest control",
+       "ok": false,
+       "at": 1,
+       "dt": 0.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1100,
+     "segs": [
+      [
+       "= THREE HALF-SITES",
+       "r"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 600,
+     "segs": [
+      [
+       "WHAT IS THIS",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 740,
+     "segs": [
+      [
+       "SITE ABOUT?",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 980,
+     "segs": [
+      [
+       "NO PLUMBER RENTS",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1080,
+     "segs": [
+      [
+       "A ROOFING SITE.",
+       "r"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.5
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 5,
+     "y": 520,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "One service",
+       "color": "y",
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "label": "A page per job",
+       "color": "w",
+       "at": 6,
+       "dt": 0
+      },
+      {
+       "label": "A page per town",
+       "color": "g",
+       "at": 7,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 560,
+     "segs": [
+      [
+       "ONE NICHE.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "ONE CITY.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 840,
+     "segs": [
+      [
+       "THE TOWNS AROUND IT.",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 1.2
+    },
+    {
+     "type": "chip",
+     "at": 9,
+     "y": 1150,
+     "text": "2nd niche = 2nd site",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,330 @@
+{
+ "episode": 23,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Rank and renters: stop researching. Pick one.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep23.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep23_stop_researching.mp4",
+ "lines": [
+  "Rank and renters: stop researching. Pick one.",
+  "Three weeks comparing niches. Zero sites live.",
+  "A site that isn't live can't start ranking.",
+  "Pick a service people need when something breaks.",
+  "Pick a city with towns around it.",
+  "Build it. Publish it. Watch what happens.",
+  "If it's slow, you learned something.",
+  "Your second site will be better than your first.",
+  "SetToRank builds the site from a niche and a city, so trying one doesn't cost weeks.",
+  "Building and previewing is free.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "STOP RESEARCHING.",
+       "dark"
+      ]
+     ],
+     "size": 96,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "PICK",
+       "dark"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "ONE.",
+       "w"
+      ]
+     ],
+     "size": 140,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 600,
+     "segs": [
+      [
+       "3 WEEKS COMPARING.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 740,
+     "segs": [
+      [
+       "0 SITES LIVE.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 980,
+     "segs": [
+      [
+       "NOT LIVE = CAN'T RANK",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 3,
+     "y": 480,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "A service people need",
+       "color": "y",
+       "at": 3,
+       "dt": 0
+      },
+      {
+       "label": "A city + its towns",
+       "color": "w",
+       "at": 4,
+       "dt": 0
+      },
+      {
+       "label": "Build. Publish. Watch.",
+       "color": "g",
+       "at": 5,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 620,
+     "segs": [
+      [
+       "SLOW? YOU LEARNED.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 820,
+     "segs": [
+      [
+       "SITE #2 > SITE #1",
+       "y"
+      ]
+     ],
+     "size": 86,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 560,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Niche + city",
+       "color": "y",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Whole site",
+       "color": "w",
+       "at": 8,
+       "dt": 0.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1050,
+     "segs": [
+      [
+       "NOT WEEKS",
+       "g"
+      ]
+     ],
+     "size": 90,
+     "dt": 2.2
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1250,
+     "segs": [
+      [
+       "BUILD + PREVIEW: FREE",
+       "y"
+      ]
+     ],
+     "size": 64,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

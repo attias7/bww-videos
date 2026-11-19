@@ -1,0 +1,336 @@
+{
+ "episode": 21,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your homepage isn't where the leads come from.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep21.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep21_homepage_not_money_page.mp4",
+ "lines": [
+  "Your homepage isn't where the leads come from.",
+  "Rank and renters spend days on the homepage.",
+  "But nobody searches for your homepage.",
+  "They search roof leak repair in Tulsa.",
+  "That search lands on a service page or a city page.",
+  "If that page doesn't exist, you're not in the race.",
+  "So put the work where the searches go.",
+  "One page per service. One page per town.",
+  "SetToRank builds all of them from a niche and a city.",
+  "The homepage too. It's just not the star.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "YOUR HOMEPAGE",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "ISN'T WHERE",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "LEADS COME FROM.",
+       "w"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 600,
+     "segs": [
+      [
+       "DAYS ON THE HOMEPAGE.",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 800,
+     "segs": [
+      [
+       "NOBODY SEARCHES FOR IT.",
+       "r"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "search",
+     "at": 3,
+     "y": 480,
+     "query": "roof leak repair in Tulsa"
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 800,
+     "segs": [
+      [
+       "LANDS ON A",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 920,
+     "segs": [
+      [
+       "SERVICE OR CITY PAGE",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1150,
+     "segs": [
+      [
+       "NO PAGE = NOT IN THE RACE",
+       "r"
+      ]
+     ],
+     "size": 60,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 560,
+     "segs": [
+      [
+       "WORK WHERE",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 690,
+     "segs": [
+      [
+       "THE SEARCHES GO.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 950,
+     "text": "1 page per service",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 1100,
+     "text": "1 page per town",
+     "fill": "y",
+     "color": "dark",
+     "size": 56,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 560,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Niche + city",
+       "color": "y",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Every page",
+       "color": "w",
+       "at": 8,
+       "dt": 0.8
+      },
+      {
+       "label": "Homepage too",
+       "color": "grey",
+       "at": 9,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

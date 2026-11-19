@@ -1,0 +1,322 @@
+{
+ "episode": 19,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Your renter quit. What happens to the site?",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep19.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep19_renter_swap.mp4",
+ "lines": [
+  "Your renter quit. What happens to the site?",
+  "In rank and rent, renters come and go.",
+  "The site stays yours.",
+  "So set it up so a swap takes minutes, not a rebuild.",
+  "Leads should go to an email you can change.",
+  "Calls should ring a number you control.",
+  "The business name should be easy to edit.",
+  "Then the next renter is one update away.",
+  "SetToRank publishes to your own WordPress and routes leads by email.",
+  "Change who gets them whenever you want.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "YOUR RENTER",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "QUIT.",
+       "dark"
+      ]
+     ],
+     "size": 130,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "NOW WHAT?",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 600,
+     "segs": [
+      [
+       "RENTERS COME AND GO.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 800,
+     "segs": [
+      [
+       "THE SITE STAYS YOURS.",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 560,
+     "segs": [
+      [
+       "SWAP IN MINUTES,",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 690,
+     "segs": [
+      [
+       "NOT A REBUILD.",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    },
+    {
+     "type": "checklist",
+     "at": 4,
+     "y": 880,
+     "items": [
+      {
+       "text": "Lead email you can change",
+       "ok": true,
+       "at": 4,
+       "dt": 0
+      },
+      {
+       "text": "Call number you control",
+       "ok": true,
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "text": "Business name easy to edit",
+       "ok": true,
+       "at": 6,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 700,
+     "segs": [
+      [
+       "NEXT RENTER =",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 850,
+     "segs": [
+      [
+       "ONE UPDATE.",
+       "g"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 520,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Your WordPress",
+       "color": "w",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Leads by email",
+       "color": "y",
+       "at": 8,
+       "dt": 0.8
+      },
+      {
+       "label": "Whoever you choose",
+       "color": "g",
+       "at": 9,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,408 @@
+{
+ "episode": 22,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Don't pitch a business owner with nothing to show.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep22.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep22_build_before_pitch.mp4",
+ "lines": [
+  "Don't pitch a business owner with nothing to show.",
+  "I can get you leads sounds like every cold email they ignore.",
+  "A live site with their service and their town is different.",
+  "They can click it. They can see the pages.",
+  "And if it starts getting calls, that's proof you didn't make up.",
+  "That's rank and rent. Build first, rent later.",
+  "The problem is building takes weeks by hand.",
+  "SetToRank builds the site from a niche and a city.",
+  "Building and previewing is free. Plans start at forty seven a month.",
+  "No fake reviews. No made-up numbers.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "DON'T PITCH",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "WITH NOTHING",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "TO SHOW.",
+       "w"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 640,
+     "segs": [
+      [
+       "\"I CAN GET YOU LEADS\"",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 800,
+     "segs": [
+      [
+       "= IGNORED",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "browser",
+     "at": 2,
+     "y": 420,
+     "url": "preview.settorank.com",
+     "title": "Roof Leak Repair in Tulsa",
+     "button": "Get a quote"
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 1380,
+     "segs": [
+      [
+       "THEY CAN CLICK IT.",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 600,
+     "segs": [
+      [
+       "REAL CALLS =",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 740,
+     "segs": [
+      [
+       "REAL PROOF.",
+       "g"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.6
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 980,
+     "segs": [
+      [
+       "BUILD FIRST.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1100,
+     "segs": [
+      [
+       "RENT LATER.",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 600,
+     "segs": [
+      [
+       "BY HAND:",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 740,
+     "segs": [
+      [
+       "WEEKS.",
+       "r"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.4
+    },
+    {
+     "type": "flow",
+     "at": 7,
+     "y": 960,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Niche + city",
+       "color": "y",
+       "at": 7,
+       "dt": 0
+      },
+      {
+       "label": "Whole site",
+       "color": "g",
+       "at": 7,
+       "dt": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "at": 8,
+     "y": 560,
+     "segs": [
+      [
+       "BUILD + PREVIEW",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 700,
+     "segs": [
+      [
+       "FREE",
+       "g"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 880,
+     "segs": [
+      [
+       "PLANS FROM $47/MO",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 2.0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1050,
+     "segs": [
+      [
+       "NO FAKE REVIEWS.",
+       "w"
+      ]
+     ],
+     "size": 66,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1150,
+     "segs": [
+      [
+       "NO MADE-UP NUMBERS.",
+       "w"
+      ]
+     ],
+     "size": 66,
+     "dt": 0.7
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}
