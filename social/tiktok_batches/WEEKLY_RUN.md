@@ -83,3 +83,15 @@ One post per day at **23:00 Israel** (5 pm US Eastern), dates D+1 … D+7. First
   Switching the Business Suite asset to Remodel in 360 is allowed. Flow: reels_composer URL → hook
   HTMLInputElement.prototype.click, Add video, file_upload → caption → Next → Next → Schedule (תזמון) → FB + IG date and
   23:00 (type hour, click minute, type 00) → Schedule button → check Planner.
+
+## 7. SetToRank — Instagram + Facebook (Adi, 2026-11-22)
+- SetToRank Reels always go to BOTH Instagram settorank AND the Set To Rank Facebook page ("Post to: Set To Rank and settorank").
+- Browsers (display names change, use deviceIds): TikTok settorank = f20bcc55-8fe2-458d-bdc7-c0e86b7ec5b0 (NOT logged into Business
+  Suite). Business Suite with "Set To Rank, settorank" = 80c3e8de-1095-4508-b1c3-c00ce71edfb6, English UI,
+  asset_id=1540401935812360, business_id=1058306217038953 (portfolio "Sign Build Run" = Sign Build Run + Set To Rank).
+  If they don't match, check every connected browser before reporting "not found".
+- Switching the Business Suite asset to Set To Rank (top-left switcher) is allowed. Leave it there and mention it — the
+  Sign Build Run run uses the same portfolio.
+- Flow: reels_composer URL (blank → wait ~10 s) → hook HTMLInputElement.prototype.click → Add Video → file_upload → caption
+  (click empty space to close hashtag list) → Next → Next (no music) → Scheduling options: Schedule → Facebook date picker +
+  hour 11 / minute 00 PM, Instagram same → footer Schedule → "Reel scheduled … Facebook … Instagram" → Done → check Planner.
