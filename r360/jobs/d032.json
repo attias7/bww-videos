@@ -1,0 +1,478 @@
+{
+ "episode": "d032",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "\"That's more than we expected.\" Here's what they mean.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d032.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d032_more_than_expected.mp4",
+ "lines": [
+  "\"That's more than we expected.\" Here's what they mean.",
+  "Your bathroom bid is thirty-two thousand.",
+  "They had twenty-five in their head.",
+  "Seven thousand dollars they can't explain to themselves.",
+  "So they go looking for the twenty-five thousand guy.",
+  "And you lose a job you priced right.",
+  "Real talk, sometimes the budget really is the budget.",
+  "But most people stretch for something they can see.",
+  "Nobody stretches for a line on a PDF.",
+  "Show them their own bathroom, finished, before they see the number.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "\"THAT'S MORE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "THAN WE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "EXPECTED.\"",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "HERE'S WHAT IT MEANS.",
+       "w"
+      ]
+     ],
+     "size": 73,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "YOUR BID",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "$32,000",
+     "size": 190,
+     "color": "w",
+     "dt": 0.2,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "IN THEIR HEAD",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "$25,000",
+     "size": 190,
+     "color": "y",
+     "dt": 0.2,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "$7,000",
+     "size": 210,
+     "color": "r",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "THEY CAN'T EXPLAIN",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THEY LOOK FOR",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "THE $25K GUY.",
+       "r"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "YOU LOSE A JOB",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "YOU PRICED RIGHT.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "SOMETIMES THE BUDGET",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "IS THE BUDGET.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "PEOPLE STRETCH",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "FOR WHAT THEY SEE.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "NOT FOR A LINE",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "ON A PDF.",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR BATHROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "BEFORE THE NUMBER.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}

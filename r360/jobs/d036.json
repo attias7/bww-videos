@@ -1,0 +1,491 @@
+{
+ "episode": "d036",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Clients skip upgrades they can't picture. Count it.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d036.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d036_skipped_upgrades.mp4",
+ "lines": [
+  "Clients skip upgrades they can't picture. Count it.",
+  "You offer quartz, tile to the ceiling, better lighting.",
+  "They say, \"let's keep it simple.\"",
+  "Say that's four thousand dollars of upgrades, gone.",
+  "On three jobs a month, that's twelve thousand.",
+  "A year, about a hundred forty thousand left on the table.",
+  "Real talk, some people really do want simple.",
+  "But a lot of them just couldn't see the difference.",
+  "To them, it just sounds like extra cost.",
+  "Show them their own room, finished, with the upgrade and without.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "CLIENTS SKIP",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "UPGRADES THEY",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "CAN'T PICTURE.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "COUNT IT.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "QUARTZ.",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 740,
+     "segs": [
+      [
+       "TILE TO THE CEILING.",
+       "w"
+      ]
+     ],
+     "size": 86,
+     "dt": 0.3,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 880,
+     "segs": [
+      [
+       "BETTER LIGHTING.",
+       "y"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.6,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "\"LET'S KEEP IT",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "SIMPLE.\"",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "UPGRADES GONE",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "$4,000",
+     "size": 210,
+     "color": "r",
+     "dt": 0.2,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "3 JOBS A MONTH",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "$12,000",
+     "size": 190,
+     "color": "r",
+     "dt": 0.2,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "A YEAR",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "~$140K",
+     "size": 220,
+     "color": "r",
+     "dt": 0.2,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "SOME PEOPLE REALLY",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "DO WANT SIMPLE.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THEY COULDN'T SEE",
+       "w"
+      ]
+     ],
+     "size": 88,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "THE DIFFERENCE.",
+       "y"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "IT SOUNDS LIKE",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "EXTRA COST.",
+       "r"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "WITH THE UPGRADE",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "AND WITHOUT.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}

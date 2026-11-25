@@ -1,0 +1,492 @@
+{
+ "episode": "d037",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "One more yes a month. Do the yearly math.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d037.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d037_yearly_math.mp4",
+ "lines": [
+  "One more yes a month. Do the yearly math.",
+  "Say your average kitchen is thirty thousand.",
+  "One more signed job a month.",
+  "That's three hundred sixty thousand more in a year.",
+  "Same leads. Same ad spend. Same crew size to start.",
+  "Most contractors plan next year around more leads.",
+  "Real talk, growth usually needs both.",
+  "But the cheapest yes is from someone already in front of you.",
+  "They just need to see it before they sign.",
+  "Show them their own room, finished, at the first visit.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "ONE MORE YES",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "A MONTH.",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "DO THE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "YEARLY MATH.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 560,
+     "segs": [
+      [
+       "AVERAGE KITCHEN",
+       "grey"
+      ]
+     ],
+     "size": 64,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "bignum",
+     "y": 780,
+     "text": "$30,000",
+     "size": 190,
+     "color": "w",
+     "dt": 0.2,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 520,
+     "text": "+1 JOB",
+     "fill": "y",
+     "color": "dark",
+     "size": 54,
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "EVERY MONTH",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.3,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "+$360K",
+     "size": 220,
+     "color": "g",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "IN A YEAR",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "y": 650,
+     "segs": [
+      [
+       "SAME LEADS.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 790,
+     "segs": [
+      [
+       "SAME AD SPEND.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 930,
+     "segs": [
+      [
+       "SAME CREW.",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.6,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "NEXT YEAR'S PLAN:",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "\"MORE LEADS.\"",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "GROWTH USUALLY",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "NEEDS BOTH.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THE CHEAPEST YES",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "IS ALREADY HERE.",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THEY NEED TO SEE IT",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "BEFORE THEY SIGN.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR OWN ROOM,",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "AT THE FIRST VISIT.",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}

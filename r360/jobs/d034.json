@@ -1,0 +1,487 @@
+{
+ "episode": "d034",
+ "series": "KITCHEN & BATH CONTRACTORS",
+ "hook": "Six hours picking finishes. Then they didn't sign.",
+ "accent": [
+  255,
+  128,
+  82
+ ],
+ "voice": "../voices/d034.mp3",
+ "atempo": 1.05,
+ "music_vol": 0,
+ "out": "../out/d034_finish_selection.mp4",
+ "lines": [
+  "Six hours picking finishes. Then they didn't sign.",
+  "Tile samples. Cabinet doors. Two trips to the showroom.",
+  "That's six hours before there's even a contract.",
+  "Say you do this with four clients a month.",
+  "Twenty-four hours of free design help.",
+  "Two of them take your choices to a cheaper guy.",
+  "Real talk, helping clients choose is part of good service.",
+  "But they keep picking because they can't see the result.",
+  "Every sample is a guess.",
+  "Show them their own room, finished, with those finishes in it.",
+  "Our own remodeling company went from three in ten to five or six in ten.",
+  "Your first tour is free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "chip",
+     "y": 420,
+     "text": "KITCHEN & BATH CONTRACTORS",
+     "fill": "dark",
+     "color": "w",
+     "size": 40,
+     "dt": 0.0,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 580,
+     "segs": [
+      [
+       "6 HOURS",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "PICKING FINISHES.",
+       "dark"
+      ]
+     ],
+     "size": 91,
+     "dt": 0.0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 860,
+     "segs": [
+      [
+       "THEN THEY",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 1000,
+     "segs": [
+      [
+       "DIDN'T SIGN.",
+       "w"
+      ]
+     ],
+     "size": 104,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "TILE SAMPLES.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.0,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 740,
+     "segs": [
+      [
+       "CABINET DOORS.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.3,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "y": 880,
+     "segs": [
+      [
+       "2 SHOWROOM TRIPS.",
+       "y"
+      ]
+     ],
+     "size": 90,
+     "dt": 0.6,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "6 HRS",
+     "size": 200,
+     "color": "r",
+     "dt": 0.0,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "y": 920,
+     "segs": [
+      [
+       "BEFORE A CONTRACT",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "4",
+     "size": 280,
+     "color": "w",
+     "dt": 0.0,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "CLIENTS A MONTH",
+       "w"
+      ]
+     ],
+     "size": 86,
+     "dt": 0.3,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "24 HRS",
+     "size": 200,
+     "color": "r",
+     "dt": 0.0,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "y": 920,
+     "segs": [
+      [
+       "FREE DESIGN HELP",
+       "w"
+      ]
+     ],
+     "size": 80,
+     "dt": 0.4,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "2",
+     "size": 280,
+     "color": "r",
+     "dt": 0.0,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "y": 940,
+     "segs": [
+      [
+       "GO TO A CHEAPER GUY",
+       "w"
+      ]
+     ],
+     "size": 72,
+     "dt": 0.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "chip",
+     "y": 560,
+     "text": "REAL TALK",
+     "fill": "w",
+     "color": "dark",
+     "size": 52,
+     "dt": 0.0,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 780,
+     "segs": [
+      [
+       "HELPING THEM CHOOSE",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.3,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "y": 910,
+     "segs": [
+      [
+       "IS GOOD SERVICE.",
+       "w"
+      ]
+     ],
+     "size": 92,
+     "dt": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "THEY CAN'T SEE",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "THE RESULT.",
+       "y"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "text",
+     "y": 700,
+     "segs": [
+      [
+       "EVERY SAMPLE",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "y": 850,
+     "segs": [
+      [
+       "IS A GUESS.",
+       "r"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "text",
+     "y": 600,
+     "segs": [
+      [
+       "THEIR ROOM,",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0.0,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 750,
+     "segs": [
+      [
+       "FINISHED,",
+       "y"
+      ]
+     ],
+     "size": 120,
+     "dt": 0.3,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "WITH THOSE FINISHES.",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "y": 420,
+     "segs": [
+      [
+       "OUR OWN REMODELING COMPANY",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 700,
+     "text": "3 / 10",
+     "size": 200,
+     "color": "w",
+     "dt": 0.0,
+     "at": 10
+    },
+    {
+     "type": "bignum",
+     "y": 1050,
+     "text": "5\u20136 / 10",
+     "size": 187,
+     "color": "y",
+     "dt": 1.6,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "y": 1300,
+     "segs": [
+      [
+       "CLOSE RATE",
+       "grey"
+      ]
+     ],
+     "size": 50,
+     "dt": 1.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "y": 760,
+     "segs": [
+      [
+       "FIRST TOUR",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.0,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "y": 900,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2,
+     "at": 11
+    },
+    {
+     "type": "chip",
+     "y": 1180,
+     "text": "Link in bio \u00b7 remodelin360.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 48,
+     "dt": 0.6,
+     "at": 11
+    }
+   ]
+  }
+ ]
+}
