@@ -1,0 +1,369 @@
+{
+ "episode": 26,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "No lead count? Then you can't set the rent.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep26.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep26_count_the_leads.mp4",
+ "lines": [
+  "No lead count? Then you can't set the rent.",
+  "A business owner will ask one question.",
+  "How many calls does this thing get?",
+  "Um, a few? That's not an answer.",
+  "So count every form and every call.",
+  "Write down the date and the job they asked about.",
+  "After a few months you have real numbers.",
+  "Your numbers. Not a guess.",
+  "SetToRank sends every quote request to your email, so there's a record of each one.",
+  "Calls ring the number on the site, so track that line too.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "NO LEAD COUNT?",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "NO RENT",
+       "dark"
+      ]
+     ],
+     "size": 120,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "PRICE.",
+       "w"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 600,
+     "segs": [
+      [
+       "THE OWNER ASKS:",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 760,
+     "segs": [
+      [
+       "\"HOW MANY CALLS",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 880,
+     "segs": [
+      [
+       "DOES IT GET?\"",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.3
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 640,
+     "segs": [
+      [
+       "\"UM, A FEW?\"",
+       "grey"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 820,
+     "segs": [
+      [
+       "NOT AN ANSWER.",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 4,
+     "y": 520,
+     "items": [
+      {
+       "text": "Every form",
+       "ok": true,
+       "at": 4,
+       "dt": 0
+      },
+      {
+       "text": "Every call",
+       "ok": true,
+       "at": 4,
+       "dt": 0.8
+      },
+      {
+       "text": "The date",
+       "ok": true,
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "text": "The job they asked about",
+       "ok": true,
+       "at": 5,
+       "dt": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 600,
+     "segs": [
+      [
+       "A FEW MONTHS IN:",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 740,
+     "segs": [
+      [
+       "REAL NUMBERS.",
+       "g"
+      ]
+     ],
+     "size": 100,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 960,
+     "segs": [
+      [
+       "YOURS. NOT A GUESS.",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 520,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Quote request",
+       "color": "w",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Your email",
+       "color": "y",
+       "at": 8,
+       "dt": 1.0
+      },
+      {
+       "label": "A record of each one",
+       "color": "g",
+       "at": 8,
+       "dt": 2.2
+      }
+     ]
+    },
+    {
+     "type": "chip",
+     "at": 9,
+     "y": 1280,
+     "text": "Track the call line too",
+     "fill": "w",
+     "color": "dark",
+     "size": 54,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

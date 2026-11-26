@@ -1,0 +1,409 @@
+{
+ "episode": 24,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Stop saying the city name in every sentence.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep24.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep24_city_name_stuffing.mp4",
+ "lines": [
+  "Stop saying the city name in every sentence.",
+  "Best plumber in Mesa. Mesa plumbing. Plumbers Mesa.",
+  "Nobody talks like that.",
+  "Not the visitor. And it doesn't help the page either.",
+  "Say the town where it's useful.",
+  "In the title. In the first line. In the area you cover.",
+  "Then write about the actual job.",
+  "What it costs, how long it takes, what's included.",
+  "SetToRank writes each city page around the service, not around the keyword.",
+  "You can rewrite any line in your own WordPress.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "STOP SAYING",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "THE CITY NAME",
+       "dark"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "EVERY SENTENCE.",
+       "w"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 560,
+     "segs": [
+      [
+       "\"BEST PLUMBER IN MESA\"",
+       "grey"
+      ]
+     ],
+     "size": 62,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 680,
+     "segs": [
+      [
+       "\"MESA PLUMBING\"",
+       "grey"
+      ]
+     ],
+     "size": 62,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 800,
+     "segs": [
+      [
+       "\"PLUMBERS MESA\"",
+       "grey"
+      ]
+     ],
+     "size": 62,
+     "dt": 1.8
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 1050,
+     "segs": [
+      [
+       "NOBODY TALKS LIKE THAT.",
+       "r"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 640,
+     "segs": [
+      [
+       "NOT THE VISITOR.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 800,
+     "segs": [
+      [
+       "NOT THE PAGE.",
+       "r"
+      ]
+     ],
+     "size": 90,
+     "dt": 1.0
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "text",
+     "at": 4,
+     "y": 480,
+     "segs": [
+      [
+       "SAY THE TOWN WHERE IT'S USEFUL",
+       "y"
+      ]
+     ],
+     "size": 60,
+     "dt": 0
+    },
+    {
+     "type": "checklist",
+     "at": 5,
+     "y": 640,
+     "items": [
+      {
+       "text": "In the title",
+       "ok": true,
+       "at": 5,
+       "dt": 0
+      },
+      {
+       "text": "In the first line",
+       "ok": true,
+       "at": 5,
+       "dt": 0.8
+      },
+      {
+       "text": "In the area you cover",
+       "ok": true,
+       "at": 5,
+       "dt": 1.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 520,
+     "segs": [
+      [
+       "THEN WRITE ABOUT",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 650,
+     "segs": [
+      [
+       "THE ACTUAL JOB.",
+       "y"
+      ]
+     ],
+     "size": 96,
+     "dt": 0.4
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 900,
+     "text": "What it costs",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 1040,
+     "text": "How long it takes",
+     "fill": "w",
+     "color": "dark",
+     "size": 56,
+     "dt": 0.7
+    },
+    {
+     "type": "chip",
+     "at": 7,
+     "y": 1180,
+     "text": "What's included",
+     "fill": "y",
+     "color": "dark",
+     "size": 56,
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 520,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "The service",
+       "color": "y",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Each city page",
+       "color": "w",
+       "at": 8,
+       "dt": 1.0
+      },
+      {
+       "label": "Your WordPress",
+       "color": "g",
+       "at": 9,
+       "dt": 0
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 9,
+     "y": 1300,
+     "segs": [
+      [
+       "REWRITE ANY LINE",
+       "y"
+      ]
+     ],
+     "size": 70,
+     "dt": 0.6
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,380 @@
+{
+ "episode": 25,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Before you build, search it yourself.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep25.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep25_search_it_first.mp4",
+ "lines": [
+  "Before you build, search it yourself.",
+  "Type the service and the city into Google.",
+  "Look at what's on page one.",
+  "Big directories only? That's a hard fight.",
+  "Small local sites with thin pages? That's a gap.",
+  "Open the top three. Count their pages.",
+  "One page for everything means you can do better.",
+  "It takes ten minutes, and it can save you a month.",
+  "Then build the site that answers the search better.",
+  "SetToRank builds a page for every service and every nearby town.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "BEFORE YOU",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "BUILD, SEARCH",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "IT YOURSELF.",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "search",
+     "at": 1,
+     "y": 480,
+     "query": "water heater repair in Boise"
+    },
+    {
+     "type": "text",
+     "at": 2,
+     "y": 820,
+     "segs": [
+      [
+       "WHAT'S ON PAGE ONE?",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 560,
+     "segs": [
+      [
+       "BIG DIRECTORIES ONLY?",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 680,
+     "segs": [
+      [
+       "HARD FIGHT.",
+       "r"
+      ]
+     ],
+     "size": 96,
+     "dt": 1.2
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 900,
+     "segs": [
+      [
+       "THIN LOCAL SITES?",
+       "w"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 4,
+     "y": 1020,
+     "segs": [
+      [
+       "THAT'S A GAP.",
+       "g"
+      ]
+     ],
+     "size": 96,
+     "dt": 1.2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "elements": [
+    {
+     "type": "text",
+     "at": 5,
+     "y": 520,
+     "segs": [
+      [
+       "OPEN THE TOP 3.",
+       "w"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 660,
+     "segs": [
+      [
+       "COUNT THEIR PAGES.",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.8
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 900,
+     "segs": [
+      [
+       "1 PAGE FOR EVERYTHING?",
+       "w"
+      ]
+     ],
+     "size": 70,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 1010,
+     "segs": [
+      [
+       "YOU CAN DO BETTER.",
+       "g"
+      ]
+     ],
+     "size": 80,
+     "dt": 1.4
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "elements": [
+    {
+     "type": "text",
+     "at": 7,
+     "y": 600,
+     "segs": [
+      [
+       "10 MINUTES",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 760,
+     "segs": [
+      [
+       "CAN SAVE A MONTH.",
+       "y"
+      ]
+     ],
+     "size": 84,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 8,
+     "y": 1000,
+     "segs": [
+      [
+       "ANSWER THE SEARCH BETTER",
+       "g"
+      ]
+     ],
+     "size": 64,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 9,
+     "y": 560,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Every service",
+       "color": "w",
+       "at": 9,
+       "dt": 0
+      },
+      {
+       "label": "Every nearby town",
+       "color": "y",
+       "at": 9,
+       "dt": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

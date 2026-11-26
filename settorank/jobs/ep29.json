@@ -1,0 +1,398 @@
+{
+ "episode": 29,
+ "series": "RANK & RENT \u00b7 BUILD FASTER",
+ "hook": "Pick a niche where people call today.",
+ "accent": [
+  64,
+  200,
+  255
+ ],
+ "voice": "../voices/ep29.mp3",
+ "atempo": 1.08,
+ "music_vol": 0,
+ "out": "../out/ep29_call_today_niches.mp4",
+ "lines": [
+  "Pick a niche where people call today.",
+  "Nobody compares ten quotes for a burst pipe.",
+  "They search, they tap, they call.",
+  "That's the kind of job a lead site is good at.",
+  "Water heaters. Garage doors. Locksmiths. Leaks.",
+  "Something broke, and they need it fixed now.",
+  "Compare that to a dream kitchen they'll plan for a year.",
+  "Both can work. One gets calls faster.",
+  "SetToRank builds the site from a niche and a city.",
+  "Every page gets a call button and a short quote form.",
+  "Real talk. It builds the site. It doesn't guarantee rankings.",
+  "Build one free. Link in bio."
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "bg": "yellow",
+   "elements": [
+    {
+     "type": "text",
+     "at": 0,
+     "y": 560,
+     "segs": [
+      [
+       "PICK A NICHE",
+       "dark"
+      ]
+     ],
+     "size": 110,
+     "dt": -0.3
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 720,
+     "segs": [
+      [
+       "WHERE PEOPLE",
+       "dark"
+      ]
+     ],
+     "size": 104,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 0,
+     "y": 890,
+     "segs": [
+      [
+       "CALL TODAY.",
+       "w"
+      ]
+     ],
+     "size": 116,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 1,
+   "elements": [
+    {
+     "type": "text",
+     "at": 1,
+     "y": 560,
+     "segs": [
+      [
+       "BURST PIPE?",
+       "w"
+      ]
+     ],
+     "size": 100,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 1,
+     "y": 720,
+     "segs": [
+      [
+       "NOBODY COMPARES 10 QUOTES.",
+       "r"
+      ]
+     ],
+     "size": 58,
+     "dt": 0.6
+    },
+    {
+     "type": "flow",
+     "at": 2,
+     "y": 900,
+     "gap": 170,
+     "nodes": [
+      {
+       "label": "Search",
+       "color": "w",
+       "at": 2,
+       "dt": 0
+      },
+      {
+       "label": "Tap",
+       "color": "y",
+       "at": 2,
+       "dt": 0.5
+      },
+      {
+       "label": "Call",
+       "color": "g",
+       "at": 2,
+       "dt": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "elements": [
+    {
+     "type": "text",
+     "at": 3,
+     "y": 640,
+     "segs": [
+      [
+       "THAT'S WHAT A",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 3,
+     "y": 770,
+     "segs": [
+      [
+       "LEAD SITE IS GOOD AT.",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0.4
+    }
+   ]
+  },
+  {
+   "from": 4,
+   "elements": [
+    {
+     "type": "checklist",
+     "at": 4,
+     "y": 480,
+     "items": [
+      {
+       "text": "Water heaters",
+       "ok": true,
+       "at": 4,
+       "dt": 0
+      },
+      {
+       "text": "Garage doors",
+       "ok": true,
+       "at": 4,
+       "dt": 0.6
+      },
+      {
+       "text": "Locksmiths",
+       "ok": true,
+       "at": 4,
+       "dt": 1.2
+      },
+      {
+       "text": "Leaks",
+       "ok": true,
+       "at": 4,
+       "dt": 1.8
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "at": 5,
+     "y": 1240,
+     "segs": [
+      [
+       "BROKE. FIX IT NOW.",
+       "y"
+      ]
+     ],
+     "size": 76,
+     "dt": 0
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "elements": [
+    {
+     "type": "text",
+     "at": 6,
+     "y": 560,
+     "segs": [
+      [
+       "DREAM KITCHEN?",
+       "grey"
+      ]
+     ],
+     "size": 90,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 6,
+     "y": 690,
+     "segs": [
+      [
+       "PLANNED FOR A YEAR.",
+       "grey"
+      ]
+     ],
+     "size": 76,
+     "dt": 1.0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 920,
+     "segs": [
+      [
+       "BOTH CAN WORK.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 7,
+     "y": 1040,
+     "segs": [
+      [
+       "ONE CALLS FASTER.",
+       "g"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.8
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "elements": [
+    {
+     "type": "flow",
+     "at": 8,
+     "y": 520,
+     "gap": 200,
+     "nodes": [
+      {
+       "label": "Niche + city",
+       "color": "y",
+       "at": 8,
+       "dt": 0
+      },
+      {
+       "label": "Every page",
+       "color": "w",
+       "at": 8,
+       "dt": 1.0
+      },
+      {
+       "label": "Call button + short form",
+       "color": "g",
+       "at": 9,
+       "dt": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 10,
+   "elements": [
+    {
+     "type": "text",
+     "at": 10,
+     "y": 500,
+     "segs": [
+      [
+       "REAL TALK",
+       "y"
+      ]
+     ],
+     "size": 80,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 700,
+     "segs": [
+      [
+       "IT BUILDS THE SITE.",
+       "w"
+      ]
+     ],
+     "size": 84,
+     "dt": 0.4
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 900,
+     "segs": [
+      [
+       "IT DOESN'T",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.6
+    },
+    {
+     "type": "text",
+     "at": 10,
+     "y": 1020,
+     "segs": [
+      [
+       "GUARANTEE RANKINGS.",
+       "grey"
+      ]
+     ],
+     "size": 72,
+     "dt": 1.8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "elements": [
+    {
+     "type": "text",
+     "at": 11,
+     "y": 700,
+     "segs": [
+      [
+       "BUILD ONE",
+       "w"
+      ]
+     ],
+     "size": 110,
+     "dt": 0
+    },
+    {
+     "type": "text",
+     "at": 11,
+     "y": 850,
+     "segs": [
+      [
+       "FREE.",
+       "y"
+      ]
+     ],
+     "size": 130,
+     "dt": 0.2
+    },
+    {
+     "type": "chip",
+     "at": 11,
+     "y": 1150,
+     "text": "Link in bio \u00b7 settorank.com",
+     "fill": "y",
+     "color": "dark",
+     "size": 50,
+     "dt": 0.6
+    }
+   ]
+  }
+ ]
+}

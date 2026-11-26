@@ -1,0 +1,16 @@
+SetToRank TikTok week (2026-11-26, covers 11-27..12-03), eps 24-30
+| date | time | TikTok | sound | Instagram | Facebook |
+|---|---|---|---|---|---|
+| 2026-11-27 | 23:00 | yes | Corporate Upbeat Tech - SoulProdMusic | yes | yes |
+| 2026-11-28 | 23:00 | yes | Technology - FlyFlyMusic | yes | yes |
+| 2026-11-29 | 23:00 | yes | Tech - Veaceslav Draganov | yes | yes |
+| 2026-11-30 | 23:00 | yes | Upbeat Tempo - Antoine Renault | yes | yes |
+| 2026-12-01 | 23:00 | yes | Little Things - Adrián Berenguer | yes | yes |
+| 2026-12-02 | 23:00 | yes | Modern Upbeat Pop Promotion - Osynthw | yes | yes |
+| 2026-12-03 | 23:00 | yes | Upbeat Corporate Tech - OlexandrMusic | yes | yes |
+TikTok: all 7 verified in Studio Posts ('<date>, 11:00 PM (GMT+2) Jerusalem'). Sounds from Unlimited (commercial) library, search "upbeat tech", -16 dB, voice 0 dB, AI label on. Browser deviceId f20bcc55 (settorank).
+Meta: Reels via Business Suite reels composer (deviceId 80c3e8de, asset Set To Rank, "Post to: Set To Rank and settorank"); "Reel scheduled ... on Facebook and ... on Instagram" dialog for each; Planner shows FB + IG at 11:00 PM for every day 11-27..12-03. Business Suite asset left on Set To Rank (was already selected; no switch needed).
+Voices: fetched in Chrome on elevenlabsusercontent.com, bundled (JSON size header + mp3s), postMessage'd to a tiktok.com/robots.txt tab -> ~/Downloads/str_voices_ep24-30_v2.bin. Note: first bundle attempt used encodeURIComponent on the Signature -> 7 x 419-byte error bodies; that junk file str_voices_ep24-30.bin (2998 B) is left in ~/Downloads (no delete permission). Use the raw signature.
+ep30 rebuilt once: checklist item "Form short enough for a thumb?" overflowed its card -> "Short form for a thumb?".
+Videos on the Mac: ~/Downloads/TikTok batch/SetToRank/2026-11-27..12-03.mp4.
+Research: socialpilot.co/blog/tiktok-trends (Nov 2026), virlo.ai/trending-on-tiktok-this-week (week of Nov 16), buffer.com/resources/find-trending-sounds-on-tiktok. Business account -> Unlimited library only.
